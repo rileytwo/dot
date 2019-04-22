@@ -1,0 +1,12 @@
+{
+    "fold" : "Cmd+\\|Alt+Cmd+L|Cmd+\\",
+    "gotowordleft" : "Ctrl+Shift+A",
+    "gotowordright" : "Ctrl+Shift+D",
+    "removetolineend" : "Ctrl+Shift+Backspace",
+    "removetolinestart" : "Ctrl+Backspace",
+    "removewordleft" : "Cmd+Backspace|",
+    "removewordright" : "Shift+Cmd+Backspace",
+    "selectwordleft" : "Shift+Cmd+A",
+    "selectwordright" : "Shift+Cmd+D",
+    "unfold" : "Cmd+K Shift+Cmd+\\|Shift+Cmd+\\|Shift+Cmd+F1"
+}
