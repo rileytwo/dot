@@ -1,3 +1,10 @@
 [user]
 	name = livelaughriley
 	email = 34988536+livelaughriley@users.noreply.github.com
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[core]
+	excludesfile = .gitignore_global

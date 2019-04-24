@@ -1,7 +1,0 @@
-#!/usr/bin/env sh
-# cd ~/path/to/dot
-
-# ln -sF should be executed from dot
-
-# ln -sF ~/Documents/Projects/github/dot/{.bashrc,.config,.gitconfig,.gitignore_global,.hammerspoon,.vimrc} ~/
-
