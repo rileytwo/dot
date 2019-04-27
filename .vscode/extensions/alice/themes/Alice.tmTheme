@@ -1,0 +1,678 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!-- author:  Mark Herpich https://twitter.com/TheMarkWithK    -->
+<plist version="1.0">
+    <dict>
+        <key>name</key>
+        <string>1337</string>
+        <key>settings</key>
+        <array>
+            <dict>
+                <key>settings</key>
+                <dict>
+                    <key>background</key>
+                    <string>#161616</string>
+                    <key>caret</key>
+                    <string>#f0f0f0</string>
+                    <key>foreground</key>
+                    <string>#f0f0f0</string>
+                    <key>invisibles</key>
+                    <string>#3B3A32</string>
+                    <key>lineHighlight</key>
+                    <string>#3D3D3D55</string>
+                    <key>selection</key>
+                    <string>#515151</string>
+                </dict>
+            </dict>
+            <dict>
+                <key>name</key>
+                <string>Comment</string>
+                <key>scope</key>
+                <string>comment</string>
+                <key>settings</key>
+                <dict>
+                    <key>foreground</key>
+                    <string>#6d6d6d</string>
+                </dict>
+            </dict>
+            <dict>
+                <key>name</key>
+                <string>String</string>
+                <key>scope</key>
+                <string>string</string>
+                <key>settings</key>
+                <dict>
+                    <key>foreground</key>
+                    <string>#94d4ba</string>
+                </dict>
+            </dict>
+            <dict>
+                <key>name</key>
+                <string>Number</string>
+                <key>scope</key>
+                <string>constant.numeric</string>
+                <key>settings</key>
+                <dict>
+                    <key>foreground</key>
+                    <string>#3fb2ff</string>
+                </dict>
+            </dict>
+            <dict>
+                <key>name</key>
+                <string>Built-in constant</string>
+                <key>scope</key>
+                <string>constant.language</string>
+                <key>settings</key>
+                <dict>
+                    <key>foreground</key>
+                    <string>#73ff96</string>
+                </dict>
+            </dict>
+            <dict>
+                <key>name</key>
+                <string>User-defined constant</string>
+                <key>scope</key>
+                <string>constant.character, constant.other</string>
+                <key>settings</key>
+                <dict>
+                    <key>foreground</key>
+                    <string>#73ff96</string>
+                </dict>
+            </dict>
+            <dict>
+                <key>name</key>
+                <string>Variable</string>
+                <key>scope</key>
+                <string>variable</string>
+                <key>settings</key>
+                <dict>
+                    <key>foreground</key>
+                    <string>#FF8F86</string>
+                </dict>
+            </dict>
+            <dict>
+                <key>name</key>
+                <string>Keyword</string>
+                <key>scope</key>
+                <string>keyword</string>
+                <key>settings</key>
+                <dict>
+                    <key>foreground</key>
+                    <string>#6961ff</string>
+                    <key>fontStyle</key>
+                    <string>bold</string>
+                </dict>
+            </dict>
+            <dict>
+                <key>name</key>
+                <string>Storage</string>
+                <key>scope</key>
+                <string>storage</string>
+                <key>settings</key>
+                <dict>
+                    <key>fontStyle</key>
+                    <string></string>
+                    <key>foreground</key>
+                    <string>#ff6666</string>
+                </dict>
+            </dict>
+            <dict>
+                <key>name</key>
+                <string>Storage type</string>
+                <key>scope</key>
+                <string>storage.type</string>
+                <key>settings</key>
+                <dict>
+                    <key>fontStyle</key>
+                    <string>bold</string>
+                    <key>foreground</key>
+                    <string>#3fb2ff</string>
+                </dict>
+            </dict>
+            <dict>
+                <key>name</key>
+                <string>Class name</string>
+                <key>scope</key>
+                <string>entity.name.class</string>
+                <key>settings</key>
+                <dict>
+                    <key>fontStyle</key>
+                    <string>underline</string>
+                    <key>foreground</key>
+                    <string>#ff6666</string>
+                </dict>
+            </dict>
+            <dict>
+                <key>name</key>
+                <string>Inherited class</string>
+                <key>scope</key>
+                <string>entity.other.inherited-class</string>
+                <key>settings</key>
+                <dict>
+                    <key>fontStyle</key>
+                    <string>italic underline</string>
+                    <key>foreground</key>
+                    <string>#8cdaff</string>
+                </dict>
+            </dict>
+            <dict>
+                <key>name</key>
+                <string>Function, Special Method, Block Level</string>
+                <key>scope</key>
+                <string>entity.name.function, keyword.other.special-method, meta.block-level</string>
+                <key>settings</key>
+                <dict>
+                    <key>fontStyle</key>
+                    <string>bold</string>
+                    <key>foreground</key>
+                    <string>#DF5F5F</string>
+                </dict>
+            </dict>
+            <dict>
+                <key>name</key>
+                <string>Function argument</string>
+                <key>scope</key>
+                <string>variable.parameter</string>
+                <key>settings</key>
+                <dict>
+                    <key>fontStyle</key>
+                    <string></string>
+                    <key>foreground</key>
+                    <string>#ff6666</string>
+                </dict>
+            </dict>
+            <dict>
+                <key>name</key>
+                <string>Tag name</string>
+                <key>scope</key>
+                <string>entity.name.tag</string>
+                <key>settings</key>
+                <dict>
+                    <key>fontStyle</key>
+                    <string></string>
+                    <key>foreground</key>
+                    <string>#8cdaff</string>
+                </dict>
+            </dict>
+            <dict>
+                <key>name</key>
+                <string>Tag attribute</string>
+                <key>scope</key>
+                <string>entity.other.attribute-name</string>
+                <key>settings</key>
+                <dict>
+                    <key>fontStyle</key>
+                    <string></string>
+                    <key>foreground</key>
+                    <string>#8cdaff</string>
+                </dict>
+            </dict>
+            <dict>
+                <key>name</key>
+                <string>Library function</string>
+                <key>scope</key>
+                <string>support.function</string>
+                <key>settings</key>
+                <dict>
+                    <key>fontStyle</key>
+                    <string>bold</string>
+                    <key>foreground</key>
+                    <string>#fbe3bf</string>
+                </dict>
+            </dict>
+            <dict>
+                <key>name</key>
+                <string>Library constant</string>
+                <key>scope</key>
+                <string>support.constant</string>
+                <key>settings</key>
+                <dict>
+                    <key>fontStyle</key>
+                    <string></string>
+                    <key>foreground</key>
+                    <string>#ecfdb9</string>
+                </dict>
+            </dict>
+            <dict>
+                <key>name</key>
+                <string>Library class&#x2f;type</string>
+                <key>scope</key>
+                <string>support.type, support.class</string>
+                <key>settings</key>
+                <dict>
+                    <key>foreground</key>
+                    <string>#ff6666</string>
+                </dict>
+            </dict>
+            <dict>
+                <key>name</key>
+                <string>Library variable</string>
+                <key>scope</key>
+                <string>support.other.variable</string>
+                <key>settings</key>
+                <dict>
+                    <key>fontStyle</key>
+                    <string></string>
+                </dict>
+            </dict>
+            <dict>
+                <key>name</key>
+                <string>PHP Namespaces</string>
+                <key>scope</key>
+                <string>support.other.namespace, entity.name.type.namespace</string>
+                <key>settings</key>
+                <dict>
+                    <key>foreground</key>
+                    <string>#FFB2F9</string>
+                </dict>
+            </dict>
+            <dict>
+                <key>name</key>
+                <string>PHP Namespace Alias</string>
+                <key>scope</key>
+                <string>support.other.namespace.use-as.php</string>
+                <key>settings</key>
+                <dict>
+                    <key>foreground</key>
+                    <string>#8cdaff</string>
+                </dict>
+            </dict>
+            <dict>
+                <key>name</key>
+                <string>PHP Namespace Keyword</string>
+                <key>scope</key>
+                <string>variable.language.namespace.php</string>
+                <key>settings</key>
+                <dict>
+                    <key>foreground</key>
+                    <string>#D66990</string>
+                </dict>
+            </dict>
+            <dict>
+                <key>name</key>
+                <string>PHP Namespace Separator</string>
+                <key>scope</key>
+                <string>punctuation.separator.inheritance.php</string>
+                <key>settings</key>
+                <dict>
+                    <key>foreground</key>
+                    <string>#F92672</string>
+                </dict>
+            </dict>
+            <dict>
+                <key>name</key>
+                <string>CSS Functions &#x2f; Property Values</string>
+                <key>scope</key>
+                <string>support.function.misc.css, support.constant.property-value.css, support.constant.font-name.css</string>
+                <key>settings</key>
+                <dict>
+                    <key>foreground</key>
+                    <string>#ff6666</string>
+                </dict>
+            </dict>
+            <!-- MARKDOWN START -->
+            <dict>
+                <key>name</key>
+                <string> Markdown First Header </string>
+                <key>scope</key>
+                <string>markup.heading.markdown</string>
+                <key>settings</key>
+                <dict>
+                    <key>foreground</key>
+                    <string>#3fb2ff</string>
+                </dict>
+            </dict>
+            <dict>
+                <key>name</key>
+                <string> Code Block </string>
+                <key>scope</key>
+                <string>markup.fenced_code.block.markdown</string>
+                <key>settings</key>
+                <dict>
+                    <key>foreground</key>
+                    <string>#ffffff</string>
+                </dict>
+            </dict>
+            <dict>
+                <key>name</key>
+                <string> Code Block Language </string>
+                <key>scope</key>
+                <string>fenced_code.block.language</string>
+                <key>settings</key>
+                <dict>
+                    <key>foreground</key>
+                    <string>#ff6666</string>
+                </dict>
+            </dict>
+            <dict>
+                <key>name</key>
+                <string> Code Block Ticks </string>
+                <key>scope</key>
+                <string>punctuation.definition.markdown</string>
+                <key>settings</key>
+                <dict>
+                    <key>foreground</key>
+                    <string>#6961ff</string>
+                </dict>
+            </dict>
+            <!-- MARKDOWN END -->
+            <!-- PYTHON START -->
+            <!-- meta.class.python -->
+            <dict>
+                <key>name</key>
+                <string>Python: Class</string>
+                <key>scope</key>
+                <string>entity.name.type.class.python</string>
+                <key>settings</key>
+                <dict>
+                    <key>fontStyle</key>
+                    <string>bold</string>
+                    <key>foreground</key>
+                    <string>#FF8F86</string>
+                    <!-- red -->
+                </dict>
+            </dict>
+            <dict>
+                <key>name</key>
+                <string>Python: Function Definition</string>
+                <key>scope</key>
+                <string>entity.name.function.python</string>
+                <key>settings</key>
+                <dict>
+                    <key>fontStyle</key>
+                    <string>bold</string>
+                    <key>foreground</key>
+                    <string>#FF8F86</string>
+                    <!-- red -->
+                </dict>
+            </dict>
+            <dict>
+                <key>name</key>
+                <string>Python: Storage</string>
+                <key>scope</key>
+                <string>storage.type.class.python, storage.type.function.python, storage.modifier.global.python</string>
+                <key>settings</key>
+                <dict>
+                    <key>fontStyle</key>
+                    <string></string>
+                    <key>foreground</key>
+                    <string>#3fb2ff</string>
+                    <!-- blue -->
+                </dict>
+            </dict>
+            <dict>
+                <key>name</key>
+                <string>Python: import</string>
+                <key>scope</key>
+                <string>keyword.control.import.python, keyword.control.import.from.python</string>
+                <key>settings</key>
+                <dict>
+                    <key>foreground</key>
+                    <string>#6961ff</string>
+                    <!-- purple -->
+                </dict>
+            </dict>
+            <dict>
+                <key>name</key>
+                <string>Python Parenthesis</string>
+                <key>scope</key>
+                <string>
+					punctuation.definition.arguments.begin.python,
+					punctuation.definition.arguments.end.python,
+					punctuation.definition.parameters.begin.python,
+					punctuation.definition.parameters.end.python,
+                    punctuation.separator.arguments.python
+                </string>
+                <key>settings</key>
+                <dict>
+                    <key>fontStyle</key>
+                    <string>bold</string>
+                    <key>foreground</key>
+                    <string>#e6e6e6</string>
+                </dict>
+            </dict>
+            <dict>
+                <key>name</key>
+                <string>Python: String</string>
+                <key>scope</key>
+                <string>punctuation.definition.string.begin,punctuation.definition.string.end, punctuation.definition.string,  punctuation.definition.generic, support.punctuation.expression,string.quoted.double.single-line.python,constant.other.symbol, entity.other.inherited-class,
+				string
+                </string>
+                <key>settings</key>
+                <dict>
+                    <key>fontStyle</key>
+                    <string></string>
+                    <key>foreground</key>
+                    <string>#fbe3bf</string>
+                </dict>
+            </dict>
+            <dict>
+                <key>name</key>
+                <string>Comment</string>
+                <key>scope</key>
+                <string>comment</string>
+                <key>settings</key>
+                <dict>
+                    <key>fontStyle</key>
+                    <string></string>
+                    <key>foreground</key>
+                    <string>#6d6d6d</string>
+                </dict>
+            </dict>
+            <dict>
+                <key>name</key>
+                <string> Python - Meta Function Call</string>
+                <key>scope</key>
+                <string>meta.function-call, meta.function-call.python meta.function-call.arguments.python, meta.function.parameters</string>
+                <key>settings</key>
+                <dict>
+                    <key>fontStyle</key>
+                    <string></string>
+                    <key>foreground</key>
+                    <string>#3fb2ff</string>
+                </dict>
+            </dict>
+            <dict>
+                <key>name</key>
+                <string> Python - Parameters in Function Call</string>
+                <key>scope</key>
+                <string>variable.parameter.function.python, variable.parameter.function-call.python, variable.parameter</string>
+                <key>settings</key>
+                <dict>
+                    <key>fontStyle</key>
+                    <string></string>
+                    <key>foreground</key>
+                    <string>#6de7c5</string>
+                </dict>
+            </dict>
+            <dict>
+                <key>name</key>
+                <string>Python invoked function</string>
+                <key>scope</key>
+                <string>meta.function-call.generic.python</string>
+                <key>settings</key>
+                <dict>
+                    <key>fontStyle</key>
+                    <string></string>
+                    <key>foreground</key>
+                    <string>#FF7881</string>
+                </dict>
+            </dict>
+            <dict>
+                <key>name</key>
+                <string>Python Builtin Function</string>
+                <key>scope</key>
+                <string>support.function.builtin.python</string>
+                <key>settings</key>
+                <dict>
+                    <key>fontStyle</key>
+                    <string></string>
+                    <key>foreground</key>
+                    <string>#968FFF</string>
+                </dict>
+            </dict>
+            <!-- PYTHON END -->
+            <!-- TWIG START -->
+            <dict>
+                <key>name</key>
+                <string>Twig Tagbraces</string>
+                <key>scope</key>
+                <string>meta.tag.template.value.twig, meta.tag.template.block.twig</string>
+                <key>settings</key>
+                <dict>
+                    <key>foreground</key>
+                    <string>#CD5AC5</string>
+                </dict>
+            </dict>
+            <dict>
+                <key>name</key>
+                <string>Twig Keywords</string>
+                <key>scope</key>
+                <string>keyword.control.twig</string>
+                <key>settings</key>
+                <dict>
+                    <key>foreground</key>
+                    <string>#E05D8C</string>
+                </dict>
+            </dict>
+            <dict>
+                <key>name</key>
+                <string>Twig Objects</string>
+                <key>scope</key>
+                <string>variable.other.twig</string>
+                <key>settings</key>
+                <dict>
+                    <key>foreground</key>
+                    <string>#E5A5E0</string>
+                </dict>
+            </dict>
+            <dict>
+                <key>name</key>
+                <string>Twig Object Properties</string>
+                <key>scope</key>
+                <string>variable.other.property.twig</string>
+                <key>settings</key>
+                <dict>
+                    <key>foreground</key>
+                    <string>#FFE1FC</string>
+                </dict>
+            </dict>
+            <dict>
+                <key>name</key>
+                <string>Twig Language Constants</string>
+                <key>scope</key>
+                <string>constant.language.twig</string>
+                <key>settings</key>
+                <dict>
+                    <key>foreground</key>
+                    <string>#FFD2A6</string>
+                </dict>
+            </dict>
+            <dict>
+                <key>name</key>
+                <string>Twig Numerical Constants</string>
+                <key>scope</key>
+                <string>constant.numeric.twig</string>
+                <key>settings</key>
+                <dict>
+                    <key>foreground</key>
+                    <string>#FFD0FB</string>
+                </dict>
+            </dict>
+            <dict>
+                <key>name</key>
+                <string>Twig Filters</string>
+                <key>scope</key>
+                <string>support.function.twig</string>
+                <key>settings</key>
+                <dict>
+                    <key>foreground</key>
+                    <string>#90E7F7</string>
+                </dict>
+            </dict>
+            <dict>
+                <key>name</key>
+                <string>Twig User-Defined Filters</string>
+                <key>scope</key>
+                <string>meta.function-call.other.twig</string>
+                <key>settings</key>
+                <dict>
+                    <key>foreground</key>
+                    <string>#FAB85A</string>
+                </dict>
+            </dict>
+            <dict>
+                <key>name</key>
+                <string>Twig Macros</string>
+                <key>scope</key>
+                <string>meta.function-call.twig</string>
+                <key>settings</key>
+                <dict>
+                    <key>foreground</key>
+                    <string>#FAB85A</string>
+                </dict>
+            </dict>
+            <!-- TWIG END -->
+            <dict>
+                <key>name</key>
+                <string>Invalid</string>
+                <key>scope</key>
+                <string>invalid</string>
+                <key>settings</key>
+                <dict>
+                    <key>background</key>
+                    <string>#f92649</string>
+                    <key>fontStyle</key>
+                    <string></string>
+                    <key>foreground</key>
+                    <string>#F8F8F0</string>
+                </dict>
+            </dict>
+            <dict>
+                <key>name</key>
+                <string>Invalid deprecated</string>
+                <key>scope</key>
+                <string>invalid.deprecated</string>
+                <key>settings</key>
+                <dict>
+                    <key>background</key>
+                    <string>#ff9664</string>
+                    <key>foreground</key>
+                    <string>#F8F8F0</string>
+                </dict>
+            </dict>
+            <dict>
+                <key>name</key>
+                <string>Text</string>
+                <key>scope</key>
+                <string>variable.parameter.function</string>
+                <key>settings</key>
+                <dict>
+                    <key>foreground</key>
+                    <string>#3fb2ff</string>
+                </dict>
+            </dict>
+            <dict>
+                <key>name</key>
+                <string>Attribute IDs</string>
+                <key>scope</key>
+                <string>entity.other.attribute-name.id, punctuation.definition.entity</string>
+                <key>settings</key>
+                <dict>
+                    <key>foreground</key>
+                    <string>#66a9ec</string>
+                </dict>
+            </dict>
+        </array>
+        <key>uuid</key>
+        <string>233F0694-0B9C-43E3-A44A-ECECF7DF6C73</string>
+        <key>colorSpaceName</key>
+        <string>sRGB</string>
+        <key>semanticClass</key>
+        <string>theme.dark.1337</string>
+        <key>author</key>
+        <string>Mark Herpich</string>
+        <key>comment</key>
+        <string>http:&#x2f;&#x2f;www.twitter.com&#x2f;TheMarkWithK</string>
+    </dict>
+</plist>

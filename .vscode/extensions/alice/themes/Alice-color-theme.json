@@ -1,0 +1,12 @@
+{
+	"tokenColors": "./Alice.tmTheme",
+	"colors": {
+		"editor.background": "#161616",
+		"editorCursor.foreground": "#50fa7b",
+		"editor.foreground": "#ffffffe1",
+		"editorWhitespace.foreground": "#ffffffe5",
+		"editor.lineHighlightBackground": "#3D3D3D55",
+		"editor.selectionBackground": "#f8f8f27e"
+	},
+	"name": "Alice"
+}
