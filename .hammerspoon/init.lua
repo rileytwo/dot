@@ -6,14 +6,15 @@
 --   -  ⌘ + ⌃ + ⌥ + ⇧ + M, Toggle current window to maximize/restore;
 
 -- 1. --
-hs.alert("config reloaded")
+hs.alert("Configuration loaded.")
+
+hs.console.darkMode(true)
 
 hs.window.animationDuration = 0.01
 previous_frame_sizes = {}
 modification_keys = {"cmd", "ctrl", "alt", "shift"}
 
 hs.hotkey.bind(modification_keys, "R", function()
-	--hs.notify.new({title="Hammerspoon", informativeText="Config Reloaded"}):send()
 	hs.reload()
 end)
 
