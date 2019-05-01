@@ -46,6 +46,14 @@
 	color: #00c1fc;
 }
 
+/* vim cursor */
+
+.normal-mode .ace_cursor {
+	border: 0!important;
+	background-color: #00c1fc;
+	opacity: 0.5;
+}
+
 .ace_marker-layer .ace_active-line {
 	background: #1b1b1b;
 }
