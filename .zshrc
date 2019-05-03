@@ -22,8 +22,6 @@ PROMPT='
 RPROMPT='${smiley}'
 
 ZSH_THEME_GIT_PROMPT_PREFIX="$fg_bold[blue]git:($fg[red]"
-ZSH_THEME_GIT_PROMPT_SUFFIX="$reset_color"
-ZSH_THEME_GIT_PROMPT_DIRTY="$fg[blue]) $fg[yellow]✗"
 ZSH_THEME_GIT_PROMPT_CLEAN="$fg[blue])"
 # <:::: end prompt ::::>
 
@@ -36,3 +34,4 @@ export LS_COLORS='di=1;4;34:fi=1;32:ln=1;35:pi=0:bd=0:cd=0:mi=1;4;31:ex=1;31'
 
 [[ -f ~/.functions ]] && . ~/.functions
 [[ -f ~/.aliases ]] && . ~/.aliases
+
