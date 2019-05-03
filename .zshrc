@@ -44,43 +44,10 @@ ZSH_THEME_GIT_PROMPT_CLEAN="$fg[blue])"
 #unset __conda_setup
 # <<< conda init <<<
 
-. ~/miniconda3/etc/profile.d/conda.sh
 #conda activate base
-
-## radian console
-alias r="conda activate && radian"
-
-## github directory alias
-alias gh='~/Documents/Projects/Github'
-
-## dotfiles directory alias
-alias dot='~/.dot'
-
-## plistbuddy alias
-alias plistbuddy='/usr/libexec/PlistBuddy'
-
-## echo each path entry on newline
-alias path='echo -e ${PATH//:/\\n}'
-
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-#export PATH="$PATH:$HOME/.rvm/bin"
-alias lc='colorls'
-
-# ZSH / BASH users
-# Add this to your .env, .bashrc, .zshrc, or whatever file you're using for environment
-
-man() {
-	env \
-		LESS_TERMCAP_mb=$(printf "\e[1;31m") \
-		LESS_TERMCAP_md=$(printf "\e[1;31m") \
-		LESS_TERMCAP_me=$(printf "\e[0m") \
-		LESS_TERMCAP_se=$(printf "\e[0m") \
-		LESS_TERMCAP_so=$(printf "\e[1;44;33m") \
-		LESS_TERMCAP_ue=$(printf "\e[0m") \
-		LESS_TERMCAP_us=$(printf "\e[1;32m") \
-		man "$@"
-}
+. ~/miniconda3/etc/profile.d/conda.sh
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 [[ -f ~/.functions ]] && . ~/.functions
+[[ -f ~/.aliases ]] && . ~/.aliases
