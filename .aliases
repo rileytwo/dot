@@ -1,0 +1,18 @@
+## radian console
+alias r="conda activate && radian"
+
+## github directory alias
+alias gh='~/Documents/Projects/Github'
+
+## dotfiles directory alias
+alias dot='~/.dot'
+
+## plistbuddy alias
+alias plistbuddy='/usr/libexec/PlistBuddy'
+
+## echo each path entry on newline
+alias path='echo -e ${PATH//:/\\n}'
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+#export PATH="$PATH:$HOME/.rvm/bin"
+alias lc='colorls'
