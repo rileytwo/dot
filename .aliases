@@ -15,4 +15,4 @@ alias path='echo -e ${PATH//:/\\n}'
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 #export PATH="$PATH:$HOME/.rvm/bin"
-alias lc='colorls'
+alias lc='colorls'alias gs='git status'
