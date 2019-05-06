@@ -1,5 +1,7 @@
 -- This is a configuration for Hammerspoon:
 -- Modification Keys: Cmd + Ctrl + Alt + Shift (⌘ + ⌃ + ⌥ + ⇧)
+-- Karabiner-elements is used to bind Caps Lock to Modification Keys
+-- Caps Lock (⇪) -> Cmd + Ctrl + Alt + Shift (⌘ + ⌃ + ⌥ + ⇧)
 -- 1. Currently support window layout management:
 --   -  ⌘ + ⌃ + ⌥ + ⇧ + [, Toggle current window to left/restore;
 --   -  ⌘ + ⌃ + ⌥ + ⇧ + ], Toggle current window to right/restore;
@@ -22,7 +24,7 @@ hs.hotkey.bind(modification_keys, "W", function()
 	hs.alert.show("Hello world!")
 end)
 
-function isAlmostEqualToc_win_frame(geo)
+function is_almost_equal_to_win_frame(geo)
 	local epsilon = 5
 	local c_win = hs.window.focusedWindow()
 	local c_win_frame = c_win:frame()
@@ -36,12 +38,12 @@ function isAlmostEqualToc_win_frame(geo)
 	end
 end
 
-function getMaxWinFrame()
+function get_max_win_frame()
 	local c_win = hs.window.focusedWindow()
 	return c_win:screen():frame()
 end
 
-function getFillLeftWinFrame()
+function get_fill_left_win_frame()
 	local c_win = hs.window.focusedWindow()
 	local c_win_frame = c_win:frame()
 	local max_frame = c_win:screen():frame()
@@ -52,7 +54,7 @@ function getFillLeftWinFrame()
 	return c_win_frame
 end
 
-function getFillRightWinFrame()
+function get_fill_right_win_frame()
 	local c_win = hs.window.focusedWindow()
 	local c_win_frame = c_win:frame()
 	local max_frame = c_win:screen():frame()
@@ -63,23 +65,23 @@ function getFillRightWinFrame()
 	return c_win_frame
 end
 
-function isPredefinedWinFrameSize()
-	if isAlmostEqualToc_win_frame(getMaxWinFrame()) or
-		isAlmostEqualToc_win_frame(getFillLeftWinFrame()) or
-		isAlmostEqualToc_win_frame(getFillRightWinFrame()) then
+function is_predefined_win_frame_size()
+	if is_almost_equal_to_win_frame(get_max_win_frame()) or
+		is_almost_equal_to_win_frame(get_fill_left_win_frame()) or
+		is_almost_equal_to_win_frame(get_fill_right_win_frame()) then
 		return true
 	else
 		return false
 	end
 end
 
-function bindResizeAndRestoreToKeys(key, resize_frame_fn)
+function bind_resize_and_restore_keys(key, resize_frame_fn)
 	hs.hotkey.bind(modification_keys, key, function()
 		local c_win = hs.window.focusedWindow()
 		local c_win_frame = c_win:frame()
 		local targetFrame = resize_frame_fn()
 
-		if isPredefinedWinFrameSize() and not isAlmostEqualToc_win_frame(targetFrame) then
+		if is_predefined_win_frame_size() and not is_almost_equal_to_win_frame(targetFrame) then
 			c_win:setFrame(targetFrame)
 		elseif previous_frame_sizes[c_win:id()] then
 			c_win:setFrame(previous_frame_sizes[c_win:id()])
@@ -91,9 +93,9 @@ function bindResizeAndRestoreToKeys(key, resize_frame_fn)
 	end)
 end
 
-bindResizeAndRestoreToKeys("M", getMaxWinFrame)
-bindResizeAndRestoreToKeys("[", getFillLeftWinFrame)
-bindResizeAndRestoreToKeys("]", getFillRightWinFrame)
+bind_resize_and_restore_keys("M", get_max_win_frame)
+bind_resize_and_restore_keys("[", get_fill_left_win_frame)
+bind_resize_and_restore_keys("]", get_fill_right_win_frame)
 
 
 -- 2. --
