@@ -9,3 +9,5 @@ colors/
 plugged/
 autoload/
 
+# .win/.R
+*.ini
