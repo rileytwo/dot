@@ -25,7 +25,7 @@ hs.hotkey.bind(modification_keys, "W", function()
 end)
 
 function is_almost_equal_to_win_frame(geo)
-	local epsilon = 5
+	local epsilon = 2
 	local c_win = hs.window.focusedWindow()
 	local c_win_frame = c_win:frame()
 	if  math.abs(c_win_frame.x - geo.x) < epsilon and
@@ -55,13 +55,13 @@ function get_fill_left_win_frame()
 end
 
 function get_fill_right_win_frame()
-	local c_win = hs.window.focusedWindow()
-	local c_win_frame = c_win:frame()
-	local max_frame = c_win:screen():frame()
-	c_win_frame.x = max_frame.x + max_frame.w / 2
-	c_win_frame.y = max_frame.y
-	c_win_frame.w = max_frame.w / 2
-	c_win_frame.h = max_frame.h
+	local c_win         = hs.window.focusedWindow()
+	local c_win_frame   = c_win:frame()
+	local max_frame     = c_win:screen():frame()
+	    c_win_frame.x = max_frame.x + max_frame.w / 2
+	    c_win_frame.y = max_frame.y
+	    c_win_frame.w = max_frame.w / 2
+	    c_win_frame.h = max_frame.h
 	return c_win_frame
 end
 
@@ -77,7 +77,7 @@ end
 
 function bind_resize_and_restore_keys(key, resize_frame_fn)
 	hs.hotkey.bind(modification_keys, key, function()
-		local c_win = hs.window.focusedWindow()
+		local c_win       = hs.window.focusedWindow()
 		local c_win_frame = c_win:frame()
 		local targetFrame = resize_frame_fn()
 
@@ -127,7 +127,7 @@ function is_bottom()
 	end
 end
 
-hs.hotkey.bind(modification_keys, "l", function()
+hs.hotkey.bind(modification_keys, "H", function()
 	-- increase window width
 	local c_win        = hs.window.focusedWindow()
 	local c_win_frame  = c_win:frame()
@@ -142,7 +142,7 @@ hs.hotkey.bind(modification_keys, "l", function()
 	end
 end)
 
-hs.hotkey.bind(modification_keys, "j", function()
+hs.hotkey.bind(modification_keys, "L", function()
 	-- decrease window width
 	local c_win = hs.window.focusedWindow()
 	local c_win_frame = c_win:frame()
@@ -158,7 +158,7 @@ hs.hotkey.bind(modification_keys, "j", function()
 end)
 
 
-hs.hotkey.bind(modification_keys, "i", function()
+hs.hotkey.bind(modification_keys, "K", function()
 	-- increase window height
 	local c_win = hs.window.focusedWindow()
 	local c_win_frame = c_win:frame()
@@ -175,7 +175,7 @@ end)
 
 
 
-hs.hotkey.bind(modification_keys, "k", function()
+hs.hotkey.bind(modification_keys, "J", function()
 	-- decrease window height
 	local c_win        = hs.window.focusedWindow()
 	local c_win_frame  = c_win:frame()

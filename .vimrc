@@ -1,15 +1,14 @@
-syntax on
 set whichwrap+=<,>,h,l,[,]
 set backspace=indent,eol,start
 set mouse=nicr
-set background=dark
+
+
+
 " other colorschemes i like: abstract, afterglow, deep-space,
 "                            atom, challenger_deep, molokayo,
 "                            nord, dracula
 "
 " 
-"
-
 
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
@@ -43,7 +42,7 @@ Plug 'itchyny/lightline.vim'
 
 Plug 'jiangmiao/auto-pairs'
 
-Plug 'nathanaelkane/vim-indent-guides'
+" Plug 'nathanaelkane/vim-indent-guides'
 
 Plug 'terryma/vim-multiple-cursors'
 
@@ -55,12 +54,24 @@ Plug 'aonemd/kuroi.vim'
 
 Plug 'ntk148v/vim-horizon'
 
+" Plug 'Yggdroot/hiPairs'
+
+Plug 'Yggdroot/indentLine'
+
+Plug 'ap/vim-css-color'
+
+Plug 'rafi/awesome-vim-colorschemes'
+
 call plug#end()
 
-colorscheme horizon 
+
+
+syntax enable
+colorscheme riley
 
 
 let g:indentLine_setColors = 0
+let g:indentLine_char = '|'
 let g:lightline = {
       \ 'colorscheme': 'wombat'
       \ }
