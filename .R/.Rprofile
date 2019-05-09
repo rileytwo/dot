@@ -14,26 +14,3 @@ options(
     radian.browse_prompt = "\033[0;33mBrowse[{}]>\033[0m "
 )
 
-
-# source_lines <- function(file, lines) {
-#     # source only certain parts of update.R
-#     source(textConnection(readLines(file)[lines]))
-# }
-
-# Sys.setenv(PATH = paste(
-#     # "C:\\RBuildTools\\3.5\\bin\\",
-#     # "C:\\RBuildTools\\3.5\\mingw_64\\bin\\",
-#     # "C:\\Rtools\\bin\\",
-#     # "C:\\Rtools\\mingw_64\\bin\\",
-#     #"C:/RBuildTools/3.5/bin",
-#     #"C:/RBuildTools/3.5/mingw_64/bin",
-#     "C:/Rtools/bin",
-#     "C:/Rtools/bin/mingw_64/bin",
-#     Sys.getenv("PATH"),
-#     sep = ";"
-# ))
-# Sys.setenv(
-#     BINPREF = "C:/RBuildTools/3.5/mingw_64/bin/"
-#     , BINPREF = "C:/Rtools/mingw_64/bin/"
-# )
-
