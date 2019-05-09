@@ -14,3 +14,19 @@ options(
     radian.browse_prompt = "\033[0;33mBrowse[{}]>\033[0m "
 )
 
+start_up <- function () {
+    local({
+        # set default packages
+        #
+        packages = c('tidyverse', 'wrapr')
+        options(
+            defaultPackages = c(
+                getOption('defaultPackages'),
+                packages
+            )
+        )
+    })
+}
+
+start_up()
+rm('start_up')
