@@ -402,19 +402,19 @@
 }
 
 .xtermColor4 {
-	color: #bd93f9 !important;
+	color: #00b7ff !important;
 }
 
 .xtermBgColor4 {
-	background-color: #bd93f9;
+	background-color: #00b7ff;
 }
 
 .xtermColor5 {
-	color: #ff79c6 !important;
+	color: #b379ff !important;
 }
 
 .xtermBgColor5 {
-	background-color: #ff79c6;
+	background-color: #b379ff;
 }
 
 .xtermColor6 {
@@ -466,19 +466,19 @@
 }
 
 .xtermColor12 {
-	color: #caa9fa !important;
+	color: #52ceff !important;
 }
 
 .xtermBgColor12 {
-	background-color: #caa9fa;
+	background-color: #52ceff;
 }
 
 .xtermColor13 {
-	color: #ff92d0 !important;
+	color: #c99fff !important;
 }
 
 .xtermBgColor13 {
-	background-color: #ff92d0;
+	background-color: #c99fff;
 }
 
 .xtermColor14 {
