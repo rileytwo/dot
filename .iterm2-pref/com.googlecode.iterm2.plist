@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>AdjustWindowForFontSizeChange</key>
+	<false/>
 	<key>AlternateMouseScroll</key>
 	<true/>
 	<key>AppleAntiAliasingThreshold</key>
@@ -50132,7 +50134,7 @@
 		</dict>
 	</dict>
 	<key>DarkThemeHasBlackTitlebar</key>
-	<true/>
+	<false/>
 	<key>Default Bookmark Guid</key>
 	<string>155DA69D-3040-4A12-97C5-A42B3D30EB26</string>
 	<key>DeleteProfile_SilenceUntil</key>
@@ -50317,8 +50319,8 @@
 	<false/>
 	<key>NSSplitView Subview Frames NSColorPanelSplitView</key>
 	<array>
-		<string>0.000000, 0.000000, 252.000000, 210.000000, NO, NO</string>
-		<string>0.000000, 211.000000, 252.000000, 88.000000, NO, NO</string>
+		<string>0.000000, 0.000000, 252.000000, 179.000000, NO, NO</string>
+		<string>0.000000, 180.000000, 252.000000, 83.000000, NO, NO</string>
 	</array>
 	<key>NSTableView Columns v2 KeyBingingTable</key>
 	<data>
@@ -50361,7 +50363,7 @@
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>99 293 592 584 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>594 223 650 442 0 0 1440 877 </string>
+	<string>790 378 650 442 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>172 412 650 427 0 0 1440 877 </string>
 	<key>New Bookmarks</key>
@@ -50584,6 +50586,8 @@
 			</dict>
 			<key>Background Image Location</key>
 			<string></string>
+			<key>Background Image Mode</key>
+			<integer>0</integer>
 			<key>Badge Color</key>
 			<dict>
 				<key>Alpha Component</key>
@@ -50601,10 +50605,14 @@
 			<string></string>
 			<key>Blend</key>
 			<real>0.050000000000000003</real>
+			<key>Blink Allowed</key>
+			<true/>
 			<key>Blinking Cursor</key>
 			<false/>
 			<key>Blur</key>
 			<true/>
+			<key>Blur Radius</key>
+			<real>0.10000000000000001</real>
 			<key>Bold Color</key>
 			<dict>
 				<key>Blue Component</key>
@@ -51331,6 +51339,19 @@
 			</dict>
 			<key>Sync Title</key>
 			<false/>
+			<key>Tab Color</key>
+			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
+				<key>Blue Component</key>
+				<real>0.058409370481967926</real>
+				<key>Color Space</key>
+				<string>sRGB</string>
+				<key>Green Component</key>
+				<real>0.062830112874507904</real>
+				<key>Red Component</key>
+				<real>0.062653087079524994</real>
+			</dict>
 			<key>Tags</key>
 			<array/>
 			<key>Terminal Type</key>
@@ -51987,6 +52008,8 @@
 			<false/>
 			<key>Shortcut</key>
 			<string></string>
+			<key>Show Mark Indicators</key>
+			<false/>
 			<key>Show Status Bar</key>
 			<true/>
 			<key>Silence Bell</key>
@@ -57992,7 +58015,7 @@
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1440, 900}}</string>
 		<key>topLeft</key>
-		<string>{5, 877}</string>
+		<string>{0, 739}</string>
 	</dict>
 	<key>NoSyncHaveWarnedAboutIncompatibleSoftware</key>
 	<true/>
@@ -58003,7 +58026,7 @@
 	<key>NoSyncLastTipTime</key>
 	<real>578277105.02708006</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>48</integer>
+	<integer>60</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -58675,11 +58698,11 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-04-30T11:36:43Z</date>
+	<date>2019-05-09T23:08:26Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SeparateStatusBarsPerPane</key>
-	<false/>
+	<true/>
 	<key>ShowBookmarkName</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
@@ -58689,11 +58712,13 @@
 	<key>ShowPaneTitles</key>
 	<false/>
 	<key>SmartPlacement</key>
-	<true/>
+	<false/>
 	<key>SoundForEsc</key>
 	<false/>
 	<key>SplitPaneDimmingAmount</key>
 	<real>0.10000000000000001</real>
+	<key>StatusBarPosition</key>
+	<integer>0</integer>
 	<key>StretchTabsToFillBar</key>
 	<false/>
 	<key>SwitchPaneModifier</key>
@@ -58707,6 +58732,8 @@
 	<key>UKCrashReporterLastCrashReportDate</key>
 	<real>1556387200</real>
 	<key>UseBorder</key>
+	<false/>
+	<key>UseLionStyleFullscreen</key>
 	<false/>
 	<key>VisualIndicatorForEsc</key>
 	<false/>

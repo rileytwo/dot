@@ -2,32 +2,23 @@ set whichwrap+=<,>,h,l,[,]
 set backspace=indent,eol,start
 set mouse=nicr
 
-
-
-" other colorschemes i like: abstract, afterglow, deep-space,
-"                            atom, challenger_deep, molokayo,
-"                            nord, dracula
-"
-" 
-
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 map <C-o> :NERDTreeToggle<CR>
 
-
-
 set splitbelow
 set splitright
-
 set nu
 set numberwidth=1
 set smartcase
 set laststatus=2
 set noshowmode
 
+filetype on
 filetype plugin indent on
+
 set smartindent
 set tabstop=4
 set shiftwidth=2
@@ -39,35 +30,23 @@ set autoindent
 call plug#begin('~/.vim/plugged')
 
 Plug 'itchyny/lightline.vim'
-
 Plug 'jiangmiao/auto-pairs'
-
 " Plug 'nathanaelkane/vim-indent-guides'
-
 Plug 'terryma/vim-multiple-cursors'
-
 Plug 'tpope/vim-eunuch'
-
 Plug 'scrooloose/nerdtree'
-
 Plug 'aonemd/kuroi.vim'
-
 Plug 'ntk148v/vim-horizon'
-
 " Plug 'Yggdroot/hiPairs'
-
 Plug 'Yggdroot/indentLine'
-
 Plug 'ap/vim-css-color'
-
 Plug 'rafi/awesome-vim-colorschemes'
 
 call plug#end()
 
-
-
 syntax enable
 colorscheme riley
+
 
 
 let g:indentLine_setColors = 0
