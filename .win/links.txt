@@ -1,0 +1,1 @@
+new-item -itemtype symboliclink -path C:\Users\RRoach\AppData\Local\nvim -value C:\Users\RRoach\.dot\.config\nvim -force
