@@ -55,7 +55,6 @@ syntax enable
 if has('win32') || has('win64')
   let g:os = "Windows"
   colorscheme dracula
-  " set termguicolors
 else
   let g:os = "Darwin"
   colorscheme riley
