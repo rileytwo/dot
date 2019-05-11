@@ -1,6 +1,7 @@
 zmodload zsh/zprof
 
-archey -o -p
+# archey -o -p
+neofetch
 eval $(thefuck --alias)
 
 # <:::: oh my zsh ::::>
