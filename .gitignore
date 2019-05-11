@@ -4,10 +4,11 @@ spoons/
 # karabiner
 configstore/
 
-# vim
+# vim/nvim
 colors/
 plugged/
 autoload/
+log
 
 # .win/.R
 *.ini
