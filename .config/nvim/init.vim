@@ -51,9 +51,17 @@ Plug 'tpope/vim-fugitive'
 call plug#end()
 
 syntax enable
-colorscheme riley
 
-set termguicolors
+if has('win32') || has('win64')
+  let g:os = "Windows"
+  colorscheme dracula
+  " set termguicolors
+else
+  let g:os = "Darwin"
+  colorscheme riley
+  set termguicolors
+endif
+
 
 set guicursor=
       \n-v-c-sm:hor20,
