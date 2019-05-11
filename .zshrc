@@ -1,6 +1,6 @@
 zmodload zsh/zprof
 
-archey -o
+archey -o -p
 eval $(thefuck --alias)
 
 # <:::: oh my zsh ::::>
