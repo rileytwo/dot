@@ -37,4 +37,5 @@ export LS_COLORS='di=1;4;34:fi=1;32:ln=1;35:pi=0:bd=0:cd=0:mi=1;4;31:ex=1;31'
 
 [[ -f ~/.functions ]] && . ~/.functions
 [[ -f ~/.aliases ]] && . ~/.aliases
+[[ -d ~/usr ]] && export PATH=~/usr:$PATH
 
