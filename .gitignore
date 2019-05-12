@@ -12,3 +12,6 @@ log
 
 # .win/.R
 *.ini
+
+# vscode
+*.code-workspace
