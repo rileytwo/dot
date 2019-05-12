@@ -19,20 +19,20 @@ set splitbelow
 set splitright
 set nu
 set numberwidth=1
-set smartcase
 set laststatus=2
 set noshowmode
+set ignorecase
+set smartcase
 
 filetype on
 filetype plugin indent on
 
-
 set smartindent
 set tabstop=4
-set shiftwidth=2
+set shiftwidth=4
 set expandtab
 set autoindent
-
+let g:vim_indent_cont = &sw
 
 " plugins using vim-plug
 call plug#begin('~/.vim/plugged')
@@ -48,24 +48,16 @@ Plug 'Yggdroot/indentLine'
 Plug 'ap/vim-css-color'
 Plug 'rafi/awesome-vim-colorschemes'
 Plug 'tpope/vim-fugitive'
+Plug 'jalvesaq/Nvim-R', {'for': 'R'}
+Plug 'vim-syntastic/syntastic'
+
 call plug#end()
-
-syntax enable
-
-if has('win32') || has('win64')
-  let g:os = "Windows"
-  colorscheme dracula
-else
-  let g:os = "Darwin"
-  colorscheme riley
-  set termguicolors
-endif
 
 
 set guicursor=
-      \n-v-c-sm:hor20,
-      \i-ci-ve:ver25,
-      \r-cr-o:block
+    \n-v-c-sm:hor20,
+    \i-ci-ve:ver25,
+    \r-cr-o:block
 
 
 let NERDTreeShowHidden = 1
@@ -77,8 +69,33 @@ let g:indent_guides_start_level = 2
 let g:indent_guides_guide_size = 1
 
 let g:lightline = {
-      \ 'colorscheme': 'wombat'
-      \ }
+    \ 'colorscheme': 'wombat',
+    \ 'component': {
+    \   'syntastic': 'SyntasticStatuslineFlag'
+    \ },
+    \ }
+
+let g:syntastic_loc_list_height = 4
+let g:syntastic_error_symbol = '𐄂'
+let g:syntastic_style_error_symbol = '𐄂'
+let g:syntastic_warning_symbol = '!!'
+let g:syntastic_style_warning_symbol = '!!'
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+let g:syntastic_enable_highlighting = 1
+" let g:syntastic_mode_map = {'mode': 'passive'}
+
+syntax enable
+if has('win32') || has('win64')
+    let g:os = "Windows"
+    colorscheme dracula
+else
+    let g:os = "Darwin"
+    colorscheme riley
+    set termguicolors
+endif
 
 
 
