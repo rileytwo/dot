@@ -17,7 +17,7 @@ print_message() {
 }
 
 raise_error() {
-  local error_message="$@"
+  local error_message="$*"
   echo "${error_message}" 1>&2;
 }
 
