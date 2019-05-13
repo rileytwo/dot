@@ -1,8 +1,12 @@
 {
     "activateConsole" : "Cmd+K Cmd+P",
+    "activateEnvironment" : "Cmd+E",
+    "activateFiles" : "Cmd+F",
+    "activateHelp" : "Cmd+L",
     "activateSource" : "Cmd+K Cmd+E",
     "activateTerminal" : "Cmd+K Cmd+T",
     "browseAddins" : "",
+    "findInFiles" : "Shift+Cmd+F",
     "fold" : "Cmd+\\|Alt+Cmd+L|Cmd+\\",
     "foldAll" : "Cmd+K Cmd+\\",
     "insertPipeOperator" : "Cmd+.",
