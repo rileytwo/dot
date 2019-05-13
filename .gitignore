@@ -15,3 +15,6 @@ desktop.ini
 
 # vscode
 *.code-workspace
+
+# keypirinha
+.history
