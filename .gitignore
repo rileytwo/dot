@@ -17,4 +17,4 @@ desktop.ini
 *.code-workspace
 
 # keypirinha
-.history
+*.history
