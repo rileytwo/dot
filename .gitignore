@@ -10,8 +10,8 @@ plugged/
 autoload/
 log
 
-# .win/.R
-*.ini
+# .win/.R/desktop.ini
+desktop.ini
 
 # vscode
 *.code-workspace
