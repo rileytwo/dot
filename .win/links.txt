@@ -1,1 +1,5 @@
+# neovim
 new-item -itemtype symboliclink -path C:\Users\RRoach\AppData\Local\nvim -value C:\Users\RRoach\.dot\.config\nvim -force
+
+# keypirinha
+new-item -itemtype symboliclink -path "C:\Program Files\Keypirinha\portable\Profile\User" -value C:\Users\RRoach\.dot\.win\Keypirinha\portable\Profile\User -force
