@@ -24,7 +24,7 @@ function gitstatus {
 Import-Module Get-ChildItemColor
 Import-Module posh-git
 Import-Module oh-my-posh -DisableNameChecking
-Set-Theme robbyrussell
+Set-Theme riley
 
 
 ### handy aliases ###
