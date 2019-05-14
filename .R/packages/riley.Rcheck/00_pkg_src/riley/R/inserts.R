@@ -4,6 +4,6 @@
 #
 
 insert_seplyr_pipe <- function() {
-    rstudioapi::insertText(' %.>% ')
+    rstudioapi::insertText('%.>%')
 }
 

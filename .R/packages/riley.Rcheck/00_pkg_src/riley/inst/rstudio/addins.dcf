@@ -1,4 +1,4 @@
 Name: Insert %.>%
 Description: Inserts %.>% at the cursor position.
-Binding: insert_seplyr_pipe
+Binding: Insert Seplyr pipe (%.>%)
 Interactive: false

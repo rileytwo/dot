@@ -9,4 +9,6 @@ Description: More about what it does (maybe more than one line)
 License: What license is it under?
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 6.1.1
+NeedsCompilation: no
+Packaged: 2019-05-13 20:37:12 UTC; RRoach
+Built: R 3.6.0; ; 2019-05-13 20:37:17 UTC; windows

@@ -298,7 +298,7 @@
 }
 
 .terminal {
-	background-color: #282a36;
+	background-color: inherit;
 	color: #f8f8f2;
 	font-feature-settings: "liga" 0;
 	position: relative;
