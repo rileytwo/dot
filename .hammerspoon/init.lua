@@ -77,8 +77,8 @@ end
 
 function bind_resize_and_restore_keys(key, resize_frame_fn)
 	hs.hotkey.bind(modification_keys, key, function()
-		local win       = hs.window.focusedWindow()
-		local win_frame = win:frame()
+		local win         = hs.window.focusedWindow()
+		local win_frame   = win:frame()
 		local targetFrame = resize_frame_fn()
 		
 		if is_predefined_win_frame_size() and
@@ -100,19 +100,19 @@ bind_resize_and_restore_keys("]", get_fill_right_win_frame)
 
 
 -- 2. --
-
 function is_right()
 	local win          = hs.window.focusedWindow()
 	local win_frame    = win:frame()
 	local win_screen   = win:screen()
 	local screen_frame = win_screen:frame()
 	
-	if (win_frame.x + win_frame.w) == screen_frame.w then
+	if (screen_frame.w - (win_frame.x + win_frame.w)) <= 50 then
 		return true
 	else
 		return false
 	end
 end
+
 
 function is_top()
 	local win          = hs.window.focusedWindow()
@@ -120,13 +120,13 @@ function is_top()
 	local win_screen   = win:screen()
 	local screen_frame = win_screen:frame()
 	
-	--if math.abs(win_frame.y + win_frame.h) >= screen_frame.h then
-	if (win_frame.y + win_frame.h) <= (screen_frame.h / 2) then
+	if win_frame.y <= 100 then
 		return true
 	else
 		return false
 	end
 end
+
 
 hs.hotkey.bind(modification_keys, "H", function()
 	-- increase window width
@@ -149,6 +149,7 @@ hs.hotkey.bind(modification_keys, "H", function()
 	end
 end)
 
+
 hs.hotkey.bind(modification_keys, "L", function()
 	-- decrease window width
 	local win = hs.window.focusedWindow()
@@ -164,7 +165,6 @@ hs.hotkey.bind(modification_keys, "L", function()
 	end
 end)
 
-
 hs.hotkey.bind(modification_keys, "K", function()
 	-- increase window height
 	local win = hs.window.focusedWindow()
@@ -174,12 +174,10 @@ hs.hotkey.bind(modification_keys, "K", function()
 		win_frame.h = win_frame.h + 50
 		win:setFrame(win_frame)
 	else
-		win_frame.y = win_frame.y - 50
 		win_frame.h = win_frame.h + 50
 		win:setFrame(win_frame)
 	end
 end)
-
 
 
 hs.hotkey.bind(modification_keys, "J", function()
@@ -190,10 +188,10 @@ hs.hotkey.bind(modification_keys, "J", function()
 	local screen_frame = win_screen:frame()
 	
 	if is_top() then
+		--win_frame.y = win_frame.y + 50
 		win_frame.h = win_frame.h - 50
 		win:setFrame(win_frame)
 	else
-		win_frame.y = win_frame.y + 50
 		win_frame.h = win_frame.h - 50
 		win:setFrame(win_frame)
 	end
