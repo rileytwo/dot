@@ -11,6 +11,10 @@
 	/* text-shadow: */
 }
 
+.ace_identifier {
+	color: #d3d3d3;
+}
+
 .ace_editor,
 .rstudio-themes-flat.ace_editor_theme .profvis-flamegraph,
 .rstudio-themes-flat.ace_editor_theme,
@@ -22,10 +26,6 @@
 .ace_comment.ace_doc.ace_tag {
 	color: #666;
 	font-style: normal;
-}
-
-.ace_identifier {
-	color: #d3d3d3;
 }
 
 .ace_print-margin {
