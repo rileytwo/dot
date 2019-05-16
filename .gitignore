@@ -24,3 +24,5 @@ desktop.ini
 *.history
 .Rproj.user
 
+# zsh
+.zlogin
