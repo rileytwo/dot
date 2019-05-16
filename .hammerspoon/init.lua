@@ -12,7 +12,7 @@ hs.alert("Configuration loaded.")
 
 hs.console.darkMode(true)
 
-hs.window.animationDuration = 0.01
+hs.window.animationDuration = 0
 previous_frame_sizes = {}
 modification_keys = {"cmd", "ctrl", "alt", "shift"}
 
