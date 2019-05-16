@@ -6,6 +6,7 @@ spoons/
 
 # karabiner
 configstore/
+automatic_backups/
 
 # vim/nvim
 colors/
