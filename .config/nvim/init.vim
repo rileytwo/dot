@@ -91,10 +91,13 @@ syntax enable
 if has('win32') || has('win64')
     let g:os = "Windows"
     colorscheme dracula
-else
+elseif has('Darwin')
     let g:os = "Darwin"
     colorscheme riley
     set termguicolors
+else
+    let g:os = "Linux"
+    colorscheme dracula
 endif
 
 
