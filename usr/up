@@ -17,13 +17,22 @@ print_message() {
 
 raise_error() {
     local error_message="$*"
-    echo "${error_message}" 1>&2;
+    echo "${error_message}" 1>&2
 }
-
 
 arguments="$1"
 
-if [[ -z $argument ]] ; then
-    raise_error "Argument expected"
+if [[ -z $argument ]]; then
+    raise_error "Argument needed"
     display_usage
-    else 
+else
+    case $argument in
+    -h | --help)
+        display_usage
+        ;;
+    -p | --print)
+        print_message
+        ;;
+    *) ;;
+    esac
+fi

@@ -18,26 +18,25 @@ print_message() {
 
 raise_error() {
     local error_message="$*"
-    echo "${error_message}" 1>&2;
+    echo "${error_message}" 1>&2
 }
-
 
 argument="$1"
 
-if [[ -z $argument ]] ; then
+if [[ -z $argument ]]; then
     raise_error "Expected argument to be present"
     display_usage
 else
     case $argument in
-        -h|--help)
-            display_usage
+    -h | --help)
+        display_usage
         ;;
-        -p|--print)
-            print_message
+    -p | --print)
+        print_message
         ;;
-        *)
-            raise_error "Unknown argument: ${argument}"
-            display_usage
+    *)
+        raise_error "Unknown argument: ${argument}"
+        display_usage
         ;;
     esac
 fi
