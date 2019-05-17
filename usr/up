@@ -14,3 +14,16 @@ print_message() {
     echo "Manage packages and installations from your package managers."
     echo
 }
+
+raise_error() {
+    local error_message="$*"
+    echo "${error_message}" 1>&2;
+}
+
+
+arguments="$1"
+
+if [[ -z $argument ]] ; then
+    raise_error "Argument expected"
+    display_usage
+    else 
