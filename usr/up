@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+echo "Time to update!"
+
+display_usage() {
+    echo
+    echo "Usage: $0"
+    echo "-h, --help   Display usage instructions"
+    echo "-p, --print  Print welcome message"
+}
+
+print_message() {
+    echo
+    echo "Manage packages and installations from your package managers."
+    echo
+}
