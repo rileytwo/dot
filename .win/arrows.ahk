@@ -65,7 +65,6 @@ return
 
 
 #IfWinActive ahk_class ENMainFrame
-
 ^l::^q
 
 #n::
