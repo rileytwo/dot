@@ -88,15 +88,12 @@ let g:syntastic_enable_highlighting = 1
 " let g:syntastic_mode_map = {'mode': 'passive'}
 
 syntax enable
-if has('win32') || has('win64')
-    let g:os = "Windows"
-    colorscheme dracula
-elseif has('Darwin')
+if has('mac')
     let g:os = "Darwin"
     colorscheme riley
     set termguicolors
 else
-    let g:os = "Linux"
+    let g:os = "Windows"
     colorscheme dracula
 endif
 
