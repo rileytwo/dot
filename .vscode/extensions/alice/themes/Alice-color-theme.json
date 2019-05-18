@@ -1,15 +1,25 @@
 {
 	"tokenColors": "./Alice.tmTheme",
 	"colors": {
-		"editor.background": "#161616",
+		"editor.background": "#101010",
 		"editorCursor.foreground": "#FF7E81",
-		"editor.foreground": "#ffffffe1",
-		"editorWhitespace.foreground": "#ffffffe5",
+		"editor.foreground": "#ffffff",
 		"editor.lineHighlightBackground": "#1E1E1E",
 		"editor.selectionBackground": "#625F5F",
-		"statusBar.background": "#0474C3",
-		"statusBar.noFolderBackground": "#FF614F",
-		"statusBar.debuggingBackground": "#04C347"
+		"editorWhitespace.foreground": "#ffffff",
+		"editorGroupHeader.tabsBackground": "#101010",
+		"editorGroupHeader.noTabsBackground": "#101010",
+		"tab.activeBackground": "#111111",
+		"tab.activeModifiedBorder": "#00beff",
+		"tab.inactiveBackground": "#101010",
+		"titleBar.activeBackground": "#101010",
+		"sideBar.background": "#101010",
+		"sideBar.border": "#222222",
+		"activityBar.background": "#101010",
+		"statusBar.background": "#101010",
+		"statusBar.noFolderBackground": "#101010",
+		"statusBar.debuggingBackground": "#101010",
+		"statusBar.border": "#222222"
 	},
 	"name": "Alice"
 }
