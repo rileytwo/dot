@@ -2,8 +2,8 @@
 
 
 # colors (bright)
-B="$(echo -e "\e[1m" )"     # bold
-BL="$(echo -e "\e[94m" )"   # blue
+B="$(echo -e "\e[1m")"     # bold
+BL="$(echo -e "\e[94m")"   # blue
 RCB="$(echo -e "\e[0;1m")"  # reset and continue bold
 END="$(echo -e "\e[0m")"    # end (reset)
 
@@ -59,7 +59,7 @@ while getopts "hp" help; do
             ;;
         (*)
             raise_error "Invalid flag: $*"
-            echo "Usage: up [-hp] [-bnc]"
+            echo "Usage: update [-hp] [-bnc]"
     esac
 done
 
@@ -76,7 +76,7 @@ while getopts "bnc" pkm; do
             ;;
         * ) 
             raise_error "Invalid flag: $*" 
-            echo "Usage: up [-h] [-p]"
+            echo "Usage: update [-h] [-p]"
             ;;
     esac
 done
