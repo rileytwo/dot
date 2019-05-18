@@ -24,6 +24,52 @@
                     <string>#515151</string>
                 </dict>
             </dict>
+            <!-- shellscript -->
+            <dict>
+                <key>name</key>
+                <string>Shell Function: Builtin</string>
+                <key>scope</key>
+                <string>support.function.builtin.shell</string>
+                <key>settings</key>
+                <dict>
+                    <key>foreground</key>
+                    <string>#3fb2ff</string>
+                </dict>
+            </dict>
+            <dict>
+                <key>name</key>
+                <string>Shell Definition: Punctuation</string>
+                <key>scope</key>
+                <string>punctuation.definition.string.begin.shell, 
+                punctuation.definition.string.end.shell</string>
+                <key>settings</key>
+                <dict>
+                    <key>foreground</key>
+                    <string>#6961ff</string>
+                </dict>
+            </dict>
+            <dict>
+                <key>name</key>
+                <string>Shell Definition: Variable Punctuation</string>
+                <key>scope</key>
+                <string>punctuation.definition.variable.shell</string>
+                <key>settings</key>
+                <dict>
+                    <key>foreground</key>
+                    <string>#73ff96</string>
+                </dict>
+            </dict>
+            <dict>
+                <key>name</key>
+                <string>Shell Variable: Brackets</string>
+                <key>scope</key>
+                <string>variable.other.bracket.shell</string>
+                <key>settings</key>
+                <dict>
+                    <key>foreground</key>
+                    <string>#73ff96</string>
+                </dict>
+            </dict>
             <dict>
                 <key>name</key>
                 <string>Comment</string>
