@@ -27,6 +27,7 @@ map <C-o> :NERDTreeToggle<CR>
 
 set splitbelow 
 set splitright
+set modifiable
 
 set nu
 set numberwidth=1
