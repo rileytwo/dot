@@ -49,14 +49,22 @@ up_conda() {
     conda update --all
 }
 
-while getopts "hpbnc" pkm; do
-    case ${pkm} in
-        h )
+while getopts "hp" help; do
+    case ${help} in 
+        (h)
             display_usage
             ;;
-        p )
+        (p)
             print_message
             ;;
+        (*)
+            raise_error "Invalid flag: $*"
+            echo "Usage: up [-hp] [-bnc]"
+    esac
+done
+
+while getopts "bnc" pkm; do
+    case ${pkm} in
         b )
             up_brew
             ;;
@@ -67,7 +75,8 @@ while getopts "hpbnc" pkm; do
             up_conda
             ;;
         * ) 
-            raise_error "Usage: up [-h] [-p]"
+            raise_error "Invalid flag: $*" 
+            echo "Usage: up [-h] [-p]"
             ;;
     esac
 done
