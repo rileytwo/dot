@@ -1,18 +1,23 @@
 #!/usr/bin/env bash
 
-echo "Time to update!"
+
+# colors (bright)
+B="$(echo -e "\e[1m" )"     # bold
+BL="$(echo -e "\e[94m" )"   # blue
+RCB="$(echo -e "\e[0;1m")"  # reset and continue bold
+END="$(echo -e "\e[0m")"    # end (reset)
+
 
 display_usage() {
     echo
     echo "Usage: $0"
-    echo "-h, --help   Display usage instructions"
-    echo "-p, --print  Print welcome message"
+    echo "-h,  Display usage instructions"
+    echo "-p,  Print welcome message"
 }
 
 print_message() {
     echo
-    echo "Manage packages and installations from your package managers."
-    echo
+    echo "Manage packages and installations from various package managers."
 }
 
 raise_error() {
@@ -20,19 +25,49 @@ raise_error() {
     echo "${error_message}" 1>&2
 }
 
-arguments="$1"
+up_brew() {
+    echo
+    echo -e "${B}Updating ${BL}Homebrew${RCB} packages"\
+        "[${BL}brew update${RCB}]${END}"
+    echo
+    brew update
+}
 
-if [[ -z $argument ]]; then
-    raise_error "Argument needed"
-    display_usage
-else
-    case $argument in
-    -h | --help)
-        display_usage
-        ;;
-    -p | --print)
-        print_message
-        ;;
-    *) ;;
+up_npm() {
+    echo
+    echo -e "${B}Updating ${BL}npm${RCB} packages"\
+        "[${BL}npm update -g${RCB}]${END}"
+    echo
+    npm update -g
+}
+
+up_conda() {
+    echo
+    echo -e "${B}Updating ${BL}conda${RCB} and conda packages"\
+        "[${BL} conda update --all${RCB}]${END}"
+    echo
+    conda update --all
+}
+
+while getopts "hpbnc" pkm; do
+    case ${pkm} in
+        h )
+            display_usage
+            ;;
+        p )
+            print_message
+            ;;
+        b )
+            up_brew
+            ;;
+        n )
+            up_npm
+            ;;
+        c )
+            up_conda
+            ;;
+        * ) 
+            raise_error "Usage: up [-h] [-p]"
+            ;;
     esac
-fi
+done
