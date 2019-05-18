@@ -9,14 +9,23 @@ set whichwrap+=<,>,h,l,[,]
 set backspace=indent,eol,start
 set mouse=nicr
 
+"" remaps
+" pane navigation:
+"   <C-J> go to pane below
+"   <C-K> go to pane above
+"   <C-L> go to pane right
+"   <C-H> go to pane left
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
-nnoremap <C-I> gg=G``
+
+" Indent file
+nnoremap <C-I> gg=G``          
+" NERDTreeToggle
 map <C-o> :NERDTreeToggle<CR>
 
-set splitbelow
+set splitbelow 
 set splitright
 
 set nu
