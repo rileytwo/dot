@@ -17,7 +17,7 @@ display_usage() {
 
 print_message() {
     echo
-    echo "Manage packages and installations from various package managers."
+    echo "$0: Manage packages and installations from various package managers."
 }
 
 raise_error() {
