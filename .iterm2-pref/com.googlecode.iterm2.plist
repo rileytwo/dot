@@ -50363,13 +50363,15 @@
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>99 293 592 584 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>770 192 650 442 0 0 1440 877 </string>
+	<string>822 242 602 506 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>172 412 650 427 0 0 1440 877 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
 			<key>ASCII Anti Aliased</key>
+			<true/>
+			<key>ASCII Ligatures</key>
 			<true/>
 			<key>Allow Title Setting</key>
 			<true/>
@@ -57964,10 +57966,15 @@
 		<string>Roboto Mono for Powerline</string>
 		<string>Hack</string>
 		<string>Menlo</string>
+		<string>Inconsolata-dz for Powerline</string>
+		<string>Inconsolata-g for Powerline</string>
 	</array>
 	<key>NoSyncBFPRecents</key>
 	<array>
-		<string>Fira Mono for Powerline</string>
+		<string>SF Mono</string>
+		<string>Inconsolata-dz for Powerline</string>
+		<string>Menlo</string>
+		<string>Hack</string>
 	</array>
 	<key>NoSyncCommandHistoryHasEverBeenUsed</key>
 	<true/>
@@ -57987,7 +57994,7 @@
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1440, 900}}</string>
 		<key>topLeft</key>
-		<string>{272, 678}</string>
+		<string>{405, 807}</string>
 	</dict>
 	<key>NoSyncHaveWarnedAboutIncompatibleSoftware</key>
 	<true/>
@@ -57998,7 +58005,7 @@
 	<key>NoSyncLastTipTime</key>
 	<real>578277105.02708006</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>79</integer>
+	<integer>101</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
