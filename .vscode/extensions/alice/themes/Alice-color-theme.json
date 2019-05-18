@@ -1,25 +1,29 @@
 {
 	"tokenColors": "./Alice.tmTheme",
 	"colors": {
-		"editor.background": "#101010",
-		"editorCursor.foreground": "#FF7E81",
-		"editor.foreground": "#ffffff",
+		"editor.background": "#151515",
 		"editor.lineHighlightBackground": "#1E1E1E",
 		"editor.selectionBackground": "#625F5F",
-		"editorWhitespace.foreground": "#ffffff",
-		"editorGroupHeader.tabsBackground": "#101010",
-		"editorGroupHeader.noTabsBackground": "#101010",
-		"tab.activeBackground": "#111111",
+		"activityBar.background": "#151515",
+		"statusBar.background": "#151515",
+		"tab.inactiveBackground": "#151515",
+		"titleBar.activeBackground": "#151515",
+		"sideBar.background": "#151515",
+		"editorGroupHeader.tabsBackground": "#151515",
+		"editorGroupHeader.noTabsBackground": "#151515",
+		"statusBar.noFolderBackground": "#151515",
+		"statusBar.debuggingBackground": "#151515",
+		
 		"tab.activeModifiedBorder": "#00beff",
-		"tab.inactiveBackground": "#101010",
-		"titleBar.activeBackground": "#101010",
-		"sideBar.background": "#101010",
+		"tab.activeBackground": "#111111",
+
+		"editorCursor.foreground": "#FF7E81",
+		"editor.foreground": "#ffffff",
+		"editorWhitespace.foreground": "#ffffff",
 		"sideBar.border": "#222222",
-		"activityBar.background": "#101010",
-		"statusBar.background": "#101010",
-		"statusBar.noFolderBackground": "#101010",
-		"statusBar.debuggingBackground": "#101010",
-		"statusBar.border": "#222222"
+		"statusBar.border": "#222222",
+		
+		
 	},
 	"name": "Alice"
 }
