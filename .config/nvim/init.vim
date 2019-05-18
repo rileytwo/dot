@@ -13,12 +13,17 @@ nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
+nnoremap <C-I> gg=G``
 map <C-o> :NERDTreeToggle<CR>
 
 set splitbelow
 set splitright
+
 set nu
 set numberwidth=1
+set cursorline
+
+set showtabline=2
 set laststatus=2
 set noshowmode
 set ignorecase
@@ -73,9 +78,16 @@ let g:lightline = {
     \ 'component': {
     \   'syntastic': 'SyntasticStatuslineFlag'
     \ },
+    \ 'component_function': {
+    \   'filename': 'LightLineFilename'
     \ }
+    \ }
+function! LightLineFilename()
+    return expand('%')
+endfunction
 
 syntax enable
+
 if has('mac')
     let g:os = "Darwin"
     colorscheme riley
@@ -95,6 +107,4 @@ else
     let g:os = "Windows"
     colorscheme dracula
 endif
-
-
 
