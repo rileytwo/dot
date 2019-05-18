@@ -26,7 +26,7 @@ hi! Delimiter                   ctermfg = 44                                   g
 hi! DiffAdd                     ctermbg = 238  ctermfg = 7   guibg = #45493e   guifg = #c0c5b9
 hi! DiffChange                  ctermbg = 23   ctermfg = 241 guibg = #384851   guifg = #b3c3cc
 hi! DiffDelete                  ctermbg = 52   ctermfg = 167 guibg = #53343b   guifg = #ceb0b6
-hi! DiffText                    ctermbg = 24   ctermfg = 233 guibg = #5b7881   guifg = #0f0f0f gui = NONE
+hi! DiffText                    ctermbg = 24   ctermfg = 233 guibg = #5b7881   guifg = #dddddd gui = NONE
 hi! Directory                   ctermfg = 203                                  guifg = #e95678
 hi! Error                       ctermbg = 233  ctermfg = 203 guibg = NONE      guifg = #eC6a88
 hi! ErrorMsg                    ctermbg = 233  ctermfg = 203 guibg = NONE      guifg = #ec6a88
@@ -51,7 +51,7 @@ hi! PmenuSel                    ctermbg = 240  ctermfg = 255  guibg = #5b6389  g
 hi! PmenuThumb                  ctermbg = 233                 guibg = NONE
 hi! PreProc                     ctermfg = 150                                  guifg = #fab795
 hi! Question                    ctermfg = 150                                  guifg = #09f7a0
-hi! QuickFixLine                ctermbg = 233  ctermfg = 252  guibg = #272c42  guifg = #0f0f0f
+hi! QuickFixLine                ctermbg = 233  ctermfg = 252  guibg = #272c42  guifg = #ffffff
 hi! Search                      ctermbg = 216  ctermfg = 234  guibg = #fff26d  guifg = #222222
 hi! IncSearch                                                 guibg = #d0aa80  guifg = #333333
 hi! SignColumn                  ctermbg = 233  ctermfg = 242  guibg = NONE     guifg = #6c6f93

@@ -2,8 +2,8 @@
 
 
 # colors (bright)
-B="$(echo -e "\e[1m")"     # bold
-BL="$(echo -e "\e[94m")"   # blue
+B="$(echo -e "\e[1m")"      # bold
+BL="$(echo -e "\e[94m")"    # blue
 RCB="$(echo -e "\e[0;1m")"  # reset and continue bold
 END="$(echo -e "\e[0m")"    # end (reset)
 
@@ -12,14 +12,17 @@ display_usage() {
     echo
     echo "Usage: $0"
     echo "-h,  Display usage instructions"
-    echo "-p,  Print welcome message"
-}
-
-print_message() {
+    echo "-b,  Update Homebrew"
+    echo "-n,  Update npm packages"
+    echo "-c,  Update conda packages"
     echo
-    echo "$0: Manage packages and installations from various package managers."
+    echo "Example usage: 
+        update -b   //  brew update
+        update -n   //  npm update -g
+        update -nc  //  npm update -g ; conda update all"
 }
 
+   
 raise_error() {
     local error_message="$*"
     echo "${error_message}" 1>&2
@@ -49,34 +52,25 @@ up_conda() {
     conda update --all
 }
 
-while getopts "hp" help; do
-    case ${help} in 
+
+while getopts "hbnc" opt; do
+   case ${opt} in
+        (b)
+            up_brew ;;
+        (n)
+            up_npm ;;
+        (c)
+            up_conda ;;
         (h)
-            display_usage
-            ;;
-        (p)
-            print_message
-            ;;
-        (*)
-            raise_error "Invalid flag: $*"
-            echo "Usage: update [-hp] [-bnc]"
+            display_usage ;;
+        (*) 
+            raise_error "Invalid flag: $*" 
+            echo "Usage: update [-h]" ;;
     esac
 done
 
-while getopts "bnc" pkm; do
-    case ${pkm} in
-        b )
-            up_brew
-            ;;
-        n )
-            up_npm
-            ;;
-        c )
-            up_conda
-            ;;
-        * ) 
-            raise_error "Invalid flag: $*" 
-            echo "Usage: update [-h] [-p]"
-            ;;
-    esac
-done
+if [ "$#" == 0 ]; then
+    display_usage
+    exit 1
+fi
+ 
