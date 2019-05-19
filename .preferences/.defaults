@@ -1,0 +1,61 @@
+#!/usr/bin/env bash
+
+# ~/.dot/.preferences/.defaults
+
+# close any system preferences panes to prevent from overriding
+# settings this script will change
+osascript -e 'tell application "System Preferences" to quit'
+
+# ask for administrator password
+sudo -v
+
+# keep-alive: update exiting `sudo` time stamp until script is finished
+while true; do sudo -n; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
+
+# disable dashboard
+defaults write com.apple.dashboard mcx-disabled -boolean YES
+
+# select text in quicklook
+defaults write com.apple.finder QLEnabletextSelection -bool TRUE
+
+# show ~/Library
+chflags nohidden ~/Library
+
+# set help viewer windows to non-floating mode
+defaults write com.apple.helpviewer DevMode -bool true
+
+# search current folder by default, not entire drive
+defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
+
+# no .DS_Store on network drives
+defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
+
+# disable warning when changing a file extension
+defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
+
+# disable "Are you sure you want to open this application?" dialogue
+defaults write com.apple.LaunchServices LSQuarantine -bool false
+
+# disable smart dashes, period substitution, smart quotes
+defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
+defaults write NSGlobalDomain NSAutomaticPeriodSubstitutionEnabled -bool false
+defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
+
+# disable press-and-hold in favor of key repeat
+defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
+
+# show hidden files by default
+defaults write com.apple.finder AppleShowAllFiles -bool true
+
+# show all filename extensiosn
+defaults write com.apple.finder AppleShowAllExtensions -bool true
+
+# show path bar in finder
+defaults write com.apple.finder ShowPathbar -bool true
+
+# show full POSIX path as finder window title
+defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
+
+# keep folders on top when sorting by name
+defaults write com.apple.finder _FXSortFoldersFirst -bool true
+
