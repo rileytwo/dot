@@ -66,7 +66,7 @@ Plug 'rakr/vim-two-firewatch'
 Plug 'tpope/vim-fugitive'
 Plug 'jalvesaq/Nvim-R', {'for': 'R'}
 Plug 'vim-syntastic/syntastic'
-Plug 'gabrielelana/vim-markdown'
+"Plug 'gabrielelana/vim-markdown'
 
 call plug#end()
 
