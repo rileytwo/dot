@@ -12,6 +12,9 @@ sudo -v
 # keep-alive: update exiting `sudo` time stamp until script is finished
 while true; do sudo -n; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
+
+
+
 # disable dashboard
 defaults write com.apple.dashboard mcx-disabled -boolean YES
 
@@ -47,7 +50,7 @@ defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 # show hidden files by default
 defaults write com.apple.finder AppleShowAllFiles -bool true
 
-# show all filename extensiosn
+# show all filename extensions
 defaults write com.apple.finder AppleShowAllExtensions -bool true
 
 # show path bar in finder
@@ -59,3 +62,54 @@ defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
 # keep folders on top when sorting by name
 defaults write com.apple.finder _FXSortFoldersFirst -bool true
 
+# for use with QLColorCode and highlight
+defaults write org.n8gray.QLColorCode pathHL /usr/local/bin/highlight
+
+# indicator lights for open applications in dock
+defaults write com.apple.dock show-process-indicators -bool true
+
+# disable crash report
+defaults write com.apple.CrashReporter DialogueType -string "none"
+
+# disable sudden motion sensor (not useful for SSDs)
+sudo pmset -a sms 0
+
+
+# clean up
+for app in "Activity Monitor" "Address Book" "Calendar" "Contacts" "cfprefsd" \
+           "Dock" "Finder" "Mail" "Messages" "Safari" "SystemUIServer" \
+           "Terminal" "Twitter" "iCal";
+       do
+           kill all "${app}" > /dev/null 2>&1
+
+sleep 1
+
+# end setup
+
+
+# reboot?
+function reboot() {
+    read -p "Do you want to reboot your computer now? (y/N)" choice
+    case "$choice" in
+        y | Yes | yes )
+            echo "Yes";
+            exit
+            ;;
+        n | N | No | no)
+            echo "No";
+            exit
+            ;;
+        * )
+            echo "Invalid answer. Enter \"y/yes\" or \"N/no\"" && return
+            ;;
+    esac
+}
+
+# call reboot
+if [[ "Yes" == $(reboot) ]]; then
+    echo "Rebooting."
+    sudo reboot
+    exit 0
+else
+    exit 1
+fi
