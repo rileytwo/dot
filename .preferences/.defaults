@@ -81,7 +81,7 @@ for app in "Activity Monitor" "Address Book" "Calendar" "Contacts" "cfprefsd" \
            "Terminal" "Twitter" "iCal";
        do
            kill all "${app}" > /dev/null 2>&1
-
+       done
 sleep 1
 
 # end setup
