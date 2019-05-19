@@ -11,15 +11,15 @@ END="$(echo -e "\e[0m")"    # end (reset)
 display_usage() {
     echo
     echo "Usage: $0"
-    echo "-h,  Display usage instructions"
-    echo "-b,  Update Homebrew"
-    echo "-n,  Update npm packages"
-    echo "-c,  Update conda packages"
+    echo "   -h,  Display usage instructions"
+    echo "   -b,  Update Homebrew"
+    echo "   -n,  Update npm packages"
+    echo "   -c,  Update conda packages"
     echo
-    echo "Example usage: 
-        update -b   //  brew update
-        update -n   //  npm update -g
-        update -nc  //  npm update -g ; conda update all"
+    echo "Example usage: "
+    echo "   update -b   //  brew update"
+    echo "   update -n   //  npm update -g"
+    echo "   update -nc  //  npm update -g ; conda update all"
 }
 
    
