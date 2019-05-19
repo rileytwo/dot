@@ -62,6 +62,7 @@ Plug 'ntk148v/vim-horizon'
 Plug 'Yggdroot/indentLine'
 Plug 'ap/vim-css-color'
 Plug 'rafi/awesome-vim-colorschemes'
+Plug 'rakr/vim-two-firewatch'
 Plug 'tpope/vim-fugitive'
 Plug 'jalvesaq/Nvim-R', {'for': 'R'}
 Plug 'vim-syntastic/syntastic'
@@ -84,7 +85,7 @@ let g:indent_guides_start_level = 2
 let g:indent_guides_guide_size = 1
 
 let g:lightline = {
-    \ 'colorscheme': 'wombat',
+    \ 'colorscheme': 'twofirewatch',
     \ 'component': {
     \   'syntastic': 'SyntasticStatuslineFlag'
     \ },
