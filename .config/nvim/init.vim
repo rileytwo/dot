@@ -118,11 +118,7 @@ if has('mac')
     " let g:syntastic_mode_map = {'mode': 'passive'}
 else
     let g:os = "Windows"
-    colorscheme dracula
+    set termguicolors
+    colorscheme riley
 endif
 
-
-" filetype associations
-autocmd BufRead,BufNewFile *.defaults set filetype=sh
-autocmd BufRead,BufNewFile *.aliases set filetype=sh
-autocmd BufRead,BufNewFile *.functions set filetype=sh
