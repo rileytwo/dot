@@ -27,4 +27,7 @@ desktop.ini
 # zsh
 .zlogin
 
+# powershell
+*.ps1
+
 hub
