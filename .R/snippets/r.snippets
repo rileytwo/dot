@@ -1,8 +1,16 @@
+# comment inserts
 snippet hcomment
 	#
-	# 
+	# `r Sys.Date(); Sys.time()`
 	# ${1:file.R}
-	#
+	# ${2:purpose}
+
+
+snippet #!
+	#!/usr/bin/env Rscript
+
+snippet !
+	`r eval(parse(text = "$$"))`
 
 snippet lib
 	library(${1:package})
