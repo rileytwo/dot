@@ -41,11 +41,10 @@ Set-Theme riley
 Set-Alias -name 'r' -value 'radian'
 
 Set-Alias -name 'gs' -value 'gitstatus'
-#Set-Alias -name 'gc' -value 'gitcommit'
+Set-Alias -name 'gt' -value 'gitcommit'
 
 Set-Alias -name 'l' -value Get-ChildItemColor
 
-Set-Alias -name 'jp' -value jetpack
 
 $dot                   = 'C:\Users\RRoach\.dot'
 $Documents             = $docs = 'C:\Users\RRoach\Documents\'
