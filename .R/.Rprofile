@@ -43,7 +43,7 @@ if (interactive()) {
         usethis.protocol  = "https",
         # global
         #
-        repos    = 'https://cloud.r-project.org',
+        #repos    = 'https://cloud.r-project.org',
         prompt   = '>>> ',
         continue = ' ',
         # radian prompt
@@ -58,3 +58,5 @@ if (interactive()) {
         radian.browse_prompt      = "\033[0;33mBrowse[{}]>\033[0m "
     )
 }
+
+
