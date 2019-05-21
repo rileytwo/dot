@@ -10,7 +10,7 @@ if (Test-Path($ChocolateyProfile)) {
 
 #region conda initialize
 # !! Contents within this block are managed by 'conda init' !!
-#(& C:\Users\RRoach\AppData\Local\Continuum\anaconda3\Scripts\conda.exe "shell.powershell" "hook") | Out-String | Invoke-Expression
+#(& "C:\Users\RRoach\AppData\Local\Continuum\anaconda3\Scripts\conda.exe" "shell.powershell" "hook") | Out-String | Invoke-Expression
 #endregion
 
 function rmd {
@@ -41,7 +41,7 @@ Set-Theme riley
 Set-Alias -name 'r' -value 'radian'
 
 Set-Alias -name 'gs' -value 'gitstatus'
-Set-Alias -name 'gc' -value 'gitcommit'
+#Set-Alias -name 'gc' -value 'gitcommit'
 
 Set-Alias -name 'l' -value Get-ChildItemColor
 
