@@ -3,6 +3,7 @@ set whichwrap+=<,>,h,l,[,]
 set backspace=indent,eol,start
 set mouse=nicr
 
+"set directory=.,$TEMP
 set number
 set smartcase
 set whichwrap+=<,>,h,l,[,]
@@ -40,6 +41,7 @@ set ignorecase
 set smartcase
 
 filetype on
+
 filetype plugin indent on
 
 set smartindent
