@@ -3,7 +3,7 @@ set whichwrap+=<,>,h,l,[,]
 set backspace=indent,eol,start
 set mouse=nicr
 
-set nu
+set number
 set smartcase
 set whichwrap+=<,>,h,l,[,]
 set backspace=indent,eol,start
@@ -29,7 +29,7 @@ set splitbelow
 set splitright
 set modifiable
 
-set nu
+set number
 set numberwidth=1
 set cursorline
 
@@ -47,7 +47,7 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 set autoindent
-let g:vim_indent_cont = &sw
+let g:vim_indent_cont = &shiftwidth
 
 " plugins using vim-plug
 call plug#begin('~/.vim/plugged')
@@ -65,9 +65,10 @@ Plug 'rafi/awesome-vim-colorschemes'
 Plug 'rakr/vim-two-firewatch'
 Plug 'tpope/vim-fugitive'
 Plug 'jalvesaq/Nvim-R', {'for': 'R'}
-Plug 'vim-syntastic/syntastic'
+Plug 'w0rp/ale'
+Plug 'maximbaz/lightline-ale'
 Plug 'PProvost/vim-ps1'
-"Plug 'gabrielelana/vim-markdown'
+Plug 'tpope/vim-surround'
 
 call plug#end()
 
@@ -86,11 +87,9 @@ let g:indent_guides_enable_on_vim_startup = 1
 let g:indent_guides_start_level = 2
 let g:indent_guides_guide_size = 1
 
+" lightline/ale info at maximbaz/dotfiles/.config/nvim/init.vim
 let g:lightline = {
     \ 'colorscheme': 'twofirewatch',
-    \ 'component': {
-    \   'syntastic': 'SyntasticStatuslineFlag'
-    \ },
     \ 'component_function': {
     \   'filename': 'LightLineFilename'
     \ }
@@ -102,22 +101,21 @@ endfunction
 syntax enable
 
 if has('mac')
-    let g:os = "Darwin"
+    let g:os = 'Darwin'
     colorscheme riley
     set termguicolors
-    let g:syntastic_loc_list_height = 4
-    let g:syntastic_error_symbol = '𐄂'
-    let g:syntastic_style_error_symbol = '𐄂'
-    let g:syntastic_warning_symbol = '!!'
-    let g:syntastic_style_warning_symbol = '!!'
-    let g:syntastic_always_populate_loc_list = 1
-    let g:syntastic_auto_loc_list = 1
-    let g:syntastic_check_on_open = 1
-    let g:syntastic_check_on_wq = 0
-    let g:syntastic_enable_highlighting = 1
-    " let g:syntastic_mode_map = {'mode': 'passive'}
+    "let g:syntastic_loc_list_height = 4
+    "let g:syntastic_error_symbol = '𐄂'
+    "let g:syntastic_style_error_symbol = '𐄂'
+    "let g:syntastic_warning_symbol = '!!'
+    "let g:syntastic_style_warning_symbol = '!!'
+    "let g:syntastic_always_populate_loc_list = 1
+    "let g:syntastic_auto_loc_list = 1
+    "let g:syntastic_check_on_open = 1
+    "let g:syntastic_check_on_wq = 0
+    "let g:syntastic_enable_highlighting = 1
 else
-    let g:os = "Windows"
+    let g:os = 'Windows'
     set termguicolors
     colorscheme riley
 endif
