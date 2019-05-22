@@ -24,52 +24,6 @@
                     <string>#515151</string>
                 </dict>
             </dict>
-            <!-- shellscript -->
-            <dict>
-                <key>name</key>
-                <string>Shell Function: Builtin</string>
-                <key>scope</key>
-                <string>support.function.builtin.shell</string>
-                <key>settings</key>
-                <dict>
-                    <key>foreground</key>
-                    <string>#3fb2ff</string>
-                </dict>
-            </dict>
-            <dict>
-                <key>name</key>
-                <string>Shell Definition: Punctuation</string>
-                <key>scope</key>
-                <string>punctuation.definition.string.begin.shell, 
-                punctuation.definition.string.end.shell</string>
-                <key>settings</key>
-                <dict>
-                    <key>foreground</key>
-                    <string>#6961ff</string>
-                </dict>
-            </dict>
-            <dict>
-                <key>name</key>
-                <string>Shell Definition: Variable Punctuation</string>
-                <key>scope</key>
-                <string>punctuation.definition.variable.shell</string>
-                <key>settings</key>
-                <dict>
-                    <key>foreground</key>
-                    <string>#73ff96</string>
-                </dict>
-            </dict>
-            <dict>
-                <key>name</key>
-                <string>Shell Variable: Brackets</string>
-                <key>scope</key>
-                <string>variable.other.bracket.shell</string>
-                <key>settings</key>
-                <dict>
-                    <key>foreground</key>
-                    <string>#73ff96</string>
-                </dict>
-            </dict>
             <dict>
                 <key>name</key>
                 <string>Comment</string>
@@ -481,9 +435,7 @@
                 <key>name</key>
                 <string>Python: String</string>
                 <key>scope</key>
-                <string>punctuation.definition.string.begin,punctuation.definition.string.end, punctuation.definition.string,  punctuation.definition.generic, support.punctuation.expression,string.quoted.double.single-line.python,constant.other.symbol, entity.other.inherited-class,
-				string
-                </string>
+                <string>support.punctuation.expression, string.quoted.double.single-line.python, constant.other.symbol, entity.other.inherited-class</string>
                 <key>settings</key>
                 <dict>
                     <key>fontStyle</key>
@@ -509,7 +461,8 @@
                 <key>name</key>
                 <string> Python - Meta Function Call</string>
                 <key>scope</key>
-                <string>meta.function-call, meta.function-call.python meta.function-call.arguments.python, meta.function.parameters</string>
+                <string>meta.function-call.python,
+                meta.function-call.arguments.python</string>
                 <key>settings</key>
                 <dict>
                     <key>fontStyle</key>
@@ -709,6 +662,109 @@
                     <string>#66a9ec</string>
                 </dict>
             </dict>
+            <!-- R -->
+            <dict>
+                <key>name</key>
+                <string>R String</string>
+                <key>scope</key>
+                <string>string.quoted.single.r, string.quoted.double.r</string>
+                <key>settings</key>
+                <dict>
+                    <key>foreground</key>
+                    <string>#67fecc</string>
+                </dict>
+            </dict>
+            <dict>
+                <key>name</key>
+                <string>R Function</string>
+                <key>scope</key>
+                <string>variable.function.r</string>
+                <key>settings</key>
+                <dict>
+                    <key>foreground</key>
+                    <string>#3fb2ff</string>
+                </dict>
+            </dict>
+            <!--  -->
+            <dict>
+                <key>name</key>
+                <string>R Variable - Parameter</string>
+                <key>scope</key>
+                <string>variable.parameter.r</string>
+                <key>settings</key>
+                <dict>
+                    <key>foreground</key>
+                    <string>#ff6b8d</string>
+                </dict>
+            </dict>
+            <dict>
+                <key>name</key>
+                <string>R Variable - Other</string>
+                <key>scope</key>
+                <string>variable.other.r</string>
+                <key>settings</key>
+                <dict>
+                    <key>foreground</key>
+                    <string>#bd93f9</string>
+                </dict>
+            </dict>
+            <dict>
+                <key>name</key>
+                <string>R Meta Function Arguments</string>
+                <key>scope</key>
+                <string>meta.function-call.arguments.r, meta.function-call.r, punctuation.definition.parameters.r, source.r</string>
+                <key>settings</key>
+                <dict>
+                    <key>foreground</key>
+                    <string>#E6E6E6</string>
+                </dict>
+            </dict>
+            <!--  -->
+            <dict>
+                <key>name</key>
+                <string>R Keyword Function</string>
+                <key>scope</key>
+                <string>meta.function.r keyword.control.r</string>
+                <key>settings</key>
+                <dict>
+                    <key>foreground</key>
+                    <string>#6961FF</string>
+                </dict>
+            </dict>
+            <dict>
+                <key>name</key>
+                <string>R Punctuation</string>
+                <key>scope</key>
+                <string>punctuation.separator.parameters.r</string>
+                <key>settings</key>
+                <dict>
+                    <key>foreground</key>
+                    <string>#6961FF</string>
+                </dict>
+            </dict>
+            <dict>
+                <key>name</key>
+                <string>R Parentheses</string>
+                <key>scope</key>
+                <string>punctuation.section.parens.begin.r, punctuation.section.parens.end.r</string>
+                <key>settings</key>
+                <dict>
+                    <key>foreground</key>
+                    <string>#E6E6E6</string>
+                </dict>
+            </dict>
+            <dict>
+                <key>name</key>
+                <string>R Brackets</string>
+                <key>scope</key>
+                <string>punctuation.section.brackets.single.begin.r, punctuation.section.brackets.single.end.r, meta.function-call</string>
+                <key>settings</key>
+                <dict>
+                    <key>foreground</key>
+                    <string>#E6E6E6</string>
+                </dict>
+            </dict>
+            <!-- end R  -->
         </array>
         <key>uuid</key>
         <string>233F0694-0B9C-43E3-A44A-ECECF7DF6C73</string>
