@@ -10,6 +10,7 @@
         "editor.formatOnSave": true,
         "files.exclude": {
             "**/.git": false
-        }
+        },
+        "r.linting.doubleQuotes": false
     }
 }
