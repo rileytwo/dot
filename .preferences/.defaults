@@ -99,7 +99,7 @@ for app in "Activity Monitor" "Address Book" "Calendar" "Contacts" "cfprefsd" \
            "Terminal" "Twitter" "iCal";
        do
            kill all "${app}" > /dev/null 2>&1
-       done
+       done 
 sleep 1
 
 # end setup
@@ -126,7 +126,7 @@ function restart() {
 # call restart
 if [[ "Yes" == $(reboot) ]]; then
     echo "Rebooting."
-    sudo sh -c 'restart'
+    sudo sh -c 'reboot'
     exit 0
 else
     exit 1
