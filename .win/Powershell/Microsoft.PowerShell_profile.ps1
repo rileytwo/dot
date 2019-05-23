@@ -3,10 +3,10 @@ Set-Location "C:\Users\RRoach\.dot"
 winfetch
 
 # Chocolatey profile
-$ChocolateyProfile = "$env:ChocolateyInstall\helpers\chocolateyProfile.psm1"
-if (Test-Path($ChocolateyProfile)) {
-    Import-Module "$ChocolateyProfile"
-}
+#$ChocolateyProfile = "$env:ChocolateyInstall\helpers\chocolateyProfile.psm1"
+#if (Test-Path($ChocolateyProfile)) {
+#    Import-Module "$ChocolateyProfile"
+#}
 
 #region conda initialize
 # !! Contents within this block are managed by 'conda init' !!
