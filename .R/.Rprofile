@@ -1,6 +1,6 @@
 #invisible(utils::memory.limit(size = 32768))
 
-if (interactive()) {
+#if (interactive()) {
     # local({
     #     start_up <- function () {
     #         # set default packages
@@ -53,7 +53,4 @@ if (interactive()) {
     #     radian.prompt             = "\033[0;34m>>>\033[0m ",
     #     radian.shell_prompt       = "\033[0;31m#!>\033[0m ",
     #     radian.browse_prompt      = "\033[0;33mBrowse[{}]>\033[0m "
-    # )
-}
-
-
+    # )}
