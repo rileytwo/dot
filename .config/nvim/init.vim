@@ -4,6 +4,7 @@ set backspace=indent,eol,start
 set mouse=nicr
 
 "set directory=.,$TEMP
+set encoding=UTF-8
 set number
 set smartcase
 set whichwrap+=<,>,h,l,[,]
@@ -71,6 +72,7 @@ Plug 'w0rp/ale'
 Plug 'maximbaz/lightline-ale'
 Plug 'PProvost/vim-ps1'
 Plug 'tpope/vim-surround'
+Plug 'ryanoasis/vim-devicons'
 
 call plug#end()
 
