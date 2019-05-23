@@ -44,8 +44,8 @@ if (interactive()) {
         # global
         #
         #repos    = 'https://cloud.r-project.org',
-        prompt   = '>>> ',
-        continue = ' ',
+        prompt   = ">>> ",
+        continue = " ",
         # radian prompt
         #
         radian.color_scheme       = "native",
