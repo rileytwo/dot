@@ -163,9 +163,26 @@ module.exports = {
     // 'window:devtools': 'cmd+alt+o',
     "tab:new": "Ctrl+Shift+T",
     "window:new": "Ctrl+Shift+N",
-    "tab:close": "Ctrl+Shift+W",
+    "window:hamburgerMenu": "",
+    "tab:close": "Alt+Shift+W",
     "editor:undo": "Ctrl+Z",
     "editor:redo": "Ctrl+R",
-    "editor:selectAll": "Ctrl+A"
+    "editor:selectAll": "Ctrl+A",
+    'editor:movePreviousWord': 'Alt+Shift+A',
+    'editor:moveNextWord': 'Alt+Shift+D',      
+    "editor:deleteNextWord": "",
+    "editor:deletePreviousWord": "Ctrl+Backspace"
   },
 };
+
+
+
+
+
+
+
+
+
+
+
+
