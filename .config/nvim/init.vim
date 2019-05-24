@@ -84,7 +84,8 @@ set guicursor=
 
 
 let NERDTreeShowHidden = 1
-
+let NERDTreeMinimalUI = 1
+let NERDTreeDirArrows = 1
 let g:indentLine_setColors = 0
 let g:indentLine_char = '│'
 let g:indent_guides_enable_on_vim_startup = 1
