@@ -1,15 +1,11 @@
 syntax on
 set whichwrap+=<,>,h,l,[,]
 set backspace=indent,eol,start
-set mouse=nicr
-
-"set directory=.,$TEMP
+set mouse=a
 set encoding=UTF-8
 set number
 set smartcase
-set whichwrap+=<,>,h,l,[,]
-set backspace=indent,eol,start
-set mouse=nicr
+
 
 "" remaps
 " pane navigation:
