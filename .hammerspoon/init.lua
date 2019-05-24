@@ -2,10 +2,16 @@
 -- Modification Keys: Cmd + Ctrl + Alt + Shift (⌘ + ⌃ + ⌥ + ⇧)
 -- Karabiner-elements is used to bind Caps Lock to Modification Keys
 -- Caps Lock (⇪) -> Cmd + Ctrl + Alt + Shift (⌘ + ⌃ + ⌥ + ⇧)
--- 1. Currently support window layout management:
+-- 1. Window Layout Management:
 --   -  ⌘ + ⌃ + ⌥ + ⇧ + [, Toggle current window to left/restore;
 --   -  ⌘ + ⌃ + ⌥ + ⇧ + ], Toggle current window to right/restore;
---   -  ⌘ + ⌃ + ⌥ + ⇧ + M, Toggle current window to screenimize/restore;
+--   -  ⌘ + ⌃ + ⌥ + ⇧ + F, Toggle current window to screenimize/restore;
+--
+-- 2. Window Resizing:
+--   -  ⌘ + ⌃ + ⌥ + ⇧ + H, Increase window width;
+--   -  ⌘ + ⌃ + ⌥ + ⇧ + K, Increase window height;
+--   -  ⌘ + ⌃ + ⌥ + ⇧ + L, Decrease window width;
+--   -  ⌘ + ⌃ + ⌥ + ⇧ + J, Decrease window height;
 
 -- 1. --
 hs.alert("Configuration loaded.")
@@ -94,7 +100,7 @@ function bind_resize_and_restore_keys(key, resize_frame_fn)
 	end)
 end
 
-bind_resize_and_restore_keys("M", get_screen_win_frame)
+bind_resize_and_restore_keys("F", get_screen_win_frame)
 bind_resize_and_restore_keys("[", get_fill_left_win_frame)
 bind_resize_and_restore_keys("]", get_fill_right_win_frame)
 
