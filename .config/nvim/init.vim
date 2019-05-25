@@ -1,8 +1,9 @@
+set encoding=UTF-8
+scriptencoding utf-8
 syntax on
 set whichwrap+=<,>,h,l,[,]
 set backspace=indent,eol,start
 set mouse=a
-set encoding=UTF-8
 set number
 set smartcase
 
@@ -69,6 +70,8 @@ Plug 'maximbaz/lightline-ale'
 Plug 'PProvost/vim-ps1'
 Plug 'tpope/vim-surround'
 Plug 'ryanoasis/vim-devicons'
+Plug 'godlygeek/tabular'
+Plug 'gabrielelana/vim-markdown'
 
 call plug#end()
 
