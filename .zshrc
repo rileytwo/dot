@@ -1,5 +1,5 @@
 zmodload zsh/zprof
-HOMEBREW_NO_AUTOUPDATE=1
+HOMEBREW_NO_AUTO_UPDATE=1
 # archey -o -p
 neofetch
 eval "$(thefuck --alias)"
@@ -39,6 +39,10 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 
 export CLICOLOR=1
 export LS_COLORS='di=1;4;34:fi=1;32:ln=1;35:pi=0:bd=0:cd=0:mi=1;4;31:ex=1;31'
+
+
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
 
 [[ -f ~/.functions ]] && . ~/.functions
 [[ -f ~/.aliases ]] && . ~/.aliases
