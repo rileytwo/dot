@@ -50367,7 +50367,7 @@
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>99 293 592 584 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>155 93 650 442 0 0 1440 877 </string>
+	<string>720 0 714 877 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>172 412 650 427 0 0 1440 877 </string>
 	<key>New Bookmarks</key>
@@ -57999,7 +57999,7 @@
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1440, 900}}</string>
 		<key>topLeft</key>
-		<string>{0, 877}</string>
+		<string>{446, 747}</string>
 	</dict>
 	<key>NoSyncHaveWarnedAboutIncompatibleSoftware</key>
 	<true/>
@@ -58010,7 +58010,7 @@
 	<key>NoSyncLastTipTime</key>
 	<real>578277105.02708006</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>141</integer>
+	<integer>142</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -59077,7 +59077,7 @@
 												<real>1</real>
 											</dict>
 											<key>Cursor Type</key>
-											<integer>0</integer>
+											<integer>1</integer>
 											<key>Custom Command</key>
 											<string>No</string>
 											<key>Custom Directory</key>
@@ -59102,7 +59102,7 @@
 												<real>0.73333334922790527</real>
 											</dict>
 											<key>Guid</key>
-											<string>155DA69D-3040-4A12-97C5-A42B3D30EB26</string>
+											<string>86F99691-CD38-4784-8B60-B99C38CAAAE9</string>
 											<key>Has Hotkey</key>
 											<false/>
 											<key>Horizontal Spacing</key>
@@ -59432,6 +59432,8 @@
 											<false/>
 											<key>Option Key Sends</key>
 											<integer>0</integer>
+											<key>Original Guid</key>
+											<string>155DA69D-3040-4A12-97C5-A42B3D30EB26</string>
 											<key>Place Prompt at First Column</key>
 											<true/>
 											<key>Prevent Opening in a Tab</key>
@@ -59767,9 +59769,13 @@
 										<key>Columns</key>
 										<integer>80</integer>
 										<key>Commands</key>
-										<array/>
+										<array>
+											<string>nvim .config/nvim/init.vim</string>
+										</array>
 										<key>Directories</key>
 										<array>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
 										</array>
@@ -59780,6 +59786,18 @@
 										</dict>
 										<key>Hosts</key>
 										<array>
+											<dict>
+												<key>Host name</key>
+												<string>Rileys-MBP</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>Rileys-MBP</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
 											<dict>
 												<key>Host name</key>
 												<string>Rileys-MBP</string>
@@ -59804,10 +59822,8 @@
 										</dict>
 										<key>Program</key>
 										<dict>
-											<key>Command</key>
-											<string>login -fp "riley"</string>
 											<key>Type</key>
-											<string>Command</string>
+											<string>Shell Launcher</string>
 										</dict>
 										<key>Rows</key>
 										<integer>25</integer>
@@ -59878,7 +59894,7 @@
 				<key>X Origin</key>
 				<real>789</real>
 				<key>Y Origin</key>
-				<real>435</real>
+				<real>390</real>
 			</dict>
 		</array>
 	</dict>
