@@ -12,7 +12,7 @@ module.exports = {
     termSize: '80px 30px',
 
     // default font size in pixels for all tabs
-    fontSize: 13,
+    fontSize: 14,
 
     // font family with optional fallbacks
     fontFamily: '"Roboto Mono for Powerline", "Menlo", "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
@@ -30,7 +30,7 @@ module.exports = {
     letterSpacing: 0,
 
     // terminal cursor background color and opacity (hex, rgb, hsl, hsv, hwb or cmyk)
-    cursorColor: 'rgba(248,28,229,0.8)',
+    cursorColor: '#dd6063',
 
     // terminal text color under BLOCK cursor
     cursorAccentColor: '#000',
@@ -46,13 +46,13 @@ module.exports = {
 
     // terminal background color
     // opacity is only supported on macOS
-    backgroundColor: '#000',
+    backgroundColor: '#101010',
 
     // terminal selection color
-    selectionColor: 'rgba(248,28,229,0.3)',
+    selectionColor: 'rgba(100,100,100,0.1)',
 
     // border color (window, tabs)
-    borderColor: '#333',
+    borderColor: '#101010',
 
     // custom CSS to embed in the main window
     css: '',
@@ -118,13 +118,13 @@ module.exports = {
     env: {},
 
     // set to `false` for no bell
-    bell: 'SOUND',
+    bell: false,
 
     // if `true` (without backticks and without quotes), selected text will automatically be copied to the clipboard
     copyOnSelect: false,
 
     // if `true` (without backticks and without quotes), hyper will be set as the default protocol client for SSH
-    defaultSSHApp: true,
+    defaultSSHApp: false,
 
     // if `true` (without backticks and without quotes), on right click selected text will be copied or pasted if no
     // selection is present (`true` by default on Windows and disables the context menu feature)
@@ -151,7 +151,7 @@ module.exports = {
   //   `hyperpower`
   //   `@company/project`
   //   `project#1.0.1`
-  plugins: ["hyper-hover-header"],
+  plugins: [],
 
   // in development, you can create a directory under
   // `~/.hyper_plugins/local/` and include it here
@@ -162,14 +162,18 @@ module.exports = {
     // Example
     // 'window:devtools': 'cmd+alt+o',
     "tab:new": "Ctrl+Shift+T",
+    "tab:new": "Cmd+T",
     "window:new": "Ctrl+Shift+N",
+    "window:new": "Cmd+N",
     "window:hamburgerMenu": "",
     "tab:close": "Alt+Shift+W",
     "editor:undo": "Ctrl+Z",
     "editor:redo": "Ctrl+R",
     "editor:selectAll": "Ctrl+A",
     'editor:movePreviousWord': 'Alt+Shift+A',
-    'editor:moveNextWord': 'Alt+Shift+D',      
+    'editor:movePreviousWord': 'Ctrl+Shift+A',
+    'editor:moveNextWord': 'Alt+Shift+D',
+    'editor:moveNextWord': 'Ctrl+Shift+D',      
     "editor:deleteNextWord": "",
     "editor:deletePreviousWord": "Ctrl+Backspace"
   },
