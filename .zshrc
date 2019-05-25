@@ -1,5 +1,5 @@
 zmodload zsh/zprof
-
+HOMEBREW_NO_AUTOUPDATE=1
 # archey -o -p
 neofetch
 eval "$(thefuck --alias)"
