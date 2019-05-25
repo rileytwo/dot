@@ -6,7 +6,9 @@ set backspace=indent,eol,start
 set mouse=a
 set number
 set smartcase
-
+set showcmd
+set gdefault
+set magic
 
 "" remaps
 " pane navigation:
@@ -54,7 +56,6 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'itchyny/lightline.vim'
 Plug 'jiangmiao/auto-pairs'
-Plug 'terryma/vim-multiple-cursors'
 Plug 'tpope/vim-eunuch'
 Plug 'scrooloose/nerdtree', {'on': 'NERDTreeToggle'}
 Plug 'aonemd/kuroi.vim'
@@ -71,7 +72,8 @@ Plug 'PProvost/vim-ps1'
 Plug 'tpope/vim-surround'
 Plug 'ryanoasis/vim-devicons'
 Plug 'godlygeek/tabular'
-Plug 'gabrielelana/vim-markdown'
+Plug 'tpope/vim-markdown'
+Plug 'dkarter/bullets.vim'
 
 call plug#end()
 
@@ -85,11 +87,27 @@ set guicursor=
 let NERDTreeShowHidden = 1
 let NERDTreeMinimalUI = 1
 let NERDTreeDirArrows = 1
+
 let g:indentLine_setColors = 0
 let g:indentLine_char = '│'
 let g:indent_guides_enable_on_vim_startup = 1
 let g:indent_guides_start_level = 2
 let g:indent_guides_guide_size = 1
+
+let g:markdown_fenced_languages = [
+    \ 'html',
+    \ 'python',
+    \ 'bash=sh',
+    \ 'zsh=sh',
+    \ 'r'
+    \ ]
+
+let g:bullets_enabled_file_types = [
+    \ 'markdown',
+    \ 'text',
+    \ 'gitcommit',
+    \ 'scratch'
+    \ ]
 
 " lightline/ale info at maximbaz/dotfiles/.config/nvim/init.vim
 let g:lightline = {
@@ -108,16 +126,6 @@ if has('mac')
     let g:os = 'Darwin'
     colorscheme riley
     set termguicolors
-    "let g:syntastic_loc_list_height = 4
-    "let g:syntastic_error_symbol = '𐄂'
-    "let g:syntastic_style_error_symbol = '𐄂'
-    "let g:syntastic_warning_symbol = '!!'
-    "let g:syntastic_style_warning_symbol = '!!'
-    "let g:syntastic_always_populate_loc_list = 1
-    "let g:syntastic_auto_loc_list = 1
-    "let g:syntastic_check_on_open = 1
-    "let g:syntastic_check_on_wq = 0
-    "let g:syntastic_enable_highlighting = 1
 else
     let g:os = 'Windows'
     set termguicolors
