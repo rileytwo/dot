@@ -7,7 +7,12 @@ eval $(thefuck --alias)
 # <:::: oh my zsh ::::>
 export ZSH="/Users/riley/.oh-my-zsh"
 
-plugins=(zsh-syntax-highlighting zsh-autosuggestions git)
+plugins=(
+    zsh-syntax-highlighting
+    zsh-autosuggestions
+    git
+    zsh-history-substring-search
+)
 
 source $ZSH/oh-my-zsh.sh
 # <:::: end oh my zsh ::::>
@@ -38,4 +43,7 @@ export LS_COLORS='di=1;4;34:fi=1;32:ln=1;35:pi=0:bd=0:cd=0:mi=1;4;31:ex=1;31'
 [[ -f ~/.functions ]] && . ~/.functions
 [[ -f ~/.aliases ]] && . ~/.aliases
 [[ -d ~/usr ]] && export PATH=~/usr:$PATH
+
+#export ZPLUG_HOME=/usr/local/opt/zplug
+#source $ZPLUG_HOME/init.zsh
 
