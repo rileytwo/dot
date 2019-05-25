@@ -27,7 +27,6 @@ else
 fi
 
 
-
 # Enabling Safari developer options...
 defaults write com.apple.Safari IncludeDevelopMenu -bool true && \
 defaults write com.apple.Safari WebKitDeveloperExtrasEnabledPreferenceKey -bool true && \
