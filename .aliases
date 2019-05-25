@@ -17,3 +17,4 @@ alias path='echo -e ${PATH//:/\\n}'
 #export PATH="$PATH:$HOME/.rvm/bin"
 alias lc='colorls'
 alias gs='git status'
+alias hsg='history | grep'
