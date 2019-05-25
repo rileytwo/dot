@@ -50146,7 +50146,7 @@
 	<key>DimInactiveSplitPanes</key>
 	<false/>
 	<key>DimOnlyText</key>
-	<false/>
+	<true/>
 	<key>DisableAdaptiveFrameRateInInteractiveApps</key>
 	<true/>
 	<key>DisableFullscreenTransparency</key>
@@ -50282,7 +50282,7 @@
 	<key>HideMenuBarInFullscreen</key>
 	<false/>
 	<key>HideScrollbar</key>
-	<false/>
+	<true/>
 	<key>HideTab</key>
 	<true/>
 	<key>HideTabCloseButton</key>
@@ -50365,7 +50365,7 @@
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>99 293 592 584 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>661 429 650 442 0 0 1440 877 </string>
+	<string>792 0 642 877 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>172 412 650 427 0 0 1440 877 </string>
 	<key>New Bookmarks</key>
@@ -58008,7 +58008,7 @@
 	<key>NoSyncLastTipTime</key>
 	<real>578277105.02708006</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>118</integer>
+	<integer>125</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -58698,7 +58698,7 @@
 	<key>SoundForEsc</key>
 	<false/>
 	<key>SplitPaneDimmingAmount</key>
-	<real>0.10000000000000001</real>
+	<real>0.26496287677304964</real>
 	<key>StatusBarPosition</key>
 	<integer>0</integer>
 	<key>StretchTabsToFillBar</key>
