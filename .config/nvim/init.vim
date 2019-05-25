@@ -74,6 +74,7 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'godlygeek/tabular'
 Plug 'tpope/vim-markdown'
 Plug 'dkarter/bullets.vim'
+Plug 'Valloric/YouCompleteMe'
 
 call plug#end()
 
