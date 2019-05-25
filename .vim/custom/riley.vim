@@ -45,10 +45,10 @@ hi!                MatchParen ctermbg = 237  ctermfg = 255  guibg = #3e445e guif
 hi!                   MoreMsg                ctermfg = 48                   guifg = #09f7a0
 hi!                    Normal ctermbg = 233  ctermfg = 252  guibg = NONE    guifg = #d5d8da
 hi!                  Operator                ctermfg = 37                   guifg = #c4b7ff
-hi!                     Pmenu ctermbg = NONE ctermfg = NONE guibg = NONE    guifg = #d5d8da
-hi!                 PmenuSbar ctermbg = 236                 guibg = #3d425b 
-hi!                  PmenuSel ctermbg = 240  ctermfg = 255  guibg = #5b6389 guifg = #eff0f4
-hi!                PmenuThumb ctermbg = 233                 guibg = NONE1
+hi!                     Pmenu ctermbg = NONE ctermfg = NONE guibg = #222222 guifg = #d5d8da
+hi!                 PmenuSbar ctermbg = 236                 guibg = #333333 
+hi!                  PmenuSel ctermbg = 240  ctermfg = 255  guibg = #007bb8 guifg = #eff0f4
+hi!                PmenuThumb ctermbg = 233                 guibg = NONE
 hi!                   PreProc                ctermfg = 150                  guifg = #fab795
 hi!                  Question                ctermfg = 150                  guifg = #09f7a0
 hi!              QuickFixLine ctermbg = 233  ctermfg = 252  guibg = #272c42 guifg = #ffffff
@@ -75,7 +75,7 @@ hi!                      Todo ctermbg = 59   ctermfg = 48   guibg = #45493e guif
 hi!                      Type                ctermfg = 209                  guifg = #fab795 gui = NONE
 hi!                Underlined                ctermfg = 37                   guifg = #c4b7ff gui = underline
 hi!                 VertSplit ctermbg = 233  ctermfg = 233  guibg = #0f1117 guifg = #0f1117 gui = bold
-hi!                    Visual ctermbg = 236                 guibg = #272c42 
+hi!                    Visual ctermbg = 236                 guibg = #2e435c 
 hi!                  WildMenu ctermbg = 255  ctermfg = 234  guibg = #d4d5db guifg = #17171b
 hi!                 diffAdded                ctermfg = 48                   guifg = #09f7a0
 hi!               diffRemoved                ctermfg = 203                  guifg = #eC6a88
