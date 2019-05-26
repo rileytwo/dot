@@ -75,6 +75,7 @@ Plug 'godlygeek/tabular'
 Plug 'tpope/vim-markdown'
 Plug 'dkarter/bullets.vim'
 Plug 'Valloric/YouCompleteMe'
+Plug '/usr/local/opt/fzf'
 
 call plug#end()
 
