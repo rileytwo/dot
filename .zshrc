@@ -1,5 +1,12 @@
 zmodload zsh/zprof
-HOMEBREW_NO_AUTO_UPDATE=1
+
+autoload -Uz compinit
+for dump in ~/.zcompdump(N.mh+24); do
+  compinit
+done
+compinit -C
+
+export HOMEBREW_NO_AUTO_UPDATE=1
 # archey -o -p
 neofetch
 eval "$(thefuck --alias)"
@@ -49,3 +56,5 @@ eval "$(rbenv init -)"
 [[ -d ~/usr ]] && export PATH=~/usr:$PATH
 
 
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
