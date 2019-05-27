@@ -125,7 +125,7 @@ let g:lightline = {
     \ },
     \ 'component_function': {
     \   'filename': 'LightLineFilename',
-    \   'gitbranch': 'gitbranch#name'
+    \   'gitbranch': 'fugitive#head'
     \ }
     \ }
 
