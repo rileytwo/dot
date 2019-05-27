@@ -64,6 +64,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'itchyny/lightline.vim'
 Plug 'w0rp/ale'
 Plug 'maximbaz/lightline-ale'
+Plug 'itchyny/vim-gitbranch'
 Plug 'Valloric/YouCompleteMe'
 Plug 'Yggdroot/indentLine'
 
@@ -83,6 +84,7 @@ Plug 'ntk148v/vim-horizon'
 Plug 'rafi/awesome-vim-colorschemes'
 Plug 'rakr/vim-two-firewatch'
 Plug 'aonemd/kuroi.vim'
+
 
 call plug#end()
 
@@ -116,10 +118,17 @@ let g:bullets_enabled_file_types = [
 " lightline/ale info at maximbaz/dotfiles/.config/nvim/init.vim
 let g:lightline = {
     \ 'colorscheme': 'twofirewatch',
+    \ 'active': {
+    \   'left': [ [ 'mode', 'paste' ],
+    \             [ 'gitbranch', 'readonly', 'filename', 'modified' ],
+    \             [ 'LightLineFilename' ] ]
+    \ },
     \ 'component_function': {
-    \   'filename': 'LightLineFilename'
+    \   'filename': 'LightLineFilename',
+    \   'gitbranch': 'gitbranch#name'
     \ }
     \ }
+
 function! LightLineFilename()
     return expand('%')
 endfunction
