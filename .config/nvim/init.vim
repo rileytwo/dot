@@ -56,6 +56,7 @@ call plug#begin('~/.vim/plugged')
 
 if has('mac')
     Plug '/usr/local/opt/fzf'
+    Plug 'Valloric/YouCompleteMe'
 endif
 Plug 'tpope/vim-markdown'
 Plug 'tpope/vim-eunuch'
@@ -66,7 +67,6 @@ Plug 'itchyny/lightline.vim'
 Plug 'w0rp/ale'
 Plug 'maximbaz/lightline-ale'
 Plug 'itchyny/vim-gitbranch'
-Plug 'Valloric/YouCompleteMe'
 Plug 'Yggdroot/indentLine'
 
 Plug 'jalvesaq/Nvim-R', {'for': 'R'}
