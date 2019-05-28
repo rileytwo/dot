@@ -54,8 +54,9 @@ map <C-o> :NERDTreeToggle<CR>
 "" plugins using vim-plug
 call plug#begin('~/.vim/plugged')
 
-Plug '/usr/local/opt/fzf'
-
+if has('mac')
+    Plug '/usr/local/opt/fzf'
+endif
 Plug 'tpope/vim-markdown'
 Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-surround'
