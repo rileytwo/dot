@@ -54,7 +54,7 @@ eval "$(rbenv init -)"
 [[ -f ~/.functions ]] && . ~/.functions
 [[ -f ~/.aliases ]] && . ~/.aliases
 [[ -d ~/usr ]] && export PATH=~/usr:$PATH
-
-
-
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+setopt extended_glob
+
