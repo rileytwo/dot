@@ -135,7 +135,7 @@
 }
 
 .ace_string {
-	color: #94d4ba;
+	color: #67fecc;
 }
 
 .ace_heading {
