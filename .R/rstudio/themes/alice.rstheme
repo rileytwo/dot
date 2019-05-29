@@ -155,7 +155,7 @@
 }
 
 .ace_numeric.ace_constant {
-	color: #a1ffd3;
+	color: #c59bfc;
 	/* text-shadow: */
 }
 
