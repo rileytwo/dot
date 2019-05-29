@@ -12,7 +12,7 @@ module.exports = {
     termSize: '80px 30px',
 
     // default font size in pixels for all tabs
-    fontSize: 14,
+    fontSize: 12,
 
     // font family with optional fallbacks
     fontFamily: '"Roboto Mono for Powerline", "Menlo", "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
@@ -108,11 +108,11 @@ module.exports = {
     //
     // PowerShell on Windows
     // - Example: `C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe`
-    //shell: 'C:\\Program Files\\PowerShell\\6\\pwsh.exe',
+    shell: 'C:\\Program Files\\PowerShell\\6\\pwsh.exe',
 
     // for setting shell arguments (i.e. for using interactive shellArgs: `['-i']`)
     // by default `['--login']` will be used
-    //shellArgs: ['-nologo'],
+    shellArgs: ['-nologo'],
 
     // for environment variables
     env: {},
