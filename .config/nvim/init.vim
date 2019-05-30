@@ -51,7 +51,15 @@ nnoremap <C-I> gg=G``
 "" NERDTreeToggle
 map <C-o> :NERDTreeToggle<CR>
 
-"" plugins using vim-plug
+
+"" Radian
+let R_app = 'radian'
+let R_cmd = 'R'
+let R_hl_term = 0
+let R_args = []  " if you had set any
+let R_bracketed_paste = 1
+
+" plugins using vim-plug
 call plug#begin('~/.vim/plugged')
 
 if has('mac')
