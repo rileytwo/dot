@@ -11,7 +11,7 @@
     'Show_Computer'
 #    'Show_Uptime'
     'Show_CPU'
-    'Show_GPU'
+#    'Show_GPU'
     'Show_Memory'
     'Show_Pkgs'    
 #    'Show_Terminal'
