@@ -61,7 +61,6 @@ let R_bracketed_paste = 1
 
 " plugins using vim-plug
 call plug#begin('~/.vim/plugged')
-
 if has('mac')
     Plug '/usr/local/opt/fzf'
     Plug 'Valloric/YouCompleteMe'
@@ -125,18 +124,30 @@ let g:bullets_enabled_file_types = [
     \ ]
 
 " lightline/ale info at maximbaz/dotfiles/.config/nvim/init.vim
-let g:lightline = {
-    \ 'colorscheme': 'twofirewatch',
-    \ 'active': {
-    \   'left': [ [ 'mode', 'paste' ],
-    \             [ 'gitbranch', 'readonly', 'filename', 'modified' ],
-    \             [ 'LightLineFilename' ] ]
-    \ },
-    \ 'component_function': {
-    \   'filename': 'LightLineFilename',
-    \   'gitbranch': 'fugitive#head'
-    \ }
-    \ }
+
+if has('mac')
+    let g:lightline = {
+        \ 'colorscheme': 'twofirewatch',
+        \ 'active': {
+        \   'left': [ [ 'mode', 'paste' ],
+        \             [ 'gitbranch', 'readonly', 'filename', 'modified' ],
+        \             [ 'LightLineFilename' ] ]
+        \ },
+        \ 'component_function': {
+        \   'filename': 'LightLineFilename',
+        \   'gitbranch': 'fugitive#head'
+        \ }
+        \ }
+else
+    let g:lightline = {
+        \ 'colorscheme': 'twofirewatch',
+        \ 'active': {
+        \   'left': [ [ 'mode', 'paste' ],
+        \             [ 'gitbranch', 'readonly', 'filename', 'modified' ],
+        \             [ 'LightLineFilename' ] ]
+        \ }
+        \ }
+endif
 
 function! LightLineFilename()
     return expand('%')
