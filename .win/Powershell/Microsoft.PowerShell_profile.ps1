@@ -18,12 +18,20 @@ function rmd {
     Write-Host "Get-ChildItem $dir -Include * -Recurse | Remove-Item"
 }
 
-function gitstatus {
+function git_status {
     git status
 }
 
-function gitcommit {
+function git_status_b {
+    git status -sb
+}
+
+function git_commit {
     git commit
+}
+
+function git_remote_update {
+    git remote update
 }
 
 
@@ -38,10 +46,15 @@ Set-Theme riley
 
 #Set-Alias -name 'trash' -value 'empty-recycle-bin'
 
-Set-Alias -name 'r' -value 'radian'
+Set-Alias -name 'ra' -value 'radian'
+Set-Alias -name 'r' -value 'Rscript'
+Set-Alias -name 'ttx' -value '~/.dot/usr/ttx.R'
 
-Set-Alias -name 'gs' -value 'gitstatus'
-Set-Alias -name 'gt' -value 'gitcommit'
+
+Set-Alias -name 'gs' -value 'git_status'
+Set-Alias -name 'gt' -value 'git_commit'
+Set-Alias -name 'gsb' -value 'git_status_b'
+Set-Alias -name 'grup' -value 'git_remote_update'
 
 Set-Alias -name 'l' -value Get-ChildItemColor
 
