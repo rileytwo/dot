@@ -45,6 +45,7 @@ Set-Alias -name 'gt' -value 'gitcommit'
 
 Set-Alias -name 'l' -value Get-ChildItemColor
 
+Set-Alias -name 'which' -value Get-Command
 
 $dot                   = 'C:\Users\RRoach\.dot'
 $Documents             = $docs = 'C:\Users\RRoach\Documents\'
