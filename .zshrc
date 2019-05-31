@@ -1,12 +1,14 @@
 zmodload zsh/zprof
 
+export TERM=xterm-256color
+export HOMEBREW_NO_AUTO_UPDATE=1
+
 autoload -Uz compinit
 for dump in ~/.zcompdump(N.mh+24); do
   compinit
 done
 compinit -C
 
-export HOMEBREW_NO_AUTO_UPDATE=1
 # archey -o -p
 neofetch
 eval "$(thefuck --alias)"
