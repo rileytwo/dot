@@ -24,17 +24,17 @@ function Write-Theme {
     }
     $prompt += Write-Prompt -Object $drive -ForegroundColor $sl.Colors.DriveForegroundColor
 
-    $status = Get-VCSStatus
-    if ($status) {
-        $prompt += Write-Prompt -Object " git:(" -ForegroundColor $sl.Colors.PromptHighlightColor
-        $prompt += Write-Prompt -Object "$($status.Branch)" -ForegroundColor $sl.Colors.WithForegroundColor
-        $prompt += Write-Prompt -Object ")" -ForegroundColor $sl.Colors.PromptHighlightColor
-        if ($status.Working.Length -gt 0) {
-            $prompt += Write-Prompt -Object (" " + $sl.PromptSymbols.GitDirtyIndicator) -ForegroundColor $sl.Colors.GitDirtyColor
-        } else {
-            $prompt += Write-Prompt -Object (" " + $sl.PromptSymbols.GitDefaultIndicator) -ForegroundColor $sl.Colors.GitDefaultColor
-        }
-    } 
+   # $status = Get-VCSStatus
+   # if ($status) {
+   #     $prompt += Write-Prompt -Object " git:(" -ForegroundColor $sl.Colors.PromptHighlightColor
+   #     $prompt += Write-Prompt -Object "$($status.Branch)" -ForegroundColor $sl.Colors.WithForegroundColor
+   #     $prompt += Write-Prompt -Object ")" -ForegroundColor $sl.Colors.PromptHighlightColor
+   #     if ($status.Working.Length -gt 0) {
+   #         $prompt += Write-Prompt -Object (" " + $sl.PromptSymbols.GitDirtyIndicator) -ForegroundColor $sl.Colors.GitDirtyColor
+   #     } else {
+   #         $prompt += Write-Prompt -Object (" " + $sl.PromptSymbols.GitDefaultIndicator) -ForegroundColor $sl.Colors.GitDefaultColor
+   #     }
+   # } 
     
     $prompt += "`r`n"
     $prompt += "> "
@@ -47,7 +47,7 @@ $sl.Colors.PromptSymbolColor = [ConsoleColor]::Magenta
 $sl.Colors.PromptHighlightColor = [ConsoleColor]::Blue
 $sl.Colors.DriveForegroundColor = [ConsoleColor]::DarkMagenta
 $sl.Colors.WithForegroundColor = [ConsoleColor]::Red
-$sl.PromptSymbols.GitDefaultIndicator = [char]::ConvertFromUtf32(0x221a)
-$sl.PromptSymbols.GitDirtyIndicator = '×'
-$sl.Colors.GitDefaultColor = [ConsoleColor]::DarkGreen
-$sl.Colors.GitDirtyColor = [ConsoleColor]::DarkRed
+#$sl.PromptSymbols.GitDefaultIndicator = [char]::ConvertFromUtf32(0x221a)
+#$sl.PromptSymbols.GitDirtyIndicator = '×'
+#$sl.Colors.GitDefaultColor = [ConsoleColor]::DarkGreen
+#$sl.Colors.GitDirtyColor = [ConsoleColor]::DarkRed
