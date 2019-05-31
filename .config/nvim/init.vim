@@ -17,6 +17,7 @@ set guicursor=
 set splitbelow 
 set splitright
 set modifiable
+
 set number
 set numberwidth=1
 set cursorline
@@ -61,18 +62,11 @@ let R_bracketed_paste = 1
 
 " plugins using vim-plug
 call plug#begin('~/.vim/plugged')
-if has('mac')
-    Plug '/usr/local/opt/fzf'
-    Plug 'Valloric/YouCompleteMe'
-endif
 Plug 'tpope/vim-markdown'
 Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-fugitive'
 
-Plug 'itchyny/lightline.vim'
-Plug 'w0rp/ale'
-Plug 'maximbaz/lightline-ale'
 Plug 'itchyny/vim-gitbranch'
 Plug 'Yggdroot/indentLine'
 
@@ -90,16 +84,29 @@ Plug 'dkarter/bullets.vim'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'ntk148v/vim-horizon'
 Plug 'rafi/awesome-vim-colorschemes'
+
 Plug 'rakr/vim-two-firewatch'
 Plug 'aonemd/kuroi.vim'
+
+Plug 'itchyny/lightline.vim'
+
+if has('mac')
+    " mac specific plugs cause windows is hard
+    Plug '/usr/local/opt/fzf'
+    Plug 'Valloric/YouCompleteMe'
+    Plug 'w0rp/ale'
+    Plug 'maximbaz/lightline-ale'
+endif
 
 
 call plug#end()
 
-
+let R_assign = 0
+let R_hi_fun_globenv = 1
 
 let NERDTreeShowHidden = 1
 let NERDTreeMinimalUI = 1
+
 let NERDTreeDirArrows = 1
 
 let g:indentLine_setColors = 0
@@ -163,5 +170,6 @@ else
     let g:os = 'Windows'
     set termguicolors
     colorscheme riley
+    set term=builtin_vtpcon
 endif
 
