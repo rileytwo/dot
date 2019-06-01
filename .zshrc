@@ -2,6 +2,12 @@ zmodload zsh/zprof
 
 export TERM=xterm-256color
 export HOMEBREW_NO_AUTO_UPDATE=1
+export EDITOR=nvim
+
+#if brew command-not-found-init > /dev/null 2>&1; then
+#    eval "$(brew command-not-found-init)";
+#fi
+
 
 autoload -Uz compinit
 for dump in ~/.zcompdump(N.mh+24); do
