@@ -87,9 +87,9 @@ eval "$(rbenv init -)"
 [[ -d ~/usr ]] && export PATH=~/usr:$PATH
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-#### // end helper files
 
-
+# poetry
+export PATH="$HOME/.poetry/bin:$PATH"
 
 #### // options
 setopt extended_glob
