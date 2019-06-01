@@ -185,7 +185,6 @@ hs.hotkey.bind(modification_keys, "K", function()
 	end
 end)
 
-
 hs.hotkey.bind(modification_keys, "J", function()
 	-- decrease window height
 	local win          = hs.window.focusedWindow()
@@ -201,4 +200,22 @@ hs.hotkey.bind(modification_keys, "J", function()
 		win_frame.h = win_frame.h - 50
 		win:setFrame(win_frame)
 	end
+end)
+
+hs.hotkey.bind(modification_keys, "Right", function()
+	-- move to screen right
+	--   wraps around to first screen
+	local win = hs.window.focusedWindow()
+	local win_screen = win:screen()
+	
+	win:moveToScreen(win_screen:next())
+end)
+
+hs.hotkey.bind(modification_keys, "Left", function()
+	-- move to screen left
+	--   wraps around to last screen
+	local win = hs.window.focusedWindow()
+	local win_screen = win:screen()
+	
+	win:moveToScreen(win_screen:previous())
 end)
