@@ -69,4 +69,3 @@ $Desktop               = $desk = $dt = 'C:\Users\RRoach\Desktop\'
 $Projects              = $proj = $pj = 'C:\Users\RRoach\Documents\OneDrive - IMODULES SOFTWARE\Projects\'
 
 $nvd = 'C:\Users\RRoach\AppData\Local\nvim'
-
