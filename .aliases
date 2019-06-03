@@ -1,5 +1,5 @@
 ## radian console
-alias ra="conda activate && radian"
+alias rr="conda activate && radian"
 
 ## github directory alias
 alias gh='~/Documents/Projects/Github'
