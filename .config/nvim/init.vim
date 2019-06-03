@@ -169,6 +169,5 @@ else
     let g:os = 'Windows'
     set termguicolors
     colorscheme riley
-    set term=builtin_vtpcon
 endif
 
