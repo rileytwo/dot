@@ -46,7 +46,7 @@ Set-Theme riley
 
 #Set-Alias -name 'trash' -value 'empty-recycle-bin'
 
-Set-Alias -name 'ra' -value 'radian'
+Set-Alias -name 'rr' -value 'radian'
 Set-Alias -name 'r' -value 'Rscript'
 Set-Alias -name 'ttx' -value '~/.dot/usr/ttx.R'
 
