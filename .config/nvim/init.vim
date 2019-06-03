@@ -27,12 +27,11 @@ set noshowmode
 set ignorecase
 set smartcase
 filetype on
-filetype plugin indent on
-set smartindent
 set tabstop=4
 set shiftwidth=4
 set expandtab
 set autoindent
+filetype plugin indent on
 let g:vim_indent_cont = &shiftwidth
 
 "" remaps
