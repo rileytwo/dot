@@ -93,4 +93,4 @@ export PATH="$HOME/.poetry/bin:$PATH"
 
 #### // options
 setopt extended_glob
-
+disable r
