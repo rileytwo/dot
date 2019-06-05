@@ -50304,7 +50304,7 @@
 	<key>LoadPrefsFromCustomFolder</key>
 	<true/>
 	<key>NSColorPanelMode</key>
-	<string>1</string>
+	<string>6</string>
 	<key>NSColorPickerPreferredRGBEntryMode</key>
 	<integer>2</integer>
 	<key>NSColorPickerSlidersDefaults</key>
@@ -50329,8 +50329,8 @@
 	<false/>
 	<key>NSSplitView Subview Frames NSColorPanelSplitView</key>
 	<array>
-		<string>0.000000, 0.000000, 368.000000, 260.000000, NO, NO</string>
-		<string>0.000000, 261.000000, 368.000000, 73.000000, NO, NO</string>
+		<string>0.000000, 0.000000, 368.000000, 375.000000, NO, NO</string>
+		<string>0.000000, 376.000000, 368.000000, 73.000000, NO, NO</string>
 	</array>
 	<key>NSTableView Columns v2 KeyBingingTable</key>
 	<data>
@@ -50361,7 +50361,7 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame NSColorPanel</key>
-	<string>867 534 368 241 0 0 1440 877 </string>
+	<string>867 356 368 383 0 0 1440 877 </string>
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>898 110 476 288 0 0 1440 877 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
@@ -50373,7 +50373,7 @@
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>99 293 592 584 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>706 222 733 610 0 0 1440 877 </string>
+	<string>687 245 733 610 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>172 412 650 427 0 0 1440 877 </string>
 	<key>New Bookmarks</key>
@@ -50636,7 +50636,7 @@
 			<key>Blur</key>
 			<true/>
 			<key>Blur Radius</key>
-			<real>0.10000000000000001</real>
+			<real>3.8570649587563453</real>
 			<key>Bold Color</key>
 			<dict>
 				<key>Blue Component</key>
@@ -51342,13 +51342,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.058409370481970001</real>
+				<real>0.05840937048</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.06283011287451</real>
+				<real>0.062830112869999996</real>
 				<key>Red Component</key>
-				<real>0.062653087079519998</real>
+				<real>0.062653087080000003</real>
 			</dict>
 			<key>Tags</key>
 			<array/>
@@ -51373,7 +51373,7 @@
 			<key>Use Non-ASCII Font</key>
 			<true/>
 			<key>Use Tab Color</key>
-			<false/>
+			<true/>
 			<key>Use Underline Color</key>
 			<false/>
 			<key>Vertical Spacing</key>
@@ -57988,7 +57988,7 @@
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1440, 900}}</string>
 		<key>topLeft</key>
-		<string>{6, 764}</string>
+		<string>{65, 800}</string>
 	</dict>
 	<key>NoSyncHaveWarnedAboutIncompatibleSoftware</key>
 	<true/>
@@ -57999,7 +57999,7 @@
 	<key>NoSyncLastTipTime</key>
 	<real>578277105.02708006</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>185</integer>
+	<integer>188</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
