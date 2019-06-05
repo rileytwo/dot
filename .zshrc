@@ -61,9 +61,10 @@ precmd_prompt() {
 precmd_functions+=(precmd_prompt)
 
 #### // conda
-. ~/miniconda3/etc/profile.d/conda.sh
+[[ -f ~/miniconda3/etc/profile.d/conda.sh ]] && . ~/miniconda3/etc/profile.d/conda.sh
 
-
+#### // z
+[[ -f /usr/local/etc/profile.d/z.sh ]] && . /usr/local/etc/profile.d/z.sh 
 
 #### // helper files
 [[ -f ~/.functions ]] && . ~/.functions
