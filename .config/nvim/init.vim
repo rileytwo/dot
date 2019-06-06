@@ -163,11 +163,16 @@ syntax enable
 
 if has('mac')
     let g:os = 'Darwin'
-    colorscheme riley
-    set termguicolors
+    if $COLORTERM =~# 'truecolor' || $COLORTERM =~# '24bit'
+        set termguicolors
+        colorscheme riley
+    else
+        colorscheme one
+    endif
 else
     let g:os = 'Windows'
     set termguicolors
     colorscheme riley
 endif
 
+set background=dark
