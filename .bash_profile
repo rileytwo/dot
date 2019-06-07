@@ -78,3 +78,4 @@ unset __conda_setup
 
 
 export PATH="$HOME/.poetry/bin:$PATH"
+if [ -e /Users/riley/.nix-profile/etc/profile.d/nix.sh ]; then . /Users/riley/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
