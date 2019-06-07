@@ -33,3 +33,5 @@ desktop.ini
 hub
 
 *.links
+
+*.pyc
