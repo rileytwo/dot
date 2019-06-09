@@ -91,7 +91,3 @@ disable r
 export CLICOLOR=1
 export LS_COLORS='di=1;4;34:fi=1;32:ln=1;35:pi=0:bd=0:cd=0:mi=1;4;31:ex=1;31'
 
-
-if [ -e /Users/riley/.nix-profile/etc/profile.d/nix.sh ];
-    then . /Users/riley/.nix-profile/etc/profile.d/nix.sh;
-fi # added by Nix installer
