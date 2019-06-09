@@ -50312,7 +50312,7 @@ Show Toolbelt</string>
 	<key>LoadPrefsFromCustomFolder</key>
 	<true/>
 	<key>NSColorPanelMode</key>
-	<string>6</string>
+	<string>1</string>
 	<key>NSColorPickerPreferredRGBEntryMode</key>
 	<integer>2</integer>
 	<key>NSColorPickerSlidersDefaults</key>
@@ -50337,8 +50337,8 @@ Show Toolbelt</string>
 	<false/>
 	<key>NSSplitView Subview Frames NSColorPanelSplitView</key>
 	<array>
-		<string>0.000000, 0.000000, 368.000000, 375.000000, NO, NO</string>
-		<string>0.000000, 376.000000, 368.000000, 73.000000, NO, NO</string>
+		<string>0.000000, 0.000000, 368.000000, 295.000000, NO, NO</string>
+		<string>0.000000, 296.000000, 368.000000, 144.000000, NO, NO</string>
 	</array>
 	<key>NSTableView Columns v2 KeyBingingTable</key>
 	<data>
@@ -50369,7 +50369,7 @@ Show Toolbelt</string>
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame NSColorPanel</key>
-	<string>867 356 368 383 0 0 1440 877 </string>
+	<string>233 472 368 276 0 0 1440 877 </string>
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>898 110 476 288 0 0 1440 877 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
@@ -50381,7 +50381,7 @@ Show Toolbelt</string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>99 293 592 584 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>704 225 736 592 0 0 1440 877 </string>
+	<string>734 293 706 523 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>172 412 650 427 0 0 1440 877 </string>
 	<key>New Bookmarks</key>
@@ -50409,12 +50409,16 @@ Show Toolbelt</string>
 			<false/>
 			<key>Ansi 0 Color</key>
 			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.07058823853731</real>
+				<real>0.14999999999999999</real>
+				<key>Color Space</key>
+				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.07058823853731</real>
+				<real>0.14999999999999999</real>
 				<key>Red Component</key>
-				<real>0.07058823853731</real>
+				<real>0.14999999999999999</real>
 			</dict>
 			<key>Ansi 1 Color</key>
 			<dict>
@@ -50434,13 +50438,13 @@ Show Toolbelt</string>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.37300139665603999</real>
+				<real>0.65091134610000001</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>1</real>
+				<real>0.99170738459999996</real>
 				<key>Red Component</key>
-				<real>0.49778133630753002</real>
+				<real>0.40748560430000003</real>
 			</dict>
 			<key>Ansi 11 Color</key>
 			<dict>
@@ -50508,13 +50512,13 @@ Show Toolbelt</string>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.35734657165804001</real>
+				<real>0.57199999999999995</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.95202912895928005</real>
+				<real>0.88</real>
 				<key>Red Component</key>
-				<real>0.47197214181312003</real>
+				<real>0.35199999999999998</real>
 			</dict>
 			<key>Ansi 3 Color</key>
 			<dict>
@@ -57996,7 +58000,7 @@ Show Toolbelt</string>
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1440, 900}}</string>
 		<key>topLeft</key>
-		<string>{93, 774}</string>
+		<string>{36, 806}</string>
 	</dict>
 	<key>NoSyncHaveWarnedAboutIncompatibleSoftware</key>
 	<true/>
@@ -58007,7 +58011,7 @@ Show Toolbelt</string>
 	<key>NoSyncLastTipTime</key>
 	<real>578277105.02708006</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>194</integer>
+	<integer>198</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
