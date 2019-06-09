@@ -50337,8 +50337,8 @@ Show Toolbelt</string>
 	<false/>
 	<key>NSSplitView Subview Frames NSColorPanelSplitView</key>
 	<array>
-		<string>0.000000, 0.000000, 368.000000, 295.000000, NO, NO</string>
-		<string>0.000000, 296.000000, 368.000000, 144.000000, NO, NO</string>
+		<string>0.000000, 0.000000, 368.000000, 259.000000, NO, NO</string>
+		<string>0.000000, 260.000000, 368.000000, 144.000000, NO, NO</string>
 	</array>
 	<key>NSTableView Columns v2 KeyBingingTable</key>
 	<data>
@@ -50369,7 +50369,7 @@ Show Toolbelt</string>
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame NSColorPanel</key>
-	<string>233 472 368 276 0 0 1440 877 </string>
+	<string>523 449 368 240 0 0 1440 877 </string>
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>898 110 476 288 0 0 1440 877 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
@@ -50381,7 +50381,7 @@ Show Toolbelt</string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>99 293 592 584 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>734 293 706 523 0 0 1440 877 </string>
+	<string>592 294 670 527 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>172 412 650 427 0 0 1440 877 </string>
 	<key>New Bookmarks</key>
@@ -50425,11 +50425,11 @@ Show Toolbelt</string>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.44371562773571999</real>
+				<real>0.44371563196182251</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.44606427604082</real>
+				<real>0.44606426358222961</real>
 				<key>Red Component</key>
 				<real>1</real>
 			</dict>
@@ -50477,13 +50477,13 @@ Show Toolbelt</string>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.97104030498824001</real>
+				<real>0.97104030847549438</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.50288800700511005</real>
+				<real>0.502888023853302</real>
 				<key>Red Component</key>
-				<real>0.63299899049996999</real>
+				<real>0.6329990029335022</real>
 			</dict>
 			<key>Ansi 14 Color</key>
 			<dict>
@@ -50512,26 +50512,26 @@ Show Toolbelt</string>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.57199999999999995</real>
+				<real>0.57200002670288086</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.88</real>
+				<real>0.87999999523162842</real>
 				<key>Red Component</key>
-				<real>0.35199999999999998</real>
+				<real>0.35199999809265137</real>
 			</dict>
 			<key>Ansi 3 Color</key>
 			<dict>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.61633026599884</real>
+				<real>0.61633026599884033</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.97472053766250999</real>
+				<real>0.9747205376625061</real>
 				<key>Red Component</key>
-				<real>0.95514363050461004</real>
+				<real>0.95514363050460815</real>
 			</dict>
 			<key>Ansi 4 Color</key>
 			<dict>
@@ -50595,11 +50595,11 @@ Show Toolbelt</string>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.50619850727973004</real>
+				<real>0.50619852542877197</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.49256538261711003</real>
+				<real>0.49256539344787598</real>
 				<key>Red Component</key>
 				<real>1</real>
 			</dict>
@@ -51052,7 +51052,7 @@ Show Toolbelt</string>
 			<key>Name</key>
 			<string>alice</string>
 			<key>Non Ascii Font</key>
-			<string>RobotoMonoNerdFontComplete-Regular 11</string>
+			<string>HackNerdFontComplete-Regular 11</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Non-ASCII Ligatures</key>
@@ -51372,6 +51372,8 @@ Show Toolbelt</string>
 			<integer>2</integer>
 			<key>Transparency</key>
 			<real>0.0</real>
+			<key>Unicode Normalization</key>
+			<integer>0</integer>
 			<key>Unlimited Scrollback</key>
 			<false/>
 			<key>Use Bold Font</key>
@@ -51385,7 +51387,7 @@ Show Toolbelt</string>
 			<key>Use Non-ASCII Font</key>
 			<true/>
 			<key>Use Tab Color</key>
-			<true/>
+			<false/>
 			<key>Use Underline Color</key>
 			<false/>
 			<key>Vertical Spacing</key>
@@ -57970,15 +57972,13 @@ Show Toolbelt</string>
 	</array>
 	<key>NoSyncBFPFavorites</key>
 	<array>
-		<string>Roboto Mono for Powerline</string>
-		<string>RobotoMono Nerd Font Mono</string>
 		<string>RobotoMono Nerd Font</string>
-		<string>Roboto Mono Thin for Powerline</string>
-		<string>Roboto Mono Medium for Powerline</string>
-		<string>Roboto Mono Light for Powerline</string>
+		<string>SF Mono</string>
+		<string>Hack Nerd Font</string>
 	</array>
 	<key>NoSyncBFPRecents</key>
 	<array>
+		<string>Hack Nerd Font</string>
 		<string>SF Mono</string>
 		<string>RobotoMono Nerd Font</string>
 	</array>
@@ -58000,7 +58000,7 @@ Show Toolbelt</string>
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1440, 900}}</string>
 		<key>topLeft</key>
-		<string>{36, 806}</string>
+		<string>{10, 807}</string>
 	</dict>
 	<key>NoSyncHaveWarnedAboutIncompatibleSoftware</key>
 	<true/>
@@ -58011,7 +58011,7 @@ Show Toolbelt</string>
 	<key>NoSyncLastTipTime</key>
 	<real>578277105.02708006</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>198</integer>
+	<integer>199</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -58726,7 +58726,7 @@ Show Toolbelt</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-06-01T20:11:19Z</date>
+	<date>2019-06-09T21:39:15Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SeparateStatusBarsPerPane</key>
