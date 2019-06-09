@@ -24,7 +24,7 @@ if (interactive()) {
             continue = " ",
             # radian prompt
             #
-            radian.color_scheme       = "native",
+            radian.color_scheme       = "manni",
             radian.editing_mode       = "vi",
             radian.auto_match         = TRUE,
             radian.completion_timeout = 0.0,
