@@ -79,6 +79,8 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
     # // brew
     [[ -d /home/linuxbrew/.linuxbrew/bin ]] && export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
 elif [[ "$OSTYPE" =~ "darwin" ]]; then
+    # // macports
+    [[ -f /opt/local/bin/port ]] && export PATH="/opt/local/bin:$PATH"
     # // z
     [[ -f /usr/local/etc/profile.d/z.sh ]] && . /usr/local/etc/profile.d/z.sh
     # // poetry
