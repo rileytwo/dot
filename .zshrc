@@ -67,6 +67,7 @@ precmd_functions+=(precmd_prompt)
 [[ -f /usr/local/etc/profile.d/z.sh ]] && . /usr/local/etc/profile.d/z.sh 
 
 #### // helper files
+export PAGER=most
 export LESS="--RAW-CONTROL-CHARS"
 [[ -f ~/.LESS_TERMCAP ]] && . ~/.LESS_TERMCAP
 [[ -f ~/.functions ]] && . ~/.functions
