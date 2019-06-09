@@ -21,7 +21,7 @@ eval "$(thefuck --alias)"
 
 
 #### // oh my zsh
-export ZSH="/Users/riley/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 plugins=(
 zsh-syntax-highlighting
@@ -61,29 +61,41 @@ precmd_prompt() {
 precmd_functions+=(precmd_prompt)
 
 #### // conda
-[[ -f ~/miniconda3/etc/profile.d/conda.sh ]] && . ~/miniconda3/etc/profile.d/conda.sh
+#[[ -f ~/miniconda3/etc/profile.d/conda.sh ]] && . ~/miniconda3/etc/profile.d/conda.sh
 
 #### // z
-[[ -f /usr/local/etc/profile.d/z.sh ]] && . /usr/local/etc/profile.d/z.sh 
-
+if [[ uname = "Linux" ]];
+    then [[ -f /home/riley/z.sh ]] && . /home/riley/z.sh;
+    else 
+        [[ -f /usr/local/etc/profile.d/z.sh ]] && . /usr/local/etc/profile.d/z.sh 
+fi
 #### // helper files
 export PAGER=most
 export LESS="--RAW-CONTROL-CHARS"
 [[ -f ~/.LESS_TERMCAP ]] && . ~/.LESS_TERMCAP
 [[ -f ~/.functions ]] && . ~/.functions
+<<<<<<< HEAD
 [[ -f ~/.aliases ]] && . ~/.aliases
 [[ -f ~/.fzf.zsh ]] && . ~/.fzf.zsh
+=======
+#[[ -f ~/.aliases ]] && . ~/.aliases
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+>>>>>>> changes for kubuntu
 
 #### // poetry path
-export PATH="$HOME/.poetry/bin:$PATH"
+#export PATH="$HOME/.poetry/bin:$PATH"
 
 #### // rbenv path
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
 
+#### // ~/.local/bin
+export PATH="$HOME/.local/bin:$PATH"
+
 #### // .usr dir path
-[[ -d ~/.usr ]] && export PATH=~/.usr:$PATH
+#[[ -d ~/.usr ]] && export PATH=~/.usr:$PATH
 
 #### // options, other
 setopt extended_glob
@@ -91,3 +103,10 @@ disable r
 export CLICOLOR=1
 export LS_COLORS='di=1;4;34:fi=1;32:ln=1;35:pi=0:bd=0:cd=0:mi=1;4;31:ex=1;31'
 
+<<<<<<< HEAD
+=======
+
+#if [ -e /Users/riley/.nix-profile/etc/profile.d/nix.sh ];
+#    then . /Users/riley/.nix-profile/etc/profile.d/nix.sh;
+#fi # added by Nix installer
+>>>>>>> changes for kubuntu
