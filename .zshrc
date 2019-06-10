@@ -105,6 +105,8 @@ then
     [[ -f "$HOME/z.sh" ]] && . "$HOME/z.sh"
 
     [[ -d /home/linuxbrew/.linuxbrew/bin ]] && export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
+
+    [[ -d /snap/bin ]] && export PATH="/snap/bin:$PATH"
 else
     [[ -f /usr/local/etc/profile.d/z.sh ]] && . /usr/local/etc/profile.d/z.sh
 fi
