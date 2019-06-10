@@ -1,5 +1,4 @@
 {
-    "workbench.colorTheme": "Alice",
     "window.zoomLevel": 0,
     "editor.minimap.enabled": false,
     "editor.fontFamily": "SFMono-Regular, Menlo, Hack, Monaco, 'Courier New', monospace",
@@ -61,5 +60,7 @@
     ],
     "gitProjectManager.maxDepthRecursion": 1,
     "window.title": "${activeEditorLong}",
-    "workbench.activityBar.visible": true
+    "workbench.activityBar.visible": true,
+    "gitlens.showWhatsNewAfterUpgrades": false,
+    "workbench.colorTheme": "Alice"
 }
