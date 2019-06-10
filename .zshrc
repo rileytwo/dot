@@ -99,16 +99,6 @@ export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
-
-#### // helper files
-#
-export LESS="--RAW-CONTROL-CHARS"
-[[ -f ~/.LESS_TERMCAP ]] && . ~/.LESS_TERMCAP
-[[ -f ~/.functions ]] && . ~/.functions
-[[ -f ~/.aliases ]] && . ~/.aliases
-[[ -f ~/.fzf.zsh ]] && . ~/.fzf.zsh
-
-
 #### // options, other
 #
 export PAGER=most
@@ -116,4 +106,12 @@ setopt extended_glob
 disable r
 export CLICOLOR=1
 export LS_COLORS='di=1;4;34:fi=1;32:ln=1;35:pi=0:bd=0:cd=0:mi=1;4;31:ex=1;31'
+
+#### // helper files
+#
+#export LESS="--RAW-CONTROL-CHARS"
+#[[ -f ~/.LESS_TERMCAP ]] && . ~/.LESS_TERMCAP
+[[ -f ~/.functions ]] && . ~/.functions
+[[ -f ~/.aliases ]] && . ~/.aliases
+[[ -f ~/.fzf.zsh ]] && . ~/.fzf.zsh
 
