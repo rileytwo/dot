@@ -100,7 +100,6 @@ fi
 #
 # // rbenv
 [[ -d "$HOME/.rbenv/shims" ]] \
-    && export PATH="$HOME/.rbenv/shims:$PATH" \
     && eval "$(rbenv init -)"
 #
 # // go
