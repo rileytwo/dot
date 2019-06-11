@@ -21,15 +21,9 @@ else
     neofetch
 fi
 
-#### // the fuck
-#
-eval "$(thefuck --alias)"
-
-
 #### // oh my zsh
 #
 export ZSH="$HOME/.oh-my-zsh"
-
 plugins=(
     zsh-syntax-highlighting
     zsh-autosuggestions
@@ -38,15 +32,13 @@ plugins=(
 )
 source $ZSH/oh-my-zsh.sh
 
-
 #### // highlighting customizations
 typeset -A ZSH_HIGHLIGHT_STYLES
-
 ZSH_HIGHLIGHT_STYLES[arg0]='fg=blue,bold'
-
 # // look at:
 # // https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/docs/highlighters/main.md
 # // for more customization options
+
 
 #### // zsh autosuggestions
 #
@@ -74,7 +66,8 @@ precmd_functions+=(precmd_prompt)
 #
 if [[ "$OSTYPE" == "linux-gnu" ]]; then 
     # // z
-    [[ -f "$HOME/z.sh" ]] && . "$HOME/z.sh"
+    [[ -f "$HOME/z.sh" ]] \
+        && . "$HOME/z.sh"
     # // brew
     [[ -d /home/linuxbrew/.linuxbrew/bin ]] \
         && export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
@@ -84,24 +77,37 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
 
 elif [[ "$OSTYPE" =~ "darwin" ]]; then
     # // macports
-    [[ -f /opt/local/bin/port ]] && export PATH="/opt/local/bin:$PATH"
+    [[ -f /opt/local/bin/port ]] \
+        && export PATH="/opt/local/bin:$PATH"
     # // z
-    [[ -f /usr/local/etc/profile.d/z.sh ]] && . /usr/local/etc/profile.d/z.sh
+    [[ -f /usr/local/etc/profile.d/z.sh ]] \
+        && . /usr/local/etc/profile.d/z.sh
     # // poetry
-    [[ -d "$HOME/.poetry/bin" ]] && export PATH="$HOME/.poetry/bin:$PATH"
+    [[ -d "$HOME/.poetry/bin" ]] \
+        && export PATH="$HOME/.poetry/bin:$PATH"
     #### // conda
-    [[ -f ~/miniconda3/etc/profile.d/conda.sh ]] && . ~/miniconda3/etc/profile.d/conda.sh
+    [[ -f "$HOME/miniconda3/etc/profile.d/conda.sh" ]] \
+        && . "$HOME/miniconda3/etc/profile.d/conda.sh"
 fi
 
 
 #### // path
 #
 # // .local/bin
-export PATH="$HOME/.local/bin:$PATH"
+
+[[ -d "$HOME/.local/bin" ]] \
+    && export PATH="$HOME/.local/bin:$PATH"
 #
 # // rbenv
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
+[[ -d "$HOME/.rbenv/bin" ]] \
+    && export PATH="$HOME/.rbenv/bin:$PATH" \
+    && eval "$(rbenv init -)"
+#
+# // go
+[[ -d "$HOME/go" ]] \
+    && export GOPATH="$HOME/go" \
+    && export PATH="${GOPATH//://bin:}/bin:$PATH"
+
 
 #### // options, other
 #
