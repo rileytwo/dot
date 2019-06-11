@@ -89,10 +89,9 @@ Plug 'aonemd/kuroi.vim'
 
 Plug 'itchyny/lightline.vim'
 
-if has('mac')
+if !has('win32') && !has('winw64')
     " mac specific plugs cause windows is hard
     Plug '/usr/local/opt/fzf'
-    Plug 'Valloric/YouCompleteMe'
     Plug 'w0rp/ale'
     Plug 'maximbaz/lightline-ale'
 endif
