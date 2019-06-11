@@ -99,8 +99,8 @@ fi
     && export PATH="$HOME/.local/bin:$PATH"
 #
 # // rbenv
-[[ -d "$HOME/.rbenv/bin" ]] \
-    && export PATH="$HOME/.rbenv/bin:$PATH" \
+[[ -d "$HOME/.rbenv/shims" ]] \
+    && export PATH="$HOME/.rbenv/shims:$PATH" \
     && eval "$(rbenv init -)"
 #
 # // go
