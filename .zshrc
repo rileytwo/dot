@@ -50,14 +50,14 @@ ZSH_AUTOSUGGEST_STRATEGY=match_prev_cmd
 #
 setopt PROMPT_SUBST
 precmd_prompt() {
-    local smiley="%(?,%{$fg[green]%}:%)%{$reset_color%},%{$fg[red]%}:(%{$reset_color%})"
+    smiley="%(?,%{$fg[green]%}:%)%{$reset_color%},%{$fg[red]%}:(%{$reset_color%})"
     PROMPT='%{$fg_bold[magenta]%}${PWD/#$HOME/~}%  $(git_prompt_info)
 %{$fg_bold[blue]%}-> '
     RPROMPT='${smiley}'
     ZSH_THEME_GIT_PROMPT_PREFIX="$fg_bold[blue]git:($fg[red]"
     ZSH_THEME_GIT_PROMPT_SUFFIX="$reset_color"
-    ZSH_THEME_GIT_PROMPT_DIRTY="$fg[blue]) $fg[yellow]𝞓"
-    ZSH_THEME_GIT_PROMPT_CLEAN="$fg[blue]) ≡"
+    ZSH_THEME_GIT_PROMPT_DIRTY="$fg[blue]) $fg[yellow]署"
+    ZSH_THEME_GIT_PROMPT_CLEAN="$fg[blue]) "
 }
 precmd_functions+=(precmd_prompt)
 
