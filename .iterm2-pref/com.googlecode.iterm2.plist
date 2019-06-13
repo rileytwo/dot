@@ -50730,7 +50730,7 @@ Show Toolbelt</string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>99 293 592 584 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>526 96 856 530 0 0 1440 877 </string>
+	<string>786 41 654 836 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>172 412 650 427 0 0 1440 877 </string>
 	<key>New Bookmarks</key>
@@ -51409,13 +51409,13 @@ Show Toolbelt</string>
 			<key>Name</key>
 			<string>alice</string>
 			<key>Non Ascii Font</key>
-			<string>FuraCodeNerdFontComplete-Retina 14</string>
+			<string>FuraCodeNerdFontComplete-Retina 13</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Non-ASCII Ligatures</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>SFMono-Light 13</string>
+			<string>SFMono-Regular 13</string>
 			<key>Only The Default BG Color Uses Transparency</key>
 			<false/>
 			<key>Open Toolbelt</key>
@@ -58476,10 +58476,10 @@ Show Toolbelt</string>
 	</array>
 	<key>NoSyncBFPRecents</key>
 	<array>
+		<string>RobotoMono Nerd Font</string>
 		<string>Fira Code</string>
 		<string>SF Mono</string>
 		<string>FuraCode Nerd Font</string>
-		<string>Hack Nerd Font</string>
 	</array>
 	<key>NoSyncCommandHistoryHasEverBeenUsed</key>
 	<true/>
@@ -58492,14 +58492,14 @@ Show Toolbelt</string>
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1440, 900}}</string>
 		<key>topLeft</key>
-		<string>{125, 809}</string>
+		<string>{40, 797}</string>
 	</dict>
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1440, 900}}</string>
 		<key>topLeft</key>
-		<string>{0, 877}</string>
+		<string>{11, 877}</string>
 	</dict>
 	<key>NoSyncHaveWarnedAboutIncompatibleSoftware</key>
 	<true/>
@@ -58510,7 +58510,7 @@ Show Toolbelt</string>
 	<key>NoSyncLastTipTime</key>
 	<real>578277105.02708006</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>242</integer>
+	<integer>247</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -59280,7 +59280,7 @@ Show Toolbelt</string>
 				<key>Has Toolbelt</key>
 				<false/>
 				<key>Height</key>
-				<real>530</real>
+				<real>537</real>
 				<key>Hide After Opening</key>
 				<false/>
 				<key>Hiding Toolbelt Should Resize Window</key>
@@ -59665,7 +59665,7 @@ Show Toolbelt</string>
 												<real>0.7810397744178772</real>
 											</dict>
 											<key>Guid</key>
-											<string>9D6321F7-9567-49F8-8D32-6631C4037B37</string>
+											<string>3BD803AA-2255-46B3-886A-69F78502709B</string>
 											<key>Has Hotkey</key>
 											<false/>
 											<key>Horizontal Spacing</key>
@@ -59982,7 +59982,7 @@ Show Toolbelt</string>
 											<key>Name</key>
 											<string>alice</string>
 											<key>Non Ascii Font</key>
-											<string>RobotoMonoNerdFontComplete-Regular 12</string>
+											<string>FuraCodeNerdFontComplete-Retina 13</string>
 											<key>Non-ASCII Anti Aliased</key>
 											<true/>
 											<key>Non-ASCII Ligatures</key>
@@ -60304,6 +60304,8 @@ Show Toolbelt</string>
 											<integer>2</integer>
 											<key>Transparency</key>
 											<real>0.0</real>
+											<key>Unicode Version</key>
+											<integer>9</integer>
 											<key>Unlimited Scrollback</key>
 											<false/>
 											<key>Use Bold Font</key>
@@ -60337,6 +60339,63 @@ Show Toolbelt</string>
 										<array>
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
 										</array>
 										<key>Environment</key>
 										<dict>
@@ -60370,16 +60429,16 @@ Show Toolbelt</string>
 										<key>Substitutions</key>
 										<dict/>
 										<key>Working Directory</key>
-										<string>/Users/riley</string>
+										<string>/Users/riley/.dot</string>
 									</dict>
 									<key>View Type</key>
 									<string>SessionView</string>
 									<key>frame</key>
 									<dict>
 										<key>height</key>
-										<real>492</real>
+										<real>499</real>
 										<key>width</key>
-										<real>655</real>
+										<real>654</real>
 										<key>x</key>
 										<real>0.0</real>
 										<key>y</key>
@@ -60392,9 +60451,9 @@ Show Toolbelt</string>
 							<key>frame</key>
 							<dict>
 								<key>height</key>
-								<real>492</real>
+								<real>499</real>
 								<key>width</key>
-								<real>655</real>
+								<real>654</real>
 								<key>x</key>
 								<real>0.0</real>
 								<key>y</key>
@@ -60422,13 +60481,13 @@ Show Toolbelt</string>
 				<key>Use Transparency</key>
 				<true/>
 				<key>Width</key>
-				<real>655</real>
+				<real>654</real>
 				<key>Window Type</key>
 				<integer>13</integer>
 				<key>X Origin</key>
-				<real>785</real>
+				<real>786</real>
 				<key>Y Origin</key>
-				<real>279</real>
+				<real>299</real>
 			</dict>
 		</array>
 		<key>80x35</key>
