@@ -29,6 +29,7 @@ plugins=(
     zsh-autosuggestions
     git
     zsh-history-substring-search
+    zsh-autopair
 )
 source $ZSH/oh-my-zsh.sh
 
