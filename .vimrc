@@ -18,7 +18,7 @@ if has('mac')
     endif
 else
     let g:os = 'Windows'
-    if $term =~# 'vtpcon' || &term =~# 'builtin_vtpcon' 
+    if &term =~# 'vtpcon' || &term =~# 'builtin_vtpcon' 
         set termguicolors
     endif
 endif
@@ -148,7 +148,7 @@ if has('mac')
         colorscheme one
     endif
 else
-    if $term =~# 'vtpcon' || &term =~# 'builtin_vtpcon' 
+    if &term =~# 'vtpcon' || &term =~# 'builtin_vtpcon' 
         set termguicolors
         colorscheme riley
     else
@@ -177,17 +177,6 @@ nnoremap <C-I> gg=G``
 map <C-o> :NERDTreeToggle<CR>
 
 
-
-"" Nvim-R
-let R_assign = 0
-let R_hi_fun_globenv = 1
-
-"" Radian
-let R_app = 'radian'
-let R_cmd = 'R'
-let R_hl_term = 0
-let R_args = []  " if you had set any
-let R_bracketed_paste = 1
 let NERDTreeShowHidden = 1
 let NERDTreeMinimalUI = 1
 let NERDTreeDirArrows = 1
@@ -215,5 +204,3 @@ let g:bullets_enabled_file_types = [
 
 " lightline/ale info at maximbaz/dotfiles/.config/nvim/init.vim
 
-
-set background=dark
