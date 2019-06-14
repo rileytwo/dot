@@ -1,8 +1,10 @@
 #!/usr/bin/env bash
 
-cd /Library/Frameworks/R.framework/Resources/lib                               
 
+[[ -d "/Library/Frameworks/R.framework/Resources/lib" ]] \
+    && cd "/Library/Frameworks/R.framework/Resources/lib" \
+    || exit
 
-ln -sf  /System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/Versions/Current/libLAPACK.dylib libRlapack.dylib
+ln -sf  "/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/Versions/Current/libLAPACK.dylib" "libRlapack.dylib"
 
-ln -sf  /System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/Versions/Current/libBLAS.dylib libRblas.dylib
+ln -sf  "/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/Versions/Current/libBLAS.dylib" "libRblas.dylib"
