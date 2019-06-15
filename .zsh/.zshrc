@@ -113,8 +113,7 @@ fi
 #### // options, other
 #
 export PAGER=most
-setopt EXTENDED_GLOB
-setopt GLOB_DOTS
+setopt extended_glob
 disable r
 export CLICOLOR=1
 export LS_COLORS='di=1;4;34:fi=1;32:ln=1;35:pi=0:bd=0:cd=0:mi=1;4;31:ex=1;31'
