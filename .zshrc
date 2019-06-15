@@ -30,6 +30,7 @@ plugins=(
     git
     zsh-history-substring-search
     zsh-autopair
+    k
 )
 source $ZSH/oh-my-zsh.sh
 
