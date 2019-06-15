@@ -50730,7 +50730,7 @@ Show Toolbelt</string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>99 293 592 584 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>691 269 700 522 0 0 1440 877 </string>
+	<string>0 473 1440 404 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>172 412 650 427 0 0 1440 877 </string>
 	<key>New Bookmarks</key>
@@ -57682,62 +57682,66 @@ Show Toolbelt</string>
 			<false/>
 			<key>Ansi 0 Color</key>
 			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.13574660633484001</real>
+				<real>0.15000000596046448</real>
+				<key>Color Space</key>
+				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.13574660633484001</real>
+				<real>0.15000000596046448</real>
 				<key>Red Component</key>
-				<real>0.13574660633484001</real>
+				<real>0.15000000596046448</real>
 			</dict>
 			<key>Ansi 1 Color</key>
 			<dict>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.39329420624529998</real>
+				<real>0.44371563196182251</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.36561569035439001</real>
+				<real>0.44606426358222961</real>
 				<key>Red Component</key>
-				<real>0.90961164236069003</real>
+				<real>1</real>
 			</dict>
 			<key>Ansi 10 Color</key>
 			<dict>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.37254901960783998</real>
+				<real>0.65091133117675781</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.99215686274509995</real>
+				<real>0.99170738458633423</real>
 				<key>Red Component</key>
-				<real>0.49803921568628001</real>
+				<real>0.40748560428619385</real>
 			</dict>
 			<key>Ansi 11 Color</key>
 			<dict>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.42728197569999998</real>
+				<real>0.61633026599884033</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.9494735003</real>
+				<real>0.9747205376625061</real>
 				<key>Red Component</key>
-				<real>0.99927449229999998</real>
+				<real>0.95514363050460815</real>
 			</dict>
 			<key>Ansi 12 Color</key>
 			<dict>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>1</real>
+				<real>0.9993787407875061</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.6861572265625</real>
+				<real>0.75085854530334473</real>
 				<key>Red Component</key>
 				<real>0.0</real>
 			</dict>
@@ -57746,68 +57750,76 @@ Show Toolbelt</string>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.94331518665157998</real>
+				<real>0.97104030847549438</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.54467655824160999</real>
+				<real>0.502888023853302</real>
 				<key>Red Component</key>
-				<real>0.69836011470617998</real>
+				<real>0.6329990029335022</real>
 			</dict>
 			<key>Ansi 14 Color</key>
 			<dict>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.99162548780000004</real>
+				<real>0.9993787407875061</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.78424662349999996</real>
+				<real>0.75085854530334473</real>
 				<key>Red Component</key>
-				<real>0.31486105920000002</real>
+				<real>0.0</real>
 			</dict>
 			<key>Ansi 15 Color</key>
 			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
 				<key>Blue Component</key>
 				<real>1</real>
+				<key>Color Space</key>
+				<string>sRGB</string>
 				<key>Green Component</key>
 				<real>1</real>
 				<key>Red Component</key>
-				<real>1</real>
+				<real>0.99999600648880005</real>
 			</dict>
 			<key>Ansi 2 Color</key>
 			<dict>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.32331474857770998</real>
+				<real>0.57200002670288086</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.86103820800780995</real>
+				<real>0.87999999523162842</real>
 				<key>Red Component</key>
-				<real>0.42881744756856999</real>
+				<real>0.35199999809265137</real>
 			</dict>
 			<key>Ansi 3 Color</key>
 			<dict>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.37670767309999997</real>
+				<real>0.61633026599884033</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.83169490099999999</real>
+				<real>0.9747205376625061</real>
 				<key>Red Component</key>
-				<real>0.87502807380000003</real>
+				<real>0.95514363050460815</real>
 			</dict>
 			<key>Ansi 4 Color</key>
 			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.97294086217880005</real>
+				<real>0.95091557502746582</real>
+				<key>Color Space</key>
+				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.55481654405594005</real>
+				<real>0.64467030763626099</real>
 				<key>Red Component</key>
 				<real>0.0</real>
 			</dict>
@@ -57816,57 +57828,65 @@ Show Toolbelt</string>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.89314508438109996</real>
+				<real>1</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.45990558884809002</real>
+				<real>0.44678673148155212</real>
 				<key>Red Component</key>
-				<real>0.58162896749989001</real>
+				<real>0.6159522533416748</real>
 			</dict>
 			<key>Ansi 6 Color</key>
 			<dict>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.88938903808594005</real>
+				<real>0.96532100439071655</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.70233499436151003</real>
+				<real>0.65200024843215942</real>
 				<key>Red Component</key>
-				<real>0.28234572637649002</real>
+				<real>0.0041284728795289993</real>
 			</dict>
 			<key>Ansi 7 Color</key>
 			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
 				<key>Blue Component</key>
-				<real>1</real>
+				<real>0.78104829788208008</real>
+				<key>Color Space</key>
+				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>1</real>
+				<real>0.78105825185775757</real>
 				<key>Red Component</key>
-				<real>1</real>
+				<real>0.7810397744178772</real>
 			</dict>
 			<key>Ansi 8 Color</key>
 			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.26696832579185997</real>
+				<real>0.61269836123708787</real>
+				<key>Color Space</key>
+				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.26696832579185997</real>
+				<real>0.618865966796875</real>
 				<key>Red Component</key>
-				<real>0.26696832579185997</real>
+				<real>0.60736421588808298</real>
 			</dict>
 			<key>Ansi 9 Color</key>
 			<dict>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.51900776681194005</real>
+				<real>0.50619852542877197</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.49806844766407998</real>
+				<real>0.49256539344787598</real>
 				<key>Red Component</key>
-				<real>0.90961164236069003</real>
+				<real>1</real>
 			</dict>
 			<key>BM Growl</key>
 			<false/>
@@ -57875,13 +57895,13 @@ Show Toolbelt</string>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.10297695547342001</real>
+				<real>0.059999998658895493</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.10300525277853</real>
+				<real>0.059999998658895493</real>
 				<key>Red Component</key>
-				<real>0.10298023372888999</real>
+				<real>0.059999998658895493</real>
 			</dict>
 			<key>Background Image Location</key>
 			<string></string>
@@ -57894,7 +57914,7 @@ Show Toolbelt</string>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.14913141727448001</real>
+				<real>0.1491314172744751</real>
 				<key>Red Component</key>
 				<real>1</real>
 			</dict>
@@ -57910,12 +57930,16 @@ Show Toolbelt</string>
 			<real>2</real>
 			<key>Bold Color</key>
 			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.60246169567107999</real>
+				<real>1</real>
+				<key>Color Space</key>
+				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.61003428697586004</real>
+				<real>1</real>
 				<key>Red Component</key>
-				<real>0.61956524848937999</real>
+				<real>0.99999600648880005</real>
 			</dict>
 			<key>Bound Hosts</key>
 			<array/>
@@ -57934,13 +57958,13 @@ Show Toolbelt</string>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.95080977678298995</real>
+				<real>0.50619852542877197</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.74439483880997004</real>
+				<real>0.49256539344787598</real>
 				<key>Red Component</key>
-				<real>0.44629907608031999</real>
+				<real>1</real>
 			</dict>
 			<key>Cursor Guide Color</key>
 			<dict>
@@ -57951,20 +57975,20 @@ Show Toolbelt</string>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.92683070898055997</real>
+				<real>0.9268307089805603</real>
 				<key>Red Component</key>
-				<real>0.70213186740875</real>
+				<real>0.70213186740875244</real>
 			</dict>
 			<key>Cursor Text Color</key>
 			<dict>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.114735417068</real>
+				<real>0.50619852542877197</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.89839233104226002</real>
+				<real>0.49256539344787598</real>
 				<key>Red Component</key>
 				<real>1</real>
 			</dict>
@@ -57986,12 +58010,16 @@ Show Toolbelt</string>
 			<false/>
 			<key>Foreground Color</key>
 			<dict>
-				<key>Blue Component</key>
-				<real>0.95548701286315996</real>
-				<key>Green Component</key>
-				<real>0.98048108816146995</real>
-				<key>Red Component</key>
+				<key>Alpha Component</key>
 				<real>1</real>
+				<key>Blue Component</key>
+				<real>0.78104829788208008</real>
+				<key>Color Space</key>
+				<string>sRGB</string>
+				<key>Green Component</key>
+				<real>0.78105825185775757</real>
+				<key>Red Component</key>
+				<real>0.7810397744178772</real>
 			</dict>
 			<key>Guid</key>
 			<string>4B2CD594-4F9E-4381-8F3E-AC4CA6DED317</string>
@@ -58296,11 +58324,11 @@ Show Toolbelt</string>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.73423302173614002</real>
+				<real>0.73423302173614502</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.35916060209273998</real>
+				<real>0.35916060209274292</real>
 				<key>Red Component</key>
 				<real>0.0</real>
 			</dict>
@@ -58338,10 +58366,14 @@ Show Toolbelt</string>
 			<integer>1000</integer>
 			<key>Selected Text Color</key>
 			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
 				<key>Blue Component</key>
-				<real>1</real>
+				<real>0.98136156797409058</real>
+				<key>Color Space</key>
+				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>1</real>
+				<real>0.9824872612953186</real>
 				<key>Red Component</key>
 				<real>1</real>
 			</dict>
@@ -58350,13 +58382,13 @@ Show Toolbelt</string>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.28292161226272999</real>
+				<real>0.22878958284854889</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.28839755058289002</real>
+				<real>0.22066912055015564</real>
 				<key>Red Component</key>
-				<real>0.28938663005829002</real>
+				<real>0.22113402187824249</real>
 			</dict>
 			<key>Send Code When Idle</key>
 			<false/>
@@ -58502,13 +58534,13 @@ Show Toolbelt</string>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.011764705882350001</real>
+				<real>0.058409370481967926</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.015686274509800001</real>
+				<real>0.062830112874507904</real>
 				<key>Red Component</key>
-				<real>0.011764705882350001</real>
+				<real>0.062653087079524994</real>
 			</dict>
 			<key>Tags</key>
 			<array/>
@@ -58519,7 +58551,7 @@ Show Toolbelt</string>
 			<key>Title Components</key>
 			<integer>2</integer>
 			<key>Transparency</key>
-			<real>0.29999999999999999</real>
+			<real>0.14149349619289336</real>
 			<key>Unlimited Scrollback</key>
 			<false/>
 			<key>Use Bold Font</key>
@@ -58578,7 +58610,7 @@ Show Toolbelt</string>
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1440, 900}}</string>
 		<key>topLeft</key>
-		<string>{8, 877}</string>
+		<string>{441, 669}</string>
 	</dict>
 	<key>NoSyncHaveWarnedAboutIncompatibleSoftware</key>
 	<true/>
@@ -58589,7 +58621,7 @@ Show Toolbelt</string>
 	<key>NoSyncLastTipTime</key>
 	<real>578277105.02708006</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>263</integer>
+	<integer>268</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -59322,7 +59354,7 @@ Show Toolbelt</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-06-12T00:15:31Z</date>
+	<date>2019-06-14T23:18:37Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SeparateStatusBarsPerPane</key>
@@ -59354,7 +59386,7 @@ Show Toolbelt</string>
 	<key>ThreeFingerEmulates</key>
 	<true/>
 	<key>UKCrashReporterLastCrashReportDate</key>
-	<real>1560468096</real>
+	<real>1560553216</real>
 	<key>UnderlineCursorHeight</key>
 	<real>1</real>
 	<key>UseBorder</key>
