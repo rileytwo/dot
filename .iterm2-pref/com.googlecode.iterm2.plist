@@ -50730,7 +50730,7 @@ Show Toolbelt</string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>99 293 592 584 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 473 1440 404 0 0 1440 877 </string>
+	<string>786 299 654 537 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>172 412 650 427 0 0 1440 877 </string>
 	<key>New Bookmarks</key>
@@ -58610,7 +58610,7 @@ Show Toolbelt</string>
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1440, 900}}</string>
 		<key>topLeft</key>
-		<string>{441, 669}</string>
+		<string>{-14, 877}</string>
 	</dict>
 	<key>NoSyncHaveWarnedAboutIncompatibleSoftware</key>
 	<true/>
@@ -58621,7 +58621,7 @@ Show Toolbelt</string>
 	<key>NoSyncLastTipTime</key>
 	<real>578277105.02708006</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>268</integer>
+	<integer>278</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -59392,6 +59392,8 @@ Show Toolbelt</string>
 	<key>UseBorder</key>
 	<false/>
 	<key>UseLionStyleFullscreen</key>
+	<false/>
+	<key>UseSystemCursorWhenPossible</key>
 	<false/>
 	<key>VisualIndicatorForEsc</key>
 	<false/>
