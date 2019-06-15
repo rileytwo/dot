@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 ## radian console
 alias rr="radian"
 
@@ -18,3 +20,5 @@ alias path='echo -e ${PATH//:/\\n}'
 alias lc='colorls'
 alias gs='git status'
 alias hsg='history | grep'
+alias rstudio='open -a /Applications/RStudio.app/Contents/MacOS/RStudio "$@"'
+
