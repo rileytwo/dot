@@ -50730,7 +50730,7 @@ Show Toolbelt</string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>99 293 592 584 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>786 299 654 537 0 0 1440 877 </string>
+	<string>783 301 657 537 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>172 412 650 427 0 0 1440 877 </string>
 	<key>New Bookmarks</key>
@@ -50801,13 +50801,13 @@ Show Toolbelt</string>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.9993787407875061</real>
+				<real>1</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.75085854530334473</real>
+				<real>0.75454207292691888</real>
 				<key>Red Component</key>
-				<real>0.0</real>
+				<real>0.0103759765625</real>
 			</dict>
 			<key>Ansi 13 Color</key>
 			<dict>
@@ -50831,7 +50831,7 @@ Show Toolbelt</string>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.75085854530334473</real>
+				<real>0.80202217854275659</real>
 				<key>Red Component</key>
 				<real>0.0</real>
 			</dict>
@@ -50909,9 +50909,9 @@ Show Toolbelt</string>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.65200024843215942</real>
+				<real>0.70088159180608045</real>
 				<key>Red Component</key>
-				<real>0.0041284728795289993</real>
+				<real>0.0041284728795290297</real>
 			</dict>
 			<key>Ansi 7 Color</key>
 			<dict>
@@ -58603,14 +58603,14 @@ Show Toolbelt</string>
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1440, 900}}</string>
 		<key>topLeft</key>
-		<string>{40, 797}</string>
+		<string>{693, 468}</string>
 	</dict>
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1440, 900}}</string>
 		<key>topLeft</key>
-		<string>{-14, 877}</string>
+		<string>{0, 877}</string>
 	</dict>
 	<key>NoSyncHaveWarnedAboutIncompatibleSoftware</key>
 	<true/>
@@ -58621,7 +58621,7 @@ Show Toolbelt</string>
 	<key>NoSyncLastTipTime</key>
 	<real>578277105.02708006</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>278</integer>
+	<integer>279</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -59503,13 +59503,13 @@ Show Toolbelt</string>
 												<key>Alpha Component</key>
 												<real>1</real>
 												<key>Blue Component</key>
-												<real>0.9993787407875061</real>
+												<real>1</real>
 												<key>Color Space</key>
 												<string>sRGB</string>
 												<key>Green Component</key>
-												<real>0.75085854530334473</real>
+												<real>0.75454207292691888</real>
 												<key>Red Component</key>
-												<real>0.0</real>
+												<real>0.0103759765625</real>
 											</dict>
 											<key>Ansi 13 Color</key>
 											<dict>
@@ -59533,7 +59533,7 @@ Show Toolbelt</string>
 												<key>Color Space</key>
 												<string>sRGB</string>
 												<key>Green Component</key>
-												<real>0.75085854530334473</real>
+												<real>0.80202217854275659</real>
 												<key>Red Component</key>
 												<real>0.0</real>
 											</dict>
@@ -59611,9 +59611,9 @@ Show Toolbelt</string>
 												<key>Color Space</key>
 												<string>sRGB</string>
 												<key>Green Component</key>
-												<real>0.65200024843215942</real>
+												<real>0.70088159180608045</real>
 												<key>Red Component</key>
-												<real>0.0041284728795289993</real>
+												<real>0.0041284728795290297</real>
 											</dict>
 											<key>Ansi 7 Color</key>
 											<dict>
@@ -59654,6 +59654,8 @@ Show Toolbelt</string>
 												<key>Red Component</key>
 												<real>1</real>
 											</dict>
+											<key>Application Keypad Allowed</key>
+											<false/>
 											<key>Automatically Log</key>
 											<false/>
 											<key>BM Growl</key>
@@ -59794,7 +59796,7 @@ Show Toolbelt</string>
 												<real>0.7810397744178772</real>
 											</dict>
 											<key>Guid</key>
-											<string>3BD803AA-2255-46B3-886A-69F78502709B</string>
+											<string>1167966E-C4C2-4687-A6EA-5265CED526FD</string>
 											<key>Has Hotkey</key>
 											<false/>
 											<key>Horizontal Spacing</key>
@@ -60451,6 +60453,8 @@ Show Toolbelt</string>
 											<false/>
 											<key>Use Underline Color</key>
 											<false/>
+											<key>Use libtickit protocol</key>
+											<false/>
 											<key>Vertical Spacing</key>
 											<real>1</real>
 											<key>Visual Bell</key>
@@ -60525,11 +60529,26 @@ Show Toolbelt</string>
 											<string>/Users/riley/.dot</string>
 											<string>/Users/riley/.dot</string>
 											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
 										</array>
 										<key>Environment</key>
 										<dict>
 											<key>PWD</key>
-											<string>/Users/riley</string>
+											<string>/Users/riley/.dot</string>
 										</dict>
 										<key>Hosts</key>
 										<array/>
@@ -60558,7 +60577,7 @@ Show Toolbelt</string>
 										<key>Substitutions</key>
 										<dict/>
 										<key>Working Directory</key>
-										<string>/Users/riley/.dot</string>
+										<string>/Users/riley</string>
 									</dict>
 									<key>View Type</key>
 									<string>SessionView</string>
@@ -60567,7 +60586,7 @@ Show Toolbelt</string>
 										<key>height</key>
 										<real>499</real>
 										<key>width</key>
-										<real>654</real>
+										<real>657</real>
 										<key>x</key>
 										<real>0.0</real>
 										<key>y</key>
@@ -60582,7 +60601,7 @@ Show Toolbelt</string>
 								<key>height</key>
 								<real>499</real>
 								<key>width</key>
-								<real>654</real>
+								<real>657</real>
 								<key>x</key>
 								<real>0.0</real>
 								<key>y</key>
@@ -60610,13 +60629,13 @@ Show Toolbelt</string>
 				<key>Use Transparency</key>
 				<true/>
 				<key>Width</key>
-				<real>654</real>
+				<real>657</real>
 				<key>Window Type</key>
 				<integer>13</integer>
 				<key>X Origin</key>
-				<real>786</real>
+				<real>783</real>
 				<key>Y Origin</key>
-				<real>299</real>
+				<real>301</real>
 			</dict>
 		</array>
 		<key>80x35</key>
