@@ -19,7 +19,7 @@ Plug 'ryanoasis/vim-devicons'
 
 "Plug 'jiangmiao/auto-pairs'
 Plug 'Raimondi/delimitMate'
-Plug 'ap/vim-css-color'
+"Plug 'ap/vim-css-color'
 
 Plug 'godlygeek/tabular'
 Plug 'dkarter/bullets.vim'
@@ -43,7 +43,6 @@ endif
 " // add plugins to &runtimepath
 call plug#end()
 " ====================
-
 
 " ====================
 " // Options
@@ -84,7 +83,6 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 set autoindent
-filetype on
 filetype plugin indent on
 let g:vim_indent_cont = &shiftwidth
 " ----------
@@ -202,7 +200,6 @@ endfunction
 
 " check for truecolor support in current terminal
 " macOS Terminal.app does not support truecolor
-let uname = substitute(system('uname'), '\n', '', '')
 if !exists('g:os')
     if has('mac')
         let g:os = 'Darwin'
@@ -220,3 +217,5 @@ if !exists('g:os')
         let g:os = 'Linux'
     endif
 endif
+
+
