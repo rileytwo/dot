@@ -48,9 +48,6 @@ nnoremap <C-H> <C-W><C-H>
 "" Indent file
 nnoremap <C-I> gg=G``
 
-"" NERDTreeToggle
-map <C-o> :NERDTreeToggle<CR>
-
 
 "" Radian
 let R_app = 'radian'
@@ -74,7 +71,8 @@ Plug 'PProvost/vim-ps1'
 Plug 'scrooloose/nerdtree', {'on': 'NERDTreeToggle'}
 Plug 'ryanoasis/vim-devicons'
 
-Plug 'jiangmiao/auto-pairs'
+"Plug 'jiangmiao/auto-pairs'
+Plug 'Raimondi/delimitMate'
 Plug 'ap/vim-css-color'
 
 Plug 'godlygeek/tabular'
@@ -96,9 +94,13 @@ if !has('win32') && !has('winw64')
     Plug 'maximbaz/lightline-ale'
 endif
 
-
 call plug#end()
 
+"" NERDTreeToggle
+map <C-o> :NERDTreeToggle<CR>
+
+
+let g:markdown_syntax_conceal = 0
 let R_assign = 0
 let R_hi_fun_globenv = 1
 
