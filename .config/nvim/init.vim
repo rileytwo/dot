@@ -110,6 +110,16 @@ nnoremap <C-I> gg=G``
 
 " NERDTreeToggle
 map <C-o> :NERDTreeToggle<CR>
+
+" buffer resizing:
+"   = increase height
+"   - decrease height
+"   + increase width
+"   _ decrease width
+map = <C-W>+
+map - <C-W>-
+map + <C-W>>
+map _ <C-W><
 " ----------
 " //
 " ====================
