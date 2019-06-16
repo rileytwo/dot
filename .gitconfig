@@ -8,5 +8,6 @@
 	required = true
 [core]
 	excludesfile = .gitignore_global
+	trustctime = false
 [hub]
 	protocol = https
