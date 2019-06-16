@@ -14,7 +14,7 @@
 --   -  ⌘ + ⌃ + ⌥ + ⇧ + J, Decrease window height;
 
 -- 1. --
-hs.alert("Configuration loaded.")
+--hs.alert("Configuration loaded.")
 
 hs.console.darkMode(true)
 
@@ -24,6 +24,7 @@ modification_keys = {"cmd", "ctrl", "alt", "shift"}
 
 hs.hotkey.bind(modification_keys, "R", function()
 	hs.reload()
+    hs.alert.show("Reloaded")
 end)
 
 hs.hotkey.bind(modification_keys, "W", function()
@@ -63,7 +64,7 @@ end
 function get_fill_right_win_frame()
 	local win         = hs.window.focusedWindow()
 	local win_frame   = win:frame()
-	local screen_frame     = win:screen():frame()
+	local screen_frame = win:screen():frame()
 	win_frame.x = screen_frame.x + screen_frame.w / 2
 	win_frame.y = screen_frame.y
 	win_frame.w = screen_frame.w / 2
@@ -109,8 +110,7 @@ bind_resize_and_restore_keys("]", get_fill_right_win_frame)
 function is_right()
 	local win          = hs.window.focusedWindow()
 	local win_frame    = win:frame()
-	local win_screen   = win:screen()
-	local screen_frame = win_screen:frame()
+    local screen_frame = win:screen():frame()
 	
 	if (screen_frame.w - (win_frame.x + win_frame.w)) <= 50 then
 		return true
@@ -121,10 +121,8 @@ end
 
 
 function is_top()
-	local win          = hs.window.focusedWindow()
-	local win_frame    = win:frame()
-	local win_screen   = win:screen()
-	local screen_frame = win_screen:frame()
+	local win       = hs.window.focusedWindow()
+	local win_frame = win:frame()
 	
 	if win_frame.y <= 100 then
 		return true
@@ -138,8 +136,7 @@ hs.hotkey.bind(modification_keys, "H", function()
 	-- increase window width
 	local win          = hs.window.focusedWindow()
 	local win_frame    = win:frame()
-	local win_screen   = win:screen()
-	local screen_frame = win_screen:frame()
+	local screen_frame = win:screen():frame()
 	
 	if is_right() and win_frame.x >= 0 then
 		win_frame.x = win_frame.x - 50
@@ -173,7 +170,7 @@ end)
 
 hs.hotkey.bind(modification_keys, "K", function()
 	-- increase window height
-	local win = hs.window.focusedWindow()
+	local win       = hs.window.focusedWindow()
 	local win_frame = win:frame()
 	
 	if is_top() then
@@ -189,8 +186,7 @@ hs.hotkey.bind(modification_keys, "J", function()
 	-- decrease window height
 	local win          = hs.window.focusedWindow()
 	local win_frame    = win:frame()
-	local win_screen   = win:screen()
-	local screen_frame = win_screen:frame()
+	local screen_frame = win:screen():frame()
 	
 	if is_top() then
 		--win_frame.y = win_frame.y + 50
