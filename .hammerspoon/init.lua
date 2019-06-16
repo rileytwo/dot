@@ -23,8 +23,12 @@ previous_frame_sizes = {}
 modification_keys = {"cmd", "ctrl", "alt", "shift"}
 
 hs.hotkey.bind(modification_keys, "R", function()
-	hs.reload()
-    hs.alert.show("Reloaded")
+	hs.notify.new({
+        title           = "Hammerspoon",
+        informativeText = "Config reloaded!"
+    }):send()
+    hs.reload()
+    --hs.alert.show("Reloaded") 
 end)
 
 hs.hotkey.bind(modification_keys, "W", function()
