@@ -1,63 +1,9 @@
-"" global
-set encoding=UTF-8
-scriptencoding utf-8
-syntax on
-set whichwrap+=<,>,h,l,[,]
-set backspace=indent,eol,start
-set mouse=a
-set number
-set smartcase
-set showcmd
-set gdefault
-set magic
-set guicursor=
-    \n-v-c-sm:hor20,
-    \i-ci-ve:ver25,
-    \r-cr-o:block
-set splitbelow 
-set splitright
-set modifiable
-
-set number
-set numberwidth=1
-set cursorline
-set showtabline=2
-set laststatus=2
-set noshowmode
-set ignorecase
-set smartcase
-filetype on
-set tabstop=4
-set shiftwidth=4
-set expandtab
-set autoindent
-filetype plugin indent on
-let g:vim_indent_cont = &shiftwidth
-
-"" remaps
-" pane navigation:
-"   <C-J> go to pane below
-"   <C-K> go to pane above
-"   <C-L> go to pane right
-"   <C-H> go to pane left
-nnoremap <C-J> <C-W><C-J>
-nnoremap <C-K> <C-W><C-K>
-nnoremap <C-L> <C-W><C-L>
-nnoremap <C-H> <C-W><C-H>
-
-"" Indent file
-nnoremap <C-I> gg=G``
-
-
-"" Radian
-let R_app = 'radian'
-let R_cmd = 'R'
-let R_hl_term = 0
-let R_args = []  " if you had set any
-let R_bracketed_paste = 1
-
-" plugins using vim-plug
+" ====================
+" // Plugins (vim-plug)
+" ----------
 call plug#begin('~/.vim/plugged')
+
+
 Plug 'tpope/vim-markdown'
 Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-surround'
@@ -87,34 +33,102 @@ Plug 'aonemd/kuroi.vim'
 
 Plug 'itchyny/lightline.vim'
 
-if !has('win32') && !has('winw64')
+if !has('win32') && !has('win64')
     " mac specific plugs cause windows is hard
     Plug '/usr/local/opt/fzf'
     Plug 'w0rp/ale'
     Plug 'maximbaz/lightline-ale'
 endif
-
+" ----------
+" // add plugins to &runtimepath
 call plug#end()
+" ====================
 
-"" NERDTreeToggle
+
+" ====================
+" // Options
+" ----------
+set encoding=UTF-8
+scriptencoding utf-8
+
+syntax on
+set whichwrap+=<,>,h,l,[,]
+set backspace=indent,eol,start
+set mouse=a
+
+set smartcase
+set showcmd
+set gdefault
+set magic
+
+set splitbelow 
+set splitright
+set modifiable
+
+set number
+set numberwidth=1
+set cursorline
+set guicursor=
+    \n-v-c-sm:hor20,
+    \i-ci-ve:ver25,
+    \r-cr-o:block
+
+set showtabline=2
+set laststatus=2
+set noshowmode
+
+set ignorecase
+set smartcase
+
+set tabstop=4
+set shiftwidth=4
+set expandtab
+set autoindent
+filetype on
+filetype plugin indent on
+let g:vim_indent_cont = &shiftwidth
+" ----------
+" //
+" ====================
+
+
+" ====================
+" // Key Remaps
+" ----------
+" pane navigation:
+"   <C-J> go to pane below
+"   <C-K> go to pane above
+"   <C-L> go to pane right
+"   <C-H> go to pane left
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
+" indent file
+nnoremap <C-I> gg=G``
+
+" NERDTreeToggle
 map <C-o> :NERDTreeToggle<CR>
+" ----------
+" //
+" ====================
 
 
-let g:markdown_syntax_conceal = 0
+" ====================
+" // Variables
+" ----------
+" R
+let R_app = 'radian'
+let R_cmd = 'R'
+let R_hl_term = 0
+let R_args = []  " if you had set any
+let R_bracketed_paste = 1
 let R_assign = 0
 let R_hi_fun_globenv = 1
 
-let NERDTreeShowHidden = 1
-let NERDTreeMinimalUI = 1
-
-let NERDTreeDirArrows = 1
-
-let g:indentLine_setColors = 0
-let g:indentLine_char = '│'
-let g:indent_guides_enable_on_vim_startup = 1
-let g:indent_guides_start_level = 2
-let g:indent_guides_guide_size = 1
-
+" markdown
+let g:markdown_syntax_conceal = 0
 let g:markdown_fenced_languages = [
     \ 'html',
     \ 'python',
@@ -130,9 +144,31 @@ let g:bullets_enabled_file_types = [
     \ 'scratch'
     \ ]
 
-" lightline/ale info at maximbaz/dotfiles/.config/nvim/init.vim
+" NERDTree
+let NERDTreeShowHidden = 1
+let NERDTreeMinimalUI = 1
+let NERDTreeDirArrows = 1
 
-if has('mac')
+" indentline
+let g:indentLine_setColors = 0
+let g:indentLine_char = '│'
+let g:indent_guides_enable_on_vim_startup = 1
+let g:indent_guides_start_level = 2
+let g:indent_guides_guide_size = 1
+
+
+" lightline/ale 
+" more info at: info at maximbaz/dotfiles/.config/nvim/init.vim
+if has('win32') || has('win64')
+    let g:lightline = {
+        \ 'colorscheme': 'twofirewatch',
+        \ 'active': {
+        \   'left': [ [ 'mode', 'paste' ],
+        \             [ 'gitbranch', 'readonly', 'filename', 'modified' ],
+        \             [ 'LightLineFilename' ] ]
+        \ }
+        \ }
+else
     let g:lightline = {
         \ 'colorscheme': 'twofirewatch',
         \ 'active': {
@@ -145,35 +181,32 @@ if has('mac')
         \   'gitbranch': 'fugitive#head'
         \ }
         \ }
-else
-    let g:lightline = {
-        \ 'colorscheme': 'twofirewatch',
-        \ 'active': {
-        \   'left': [ [ 'mode', 'paste' ],
-        \             [ 'gitbranch', 'readonly', 'filename', 'modified' ],
-        \             [ 'LightLineFilename' ] ]
-        \ }
-        \ }
 endif
 
+" show full/path/to/file in buffer in LightLine
 function! LightLineFilename()
     return expand('%')
 endfunction
 
-syntax enable
+"syntax enable
 
-if has('mac')
-    let g:os = 'Darwin'
-    if $COLORTERM =~# 'truecolor' || $COLORTERM =~# '24bit'
+" check for truecolor support in current terminal
+" macOS Terminal.app does not support truecolor
+let uname = substitute(system('uname'), '\n', '', '')
+if !exists('g:os')
+    if has('mac')
+        let g:os = 'Darwin'
+        if $COLORTERM =~# 'truecolor' || $COLORTERM =~# '24bit'
+            set termguicolors
+            colorscheme riley
+        else
+            colorscheme one
+        endif
+    elseif has('win32') || has('win64')
+        let g:os = 'Windows'
         set termguicolors
         colorscheme riley
     else
-        colorscheme one
+        let g:os = 'Linux'
     endif
-else
-    let g:os = 'Windows'
-    set termguicolors
-    colorscheme riley
 endif
-
-set background=dark
