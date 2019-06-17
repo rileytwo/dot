@@ -90,7 +90,7 @@
 
 .ace_keyword,
 .ace_meta {
-	color: #ff6666;
+	color: #FF7E81;
 	/* text-shadow: */
 	font-weight: normal;
 }
@@ -250,7 +250,7 @@
 }
 
 .ace_keyword.ace_operator.ace_infix {
-	color: #ff6666 !important;
+	color: #FF7E81 !important;
 	/* text-shadow: */
 }
 
