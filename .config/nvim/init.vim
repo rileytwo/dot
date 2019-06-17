@@ -17,9 +17,8 @@ Plug 'PProvost/vim-ps1'
 Plug 'scrooloose/nerdtree', {'on': 'NERDTreeToggle'}
 Plug 'ryanoasis/vim-devicons'
 
-"Plug 'jiangmiao/auto-pairs'
 Plug 'Raimondi/delimitMate'
-"Plug 'ap/vim-css-color'
+Plug 'ap/vim-css-color'
 
 Plug 'godlygeek/tabular'
 Plug 'dkarter/bullets.vim'
