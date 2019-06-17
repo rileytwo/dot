@@ -79,7 +79,6 @@
 .rstudio-themes-flat .rstudio-themes-dark .GD15MCFCJU button {
 	/* general app items */
 	font-family: Roboto, "Lucida Grande", serif;
-	/* font-size: 1.1em; */
 }
 .rstudio-themes-flat
 	.rstudio-themes-dark
@@ -87,7 +86,7 @@
 	.gwt-TabLayoutPanelTab
 	.gwt-Label {
 	/* tab fonts & colors */
-	font-size: 1.1em;
+	font-size: 11px;
 	font-weight: 600;
 }
 .rstudio-themes-flat .rstudio-themes-dark .GD15MCFCIU,
