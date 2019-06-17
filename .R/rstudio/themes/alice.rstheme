@@ -201,7 +201,7 @@
 }
 
 .ace_indent-guide {
-	border-right: 1px solid rgb(255, 254, 254);
+	border-right: 1px solid #444444;
 	margin-right: -1px;
 }
 
