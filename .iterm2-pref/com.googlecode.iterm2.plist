@@ -50686,8 +50686,8 @@ Show Toolbelt</string>
 	<false/>
 	<key>NSSplitView Subview Frames NSColorPanelSplitView</key>
 	<array>
-		<string>0.000000, 0.000000, 368.000000, 223.000000, NO, NO</string>
-		<string>0.000000, 224.000000, 368.000000, 116.000000, NO, NO</string>
+		<string>0.000000, 0.000000, 368.000000, 251.000000, NO, NO</string>
+		<string>0.000000, 252.000000, 368.000000, 88.000000, NO, NO</string>
 	</array>
 	<key>NSTableView Columns v2 KeyBingingTable</key>
 	<data>
@@ -50718,7 +50718,7 @@ Show Toolbelt</string>
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame NSColorPanel</key>
-	<string>523 449 368 240 0 0 1440 877 </string>
+	<string>868 580 368 232 0 0 1680 1027 </string>
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>898 110 476 288 0 0 1440 877 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
@@ -50730,7 +50730,7 @@ Show Toolbelt</string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>99 293 592 584 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>783 301 657 537 0 0 1440 877 </string>
+	<string>766 220 657 537 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>172 412 650 427 0 0 1440 877 </string>
 	<key>New Bookmarks</key>
@@ -50814,13 +50814,13 @@ Show Toolbelt</string>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.97104030847549438</real>
+				<real>0.97254901960784312</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.502888023853302</real>
+				<real>0.53972575371931986</real>
 				<key>Red Component</key>
-				<real>0.6329990029335022</real>
+				<real>0.66982042926436303</real>
 			</dict>
 			<key>Ansi 14 Color</key>
 			<dict>
@@ -50944,11 +50944,11 @@ Show Toolbelt</string>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.50619852542877197</real>
+				<real>0.50588235294117645</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.49256539344787598</real>
+				<real>0.49411764705882355</real>
 				<key>Red Component</key>
 				<real>1</real>
 			</dict>
@@ -58608,9 +58608,9 @@ Show Toolbelt</string>
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
 		<key>screenFrame</key>
-		<string>{{0, 0}, {1440, 900}}</string>
+		<string>{{0, 0}, {1680, 1050}}</string>
 		<key>topLeft</key>
-		<string>{0, 877}</string>
+		<string>{590, 908}</string>
 	</dict>
 	<key>NoSyncHaveWarnedAboutIncompatibleSoftware</key>
 	<true/>
@@ -58621,7 +58621,7 @@ Show Toolbelt</string>
 	<key>NoSyncLastTipTime</key>
 	<real>578277105.02708006</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>279</integer>
+	<integer>289</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -65713,7 +65713,7 @@ Show Toolbelt</string>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
 	<true/>
 	<key>kCPKUseSystemColorPicker</key>
-	<false/>
+	<true/>
 	<key>preferIntegratedGPU</key>
 	<true/>
 </dict>
