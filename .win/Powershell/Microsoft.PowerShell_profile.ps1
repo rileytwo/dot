@@ -1,6 +1,6 @@
 Set-Location "C:\Users\RRoach\.dot"
 
-winfetch
+#winfetch
 
 # Chocolatey profile
 $ChocolateyProfile = "$env:ChocolateyInstall\helpers\chocolateyProfile.psm1"
