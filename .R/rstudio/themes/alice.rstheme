@@ -20,7 +20,7 @@
 .rstudio-themes-flat.ace_editor_theme,
 .rstudio-themes-flat .ace_editor_theme {
 	background-color: #141414;
-	color: #ebe0d1;
+	color: #eee;
 }
 
 .ace_comment.ace_doc.ace_tag {
