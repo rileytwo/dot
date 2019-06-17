@@ -1,5 +1,8 @@
 Set-Location "C:\Users\RRoach\.dot"
-
+$PSDefaultParameterValues = @{
+    "Format-Table:Autosize" = $True 
+}
+    
 #winfetch
 
 # Chocolatey profile
@@ -8,15 +11,6 @@ if (Test-Path($ChocolateyProfile)) {
     Import-Module "$ChocolateyProfile"
 }
 
-#region conda initialize
-# !! Contents within this block are managed by 'conda init' !!
-#(& "C:\Users\RRoach\AppData\Local\Continuum\anaconda3\Scripts\conda.exe" "shell.powershell" "hook") | Out-String | Invoke-Expression
-#endregion
-
-#function rmd {
-#    param($dir)
-#    Write-Host "Get-ChildItem $dir -Include * -Recurse | Remove-Item"
-#}
 
 function git_status {
     git status
