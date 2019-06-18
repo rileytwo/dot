@@ -37,6 +37,8 @@ if !has('win32') && !has('win64')
     Plug '/usr/local/opt/fzf'
     Plug 'w0rp/ale'
     Plug 'maximbaz/lightline-ale'
+    Plug 'Shougo/deoplete.nvim'
+    let g:deoplete#enable_at_startup = 1
 endif
 " ----------
 " // add plugins to &runtimepath
@@ -48,7 +50,6 @@ call plug#end()
 " ----------
 set encoding=UTF-8
 scriptencoding utf-8
-
 syntax on
 set whichwrap+=<,>,h,l,[,]
 set backspace=indent,eol,start
