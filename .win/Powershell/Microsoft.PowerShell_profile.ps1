@@ -12,21 +12,21 @@ if (Test-Path($ChocolateyProfile)) {
 }
 
 
-function git_status {
-    git status
-}
+#function git_status {
+#    git status
+#}
 
-function git_status_b {
-    git status -sb
-}
+#function git_status_b {
+#    git status -sb
+#}
 
-function git_commit {
-    git commit
-}
+#function git_commit {
+#    git commit
+#}
 
-function git_remote_update {
-    git remote update
-}
+#function git_remote_update {
+#    git remote update
+#}
 
 
 ### module imports ###
