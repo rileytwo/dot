@@ -12,26 +12,14 @@ if (Test-Path($ChocolateyProfile)) {
 }
 
 
-#function git_status {
-#    git status
-#}
-
 #function git_status_b {
 #    git status -sb
-#}
-
-#function git_commit {
-#    git commit
-#}
-
-#function git_remote_update {
-#    git remote update
 #}
 
 
 ### module imports ###
 Import-Module Get-ChildItemColor
-#Import-Module posh-git
+Import-Module posh-git
 Import-Module oh-my-posh -DisableNameChecking
 Set-Theme riley
 
@@ -40,17 +28,21 @@ Set-Theme riley
 
 ### handy aliases ###
 
-#Set-Alias -name 'trash' -value 'empty-recycle-bin'
+function git-commit { git commit $args }
+Set-Alias -name 'gt' git-commit
+
+function git-remote-update { git remote update $args }
+Set-Alias -name 'grup' git-remote-update
+
+function git-status { git status $args }
+Set-Alias -name 'gs' git-status
 
 Set-Alias -name 'rr' -value 'radian'
 Set-Alias -name 'r' -value 'Rscript'
 Set-Alias -name 'ttx' -value '~/.dot/usr/ttx.R'
 
+#Set-Alias -name 'trash' -value 'empty-recycle-bin'
 
-Set-Alias -name 'gs' -value 'git_status'
-Set-Alias -name 'gt' -value 'git_commit'
-Set-Alias -name 'gsb' -value 'git_status_b'
-Set-Alias -name 'grup' -value 'git_remote_update'
 
 Set-Alias -name 'l' -value Get-ChildItemColor
 
