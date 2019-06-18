@@ -75,8 +75,8 @@ if !has('win32') && !has('win64')
     set number
     set numberwidth=1
     set guicursor=
-        \n-v-c-sm:hor20
-        \i-ci-ve:ver25
+        \n-v-c-sm:hor20,
+        \i-ci-ve:ver25,
         \r-cr-o:block
     set cursorline
 endif
@@ -224,6 +224,8 @@ if !exists('g:os')
         colorscheme riley
     else
         let g:os = 'Linux'
+        set termguicolors
+        colorscheme riley
     endif
 endif
 
