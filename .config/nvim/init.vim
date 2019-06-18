@@ -70,13 +70,15 @@ set splitbelow
 set splitright
 set modifiable
 
-set number
-set numberwidth=1
-set cursorline
-set guicursor=
-    \n-v-c-sm:hor20,
-    \i-ci-ve:ver25,
-    \r-cr-o:block
+if !has('win32') && !has('win64') 
+    set number
+    set numberwidth=1
+    set guicursor=
+        \n-v-c-sm:hor20
+        \i-ci-ve:ver25
+        \r-cr-o:block
+    set cursorline
+endif
 
 set showtabline=2
 set laststatus=2
