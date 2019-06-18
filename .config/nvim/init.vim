@@ -12,7 +12,13 @@ Plug 'tpope/vim-fugitive'
 Plug 'itchyny/vim-gitbranch'
 Plug 'Yggdroot/indentLine'
 
+Plug 'ncm2/ncm2'
+Plug 'roxma/nvim-yarp'
 Plug 'jalvesaq/Nvim-R', {'for': 'R'}
+Plug 'gaalcaras/ncm-R', {'for': 'R'}
+Plug 'sirver/UltiSnips',
+Plug 'ncm2/ncm2-ultisnips'
+
 Plug 'PProvost/vim-ps1'
 Plug 'scrooloose/nerdtree', {'on': 'NERDTreeToggle'}
 Plug 'ryanoasis/vim-devicons'
