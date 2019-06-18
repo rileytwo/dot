@@ -41,11 +41,12 @@ Plug 'itchyny/lightline.vim'
 if !has('win32') && !has('win64')
     " mac specific plugs cause windows is hard
     Plug '/usr/local/opt/fzf'
-    Plug 'w0rp/ale'
-    Plug 'maximbaz/lightline-ale'
-    Plug 'Shougo/deoplete.nvim'
-    let g:deoplete#enable_at_startup = 1
 endif
+Plug 'w0rp/ale'
+Plug 'maximbaz/lightline-ale'
+Plug 'Shougo/deoplete.nvim'
+let g:deoplete#enable_at_startup = 1
+
 " ----------
 " // add plugins to &runtimepath
 call plug#end()
