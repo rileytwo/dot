@@ -51393,13 +51393,13 @@ Show Toolbelt</string>
 			<key>Name</key>
 			<string>alice</string>
 			<key>Non Ascii Font</key>
-			<string>FuraCodeNerdFontComplete-Regular 13</string>
+			<string>FuraCodeNerdFontComplete-Retina 13</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Non-ASCII Ligatures</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>FuraCodeNerdFontComplete-Retina 13</string>
+			<string>SFMono-Regular 13</string>
 			<key>Only The Default BG Color Uses Transparency</key>
 			<false/>
 			<key>Open Toolbelt</key>
@@ -58575,17 +58575,24 @@ Show Toolbelt</string>
 	</array>
 	<key>NoSyncBFPRecents</key>
 	<array>
-		<string>Hack Nerd Font</string>
-		<string>RobotoMono Nerd Font</string>
 		<string>FuraCode Nerd Font</string>
 		<string>SF Mono</string>
+		<string>Fira Code</string>
+		<string>Hack Nerd Font</string>
 	</array>
+	<key>NoSyncFrame_SessionsPreferences</key>
+	<dict>
+		<key>screenFrame</key>
+		<string>{{0, 0}, {1440, 900}}</string>
+		<key>topLeft</key>
+		<string>{417, 787}</string>
+	</dict>
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1440, 900}}</string>
 		<key>topLeft</key>
-		<string>{266, 773}</string>
+		<string>{0, 877}</string>
 	</dict>
 	<key>NoSyncInstallationId</key>
 	<string>78E2F140-557C-4115-91AC-4DB26E1EFA8B</string>
@@ -59455,9 +59462,9 @@ Show Toolbelt</string>
 												<key>Color Space</key>
 												<string>sRGB</string>
 												<key>Green Component</key>
-												<real>0.75454207292691888</real>
+												<real>0.69803921570000005</real>
 												<key>Red Component</key>
-												<real>0.0103759765625</real>
+												<real>0.2470588235</real>
 											</dict>
 											<key>Ansi 13 Color</key>
 											<dict>
@@ -59744,7 +59751,7 @@ Show Toolbelt</string>
 												<real>0.7810397744178772</real>
 											</dict>
 											<key>Guid</key>
-											<string>21F2578F-0464-42AD-A6A7-10D6A5B290B8</string>
+											<string>3697404B-7AE3-4B10-AB3F-DC59B6AA31B9</string>
 											<key>Has Hotkey</key>
 											<false/>
 											<key>Horizontal Spacing</key>
@@ -60061,13 +60068,13 @@ Show Toolbelt</string>
 											<key>Name</key>
 											<string>alice</string>
 											<key>Non Ascii Font</key>
-											<string>FuraCodeNerdFontComplete-Regular 13</string>
+											<string>FuraCodeNerdFontComplete-Retina 13</string>
 											<key>Non-ASCII Anti Aliased</key>
 											<true/>
 											<key>Non-ASCII Ligatures</key>
 											<true/>
 											<key>Normal Font</key>
-											<string>FuraCodeNerdFontComplete-Regular 13</string>
+											<string>SFMono-Regular 13</string>
 											<key>Only The Default BG Color Uses Transparency</key>
 											<false/>
 											<key>Open Toolbelt</key>
@@ -60418,32 +60425,6 @@ Show Toolbelt</string>
 										<array/>
 										<key>Directories</key>
 										<array>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
 											<string>/Users/riley/.dot</string>
 											<string>/Users/riley/.dot</string>
 											<string>/Users/riley/.dot</string>
@@ -60499,6 +60480,51 @@ Show Toolbelt</string>
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
 										</array>
 										<key>Environment</key>
 										<dict>
@@ -60532,7 +60558,7 @@ Show Toolbelt</string>
 										<key>Substitutions</key>
 										<dict/>
 										<key>Working Directory</key>
-										<string>/Users/riley</string>
+										<string>/Users/riley/.dot</string>
 									</dict>
 									<key>View Type</key>
 									<string>SessionView</string>
