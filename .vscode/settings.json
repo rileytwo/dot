@@ -49,7 +49,6 @@
     "workbench.iconTheme": "material-icon-theme",
     "markdown.extension.print.imgToBase64": true,
     "markdown.extension.toc.githubCompatibility": true,
-    "scm.alwaysShowProviders": true,
     "json.format.enable": false,
     "vim.disableExtension": true,
     "gitProjectManager.displayProjectPath": true,
@@ -62,5 +61,8 @@
     "workbench.activityBar.visible": true,
     "gitlens.showWhatsNewAfterUpgrades": false,
     "workbench.colorTheme": "Alice",
-    "editor.fontFamily": "FuraCode Nerd Font, SFMono-Regular, Menlo, Monaco, 'Courier New', monospace"
+    "editor.fontFamily": "Fira Code, SFMono-Regular, Menlo, Monaco, 'Courier New', monospace",
+    "gitlens.advanced.similarityThreshold": 0,
+    "gitlens.advanced.telemetry.enabled": false,
+    "scm.providers.visible": 0
 }
