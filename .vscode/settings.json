@@ -1,7 +1,6 @@
 {
     "window.zoomLevel": 0,
     "editor.minimap.enabled": false,
-    "editor.fontFamily": "SFMono-Regular, Menlo, Hack, Monaco, 'Courier New', monospace",
     "editor.cursorStyle": "underline",
     "telemetry.enableTelemetry": false,
     "telemetry.enableCrashReporter": false,
