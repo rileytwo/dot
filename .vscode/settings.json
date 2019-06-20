@@ -61,5 +61,6 @@
     "window.title": "${activeEditorLong}",
     "workbench.activityBar.visible": true,
     "gitlens.showWhatsNewAfterUpgrades": false,
-    "workbench.colorTheme": "Alice"
+    "workbench.colorTheme": "Alice",
+    "editor.fontFamily": "FuraCode Nerd Font, SFMono-Regular, Menlo, Monaco, 'Courier New', monospace"
 }
