@@ -18,8 +18,6 @@
 	<false/>
 	<key>BracketedPasteMode</key>
 	<true/>
-	<key>CGFontRenderingFontSmoothingDisabled</key>
-	<false/>
 	<key>ConvertDosNewlines</key>
 	<true/>
 	<key>Custom Color Presets</key>
@@ -50662,6 +50660,10 @@ Show Toolbelt</string>
 	<true/>
 	<key>NSColorPanelMode</key>
 	<string>1</string>
+	<key>NSColorPickerPreferredRGBEntryMode</key>
+	<integer>2</integer>
+	<key>NSColorPickerSlidersDefaults</key>
+	<string>1</string>
 	<key>NSNavLastRootDirectory</key>
 	<string>~/.dot/.iterm2-pref</string>
 	<key>NSNavLastUserSetHideExtensionButtonState</key>
@@ -50680,8 +50682,8 @@ Show Toolbelt</string>
 	<false/>
 	<key>NSSplitView Subview Frames NSColorPanelSplitView</key>
 	<array>
-		<string>0.000000, 0.000000, 328.000000, 371.500000, NO, NO</string>
-		<string>0.000000, 372.500000, 328.000000, 115.500000, NO, NO</string>
+		<string>0.000000, 0.000000, 328.000000, 403.500000, NO, NO</string>
+		<string>0.000000, 404.500000, 328.000000, 115.500000, NO, NO</string>
 	</array>
 	<key>NSTableView Columns v2 KeyBingingTable</key>
 	<data>
@@ -50712,7 +50714,7 @@ Show Toolbelt</string>
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame NSColorPanel</key>
-	<string>23 143 328 420 0 0 1440 877 </string>
+	<string>179 357 328 384 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>783 301 657 537 0 0 1440 877 </string>
 	<key>New Bookmarks</key>
@@ -50787,9 +50789,9 @@ Show Toolbelt</string>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.69803921570000005</real>
+				<real>0.72328124999999999</real>
 				<key>Red Component</key>
-				<real>0.2470588235</real>
+				<real>0.31</real>
 			</dict>
 			<key>Ansi 13 Color</key>
 			<dict>
@@ -50861,13 +50863,13 @@ Show Toolbelt</string>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.95091557502746582</real>
+				<real>1</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.64467030763626099</real>
+				<real>0.69803921570000005</real>
 				<key>Red Component</key>
-				<real>0.0</real>
+				<real>0.2470588235</real>
 			</dict>
 			<key>Ansi 5 Color</key>
 			<dict>
@@ -51067,13 +51069,13 @@ Show Toolbelt</string>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.78104829788208008</real>
+				<real>0.94999999999999996</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.78105825185775757</real>
+				<real>0.94999999999999996</real>
 				<key>Red Component</key>
-				<real>0.7810397744178772</real>
+				<real>0.94999999999999996</real>
 			</dict>
 			<key>Guid</key>
 			<string>C2CD2FD3-775C-44B4-AB74-0853DACAE166</string>
@@ -58562,8 +58564,8 @@ Show Toolbelt</string>
 	</array>
 	<key>NoSyncAllAppVersions</key>
 	<array>
-		<string>3.3.0beta9</string>
 		<string>3.3.0beta11</string>
+		<string>3.3.0beta9</string>
 	</array>
 	<key>NoSyncBFPFavorites</key>
 	<array>
@@ -58592,14 +58594,14 @@ Show Toolbelt</string>
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1440, 900}}</string>
 		<key>topLeft</key>
-		<string>{11, 793}</string>
+		<string>{-86, 777}</string>
 	</dict>
 	<key>NoSyncInstallationId</key>
 	<string>78E2F140-557C-4115-91AC-4DB26E1EFA8B</string>
 	<key>NoSyncLastTipTime</key>
 	<real>582592380.31528103</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>306</integer>
+	<integer>311</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -59462,9 +59464,9 @@ Show Toolbelt</string>
 												<key>Color Space</key>
 												<string>sRGB</string>
 												<key>Green Component</key>
-												<real>0.69803921570000005</real>
+												<real>0.72328124999999999</real>
 												<key>Red Component</key>
-												<real>0.2470588235</real>
+												<real>0.31</real>
 											</dict>
 											<key>Ansi 13 Color</key>
 											<dict>
@@ -59536,13 +59538,13 @@ Show Toolbelt</string>
 												<key>Alpha Component</key>
 												<real>1</real>
 												<key>Blue Component</key>
-												<real>0.95091557502746582</real>
+												<real>1</real>
 												<key>Color Space</key>
 												<string>sRGB</string>
 												<key>Green Component</key>
-												<real>0.64467030763626099</real>
+												<real>0.69803921570000005</real>
 												<key>Red Component</key>
-												<real>0.0</real>
+												<real>0.2470588235</real>
 											</dict>
 											<key>Ansi 5 Color</key>
 											<dict>
@@ -59742,16 +59744,16 @@ Show Toolbelt</string>
 												<key>Alpha Component</key>
 												<real>1</real>
 												<key>Blue Component</key>
-												<real>0.78104829788208008</real>
+												<real>0.94999999999999996</real>
 												<key>Color Space</key>
 												<string>sRGB</string>
 												<key>Green Component</key>
-												<real>0.78105825185775757</real>
+												<real>0.94999999999999996</real>
 												<key>Red Component</key>
-												<real>0.7810397744178772</real>
+												<real>0.94999999999999996</real>
 											</dict>
 											<key>Guid</key>
-											<string>96032C5A-0DA2-49CD-A4C5-AE784C78C5C5</string>
+											<string>653EE944-86CC-4838-8E9D-F2765D7F2DEE</string>
 											<key>Has Hotkey</key>
 											<false/>
 											<key>Horizontal Spacing</key>
@@ -60435,6 +60437,34 @@ Show Toolbelt</string>
 											<string>/Users/riley/.dot</string>
 											<string>/Users/riley/.dot</string>
 											<string>/Users/riley/.dot</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
 											<string>/Users/riley/.dot</string>
 											<string>/Users/riley/.dot</string>
 											<string>/Users/riley/.dot</string>
@@ -60458,34 +60488,6 @@ Show Toolbelt</string>
 											<string>/Users/riley/.dot</string>
 											<string>/Users/riley/.dot</string>
 											<string>/Users/riley/.dot</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
 											<string>/Users/riley/.dot</string>
 											<string>/Users/riley/.dot</string>
 											<string>/Users/riley/.dot</string>
