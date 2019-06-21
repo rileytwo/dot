@@ -51785,7 +51785,7 @@ Show Toolbelt</string>
 			<key>Terminal Type</key>
 			<string>xterm-256color</string>
 			<key>Thin Strokes</key>
-			<integer>3</integer>
+			<integer>4</integer>
 			<key>Title Components</key>
 			<integer>2</integer>
 			<key>Transparency</key>
@@ -51797,7 +51797,7 @@ Show Toolbelt</string>
 			<key>Use Bold Font</key>
 			<true/>
 			<key>Use Bright Bold</key>
-			<true/>
+			<false/>
 			<key>Use Cursor Guide</key>
 			<false/>
 			<key>Use Italic Font</key>
@@ -58564,8 +58564,8 @@ Show Toolbelt</string>
 	</array>
 	<key>NoSyncAllAppVersions</key>
 	<array>
-		<string>3.3.0beta9</string>
 		<string>3.3.0beta11</string>
+		<string>3.3.0beta9</string>
 	</array>
 	<key>NoSyncBFPFavorites</key>
 	<array>
@@ -58574,13 +58574,14 @@ Show Toolbelt</string>
 		<string>RobotoMono Nerd Font</string>
 		<string>Hack Nerd Font</string>
 		<string>FuraCode Nerd Font</string>
+		<string>Input Mono</string>
 	</array>
 	<key>NoSyncBFPRecents</key>
 	<array>
-		<string>FuraCode Nerd Font</string>
 		<string>SF Mono</string>
 		<string>Fira Code</string>
-		<string>Hack Nerd Font</string>
+		<string>Apple Braille</string>
+		<string>GB18030 Bitmap</string>
 	</array>
 	<key>NoSyncFrame_SessionsPreferences</key>
 	<dict>
@@ -58594,14 +58595,14 @@ Show Toolbelt</string>
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1440, 900}}</string>
 		<key>topLeft</key>
-		<string>{0, 777}</string>
+		<string>{30, 788}</string>
 	</dict>
 	<key>NoSyncInstallationId</key>
 	<string>78E2F140-557C-4115-91AC-4DB26E1EFA8B</string>
 	<key>NoSyncLastTipTime</key>
 	<real>582592380.31528103</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>312</integer>
+	<integer>315</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -59753,7 +59754,7 @@ Show Toolbelt</string>
 												<real>0.94999999999999996</real>
 											</dict>
 											<key>Guid</key>
-											<string>94F93154-4104-40D5-85BD-29DADB804543</string>
+											<string>B7DBB8CA-3194-4DC9-8FBC-71DCD8A766DA</string>
 											<key>Has Hotkey</key>
 											<false/>
 											<key>Horizontal Spacing</key>
@@ -60432,20 +60433,20 @@ Show Toolbelt</string>
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
 											<string>/Users/riley/.dot</string>
 											<string>/Users/riley/.dot</string>
 											<string>/Users/riley/.dot</string>
@@ -65685,6 +65686,8 @@ Show Toolbelt</string>
 	<false/>
 	<key>WordCharacters</key>
 	<string>/-+\~_.</string>
+	<key>ZippyTextDrawing</key>
+	<false/>
 	<key>disableMetalWhenUnplugged</key>
 	<true/>
 	<key>findMode_iTerm</key>
