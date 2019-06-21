@@ -61,7 +61,6 @@
     "workbench.activityBar.visible": true,
     "gitlens.showWhatsNewAfterUpgrades": false,
     "workbench.colorTheme": "Alice",
-    "editor.fontFamily": "Fira Code, SFMono-Regular, Menlo, Monaco, 'Courier New', monospace",
     "gitlens.advanced.similarityThreshold": 0,
     "gitlens.advanced.telemetry.enabled": false,
     "scm.providers.visible": 0,
