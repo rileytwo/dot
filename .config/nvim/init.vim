@@ -79,6 +79,8 @@ if !has('win32') && !has('win64')
         \i-ci-ve:ver25,
         \r-cr-o:block
     set cursorline
+else
+    set guicursor=
 endif
 
 set showtabline=2
