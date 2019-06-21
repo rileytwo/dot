@@ -74,5 +74,7 @@
     "git.showInlineOpenFileAction": false,
     "git.showProgress": false,
     "editor.copyWithSyntaxHighlighting": false,
-    "editor.lineHeight": 16
+    "editor.lineHeight": 16,
+    "git.enabled": false,
+    "editor.fontFamily": "Fira Code, Menlo, Monaco, 'Courier New', monospace"
 }
