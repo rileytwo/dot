@@ -109,6 +109,9 @@ fi
 [[ -d "$HOME/go" ]] \
     && export GOPATH="$HOME/go" \
     && export PATH="${GOPATH//://bin:}/bin:$PATH"
+#
+# // pyenv
+eval "$(pyenv init -)"
 
 
 #### // options, other
