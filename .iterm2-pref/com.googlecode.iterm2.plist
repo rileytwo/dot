@@ -58575,13 +58575,14 @@ Show Toolbelt</string>
 		<string>Hack Nerd Font</string>
 		<string>FuraCode Nerd Font</string>
 		<string>Input Mono</string>
+		<string>Iosevka Nerd Font</string>
 	</array>
 	<key>NoSyncBFPRecents</key>
 	<array>
-		<string>SF Mono</string>
 		<string>Fira Code</string>
-		<string>Apple Braille</string>
-		<string>GB18030 Bitmap</string>
+		<string>Iosevka Nerd Font</string>
+		<string>FuraCode Nerd Font</string>
+		<string>RobotoMono Nerd Font</string>
 	</array>
 	<key>NoSyncFrame_SessionsPreferences</key>
 	<dict>
@@ -58595,21 +58596,23 @@ Show Toolbelt</string>
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1440, 900}}</string>
 		<key>topLeft</key>
-		<string>{30, 788}</string>
+		<string>{-87, 781}</string>
 	</dict>
 	<key>NoSyncInstallationId</key>
 	<string>78E2F140-557C-4115-91AC-4DB26E1EFA8B</string>
 	<key>NoSyncLastTipTime</key>
-	<real>582592380.31528103</real>
+	<real>582857182.02172601</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>315</integer>
+	<integer>319</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
 	<integer>0</integer>
 	<key>NoSyncNextAnnoyanceTime</key>
-	<real>582851797.56605697</real>
+	<real>582943576.53765404</real>
 	<key>NoSyncOnboardingWindowHasBeenShown</key>
+	<true/>
+	<key>NoSyncPermissionToShowTip</key>
 	<true/>
 	<key>NoSyncRecordedVariables</key>
 	<dict>
@@ -59247,6 +59250,7 @@ Show Toolbelt</string>
 		<string>0002</string>
 		<string>0003</string>
 		<string>0004</string>
+		<string>0005</string>
 	</array>
 	<key>OnlyWhenMoreTabs</key>
 	<false/>
