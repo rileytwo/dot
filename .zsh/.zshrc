@@ -85,9 +85,6 @@ elif [[ "$OSTYPE" =~ "darwin" ]]; then
     # // z
     [[ -f /usr/local/etc/profile.d/z.sh ]] \
         && . /usr/local/etc/profile.d/z.sh
-    #### // conda
-    [[ -f "$HOME/miniconda3/etc/profile.d/conda.sh" ]] \
-        && . "$HOME/miniconda3/etc/profile.d/conda.sh"
 fi
 
 
