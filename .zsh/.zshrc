@@ -104,10 +104,17 @@ fi
     && export PATH="${GOPATH//://bin:}/bin:$PATH"
 #
 # // pyenv
-if command -v pyenv 1>/dev/null 2>&1; then
-    eval "$(pyenv init -)"
-    eval "$(pyenv virtualenv-init -)"
-fi
+#if command -v pyenv 1>/dev/null 2>&1; then
+#    eval "$(pyenv init -)"
+#    eval "$(pyenv virtualenv-init -)"
+#    export PYENV_VIRTUALENVWRAPPER_PREFER_PYVENV="true"
+#fi
+
+[[ "$(command -v pyenv) 1>/dev/null 2>&1" ]] \
+    && eval "$(pyenv init -)" \
+    && eval "$(pyenv virtualenv-init -)" \
+    && export PYENV_VIRTUALENVWRAPPER_PREFER_PYVENV="true"
+
 
 
 #### // options, other
