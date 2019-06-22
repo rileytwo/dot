@@ -85,9 +85,6 @@ elif [[ "$OSTYPE" =~ "darwin" ]]; then
     # // z
     [[ -f /usr/local/etc/profile.d/z.sh ]] \
         && . /usr/local/etc/profile.d/z.sh
-    # // poetry
-    [[ -d "$HOME/.poetry/bin" ]] \
-        && export PATH="$HOME/.poetry/bin:$PATH"
     #### // conda
     [[ -f "$HOME/miniconda3/etc/profile.d/conda.sh" ]] \
         && . "$HOME/miniconda3/etc/profile.d/conda.sh"
@@ -97,7 +94,6 @@ fi
 #### // path
 #
 # // .local/bin
-
 [[ -d "$HOME/.local/bin" ]] \
     && export PATH="$HOME/.local/bin:$PATH"
 #
@@ -111,7 +107,9 @@ fi
     && export PATH="${GOPATH//://bin:}/bin:$PATH"
 #
 # // pyenv
-eval "$(pyenv init -)"
+if command -v pyenv 1>/dev/null 2>&1; then
+    eval "$(pyenv init -)"
+fi
 
 
 #### // options, other
