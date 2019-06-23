@@ -446,5 +446,18 @@
         "key": "shift+alt+left",
         "command": "-cursorWordStartLeftSelect",
         "when": "textInputFocus"
+    },
+    {
+        "key": "cmd+r",
+        "command": "-workbench.action.reloadWindow",
+        "when": "isDevelopment"
+    },
+    {
+        "key": "cmd+r",
+        "command": "code-runner.run"
+    },
+    {
+        "key": "ctrl+alt+n",
+        "command": "-code-runner.run"
     }
 ]

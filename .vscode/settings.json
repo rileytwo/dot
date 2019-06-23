@@ -76,5 +76,7 @@
     "editor.copyWithSyntaxHighlighting": false,
     "editor.lineHeight": 16,
     "git.enabled": false,
-    "editor.fontFamily": "Fira Code, Menlo, Monaco, 'Courier New', monospace"
+    "editor.fontFamily": "Fira Code, Menlo, Monaco, 'Courier New', monospace",
+    "workbench.statusBar.visible": true,
+    "code-runner.clearPreviousOutput": true
 }
