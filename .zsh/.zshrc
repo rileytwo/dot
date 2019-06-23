@@ -61,6 +61,8 @@ precmd_prompt() {
     ZSH_THEME_GIT_PROMPT_SUFFIX="$reset_color"
     ZSH_THEME_GIT_PROMPT_DIRTY="$fg[blue]) $fg[yellow]署"
     ZSH_THEME_GIT_PROMPT_CLEAN="$fg[blue]) "
+
+    PROMPT2='> '
 }
 precmd_functions+=(precmd_prompt)
 
