@@ -90,15 +90,19 @@ fi
 
 #### // path
 #
-# // .local/bin
+# // ~/bin
+[[ -d "$HOME/bin" ]] \
+    && export PATH="$HOME/bin:$PATH"
+#
+# // ~/.local/bin
 [[ -d "$HOME/.local/bin" ]] \
     && export PATH="$HOME/.local/bin:$PATH"
 #
-# // rbenv
+# // ~/.rbenv
 [[ -d "$HOME/.rbenv/shims" ]] \
     && eval "$(rbenv init -)"
 #
-# // go
+# // ~/go
 [[ -d "$HOME/go" ]] \
     && export GOPATH="$HOME/go" \
     && export PATH="${GOPATH//://bin:}/bin:$PATH"
