@@ -46,7 +46,7 @@
     //"gitlens.blame.toggleMode": "window",
     //"gitlens.blame.highlight.enabled": false,
     //"gitlens.blame.heatmap.enabled": false,
-    "workbench.iconTheme": "material-icon-theme",
+    "workbench.iconTheme": "vscode-great-icons",
     "markdown.extension.print.imgToBase64": true,
     "markdown.extension.toc.githubCompatibility": true,
     "json.format.enable": false,
@@ -76,7 +76,8 @@
     "editor.copyWithSyntaxHighlighting": false,
     "editor.lineHeight": 16,
     "git.enabled": false,
-    "editor.fontFamily": "Fira Code, Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontFamily": "FuraCode Nerd Font, Menlo, Monaco, 'Courier New', monospace",
     "workbench.statusBar.visible": true,
-    "code-runner.clearPreviousOutput": true
+    "code-runner.clearPreviousOutput": true,
+    "terminal.external.osxExec": "iTerm.app"
 }
