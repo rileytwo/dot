@@ -37,14 +37,14 @@ source $ZSH/oh-my-zsh.sh
 
 #### // highlighting customizations
 typeset -A ZSH_HIGHLIGHT_STYLES
-ZSH_HIGHLIGHT_STYLES[arg0]='fg=blue'
+ZSH_HIGHLIGHT_STYLES[arg0]='fg=blue,bold'
 ZSH_HIGHLIGHT_STYLES[suffix-alias]='fg=green,bold'
 ZSH_HIGHLIGHT_STYLES[precommand]='fg=green,bold'
 ZSH_HIGHLIGHT_STYLES[commandseparator]='fg=yellow,bold'
 ZSH_HIGHLIGHT_STYLES[command-substitution-delimiter]='fg=magenta'
 ZSH_HIGHLIGHT_STYLES[process-substitution-delimiter]='fg=magenta'
 
-ZSH_HIGHLIGHT_STYLES[path]='fg=green'
+ZSH_HIGHLIGHT_STYLES[path]='fg=green,bold'
 ZSH_HIGHLIGHT_STYLES[path_pathseparator]='fg=green,bold'
 ZSH_HIGHLIGHT_STYLES[path_prefix_pathseparator]='fg=red,bold'
 
@@ -67,7 +67,6 @@ ZSH_HIGHLIGHT_STYLES[redirection]='fg=red'
 #
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=8'
 ZSH_AUTOSUGGEST_STRATEGY=match_prev_cmd
-
 
 #### // prompt
 #
