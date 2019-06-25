@@ -135,11 +135,6 @@ fi
 #    export PYENV_VIRTUALENVWRAPPER_PREFER_PYVENV="true"
 #fi
 
-[[ "$(command -v pyenv) 1>/dev/null 2>&1" ]] \
-    && eval "$(pyenv init -)" \
-    && eval "$(pyenv virtualenv-init -)" \
-    && export PYENV_VIRTUALENVWRAPPER_PREFER_PYVENV="true" \
-    && export WORKON_HOME="$HOME/.virtualenvs"
 
 #### // options, other
 #
