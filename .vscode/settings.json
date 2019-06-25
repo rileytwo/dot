@@ -79,5 +79,10 @@
     "editor.fontFamily": "FuraCode Nerd Font, Menlo, Monaco, 'Courier New', monospace",
     "workbench.statusBar.visible": true,
     "code-runner.clearPreviousOutput": true,
-    "terminal.external.osxExec": "iTerm.app"
+    "terminal.external.osxExec": "iTerm.app",
+    "python.linting.pylintEnabled": false,
+    "python.linting.flake8Enabled": true,
+    "python.linting.enabled": true,
+    "python.pythonPath": "/usr/local/bin/python3",
+    "code-runner.enableAppInsights": false
 }
