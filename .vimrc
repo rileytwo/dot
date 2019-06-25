@@ -10,11 +10,12 @@ scriptencoding utf-8
 ""   os checks   ""
 """""""""""""""""""
 
-"" TODO: add linux 
+" TODO: add linux 
 if has('mac')
     let g:os = 'Darwin'
     if $COLORTERM =~# 'truecolor' || $COLORTERM =~# '24bit'
         set termguicolors
+        colorscheme riley
     endif
 else
     let g:os = 'Windows'
@@ -22,6 +23,7 @@ else
         set termguicolors
     endif
 endif
+
 
 set whichwrap+=<,>,h,l,[,]
 set backspace=indent,eol,start
@@ -148,23 +150,6 @@ endfunction
 
 syntax enable
 
-if has('mac')
-    if $COLORTERM =~# 'truecolor' || $COLORTERM =~# '24bit'
-        set termguicolors
-        colorscheme riley
-    else
-        colorscheme one
-    endif
-else
-    if &term =~# 'vtpcon' || &term =~# 'builtin_vtpcon' 
-        set termguicolors
-        colorscheme riley
-    else
-        colorscheme anderson
-    endif
-endif
-
-
 """"""""""""""""
 ""   remaps   ""
 """"""""""""""""
@@ -215,11 +200,5 @@ let g:bullets_enabled_file_types = [
     \ ]
 
 " lightline/ale info at maximbaz/dotfiles/.config/nvim/init.vim
-
-"" mouse wheel scroll"
-if !has('gui_running')
-    set mouse=a
-    set nocompatible
-endif
 
 
