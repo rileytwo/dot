@@ -135,6 +135,15 @@ fi
 #    export PYENV_VIRTUALENVWRAPPER_PREFER_PYVENV="true"
 #fi
 
+if (( $+commands[pyenv] )) && (( $+commands[pyenv-virtualenv-init])); then 
+    eval "$(pyenv init -)"
+    eval "$(pyenv virtualenv-init -)"
+elif (( $+commands[pyenv] )); then
+    eval "$(pyenv init -)"
+fi
+
+
+
 
 #### // options, other
 #
