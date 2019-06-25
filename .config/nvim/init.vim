@@ -146,10 +146,10 @@ map _ <C-W><
 " ----------
 "
 " Pynvim
-"if has('mac')
-""    let g:python_host_prog = $HOME.'/.pyenv/versions/neovim2/bin/python'
-""    let g:python3_host_prog = $HOME.'/.pyenv/versions/neovim3/bin/python'
-"endif
+if has('mac')
+    let g:python_host_prog = $HOME.'/.pyenv/versions/neovim2/bin/python'
+    let g:python3_host_prog = $HOME.'/.pyenv/versions/neovim3/bin/python'
+endif
 "
 " R
 let R_app = 'radian'
