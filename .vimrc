@@ -75,6 +75,13 @@ Plug 'tpope/vim-fugitive'
 Plug 'itchyny/vim-gitbranch'
 Plug 'Yggdroot/indentLine'
 
+Plug 'ncm2/ncm2'
+Plug 'ncm2/ncm2-path'
+Plug 'ncm2/ncm2-jedi'
+Plug 'roxma/nvim-yarp'
+Plug 'roxma/nvim-yarp'
+Plug 'Shougo/deoplete.nvim'
+
 Plug 'jalvesaq/Nvim-R', {'for': 'R'}
 Plug 'PProvost/vim-ps1'
 Plug 'scrooloose/nerdtree', {'on': 'NERDTreeToggle'}
@@ -96,12 +103,12 @@ Plug 'aonemd/kuroi.vim'
 Plug 'itchyny/lightline.vim'
 
 if has('mac')
-    " mac specific plugs cause windows is hard
     Plug '/usr/local/opt/fzf'
-    Plug 'Valloric/YouCompleteMe'
-    Plug 'w0rp/ale'
-    Plug 'maximbaz/lightline-ale'
 endif
+
+Plug 'w0rp/ale'
+Plug 'maximbaz/lightline-ale'
+
 
 call plug#end()
 
@@ -177,6 +184,9 @@ nnoremap <C-I> gg=G``
 map <C-o> :NERDTreeToggle<CR>
 
 
+
+"" // Options
+let g:deoplete#enable_at_startup = 1
 let NERDTreeShowHidden = 1
 let NERDTreeMinimalUI = 1
 let NERDTreeDirArrows = 1
