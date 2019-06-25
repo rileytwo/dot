@@ -14,6 +14,11 @@ Plug 'Yggdroot/indentLine'
 
 Plug 'ncm2/ncm2'
 Plug 'roxma/nvim-yarp'
+
+Plug 'ncm2/ncm2-path'
+Plug 'ncm2/ncm2-bufword'
+Plug 'ncm2/ncm2-jedi'
+
 Plug 'jalvesaq/Nvim-R', {'for': 'R'}
 Plug 'gaalcaras/ncm-R', {'for': 'R'}
 Plug 'sirver/UltiSnips',
