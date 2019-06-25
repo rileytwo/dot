@@ -12,6 +12,8 @@ Plug 'tpope/vim-fugitive'
 Plug 'itchyny/vim-gitbranch'
 Plug 'Yggdroot/indentLine'
 
+Plug 'metakirby5/codi.vim'
+
 Plug 'ncm2/ncm2'
 Plug 'roxma/nvim-yarp'
 
