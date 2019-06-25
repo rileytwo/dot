@@ -84,5 +84,6 @@
     "python.linting.flake8Enabled": true,
     "python.linting.enabled": true,
     "python.pythonPath": "/usr/local/bin/python3",
-    "code-runner.enableAppInsights": false
+    "code-runner.enableAppInsights": false,
+    "workbench.settings.useSplitJSON": true
 }
