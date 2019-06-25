@@ -75,12 +75,13 @@ Plug 'tpope/vim-fugitive'
 Plug 'itchyny/vim-gitbranch'
 Plug 'Yggdroot/indentLine'
 
+Plug 'Shougo/deoplete.nvim'
 Plug 'ncm2/ncm2'
 Plug 'ncm2/ncm2-path'
 Plug 'ncm2/ncm2-jedi'
 Plug 'roxma/nvim-yarp'
 Plug 'roxma/nvim-yarp'
-Plug 'Shougo/deoplete.nvim'
+Plug 'roxma/vim-hug-neovim-rpc'
 
 Plug 'jalvesaq/Nvim-R', {'for': 'R'}
 Plug 'PProvost/vim-ps1'
@@ -159,7 +160,7 @@ else
         set termguicolors
         colorscheme riley
     else
-        colorscheme dracula
+        colorscheme anderson
     endif
 endif
 
@@ -186,6 +187,7 @@ map <C-o> :NERDTreeToggle<CR>
 
 
 "" // Options
+Plug 'Shougo/deoplete.nvim'
 let g:deoplete#enable_at_startup = 1
 let NERDTreeShowHidden = 1
 let NERDTreeMinimalUI = 1
@@ -213,4 +215,11 @@ let g:bullets_enabled_file_types = [
     \ ]
 
 " lightline/ale info at maximbaz/dotfiles/.config/nvim/init.vim
+
+"" mouse wheel scroll"
+if !has('gui_running')
+    set mouse=a
+    set nocompatible
+endif
+
 
