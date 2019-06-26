@@ -36,7 +36,6 @@ plugins=(
     zsh-history-substring-search
     zsh-autopair
     k
-    osx
     autoupdate
 )
 source $ZSH/oh-my-zsh.sh
