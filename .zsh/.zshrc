@@ -23,6 +23,10 @@ fi
 
 #### // oh my zsh
 #
+# // prompt comes first?
+#
+ZSH_THEME='alice'
+
 export ZSH="$HOME/.oh-my-zsh"
 plugins=(
     zsh-syntax-highlighting
@@ -33,6 +37,7 @@ plugins=(
     zsh-autopair
     k
     osx
+    autoupdate
 )
 source $ZSH/oh-my-zsh.sh
 
@@ -69,9 +74,6 @@ ZSH_HIGHLIGHT_STYLES[redirection]='fg=red'
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=8'
 ZSH_AUTOSUGGEST_STRATEGY=match_prev_cmd
 
-#### // prompt
-#
-ZSH_THEME='alice'
 
 #### // OS specific stuff
 #
