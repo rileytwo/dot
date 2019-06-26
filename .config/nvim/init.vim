@@ -8,6 +8,7 @@ Plug 'tpope/vim-markdown'
 Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-scriptease'
 
 Plug 'itchyny/vim-gitbranch'
 Plug 'Yggdroot/indentLine'
