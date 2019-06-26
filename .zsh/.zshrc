@@ -28,6 +28,7 @@ plugins=(
     zsh-syntax-highlighting
     zsh-autosuggestions
     git
+    virtualenv
     zsh-history-substring-search
     zsh-autopair
     k
@@ -75,7 +76,7 @@ precmd_prompt() {
     smiley="%(?,%{$fg[green]%}:%)%{$reset_color%},%{$fg[red]%}:(%{$reset_color%})"
     PROMPT='%{$fg_bold[magenta]%}${PWD/#$HOME/~}%  $(git_prompt_info)
 %{$fg_bold[blue]%}> '
-    RPROMPT='${smiley}'
+RPROMPT='${smiley} $(virtualenv_prompt_info)'
     ZSH_THEME_GIT_PROMPT_PREFIX="$fg_bold[blue]git:($fg[red]"
     ZSH_THEME_GIT_PROMPT_SUFFIX="$reset_color"
     ZSH_THEME_GIT_PROMPT_DIRTY="$fg[blue]) $fg[yellow]署"
