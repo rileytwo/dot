@@ -79,7 +79,8 @@ set splitbelow
 set splitright
 set modifiable
 
-if !has('win32') && !has('win64') 
+"if !has('win32') && !has('win64') 
+if has('mac') || has('linux') || &term=~# 'nvim'
     set number
     set numberwidth=1
     set guicursor=
@@ -90,6 +91,7 @@ if !has('win32') && !has('win64')
 else
     set guicursor=
 endif
+
 
 set showtabline=2
 set laststatus=2
