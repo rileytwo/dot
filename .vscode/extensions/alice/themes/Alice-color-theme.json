@@ -3,7 +3,10 @@
 	"colors": {
 		"editor.background": "#151515",
 		"editor.lineHighlightBackground": "#1E1E1E",
-		"editor.selectionBackground": "#625F5F",
+        "editor.selectionBackground": "#625F5F",
+        "editorIndentGuide.activeBackground": "#505050",
+        "editorIndentGuide.background": "#202020",
+        
 		"activityBar.background": "#151515",
 		"statusBar.background": "#151515",
 		"tab.inactiveBackground": "#151515",
