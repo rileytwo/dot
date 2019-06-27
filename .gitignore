@@ -1,4 +1,5 @@
 # general
+*.DS_Store
 history
 
 # hammerspoon
@@ -9,7 +10,7 @@ configstore/
 automatic_backups/
 
 # vim/nvim
-
+vifm/colors
 plugged/
 autoload/
 log
