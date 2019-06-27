@@ -27,7 +27,7 @@ fi
 #
 ZSH_THEME='alice'
 
-export ZSH="$HOME/.oh-my-zsh"
+export ZSH="${HOME}/.oh-my-zsh"
 plugins=(
     zsh-syntax-highlighting
     zsh-autosuggestions
@@ -78,8 +78,8 @@ ZSH_AUTOSUGGEST_STRATEGY=match_prev_cmd
 #
 if [[ "$OSTYPE" == "linux-gnu" ]]; then 
     # // z
-    [[ -f "$HOME/z.sh" ]] \
-        && . "$HOME/z.sh"
+    [[ -f "${HOME}/z.sh" ]] \
+        && . "${HOME}/z.sh"
     # // brew
     [[ -d /home/linuxbrew/.linuxbrew/bin ]] \
         && export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
@@ -100,37 +100,29 @@ fi
 #### // path
 #
 # // ~/bin
-[[ -d "$HOME/bin" ]] \
+[[ -d "${HOME}/bin" ]] \
     && export PATH="$HOME/bin:$PATH"
 #
 # // ~/.local/bin
-[[ -d "$HOME/.local/bin" ]] \
+[[ -d "${HOME}/.local/bin" ]] \
     && export PATH="$HOME/.local/bin:$PATH"
 #
 # // ~/.rbenv
-[[ -d "$HOME/.rbenv/shims" ]] \
+[[ -d "${HOME}/.rbenv/shims" ]] \
     && eval "$(rbenv init -)"
 #
 # // ~/go
-[[ -d "$HOME/go" ]] \
-    && export GOPATH="$HOME/go" \
+[[ -d "${HOME}/go" ]] \
+    && export GOPATH="${HOME}/go" \
     && export PATH="${GOPATH//://bin:}/bin:$PATH"
 #
-# // pyenv
-#if command -v pyenv 1>/dev/null 2>&1; then
-#    eval "$(pyenv init -)"
-#    eval "$(pyenv virtualenv-init -)"
-#    export PYENV_VIRTUALENVWRAPPER_PREFER_PYVENV="true"
-#fi
-
+# // ~/.pyenv
 if (( $+commands[pyenv] )) && (( $+commands[pyenv-virtualenv-init])); then 
     eval "$(pyenv init -)"
     eval "$(pyenv virtualenv-init -)"
 elif (( $+commands[pyenv] )); then
     eval "$(pyenv init -)"
 fi
-
-
 
 
 #### // options, other
