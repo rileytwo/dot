@@ -10,7 +10,7 @@ configstore/
 automatic_backups/
 
 # vim/nvim
-vifm/colors
+.config/vifm/colors
 plugged/
 autoload/
 log
