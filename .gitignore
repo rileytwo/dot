@@ -9,7 +9,7 @@ configstore/
 automatic_backups/
 
 # vim/nvim
-colors/
+
 plugged/
 autoload/
 log
