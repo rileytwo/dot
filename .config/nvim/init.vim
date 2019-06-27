@@ -3,57 +3,58 @@
 " ----------
 call plug#begin('~/.vim/plugged')
 
-
-Plug 'tpope/vim-markdown'
+" tpope
 Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-scriptease'
 
-Plug 'itchyny/vim-gitbranch'
-Plug 'Yggdroot/indentLine'
-
-Plug 'metakirby5/codi.vim'
-
+" Completion, snippets
+Plug 'w0rp/ale'
+Plug 'Shougo/deoplete.nvim'
 Plug 'ncm2/ncm2'
 Plug 'roxma/nvim-yarp'
-
 Plug 'ncm2/ncm2-path'
 Plug 'ncm2/ncm2-bufword'
 Plug 'ncm2/ncm2-jedi'
-
-Plug 'jalvesaq/Nvim-R', {'for': 'R'}
-Plug 'gaalcaras/ncm-R', {'for': 'R'}
 Plug 'sirver/UltiSnips',
 Plug 'ncm2/ncm2-ultisnips'
 
+" Lang specific
+Plug 'tpope/vim-markdown'
 Plug 'PProvost/vim-ps1'
-Plug 'scrooloose/nerdtree', {'on': 'NERDTreeToggle'}
-Plug 'ryanoasis/vim-devicons'
+Plug 'jalvesaq/Nvim-R', {'for': 'R'}
+Plug 'gaalcaras/ncm-R', {'for': 'R'}
 
+" Auto closing quotes
 Plug 'Raimondi/delimitMate'
-Plug 'ap/vim-css-color'
 
-Plug 'godlygeek/tabular'
-Plug 'dkarter/bullets.vim'
-
-Plug 'terryma/vim-multiple-cursors'
+" Colorschemes
 Plug 'ntk148v/vim-horizon'
 Plug 'rafi/awesome-vim-colorschemes'
-
 Plug 'rakr/vim-two-firewatch'
 Plug 'aonemd/kuroi.vim'
 
 Plug 'itchyny/lightline.vim'
+Plug 'maximbaz/lightline-ale'
 
 if !has('win32') && !has('win64')
     " mac specific plugs cause windows is hard
     Plug '/usr/local/opt/fzf'
 endif
-Plug 'w0rp/ale'
-Plug 'maximbaz/lightline-ale'
-Plug 'Shougo/deoplete.nvim'
-let g:deoplete#enable_at_startup = 1
+if &term=~# 'nvim'
+    Plug 'terryma/vim-multiple-cursors'
+endif
+
+" helpful/cool
+Plug 'itchyny/vim-gitbranch'
+Plug 'Yggdroot/indentLine'
+Plug 'scrooloose/nerdtree', {'on': 'NERDTreeToggle'}
+Plug 'ryanoasis/vim-devicons'
+Plug 'metakirby5/codi.vim'
+Plug 'ap/vim-css-color'
+Plug 'godlygeek/tabular'
+Plug 'dkarter/bullets.vim'
 
 " ----------
 " // add plugins to &runtimepath
@@ -106,6 +107,8 @@ set expandtab
 set autoindent
 filetype plugin indent on
 let g:vim_indent_cont = &shiftwidth
+
+let g:deoplete#enable_at_startup = 1
 " ----------
 " //
 " ====================
