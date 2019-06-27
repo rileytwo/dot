@@ -9,7 +9,7 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-scriptease'
 
-" Completion, snippets
+" // Completion, snippets
 Plug 'w0rp/ale'
 Plug 'Shougo/deoplete.nvim'
 Plug 'ncm2/ncm2'
@@ -20,16 +20,17 @@ Plug 'ncm2/ncm2-jedi'
 Plug 'sirver/UltiSnips',
 Plug 'ncm2/ncm2-ultisnips'
 
-" Lang specific
+" // Lang specific
 Plug 'tpope/vim-markdown'
 Plug 'PProvost/vim-ps1'
 Plug 'jalvesaq/Nvim-R', {'for': 'R'}
 Plug 'gaalcaras/ncm-R', {'for': 'R'}
+Plug 'dkarter/bullets.vim'
 
-" Auto closing quotes
+" // Auto closing delimiters
 Plug 'Raimondi/delimitMate'
 
-" Colorschemes
+" // Colorschemes
 Plug 'ntk148v/vim-horizon'
 Plug 'rafi/awesome-vim-colorschemes'
 Plug 'rakr/vim-two-firewatch'
@@ -46,15 +47,17 @@ if &term=~# 'nvim'
     Plug 'terryma/vim-multiple-cursors'
 endif
 
-" helpful/cool
+" // helpful
 Plug 'itchyny/vim-gitbranch'
 Plug 'Yggdroot/indentLine'
 Plug 'scrooloose/nerdtree', {'on': 'NERDTreeToggle'}
 Plug 'ryanoasis/vim-devicons'
-Plug 'metakirby5/codi.vim'
 Plug 'ap/vim-css-color'
+Plug 'PeterRincker/vim-searchlight'
+
+" // cool
 Plug 'godlygeek/tabular'
-Plug 'dkarter/bullets.vim'
+Plug 'metakirby5/codi.vim'
 
 " ----------
 " // add plugins to &runtimepath
