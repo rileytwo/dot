@@ -50716,9 +50716,9 @@ Show Toolbelt</string>
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame NSColorPanel</key>
-	<string>179 357 328 384 0 0 1440 877 </string>
+	<string>76 268 328 348 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>783 301 657 537 0 0 1440 877 </string>
+	<string>783 51 657 787 0 0 1440 877 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -50949,13 +50949,13 @@ Show Toolbelt</string>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.059999998658895493</real>
+				<real>0.062745098040000002</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.059999998658895493</real>
+				<real>0.062745098040000002</real>
 				<key>Red Component</key>
-				<real>0.059999998658895493</real>
+				<real>0.062745098040000002</real>
 			</dict>
 			<key>Background Image Location</key>
 			<string></string>
@@ -51699,13 +51699,13 @@ Show Toolbelt</string>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.058409370481967926</real>
+				<real>0.086258627474308014</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.062830112874507904</real>
+				<real>0.086281977593898773</real>
 				<key>Red Component</key>
-				<real>0.062653087079524994</real>
+				<real>0.086262829601764679</real>
 			</dict>
 			<key>Tags</key>
 			<array/>
@@ -51717,6 +51717,19 @@ Show Toolbelt</string>
 			<integer>2</integer>
 			<key>Transparency</key>
 			<real>0.0</real>
+			<key>Underline Color</key>
+			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
+				<key>Blue Component</key>
+				<real>0.058823529409999999</real>
+				<key>Color Space</key>
+				<string>sRGB</string>
+				<key>Green Component</key>
+				<real>0.058823529409999999</real>
+				<key>Red Component</key>
+				<real>0.058823529409999999</real>
+			</dict>
 			<key>Unicode Version</key>
 			<integer>9</integer>
 			<key>Unlimited Scrollback</key>
@@ -57587,9 +57600,9 @@ Show Toolbelt</string>
 	</array>
 	<key>NoSyncAllAppVersions</key>
 	<array>
+		<string>3.3.0beta13</string>
 		<string>3.3.0beta11</string>
 		<string>3.3.0beta9</string>
-		<string>3.3.0beta13</string>
 	</array>
 	<key>NoSyncBFPFavorites</key>
 	<array>
@@ -57629,7 +57642,7 @@ Show Toolbelt</string>
 	<key>NoSyncLastTipTime</key>
 	<real>582943872.17159104</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>377</integer>
+	<integer>379</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -58719,13 +58732,13 @@ Show Toolbelt</string>
 												<key>Alpha Component</key>
 												<real>1</real>
 												<key>Blue Component</key>
-												<real>0.059999998658895493</real>
+												<real>0.062745098040000002</real>
 												<key>Color Space</key>
 												<string>sRGB</string>
 												<key>Green Component</key>
-												<real>0.059999998658895493</real>
+												<real>0.062745098040000002</real>
 												<key>Red Component</key>
-												<real>0.059999998658895493</real>
+												<real>0.062745098040000002</real>
 											</dict>
 											<key>Background Image Location</key>
 											<string></string>
@@ -58850,7 +58863,7 @@ Show Toolbelt</string>
 												<real>0.94999999999999996</real>
 											</dict>
 											<key>Guid</key>
-											<string>5B3CB975-4330-4615-85DD-2504FEBA32B2</string>
+											<string>A876EF69-2EE5-45B9-88F9-4075FDA48F57</string>
 											<key>Has Hotkey</key>
 											<false/>
 											<key>Horizontal Spacing</key>
@@ -59471,13 +59484,13 @@ Show Toolbelt</string>
 												<key>Alpha Component</key>
 												<real>1</real>
 												<key>Blue Component</key>
-												<real>0.058409370481967926</real>
+												<real>0.086258627474308014</real>
 												<key>Color Space</key>
 												<string>sRGB</string>
 												<key>Green Component</key>
-												<real>0.062830112874507904</real>
+												<real>0.086281977593898773</real>
 												<key>Red Component</key>
-												<real>0.062653087079524994</real>
+												<real>0.086262829601764679</real>
 											</dict>
 											<key>Tags</key>
 											<array/>
@@ -59489,6 +59502,19 @@ Show Toolbelt</string>
 											<integer>2</integer>
 											<key>Transparency</key>
 											<real>0.0</real>
+											<key>Underline Color</key>
+											<dict>
+												<key>Alpha Component</key>
+												<real>1</real>
+												<key>Blue Component</key>
+												<real>0.058823529409999999</real>
+												<key>Color Space</key>
+												<string>sRGB</string>
+												<key>Green Component</key>
+												<real>0.058823529409999999</real>
+												<key>Red Component</key>
+												<real>0.058823529409999999</real>
+											</dict>
 											<key>Unicode Version</key>
 											<integer>9</integer>
 											<key>Unlimited Scrollback</key>
@@ -59522,20 +59548,6 @@ Show Toolbelt</string>
 										<integer>80</integer>
 										<key>Commands</key>
 										<array>
-											<string>l</string>
-											<string>gs</string>
-											<string>git add .iterm2-pref/com.googlecode.iterm2.plist &amp;&amp; git commit -m 'iterm2'</string>
-											<string>git add .zsh/.oh-my-zsh/custom/themes/alice.zsh-theme &amp;&amp; gc -m 'forgot to add `$` in /#`$`HOME, resulted in no ~ abbreviation'</string>
-											<string>git add .zsh/.zshrc &amp;&amp; git commit -m 'didnt know ZSH_THEME needed to come before sourcing .oh-my-zsh; now i do'</string>
-											<string>upgrade_oh_my_zsh</string>
-											<string>brew install fzy</string>
-											<string>brew search better</string>
-											<string>brew cask install bettertouchtool</string>
-											<string>k</string>
-											<string>cd</string>
-											<string>k</string>
-											<string>info</string>
-											<string>user</string>
 											<string>l /Users/riley/.oh-my-zsh/custom/plugins</string>
 											<string>head 40 .zshrc</string>
 											<string>head -n 40 .zshrc</string>
@@ -59585,9 +59597,85 @@ Show Toolbelt</string>
 											<string>nvim .zsh/.oh-my-zsh/custom/themes/alice.zsh-theme</string>
 											<string>git add .zsh/.oh-my-zsh/custom/themes/alice.zsh-theme &amp;&amp; gc -m 'REVERT use -&gt; instead of &gt;'</string>
 											<string>git push</string>
+											<string>brew cask uninstall bettertouchtool</string>
+											<string>brew -S /command/</string>
+											<string>brew cask uninstall commandq</string>
+											<string>brew -S /not\ found/</string>
+											<string>brew tap</string>
+											<string>nvim .zsh/.zshrc</string>
+											<string>nvim .zsh/.zshrc</string>
+											<string>git add .zsh/.zshrc</string>
+											<string>git commit -m 'wrap $HOME in ${HOME}'</string>
+											<string>git pull --rebase</string>
+											<string>l</string>
+											<string>gs</string>
+											<string>l .config/nvim</string>
+											<string>k .config/nvim</string>
+											<string>nvim .gitignore</string>
+											<string>git add .gitignore</string>
+											<string>git commit -m 'track colors in nvim/colors'</string>
+											<string>gs</string>
+											<string>l .vim/colors ; l .config/nvim/colors</string>
+											<string>rm -rf .vim/colors</string>
+											<string>ln -sf /Users/riley/.config/nvim/colors /Users/riley/.dot/.vim/</string>
+											<string>l .vim/colors ; l .config/nvim/colors</string>
+											<string>cd .vim</string>
+											<string>l</string>
+											<string>cd colors</string>
+											<string>l</string>
+											<string>cd ..</string>
+											<string>cd ..</string>
+											<string>gs</string>
+											<string>nvim .gitignore</string>
+											<string>nvim .gitignore</string>
+											<string>git add .gitignore</string>
+											<string>git commit -m 'ignore .DS_Store (i wasnt before???) and also ignore vifm/colors'</string>
+											<string>gs</string>
+											<string>nvim .gitignore</string>
+											<string>git rm --cached .config/vifm/colors</string>
+											<string>git rm --cached .config/vifm/</string>
+											<string>git rm -r --cached .config/vifm/</string>
+											<string>gs</string>
+											<string>git add .vim/colors .config/nvim/colors</string>
+											<string>gs</string>
+											<string>git reset HEAD .config/vifm</string>
+											<string>gs</string>
+											<string>git commit -m 'symlink .config/nvim/colors to .vim/colors'</string>
+											<string>gs</string>
+											<string>nvim .gitignore</string>
+											<string>git add .gitignore</string>
+											<string>gs</string>
+											<string>git commit -m 'ignore vifm/colors (fix)'</string>
+											<string>git push</string>
+											<string>nvim .config/nvim/init.vim</string>
 										</array>
 										<key>Directories</key>
 										<array>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
 											<string>/Users/riley/.dot</string>
 											<string>/Users/riley/.dot</string>
 											<string>/Users/riley/.dot</string>
@@ -59626,46 +59714,21 @@ Show Toolbelt</string>
 											<string>/Users/riley/.dot</string>
 											<string>/Users/riley/.dot</string>
 											<string>/Users/riley/.dot</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot/.vim</string>
+											<string>/Users/riley/.dot/.vim</string>
+											<string>/Users/riley/.dot/.vim/colors</string>
+											<string>/Users/riley/.dot/.vim/colors</string>
+											<string>/Users/riley/.dot/.vim</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
 											<string>/Users/riley/.dot</string>
 											<string>/Users/riley/.dot</string>
 											<string>/Users/riley/.dot</string>
@@ -59692,10 +59755,166 @@ Show Toolbelt</string>
 										<key>Environment</key>
 										<dict>
 											<key>PWD</key>
-											<string>/Users/riley</string>
+											<string>/Users/riley/.dot</string>
 										</dict>
 										<key>Hosts</key>
 										<array>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
 											<dict>
 												<key>Host name</key>
 												<string>rmbp</string>
