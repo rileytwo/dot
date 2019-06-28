@@ -50718,7 +50718,7 @@ Show Toolbelt</string>
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame NSColorPanel</key>
-	<string>76 268 328 348 0 0 1440 877 </string>
+	<string>76 268 328 312 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>783 301 657 537 0 0 1440 877 </string>
 	<key>New Bookmarks</key>
@@ -50750,26 +50750,26 @@ Show Toolbelt</string>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.44371563196182251</real>
+				<real>0.46310700719999998</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.44606426358222961</real>
+				<real>0.45079999999999998</real>
 				<key>Red Component</key>
-				<real>1</real>
+				<real>0.97999999999999998</real>
 			</dict>
 			<key>Ansi 10 Color</key>
 			<dict>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.65091133117675781</real>
+				<real>0.65098041296005249</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.99170738458633423</real>
+				<real>0.99215686321258545</real>
 				<key>Red Component</key>
-				<real>0.40748560428619385</real>
+				<real>0.40784314274787903</real>
 			</dict>
 			<key>Ansi 11 Color</key>
 			<dict>
@@ -50819,7 +50819,7 @@ Show Toolbelt</string>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.80202217854275659</real>
+				<real>0.80202215909957886</real>
 				<key>Red Component</key>
 				<real>0.0</real>
 			</dict>
@@ -50841,13 +50841,13 @@ Show Toolbelt</string>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.57200002670288086</real>
+				<real>0.62367786960000005</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.87999999523162842</real>
+				<real>0.95999999999999996</real>
 				<key>Red Component</key>
-				<real>0.35199999809265137</real>
+				<real>0.38400000000000001</real>
 			</dict>
 			<key>Ansi 3 Color</key>
 			<dict>
@@ -50897,9 +50897,9 @@ Show Toolbelt</string>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.70088159180608045</real>
+				<real>0.70088160037994385</real>
 				<key>Red Component</key>
-				<real>0.0041284728795290297</real>
+				<real>0.0041284728795289993</real>
 			</dict>
 			<key>Ansi 7 Color</key>
 			<dict>
@@ -57602,9 +57602,9 @@ Show Toolbelt</string>
 	</array>
 	<key>NoSyncAllAppVersions</key>
 	<array>
-		<string>3.3.0beta9</string>
 		<string>3.3.0beta13</string>
 		<string>3.3.0beta11</string>
+		<string>3.3.0beta9</string>
 	</array>
 	<key>NoSyncBFPFavorites</key>
 	<array>
@@ -57638,14 +57638,14 @@ Show Toolbelt</string>
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1440, 900}}</string>
 		<key>topLeft</key>
-		<string>{0, 854}</string>
+		<string>{-273, 848}</string>
 	</dict>
 	<key>NoSyncInstallationId</key>
 	<string>78E2F140-557C-4115-91AC-4DB26E1EFA8B</string>
 	<key>NoSyncLastTipTime</key>
 	<real>582943872.17159104</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>384</integer>
+	<integer>388</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -58534,26 +58534,26 @@ Show Toolbelt</string>
 												<key>Alpha Component</key>
 												<real>1</real>
 												<key>Blue Component</key>
-												<real>0.44371563196182251</real>
+												<real>0.46310700719999998</real>
 												<key>Color Space</key>
 												<string>sRGB</string>
 												<key>Green Component</key>
-												<real>0.44606426358222961</real>
+												<real>0.45079999999999998</real>
 												<key>Red Component</key>
-												<real>1</real>
+												<real>0.97999999999999998</real>
 											</dict>
 											<key>Ansi 10 Color</key>
 											<dict>
 												<key>Alpha Component</key>
 												<real>1</real>
 												<key>Blue Component</key>
-												<real>0.65091133117675781</real>
+												<real>0.65098041296005249</real>
 												<key>Color Space</key>
 												<string>sRGB</string>
 												<key>Green Component</key>
-												<real>0.99170738458633423</real>
+												<real>0.99215686321258545</real>
 												<key>Red Component</key>
-												<real>0.40748560428619385</real>
+												<real>0.40784314274787903</real>
 											</dict>
 											<key>Ansi 11 Color</key>
 											<dict>
@@ -58603,7 +58603,7 @@ Show Toolbelt</string>
 												<key>Color Space</key>
 												<string>sRGB</string>
 												<key>Green Component</key>
-												<real>0.80202217854275659</real>
+												<real>0.80202215909957886</real>
 												<key>Red Component</key>
 												<real>0.0</real>
 											</dict>
@@ -58625,13 +58625,13 @@ Show Toolbelt</string>
 												<key>Alpha Component</key>
 												<real>1</real>
 												<key>Blue Component</key>
-												<real>0.57200002670288086</real>
+												<real>0.62367786960000005</real>
 												<key>Color Space</key>
 												<string>sRGB</string>
 												<key>Green Component</key>
-												<real>0.87999999523162842</real>
+												<real>0.95999999999999996</real>
 												<key>Red Component</key>
-												<real>0.35199999809265137</real>
+												<real>0.38400000000000001</real>
 											</dict>
 											<key>Ansi 3 Color</key>
 											<dict>
@@ -58681,9 +58681,9 @@ Show Toolbelt</string>
 												<key>Color Space</key>
 												<string>sRGB</string>
 												<key>Green Component</key>
-												<real>0.70088159180608045</real>
+												<real>0.70088160037994385</real>
 												<key>Red Component</key>
-												<real>0.0041284728795290297</real>
+												<real>0.0041284728795289993</real>
 											</dict>
 											<key>Ansi 7 Color</key>
 											<dict>
@@ -58866,7 +58866,7 @@ Show Toolbelt</string>
 												<real>0.94999999999999996</real>
 											</dict>
 											<key>Guid</key>
-											<string>7FEB5223-29F6-4CEA-96D7-CC462F8CCC7F</string>
+											<string>4906E55F-6A31-4CFA-9601-D3613ECFEAF9</string>
 											<key>Has Hotkey</key>
 											<false/>
 											<key>Horizontal Spacing</key>
@@ -59654,8 +59654,6 @@ Show Toolbelt</string>
 										</array>
 										<key>Directories</key>
 										<array>
-											<string>/Users/riley</string>
-											<string>/Users/riley/.dot</string>
 											<string>/Users/riley/.dot</string>
 											<string>/Users/riley/.dot</string>
 											<string>/Users/riley/.dot</string>
@@ -59754,11 +59752,13 @@ Show Toolbelt</string>
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
 										</array>
 										<key>Environment</key>
 										<dict>
 											<key>PWD</key>
-											<string>/Users/riley/.dot</string>
+											<string>/Users/riley</string>
 										</dict>
 										<key>Hosts</key>
 										<array>
