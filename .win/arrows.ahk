@@ -49,7 +49,6 @@ Return
     Return
 #If
 
-
 ;;; EVERNOTE
 #If ("ahk_class ENMainFrame")
     ^q::Send !{F4}
@@ -63,4 +62,9 @@ Return
     Send, {F6}
     Sleep, 10
     Send, {LControl Down}{n}{LControl Up}
+Return
+^\::Send {F10}
+Return
+
+^+\::Send {F11}
 Return
