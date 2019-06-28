@@ -18,6 +18,8 @@
 	<false/>
 	<key>BracketedPasteMode</key>
 	<true/>
+	<key>CGFontRenderingFontSmoothingDisabled</key>
+	<false/>
 	<key>ConvertDosNewlines</key>
 	<true/>
 	<key>Custom Color Presets</key>
@@ -50684,8 +50686,8 @@ Show Toolbelt</string>
 	<false/>
 	<key>NSSplitView Subview Frames NSColorPanelSplitView</key>
 	<array>
-		<string>0.000000, 0.000000, 328.000000, 367.500000, NO, NO</string>
-		<string>0.000000, 368.500000, 328.000000, 115.500000, NO, NO</string>
+		<string>0.000000, 0.000000, 328.000000, 331.500000, NO, NO</string>
+		<string>0.000000, 332.500000, 328.000000, 115.500000, NO, NO</string>
 	</array>
 	<key>NSTableView Columns v2 KeyBingingTable</key>
 	<data>
@@ -50718,7 +50720,7 @@ Show Toolbelt</string>
 	<key>NSWindow Frame NSColorPanel</key>
 	<string>76 268 328 348 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>783 51 657 787 0 0 1440 877 </string>
+	<string>783 301 657 537 0 0 1440 877 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -51403,7 +51405,7 @@ Show Toolbelt</string>
 			<key>Non-ASCII Ligatures</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>SFMono-Regular 13</string>
+			<string>FuraCodeNerdFontComplete-Retina 13</string>
 			<key>Only The Default BG Color Uses Transparency</key>
 			<false/>
 			<key>Open Toolbelt</key>
@@ -57616,10 +57618,10 @@ Show Toolbelt</string>
 	</array>
 	<key>NoSyncBFPRecents</key>
 	<array>
-		<string>SF Mono</string>
-		<string>Fira Code</string>
-		<string>Input Mono</string>
 		<string>FuraCode Nerd Font</string>
+		<string>PT Mono</string>
+		<string>Menlo</string>
+		<string>DejaVuSansMono Nerd Font</string>
 	</array>
 	<key>NoSyncCommandHistoryHasEverBeenUsed</key>
 	<true/>
@@ -57635,14 +57637,14 @@ Show Toolbelt</string>
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1440, 900}}</string>
 		<key>topLeft</key>
-		<string>{0, 766}</string>
+		<string>{0, 784}</string>
 	</dict>
 	<key>NoSyncInstallationId</key>
 	<string>78E2F140-557C-4115-91AC-4DB26E1EFA8B</string>
 	<key>NoSyncLastTipTime</key>
 	<real>582943872.17159104</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>379</integer>
+	<integer>382</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -58863,7 +58865,7 @@ Show Toolbelt</string>
 												<real>0.94999999999999996</real>
 											</dict>
 											<key>Guid</key>
-											<string>A876EF69-2EE5-45B9-88F9-4075FDA48F57</string>
+											<string>2832572B-3B08-4A6B-9856-3D0E4A5E4F7B</string>
 											<key>Has Hotkey</key>
 											<false/>
 											<key>Horizontal Spacing</key>
@@ -59186,7 +59188,7 @@ Show Toolbelt</string>
 											<key>Non-ASCII Ligatures</key>
 											<true/>
 											<key>Normal Font</key>
-											<string>SFMono-Regular 13</string>
+											<string>FuraCodeNerdFontComplete-Retina 13</string>
 											<key>Only The Default BG Color Uses Transparency</key>
 											<false/>
 											<key>Open Toolbelt</key>
@@ -59548,20 +59550,6 @@ Show Toolbelt</string>
 										<integer>80</integer>
 										<key>Commands</key>
 										<array>
-											<string>l /Users/riley/.oh-my-zsh/custom/plugins</string>
-											<string>head 40 .zshrc</string>
-											<string>head -n 40 .zshrc</string>
-											<string>l .oh-my-zsh/plugins/osx</string>
-											<string>tab</string>
-											<string>tab</string>
-											<string>nvim .zshrc</string>
-											<string>source .zshrc</string>
-											<string>zprof | head</string>
-											<string>type tab</string>
-											<string>echo "$SHELL"</string>
-											<string>exec "$SHELL" -l</string>
-											<string>zprof | head</string>
-											<string>cat .zshrc</string>
 											<string>colors</string>
 											<string>type colors</string>
 											<string>echo colors</string>
@@ -59648,6 +59636,20 @@ Show Toolbelt</string>
 											<string>git commit -m 'ignore vifm/colors (fix)'</string>
 											<string>git push</string>
 											<string>nvim .config/nvim/init.vim</string>
+											<string>zprof | head</string>
+											<string>gs</string>
+											<string>git add .iterm2-pref/com.googlecode.iterm2.plist &amp;&amp; git commit -m 'iterm2'</string>
+											<string>nvim .zsh/.zshrc</string>
+											<string>git add</string>
+											<string>git add .zsh/.zshrc</string>
+											<string>git commit -m 'new compinit function, thanks to @emilyst'</string>
+											<string>git push</string>
+											<string>tag -a 'Dot Files' .zsh/*</string>
+											<string>echo $BZR</string>
+											<string>exec "$SHELL" -l</string>
+											<string>(...)</string>
+											<string>...</string>
+											<string>-</string>
 										</array>
 										<key>Directories</key>
 										<array>
@@ -59659,23 +59661,6 @@ Show Toolbelt</string>
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
 											<string>/Users/riley/.dot</string>
 											<string>/Users/riley/.dot</string>
 											<string>/Users/riley/.dot</string>
@@ -59750,6 +59735,23 @@ Show Toolbelt</string>
 											<string>/Users/riley/.dot</string>
 											<string>/Users/riley/.dot</string>
 											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users</string>
 											<string>/Users/riley/.dot</string>
 										</array>
 										<key>Environment</key>
