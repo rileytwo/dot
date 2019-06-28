@@ -51405,7 +51405,7 @@ Show Toolbelt</string>
 			<key>Non-ASCII Ligatures</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>FuraCodeNerdFontComplete-Retina 13</string>
+			<string>FiraCode-Retina 13</string>
 			<key>Only The Default BG Color Uses Transparency</key>
 			<false/>
 			<key>Open Toolbelt</key>
@@ -57602,9 +57602,9 @@ Show Toolbelt</string>
 	</array>
 	<key>NoSyncAllAppVersions</key>
 	<array>
+		<string>3.3.0beta9</string>
 		<string>3.3.0beta13</string>
 		<string>3.3.0beta11</string>
-		<string>3.3.0beta9</string>
 	</array>
 	<key>NoSyncBFPFavorites</key>
 	<array>
@@ -57615,13 +57615,14 @@ Show Toolbelt</string>
 		<string>FuraCode Nerd Font</string>
 		<string>Input Mono</string>
 		<string>Iosevka Nerd Font</string>
+		<string>FuraMono Nerd Font</string>
 	</array>
 	<key>NoSyncBFPRecents</key>
 	<array>
+		<string>Input Mono</string>
 		<string>FuraCode Nerd Font</string>
-		<string>PT Mono</string>
-		<string>Menlo</string>
-		<string>DejaVuSansMono Nerd Font</string>
+		<string>Fira Code</string>
+		<string>Hack Nerd Font</string>
 	</array>
 	<key>NoSyncCommandHistoryHasEverBeenUsed</key>
 	<true/>
@@ -57637,14 +57638,14 @@ Show Toolbelt</string>
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1440, 900}}</string>
 		<key>topLeft</key>
-		<string>{0, 784}</string>
+		<string>{0, 854}</string>
 	</dict>
 	<key>NoSyncInstallationId</key>
 	<string>78E2F140-557C-4115-91AC-4DB26E1EFA8B</string>
 	<key>NoSyncLastTipTime</key>
 	<real>582943872.17159104</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>382</integer>
+	<integer>384</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -58865,7 +58866,7 @@ Show Toolbelt</string>
 												<real>0.94999999999999996</real>
 											</dict>
 											<key>Guid</key>
-											<string>2832572B-3B08-4A6B-9856-3D0E4A5E4F7B</string>
+											<string>7FEB5223-29F6-4CEA-96D7-CC462F8CCC7F</string>
 											<key>Has Hotkey</key>
 											<false/>
 											<key>Horizontal Spacing</key>
@@ -59188,7 +59189,7 @@ Show Toolbelt</string>
 											<key>Non-ASCII Ligatures</key>
 											<true/>
 											<key>Normal Font</key>
-											<string>FuraCodeNerdFontComplete-Retina 13</string>
+											<string>FiraCode-Retina 13</string>
 											<key>Only The Default BG Color Uses Transparency</key>
 											<false/>
 											<key>Open Toolbelt</key>
@@ -59550,9 +59551,6 @@ Show Toolbelt</string>
 										<integer>80</integer>
 										<key>Commands</key>
 										<array>
-											<string>colors</string>
-											<string>type colors</string>
-											<string>echo colors</string>
 											<string>echo "$colors"</string>
 											<string>colors</string>
 											<string>cat .zshrc | colors</string>
@@ -59650,16 +59648,12 @@ Show Toolbelt</string>
 											<string>(...)</string>
 											<string>...</string>
 											<string>-</string>
+											<string>cd</string>
+											<string>lsd</string>
+											<string>lsd -la</string>
 										</array>
 										<key>Directories</key>
 										<array>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
 											<string>/Users/riley</string>
 											<string>/Users/riley/.dot</string>
 											<string>/Users/riley/.dot</string>
@@ -59753,6 +59747,13 @@ Show Toolbelt</string>
 											<string>/Users/riley/.dot</string>
 											<string>/Users</string>
 											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
 										</array>
 										<key>Environment</key>
 										<dict>
@@ -60387,7 +60388,7 @@ Show Toolbelt</string>
 										<key>Substitutions</key>
 										<dict/>
 										<key>Working Directory</key>
-										<string>/Users/riley/.dot</string>
+										<string>/Users/riley</string>
 									</dict>
 									<key>View Type</key>
 									<string>SessionView</string>
