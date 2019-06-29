@@ -1,10 +1,10 @@
-#!/usr/bin/env bash
+#!/usr/bin/env zsh
 
 ## radian console
 alias rr="radian"
 
 ## github directory alias
-alias gh='~/Documents/Projects/Github'
+alias gh='~/github'
 
 ## dotfiles directory alias
 alias dot='~/.dot'
@@ -15,10 +15,9 @@ alias plistbuddy='/usr/libexec/PlistBuddy'
 ## echo each path entry on newline
 alias path='echo -e ${PATH//:/\\n}'
 
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-#export PATH="$PATH:$HOME/.rvm/bin"
-alias lc='colorls'
+if (( $+commands[colors] )); then
+    alias lc='colorls'
+fi
 alias gs='git status'
 alias hsg='history | grep'
-#alias rstudio='open -a /Applications/RStudio.app/Contents/MacOS/RStudio "$@"'
 
