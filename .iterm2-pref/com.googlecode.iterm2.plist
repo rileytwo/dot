@@ -50686,8 +50686,8 @@ Show Toolbelt</string>
 	<false/>
 	<key>NSSplitView Subview Frames NSColorPanelSplitView</key>
 	<array>
-		<string>0.000000, 0.000000, 328.000000, 331.500000, NO, NO</string>
-		<string>0.000000, 332.500000, 328.000000, 115.500000, NO, NO</string>
+		<string>0.000000, 0.000000, 328.000000, 295.500000, NO, NO</string>
+		<string>0.000000, 296.500000, 328.000000, 115.500000, NO, NO</string>
 	</array>
 	<key>NSTableView Columns v2 KeyBingingTable</key>
 	<data>
@@ -50720,7 +50720,7 @@ Show Toolbelt</string>
 	<key>NSWindow Frame NSColorPanel</key>
 	<string>76 268 328 312 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>783 301 657 537 0 0 1440 877 </string>
+	<string>770 350 670 527 0 0 1440 877 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -51421,11 +51421,11 @@ Show Toolbelt</string>
 			<key>Right Option Key Sends</key>
 			<integer>0</integer>
 			<key>Rows</key>
-			<integer>25</integer>
+			<integer>30</integer>
 			<key>Screen</key>
 			<integer>-2</integer>
 			<key>Scrollback Lines</key>
-			<integer>4000</integer>
+			<integer>8000</integer>
 			<key>Selected Text Color</key>
 			<dict>
 				<key>Alpha Component</key>
@@ -57602,9 +57602,9 @@ Show Toolbelt</string>
 	</array>
 	<key>NoSyncAllAppVersions</key>
 	<array>
+		<string>3.3.0beta9</string>
 		<string>3.3.0beta13</string>
 		<string>3.3.0beta11</string>
-		<string>3.3.0beta9</string>
 	</array>
 	<key>NoSyncBFPFavorites</key>
 	<array>
@@ -57614,15 +57614,15 @@ Show Toolbelt</string>
 		<string>Hack Nerd Font</string>
 		<string>FuraCode Nerd Font</string>
 		<string>Input Mono</string>
-		<string>Iosevka Nerd Font</string>
-		<string>FuraMono Nerd Font</string>
+		<string>DejaVu Sans Mono for Powerline</string>
+		<string>Inconsolata-dz</string>
 	</array>
 	<key>NoSyncBFPRecents</key>
 	<array>
-		<string>Input Mono</string>
-		<string>FuraCode Nerd Font</string>
 		<string>Fira Code</string>
-		<string>Hack Nerd Font</string>
+		<string>DejaVu Sans Mono for Powerline</string>
+		<string>Inconsolata-dz</string>
+		<string>Input Mono</string>
 	</array>
 	<key>NoSyncCommandHistoryHasEverBeenUsed</key>
 	<true/>
@@ -57631,21 +57631,21 @@ Show Toolbelt</string>
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1440, 900}}</string>
 		<key>topLeft</key>
-		<string>{417, 787}</string>
+		<string>{1, 853}</string>
 	</dict>
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1440, 900}}</string>
 		<key>topLeft</key>
-		<string>{-273, 848}</string>
+		<string>{0, 848}</string>
 	</dict>
 	<key>NoSyncInstallationId</key>
 	<string>78E2F140-557C-4115-91AC-4DB26E1EFA8B</string>
 	<key>NoSyncLastTipTime</key>
 	<real>582943872.17159104</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>388</integer>
+	<integer>390</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
