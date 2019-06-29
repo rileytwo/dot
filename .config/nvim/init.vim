@@ -201,26 +201,18 @@ let g:indent_guides_guide_size = 1
 
 " lightline/ale 
 " more info at: info at maximbaz/dotfiles/.config/nvim/init.vim
-if has('win32') || has('win64')
+if has('mac') || has('linux') || &term =~# 'nvim'
     let g:lightline = {
         \ 'colorscheme': 'twofirewatch',
         \ 'active': {
         \   'left': [ [ 'mode', 'paste' ],
-        \             [ 'gitbranch', 'readonly', 'filename', 'modified' ],
-        \             [ 'LightLineFilename' ] ]
-        \ }
-        \ }
-else
-    let g:lightline = {
-        \ 'colorscheme': 'twofirewatch',
-        \ 'active': {
-        \   'left': [ [ 'mode', 'paste' ],
-        \             [ 'gitbranch', 'readonly', 'filename', 'modified' ],
-        \             [ 'LightLineFilename' ] ]
+        \             [ 'readonly', 'filename', 'modified' ],
+        \             [ 'LightLineFilename' ] ],
+        \   'right': [ [ 'lineinfo' ],
+        \              [ 'fileformat', 'filetype' ] ]
         \ },
         \ 'component_function': {
-        \   'filename': 'LightLineFilename',
-        \   'gitbranch': 'fugitive#head'
+        \   'filename': 'LightLineFilename'
         \ }
         \ }
 endif
