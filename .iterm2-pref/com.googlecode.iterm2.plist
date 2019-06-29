@@ -50718,7 +50718,7 @@ Show Toolbelt</string>
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame NSColorPanel</key>
-	<string>76 268 328 312 0 0 1440 877 </string>
+	<string>76 268 328 276 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>707 301 733 537 0 0 1440 877 </string>
 	<key>New Bookmarks</key>
@@ -50951,13 +50951,13 @@ Show Toolbelt</string>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.062745098040000002</real>
+				<real>0.082352941176470587</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.062745098040000002</real>
+				<real>0.082352941176470587</real>
 				<key>Red Component</key>
-				<real>0.062745098040000002</real>
+				<real>0.082352941176470587</real>
 			</dict>
 			<key>Background Image Location</key>
 			<string></string>
@@ -57602,9 +57602,9 @@ Show Toolbelt</string>
 	</array>
 	<key>NoSyncAllAppVersions</key>
 	<array>
-		<string>3.3.0beta13</string>
 		<string>3.3.0beta11</string>
 		<string>3.3.0beta9</string>
+		<string>3.3.0beta13</string>
 	</array>
 	<key>NoSyncBFPFavorites</key>
 	<array>
@@ -57645,7 +57645,7 @@ Show Toolbelt</string>
 	<key>NoSyncLastTipTime</key>
 	<real>582943872.17159104</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>391</integer>
+	<integer>392</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -62403,13 +62403,13 @@ Show Toolbelt</string>
 												<key>Alpha Component</key>
 												<real>1</real>
 												<key>Blue Component</key>
-												<real>0.062745098040000002</real>
+												<real>0.082352941176470587</real>
 												<key>Color Space</key>
 												<string>sRGB</string>
 												<key>Green Component</key>
-												<real>0.062745098040000002</real>
+												<real>0.082352941176470587</real>
 												<key>Red Component</key>
-												<real>0.062745098040000002</real>
+												<real>0.082352941176470587</real>
 											</dict>
 											<key>Background Image Location</key>
 											<string></string>
@@ -62534,7 +62534,7 @@ Show Toolbelt</string>
 												<real>0.94999999999999996</real>
 											</dict>
 											<key>Guid</key>
-											<string>55C2FF86-0A39-4B40-9C8B-95EB7068E172</string>
+											<string>D75F67C9-8B8D-4827-BECD-95BFED5A2492</string>
 											<key>Has Hotkey</key>
 											<false/>
 											<key>Horizontal Spacing</key>
@@ -63214,45 +63214,13 @@ Show Toolbelt</string>
 											<integer>13</integer>
 											<key>Working Directory</key>
 											<string>/Users/riley</string>
+											<key>tmux Pane Title</key>
+											<string>alice</string>
 										</dict>
 										<key>Columns</key>
 										<integer>90</integer>
 										<key>Commands</key>
 										<array>
-											<string>git push</string>
-											<string>brew cask uninstall bettertouchtool</string>
-											<string>brew -S /command/</string>
-											<string>brew cask uninstall commandq</string>
-											<string>brew -S /not\ found/</string>
-											<string>brew tap</string>
-											<string>nvim .zsh/.zshrc</string>
-											<string>nvim .zsh/.zshrc</string>
-											<string>git add .zsh/.zshrc</string>
-											<string>git commit -m 'wrap $HOME in ${HOME}'</string>
-											<string>git pull --rebase</string>
-											<string>l</string>
-											<string>gs</string>
-											<string>l .config/nvim</string>
-											<string>k .config/nvim</string>
-											<string>nvim .gitignore</string>
-											<string>git add .gitignore</string>
-											<string>git commit -m 'track colors in nvim/colors'</string>
-											<string>gs</string>
-											<string>l .vim/colors ; l .config/nvim/colors</string>
-											<string>rm -rf .vim/colors</string>
-											<string>ln -sf /Users/riley/.config/nvim/colors /Users/riley/.dot/.vim/</string>
-											<string>l .vim/colors ; l .config/nvim/colors</string>
-											<string>cd .vim</string>
-											<string>l</string>
-											<string>cd colors</string>
-											<string>l</string>
-											<string>cd ..</string>
-											<string>cd ..</string>
-											<string>gs</string>
-											<string>nvim .gitignore</string>
-											<string>nvim .gitignore</string>
-											<string>git add .gitignore</string>
-											<string>git commit -m 'ignore .DS_Store (i wasnt before???) and also ignore vifm/colors'</string>
 											<string>gs</string>
 											<string>nvim .gitignore</string>
 											<string>git rm --cached .config/vifm/colors</string>
@@ -63319,45 +63287,43 @@ Show Toolbelt</string>
 											<string>git push 'vscode'</string>
 											<string>gc -m 'vscode'</string>
 											<string>git push</string>
+											<string>gs</string>
+											<string>git add .iterm2-pref/com.googlecode.iterm2.plist &amp;&amp; git commit -m 'iterm2'</string>
+											<string>git push</string>
+											<string>ls | rg 'b'</string>
+											<string>ls | rg '\.'</string>
+											<string>ls | rg '.'</string>
+											<string>ls -la | rg '.'</string>
+											<string>ls -a | rg '.'</string>
+											<string>ls -a | rg 's'</string>
+											<string>echo $GREP_COLORS</string>
+											<string>type grep</string>
+											<string>readlink $(which grep)</string>
+											<string>readlink grep</string>
+											<string>readlink</string>
+											<string>readlink -h</string>
+											<string>man readlink</string>
+											<string>ls -a | rg 's'</string>
+											<string>ls -a | grep 's'</string>
+											<string>ls -a | egrep 's'</string>
+											<string>type egrep</string>
+											<string>type rg</string>
+											<string>type grep</string>
+											<string>grep -r "grep  --color=auto"</string>
+											<string>grep -r "grep  --color=auto" ~/</string>
+											<string>cd ..</string>
+											<string>grep -r "grep  --color=auto" ~</string>
+											<string>rg --color="$GREP_COLORS"</string>
+											<string>ls -a | rg --color="$GREP_COLORS" 's'</string>
+											<string>ls -a | rg --color=ansi 's'</string>
+											<string>ls -a | rg --color=auto 's'</string>
+											<string>nvim .zshrc</string>
+											<string>grep o</string>
+											<string>which alias</string>
+											<string>code .oh-my-zsh</string>
 										</array>
 										<key>Directories</key>
 										<array>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot/.vim</string>
-											<string>/Users/riley/.dot/.vim</string>
-											<string>/Users/riley/.dot/.vim/colors</string>
-											<string>/Users/riley/.dot/.vim/colors</string>
-											<string>/Users/riley/.dot/.vim</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
 											<string>/Users/riley/.dot</string>
 											<string>/Users/riley/.dot</string>
 											<string>/Users/riley/.dot</string>
@@ -63422,11 +63388,47 @@ Show Toolbelt</string>
 											<string>/Users/riley/.dot</string>
 											<string>/Users/riley/.dot</string>
 											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
 										</array>
 										<key>Environment</key>
 										<dict>
 											<key>PWD</key>
-											<string>/Users/riley</string>
+											<string>/Users/riley/.dot</string>
 										</dict>
 										<key>Hosts</key>
 										<array>
@@ -64056,7 +64058,7 @@ Show Toolbelt</string>
 										<key>Substitutions</key>
 										<dict/>
 										<key>Working Directory</key>
-										<string>/Users/riley/.dot</string>
+										<string>/Users/riley</string>
 									</dict>
 									<key>View Type</key>
 									<string>SessionView</string>
