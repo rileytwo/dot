@@ -43,7 +43,7 @@
     //"gitlens.blame.toggleMode": "window",
     //"gitlens.blame.highlight.enabled": false,
     //"gitlens.blame.heatmap.enabled": false,
-    "workbench.iconTheme": "vscode-great-icons",
+    "workbench.iconTheme": "Monokai Pro Icons",
     "markdown.extension.print.imgToBase64": true,
     "markdown.extension.toc.githubCompatibility": true,
     "json.format.enable": false,
@@ -89,5 +89,6 @@
     "python.dataScience.allowLiveShare": false,
     "python.dataScience.enabled": false,
     "python.dataScience.searchForJupyter": false,
-    "python.linting.pylintCategorySeverity.convention": "Warning"
+    "python.linting.pylintCategorySeverity.convention": "Warning",
+    "python.pythonPath": "/Users/riley/.pyenv/shims/python"
 }

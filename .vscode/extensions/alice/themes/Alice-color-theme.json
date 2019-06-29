@@ -4,28 +4,34 @@
 		"editor.background": "#151515",
 		"editor.lineHighlightBackground": "#1E1E1E",
         "editor.selectionBackground": "#625F5F",
-        "editorIndentGuide.activeBackground": "#505050",
-        "editorIndentGuide.background": "#202020",
-        
-		"activityBar.background": "#151515",
-		"statusBar.background": "#151515",
-		"tab.inactiveBackground": "#151515",
-		"titleBar.activeBackground": "#151515",
-		"sideBar.background": "#151515",
+		"editor.foreground": "#ffffff",
+		
+		"editorCursor.foreground": "#FF7E81",
+		"editorWhitespace.foreground": "#ffffff",
 		"editorGroupHeader.tabsBackground": "#151515",
 		"editorGroupHeader.noTabsBackground": "#151515",
+		"editorIndentGuide.activeBackground": "#505050",
+        "editorIndentGuide.background": "#202020",
+		"editorBracketMatch.border": "#f4f99d",
+		"editorLineNumber.activeForeground": "#00beff",
+		"editorLineNumber.foreground": "#a6a6a6",
+
+		"activityBar.background": "#151515",
+		
+		"titleBar.activeBackground": "#151515",
+		
+		"statusBar.background": "#151515",
 		"statusBar.noFolderBackground": "#151515",
 		"statusBar.debuggingBackground": "#151515",
-		
-		"tab.activeModifiedBorder": "#00beff",
-		"tab.activeBackground": "#111111",
-
-		"editorCursor.foreground": "#FF7E81",
-		"editor.foreground": "#ffffff",
-		"editorWhitespace.foreground": "#ffffff",
-		"sideBar.border": "#222222",
 		"statusBar.border": "#222222",
-		
+
+		"tab.inactiveBackground": "#151515",
+		"tab.activeBackground": "#151515",
+		"tab.activeModifiedBorder": "#00beff",
+		"tab.activeBorder": "#00beff",
+
+		"sideBar.background": "#151515",
+		"sideBar.border": "#222222"
 		
 	},
 	"name": "Alice"
