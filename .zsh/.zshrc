@@ -38,7 +38,6 @@ fi
 
 export ZSH="${HOME}/.oh-my-zsh"
 plugins=(
-    zsh-syntax-highlighting
     zsh-autosuggestions
     git
     virtualenv
@@ -46,6 +45,7 @@ plugins=(
     zsh-autopair
     k
     autoupdate
+    zsh-syntax-highlighting
 )
 source $ZSH/oh-my-zsh.sh
 
