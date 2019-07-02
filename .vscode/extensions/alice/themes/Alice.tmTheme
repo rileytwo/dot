@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<!-- author:  Mark Herpich https://twitter.com/TheMarkWithK    -->
 <plist version="1.0">
     <dict>
         <key>name</key>
-        <string>1337</string>
+        <string>Alice</string>
         <key>settings</key>
         <array>
             <dict>
@@ -102,7 +101,7 @@
                     <key>foreground</key>
                     <string>#6961ff</string>
                     <key>fontStyle</key>
-                    <string>bold</string>
+                    <string>normal</string>
                 </dict>
             </dict>
             <dict>
@@ -126,7 +125,7 @@
                 <key>settings</key>
                 <dict>
                     <key>fontStyle</key>
-                    <string>bold</string>
+                    <string></string>
                     <key>foreground</key>
                     <string>#3fb2ff</string>
                 </dict>
@@ -152,7 +151,7 @@
                 <key>settings</key>
                 <dict>
                     <key>fontStyle</key>
-                    <string>italic underline</string>
+                    <string>italic</string>
                     <key>foreground</key>
                     <string>#8cdaff</string>
                 </dict>
@@ -364,30 +363,15 @@
                 <key>name</key>
                 <string>Python: Class</string>
                 <key>scope</key>
-                <string>entity.name.type.class.python</string>
-                <key>settings</key>
-                <dict>
-                    <key>fontStyle</key>
-                    <string>bold</string>
-                    <key>foreground</key>
-                    <string>#FF8F86</string>
-                    <!-- red -->
-                </dict>
-            </dict>
-            <dict>
-                <key>name</key>
-                <string>Python: Strings and Characters</string>
-                <key>scope</key>
                 <string>
-                    constant.character.escape.python,
-                    constant.character.format.placeholder.other.python
+                    entity.name.type.class.python
                 </string>
                 <key>settings</key>
                 <dict>
                     <key>fontStyle</key>
                     <string>bold</string>
                     <key>foreground</key>
-                    <string>#FFD2A6</string>
+                    <string>#FF8F86</string>
                     <!-- red -->
                 </dict>
             </dict>
@@ -406,6 +390,57 @@
                     <key>foreground</key>
                     <string>#FF8F86</string>
                     <!-- red -->
+                </dict>
+            </dict>
+            <dict>
+                <key>name</key>
+                <string>Python: Self</string>
+                <key>scope</key>
+                <string>
+                    variable.parameter.function.language.special.self.python,
+                    variable.language.special.self.python
+                </string>
+                <key>settings</key>
+                <dict>
+                    <key>fontStyle</key>
+                    <string></string>
+                    <key>foreground</key>
+                    <string>#db7b74</string>
+                    <!-- red -->
+                </dict>
+            </dict>
+            <dict>
+                <key>name</key>
+                <string>Python: Strings and Characters</string>
+                <key>scope</key>
+                <string>
+                    constant.character.escape.python,
+                    constant.character.format.placeholder.other.python
+                </string>
+                <key>settings</key>
+                <dict>
+                    <key>fontStyle</key>
+                    <string></string>
+                    <key>foreground</key>
+                    <string>#FFD2A6</string>
+                </dict>
+            </dict>
+            <dict>
+                <key>name</key>
+                <string>Python: Other</string>
+                <key>scope</key>
+                <string>
+                    support.punctuation.expression,
+                    string.quoted.double.single-line.python,
+                    constant.other.symbol,
+                    entity.other.inherited-class
+                </string>
+                <key>settings</key>
+                <dict>
+                    <key>fontStyle</key>
+                    <string></string>
+                    <key>foreground</key>
+                    <string>#FFD2A6</string>
                 </dict>
             </dict>
             <dict>
@@ -464,22 +499,6 @@
             </dict>
             <dict>
                 <key>name</key>
-                <string>Python: Other</string>
-                <key>scope</key>
-                <string>
-                    support.punctuation.expression, string.quoted.double.single-line.python, constant.other.symbol,
-                    entity.other.inherited-class
-                </string>
-                <key>settings</key>
-                <dict>
-                    <key>fontStyle</key>
-                    <string></string>
-                    <key>foreground</key>
-                    <string>#FFD2A6</string>
-                </dict>
-            </dict>
-            <dict>
-                <key>name</key>
                 <string>Comment</string>
                 <key>scope</key>
                 <string>comment</string>
@@ -493,7 +512,7 @@
             </dict>
             <dict>
                 <key>name</key>
-                <string> Python - Meta Function Call</string>
+                <string>Python - Meta Function Call</string>
                 <key>scope</key>
                 <string>meta.function-call.python,
                 meta.function-call.arguments.python</string>
@@ -509,13 +528,17 @@
                 <key>name</key>
                 <string> Python - Parameters in Function Call</string>
                 <key>scope</key>
-                <string>variable.parameter.function.python, variable.parameter.function-call.python, variable.parameter</string>
+                <string>
+                    variable.parameter.function.python,
+                    variable.parameter.function-call.python,
+                    variable.parameter
+                </string>
                 <key>settings</key>
                 <dict>
                     <key>fontStyle</key>
                     <string></string>
                     <key>foreground</key>
-                    <string>#6de7c5</string>
+                    <string>#009de6</string>
                 </dict>
             </dict>
             <dict>
@@ -799,6 +822,37 @@
                 </dict>
             </dict>
             <!-- end R  -->
+            <!-- XML/tags -->
+            <dict>
+                <key>name</key>
+                <string>XML: Tag Punctuation</string>
+                <key>scope</key>
+                <string>
+                    punctuation.definition.tag.xml
+                </string>
+                <key>settings</key>
+                <dict>
+                    <key>fontStyle</key>
+                    <string></string>
+                    <key>foreground</key>
+                    <string>#888888</string>
+                </dict>
+            </dict>
+            <dict>
+                <key>name</key>
+                <string>XML: Tags</string>
+                <key>scope</key>
+                <string>
+                    entity.name.tag.localname.xml
+                </string>
+                <key>settings</key>
+                <dict>
+                    <key>fontStyle</key>
+                    <string></string>
+                    <key>foreground</key>
+                    <string>#00acfc</string>
+                </dict>
+            </dict>
         </array>
         <key>uuid</key>
         <string>233F0694-0B9C-43E3-A44A-ECECF7DF6C73</string>
