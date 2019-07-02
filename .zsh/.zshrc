@@ -38,13 +38,14 @@ fi
 
 export ZSH="${HOME}/.oh-my-zsh"
 plugins=(
-    zsh-autosuggestions
     git
     virtualenv
-    zsh-history-substring-search
-    zsh-autopair
     k
     autoupdate
+    zsh-autopair
+    zsh-completions
+    zsh-history-substring-search
+    zsh-autosuggestions
     zsh-syntax-highlighting
 )
 source $ZSH/oh-my-zsh.sh
@@ -157,9 +158,11 @@ export LS_COLORS='di=1;4;34:fi=1;32:ln=1;35:pi=0:bd=0:cd=0:mi=1;4;31:ex=1;31'
     && source "${HOME}/.iterm2_shell_integration.zsh"
 
 
-zstyle ':completion:*' completer _complete _match _ignored _approximate
+zstyle ':completion:*' completer _complete _ignored _approximate
+zstyle ':completion:*' verbose true
+zstyle ':completion:*' accept-exact false
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
-zstyle ':completion:*' menu select=2
+zstyle ':completion:*' menu select=4
 zstyle ':completion:*' verbose yes
 zstyle ':completion:*:descriptions' format "$fg[yellow]%B--- %d%b"
 zstyle ':completion:*:messages' format '%d'
