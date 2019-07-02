@@ -1,15 +1,29 @@
 zmodload zsh/zprof
 
-ZSH_THEME='alice'
+#### // neofetch
+#
+if [[ "$OSTYPE" == "linux-gnu" ]]; then
+    neofetch --ascii_distro kubuntu
+else
+    neofetch
+fi
+
+
+#### // environment
+#
 DISABLE_UDPATE_PROMPT=true
 HISTSIZE=1000
 SAVEHIST=1000
-
+export PAGER=most
+export CLICOLOR=1
+export LS_COLORS='di=1;4;34:fi=1;32:ln=1;35:pi=0:bd=0:cd=0:mi=1;4;31:ex=1;31'
 export TERM=xterm-256color
 export HOMEBREW_NO_AUTO_UPDATE=1
 export HOMEBREW_NO_INSTALL_CLEANUP=1
 export EDITOR=nvim
 
+#### // compinit
+#
 autoload -Uz compinit
 setopt EXTENDEDGLOB
 for dump in ${HOME}/.zcompdump(#qN.m1); do
@@ -23,19 +37,12 @@ done
 unsetopt EXTENDEDGLOB
 compinit -C
 
-#### // neofetch
-#
-if [[ "$OSTYPE" == "linux-gnu" ]]; then
-    neofetch --ascii_distro kubuntu
-else
-    neofetch
-fi
 
 #### // oh my zsh
 #
 # // prompt comes first?
 #
-
+ZSH_THEME='alice'
 export ZSH="${HOME}/.oh-my-zsh"
 plugins=(
     git
@@ -135,21 +142,15 @@ elif (( $+commands[pyenv] )); then
 fi
 
 
-#### // options, other
+#### // options
 #
-export PAGER=most
 setopt EXTENDED_GLOB
 setopt GLOB_DOTS
 disable r
-export CLICOLOR=1
-export LS_COLORS='di=1;4;34:fi=1;32:ln=1;35:pi=0:bd=0:cd=0:mi=1;4;31:ex=1;31'
-
 
 
 #### // helper files
 #
-#export LESS="--RAW-CONTROL-CHARS"
-#[[ -f ~/.LESS_TERMCAP ]] && . ~/.LESS_TERMCAP
 [[ -f ~/.functions ]] && . ~/.functions
 [[ -f ~/.aliases ]] && . ~/.aliases
 [[ -f ~/.fzf.zsh ]] && . ~/.fzf.zsh
