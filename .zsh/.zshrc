@@ -162,9 +162,9 @@ disable r
 zstyle ':completion:*' completer _complete _ignored _approximate
 zstyle ':completion:*' verbose true
 zstyle ':completion:*' accept-exact false
-zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 zstyle ':completion:*' menu select=4
-zstyle ':completion:*' verbose yes
+zstyle ':completion:*' special-dirs false
+zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 zstyle ':completion:*:descriptions' format "$fg[yellow]%B--- %d%b"
 zstyle ':completion:*:messages' format '%d'
 zstyle ':completion:*:warnings' format "$fg[red]No matches for:$reset_color %d"
