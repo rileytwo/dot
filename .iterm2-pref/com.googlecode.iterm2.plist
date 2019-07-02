@@ -50720,7 +50720,7 @@ Show Toolbelt</string>
 	<key>NSWindow Frame NSColorPanel</key>
 	<string>76 268 328 276 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>707 302 733 537 0 0 1440 877 </string>
+	<string>707 301 733 537 0 0 1440 877 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -57602,9 +57602,9 @@ Show Toolbelt</string>
 	</array>
 	<key>NoSyncAllAppVersions</key>
 	<array>
+		<string>3.3.0beta11</string>
 		<string>3.3.0beta9</string>
 		<string>3.3.0beta13</string>
-		<string>3.3.0beta11</string>
 	</array>
 	<key>NoSyncBFPFavorites</key>
 	<array>
@@ -57614,14 +57614,14 @@ Show Toolbelt</string>
 		<string>Hack Nerd Font</string>
 		<string>FuraCode Nerd Font</string>
 		<string>Input Mono</string>
-		<string>DejaVu Sans Mono for Powerline</string>
-		<string>Inconsolata-dz</string>
+		<string>Fira Mono</string>
+		<string>FuraMono Nerd Font</string>
 	</array>
 	<key>NoSyncBFPRecents</key>
 	<array>
+		<string>Fira Mono</string>
+		<string>FuraMono Nerd Font</string>
 		<string>Fira Code</string>
-		<string>DejaVu Sans Mono for Powerline</string>
-		<string>Inconsolata-dz</string>
 		<string>Input Mono</string>
 	</array>
 	<key>NoSyncCommandHistoryHasEverBeenUsed</key>
@@ -57638,14 +57638,14 @@ Show Toolbelt</string>
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1440, 900}}</string>
 		<key>topLeft</key>
-		<string>{-205, 856}</string>
+		<string>{0, 825}</string>
 	</dict>
 	<key>NoSyncInstallationId</key>
 	<string>78E2F140-557C-4115-91AC-4DB26E1EFA8B</string>
 	<key>NoSyncLastTipTime</key>
 	<real>582943872.17159104</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>393</integer>
+	<integer>404</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -62534,7 +62534,7 @@ Show Toolbelt</string>
 												<real>0.94999999999999996</real>
 											</dict>
 											<key>Guid</key>
-											<string>D75F67C9-8B8D-4827-BECD-95BFED5A2492</string>
+											<string>23502E82-C711-4315-A48A-32571A9D588D</string>
 											<key>Has Hotkey</key>
 											<false/>
 											<key>Horizontal Spacing</key>
@@ -63222,15 +63222,6 @@ Show Toolbelt</string>
 										<key>Commands</key>
 										<array>
 											<string>gs</string>
-											<string>nvim .gitignore</string>
-											<string>git rm --cached .config/vifm/colors</string>
-											<string>git rm --cached .config/vifm/</string>
-											<string>git rm -r --cached .config/vifm/</string>
-											<string>gs</string>
-											<string>git add .vim/colors .config/nvim/colors</string>
-											<string>gs</string>
-											<string>git reset HEAD .config/vifm</string>
-											<string>gs</string>
 											<string>git commit -m 'symlink .config/nvim/colors to .vim/colors'</string>
 											<string>gs</string>
 											<string>nvim .gitignore</string>
@@ -63321,23 +63312,18 @@ Show Toolbelt</string>
 											<string>grep o</string>
 											<string>which alias</string>
 											<string>code .oh-my-zsh</string>
+											<string>brew update &amp;&amp; brew upgrade</string>
+											<string>rr</string>
+											<string>brew cask upgrade</string>
+											<string>npm i -g alfy</string>
+											<string>echo "=="</string>
+											<string>echo "==="</string>
+											<string>brew search fira</string>
+											<string>brew cask install font-firamono-nerd-font font-fira-mono</string>
+											<string>ipython</string>
 										</array>
 										<key>Directories</key>
 										<array>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
 											<string>/Users/riley/.dot</string>
 											<string>/Users/riley/.dot</string>
 											<string>/Users</string>
@@ -63424,11 +63410,25 @@ Show Toolbelt</string>
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
 										</array>
 										<key>Environment</key>
 										<dict>
 											<key>PWD</key>
-											<string>/Users/riley/.dot</string>
+											<string>/Users/riley</string>
 										</dict>
 										<key>Hosts</key>
 										<array>
