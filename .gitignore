@@ -14,7 +14,7 @@ automatic_backups/
 plugged/
 autoload/
 log
-.local/share
+/.local/share
 
 # .win/.R/desktop.ini
 desktop.ini
