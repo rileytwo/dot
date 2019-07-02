@@ -13,7 +13,6 @@
     "css.lint.duplicateProperties": "warning",
     "css.validate": false,
     "editor.wordWrap": "on",
-    "editor.accessibilitySupport": "off",
     "editor.codeLens": false,
     "editor.quickSuggestionsDelay": 50,
     "workbench.statusBar.feedback.visible": false,
@@ -80,5 +79,6 @@
     "python.pythonPath": "/Users/riley/.pyenv/shims/python",
     "files.trimTrailingWhitespace": true,
     "editor.fontLigatures": true,
-    "editor.lineHeight": 16
+    "editor.lineHeight": 17,
+    "editor.accessibilitySupport": "off"
 }
