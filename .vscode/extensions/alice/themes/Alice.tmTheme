@@ -43,7 +43,7 @@
                 <key>settings</key>
                 <dict>
                     <key>foreground</key>
-                    <string>#94d4ba</string>
+                    <string>#67fecc</string>
                 </dict>
             </dict>
             <dict>
@@ -65,7 +65,9 @@
                 <key>settings</key>
                 <dict>
                     <key>foreground</key>
-                    <string>#73ff96</string>
+                    <string>#FFD2A6</string>
+                    <key>fontStyle</key>
+                    <string>bold</string>
                 </dict>
             </dict>
             <dict>
@@ -374,9 +376,29 @@
             </dict>
             <dict>
                 <key>name</key>
+                <string>Python: Strings and Characters</string>
+                <key>scope</key>
+                <string>
+                    constant.character.escape.python,
+                    constant.character.format.placeholder.other.python
+                </string>
+                <key>settings</key>
+                <dict>
+                    <key>fontStyle</key>
+                    <string>bold</string>
+                    <key>foreground</key>
+                    <string>#FFD2A6</string>
+                    <!-- red -->
+                </dict>
+            </dict>
+            <dict>
+                <key>name</key>
                 <string>Python: Function Definition</string>
                 <key>scope</key>
-                <string>entity.name.function.python</string>
+                <string>
+                    entity.name.function.python,
+                    punctuation.section.function.begin.python
+                </string>
                 <key>settings</key>
                 <dict>
                     <key>fontStyle</key>
@@ -390,21 +412,30 @@
                 <key>name</key>
                 <string>Python: Storage</string>
                 <key>scope</key>
-                <string>storage.type.class.python, storage.type.function.python, storage.modifier.global.python</string>
+                <string>
+                    storage.type.class.python,
+                    storage.type.function.python,
+                    storage.modifier.global.python
+                    </string>
                 <key>settings</key>
                 <dict>
                     <key>fontStyle</key>
                     <string></string>
                     <key>foreground</key>
-                    <string>#3fb2ff</string>
+                    <string>#00acfc</string>
                     <!-- blue -->
                 </dict>
             </dict>
             <dict>
                 <key>name</key>
-                <string>Python: import</string>
+                <string>Python: Keywords</string>
                 <key>scope</key>
-                <string>keyword.control.import.python, keyword.control.import.from.python</string>
+                <string>
+                    keyword.control.import.python, keyword.control.import.from.python,
+                    keyword.control.flow.python,
+                    keyword.operator.logical.python,
+                    punctuation.separator.colon.python
+                    </string>
                 <key>settings</key>
                 <dict>
                     <key>foreground</key>
@@ -426,22 +457,25 @@
                 <key>settings</key>
                 <dict>
                     <key>fontStyle</key>
-                    <string>bold</string>
+                    <string>normal</string>
                     <key>foreground</key>
                     <string>#e6e6e6</string>
                 </dict>
             </dict>
             <dict>
                 <key>name</key>
-                <string>Python: String</string>
+                <string>Python: Other</string>
                 <key>scope</key>
-                <string>support.punctuation.expression, string.quoted.double.single-line.python, constant.other.symbol, entity.other.inherited-class</string>
+                <string>
+                    support.punctuation.expression, string.quoted.double.single-line.python, constant.other.symbol,
+                    entity.other.inherited-class
+                </string>
                 <key>settings</key>
                 <dict>
                     <key>fontStyle</key>
                     <string></string>
                     <key>foreground</key>
-                    <string>#fbe3bf</string>
+                    <string>#FFD2A6</string>
                 </dict>
             </dict>
             <dict>
@@ -468,7 +502,7 @@
                     <key>fontStyle</key>
                     <string></string>
                     <key>foreground</key>
-                    <string>#3fb2ff</string>
+                    <string>#00acfc</string>
                 </dict>
             </dict>
             <dict>

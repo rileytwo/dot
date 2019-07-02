@@ -5,21 +5,22 @@
 		"editor.lineHighlightBackground": "#1E1E1E",
         "editor.selectionBackground": "#625F5F",
 		"editor.foreground": "#ffffff",
-		
+
 		"editorCursor.foreground": "#FF7E81",
 		"editorWhitespace.foreground": "#ffffff",
 		"editorGroupHeader.tabsBackground": "#151515",
 		"editorGroupHeader.noTabsBackground": "#151515",
 		"editorIndentGuide.activeBackground": "#505050",
         "editorIndentGuide.background": "#202020",
-		"editorBracketMatch.border": "#f4f99d",
+		//"editorBracketMatch.border": "#f4f99dbf",
+		"editorBracketMatch.background": "#58585859",
 		"editorLineNumber.activeForeground": "#00beff",
 		"editorLineNumber.foreground": "#a6a6a6",
 
 		"activityBar.background": "#151515",
-		
+
 		"titleBar.activeBackground": "#151515",
-		
+
 		"statusBar.background": "#151515",
 		"statusBar.noFolderBackground": "#151515",
 		"statusBar.debuggingBackground": "#151515",
@@ -32,7 +33,7 @@
 
 		"sideBar.background": "#151515",
 		"sideBar.border": "#222222"
-		
+
 	},
 	"name": "Alice"
 }
