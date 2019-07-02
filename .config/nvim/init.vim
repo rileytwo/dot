@@ -11,7 +11,7 @@ Plug 'tpope/vim-scriptease'
 
 " // Completion, snippets
 Plug 'w0rp/ale'
-Plug 'Shougo/deoplete.nvim'
+Plug 'Shougo/deoplete.nvim', {'do': ':UpdateRemotePlugins'}
 Plug 'ncm2/ncm2'
 Plug 'roxma/nvim-yarp'
 Plug 'ncm2/ncm2-path'
@@ -26,6 +26,8 @@ Plug 'PProvost/vim-ps1'
 Plug 'jalvesaq/Nvim-R', {'for': 'R'}
 Plug 'gaalcaras/ncm-R', {'for': 'R'}
 Plug 'dkarter/bullets.vim'
+Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
+Plug 'deoplete-plugins/deoplete-jedi'
 
 " // Auto closing delimiters
 Plug 'Raimondi/delimitMate'
