@@ -50717,6 +50717,11 @@ Show Toolbelt</string>
 		<key>TB Is Shown</key>
 		<integer>1</integer>
 	</dict>
+	<key>NSUserKeyEquivalents</key>
+	<dict>
+		<key>Select Current Command</key>
+		<string>@a</string>
+	</dict>
 	<key>NSWindow Frame NSColorPanel</key>
 	<string>76 268 328 276 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
@@ -57602,9 +57607,9 @@ Show Toolbelt</string>
 	</array>
 	<key>NoSyncAllAppVersions</key>
 	<array>
-		<string>3.3.0beta11</string>
 		<string>3.3.0beta9</string>
 		<string>3.3.0beta13</string>
+		<string>3.3.0beta11</string>
 	</array>
 	<key>NoSyncBFPFavorites</key>
 	<array>
@@ -57638,14 +57643,14 @@ Show Toolbelt</string>
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1440, 900}}</string>
 		<key>topLeft</key>
-		<string>{0, 825}</string>
+		<string>{0, 750}</string>
 	</dict>
 	<key>NoSyncInstallationId</key>
 	<string>78E2F140-557C-4115-91AC-4DB26E1EFA8B</string>
 	<key>NoSyncLastTipTime</key>
 	<real>582943872.17159104</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>404</integer>
+	<integer>417</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -58427,6 +58432,8 @@ Show Toolbelt</string>
 	<date>2019-06-23T16:03:03Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
+	<key>Selection Respects Soft Boundaries</key>
+	<true/>
 	<key>SeparateStatusBarsPerPane</key>
 	<true/>
 	<key>ShowBookmarkName</key>
