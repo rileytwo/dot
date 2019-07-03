@@ -42,7 +42,7 @@
                 <key>settings</key>
                 <dict>
                     <key>foreground</key>
-                    <string>#67fecc</string>
+                    <string>#d5bbb1</string>
                 </dict>
             </dict>
             <dict>
@@ -242,7 +242,7 @@
                 <key>settings</key>
                 <dict>
                     <key>foreground</key>
-                    <string>#ff6666</string>
+                    <string>#d5bbb1</string>
                 </dict>
             </dict>
             <dict>
@@ -314,7 +314,7 @@
             <!-- MARKDOWN START -->
             <dict>
                 <key>name</key>
-                <string> Markdown First Header </string>
+                <string>Markdown First Header</string>
                 <key>scope</key>
                 <string>markup.heading.markdown</string>
                 <key>settings</key>
@@ -361,6 +361,30 @@
             <!-- meta.class.python -->
             <dict>
                 <key>name</key>
+                <string>Python Type</string>
+                <key>scope</key>
+                <string>support.type.python</string>
+                <key>settings</key>
+                <dict>
+                    <key>foreground</key>
+                    <string>#67fecc</string>
+                </dict>
+            </dict>
+            <dict>
+                <key>name</key>
+                <string>Python: Magic Support</string>
+                <key>scope</key>
+                <string>support.function.magic.python</string>
+                <key>settings</key>
+                <dict>
+                    <key>fontStyle</key>
+                    <string></string>
+                    <key>foreground</key>
+                    <string>#67fecc</string>
+                </dict>
+            </dict>
+            <dict>
+                <key>name</key>
                 <string>Python: Class</string>
                 <key>scope</key>
                 <string>
@@ -386,7 +410,7 @@
                 <key>settings</key>
                 <dict>
                     <key>fontStyle</key>
-                    <string>bold</string>
+                    <string></string>
                     <key>foreground</key>
                     <string>#FF8F86</string>
                     <!-- red -->
@@ -411,11 +435,10 @@
             </dict>
             <dict>
                 <key>name</key>
-                <string>Python: Strings and Characters</string>
+                <string>Python: Escapes</string>
                 <key>scope</key>
                 <string>
-                    constant.character.escape.python,
-                    constant.character.format.placeholder.other.python
+                    constant.character.escape.python
                 </string>
                 <key>settings</key>
                 <dict>
@@ -450,8 +473,9 @@
                 <string>
                     storage.type.class.python,
                     storage.type.function.python,
+                    storage.type.string.python,
                     storage.modifier.global.python
-                    </string>
+                </string>
                 <key>settings</key>
                 <dict>
                     <key>fontStyle</key>
@@ -463,10 +487,61 @@
             </dict>
             <dict>
                 <key>name</key>
+                <string>Python - Meta Tokens</string>
+                <key>scope</key>
+                <string>
+                    meta.function-call.python,
+                    meta.function-call.arguments.python
+                </string>
+                <key>settings</key>
+                <dict>
+                    <key>fontStyle</key>
+                    <string></string>
+                    <key>foreground</key>
+                    <string>#009de6</string>
+                </dict>
+            </dict>
+            <dict>
+                <key>name</key>
+                <string>Python - Parameters in Function Call</string>
+                <key>scope</key>
+                <string>
+                    variable.parameter.function.python,
+                    variable.parameter.function-call.python,
+                    meta.fstring.python,
+                    variable.parameter
+                </string>
+                <key>settings</key>
+                <dict>
+                    <key>fontStyle</key>
+                    <string></string>
+                    <key>foreground</key>
+                    <string>#009de6</string>
+                </dict>
+            </dict>
+            <dict>
+                <key>name</key>
+                <string>Python invoked function</string>
+                <key>scope</key>
+                <string>
+                    meta.function-call.generic.python,
+                    constant.character.format.placeholder.other.python
+                </string>
+                <key>settings</key>
+                <dict>
+                    <key>fontStyle</key>
+                    <string></string>
+                    <key>foreground</key>
+                    <string>#e06c75</string>
+                </dict>
+            </dict>
+            <dict>
+                <key>name</key>
                 <string>Python: Keywords</string>
                 <key>scope</key>
                 <string>
-                    keyword.control.import.python, keyword.control.import.from.python,
+                    keyword.control.import.python,
+                    keyword.control.import.from.python,
                     keyword.control.flow.python,
                     keyword.operator.logical.python,
                     punctuation.separator.colon.python
@@ -474,8 +549,23 @@
                 <key>settings</key>
                 <dict>
                     <key>foreground</key>
-                    <string>#6961ff</string>
+                    <string>#766fff</string>
                     <!-- purple -->
+                </dict>
+            </dict>
+            <dict>
+                <key>name</key>
+                <string>Python Builtin Function</string>
+                <key>scope</key>
+                <string>
+                    support.function.builtin.python
+                </string>
+                <key>settings</key>
+                <dict>
+                    <key>fontStyle</key>
+                    <string></string>
+                    <key>foreground</key>
+                    <string>#bd93f9</string>
                 </dict>
             </dict>
             <dict>
@@ -508,63 +598,6 @@
                     <string></string>
                     <key>foreground</key>
                     <string>#6d6d6d</string>
-                </dict>
-            </dict>
-            <dict>
-                <key>name</key>
-                <string>Python - Meta Function Call</string>
-                <key>scope</key>
-                <string>meta.function-call.python,
-                meta.function-call.arguments.python</string>
-                <key>settings</key>
-                <dict>
-                    <key>fontStyle</key>
-                    <string></string>
-                    <key>foreground</key>
-                    <string>#00acfc</string>
-                </dict>
-            </dict>
-            <dict>
-                <key>name</key>
-                <string> Python - Parameters in Function Call</string>
-                <key>scope</key>
-                <string>
-                    variable.parameter.function.python,
-                    variable.parameter.function-call.python,
-                    variable.parameter
-                </string>
-                <key>settings</key>
-                <dict>
-                    <key>fontStyle</key>
-                    <string></string>
-                    <key>foreground</key>
-                    <string>#009de6</string>
-                </dict>
-            </dict>
-            <dict>
-                <key>name</key>
-                <string>Python invoked function</string>
-                <key>scope</key>
-                <string>meta.function-call.generic.python</string>
-                <key>settings</key>
-                <dict>
-                    <key>fontStyle</key>
-                    <string></string>
-                    <key>foreground</key>
-                    <string>#FF7881</string>
-                </dict>
-            </dict>
-            <dict>
-                <key>name</key>
-                <string>Python Builtin Function</string>
-                <key>scope</key>
-                <string>support.function.builtin.python</string>
-                <key>settings</key>
-                <dict>
-                    <key>fontStyle</key>
-                    <string></string>
-                    <key>foreground</key>
-                    <string>#bd93f9</string>
                 </dict>
             </dict>
             <!-- PYTHON END -->
