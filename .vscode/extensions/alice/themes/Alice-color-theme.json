@@ -5,6 +5,7 @@
 		"editor.lineHighlightBackground": "#1E1E1E",
         "editor.selectionBackground": "#625F5F",
 		"editor.foreground": "#ffffff",
+		"editor.selectionHighlightBackground": "#3838388a",
 
 		"editorCursor.foreground": "#FF7E81",
 		"editorWhitespace.foreground": "#ffffff",
@@ -12,8 +13,8 @@
 		"editorGroupHeader.noTabsBackground": "#151515",
 		"editorIndentGuide.activeBackground": "#505050",
         "editorIndentGuide.background": "#202020",
-		//"editorBracketMatch.border": "#f4f99dbf",
-		"editorBracketMatch.background": "#58585859",
+		"editorBracketMatch.border": "#000000",
+		"editorBracketMatch.background": "#505050",
 		"editorLineNumber.activeForeground": "#00beff",
 		"editorLineNumber.foreground": "#a6a6a6",
 
