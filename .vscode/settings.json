@@ -80,5 +80,6 @@
     "files.trimTrailingWhitespace": true,
     "editor.fontLigatures": true,
     "editor.lineHeight": 17,
-    "editor.accessibilitySupport": "off"
+    "editor.accessibilitySupport": "off",
+    "code-runner.saveFileBeforeRun": true
 }
