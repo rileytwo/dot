@@ -6,14 +6,14 @@ if ($IsWindows) {
     if (Test-Path($ChocolateyProfile)) {
         Import-Module "$ChocolateyProfile"
     }
-    $dot  = 'C:\Users\RRoach\.dot'
+    $dot = 'C:\Users\RRoach\.dot'
     $docs = 'C:\Users\RRoach\Documents\'
-    $gh   = 'C:\Users\RRoach\Documents\OneDrive - IMODULES SOFTWARE\Projects\Github'
-    $ida  = 'C:\Users\RRoach\Documents\OneDrive - IMODULES SOFTWARE\Projects\internaldataanalytics'
+    $gh = 'C:\Users\RRoach\Documents\OneDrive - IMODULES SOFTWARE\Projects\Github'
+    $ida = 'C:\Users\RRoach\Documents\OneDrive - IMODULES SOFTWARE\Projects\internaldataanalytics'
     $oned = 'C:\Users\RRoach\Documents\OneDrive - IMODULES SOFTWARE\'
     $desk = 'C:\Users\RRoach\Desktop\'
     $proj = 'C:\Users\RRoach\Documents\OneDrive - IMODULES SOFTWARE\Projects\'
-    $nvd  = 'C:\Users\RRoach\AppData\Local\nvim'
+    $nvd = 'C:\Users\RRoach\AppData\Local\nvim'
 }
 
 $PSDefaultParameterValues = @{
@@ -21,10 +21,22 @@ $PSDefaultParameterValues = @{
 }
 
 # // module imports
-Import-Module Get-ChildItemColor
-Import-Module posh-git
-Import-Module oh-my-posh -DisableNameChecking
-Set-Theme riley
+
+if (Get-Module "Get-ChildItemColor") {
+    Import-Module Get-ChildItemColor
+}
+if (Get-Module "posh-git") {
+    Import-Module posh-git
+}
+if (Get-Module "oh-my-posh") {
+    Import-Module oh-my-posh -DisableNameChecking
+}
+Set-Theme riley ; if ($?) {
+    Set-Theme riley
+}
+else {
+    Set-Theme Avit
+}
 
 
 ## // handy aliases
