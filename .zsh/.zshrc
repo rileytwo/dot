@@ -98,10 +98,10 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
     [[ -f "${HOME}/z.sh" ]] \
         && . "${HOME}/z.sh"
         # // brew
-    [[ -d /home/linuxbrew/.linuxbrew/bin ]] \
+    [[ -d "/home/linuxbrew/.linuxbrew/bin" ]] \
         && export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
             
-    [[ -d /snap/bin ]] \
+    [[ -d "/snap/bin" ]] \
         && export PATH="/snap/bin:$PATH"
 
 elif [[ "$OSTYPE" =~ "darwin" ]]; then
