@@ -8,40 +8,14 @@ else
     neofetch
 fi
 
-
-#### // environment
-#
-DISABLE_UDPATE_PROMPT=true
-HISTSIZE=1000
-SAVEHIST=1000
-export PAGER=most
-export CLICOLOR=1
-export LS_COLORS='di=1;4;34:fi=1;32:ln=1;35:pi=0:bd=0:cd=0:mi=1;4;31:ex=1;31'
-export TERM=xterm-256color
-export HOMEBREW_NO_AUTO_UPDATE=1
-export HOMEBREW_NO_INSTALL_CLEANUP=1
-export EDITOR=nvim
-
-#### // compinit
-#
-autoload -Uz compinit
-setopt EXTENDEDGLOB
-for dump in ${HOME}/.zcompdump(#qN.m1); do
-    compinit
-    if [[ -s "$dump" && (! -s "$dump.zwc" || \
-        "$dump" -nt "$dump.zwc") ]]; \
-    then
-        zcompile "$dump"
-    fi
-done
-unsetopt EXTENDEDGLOB
-compinit -C
-
-
 #### // oh my zsh
 #
 # // prompt comes first?
 #
+DISABLE_UDPATE_PROMPT=true
+HISTSIZE=1000
+SAVEHIST=1000
+HISTFILE="${HOME}/.zsh_history"
 ZSH_THEME='alice'
 export ZSH="${HOME}/.oh-my-zsh"
 plugins=(
@@ -58,6 +32,47 @@ plugins=(
 )
 source $ZSH/oh-my-zsh.sh
 
+#### // environment
+#
+export PAGER=most
+export CLICOLOR=1
+export LS_COLORS='di=1;4;34:fi=1;32:ln=1;35:pi=0:bd=0:cd=0:mi=1;4;31:ex=1;31'
+export TERM=xterm-256color
+export HOMEBREW_NO_AUTO_UPDATE=1
+export HOMEBREW_NO_INSTALL_CLEANUP=1
+export EDITOR=nvim
+
+#### // completions
+#
+# // compinit
+# 
+autoload -Uz compinit
+setopt EXTENDEDGLOB
+for dump in ${HOME}/.zcompdump(#qN.m1); do
+    compinit
+    if [[ -s "$dump" && (! -s "$dump.zwc" || \
+        "$dump" -nt "$dump.zwc") ]]; \
+    then
+        zcompile "$dump"
+    fi
+done
+unsetopt EXTENDEDGLOB
+compinit -C
+#
+## // zstyle
+#
+zstyle ':completion:*' completer _complete _ignored _approximate
+zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
+zstyle ':completion:*' menu select=2 _complete 
+zstyle ':completion:*' accept-exact false
+zstyle ':completion:*' special-dirs false
+zstyle ':completion:*:descriptions' format "$fg[yellow]%B--- %d%b"
+zstyle ':completion:*:messages' format '%d'
+zstyle ':completion:*:warnings' format "$fg[red]No matches for:$reset_color %d"
+zstyle ':completion:*:corrections' format '%B%d (errors: %e)%b'
+zstyle ':completion:*' group-name ''
+
+
 #### // highlighting customizations
 typeset -A ZSH_HIGHLIGHT_STYLES
 ZSH_HIGHLIGHT_STYLES[arg0]='fg=blue,bold'
@@ -66,17 +81,14 @@ ZSH_HIGHLIGHT_STYLES[precommand]='fg=green,bold'
 ZSH_HIGHLIGHT_STYLES[commandseparator]='fg=yellow,bold'
 ZSH_HIGHLIGHT_STYLES[command-substitution-delimiter]='fg=magenta'
 ZSH_HIGHLIGHT_STYLES[process-substitution-delimiter]='fg=magenta'
-
 ZSH_HIGHLIGHT_STYLES[path]='fg=green,bold'
 ZSH_HIGHLIGHT_STYLES[path_pathseparator]='fg=green,bold'
 ZSH_HIGHLIGHT_STYLES[path_prefix_pathseparator]='fg=red,bold'
-
 ZSH_HIGHLIGHT_STYLES[single-hyphen-option]='fg=magenta,bold'
 ZSH_HIGHLIGHT_STYLES[double-hyphen-option]='fg=yellow,bold'
-
-ZSH_HIGHLIGHT_STYLES[back-quoted-argument]='fg=yellow,bold'
 ZSH_HIGHLIGHT_STYLES[single-quoted-argument]='fg=yellow'
 ZSH_HIGHLIGHT_STYLES[double-quoted-argument]='fg=yellow'
+ZSH_HIGHLIGHT_STYLES[back-quoted-argument]='fg=yellow,bold'
 ZSH_HIGHLIGHT_STYLES[back-double-quoted-argument]='fg=cyan'
 ZSH_HIGHLIGHT_STYLES[back-dollar-quoted-argument]='fg=cyan'
 ZSH_HIGHLIGHT_STYLES[dollar-double-quoted-argument]='fg=cyan'
@@ -156,19 +168,8 @@ disable r
 [[ -f ~/.aliases ]] && . ~/.aliases
 [[ -f ~/.fzf.zsh ]] && . ~/.fzf.zsh
 
+#### // iterm integration
+#
 [[ -e "${HOME}/.iterm2_shell_integration.zsh" ]] \
     && source "${HOME}/.iterm2_shell_integration.zsh"
-
-
-zstyle ':completion:*' completer _complete _ignored _approximate
-zstyle ':completion:*' verbose true
-zstyle ':completion:*' accept-exact false
-zstyle ':completion:*' menu select=4
-zstyle ':completion:*' special-dirs false
-zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
-zstyle ':completion:*:descriptions' format "$fg[yellow]%B--- %d%b"
-zstyle ':completion:*:messages' format '%d'
-zstyle ':completion:*:warnings' format "$fg[red]No matches for:$reset_color %d"
-zstyle ':completion:*:corrections' format '%B%d (errors: %e)%b'
-zstyle ':completion:*' group-name ''
 
