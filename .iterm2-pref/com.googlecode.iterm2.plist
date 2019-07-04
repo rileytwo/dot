@@ -50686,8 +50686,8 @@ Show Toolbelt</string>
 	<false/>
 	<key>NSSplitView Subview Frames NSColorPanelSplitView</key>
 	<array>
-		<string>0.000000, 0.000000, 328.000000, 259.500000, NO, NO</string>
-		<string>0.000000, 260.500000, 328.000000, 115.500000, NO, NO</string>
+		<string>0.000000, 0.000000, 328.000000, 260.000000, NO, NO</string>
+		<string>0.000000, 261.000000, 328.000000, 115.000000, NO, NO</string>
 	</array>
 	<key>NSTableView Columns v2 KeyBingingTable</key>
 	<data>
@@ -50696,7 +50696,7 @@ Show Toolbelt</string>
 	gAKACoAN0xAJChEVGVdOUy5rZXlzoxITFIADgASABaMWFxiABoAHgAiACVpJZGVudGlm
 	aWVyVVdpZHRoVkhpZGRlblEwI0BowAAAAAAACNIhIiMkWiRjbGFzc25hbWVYJGNsYXNz
 	ZXNcTlNEaWN0aW9uYXJ5oiMlWE5TT2JqZWN00xAJCicrGaMSExSAA4AEgAWjLC0YgAuA
-	DIAIgAlRMSNAdKGdsi0OVtIhIjM0Xk5TTXV0YWJsZUFycmF5ozM1JVdOU0FycmF5XxAP
+	DIAIgAlRMSNAc7Gdsi0OVtIhIjM0Xk5TTXV0YWJsZUFycmF5ozM1JVdOU0FycmF5XxAP
 	TlNLZXllZEFyY2hpdmVy0Tg5VUFycmF5gAEACAARABoAIwAtADIANwBGAEwAUQBcAGMA
 	ZgBoAGoAbABzAHsAfwCBAIMAhQCJAIsAjQCPAJEAnACiAKkAqwC0ALUAugDFAM4A2wDe
 	AOcA7gDyAPQA9gD4APwA/gEAAQIBBAEGAQ8BFAEjAScBLwFBAUQBSgAAAAAAAAIBAAAA
@@ -50725,7 +50725,7 @@ Show Toolbelt</string>
 	<key>NSWindow Frame NSColorPanel</key>
 	<string>76 268 328 276 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>707 301 733 537 0 0 1440 877 </string>
+	<string>2400 -180 960 1057 1440 -180 1920 1057 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -51121,7 +51121,7 @@ Show Toolbelt</string>
 			<key>Idle Code</key>
 			<integer>0</integer>
 			<key>Initial Use Transparency</key>
-			<true/>
+			<false/>
 			<key>Jobs to Ignore</key>
 			<array>
 				<string>rlogin</string>
@@ -51431,6 +51431,8 @@ Show Toolbelt</string>
 			<integer>-2</integer>
 			<key>Scrollback Lines</key>
 			<integer>8000</integer>
+			<key>Scrollback With Status Bar</key>
+			<true/>
 			<key>Selected Text Color</key>
 			<dict>
 				<key>Alpha Component</key>
@@ -57607,9 +57609,9 @@ Show Toolbelt</string>
 	</array>
 	<key>NoSyncAllAppVersions</key>
 	<array>
+		<string>3.3.0beta11</string>
 		<string>3.3.0beta9</string>
 		<string>3.3.0beta13</string>
-		<string>3.3.0beta11</string>
 	</array>
 	<key>NoSyncBFPFavorites</key>
 	<array>
@@ -57641,16 +57643,16 @@ Show Toolbelt</string>
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
 		<key>screenFrame</key>
-		<string>{{0, 0}, {1440, 900}}</string>
+		<string>{{1440, -180}, {1920, 1080}}</string>
 		<key>topLeft</key>
-		<string>{0, 750}</string>
+		<string>{1538, 788}</string>
 	</dict>
 	<key>NoSyncInstallationId</key>
 	<string>78E2F140-557C-4115-91AC-4DB26E1EFA8B</string>
 	<key>NoSyncLastTipTime</key>
 	<real>582943872.17159104</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>417</integer>
+	<integer>425</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
