@@ -59,7 +59,7 @@
     "git.showProgress": false,
     "editor.copyWithSyntaxHighlighting": false,
     "git.enabled": false,
-    "editor.fontFamily": "FuraCodeNerdFontComplete-Retina, Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontFamily": "\"FiraCode-Retina\", Menlo, Monaco, 'Courier New', monospace",
     "workbench.statusBar.visible": true,
     "code-runner.clearPreviousOutput": true,
     "terminal.external.osxExec": "iTerm.app",
@@ -81,5 +81,8 @@
     "editor.fontLigatures": true,
     "editor.lineHeight": 17,
     "editor.accessibilitySupport": "off",
-    "code-runner.saveFileBeforeRun": true
+    "code-runner.saveFileBeforeRun": true,
+    "python.terminal.activateEnvironment": false,
+    "terminal.integrated.fontSize": 13,
+    "terminal.integrated.fontFamily": "FuraCodeNerdFontComplete-Retina, Menlo, Monaco, 'Courier New', monospace"
 }

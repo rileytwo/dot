@@ -363,7 +363,11 @@
                 <key>name</key>
                 <string>Python Type</string>
                 <key>scope</key>
-                <string>support.type.python</string>
+                <string>
+                    support.type.python,
+                    punctuation.definition.list.begin.python,
+                    punctuation.definition.list.end.python
+                </string>
                 <key>settings</key>
                 <dict>
                     <key>foreground</key>
@@ -445,7 +449,7 @@
                     <key>fontStyle</key>
                     <string></string>
                     <key>foreground</key>
-                    <string>#FFD2A6</string>
+                    <string>#766fff</string>
                 </dict>
             </dict>
             <dict>
@@ -471,6 +475,8 @@
                 <string>Python: Storage</string>
                 <key>scope</key>
                 <string>
+                    keyword.control.import.python,
+                    keyword.control.import.from.python,
                     storage.type.class.python,
                     storage.type.function.python,
                     storage.type.string.python,
@@ -491,6 +497,7 @@
                 <key>scope</key>
                 <string>
                     meta.function-call.python,
+                    meta.fstring.python,
                     meta.function-call.arguments.python
                 </string>
                 <key>settings</key>
@@ -498,7 +505,7 @@
                     <key>fontStyle</key>
                     <string></string>
                     <key>foreground</key>
-                    <string>#009de6</string>
+                    <string>#ececec</string>
                 </dict>
             </dict>
             <dict>
@@ -506,17 +513,16 @@
                 <string>Python - Parameters in Function Call</string>
                 <key>scope</key>
                 <string>
-                    variable.parameter.function.python,
+                    variable.parameter.function.language.python,
                     variable.parameter.function-call.python,
-                    meta.fstring.python,
                     variable.parameter
                 </string>
                 <key>settings</key>
                 <dict>
                     <key>fontStyle</key>
-                    <string></string>
+                    <string>bold</string>
                     <key>foreground</key>
-                    <string>#009de6</string>
+                    <string>#ececec</string>
                 </dict>
             </dict>
             <dict>
@@ -540,8 +546,6 @@
                 <string>Python: Keywords</string>
                 <key>scope</key>
                 <string>
-                    keyword.control.import.python,
-                    keyword.control.import.from.python,
                     keyword.control.flow.python,
                     keyword.operator.logical.python,
                     punctuation.separator.colon.python
@@ -549,7 +553,7 @@
                 <key>settings</key>
                 <dict>
                     <key>foreground</key>
-                    <string>#766fff</string>
+                    <string>#837dff</string>
                     <!-- purple -->
                 </dict>
             </dict>
@@ -565,7 +569,7 @@
                     <key>fontStyle</key>
                     <string></string>
                     <key>foreground</key>
-                    <string>#bd93f9</string>
+                    <string>#00acfc</string>
                 </dict>
             </dict>
             <dict>
