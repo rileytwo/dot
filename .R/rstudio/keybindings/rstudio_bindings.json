@@ -5,6 +5,8 @@
     "activateHelp" : "Cmd+L",
     "activateSource" : "Cmd+K Cmd+E",
     "activateTerminal" : "Cmd+K Cmd+T",
+    "addCursorAbove" : "Ctrl+Alt+Up",
+    "addCursorBelow" : "Cmd+D",
     "browseAddins" : "",
     "findInFiles" : "Shift+Cmd+F",
     "fold" : "Cmd+\\|Alt+Cmd+L|Cmd+\\",

@@ -3,6 +3,7 @@
     "fold" : "Cmd+\\|Alt+Cmd+L|Cmd+\\",
     "gotowordleft" : "Ctrl+Shift+A",
     "gotowordright" : "Ctrl+Shift+D",
+    "removeline" : "",
     "removetolineend" : "Ctrl+Shift+Backspace",
     "removetolinestart" : "Ctrl+Backspace",
     "removewordleft" : "Cmd+Backspace|",
