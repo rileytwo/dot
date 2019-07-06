@@ -88,5 +88,6 @@
     "files.defaultLanguage": "shellscript",
     "extensions.autoUpdate": false,
     "extensions.ignoreRecommendations": true,
-    "extensions.showRecommendationsOnlyOnDemand": true
+    "extensions.showRecommendationsOnlyOnDemand": true,
+    "explorer.confirmDragAndDrop": false
 }

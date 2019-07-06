@@ -364,9 +364,11 @@
                 <string>Python Type</string>
                 <key>scope</key>
                 <string>
-                    support.type.python,
-                    punctuation.definition.list.begin.python,
-                    punctuation.definition.list.end.python
+                    support.type.python
+                    <!-- punctuation.definition.list.begin.python, -->
+                    <!-- punctuation.definition.list.end.python, -->
+                    <!-- punctuation.definition.dict.begin.python, -->
+                    <!-- punctuation.definition.dict.end.python -->
                 </string>
                 <key>settings</key>
                 <dict>
@@ -439,17 +441,25 @@
             </dict>
             <dict>
                 <key>name</key>
-                <string>Python: Escapes</string>
+                <string>Python: Special Characters</string>
                 <key>scope</key>
                 <string>
-                    constant.character.escape.python
+                    constant.character.escape.python,
+                    constant.other.set.regexp,
+                    punctuation.character.set.begin.regexp,
+                    punctuation.character.set.end.regexp,
+                    support.other.escape.special.regexp,
+                    support.other.match.begin.regexp,
+                    support.other.match.end.regexp,
+                    string.regexp.quoted.single.python,
+                    string.regexp.quoted.double.python
                 </string>
                 <key>settings</key>
                 <dict>
                     <key>fontStyle</key>
                     <string></string>
                     <key>foreground</key>
-                    <string>#766fff</string>
+                    <string>#8affe4</string>
                 </dict>
             </dict>
             <dict>
@@ -574,7 +584,7 @@
             </dict>
             <dict>
                 <key>name</key>
-                <string>Python Parenthesis</string>
+                <string>Python Enclosures</string>
                 <key>scope</key>
                 <string>
 					punctuation.definition.arguments.begin.python,
@@ -588,7 +598,7 @@
                     <key>fontStyle</key>
                     <string>normal</string>
                     <key>foreground</key>
-                    <string>#e6e6e6</string>
+                    <string>#d4d4d4</string>
                 </dict>
             </dict>
             <dict>
