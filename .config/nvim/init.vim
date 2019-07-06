@@ -27,7 +27,7 @@ Plug 'jalvesaq/Nvim-R', {'for': 'R'}
 Plug 'gaalcaras/ncm-R', {'for': 'R'}
 Plug 'dkarter/bullets.vim'
 Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
-Plug 'deoplete-plugins/deoplete-jedi'
+Plug 'deoplete-plugins/deoplete-jedi', {'for': 'python'}
 
 " // Auto closing delimiters
 Plug 'Raimondi/delimitMate'
@@ -85,7 +85,6 @@ set splitbelow
 set splitright
 set modifiable
 
-"if !has('win32') && !has('win64') 
 if has('mac') || has('linux') || &term=~# 'nvim'
     set number
     set numberwidth=1
@@ -98,21 +97,17 @@ else
     set guicursor=
 endif
 
-
 set showtabline=2
 set laststatus=2
 set noshowmode
-
-set ignorecase
-set smartcase
 
 set tabstop=4
 set shiftwidth=4
 set expandtab
 set autoindent
+
 filetype plugin indent on
 let g:vim_indent_cont = &shiftwidth
-
 let g:deoplete#enable_at_startup = 1
 " ----------
 " //
@@ -224,8 +219,6 @@ function! LightLineFilename()
     return expand('%')
 endfunction
 
-"syntax enable
-
 " check for truecolor support in current terminal
 " macOS Terminal.app does not support truecolor
 if !exists('g:os')
@@ -247,5 +240,4 @@ if !exists('g:os')
         colorscheme riley
     endif
 endif
-
 
