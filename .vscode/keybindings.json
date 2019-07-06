@@ -512,5 +512,25 @@
     {
         "key": "shift+cmd+i",
         "command": "editor.action.reindentlines"
+    },
+    {
+        "key": "cmd+j",
+        "command": "-workbench.action.togglePanel"
+    },
+    {
+        "key": "cmd+j",
+        "command": "workbench.action.output.toggleOutput"
+    },
+    {
+        "key": "shift+cmd+u",
+        "command": "-workbench.action.output.toggleOutput"
+    },
+    {
+        "key": "shift+cmd+=",
+        "command": "workbench.action.nextPanelView"
+    },
+    {
+        "key": "shift+cmd+-",
+        "command": "workbench.action.previousPanelView"
     }
 ]

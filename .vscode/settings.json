@@ -85,5 +85,8 @@
     "python.terminal.activateEnvironment": false,
     "terminal.integrated.fontSize": 13,
     "terminal.integrated.fontFamily": "FuraCodeNerdFontComplete-Retina, Menlo, Monaco, 'Courier New', monospace",
-    "files.defaultLanguage": "shellscript"
+    "files.defaultLanguage": "shellscript",
+    "extensions.autoUpdate": false,
+    "extensions.ignoreRecommendations": true,
+    "extensions.showRecommendationsOnlyOnDemand": true
 }
