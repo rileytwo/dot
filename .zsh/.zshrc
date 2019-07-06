@@ -3,11 +3,20 @@ zmodload zsh/zprof
 #### // neofetch
 #
 if [[ "$OSTYPE" == "linux-gnu" ]]; then
-    neofetch --ascii_distro kubuntu
+    if [[ "$TERM_PROGRAM" == "vscode" ]]; then
+        echo "vscode"
+    else
+        neofetch --ascii_distro kubuntu
+    fi
 elif [[ -f "${HOME}/.dot/.config/neofetch/mac/current" ]]; then
-    neofetch --ascii ~/.dot/.config/neofetch/mac/current --colors 5 7 7 6 7 15
-else
-    neofetch
+    if [[ "$TERM_PROGRAM" == "vscode" ]]; then
+        echo "vscode"
+    else
+        neofetch \
+            --ascii ~/.dot/.config/neofetch/mac/current \
+            --colors 5 7 7 6 7 15
+ 
+    fi
 fi
 
 #### // oh my zsh
