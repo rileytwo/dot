@@ -4,6 +4,8 @@ zmodload zsh/zprof
 #
 if [[ "$OSTYPE" == "linux-gnu" ]]; then
     neofetch --ascii_distro kubuntu
+elif [[ -f "${HOME}/.dot/.config/neofetch/mac/current" ]]; then
+    neofetch --ascii ~/.dot/.config/neofetch/mac/current --colors 5 7 7 6 7 15
 else
     neofetch
 fi
