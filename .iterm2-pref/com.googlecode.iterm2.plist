@@ -50686,8 +50686,8 @@ Show Toolbelt</string>
 	<false/>
 	<key>NSSplitView Subview Frames NSColorPanelSplitView</key>
 	<array>
-		<string>0.000000, 0.000000, 328.000000, 259.000000, NO, NO</string>
-		<string>0.000000, 260.000000, 328.000000, 115.000000, NO, NO</string>
+		<string>0.000000, 0.000000, 328.000000, 260.000000, NO, NO</string>
+		<string>0.000000, 261.000000, 328.000000, 115.000000, NO, NO</string>
 	</array>
 	<key>NSTableView Columns v2 KeyBingingTable</key>
 	<data>
@@ -50723,9 +50723,9 @@ Show Toolbelt</string>
 		<string>@a</string>
 	</dict>
 	<key>NSWindow Frame NSColorPanel</key>
-	<string>847 473 328 240 0 0 1440 877 </string>
+	<string>847 436 328 241 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>707 301 733 537 0 0 1440 877 </string>
+	<string>707 201 733 637 0 0 1440 877 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -50820,11 +50820,11 @@ Show Toolbelt</string>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.9993787407875061</real>
+				<real>0.9993787408</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.80202215909957886</real>
+				<real>0.88278455440000003</real>
 				<key>Red Component</key>
 				<real>0.0</real>
 			</dict>
@@ -50898,13 +50898,13 @@ Show Toolbelt</string>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.96532100439071655</real>
+				<real>0.83999999999999997</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.70088160037994385</real>
+				<real>0.74199999999999999</real>
 				<key>Red Component</key>
-				<real>0.0041284728795289993</real>
+				<real>0.0</real>
 			</dict>
 			<key>Ansi 7 Color</key>
 			<dict>
@@ -58655,9 +58655,9 @@ Show Toolbelt</string>
 	</array>
 	<key>NoSyncAllAppVersions</key>
 	<array>
-		<string>3.3.0beta11</string>
 		<string>3.3.0beta9</string>
 		<string>3.3.0beta13</string>
+		<string>3.3.0beta11</string>
 	</array>
 	<key>NoSyncBFPFavorites</key>
 	<array>
@@ -58691,14 +58691,14 @@ Show Toolbelt</string>
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1440, 900}}</string>
 		<key>topLeft</key>
-		<string>{390, 820}</string>
+		<string>{70, 848}</string>
 	</dict>
 	<key>NoSyncInstallationId</key>
 	<string>78E2F140-557C-4115-91AC-4DB26E1EFA8B</string>
 	<key>NoSyncLastTipTime</key>
 	<real>582943872.17159104</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>431</integer>
+	<integer>432</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -63322,11 +63322,11 @@ Show Toolbelt</string>
 												<key>Alpha Component</key>
 												<real>1</real>
 												<key>Blue Component</key>
-												<real>0.9993787407875061</real>
+												<real>0.9993787408</real>
 												<key>Color Space</key>
 												<string>sRGB</string>
 												<key>Green Component</key>
-												<real>0.80202215909957886</real>
+												<real>0.88278455440000003</real>
 												<key>Red Component</key>
 												<real>0.0</real>
 											</dict>
@@ -63400,13 +63400,13 @@ Show Toolbelt</string>
 												<key>Alpha Component</key>
 												<real>1</real>
 												<key>Blue Component</key>
-												<real>0.96532100439071655</real>
+												<real>0.83999999999999997</real>
 												<key>Color Space</key>
 												<string>sRGB</string>
 												<key>Green Component</key>
-												<real>0.70088160037994385</real>
+												<real>0.74199999999999999</real>
 												<key>Red Component</key>
-												<real>0.0041284728795289993</real>
+												<real>0.0</real>
 											</dict>
 											<key>Ansi 7 Color</key>
 											<dict>
@@ -63589,7 +63589,7 @@ Show Toolbelt</string>
 												<real>0.94999999999999996</real>
 											</dict>
 											<key>Guid</key>
-											<string>23502E82-C711-4315-A48A-32571A9D588D</string>
+											<string>C266A130-DDB7-426F-A314-2C0AEF2CC5ED</string>
 											<key>Has Hotkey</key>
 											<false/>
 											<key>Horizontal Spacing</key>
@@ -63935,6 +63935,8 @@ Show Toolbelt</string>
 											<integer>-2</integer>
 											<key>Scrollback Lines</key>
 											<integer>4000</integer>
+											<key>Scrollback With Status Bar</key>
+											<true/>
 											<key>Selected Text Color</key>
 											<dict>
 												<key>Alpha Component</key>
@@ -64276,186 +64278,186 @@ Show Toolbelt</string>
 										<integer>90</integer>
 										<key>Commands</key>
 										<array>
+											<string>gp</string>
+											<string>mv .xonshrc .config/xonsh/</string>
+											<string>mkdir .bash</string>
+											<string>mv .fzf.bash .bash</string>
+											<string>mv {.bashrc,.bash_profile} .bash</string>
+											<string>tag -a 'Dot Files' .bash</string>
 											<string>gs</string>
-											<string>git commit -m 'symlink .config/nvim/colors to .vim/colors'</string>
+											<string>git add .bash .config/xonsh</string>
 											<string>gs</string>
-											<string>nvim .gitignore</string>
-											<string>git add .gitignore</string>
-											<string>gs</string>
-											<string>git commit -m 'ignore vifm/colors (fix)'</string>
-											<string>git push</string>
-											<string>nvim .config/nvim/init.vim</string>
-											<string>zprof | head</string>
-											<string>gs</string>
-											<string>git add .iterm2-pref/com.googlecode.iterm2.plist &amp;&amp; git commit -m 'iterm2'</string>
-											<string>nvim .zsh/.zshrc</string>
-											<string>git add</string>
-											<string>git add .zsh/.zshrc</string>
-											<string>git commit -m 'new compinit function, thanks to @emilyst'</string>
-											<string>git push</string>
-											<string>tag -a 'Dot Files' .zsh/*</string>
-											<string>echo $BZR</string>
-											<string>exec "$SHELL" -l</string>
-											<string>(...)</string>
-											<string>...</string>
-											<string>-</string>
+											<string>git add .xonshrc .bash_profile .bashrc</string>
+											<string>gc -m 'move files into *parent* folders'</string>
+											<string>git add .fzf.bash</string>
+											<string>gc -m 'move files into *parent* folders'</string>
+											<string>gp</string>
+											<string>tag -a 'dot' .zsh/*</string>
+											<string>tag -a 'dot' .bash/*</string>
 											<string>cd</string>
-											<string>lsd</string>
-											<string>lsd -la</string>
-											<string>info</string>
-											<string>where info</string>
-											<string>info --version</string>
-											<string>info --help</string>
-											<string>info --help | grep "color"</string>
-											<string>info --help | grep "ex"</string>
-											<string>egrep</string>
-											<string>egrep --color</string>
-											<string>egrep --color=when</string>
-											<string>man egrep</string>
-											<string>neofetch</string>
-											<string>port list</string>
-											<string>port installed</string>
-											<string>port selfupdate</string>
-											<string>sudo port selfupdate</string>
-											<string>port upgrade outdated</string>
+											<string>find -L . -name . -o -type d -prune -o -type l</string>
+											<string>l -- *(-@D)</string>
+											<string>l -- **/*(-@D)</string>
+											<string>l -- *(-@D)</string>
+											<string>l .dot/.bash/</string>
+											<string>ln -sf /Users/riley/.dot/.bash/{.bash_profile,.bashrc,.xonshrc} /Users/riley/</string>
+											<string>l -- *(-@D)</string>
+											<string>rm .xonshrc</string>
+											<string>rm .fzf.bash</string>
+											<string>l -- *(-@D)</string>
 											<string>l</string>
-											<string>rg</string>
-											<string>ls | rg 'b'</string>
-											<string>nvim .zshrc</string>
+											<string>ln -sf /Users/riley/.dot/.config/xonsh/.xonshrc /Users/riley/</string>
+											<string>l -- *(-@D)</string>
+											<string>l -- *(@D)</string>
+											<string>brew search rmlint</string>
+											<string>brew install rmlint</string>
+											<string>tag -a 'dot' .xonshrc .bash_profile .bashrc</string>
 											<string>.dot</string>
 											<string>gs</string>
-											<string>git add .iterm2-pref/com.googlecode.iterm2.plist &amp;&amp; git commit -m 'iterm2'</string>
-											<string>git add .zsh/.zshrc</string>
-											<string>git commit -m 'add GREP_COLORS environment variable'</string>
-											<string>gs</string>
-											<string>git add .vscode/</string>
-											<string>gs</string>
-											<string>git push 'vscode'</string>
-											<string>gc -m 'vscode'</string>
-											<string>git push</string>
-											<string>gs</string>
-											<string>git add .iterm2-pref/com.googlecode.iterm2.plist &amp;&amp; git commit -m 'iterm2'</string>
-											<string>git push</string>
-											<string>ls | rg 'b'</string>
-											<string>ls | rg '\.'</string>
-											<string>ls | rg '.'</string>
-											<string>ls -la | rg '.'</string>
-											<string>ls -a | rg '.'</string>
-											<string>ls -a | rg 's'</string>
-											<string>echo $GREP_COLORS</string>
-											<string>type grep</string>
-											<string>readlink $(which grep)</string>
-											<string>readlink grep</string>
-											<string>readlink</string>
-											<string>readlink -h</string>
-											<string>man readlink</string>
-											<string>ls -a | rg 's'</string>
-											<string>ls -a | grep 's'</string>
-											<string>ls -a | egrep 's'</string>
-											<string>type egrep</string>
-											<string>type rg</string>
-											<string>type grep</string>
-											<string>grep -r "grep  --color=auto"</string>
-											<string>grep -r "grep  --color=auto" ~/</string>
+											<string>touch .config/launchpad.yaml</string>
+											<string>git add .config/launchpad.yaml</string>
+											<string>gc -m 'launchpad.yaml for use with lporg'</string>
+											<string>brew search ql</string>
+											<string>gp</string>
+											<string>duti</string>
+											<string>duti --help</string>
+											<string>brew search ssh</string>
+											<string>curl -V</string>
 											<string>cd ..</string>
-											<string>grep -r "grep  --color=auto" ~</string>
-											<string>rg --color="$GREP_COLORS"</string>
-											<string>ls -a | rg --color="$GREP_COLORS" 's'</string>
-											<string>ls -a | rg --color=ansi 's'</string>
-											<string>ls -a | rg --color=auto 's'</string>
+											<string>cd github</string>
+											<string>mkdir statistic</string>
+											<string>mv statistic statistics</string>
+											<string>cd statistics</string>
+											<string>git init</string>
+											<string>hub push</string>
+											<string>hub remote add https://github.com/livelaughriley/statistics.git</string>
+											<string>git remote add https://github.com/livelaughriley/statistics.git</string>
+											<string>git remote add --master Statistics https://github.com/livelaughriley/statistics.git</string>
+											<string>git remote add --master origin Statistics https://github.com/livelaughriley/statistics.git</string>
+											<string>hub push</string>
+											<string>git remove -v</string>
+											<string>git remove -V</string>
+											<string>git remote -V</string>
+											<string>git remote -v</string>
+											<string>hub push</string>
+											<string>hub push Statistics</string>
+											<string>hub push -set-upstream Statistics master</string>
+											<string>hub push --set-upstream Statistics master</string>
+											<string>cd ..</string>
+											<string>rm -rf statistics</string>
+											<string>mkdir statistics</string>
+											<string>cd statistics</string>
+											<string>hub init</string>
+											<string>l</string>
+											<string>hub remote add statistics</string>
+											<string>hub remote add .</string>
+											<string>hub remote add livelaughriley git://github.com/livelaughriley/statistics.git</string>
+											<string>hub -V</string>
+											<string>hub remote -v</string>
+											<string>hub</string>
+											<string>hub alias</string>
+											<string>hub alias -s</string>
+											<string>cd ....</string>
+											<string>riley</string>
+											<string>[[ -f .aliases ]]</string>
+											<string>[[ -f .aliases ]] &amp;&amp; echo "yes"</string>
+											<string>ln -sf /Users/riley/.dot/.zsh/{.aliases,.functions} /Users/riley</string>
+											<string>[[ -f .aliases ]] &amp;&amp; echo "yes"</string>
+											<string>[[ -f .aliases &amp;&amp; -f .functions ]] &amp;&amp; echo "yes"</string>
+											<string>[[ -f .aliases -f .functions ]] &amp;&amp; echo "yes"</string>
+											<string>[[ -f {.aliases,.functions} ]] &amp;&amp; echo "yes"</string>
+											<string>[[ -f ".aliases" &amp;&amp; -f ".functions" ]] &amp;&amp; echo "yes"</string>
+											<string>[[ -f ".aliases" &amp;&amp; -f ".functions" ]] &amp;&amp; echo "yes"</string>
+											<string>[[ -f ".aliases" &amp;&amp; -f ".functions" ]] &amp;&amp; echo "yes"</string>
+											<string>[[ -f .aliases -a -f .functions ]] &amp;&amp; echo "yes"</string>
+											<string>zle</string>
+											<string>man zle</string>
+											<string>man zshmodules</string>
 											<string>nvim .zshrc</string>
-											<string>grep o</string>
-											<string>which alias</string>
-											<string>code .oh-my-zsh</string>
-											<string>brew update &amp;&amp; brew upgrade</string>
-											<string>rr</string>
-											<string>brew cask upgrade</string>
-											<string>npm i -g alfy</string>
-											<string>echo "=="</string>
-											<string>echo "==="</string>
-											<string>brew search fira</string>
-											<string>brew cask install font-firamono-nerd-font font-fira-mono</string>
-											<string>ipython</string>
+											<string>exec "$SHELL" -l</string>
+											<string>zprof | head -n 40</string>
+											<string>zprof | head -n 10</string>
+											<string>nvim .zshrc</string>
 										</array>
 										<key>Directories</key>
 										<array>
 											<string>/Users/riley/.dot</string>
 											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley/github</string>
+											<string>/Users/riley/github</string>
+											<string>/Users/riley/github</string>
+											<string>/Users/riley/github/statistics</string>
+											<string>/Users/riley/github/statistics</string>
+											<string>/Users/riley/github/statistics</string>
+											<string>/Users/riley/github/statistics</string>
+											<string>/Users/riley/github/statistics</string>
+											<string>/Users/riley/github/statistics</string>
+											<string>/Users/riley/github/statistics</string>
+											<string>/Users/riley/github/statistics</string>
+											<string>/Users/riley/github/statistics</string>
+											<string>/Users/riley/github/statistics</string>
+											<string>/Users/riley/github/statistics</string>
+											<string>/Users/riley/github/statistics</string>
+											<string>/Users/riley/github/statistics</string>
+											<string>/Users/riley/github/statistics</string>
+											<string>/Users/riley/github/statistics</string>
+											<string>/Users/riley/github/statistics</string>
+											<string>/Users/riley/github</string>
+											<string>/Users/riley/github</string>
+											<string>/Users/riley/github</string>
+											<string>/Users/riley/github/statistics</string>
+											<string>/Users/riley/github/statistics</string>
+											<string>/Users/riley/github/statistics</string>
+											<string>/Users/riley/github/statistics</string>
+											<string>/Users/riley/github/statistics</string>
+											<string>/Users/riley/github/statistics</string>
+											<string>/Users/riley/github/statistics</string>
+											<string>/Users/riley/github/statistics</string>
+											<string>/Users/riley/github/statistics</string>
+											<string>/Users/riley/github/statistics</string>
+											<string>/Users/riley/github/statistics</string>
 											<string>/Users</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley</string>
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
