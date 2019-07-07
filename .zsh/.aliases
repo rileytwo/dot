@@ -1,0 +1,23 @@
+#!/usr/bin/env zsh
+
+## radian console
+alias rr="radian"
+
+## github directory alias
+alias gh='~/github'
+
+## dotfiles directory alias
+alias dot='~/.dot'
+
+## plistbuddy alias
+alias plistbuddy='/usr/libexec/PlistBuddy'
+
+## echo each path entry on newline
+alias path='echo -e ${PATH//:/\\n}'
+
+if (( $+commands[colors] )); then
+    alias lc='colorls'
+fi
+alias gs='git status'
+alias hsg='history | grep'
+
