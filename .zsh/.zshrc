@@ -84,26 +84,48 @@ zstyle ':completion:*:corrections' format '%B%d (errors: %e)%b'
 zstyle ':completion:*' group-name ''
 
 
-#### // highlighting customizations
+#### // highlighting
+#
+# // activated highlighters
+ZSH_HIGHLIGHT_HIGHLIGHTERS=(
+    main
+    brackets
+    #pattern
+    root
+)
+#
+# // customizing highlighters 
 typeset -A ZSH_HIGHLIGHT_STYLES
-ZSH_HIGHLIGHT_STYLES[arg0]='fg=blue,bold'
+ZSH_HIGHLIGHT_STYLES[arg0]='fg=blue'
 ZSH_HIGHLIGHT_STYLES[suffix-alias]='fg=green,bold'
 ZSH_HIGHLIGHT_STYLES[precommand]='fg=green,bold'
-ZSH_HIGHLIGHT_STYLES[commandseparator]='fg=yellow,bold'
-ZSH_HIGHLIGHT_STYLES[command-substitution-delimiter]='fg=magenta'
-ZSH_HIGHLIGHT_STYLES[process-substitution-delimiter]='fg=magenta'
+ZSH_HIGHLIGHT_STYLES[commandseparator]='fg=blue,bold'
 ZSH_HIGHLIGHT_STYLES[path]='fg=green,bold'
 ZSH_HIGHLIGHT_STYLES[path_pathseparator]='fg=green,bold'
 ZSH_HIGHLIGHT_STYLES[path_prefix_pathseparator]='fg=red,bold'
+ZSH_HIGHLIGHT_STYLES[globbing]='fg=cyan'
+
+ZSH_HIGHLIGHT_STYLES[command-substitution]='fg=magenta'
+ZSH_HIGHLIGHT_STYLES[command-substitution-unquoted]='fg=magenta'
+ZSH_HIGHLIGHT_STYLES[command-substitution-quoted]='fg=magenta'
+ZSH_HIGHLIGHT_STYLES[command-substitution-delimiter]='fg=magenta'
+ZSH_HIGHLIGHT_STYLES[command-substitution-delimiter-unquoted]='f=magenta'
+ZSH_HIGHLIGHT_STYLES[command-substitution-delimiter-quoted]='fg=magenta'
+
+ZSH_HIGHLIGHT_STYLES[process-substitution-delimiter]='fg=magenta'
+
 ZSH_HIGHLIGHT_STYLES[single-hyphen-option]='fg=magenta,bold'
 ZSH_HIGHLIGHT_STYLES[double-hyphen-option]='fg=yellow,bold'
+ZSH_HIGHLIGHT_STYLES[back-quoted-argument]='fg=yellow,bold'
+
 ZSH_HIGHLIGHT_STYLES[single-quoted-argument]='fg=yellow'
 ZSH_HIGHLIGHT_STYLES[double-quoted-argument]='fg=yellow'
-ZSH_HIGHLIGHT_STYLES[back-quoted-argument]='fg=yellow,bold'
-ZSH_HIGHLIGHT_STYLES[back-double-quoted-argument]='fg=cyan'
-ZSH_HIGHLIGHT_STYLES[back-dollar-quoted-argument]='fg=cyan'
-ZSH_HIGHLIGHT_STYLES[dollar-double-quoted-argument]='fg=cyan'
-ZSH_HIGHLIGHT_STYLES[redirection]='fg=red'
+ZSH_HIGHLIGHT_STYLES[dollar-quoted-argument]='fg=green'
+ZSH_HIGHLIGHT_STYLES[dollar-double-quoted-argument]='fg=green'
+ZSH_HIGHLIGHT_STYLES[back-double-quoted-argument]='fg=red,bold'
+ZSH_HIGHLIGHT_STYLES[back-dollar-quoted-argument]='fg=red,bold'
+ZSH_HIGHLIGHT_STYLES[redirection]='fg=green'
+ZSH_HIGHLIGHT_STYLES[named-fd]='fg=green'
 # // look at:
 # // https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/docs/highlighters/main.md
 # // for more customization options
