@@ -14,7 +14,7 @@ elif [[ -f "${HOME}/.dot/.config/neofetch/mac/current" ]]; then
     else
         neofetch \
             --ascii ~/.dot/.config/neofetch/mac/current \
-            --colors 5 7 7 6 7 15
+            --colors 5 7 7 4 7 15
  
     fi
 fi
