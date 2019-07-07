@@ -2,7 +2,7 @@
 
 > /dät/
 
-*noun*
+## *noun*
 
 > noun: **dot**; plural noun: **dots**
 ---
