@@ -89,5 +89,7 @@
     "extensions.autoUpdate": false,
     "extensions.ignoreRecommendations": true,
     "extensions.showRecommendationsOnlyOnDemand": true,
-    "explorer.confirmDragAndDrop": false
+    "explorer.confirmDragAndDrop": false,
+    "window.restoreWindows": "none",
+    "markdownlint.run": "onSave"
 }

@@ -532,5 +532,15 @@
     {
         "key": "shift+cmd+-",
         "command": "workbench.action.previousPanelView"
+    },
+    {
+        "key": "cmd+i",
+        "command": "markdownExtended.toggleItalics",
+        "when": "editorTextFocus && editorLangId == 'markdown'"
+    },
+    {
+        "key": "ctrl+i",
+        "command": "-markdownExtended.toggleItalics",
+        "when": "editorTextFocus && editorLangId == 'markdown'"
     }
 ]

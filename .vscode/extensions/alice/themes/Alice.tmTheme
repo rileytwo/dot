@@ -325,35 +325,67 @@
             </dict>
             <dict>
                 <key>name</key>
-                <string> Code Block </string>
+                <string>Code Block</string>
                 <key>scope</key>
-                <string>markup.fenced_code.block.markdown</string>
+                <string>
+                    markup.fenced_code.block.markdown
+                </string>
                 <key>settings</key>
                 <dict>
                     <key>foreground</key>
-                    <string>#ffffff</string>
+                    <string>#68fdcc</string>
                 </dict>
             </dict>
             <dict>
                 <key>name</key>
-                <string> Code Block Language </string>
+                <string>Code Block Language</string>
                 <key>scope</key>
                 <string>fenced_code.block.language</string>
                 <key>settings</key>
                 <dict>
                     <key>foreground</key>
-                    <string>#ff6666</string>
+                    <string>#ff8170</string>
                 </dict>
             </dict>
             <dict>
                 <key>name</key>
-                <string> Code Block Ticks </string>
+                <string>Code Block Ticks</string>
                 <key>scope</key>
                 <string>punctuation.definition.markdown</string>
                 <key>settings</key>
                 <dict>
                     <key>foreground</key>
                     <string>#6961ff</string>
+                </dict>
+            </dict>
+            <dict>
+                <key>name</key>
+                <string>Inline Code</string>
+                <key>scope</key>
+                <string>
+                    punctuation.definition.raw.markdown,
+                    markup.inline.raw.string.markdown
+                </string>
+                <key>settings</key>
+                <dict>
+                    <key>foreground</key>
+                    <string>#9691FF</string>
+                    <key>background</key>
+                    <string>#333333</string>
+                </dict>
+            </dict>
+            <dict>
+                <key>name</key>
+                <string>Inline Comments</string>
+                <key>scope</key>
+                <string>
+                    punctuation.definition.quote.begin.markdown,
+                    markup.quote.markdown
+                </string>
+                <key>settings</key>
+                <dict>
+                    <key>foreground</key>
+                    <string>#bababa</string>
                 </dict>
             </dict>
             <!-- MARKDOWN END -->
@@ -365,7 +397,7 @@
                 <key>scope</key>
                 <string>
                     support.type.python
-                    <!-- punctuation.definition.list.begin.python, -->
+                                        <!-- punctuation.definition.list.begin.python, -->
                     <!-- punctuation.definition.list.end.python, -->
                     <!-- punctuation.definition.dict.begin.python, -->
                     <!-- punctuation.definition.dict.end.python -->
@@ -484,7 +516,7 @@
                 <key>scope</key>
                 <string>
                     support.punctuation.expression,
-                    <!-- string.quoted.double.single-line.python, -->
+                                        <!-- string.quoted.double.single-line.python, -->
                     <!-- string.quoted.single.single-line.python, -->
                     constant.other.symbol,
                     entity.other.inherited-class
@@ -578,7 +610,7 @@
                     keyword.operator.logical.python,
                     keyword.operator.assignment.python,
                     punctuation.separator.colon.python
-                    </string>
+                </string>
                 <key>settings</key>
                 <dict>
                     <key>foreground</key>
