@@ -507,7 +507,8 @@
                     storage.type.class.python,
                     storage.type.function.python,
                     storage.type.string.python,
-                    storage.modifier.global.python
+                    storage.modifier.global.python,
+                    punctuation.section.function.begin.python
                 </string>
                 <key>settings</key>
                 <dict>
@@ -626,8 +627,7 @@
                 <string>
                     punctuation.definition.comment.python,
                     comment.line.number-sign.python,
-                    string.quoted.docstring.multi.python,
-                    punctuation.section.function.begin.python
+                    string.quoted.docstring.multi.python
                 </string>
                 <key>settings</key>
                 <dict>
