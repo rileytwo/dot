@@ -42,7 +42,7 @@
                 <key>settings</key>
                 <dict>
                     <key>foreground</key>
-                    <string>#d5bbb1</string>
+                    <string>#e3bdaf</string>
                 </dict>
             </dict>
             <dict>
@@ -242,7 +242,7 @@
                 <key>settings</key>
                 <dict>
                     <key>foreground</key>
-                    <string>#d5bbb1</string>
+                    <string>#67fecc</string>
                 </dict>
             </dict>
             <dict>
@@ -391,6 +391,22 @@
             </dict>
             <dict>
                 <key>name</key>
+                <string>Python: Constants</string>
+                <key>scope</key>
+                <string>
+                    constant.numeric.dec.python,
+                    constant.language.python
+                </string>
+                <key>settings</key>
+                <dict>
+                    <key>fontStyle</key>
+                    <string></string>
+                    <key>foreground</key>
+                    <string>#FFD2A6</string>
+                </dict>
+            </dict>
+            <dict>
+                <key>name</key>
                 <string>Python: Class</string>
                 <key>scope</key>
                 <string>
@@ -468,7 +484,8 @@
                 <key>scope</key>
                 <string>
                     support.punctuation.expression,
-                    string.quoted.double.single-line.python,
+                    <!-- string.quoted.double.single-line.python, -->
+                    <!-- string.quoted.single.single-line.python, -->
                     constant.other.symbol,
                     entity.other.inherited-class
                 </string>
@@ -503,7 +520,7 @@
             </dict>
             <dict>
                 <key>name</key>
-                <string>Python - Meta Tokens</string>
+                <string>Python: Meta Tokens</string>
                 <key>scope</key>
                 <string>
                     meta.function-call.python,
@@ -520,7 +537,7 @@
             </dict>
             <dict>
                 <key>name</key>
-                <string>Python - Parameters in Function Call</string>
+                <string>Python: Parameters in Function Call</string>
                 <key>scope</key>
                 <string>
                     variable.parameter.function.language.python,
@@ -530,14 +547,14 @@
                 <key>settings</key>
                 <dict>
                     <key>fontStyle</key>
-                    <string>bold</string>
+                    <string></string>
                     <key>foreground</key>
                     <string>#ececec</string>
                 </dict>
             </dict>
             <dict>
                 <key>name</key>
-                <string>Python invoked function</string>
+                <string>Python: Invoked Function</string>
                 <key>scope</key>
                 <string>
                     meta.function-call.generic.python,
@@ -558,18 +575,19 @@
                 <string>
                     keyword.control.flow.python,
                     keyword.operator.logical.python,
+                    keyword.operator.assignment.python,
                     punctuation.separator.colon.python
                     </string>
                 <key>settings</key>
                 <dict>
                     <key>foreground</key>
-                    <string>#837dff</string>
+                    <string>#9691ff</string>
                     <!-- purple -->
                 </dict>
             </dict>
             <dict>
                 <key>name</key>
-                <string>Python Builtin Function</string>
+                <string>Python: Builtin Function</string>
                 <key>scope</key>
                 <string>
                     support.function.builtin.python
@@ -584,7 +602,7 @@
             </dict>
             <dict>
                 <key>name</key>
-                <string>Python Enclosures</string>
+                <string>Python: Enclosures</string>
                 <key>scope</key>
                 <string>
 					punctuation.definition.arguments.begin.python,
@@ -603,15 +621,21 @@
             </dict>
             <dict>
                 <key>name</key>
-                <string>Comment</string>
+                <string>Python: (&Docstring) Comments</string>
                 <key>scope</key>
-                <string>comment</string>
+                <string>
+                    punctuation.definition.comment.python,
+                    comment.line.number-sign.python,
+                    string.quoted.docstring.multi.python,
+                    punctuation.section.function.begin.python
+                </string>
                 <key>settings</key>
                 <dict>
                     <key>fontStyle</key>
                     <string></string>
                     <key>foreground</key>
                     <string>#6d6d6d</string>
+                    <!-- red -->
                 </dict>
             </dict>
             <!-- PYTHON END -->
