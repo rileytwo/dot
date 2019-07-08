@@ -2,12 +2,17 @@
 *.DS_Store
 history
 
+## // .config 
+#
 # hammerspoon
 spoons/
 
 # karabiner
 configstore/
 automatic_backups/
+
+# .config
+hub
 
 # vim/nvim
 .config/vifm/colors
@@ -16,8 +21,13 @@ autoload/
 log
 share/
 
+
+## // win
 # .win/.R/desktop.ini
 desktop.ini
+
+# conemu
+.win/conemu/ConEmu.xml
 
 # vscode
 #*.code-workspace
@@ -33,8 +43,6 @@ desktop.ini
 *.ps1
 NuGet/
 
-
-hub
 
 *.links
 
