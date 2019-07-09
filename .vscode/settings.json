@@ -14,7 +14,11 @@
     "css.validate": false,
     "editor.wordWrap": "on",
     "editor.codeLens": false,
-    "editor.quickSuggestionsDelay": 50,
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": true,
+        "strings": false
+    },
     "workbench.statusBar.feedback.visible": false,
     "html.validate.styles": false,
     "less.lint.duplicateProperties": "warning",
@@ -26,9 +30,8 @@
     "editor.acceptSuggestionOnEnter": "smart",
     "editor.hover.enabled": false,
     "editor.suggest.localityBonus": true,
-    "editor.tabCompletion": "on",
+    "editor.tabCompletion": "onlySnippets",
     "python.autoComplete.addBrackets": true,
-    "editor.suggest.snippetsPreventQuickSuggestions": false,
     "editor.fontSize": 13,
     "lua.format.indentCount": 4,
     "markdown.extension.print.imgToBase64": true,
@@ -91,5 +94,8 @@
     "extensions.showRecommendationsOnlyOnDemand": true,
     "explorer.confirmDragAndDrop": false,
     "window.restoreWindows": "none",
-    "markdownlint.run": "onSave"
+    "markdownlint.run": "onSave",
+    "workbench.editor.restoreViewState": false,
+    "files.hotExit": "off",
+    "workbench.editor.swipeToNavigate": true
 }

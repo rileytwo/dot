@@ -518,10 +518,6 @@
         "command": "-workbench.action.togglePanel"
     },
     {
-        "key": "cmd+j",
-        "command": "workbench.action.output.toggleOutput"
-    },
-    {
         "key": "shift+cmd+u",
         "command": "-workbench.action.output.toggleOutput"
     },
@@ -542,5 +538,13 @@
         "key": "ctrl+i",
         "command": "-markdownExtended.toggleItalics",
         "when": "editorTextFocus && editorLangId == 'markdown'"
+    },
+    {
+        "key": "cmd+j",
+        "command": "workbench.actions.view.problems"
+    },
+    {
+        "key": "shift+cmd+m",
+        "command": "-workbench.actions.view.problems"
     }
 ]
