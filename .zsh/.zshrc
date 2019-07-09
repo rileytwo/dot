@@ -24,8 +24,8 @@ fi
 # // prompt comes first?
 #
 DISABLE_UDPATE_PROMPT=true
-HISTSIZE=1000
-SAVEHIST=1000
+HISTSIZE=5000
+SAVEHIST=5000
 HISTFILE="${HOME}/.zsh_history"
 ZSH_THEME='alice'
 export ZSH="${HOME}/.oh-my-zsh"
