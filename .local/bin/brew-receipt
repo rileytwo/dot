@@ -32,7 +32,7 @@ for argument in "$@"; do
             echo "* ERROR: ${receipt}"
             return 1
         else
-            "${json_refmt}" | "${pygmentize}" -l json -O "style=paraiso-dark" < "${receipt}"
+            "${json_refmt}" < "${receipt}" | "${pygmentize}" -l json -O "style=paraiso-dark"
             echo ""
         fi
     else
