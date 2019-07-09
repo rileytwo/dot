@@ -6,6 +6,7 @@ if ($IsWindows) {
     if (Test-Path($ChocolateyProfile)) {
         Import-Module "$ChocolateyProfile"
     }
+    # Common Paths
     $dot = 'C:\Users\RRoach\.dot'
     $docs = 'C:\Users\RRoach\Documents\'
     $gh = 'C:\Users\RRoach\Documents\OneDrive - IMODULES SOFTWARE\Projects\Github'
@@ -14,6 +15,13 @@ if ($IsWindows) {
     $desk = 'C:\Users\RRoach\Desktop\'
     $proj = 'C:\Users\RRoach\Documents\OneDrive - IMODULES SOFTWARE\Projects\'
     $nvd = 'C:\Users\RRoach\AppData\Local\nvim'
+}
+
+Set-PSReadLineOption -Colors @{ 
+    "Command"   = "`e[34m"
+    "Parameter" = "`e[35m"
+    "String"    = "`e[33m"
+    "Operator"  = "`e[33m"
 }
 
 $PSDefaultParameterValues = @{
