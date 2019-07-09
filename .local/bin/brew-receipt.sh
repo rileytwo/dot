@@ -2,6 +2,8 @@
 #:  * `receipt` <formula> [<formula>...]:
 #:     Show the syntax-highlighted JSON install receipt for the specified formulae
 
+HOMEBREW_PREFIX="$(brew --prefix)"
+
 function brew () {
     "${HOMEBREW_PREFIX}/bin/brew" "$@"
 }
@@ -11,13 +13,13 @@ pygmentize="$(which pygmentize)"
 json_refmt="$(which json_reformat)"
 
 if [[ ! -x $pygmentize ]]; then
-    echo "* ERROR: The “pygmentize” command was not found"
-    echo "* ERROR: Try installing the Python “pygments” package"
+    echo "* ERROR: The "pygmentize" command was not found"
+    echo "* ERROR: Try installing the Python "pygments" package"
     return 1
 fi
 if [[ ! -x $json_refmt ]]; then
-    echo "* ERROR: The “json_reformat” command was not found"
-    echo "* ERROR: Try installing the “yajl” Homebrew formula"
+    echo "* ERROR: The "json_reformat" command was not found"
+    echo "* ERROR: Try installing the "yajl" Homebrew formula"
     return 1
 fi
 
