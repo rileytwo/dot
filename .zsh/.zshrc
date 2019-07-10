@@ -73,17 +73,33 @@ unsetopt EXTENDEDGLOB
 compinit -C
 #
 ## // zstyle
-#
-zstyle ':completion:*' completer _complete _ignored _approximate
-zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
-zstyle ':completion:*' menu select=2 _complete 
+
+# FIGNORE
+FIGNORE='.DS_Store'
+
+# NOTE as follows `:completion:function:completer:command:argument:tag`
+zstyle ':completion:*' completer \
+    _complete _match _approximate _ignored
+
+zstyle ':completion:*' menu select=2 
 zstyle ':completion:*' accept-exact false
 zstyle ':completion:*' special-dirs false
-zstyle ':completion:*:descriptions' format "$fg[yellow]%B--- %d%b"
+zstyle ':completion:*:descriptions' format \
+    "$fg[yellow]%B--- %d%b"
+
 zstyle ':completion:*:messages' format '%d'
-zstyle ':completion:*:warnings' format "$fg[red]No matches for:$reset_color %d"
-zstyle ':completion:*:corrections' format '%B%d (errors: %e)%b'
+zstyle ':completion:*:warnings' format \
+    "$fg[red]No matches for:$reset_color %d"
+
+zstyle ':completion:*:corrections' format \
+    '%B%d (errors: %e)%b'
+
+zstyle ':completion:*' list-colors \
+    "${(s.:.)LS_COLORS}"
+    # NOTE `(s.:.)` forces field splitting at the separator *string*
+
 zstyle ':completion:*' group-name ''
+zstyle ':completion:*' verbose true
 
 
 #### // highlighting
@@ -129,7 +145,7 @@ ZSH_HIGHLIGHT_STYLES[back-dollar-quoted-argument]='fg=red,bold'
 ZSH_HIGHLIGHT_STYLES[redirection]='fg=green'
 ZSH_HIGHLIGHT_STYLES[named-fd]='fg=green'
 # // look at:
-# // https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/docs/highlighters/main.md
+# // zsh-users/zsh-syntax-highlighting/blob/master/docs/highlighters/main.md
 # // for more customization options
 
 
