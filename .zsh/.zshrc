@@ -52,6 +52,8 @@ export TERM=xterm-256color
 export HOMEBREW_NO_AUTO_UPDATE=1
 export HOMEBREW_NO_INSTALL_CLEANUP=1
 export EDITOR=nvim
+export MPLBACKEND="module://itermplot"
+export ITERMPLOT=rv
 
 #### // completions
 #
