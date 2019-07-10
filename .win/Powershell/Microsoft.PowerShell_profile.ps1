@@ -15,6 +15,8 @@ if ($IsWindows) {
     $desk = 'C:\Users\RRoach\Desktop\'
     $proj = 'C:\Users\RRoach\Documents\OneDrive - IMODULES SOFTWARE\Projects\'
     $nvd = 'C:\Users\RRoach\AppData\Local\nvim'
+
+    $env:PSModulePath += ";C:\Users\RRoach\scoop\modules"
 }
 
 Set-PSReadLineOption -Colors @{ 
@@ -39,6 +41,10 @@ if (Get-Module "posh-git") {
 if (Get-Module "oh-my-posh") {
     Import-Module oh-my-posh -DisableNameChecking
 }
+if (Get-Module "ZLocation") {
+    Import-Module ZLocation
+}
+
 Set-Theme riley ; if ($?) {
     Set-Theme riley
 }
