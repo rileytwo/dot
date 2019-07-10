@@ -50686,8 +50686,8 @@ Show Toolbelt</string>
 	<false/>
 	<key>NSSplitView Subview Frames NSColorPanelSplitView</key>
 	<array>
-		<string>0.000000, 0.000000, 328.000000, 251.000000, NO, NO</string>
-		<string>0.000000, 252.000000, 328.000000, 88.000000, NO, NO</string>
+		<string>0.000000, 0.000000, 328.000000, 314.500000, NO, NO</string>
+		<string>0.000000, 315.500000, 328.000000, 108.500000, NO, NO</string>
 	</array>
 	<key>NSTableView Columns v2 KeyBingingTable</key>
 	<data>
@@ -50723,9 +50723,9 @@ Show Toolbelt</string>
 		<string>@a</string>
 	</dict>
 	<key>NSWindow Frame NSColorPanel</key>
-	<string>847 436 328 241 0 0 1440 877 </string>
+	<string>180 525 328 295 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>677 274 748 563 0 0 1440 877 </string>
+	<string>707 303 733 537 0 0 1440 877 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -50794,26 +50794,26 @@ Show Toolbelt</string>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>1</real>
+				<real>0.98823529409999999</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.72328126430511475</real>
+				<real>0.75686274509999996</real>
 				<key>Red Component</key>
-				<real>0.31000000238418579</real>
+				<real>0.0</real>
 			</dict>
 			<key>Ansi 13 Color</key>
 			<dict>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.97104030847549438</real>
+				<real>1</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.502888023853302</real>
+				<real>0.49019607840000001</real>
 				<key>Red Component</key>
-				<real>0.6329990029335022</real>
+				<real>0.51372549020000002</real>
 			</dict>
 			<key>Ansi 14 Color</key>
 			<dict>
@@ -50889,9 +50889,9 @@ Show Toolbelt</string>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.44678673148155212</real>
+				<real>0.49019607840000001</real>
 				<key>Red Component</key>
-				<real>0.6159522533416748</real>
+				<real>0.51372549020000002</real>
 			</dict>
 			<key>Ansi 6 Color</key>
 			<dict>
@@ -58655,9 +58655,9 @@ Show Toolbelt</string>
 	</array>
 	<key>NoSyncAllAppVersions</key>
 	<array>
+		<string>3.3.0beta9</string>
 		<string>3.3.0beta13</string>
 		<string>3.3.0beta11</string>
-		<string>3.3.0beta9</string>
 	</array>
 	<key>NoSyncBFPFavorites</key>
 	<array>
@@ -58691,14 +58691,14 @@ Show Toolbelt</string>
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1440, 900}}</string>
 		<key>topLeft</key>
-		<string>{32, 861}</string>
+		<string>{-24, 489}</string>
 	</dict>
 	<key>NoSyncInstallationId</key>
 	<string>78E2F140-557C-4115-91AC-4DB26E1EFA8B</string>
 	<key>NoSyncLastTipTime</key>
 	<real>582943872.17159104</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>442</integer>
+	<integer>444</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -63296,26 +63296,26 @@ Show Toolbelt</string>
 												<key>Alpha Component</key>
 												<real>1</real>
 												<key>Blue Component</key>
-												<real>1</real>
+												<real>0.98823529409999999</real>
 												<key>Color Space</key>
 												<string>sRGB</string>
 												<key>Green Component</key>
-												<real>0.72328126430511475</real>
+												<real>0.75686274509999996</real>
 												<key>Red Component</key>
-												<real>0.31000000238418579</real>
+												<real>0.0</real>
 											</dict>
 											<key>Ansi 13 Color</key>
 											<dict>
 												<key>Alpha Component</key>
 												<real>1</real>
 												<key>Blue Component</key>
-												<real>0.97104030847549438</real>
+												<real>1</real>
 												<key>Color Space</key>
 												<string>sRGB</string>
 												<key>Green Component</key>
-												<real>0.502888023853302</real>
+												<real>0.49019607840000001</real>
 												<key>Red Component</key>
-												<real>0.6329990029335022</real>
+												<real>0.51372549020000002</real>
 											</dict>
 											<key>Ansi 14 Color</key>
 											<dict>
@@ -63391,9 +63391,9 @@ Show Toolbelt</string>
 												<key>Color Space</key>
 												<string>sRGB</string>
 												<key>Green Component</key>
-												<real>0.44678673148155212</real>
+												<real>0.49019607840000001</real>
 												<key>Red Component</key>
-												<real>0.6159522533416748</real>
+												<real>0.51372549020000002</real>
 											</dict>
 											<key>Ansi 6 Color</key>
 											<dict>
@@ -63589,7 +63589,7 @@ Show Toolbelt</string>
 												<real>0.94999999999999996</real>
 											</dict>
 											<key>Guid</key>
-											<string>C266A130-DDB7-426F-A314-2C0AEF2CC5ED</string>
+											<string>B3D45777-C745-4E89-B760-BDDB191770C2</string>
 											<key>Has Hotkey</key>
 											<false/>
 											<key>Horizontal Spacing</key>
@@ -64278,22 +64278,6 @@ Show Toolbelt</string>
 										<integer>90</integer>
 										<key>Commands</key>
 										<array>
-											<string>gp</string>
-											<string>mv .xonshrc .config/xonsh/</string>
-											<string>mkdir .bash</string>
-											<string>mv .fzf.bash .bash</string>
-											<string>mv {.bashrc,.bash_profile} .bash</string>
-											<string>tag -a 'Dot Files' .bash</string>
-											<string>gs</string>
-											<string>git add .bash .config/xonsh</string>
-											<string>gs</string>
-											<string>git add .xonshrc .bash_profile .bashrc</string>
-											<string>gc -m 'move files into *parent* folders'</string>
-											<string>git add .fzf.bash</string>
-											<string>gc -m 'move files into *parent* folders'</string>
-											<string>gp</string>
-											<string>tag -a 'dot' .zsh/*</string>
-											<string>tag -a 'dot' .bash/*</string>
 											<string>cd</string>
 											<string>find -L . -name . -o -type d -prune -o -type l</string>
 											<string>l -- *(-@D)</string>
@@ -64378,27 +64362,25 @@ Show Toolbelt</string>
 											<string>zprof | head -n 40</string>
 											<string>zprof | head -n 10</string>
 											<string>nvim .zshrc</string>
+											<string>compinit</string>
+											<string>cp ~/Wallpapers/</string>
+											<string>nvim .zshrc</string>
+											<string>nvim .zshrc</string>
+											<string>nvim .zshrc</string>
+											<string>nvim .zshrc</string>
+											<string>nvim .config/nvim/init.vim</string>
+											<string>.dot</string>
+											<string>gs</string>
+											<string>git add .config/nvim/init.vim</string>
+											<string>gc -m 'reorganize some things'</string>
+											<string>gs</string>
+											<string>git add .zsh/.zshrc &amp;&amp; gc -m 'add NOTEs and better zstyle'</string>
+											<string>git add .config/nvim/colors/riley.vim</string>
+											<string>gc -m 'add better zsh syntax highlighting support'</string>
+											<string>gp</string>
 										</array>
 										<key>Directories</key>
 										<array>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
@@ -64481,6 +64463,24 @@ Show Toolbelt</string>
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
 										</array>
 										<key>Environment</key>
 										<dict>
@@ -65115,7 +65115,7 @@ Show Toolbelt</string>
 										<key>Substitutions</key>
 										<dict/>
 										<key>Working Directory</key>
-										<string>/Users/riley</string>
+										<string>/Users/riley/.dot</string>
 									</dict>
 									<key>View Type</key>
 									<string>SessionView</string>
@@ -65173,7 +65173,7 @@ Show Toolbelt</string>
 				<key>X Origin</key>
 				<real>707</real>
 				<key>Y Origin</key>
-				<real>301</real>
+				<real>303</real>
 			</dict>
 		</array>
 		<key>90x35</key>
