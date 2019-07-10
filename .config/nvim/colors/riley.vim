@@ -106,6 +106,7 @@ hi!                  ZenSpace ctermbg = 203                 guibg = #eC6a88
 hi! link shFunction Function
 hi! link zshVariableDef Type
 hi! link zshOperator Operator
+hi! link zshSubstDelim Operator
 hi! link zshSubst Structure
 hi! link zshQuoted Special
 hi! link ZshOption Special
