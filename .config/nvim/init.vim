@@ -85,7 +85,7 @@ set splitbelow
 set splitright
 set modifiable
 
-if has('mac') || has('linux') || &term=~# 'nvim'
+if &term=~# 'nvim' || has('mac') || has('linux') 
     set number
     set numberwidth=1
     set guicursor=
