@@ -3,12 +3,12 @@
     "editor.minimap.enabled": false,
     "telemetry.enableTelemetry": false,
     "telemetry.enableCrashReporter": false,
-    "update.enableWindowsBackgroundUpdates": false,
     "update.showReleaseNotes": false,
     "files.associations": {
         "*.rstheme": "css",
         ".functions": "shellscript",
-        ".aliases": "shellscript"
+        ".aliases": "shellscript",
+        "*.rmd": "markdown"
     },
     "css.lint.duplicateProperties": "warning",
     "css.validate": false,
@@ -19,7 +19,6 @@
         "comments": true,
         "strings": false
     },
-    "workbench.statusBar.feedback.visible": false,
     "html.validate.styles": false,
     "less.lint.duplicateProperties": "warning",
     "scss.lint.duplicateProperties": "warning",
@@ -37,22 +36,28 @@
     "markdown.extension.print.imgToBase64": true,
     "markdown.extension.toc.githubCompatibility": true,
     "json.format.enable": false,
+    // "update.enableWindowsBackgroundUpdates": false,
+    // "workbench.statusBar.feedback.visible": false,
     //"vim.disableExtension": true,
-    "gitProjectManager.displayProjectPath": true,
-    "gitProjectManager.baseProjectsFolders": [
-        "/Users/Riley/.dot",
-        "/Users/Riley/Documents/Projects/github"
-    ],
-    "gitProjectManager.maxDepthRecursion": 1,
-    "window.title": "${activeEditorLong}",
-    "workbench.activityBar.visible": false,
+    // "gitProjectManager.displayProjectPath": true,
+    // "gitProjectManager.baseProjectsFolders": [
+        // "/Users/Riley/.dot",
+        // "/Users/Riley/Documents/Projects/github"
+    // ],
+    // "gitProjectManager.maxDepthRecursion": 1,
+    // "gitProjectManager.checkRemoteOrigin": false,
+    // "gitProjectManager.searchInsideProjects": false,
     //"gitlens.showWhatsNewAfterUpgrades": false,
-    "workbench.colorTheme": "Alice",
     //"gitlens.advanced.similarityThreshold": 0,
     //"gitlens.advanced.telemetry.enabled": false,
+    // "r.editor.tabSize": 4,
+    // "r.linting.multipleDots": false,
+    // "r.linting.pascalCase": false,
+
+    "window.title": "${activeEditorLong}",
+    "workbench.activityBar.visible": false,
+    "workbench.colorTheme": "Alice",
     "scm.providers.visible": 0,
-    "gitProjectManager.checkRemoteOrigin": false,
-    "gitProjectManager.searchInsideProjects": false,
     "git.autoRepositoryDetection": false,
     "git.countBadge": "tracked",
     "git.decorations.enabled": false,
@@ -97,5 +102,27 @@
     "markdownlint.run": "onSave",
     "workbench.editor.restoreViewState": false,
     "files.hotExit": "off",
-    "workbench.editor.swipeToNavigate": true
+    "workbench.editor.swipeToNavigate": true,
+    "files.watcherExclude": {
+        "**/.brew": true,
+        "**/.git": true,
+        "**/.vim/plugged": true
+    },
+    "search.exclude": {
+        "**/.brew": true,
+        "**/.git": true,
+        "**/.vim/plugged": true
+    },
+    "files.exclude": {
+        "**/.Rproj.user": true
+    },
+    "editor.matchBrackets": false,
+    "bracket-pair-colorizer-2.colors": [
+        "#FFFFFF",
+        "#DEE0DF",
+        "#C4C4C4"
+    ],
+    "bracket-pair-colorizer-2.excludedLanguages": [
+        "python"
+    ]
 }
