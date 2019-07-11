@@ -67,7 +67,6 @@
     "git.showProgress": false,
     "editor.copyWithSyntaxHighlighting": false,
     "git.enabled": false,
-    "editor.fontFamily": "\"FiraCode-Retina\", Menlo, Monaco, 'Courier New', monospace",
     "workbench.statusBar.visible": true,
     "code-runner.clearPreviousOutput": true,
     "terminal.external.osxExec": "iTerm.app",
