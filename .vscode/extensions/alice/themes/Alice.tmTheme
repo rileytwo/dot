@@ -397,7 +397,7 @@
                 <key>scope</key>
                 <string>
                     support.type.python
-                                        <!-- punctuation.definition.list.begin.python, -->
+                    <!-- punctuation.definition.list.begin.python, -->
                     <!-- punctuation.definition.list.end.python, -->
                     <!-- punctuation.definition.dict.begin.python, -->
                     <!-- punctuation.definition.dict.end.python -->
