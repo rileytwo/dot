@@ -40,8 +40,10 @@ geom_dotplot <- function (mapping      = NULL,
                     ...
                 )
                 {
-                    # This code is adapted from Layer$new. It's needed to pull out stat_params
-                    # and geom_params, then manually add binaxis to both sets of paramsOtherwise
+                    # This code is adapted from
+                    # Layer$new. It's needed to pull out stat_params
+                    # and geom_params, then manually
+                    # add binaxis to both sets of paramsOtherwise
                     # Layer$new will give binaxis only to the geom.
                     stat <- Stat$find(stat)
                     match.params <- function(possible, params) {
@@ -52,7 +54,8 @@ geom_dotplot <- function (mapping      = NULL,
                         }
                     }
                     params <- list(...)
-                    # American names must be changed here so that they'll go to geom_params;
+                    # American names must be changed
+                    # here so that they'll go to geom_params;
                     # otherwise they'll end up in stat_params
                     params <- rename_aes(params)
                     geom_params <- match.params(.$parameters(), params)
