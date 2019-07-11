@@ -8,9 +8,19 @@
         "editor.formatOnType": true,
         "editor.formatOnPaste": true,
         "editor.formatOnSave": true,
-        "files.exclude": {
-            "**/.git": false
+        "r.linting.doubleQuotes": false,
+        "files.watcherExclude": {
+            "**/.brew": true,
+            "**/.git": true,
+            "**/.vim/plugged": true
         },
-        "r.linting.doubleQuotes": false
+        "search.exclude": {
+            "**/.brew": true,
+            "**/.git": true,
+            "**/.vim/plugged": true
+        },
+        "files.exclude": {
+            "**/.Rproj.user": true
+        }
     }
 }
