@@ -124,5 +124,7 @@
     ],
     "bracket-pair-colorizer-2.excludedLanguages": [
         "python"
-    ]
+    ],
+    "javascript.format.insertSpaceAfterSemicolonInForStatements": false,
+    "javascript.validate.enable": false
 }
