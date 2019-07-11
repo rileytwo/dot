@@ -36,8 +36,8 @@ hi!                   NonText ctermbg = 233  ctermfg = 233  guibg = NONE    guif
 hi!                SpecialKey ctermbg = 203  ctermfg = 235  guibg = #e95678 guifg = NONE
 hi!                    Folded ctermbg = 233  ctermfg = 242  guibg = NONE    guifg = #6c6f93
 hi!                FoldColumn ctermbg = 233  ctermfg = 242  guibg = NONE    guifg = #6c6f93
-hi!                  Function                ctermfg = 37                   guifg = #ff6b8d
-hi!                Identifier                ctermfg = 203                  guifg = #9691ff gui = italic
+hi!                  Function                ctermfg = 37                   guifg = #FF7E81
+hi!                Identifier                 ctermfg = 203                  guifg = #9691ff gui = italic
 hi!                 Statement                ctermfg = 171                  guifg = #00bfff gui = NONE
 hi!                   Include                ctermfg = 171                  guifg = #00bfff
 hi!                    LineNr ctermbg = NONE ctermfg = 239  guibg = NONE    guifg = #333333
@@ -64,15 +64,15 @@ hi!                StatusLine ctermbg = 234  ctermfg = 245  guibg = #17171b guif
 hi!            StatusLineTerm ctermbg = 234  ctermfg = 245  guibg = #17171b guifg = #818596 gui = reverse
 hi!              StatusLineNC ctermbg = 237  ctermfg = 233  guibg = #3e445e guifg = #0f1117 gui = reverse
 hi!          StatusLineTermNC ctermbg = 237  ctermfg = 233  guibg = #3e445e guifg = #0f1117 gui = reverse
-hi!              StorageClass                ctermfg = 37                   guifg = #c4b7ff gui = italic
-hi!                    String                ctermfg = 209                  guifg = #67fecc
+hi!              StorageClass                ctermfg = 37                   guifg = #FF7E81
+hi!                    String                ctermfg = 209                  guifg = #e3bdaf
 hi!                 Structure                ctermfg = 37                   guifg = #3fb2ff
 hi!                   TabLine ctermbg = 245  ctermfg = 234  guibg = #818596 guifg = #17171b gui = NONE
 hi!               TabLineFill ctermbg = 234  ctermfg = 245  guibg = #17171b guifg = #818596 gui = reverse
 hi!                TabLineSel ctermbg = 234  ctermfg = 247  guibg = #e95678 guifg = #9a9ca5 gui = NONE
 hi!                     Title                ctermfg = 37                   guifg = #c4b7ff gui = bold
 hi!                      Todo ctermbg = 59   ctermfg = 48   guibg = #45493e guifg = #09f7a0 gui = inverse,bold
-hi!                      Type                ctermfg = 209                  guifg = #FF7E81 gui = NONE
+hi!                      Type                ctermfg = 209                  guifg = #09f7a0 gui = NONE
 hi!                Underlined                ctermfg = 37                   guifg = #c4b7ff gui = underline
 hi!                 VertSplit ctermbg = 233  ctermfg = 233  guibg = #0f1117 guifg = #0f1117 gui = bold
 hi!                    Visual ctermbg = 236                 guibg = #2e435c
@@ -104,7 +104,7 @@ hi!                  ZenSpace ctermbg = 203                 guibg = #eC6a88
 
 " links
 hi! link shFunction Function
-hi! link zshVariableDef Type
+hi! link zshVariableDef Structure
 hi! link zshOperator Operator
 hi! link zshSubstDelim Operator
 hi! link zshSubst Structure
