@@ -117,7 +117,7 @@ typeset -A ZSH_HIGHLIGHT_STYLES
 ZSH_HIGHLIGHT_STYLES[arg0]='fg=blue'
 ZSH_HIGHLIGHT_STYLES[suffix-alias]='fg=green'
 ZSH_HIGHLIGHT_STYLES[precommand]='fg=green'
-ZSH_HIGHLIGHT_STYLES[commandseparator]='fg=blue,bold'
+ZSH_HIGHLIGHT_STYLES[commandseparator]='fg=yellow,bold'
 ZSH_HIGHLIGHT_STYLES[path]='fg=green'
 ZSH_HIGHLIGHT_STYLES[path_pathseparator]='fg=green'
 ZSH_HIGHLIGHT_STYLES[path_prefix_pathseparator]='fg=red,bold'
