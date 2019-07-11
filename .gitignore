@@ -2,7 +2,7 @@
 *.DS_Store
 history
 
-## // .config 
+## // .config
 #
 # hammerspoon
 spoons/
@@ -20,7 +20,6 @@ plugged/
 autoload/
 log
 share/
-
 
 ## // win
 # .win/.R/desktop.ini
@@ -43,10 +42,10 @@ desktop.ini
 *.ps1
 NuGet/
 
-
 *.links
 
 *.pyc
 
 get-pip.py
 
+est
