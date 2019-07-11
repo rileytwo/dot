@@ -19,29 +19,26 @@ elif [[ -f "${HOME}/.dot/.config/neofetch/mac/current" ]]; then
     fi
 fi
 
-#### // oh my zsh
-#
-# // prompt comes first?
-#
 DISABLE_UDPATE_PROMPT=true
 HISTSIZE=5000
 SAVEHIST=5000
 HISTFILE="${HOME}/.zsh_history"
-ZSH_THEME='alice'
-export ZSH="${HOME}/.oh-my-zsh"
-plugins=(
-    git
-    virtualenv
-    k
-    autoupdate
-    zsh-autopair
-    zsh-completions
-    zsh-history-substring-search
-    zsh-autosuggestions
-    zsh-syntax-highlighting
-    # fast-syntax-highlighting
-)
-source $ZSH/oh-my-zsh.sh
+
+#### // zplugin
+#
+source '/Users/riley/.zplugin/bin/zplugin.zsh'
+autoload -Uz _zplugin
+(( ${+_comps} )) && _comps[zplugin]=_zplugin
+
+zplugin snippet OMZ::lib/git.zsh
+zplugin snippet OMZ::plugins/git/git.plugin.zsh
+zplugin snippet '~/.dot/.zsh/.oh-my-zsh/custom/themes/alice.zsh-theme'
+
+zplugin load hlissner/zsh-autopair
+zplugin load zsh-users/zsh-autosuggestions
+zplugin load zsh-users/zsh-completions
+zplugin load zsh-users/zsh-history-substring-search
+zplugin load zsh-users/zsh-syntax-highlighting
 
 #### // environment
 #
@@ -225,8 +222,4 @@ disable r
     && source "${HOME}/.iterm2_shell_integration.zsh"
 
 
-### Added by Zplugin's installer
-source '/Users/riley/.zplugin/bin/zplugin.zsh'
-autoload -Uz _zplugin
-(( ${+_comps} )) && _comps[zplugin]=_zplugin
-### End of Zplugin's installer chunk
+

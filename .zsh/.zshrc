@@ -224,9 +224,3 @@ disable r
 [[ -e "${HOME}/.iterm2_shell_integration.zsh" ]] \
     && source "${HOME}/.iterm2_shell_integration.zsh"
 
-
-### Added by Zplugin's installer
-source '/Users/riley/.zplugin/bin/zplugin.zsh'
-autoload -Uz _zplugin
-(( ${+_comps} )) && _comps[zplugin]=_zplugin
-### End of Zplugin's installer chunk
