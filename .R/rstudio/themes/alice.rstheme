@@ -108,7 +108,7 @@
 
 .ace_constant.ace_language {
 	color: #73ff96;
-	font-weight: 600;
+	font-weight: normal;
 }
 
 .ace_fold {
@@ -135,7 +135,7 @@
 }
 
 .ace_string {
-	color: #67fecc;
+	color: #e3bdaf;
 }
 
 .ace_heading {
@@ -239,7 +239,7 @@
 
 .ace_paren.ace_keyword.ace_operator {
 	font-weight: normal;
-	color: #9f9dbf !important;
+	color: #D1D1D1 !important;
 	/* text-shadow: */
 }
 
@@ -256,7 +256,7 @@
 
 .ace_punctuation.ace_keyword.ace_operator {
 	font-weight: normal;
-	color: #ff66669e !important;
+	color: #3fb2ff !important;
 	/* text-shadow: */
 }
 
