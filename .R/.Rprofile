@@ -1,7 +1,7 @@
 #invisible(utils::memory.limit(size = 32768))
 
 if (interactive()) {
-    suppressMessages(require(devtools))
+    # suppressMessages(require(devtools))
     # suppressMessages(require(usethis))
     #
     # options(
