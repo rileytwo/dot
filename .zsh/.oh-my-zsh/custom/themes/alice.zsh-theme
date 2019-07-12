@@ -32,7 +32,7 @@ ZSH_THEME_GIT_PROMPT_UNTRACKED="::%{$yellow%} ?"
 # prompt
 setopt PROMPT_SUBST
 precmd_prompt() {
-    PROMPT="%{$magenta%}${PWD/#$HOME/~}%  ${git_info}${git_status}%{$reset_color%}"
+    PROMPT="%{$magenta%}${PWD/#$HOME/~}%  ${git_info}%{$reset_color%}"
     PROMPT+=$'\n'
     PROMPT+="-> "
 
