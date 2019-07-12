@@ -15,7 +15,6 @@ elif [[ -f "${HOME}/.dot/.config/neofetch/mac/current" ]]; then
         neofetch \
             --ascii ~/.dot/.config/neofetch/mac/current \
             --colors 5 7 7 4 7 15
- 
     fi
 fi
 
@@ -41,6 +40,7 @@ plugins=(
     zsh-syntax-highlighting
     # fast-syntax-highlighting
 )
+fpath=($ZSH/custom/plugins/zsh-completions/src $fpath)
 source $ZSH/oh-my-zsh.sh
 
 #### // environment
@@ -58,7 +58,7 @@ export ITERMPLOT=rv
 #### // completions
 #
 # // compinit
-# 
+#
 autoload -Uz compinit
 setopt EXTENDEDGLOB
 for dump in ${HOME}/.zcompdump(#qN.m1); do
@@ -81,7 +81,7 @@ FIGNORE='.DS_Store'
 zstyle ':completion:*' completer \
     _complete _match _approximate _ignored
 
-zstyle ':completion:*' menu select=2 
+zstyle ':completion:*' menu select=2
 zstyle ':completion:*' accept-exact false
 zstyle ':completion:*' special-dirs false
 zstyle ':completion:*:descriptions' format \
@@ -112,7 +112,7 @@ ZSH_HIGHLIGHT_HIGHLIGHTERS=(
     root
 )
 #
-# // customizing highlighters 
+# // customizing highlighters
 typeset -A ZSH_HIGHLIGHT_STYLES
 ZSH_HIGHLIGHT_STYLES[arg0]='fg=blue'
 ZSH_HIGHLIGHT_STYLES[suffix-alias]='fg=green'
@@ -157,14 +157,14 @@ ZSH_AUTOSUGGEST_STRATEGY=match_prev_cmd
 
 #### // OS specific stuff
 #
-if [[ "$OSTYPE" == "linux-gnu" ]]; then 
+if [[ "$OSTYPE" == "linux-gnu" ]]; then
     # // z
     [[ -f "${HOME}/z.sh" ]] \
         && . "${HOME}/z.sh"
         # // brew
     [[ -d "/home/linuxbrew/.linuxbrew/bin" ]] \
         && export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
-            
+
     [[ -d "/snap/bin" ]] \
         && export PATH="/snap/bin:$PATH"
 
@@ -198,7 +198,7 @@ fi
     && export PATH="${GOPATH//://bin:}/bin:$PATH"
 #
 # // ~/.pyenv
-if (( $+commands[pyenv] )) && (( $+commands[pyenv-virtualenv-init])); then 
+if (( $+commands[pyenv] )) && (( $+commands[pyenv-virtualenv-init])); then
     eval "$(pyenv init -)"
     eval "$(pyenv virtualenv-init -)"
 elif (( $+commands[pyenv] )); then
