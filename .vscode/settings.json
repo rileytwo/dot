@@ -55,7 +55,7 @@
     // "r.linting.pascalCase": false,
 
     "window.title": "${activeEditorLong}",
-    "workbench.activityBar.visible": false,
+    "workbench.activityBar.visible": true,
     "workbench.colorTheme": "Alice",
     "scm.providers.visible": 0,
     "git.autoRepositoryDetection": false,
@@ -125,5 +125,7 @@
         "python"
     ],
     "javascript.format.insertSpaceAfterSemicolonInForStatements": false,
-    "javascript.validate.enable": false
+    "javascript.validate.enable": false,
+    "workbench.iconTheme": "eq-material-theme-icons-darker",
+    "explorer.sortOrder": "filesFirst"
 }

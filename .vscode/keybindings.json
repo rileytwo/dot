@@ -546,5 +546,15 @@
     {
         "key": "shift+cmd+m",
         "command": "-workbench.actions.view.problems"
+    },
+    {
+        "key": "ctrl+r",
+        "command": "renameFile",
+        "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+    },
+    {
+        "key": "enter",
+        "command": "-renameFile",
+        "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
     }
 ]
