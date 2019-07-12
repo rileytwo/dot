@@ -19,15 +19,15 @@ local smiley="%(?,%{$green%}:%)%{$reset_color%},%{$red_bold%}:(%{$reset_color%})
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$blue_bold%}git:(%{$red_bold%}"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
 ZSH_THEME_GIT_PROMPT_CLEAN="%{$blue%}) "
-ZSH_THEME_GIT_PROMPT_DIRTY="%{$blue%})%{$red_bold%} </>"
+ZSH_THEME_GIT_PROMPT_DIRTY="%{$blue%})%{$red_bold%} 署"
 
 # git status
-ZSH_THEME_GIT_PROMPT_ADDED="::%{$green_bold%} ++"
-ZSH_THEME_GIT_PROMPT_DELETED="::%{$red_bold%} --"
-ZSH_THEME_GIT_PROMPT_MODIFIED="::%{$yellow%} 署"
-ZSH_THEME_GIT_PROMPT_RENAMED="::%{$green_bold%} ***"
-ZSH_THEME_GIT_PROMPT_UNMERGED="::%{$red_bold%} !="
-ZSH_THEME_GIT_PROMPT_UNTRACKED="::%{$yellow%} ?"
+ZSH_THEME_GIT_PROMPT_ADDED="::%{$green_bold%}++"
+ZSH_THEME_GIT_PROMPT_DELETED="::%{$red_bold%}--"
+ZSH_THEME_GIT_PROMPT_MODIFIED="::%{$yellow%}</>"
+ZSH_THEME_GIT_PROMPT_RENAMED="::%{$green_bold%}***"
+ZSH_THEME_GIT_PROMPT_UNMERGED="::%{$red_bold%}!="
+ZSH_THEME_GIT_PROMPT_UNTRACKED="::%{$yellow%}?"
 
 # prompt
 setopt PROMPT_SUBST
