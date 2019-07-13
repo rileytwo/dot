@@ -8,6 +8,7 @@
     "addCursorAbove" : "Ctrl+Alt+Up",
     "addCursorBelow" : "Cmd+D",
     "browseAddins" : "",
+    "executeAllCode" : "Cmd+R",
     "findInFiles" : "Shift+Cmd+F",
     "fold" : "Cmd+\\|Alt+Cmd+L|Cmd+\\",
     "foldAll" : "Cmd+K Cmd+\\",
