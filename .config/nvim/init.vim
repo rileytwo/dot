@@ -111,6 +111,8 @@ set autoindent
 filetype plugin indent on
 let g:vim_indent_cont = &shiftwidth
 let g:deoplete#enable_at_startup = 1
+call deoplete#custom#source('_', 'max_menu_width', 80)
+
 " ----------
 " //
 " ====================
