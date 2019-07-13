@@ -22,7 +22,7 @@ fi
 #
 # // prompt comes first?
 #
-DISABLE_UDPATE_PROMPT=true
+DISABLE_UDPATE_PROMPT="true"
 HISTSIZE=5000
 SAVEHIST=5000
 HISTFILE="${HOME}/.zsh_history"
@@ -54,6 +54,12 @@ export HOMEBREW_NO_INSTALL_CLEANUP=1
 export EDITOR=nvim
 export MPLBACKEND="module://itermplot"
 export ITERMPLOT=rv
+
+#### // fpath
+#
+if [[ -d "${HOME}/.functions" ]]; then
+    fpath+=("${HOME}/.functions")
+fi
 
 #### // completions
 #
@@ -215,7 +221,6 @@ disable r
 
 #### // helper files
 #
-[[ -f ~/.functions ]] && . ~/.functions
 [[ -f ~/.aliases ]] && . ~/.aliases
 [[ -f ~/.fzf.zsh ]] && . ~/.fzf.zsh
 
