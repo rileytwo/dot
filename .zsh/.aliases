@@ -12,8 +12,9 @@ alias dot='~/.dot'
 ## plistbuddy alias
 alias plistbuddy='/usr/libexec/PlistBuddy'
 
-## echo each path entry on newline
+## echo each path/fpath entry on newline
 alias path='echo -e ${PATH//:/\\n}'
+alias fpath='echo -e ${FPATH//:/\\n}'
 
 if (( $+commands[colors] )); then
     alias lc='colorls'
