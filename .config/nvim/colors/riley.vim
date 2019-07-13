@@ -111,7 +111,7 @@ hi! link zshSubst Structure
 hi! link zshQuoted Special
 hi! link ZshOption Special
 hi! link cssBraces Delimiter
-hi! link cssClassName Special
+hi! link cssClassName Structure
 hi! link cssClassNameDot Normal
 hi! link cssPseudoClassId Special
 hi! link cssTagName Statement
