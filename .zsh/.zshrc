@@ -59,6 +59,7 @@ export ITERMPLOT=rv
 #
 if [[ -d "${HOME}/.functions" ]]; then
     fpath+=("${HOME}/.functions")
+    autoload -Uz ~/.functions/**/*
 fi
 
 #### // completions
