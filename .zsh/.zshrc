@@ -30,15 +30,11 @@ ZSH_THEME='alice'
 export ZSH="${HOME}/.oh-my-zsh"
 plugins=(
     git
-    virtualenv
-    k
-    autoupdate
     zsh-autopair
     zsh-completions
     zsh-history-substring-search
     zsh-autosuggestions
     zsh-syntax-highlighting
-    # fast-syntax-highlighting
 )
 fpath=($ZSH/custom/plugins/zsh-completions/src $fpath)
 source $ZSH/oh-my-zsh.sh
