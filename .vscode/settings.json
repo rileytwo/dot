@@ -8,7 +8,8 @@
         "*.rstheme": "css",
         ".functions": "shellscript",
         ".aliases": "shellscript",
-        "*.rmd": "markdown"
+        "*.rmd": "markdown",
+        "Rpkg": "r"
     },
     "css.lint.duplicateProperties": "warning",
     "css.validate": false,
