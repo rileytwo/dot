@@ -84,6 +84,7 @@ FIGNORE='.DS_Store'
 zstyle ':completion:*' completer \
     _complete _match _approximate _ignored
 
+zstyle ':completion:*' insert-tab pending
 zstyle ':completion:*' menu select=2
 zstyle ':completion:*' accept-exact false
 zstyle ':completion:*' special-dirs false
