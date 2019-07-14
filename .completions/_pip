@@ -1,5 +1,4 @@
-
-# pip zsh completion start
+#compdef pip
 function _pip_completion {
   local words cword
   read -Ac words
@@ -9,5 +8,3 @@ function _pip_completion {
              PIP_AUTO_COMPLETE=1 $words[1] ) )
 }
 compctl -K _pip_completion pip
-# pip zsh completion end
-
