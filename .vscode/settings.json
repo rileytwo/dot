@@ -56,7 +56,7 @@
     // "r.linting.pascalCase": false,
 
     "window.title": "${activeEditorLong}",
-    "workbench.activityBar.visible": true,
+    "workbench.activityBar.visible": false,
     "workbench.colorTheme": "Alice",
     "scm.providers.visible": 0,
     "git.autoRepositoryDetection": false,
@@ -129,5 +129,6 @@
     "javascript.validate.enable": false,
     "workbench.iconTheme": "eq-material-theme-icons-darker",
     "explorer.sortOrder": "filesFirst",
-    "editor.fontFamily": "FiraCode-Retina, Menlo, Monaco, 'Courier New', monospace"
+    "editor.fontFamily": "FiraCode-Retina, Menlo, Monaco, 'Courier New', monospace",
+    "r.lsp.diagnostics": false
 }

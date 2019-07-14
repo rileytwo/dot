@@ -456,16 +456,6 @@
         "when": "editorTextFocus && inDebugMode"
     },
     {
-        "key": "cmd+k cmd+h",
-        "command": "editor.action.showHover",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "cmd+k cmd+i",
-        "command": "-editor.action.showHover",
-        "when": "editorTextFocus"
-    },
-    {
         "key": "cmd+k cmd+i",
         "command": "workbench.action.selectIconTheme"
     },
@@ -556,5 +546,37 @@
         "key": "enter",
         "command": "-renameFile",
         "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+    },
+    {
+        "key": "cmd+k cmd+h",
+        "command": "workbench.action.focusLeftGroup"
+    },
+    {
+        "key": "cmd+k cmd+left",
+        "command": "-workbench.action.focusLeftGroup"
+    },
+    {
+        "key": "cmd+k cmd+l",
+        "command": "workbench.action.focusRightGroup"
+    },
+    {
+        "key": "cmd+k cmd+right",
+        "command": "-workbench.action.focusRightGroup"
+    },
+    {
+        "key": "cmd+k cmd+j",
+        "command": "workbench.action.evenEditorWidths"
+    },
+    {
+        "key": "cmd+k cmd+m",
+        "command": "-workbench.extensions.action.showRecommendedKeymapExtensions"
+    },
+    {
+        "key": "cmd+k cmd+m",
+        "command": "workbench.action.minimizeOtherEditors"
+    },
+    {
+        "key": "ctrl+\\",
+        "command": "workbench.action.toggleActivityBarVisibility"
     }
 ]
