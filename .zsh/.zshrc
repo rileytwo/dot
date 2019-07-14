@@ -22,7 +22,7 @@ fi
 #
 # // prompt comes first?
 #
-DISABLE_UDPATE_PROMPT="true"
+DISABLE_AUTO_UPDATE=true
 HISTSIZE=5000
 SAVEHIST=5000
 HISTFILE="${HOME}/.zsh_history"
