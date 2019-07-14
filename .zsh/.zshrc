@@ -180,6 +180,7 @@ elif [[ "$OSTYPE" =~ "darwin" ]]; then
     # // z
     [[ -f /usr/local/etc/profile.d/z.sh ]] \
         && . /usr/local/etc/profile.d/z.sh
+
 fi
 
 
@@ -203,8 +204,9 @@ fi
     && export PATH="${GOPATH//://bin:}/bin:$PATH"
 #
 # // r tools for shell: rt
-[[ -d "/Library/Frameworks/R.framework/Libraries/rt/bin" ]] \
-    && export PATH="/Library/Frameworks/R.framework/Libraries/rt/bin:$PATH" 
+[[ -d "/Library/Frameworks/R.framework/Versions/Current/Resources/library/rt/" ]] \
+    && export \
+    PATH="/Library/Frameworks/R.framework/Versions/3.6/Resources/library/rt/bin:$PATH"
 # // ~/.pyenv
 if (( $+commands[pyenv] )) && (( $+commands[pyenv-virtualenv-init])); then
     eval "$(pyenv init -)"
