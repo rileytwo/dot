@@ -203,10 +203,6 @@ fi
     && export GOPATH="${HOME}/go" \
     && export PATH="${GOPATH//://bin:}/bin:$PATH"
 #
-# // r tools for shell: rt
-[[ -d "/Library/Frameworks/R.framework/Versions/Current/Resources/library/rt/" ]] \
-    && export \
-    PATH="/Library/Frameworks/R.framework/Versions/3.6/Resources/library/rt/bin:$PATH"
 # // ~/.pyenv
 if (( $+commands[pyenv] )) && (( $+commands[pyenv-virtualenv-init])); then
     eval "$(pyenv init -)"
