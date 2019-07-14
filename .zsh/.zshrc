@@ -191,7 +191,7 @@ fi
 #
 # // ~/.local/bin
 [[ -d "${HOME}/.local/bin" ]] \
-&& export PATH="$HOME/.local/bin:$PATH"
+    && export PATH="$HOME/.local/bin:$PATH"
 #
 # // ~/.rbenv
 [[ -d "${HOME}/.rbenv/shims" ]] \
@@ -202,6 +202,9 @@ fi
     && export GOPATH="${HOME}/go" \
     && export PATH="${GOPATH//://bin:}/bin:$PATH"
 #
+# // r tools for shell: rt
+[[ -d "/Library/Frameworks/R.framework/Libraries/rt/bin" ]] \
+    && export PATH="/Library/Frameworks/R.framework/Libraries/rt/bin:$PATH" 
 # // ~/.pyenv
 if (( $+commands[pyenv] )) && (( $+commands[pyenv-virtualenv-init])); then
     eval "$(pyenv init -)"
