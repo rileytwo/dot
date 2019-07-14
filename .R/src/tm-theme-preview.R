@@ -1,3 +1,5 @@
+
+
 geom_dotplot <- function(mapping      = NULL,
                          data         = NULL,
                          stat         = "bindot",
@@ -10,7 +12,9 @@ geom_dotplot <- function(mapping      = NULL,
                          stackdir     = "up",
                          stackratio   = 1,
                          dotsize      = 1,
-                         stackgroups  = FALSE, ...) {
+                         stackgroups  = FALSE,
+                         ..
+                         ) {
     GeomDotplot$new(mapping      = mapping,
                     data         = data,
                     stat         = stat,
@@ -50,7 +54,9 @@ geom_dotplot <- function(mapping      = NULL,
                         if ("..." %in% names(possible)) {
                             params
                         } else {
-                        params[match(names(possible), names(params), nomatch = 0)]
+                        params[match(names(possible),
+                               names(params),
+                               nomatch = 0)]
                         }
                     }
                     params <- list(...)
@@ -60,7 +66,10 @@ geom_dotplot <- function(mapping      = NULL,
                     params <- rename_aes(params)
                     geom_params <- match.params(.$parameters(), params)
                     stat_params <- match.params(stat$parameters(), params)
-                    stat_params <- stat_params[setdiff(names(stat_params), names(geom_params))]
+                    stat_params <- stat_params[setdiff(
+                                                    names(stat_params),
+                                                    names(geom_params)
+                                                )]
                     # Add back binaxis
                     stat_params <- c(stat_params, binaxis = params$binaxis)
                     # If identical(position, "stack") or position is position_stack() (the test
