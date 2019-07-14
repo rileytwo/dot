@@ -37,6 +37,7 @@ plugins=(
     zsh-syntax-highlighting
 )
 fpath=($ZSH/custom/plugins/zsh-completions/src $fpath)
+fpath=($ZSH/custom/plugins/zsh-pip-completion $fpath)
 source $ZSH/oh-my-zsh.sh
 
 #### // environment
@@ -78,7 +79,7 @@ compinit -C
 ## // zstyle
 
 # FIGNORE
-FIGNORE='.DS_Store'
+fignore=(DS_Store $fignore)
 
 # NOTE as follows `:completion:function:completer:command:argument:tag`
 zstyle ':completion:*' completer \
