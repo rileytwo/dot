@@ -128,5 +128,6 @@
     "javascript.format.insertSpaceAfterSemicolonInForStatements": false,
     "javascript.validate.enable": false,
     "workbench.iconTheme": "eq-material-theme-icons-darker",
-    "explorer.sortOrder": "filesFirst"
+    "explorer.sortOrder": "filesFirst",
+    "editor.fontFamily": "FiraCode-Retina, Menlo, Monaco, 'Courier New', monospace"
 }
