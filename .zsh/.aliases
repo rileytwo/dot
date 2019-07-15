@@ -16,9 +16,11 @@ alias plistbuddy='/usr/libexec/PlistBuddy'
 alias path='echo -e ${PATH//:/\\n}'
 alias fpath='echo -e ${FPATH//:/\\n}'
 
-if (( $+commands[colors] )); then
-    alias lc='colorls'
+## exa, A modern replacement for ls
+if (( $+commands[exa] )); then
+    alias e='exa -lah'
+    alias ee='exa -lh'
 fi
+
 alias gs='git status'
 alias hsg='history | grep'
-
