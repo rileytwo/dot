@@ -37,7 +37,7 @@ hi!                SpecialKey ctermbg = 203  ctermfg = 235  guibg = #e95678 guif
 hi!                    Folded ctermbg = 233  ctermfg = 242  guibg = NONE    guifg = #6c6f93
 hi!                FoldColumn ctermbg = 233  ctermfg = 242  guibg = NONE    guifg = #6c6f93
 hi!                  Function                ctermfg = 37                   guifg = #FF7E81
-hi!                Identifier                 ctermfg = 203                  guifg = #9691ff gui = italic
+hi!                Identifier                ctermfg = 203                  guifg = #9691ff gui = italic
 hi!                 Statement                ctermfg = 171                  guifg = #00bfff gui = NONE
 hi!                   Include                ctermfg = 171                  guifg = #00bfff
 hi!                    LineNr ctermbg = NONE ctermfg = 239  guibg = NONE    guifg = #333333
@@ -65,7 +65,7 @@ hi!            StatusLineTerm ctermbg = 234  ctermfg = 245  guibg = #17171b guif
 hi!              StatusLineNC ctermbg = 237  ctermfg = 233  guibg = #3e445e guifg = #0f1117 gui = reverse
 hi!          StatusLineTermNC ctermbg = 237  ctermfg = 233  guibg = #3e445e guifg = #0f1117 gui = reverse
 hi!              StorageClass                ctermfg = 37                   guifg = #FF7E81
-hi!                    String                ctermfg = 209                  guifg = #e3bdaf
+hi!                    String                ctermfg = 209                  guifg = #F7A9A8
 hi!                 Structure                ctermfg = 37                   guifg = #3fb2ff
 hi!                   TabLine ctermbg = 245  ctermfg = 234  guibg = #818596 guifg = #17171b gui = NONE
 hi!               TabLineFill ctermbg = 234  ctermfg = 245  guibg = #17171b guifg = #818596 gui = reverse
@@ -104,8 +104,11 @@ hi!                  ZenSpace ctermbg = 203                 guibg = #eC6a88
 
 " links
 hi! link shFunction Function
+hi! link shRange Type
+hi! link zshCommands Function
 hi! link zshVariableDef Structure
 hi! link zshOperator Operator
+hi! link zshStringDelimiter Operator
 hi! link zshSubstDelim Operator
 hi! link zshSubst Structure
 hi! link zshQuoted Special
