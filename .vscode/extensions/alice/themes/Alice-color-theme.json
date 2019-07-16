@@ -1,8 +1,13 @@
 {
 	"tokenColors": "./Alice.tmTheme",
 	"colors": {
+		"button.background": "#e06c75",
+		"badge.background": "#e06c75",
+
 		"editor.background": "#151515",
 		"editor.lineHighlightBackground": "#1E1E1E",
+		"editor.findMatchBackground": "#3FB2FF40",
+		"editor.findMatchHighlightBackground": "#3FB2FF20",
         "editor.selectionBackground": "#625F5F",
 		"editor.foreground": "#ffffff",
 		"editor.selectionHighlightBackground": "#3838388a",
