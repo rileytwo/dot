@@ -30,6 +30,7 @@ Plug 'dkarter/bullets.vim'
 Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
 Plug 'deoplete-plugins/deoplete-jedi', {'for': 'python'}
 Plug 'chrisbra/vim-zsh'
+Plug 'vitalk/vim-shebang'
 
 " // Auto closing delimiters
 Plug 'Raimondi/delimitMate'
