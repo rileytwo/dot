@@ -217,9 +217,9 @@
                 <key>settings</key>
                 <dict>
                     <key>fontStyle</key>
-                    <string>bold</string>
+                    <string></string>
                     <key>foreground</key>
-                    <string>#fbe3bf</string>
+                    <string>#3fb2ff</string>
                 </dict>
             </dict>
             <dict>
