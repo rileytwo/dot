@@ -19,7 +19,7 @@ if ($IsWindows) {
     $env:PSModulePath += ";C:\Users\RRoach\scoop\modules"
 }
 
-Set-PSReadLineOption -Colors @{ 
+Set-PSReadLineOption -Colors @{
     "Command"   = "`e[34m"
     "Parameter" = "`e[35m"
     "String"    = "`e[33m"
@@ -27,7 +27,7 @@ Set-PSReadLineOption -Colors @{
 }
 
 $PSDefaultParameterValues = @{
-    "Format-Table:Autosize" = $True 
+    "Format-Table:Autosize" = $True
 }
 
 # // module imports
