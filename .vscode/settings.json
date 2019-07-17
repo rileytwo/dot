@@ -12,7 +12,6 @@
         "Rpkg": "r"
     },
     "css.lint.duplicateProperties": "warning",
-    "css.validate": false,
     "editor.wordWrap": "on",
     "editor.codeLens": false,
     "editor.quickSuggestions": {
@@ -20,13 +19,11 @@
         "comments": true,
         "strings": false
     },
-    "html.validate.styles": false,
     "less.lint.duplicateProperties": "warning",
     "scss.lint.duplicateProperties": "warning",
     "emmet.showAbbreviationSuggestions": false,
     "emmet.showExpandedAbbreviation": "inMarkupAndStylesheetFilesOnly",
     "editor.parameterHints.cycle": true,
-    "git.autorefresh": false,
     "editor.acceptSuggestionOnEnter": "smart",
     "editor.hover.enabled": false,
     "editor.suggest.localityBonus": true,
@@ -59,15 +56,12 @@
     "workbench.activityBar.visible": false,
     "workbench.colorTheme": "Alice",
     "scm.providers.visible": 0,
-    "git.autoRepositoryDetection": false,
     "git.countBadge": "tracked",
-    "git.decorations.enabled": false,
     "git.detectSubmodules": false,
     "git.openDiffOnClick": false,
     "git.showInlineOpenFileAction": false,
     "git.showProgress": false,
     "editor.copyWithSyntaxHighlighting": false,
-    "git.enabled": false,
     "workbench.statusBar.visible": true,
     "code-runner.clearPreviousOutput": true,
     "terminal.external.osxExec": "iTerm.app",
@@ -130,5 +124,13 @@
     "workbench.iconTheme": "eq-material-theme-icons-darker",
     "explorer.sortOrder": "filesFirst",
     "editor.fontFamily": "FiraCode-Retina, Menlo, Monaco, 'Courier New', monospace",
-    "r.lsp.diagnostics": false
+    "r.lsp.diagnostics": false,
+    "problems.autoReveal": false,
+    "problems.decorations.enabled": false,
+    "outline.problems.enabled": false,
+    "extensions.autoCheckUpdates": false,
+    "git.detectSubmodulesLimit": 2,
+    "git.autorefresh": false,
+    "git.autoRepositoryDetection": false,
+    "git.enabled": false
 }
