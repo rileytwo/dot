@@ -19,10 +19,10 @@ hi!              CursorColumn ctermbg = NONE                guibg = NONE
 hi!                CursorLine cterm   = NONE ctermbg = 234  guibg = #1e1e1e
 hi!                   Comment                ctermfg = 242                  guifg = #555555
 hi!                   Conceal ctermbg = NONE ctermfg = 255  guibg = NONE    guifg = #303030
-hi!                  Constant                ctermfg = 209                                  guifg = #bd93f9
+hi!                  Constant                ctermfg = 209                  guifg = #63ffaf
 hi!                    Cursor ctermbg = NONE ctermfg = NONE guibg = NONE    guifg = NONE
 hi!              CursorLineNr ctermbg = NONE ctermfg = 251  guibg = NONE    guifg = #00bfff
-hi!                 Delimiter                ctermfg = 253                                  guifg = #ececec
+hi!                 Delimiter                ctermfg = 253                  guifg = #ececec
 hi!                   DiffAdd ctermbg = 238  ctermfg = 7    guibg = #45493e guifg = #c0c5b9
 hi!                DiffChange ctermbg = 23   ctermfg = 241  guibg = #384851 guifg = #b3c3cc
 hi!                DiffDelete ctermbg = 52   ctermfg = 167  guibg = #53343b guifg = #ceb0b6
@@ -37,12 +37,12 @@ hi!                SpecialKey ctermbg = 203  ctermfg = 235  guibg = #e95678 guif
 hi!                    Folded ctermbg = 233  ctermfg = 242  guibg = NONE    guifg = #6c6f93
 hi!                FoldColumn ctermbg = 233  ctermfg = 242  guibg = NONE    guifg = #6c6f93
 hi!                  Function                ctermfg = 37                   guifg = #FF7E81
-hi!                Identifier                ctermfg = 203                  guifg = #9691ff gui = italic
+hi!                Identifier                ctermfg = 203                  guifg = #9691ff
 hi!                 Statement                ctermfg = 171                  guifg = #00bfff gui = NONE
 hi!                   Include                ctermfg = 171                  guifg = #00bfff
 hi!                    LineNr ctermbg = NONE ctermfg = 239  guibg = NONE    guifg = #333333
 hi!                MatchParen ctermbg = 237  ctermfg = 255  guibg = #3e445e guifg = #ffffff
-hi!                   MoreMsg                ctermfg = 48                   guifg = #09f7a0
+hi!                   MoreMsg                ctermfg = 48                   guifg = #63ffaf
 hi!                    Normal ctermbg = NONE ctermfg = 252  guibg = NONE    guifg = #d5d8da
 hi!                  Operator                ctermfg = 37                   guifg = #9691FF
 hi!                     Pmenu ctermbg = 232  ctermfg = NONE guibg = #222222 guifg = #d5d8da
@@ -50,7 +50,7 @@ hi!                 PmenuSbar ctermbg = 233                 guibg = #333333
 hi!                  PmenuSel ctermbg = 240  ctermfg = 255  guibg = #007bb8 guifg = #eff0f4
 hi!                PmenuThumb ctermbg = 233                 guibg = #222222
 hi!                   PreProc                ctermfg = 150                  guifg = #9691FF
-hi!                  Question                ctermfg = 150                  guifg = #09f7a0
+hi!                  Question                ctermfg = 150                  guifg = #63ffaf
 hi!              QuickFixLine ctermbg = 233  ctermfg = 252  guibg = #272c42 guifg = #ffffff
 hi!                    Search ctermbg = 216  ctermfg = 234  guibg = #fff26d guifg = #222222
 hi!                 IncSearch                               guibg = #d0aa80 guifg = #333333
@@ -71,13 +71,13 @@ hi!                   TabLine ctermbg = 245  ctermfg = 234  guibg = #818596 guif
 hi!               TabLineFill ctermbg = 234  ctermfg = 245  guibg = #17171b guifg = #818596 gui = reverse
 hi!                TabLineSel ctermbg = 234  ctermfg = 247  guibg = #e95678 guifg = #9a9ca5 gui = NONE
 hi!                     Title                ctermfg = 37                   guifg = #c4b7ff gui = bold
-hi!                      Todo ctermbg = 59   ctermfg = 48   guibg = #45493e guifg = #09f7a0 gui = inverse,bold
-hi!                      Type                ctermfg = 209                  guifg = #09f7a0 gui = NONE
+hi!                      Todo ctermbg = 59   ctermfg = 48   guibg = #45493e guifg = #63ffaf gui = inverse,bold
+hi!                      Type                ctermfg = 209                  guifg = #63ffaf gui = NONE
 hi!                Underlined                ctermfg = 37                   guifg = #c4b7ff gui = underline
 hi!                 VertSplit ctermbg = 233  ctermfg = 233  guibg = #0f1117 guifg = #0f1117 gui = bold
 hi!                    Visual ctermbg = 236                 guibg = #2e435c
 hi!                  WildMenu ctermbg = 255  ctermfg = 234  guibg = #d4d5db guifg = #17171b
-hi!                 diffAdded                ctermfg = 48                   guifg = #09f7a0
+hi!                 diffAdded                ctermfg = 48                   guifg = #63ffaf
 hi!               diffRemoved                ctermfg = 203                  guifg = #eC6a88
 hi!              ALEErrorSign ctermbg = 233  ctermfg = 203  guibg = NONE    guifg = #eC6a88
 hi!            ALEWarningSign ctermbg = 233  ctermfg = 209  guibg = NONE    guifg = #f09483
@@ -85,10 +85,10 @@ hi!       ALEVirtualTextError                ctermfg = 203                  guif
 hi!     ALEVirtualTextWarning                ctermfg = 209                  guifg = #FFD2A6
 hi!                CtrlPMode1 ctermbg = 241  ctermfg = 234  guibg = #5a5f72 guifg = #17171b
 hi!           EasyMotionShade                ctermfg = 239                  guifg = #3d425b
-hi!          EasyMotionTarget                ctermfg = 48                   guifg = #09f7a0
+hi!          EasyMotionTarget                ctermfg = 48                   guifg = #63ffaf
 hi!    EasyMotionTarget2First                ctermfg = 209                  guifg = #FFD2A6
 hi!   EasyMotionTarget2Second                ctermfg = 209                  guifg = #FFD2A6
-hi!              GitGutterAdd ctermbg = 233  ctermfg = 48   guibg = NONE    guifg = #09f7a0
+hi!              GitGutterAdd ctermbg = 233  ctermfg = 48   guibg = NONE    guifg = #63ffaf
 hi!           GitGutterChange ctermbg = 233  ctermfg = 109  guibg = NONE    guifg = #e95678
 hi!     GitGutterChangeDelete ctermbg = 233  ctermfg = 109  guibg = NONE    guifg = #e95678
 hi!           GitGutterDelete ctermbg = 233  ctermfg = 203  guibg = NONE    guifg = #eC6a88
@@ -113,11 +113,20 @@ hi! link zshSubstDelim Operator
 hi! link zshSubst Structure
 hi! link zshQuoted Special
 hi! link ZshOption Special
+
 hi! link cssBraces Delimiter
 hi! link cssClassName Structure
 hi! link cssClassNameDot Normal
+hi! link cssDefinition StorageClass
+hi! link cssNoise Statement
 hi! link cssPseudoClassId Special
+hi! link cssPseudoClass Special
+hi! link cssSelectorOp Operator
 hi! link cssTagName Statement
+hi! link cssUnitDecorators Identifier
+hi! link cssValueLength Constant
+hi! link cssVendor Identifier
+
 hi! link helpHyperTextJump Constant
 hi! link htmlArg Constant
 hi! link htmlEndTag Statement
