@@ -52,7 +52,7 @@
     // "r.linting.multipleDots": false,
     // "r.linting.pascalCase": false,
 
-    "window.title": "${activeEditorLong}",
+    "window.title": "${activeEditorMedium}",
     "workbench.activityBar.visible": false,
     "workbench.colorTheme": "Alice",
     "scm.providers.visible": 0,
@@ -132,5 +132,9 @@
     "git.detectSubmodulesLimit": 2,
     "git.autorefresh": false,
     "git.autoRepositoryDetection": false,
-    "git.enabled": false
+    "git.enabled": false,
+    "StatusBarTag.text": "",
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnType": false
 }
