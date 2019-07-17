@@ -1,0 +1,44 @@
+# --------
+# Makevars
+# --------
+
+# Homebrew bin / opt / lib locations
+HB=/usr/local/bin
+HO=/usr/local/opt
+HL=/usr/local/lib
+
+# ccache
+CCACHE=$(HB)/ccache
+
+# Make using all cores (set number to your number of cores)
+MAKE=make -j8
+
+# GNU version (assumes latest in Homebrew as of May 2019)
+VER=9
+
+# LLVM (Clang) compiler options
+CC=$(CCACHE) $(HO)/llvm/bin/clang
+CXX=$(CC)++
+
+# FORTRAN
+FC=$(CCACHE) $(HB)/gfortran-$(VER)
+F77=$(FC)
+FLIBS=-L$(HL)/gcc/$(VER) -lgfortran -lquadmath -lm
+
+# STD libraries
+CXX1XSTD=-std=c++0x
+CXX11STD=-std=c++11
+CXX14STD=-std=c++14
+CXX17STD=-std=c++17
+
+# FLAGS
+CFLAGS=-g -O3 -Wall -pedantic -mtune=native -pipe
+CXXFLAGS=-g -O3 -Wall -pedantic -mtune=native -pipe 
+CPPFLAGS=-I$(HO)/llvm/include -I$(HO)/openssl/include -I$(HO)/gettext/include 
+LDFLAGS=-L$(HO)/llvm/lib -L$(HO)/openssl/lib -L$(HO)/gettext/lib
+
+# R-specific flags for OpenMP support
+SHLIB_OPENMP_CFLAGS=-fopenmp
+SHLIB_OPENMP_CXXFLAGS=-fopenmp
+SHLIB_OPENMP_FCFLAGS=-fopenmp
+SHLIB_OPENMP_FFLAGS=-fopenmp
