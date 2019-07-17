@@ -2,6 +2,9 @@
 # Makevars
 # --------
 
+# Mac headers ???
+MH=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include
+
 # Homebrew bin / opt / lib locations
 HB=/usr/local/bin
 HO=/usr/local/opt
@@ -32,10 +35,10 @@ CXX14STD=-std=c++14
 CXX17STD=-std=c++17
 
 # FLAGS
-CFLAGS=-g -O3 -Wall -pedantic -mtune=native -pipe
-CXXFLAGS=-g -O3 -Wall -pedantic -mtune=native -pipe 
-CPPFLAGS=-I$(HO)/llvm/include -I$(HO)/openssl/include -I$(HO)/gettext/include 
-LDFLAGS=-L$(HO)/llvm/lib -L$(HO)/openssl/lib -L$(HO)/gettext/lib
+CFLAGS=-g -O3 -Wall -pedantic -mtune=native -pipe -I$(MH)
+CXXFLAGS=-g -O3 -Wall -pedantic -mtune=native -pipe -I$(MH)
+CPPFLAGS=-I$(HO)/llvm/include -I$(HO)/openssl/include -I$(HO)/gettext/include -I$(MH) 
+LDFLAGS=-L$(HO)/llvm/lib -L$(HO)/openssl/lib -L$(HO)/gettext/lib -I$(MH)
 
 # R-specific flags for OpenMP support
 SHLIB_OPENMP_CFLAGS=-fopenmp
