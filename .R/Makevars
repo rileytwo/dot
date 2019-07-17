@@ -1,5 +1,6 @@
 # --------
 # Makevars
+# vim: filetype=make
 # --------
 
 # Homebrew bin / opt / lib locations
@@ -11,7 +12,7 @@ HL=/usr/local/lib
 CCACHE=$(HB)/ccache
 
 # Make using all cores (set number to your number of cores)
-MAKE=make -j8
+MAKE=make -j`nproc`
 
 # GNU version (assumes latest in Homebrew as of May 2019)
 VER=9
