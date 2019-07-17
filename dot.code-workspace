@@ -8,7 +8,6 @@
         "editor.formatOnType": true,
         "editor.formatOnPaste": true,
         "editor.formatOnSave": true,
-        "r.linting.doubleQuotes": false,
         "files.watcherExclude": {
             "**/.brew": true,
             "**/.git": true,
