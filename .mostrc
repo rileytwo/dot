@@ -2,4 +2,4 @@
 color normal default default
 color status black blue
 color underline green default
-color overstrike blue default
+color overstrike blue black
