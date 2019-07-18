@@ -22,6 +22,7 @@
     "previousTab" : "Shift+Cmd+[",
     "reformatCode" : "Cmd+K Cmd+F",
     "restartR" : "Ctrl+Shift+Cmd+R",
+    "returnDocToMain" : "Cmd+K Cmd+N",
     "switchFocusSourceConsole" : "Cmd+1",
     "unfold" : "Cmd+K Shift+Cmd+\\|Shift+Cmd+\\|Shift+Cmd+F1",
     "unfoldAll" : "",
