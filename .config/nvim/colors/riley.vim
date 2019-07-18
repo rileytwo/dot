@@ -114,6 +114,10 @@ hi! link zshSubst Structure
 hi! link zshQuoted Special
 hi! link ZshOption Special
 
+hi! link rFunction Statement
+hi! link rAssign Operator
+hi! link rConditional Operator
+
 hi! link cssBraces Delimiter
 hi! link cssClassName Structure
 hi! link cssClassNameDot Normal
