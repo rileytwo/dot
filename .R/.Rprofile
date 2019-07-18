@@ -29,6 +29,7 @@ if (interactive()) {
             continue = " ",
             # radian prompt
             #
+            radian.tab_size           = 2,
             radian.color_scheme       = "native",
             radian.editing_mode       = "vi",
             radian.auto_match         = TRUE,
