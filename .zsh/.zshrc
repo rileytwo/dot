@@ -203,6 +203,10 @@ fi
     && export GOPATH="${HOME}/go" \
     && export PATH="${GOPATH//://bin:}/bin:$PATH"
 #
+# // ~/.cargo
+[[ -d "${HOME}/.cargo" ]] \
+    && export PATH="${HOME}/.cargo/bin:$PATH"
+#
 # // ~/.pyenv
 if (( $+commands[pyenv] )) && (( $+commands[pyenv-virtualenv-init])); then
     eval "$(pyenv init -)"
@@ -210,7 +214,6 @@ if (( $+commands[pyenv] )) && (( $+commands[pyenv-virtualenv-init])); then
 elif (( $+commands[pyenv] )); then
     eval "$(pyenv init -)"
 fi
-
 
 #### // options
 #
