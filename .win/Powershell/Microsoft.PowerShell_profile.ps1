@@ -6,16 +6,7 @@ if ($IsWindows) {
     if (Test-Path($ChocolateyProfile)) {
         Import-Module "$ChocolateyProfile"
     }
-    # Common Paths
-    $dot = 'C:\Users\RRoach\.dot'
-    $docs = 'C:\Users\RRoach\Documents\'
-    $gh = 'C:\Users\RRoach\Documents\OneDrive - IMODULES SOFTWARE\Projects\Github'
-    $ida = 'C:\Users\RRoach\Documents\OneDrive - IMODULES SOFTWARE\Projects\internaldataanalytics'
-    $oned = 'C:\Users\RRoach\Documents\OneDrive - IMODULES SOFTWARE\'
-    $desk = 'C:\Users\RRoach\Desktop\'
-    $proj = 'C:\Users\RRoach\Documents\OneDrive - IMODULES SOFTWARE\Projects\'
-    $nvd = 'C:\Users\RRoach\AppData\Local\nvim'
-
+    
     $env:PSModulePath += ";C:\Users\RRoach\scoop\modules"
 }
 
@@ -54,6 +45,12 @@ else {
 
 
 ## // handy aliases
+#
+# // general
+Set-Alias -name 'path' -value $Env:Path.Split(';')
+Set-Alias -name 'l' -value Get-ChildItemColor
+Set-Alias -name 'which' -value Get-Command
+#
 # // git
 function git-commit {
     git commit $args
@@ -69,10 +66,9 @@ function git-status {
     git status $args
 }
 Set-Alias -name 'gs' git-status
-
+#
 # // other
 Set-Alias -name 'rr' -value 'radian'
 Set-Alias -name 'r' -value 'Rscript'
-Set-Alias -name 'l' -value Get-ChildItemColor
-Set-Alias -name 'which' -value Get-Command
+
 
