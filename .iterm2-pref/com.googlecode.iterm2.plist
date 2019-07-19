@@ -18,8 +18,6 @@
 	<false/>
 	<key>BracketedPasteMode</key>
 	<true/>
-	<key>CGFontRenderingFontSmoothingDisabled</key>
-	<false/>
 	<key>ConvertDosNewlines</key>
 	<true/>
 	<key>Custom Color Presets</key>
@@ -50686,8 +50684,8 @@ Show Toolbelt</string>
 	<false/>
 	<key>NSSplitView Subview Frames NSColorPanelSplitView</key>
 	<array>
-		<string>0.000000, 0.000000, 328.000000, 314.500000, NO, NO</string>
-		<string>0.000000, 315.500000, 328.000000, 108.500000, NO, NO</string>
+		<string>0.000000, 0.000000, 328.000000, 278.500000, NO, NO</string>
+		<string>0.000000, 279.500000, 328.000000, 108.500000, NO, NO</string>
 	</array>
 	<key>NSTableView Columns v2 KeyBingingTable</key>
 	<data>
@@ -50725,7 +50723,7 @@ Show Toolbelt</string>
 	<key>NSWindow Frame NSColorPanel</key>
 	<string>180 525 328 295 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>707 303 733 537 0 0 1440 877 </string>
+	<string>707 253 733 587 0 0 1440 877 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -51416,7 +51414,7 @@ Show Toolbelt</string>
 			<key>Open Toolbelt</key>
 			<false/>
 			<key>Option Key Sends</key>
-			<integer>0</integer>
+			<integer>2</integer>
 			<key>Place Prompt at First Column</key>
 			<true/>
 			<key>Prevent Opening in a Tab</key>
@@ -51424,7 +51422,7 @@ Show Toolbelt</string>
 			<key>Prompt Before Closing 2</key>
 			<false/>
 			<key>Right Option Key Sends</key>
-			<integer>0</integer>
+			<integer>2</integer>
 			<key>Rows</key>
 			<integer>30</integer>
 			<key>Screen</key>
@@ -58655,9 +58653,9 @@ Show Toolbelt</string>
 	</array>
 	<key>NoSyncAllAppVersions</key>
 	<array>
-		<string>3.3.0beta9</string>
 		<string>3.3.0beta13</string>
 		<string>3.3.0beta11</string>
+		<string>3.3.0beta9</string>
 	</array>
 	<key>NoSyncBFPFavorites</key>
 	<array>
@@ -58668,14 +58666,14 @@ Show Toolbelt</string>
 		<string>FuraCode Nerd Font</string>
 		<string>Input Mono</string>
 		<string>Fira Mono</string>
-		<string>FuraMono Nerd Font</string>
+		<string>Menlo</string>
 	</array>
 	<key>NoSyncBFPRecents</key>
 	<array>
-		<string>RobotoMono Nerd Font</string>
-		<string>FuraCode Nerd Font</string>
-		<string>Monaco</string>
-		<string>SF Mono</string>
+		<string>Fira Code</string>
+		<string>Menlo</string>
+		<string>Fira Mono</string>
+		<string>Input Mono</string>
 	</array>
 	<key>NoSyncCommandHistoryHasEverBeenUsed</key>
 	<true/>
@@ -58691,14 +58689,14 @@ Show Toolbelt</string>
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1440, 900}}</string>
 		<key>topLeft</key>
-		<string>{-24, 489}</string>
+		<string>{74, 873}</string>
 	</dict>
 	<key>NoSyncInstallationId</key>
 	<string>78E2F140-557C-4115-91AC-4DB26E1EFA8B</string>
 	<key>NoSyncLastTipTime</key>
 	<real>582943872.17159104</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>444</integer>
+	<integer>478</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -59477,7 +59475,7 @@ Show Toolbelt</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-06-23T16:03:03Z</date>
+	<date>2019-07-19T01:08:24Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>Selection Respects Soft Boundaries</key>
