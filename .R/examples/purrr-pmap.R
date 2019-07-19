@@ -1,7 +1,7 @@
 library(dplyr)
 library(purrr)
 
-tbdf <- tibble(
+  tbdf <- tibble(
   cyl = c(4, 6, 8),
   mpg = c(30, 25, 20)) %>% mutate(
     x = pmap(
