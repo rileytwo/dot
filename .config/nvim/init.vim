@@ -47,7 +47,6 @@ Plug 'maximbaz/lightline-ale'
 if !has('win32') && !has('win64')
     " mac specific plugs cause windows is hard
     Plug '/usr/local/opt/fzf'
-    Plug 'wfxr/forgit'
 endif
 if &term=~# 'nvim'
     Plug 'terryma/vim-multiple-cursors'
