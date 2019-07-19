@@ -1,5 +1,7 @@
 #!/usr/bin/env zsh
 
+## handy little "refresh environment" alias
+alias refresh="exec "${SHELL}" -l"
 ## radian console
 alias rr="radian"
 
