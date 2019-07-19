@@ -226,23 +226,23 @@ endfunction
 
 " check for truecolor support in current terminal
 " macOS Terminal.app does not support truecolor
-if !exists('g:os')
-    if has('mac')
-        let g:os = 'Darwin'
-        if $COLORTERM =~# 'truecolor' || $COLORTERM =~# '24bit'
-            set termguicolors
-            colorscheme riley
-        else
-            colorscheme one
-        endif
-    elseif has('win32') || has('win64')
-        let g:os = 'Windows'
+
+if has('mac')
+    let g:os = 'Darwin'
+    if $COLORTERM =~# 'truecolor' || $COLORTERM =~# '24bit'
         set termguicolors
         colorscheme riley
     else
-        let g:os = 'Linux'
-        set termguicolors
-        colorscheme riley
+        colorscheme one
     endif
+elseif has('win32') || has('win64')
+    let g:os = 'Windows'
+    set termguicolors
+    colorscheme riley
+else
+    let g:os = 'Linux'
+    set termguicolors
+    colorscheme riley
 endif
+
 
