@@ -8,6 +8,7 @@ if ($IsWindows) {
     }
     
     $env:PSModulePath += ";C:\Users\RRoach\scoop\modules"
+    $Env:Path += ";C:\ProgramData\jetpack\bin"
 }
 
 Set-PSReadLineOption -Colors @{
