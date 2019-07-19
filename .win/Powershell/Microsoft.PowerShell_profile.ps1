@@ -47,7 +47,10 @@ else {
 ## // handy aliases
 #
 # // general
-Set-Alias -name 'path' -value $Env:Path.Split(';')
+function print-path {
+    $Env:Path.Split(';')
+}
+Set-Alias -name 'path' -value print-path
 Set-Alias -name 'l' -value Get-ChildItemColor
 Set-Alias -name 'which' -value Get-Command
 #
