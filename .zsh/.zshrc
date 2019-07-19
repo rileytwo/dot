@@ -30,6 +30,7 @@ ZSH_THEME='alice'
 export ZSH="${HOME}/.oh-my-zsh"
 plugins=(
     git
+    forgit
     zsh-autopair
     zsh-completions
     zsh-history-substring-search
