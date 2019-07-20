@@ -1,8 +1,8 @@
 #!/usr/bin/env zsh
 
 ### BREW + FZF
-# update multiple packages at once
-# mnemonic [B]rew [U]pdate [P]lugin
+# install multiple packages at once
+# mnemonic [B]rew [I]nstall [P]lugin
 
 local inst=$(brew search | eval "fzf ${FZF_DEFAULT_OPTS} -m --header='[brew:install]'")
 
