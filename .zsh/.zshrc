@@ -225,14 +225,20 @@ disable r
 
 #### // helper files
 #
+# // aliases
 [[ -f ~/.aliases ]] && . ~/.aliases
-[[ -f ~/.fzf.zsh ]] && . ~/.fzf.zsh 
+#
+# // fzf
+[[ -f ~/.fzf.zsh ]] && . ~/.fzf.zsh
+if (( $+commands[rg] )); then
+    export FZF_DEFAULT_COMMAND='rg --files --no-ignore-vcs --hidden'
+fi
 export FZF_DEFAULT_OPTS='
   --color=fg:#c4c4c4,bg:#121212,hl:#2d7eb7
   --color=fg+:#e6e6e6,bg+:#262626,hl+:#3fb2ff
   --color=info:#d4ce90,prompt:#9691ff,pointer:#ff7e81
   --color=marker:#73ff96,spinner:#ff7e81,header:#54cc72'
-#### // iterm integration
 #
+# // iterm integration
 [[ -e "${HOME}/.iterm2_shell_integration.zsh" ]] \
     && source "${HOME}/.iterm2_shell_integration.zsh"
