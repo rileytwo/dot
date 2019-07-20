@@ -1,18 +1,20 @@
 # Version 1.0 -- Generated content!
-exclude          = '{*.{o,pyc},Icon\r,CVS,_darcs,_MTN,\{arch\},blib,*\~.nib,.DS_STORE}'
+include          = '{*}'
+exclude          = '.git, .DS_Store'
 fontName         = FuraCodeNerdFontComplete-Regular
 fontSize         = 13
-include          = '{.tm_properties,.htaccess,.zshrc,.zlogin,.zprofile,.bash,.sh, *}'
-showInvisibles   = true
+showInvisibles   = false
 showWrapColumn   = true
 softWrap         = true
-theme            = 32BD64FA-D60A-4858-A5FC-5164CC49A2B8
 wrapColumn       = 0
 
 [ *.txt ]
 fileType         = source.shell
 
 [ .zshrc ]
+fileType         = source.shell
+
+[ *.zsh-theme ]
 fileType         = source.shell
 
 [ *.rstheme ]
@@ -24,22 +26,10 @@ fileType         = source.r
 [ .rprofile ]
 fileType         = source.r
 
-[ *.zsh-theme ]
-fileType         = source.shell
+[ .tmTheme ]
+fileType         = source.xml
 
 [ attr.file.unknown-type ]
 fileType         = source.shell
 
-[ source ]
-showInvisibles   = true
-softWrap         = true
 
-[ source.shell ]
-showInvisibles   = true
-softWrap         = true
-
-[ text ]
-showInvisibles   = false
-
-[ text.plain ]
-showInvisibles   = false
