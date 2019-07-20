@@ -1051,14 +1051,14 @@
 
         </array>
         <key>uuid</key>
-        <string>233F0694-0B9C-43E3-A44A-ECECF7DF6C73</string>
+        <string>38493303-bc02-4c5b-aa26-f0aae707e30d</string>
         <key>colorSpaceName</key>
         <string>sRGB</string>
         <key>semanticClass</key>
-        <string>theme.dark.1337</string>
+        <string>theme.dark.alice</string>
         <key>author</key>
-        <string>Mark Herpich</string>
+        <string>Riley Roach</string>
         <key>comment</key>
-        <string>http:&#x2f;&#x2f;www.twitter.com&#x2f;TheMarkWithK</string>
+        <string>A visually pleasing theme with bright colors and a dark background.</string>
     </dict>
 </plist>
