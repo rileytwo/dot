@@ -274,7 +274,7 @@
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#67fecc</string>
+                <string>#96ffb1</string>
             </dict>
         </dict>
         <dict>
@@ -346,7 +346,7 @@
             <string>Python Type</string>
             <key>scope</key>
             <string>
-                support.type.python
+                <!-- support.type.python -->
                 <!-- punctuation.definition.list.begin.python, -->
                 <!-- punctuation.definition.list.end.python, -->
                 <!-- punctuation.definition.dict.begin.python, -->
@@ -368,7 +368,7 @@
                 <key>fontStyle</key>
                 <string></string>
                 <key>foreground</key>
-                <string>#67fecc</string>
+                <string>#96ffb1</string>
             </dict>
         </dict>
         <dict>
@@ -392,12 +392,13 @@
             <string>Python: Class</string>
             <key>scope</key>
             <string>
+                entity.name.type,
                 entity.name.type.class.python
             </string>
             <key>settings</key>
             <dict>
                 <key>fontStyle</key>
-                <string>bold</string>
+                <string></string>
                 <key>foreground</key>
                 <string>#FF8F86</string>
                 <!-- red -->
@@ -433,7 +434,7 @@
                 <key>fontStyle</key>
                 <string></string>
                 <key>foreground</key>
-                <string>#db7b74</string>
+                <string>#FF8F86</string>
                 <!-- red -->
             </dict>
         </dict>
