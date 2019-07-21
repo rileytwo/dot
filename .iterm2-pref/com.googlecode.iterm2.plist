@@ -4,6 +4,8 @@
 <dict>
 	<key>AdjustWindowForFontSizeChange</key>
 	<false/>
+	<key>AggressiveBaseCharacterDetection</key>
+	<true/>
 	<key>AlternateMouseScroll</key>
 	<true/>
 	<key>AppleAntiAliasingThreshold</key>
@@ -18,6 +20,8 @@
 	<false/>
 	<key>BracketedPasteMode</key>
 	<true/>
+	<key>CGFontRenderingFontSmoothingDisabled</key>
+	<false/>
 	<key>ConvertDosNewlines</key>
 	<true/>
 	<key>Custom Color Presets</key>
@@ -50491,6 +50495,8 @@
 	<string>Arrangement 1</string>
 	<key>Default Bookmark Guid</key>
 	<string>C2CD2FD3-775C-44B4-AB74-0853DACAE166</string>
+	<key>Default Toolbelt Width</key>
+	<real>250</real>
 	<key>DefaultTabBarHeight</key>
 	<real>24</real>
 	<key>DeleteProfile_SilenceUntil</key>
@@ -50656,6 +50662,8 @@ Show Toolbelt</string>
 	<integer>4</integer>
 	<key>JobName</key>
 	<false/>
+	<key>LoadFromFindPasteboard</key>
+	<false/>
 	<key>LoadPrefsFromCustomFolder</key>
 	<true/>
 	<key>MinimumWeightDifferenceForBoldFont</key>
@@ -50684,8 +50692,8 @@ Show Toolbelt</string>
 	<false/>
 	<key>NSSplitView Subview Frames NSColorPanelSplitView</key>
 	<array>
-		<string>0.000000, 0.000000, 328.000000, 278.500000, NO, NO</string>
-		<string>0.000000, 279.500000, 328.000000, 108.500000, NO, NO</string>
+		<string>0.000000, 0.000000, 328.000000, 278.000000, NO, NO</string>
+		<string>0.000000, 279.000000, 328.000000, 108.000000, NO, NO</string>
 	</array>
 	<key>NSTableView Columns v2 KeyBingingTable</key>
 	<data>
@@ -50984,7 +50992,7 @@ Show Toolbelt</string>
 			<key>Blend</key>
 			<real>0.050000000000000003</real>
 			<key>Blink Allowed</key>
-			<true/>
+			<false/>
 			<key>Blinking Cursor</key>
 			<false/>
 			<key>Blur</key>
@@ -51719,7 +51727,7 @@ Show Toolbelt</string>
 			<key>Terminal Type</key>
 			<string>xterm-256color</string>
 			<key>Thin Strokes</key>
-			<integer>3</integer>
+			<integer>4</integer>
 			<key>Title Components</key>
 			<integer>2</integer>
 			<key>Transparency</key>
@@ -58653,9 +58661,9 @@ Show Toolbelt</string>
 	</array>
 	<key>NoSyncAllAppVersions</key>
 	<array>
+		<string>3.3.0beta13</string>
 		<string>3.3.0beta11</string>
 		<string>3.3.0beta9</string>
-		<string>3.3.0beta13</string>
 	</array>
 	<key>NoSyncBFPFavorites</key>
 	<array>
@@ -58689,14 +58697,14 @@ Show Toolbelt</string>
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1440, 900}}</string>
 		<key>topLeft</key>
-		<string>{74, 873}</string>
+		<string>{0, 832}</string>
 	</dict>
 	<key>NoSyncInstallationId</key>
 	<string>78E2F140-557C-4115-91AC-4DB26E1EFA8B</string>
 	<key>NoSyncLastTipTime</key>
 	<real>582943872.17159104</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>485</integer>
+	<integer>493</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -59407,6 +59415,36 @@ Show Toolbelt</string>
 		<string>0004</string>
 		<string>0005</string>
 	</array>
+	<key>NoSyncToolbeltProportions</key>
+	<dict>
+		<key>proportions</key>
+		<array>
+			<dict>
+				<key>heightAsFraction</key>
+				<real>0.24956822107081175</real>
+				<key>name</key>
+				<string>Profiles</string>
+			</dict>
+			<dict>
+				<key>heightAsFraction</key>
+				<real>0.24956822107081175</real>
+				<key>name</key>
+				<string>Actions</string>
+			</dict>
+			<dict>
+				<key>heightAsFraction</key>
+				<real>0.24956822107081175</real>
+				<key>name</key>
+				<string>Captured Output</string>
+			</dict>
+			<dict>
+				<key>heightAsFraction</key>
+				<real>0.25129533678756477</real>
+				<key>name</key>
+				<string>Command History</string>
+			</dict>
+		</array>
+	</dict>
 	<key>OnlyWhenMoreTabs</key>
 	<false/>
 	<key>OpenArrangementAtStartup</key>
@@ -59423,6 +59461,10 @@ Show Toolbelt</string>
 	<string></string>
 	<key>PasteSpecialUseRegexSubstitution</key>
 	<false/>
+	<key>PerformDictionaryLookupOnQuickLook</key>
+	<false/>
+	<key>PinchToChangeFontSizeDisabled</key>
+	<true/>
 	<key>PointerActions</key>
 	<dict>
 		<key>Button,1,1,,</key>
@@ -59508,9 +59550,17 @@ Show Toolbelt</string>
 	<integer>0</integer>
 	<key>ThreeFingerEmulates</key>
 	<true/>
+	<key>ToolbeltTools</key>
+	<array>
+		<string>Command History</string>
+	</array>
 	<key>UnderlineCursorHeight</key>
 	<real>1</real>
+	<key>UnderlineCursorOffset</key>
+	<real>0.0</real>
 	<key>UseBorder</key>
+	<false/>
+	<key>UseDivorcedProfileToSplit</key>
 	<false/>
 	<key>UseExperimentalFontMetrics</key>
 	<false/>
@@ -60725,7 +60775,7 @@ Show Toolbelt</string>
 	<key>ZippyTextDrawing</key>
 	<false/>
 	<key>disableMetalWhenUnplugged</key>
-	<true/>
+	<false/>
 	<key>findMode_iTerm</key>
 	<integer>0</integer>
 	<key>iTerm Version</key>
@@ -60736,6 +60786,8 @@ Show Toolbelt</string>
 	<true/>
 	<key>kCPKUseSystemColorPicker</key>
 	<true/>
+	<key>metalMaximizeThroughput</key>
+	<false/>
 	<key>preferIntegratedGPU</key>
 	<true/>
 </dict>
