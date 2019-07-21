@@ -136,5 +136,7 @@
     "StatusBarTag.text": "",
     "editor.formatOnPaste": true,
     "editor.formatOnSave": true,
-    "editor.formatOnType": false
+    "editor.formatOnType": false,
+    "r.rterm.option": [],
+    "r.rterm.mac": "/Users/riley/.pyenv/shims/radian"
 }
