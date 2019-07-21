@@ -910,6 +910,8 @@
             </string>
             <key>settings</key>
             <dict>
+                <key>background</key>
+                <string>#333333</string>
                 <key>foreground</key>
                 <string>#c7c7c7</string>
             </dict>
@@ -932,8 +934,12 @@
             <string>punctuation.definition.markdown</string>
             <key>settings</key>
             <dict>
+                <key>fontStyle</key>
+                <string>bold</string>
                 <key>foreground</key>
                 <string>#9691FF</string>
+                <key>background</key>
+                <string>#333333</string>
             </dict>
         </dict>
         <dict>
