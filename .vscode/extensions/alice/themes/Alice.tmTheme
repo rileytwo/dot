@@ -26,13 +26,44 @@
         </dict>
         <dict>
             <key>name</key>
+            <string>Text</string>
+            <key>scope</key>
+            <string>
+                text.plain,
+                text.xml
+            </string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#e6e6e6</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key>
             <string>Comment</string>
             <key>scope</key>
-            <string>comment</string>
+            <string>
+                comment,
+                comment.line,
+                punctuation.definition.comment
+            </string>
             <key>settings</key>
             <dict>
                 <key>foreground</key>
                 <string>#6d6d6d</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>Punctuation</string>
+            <key>scope</key>
+            <string>
+                punctuation
+            </string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#e6e6e6</string>
             </dict>
         </dict>
         <dict>
@@ -65,7 +96,7 @@
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#FFD2A6</string>
+                <string>#96ffb1</string>
                 <key>fontStyle</key>
                 <string>bold</string>
             </dict>
@@ -78,7 +109,7 @@
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#73ff96</string>
+                <string>#96ffb1</string>
             </dict>
         </dict>
         <dict>
@@ -115,7 +146,7 @@
                 <key>fontStyle</key>
                 <string></string>
                 <key>foreground</key>
-                <string>#ff6666</string>
+                <string>#3fb2ff</string>
             </dict>
         </dict>
         <dict>
@@ -141,7 +172,7 @@
                 <key>fontStyle</key>
                 <string>underline</string>
                 <key>foreground</key>
-                <string>#ff6666</string>
+                <string>#FF8F86</string>
             </dict>
         </dict>
         <dict>
@@ -237,7 +268,7 @@
         </dict>
         <dict>
             <key>name</key>
-            <string>Library class&#x2f;type</string>
+            <string>Library Class</string>
             <key>scope</key>
             <string>support.type, support.class</string>
             <key>settings</key>
@@ -324,7 +355,7 @@
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#67fecc</string>
+                <string>#96ffb1</string>
             </dict>
         </dict>
         <dict>
@@ -426,7 +457,7 @@
                 <key>fontStyle</key>
                 <string></string>
                 <key>foreground</key>
-                <string>#8affe4</string>
+                <string>#96ffb1</string>
             </dict>
         </dict>
         <dict>
@@ -611,7 +642,8 @@
             <string>R Function: Assigned</string>
             <key>scope</key>
             <string>
-                entity.name.function.r
+                entity.name.function.r,
+                keyword.other.r
             </string>
             <key>settings</key>
             <dict>
@@ -698,12 +730,13 @@
             <string>R Operators</string>
             <key>scope</key>
             <string>
-                keyword.operator.assignment.r
+                keyword.operator.assignment.r,
+                keyword.operator.comparison.r
             </string>
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#9691ff</string>
+                <string>#FF8F86</string>
             </dict>
         </dict>
         <dict>
@@ -734,7 +767,7 @@
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#8affe4</string>
+                <string>#96ffb1</string>
             </dict>
         </dict>
         <dict>
@@ -742,12 +775,13 @@
             <string>R Punctuation</string>
             <key>scope</key>
             <string>
-                punctuation.separator.parameters.r
+                punctuation.separator.parameters.r,
+                meta.function-call.arguments.r
             </string>
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#9691ff</string>
+                <string>#3fb2ff</string>
             </dict>
         </dict>
         <dict>
@@ -878,7 +912,9 @@
             <string>XML: Tag Punctuation</string>
             <key>scope</key>
             <string>
-                punctuation.definition.tag.xml
+                punctuation.definition.tag.xml,
+                punctuation.definition.tag.end.xml,
+                punctuation.definition.tag.begin.xml
             </string>
             <key>settings</key>
             <dict>
