@@ -9,7 +9,8 @@
         ".functions": "shellscript",
         ".aliases": "shellscript",
         "*.rmd": "markdown",
-        "Rpkg": "r"
+        "Rpkg": "r",
+        "*.Rmd": "rmd"
     },
     "css.lint.duplicateProperties": "warning",
     "editor.wordWrap": "on",
@@ -138,5 +139,8 @@
     "editor.formatOnSave": true,
     "editor.formatOnType": false,
     "r.rterm.option": [],
-    "r.rterm.mac": "/Users/riley/.pyenv/shims/radian"
+    "r.rterm.mac": "/Users/riley/.pyenv/shims/radian",
+    "[rmd]": {
+
+    }
 }

@@ -490,16 +490,6 @@
         "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
     },
     {
-        "key": "cmd+i",
-        "command": "editor.action.indentLines",
-        "when": "editorTextFocus && !editorReadonly"
-    },
-    {
-        "key": "cmd+]",
-        "command": "-editor.action.indentLines",
-        "when": "editorTextFocus && !editorReadonly"
-    },
-    {
         "key": "shift+cmd+i",
         "command": "editor.action.reindentlines"
     },
@@ -518,16 +508,6 @@
     {
         "key": "shift+cmd+-",
         "command": "workbench.action.previousPanelView"
-    },
-    {
-        "key": "cmd+i",
-        "command": "markdownExtended.toggleItalics",
-        "when": "editorTextFocus && editorLangId == 'markdown'"
-    },
-    {
-        "key": "ctrl+i",
-        "command": "-markdownExtended.toggleItalics",
-        "when": "editorTextFocus && editorLangId == 'markdown'"
     },
     {
         "key": "cmd+j",
