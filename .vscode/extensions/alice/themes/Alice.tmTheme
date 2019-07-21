@@ -832,7 +832,10 @@
             <key>name</key>
             <string>Markdown Header Text</string>
             <key>scope</key>
-            <string>markup.heading.markdown</string>
+            <string>
+                markup.heading.markdown,
+                entity.name.section.markdown
+            </string>
             <key>settings</key>
             <dict>
                 <key>fontStyle</key>
@@ -918,9 +921,12 @@
         </dict>
         <dict>
             <key>name</key>
-            <string>Code Block Language</string>
+            <string>Markdown Code Block Language</string>
             <key>scope</key>
-            <string>fenced_code.block.language</string>
+            <string>
+                fenced_code.block.language,
+                source.r.embedded.rmarkdown
+            </string>
             <key>settings</key>
             <dict>
                 <key>foreground</key>
