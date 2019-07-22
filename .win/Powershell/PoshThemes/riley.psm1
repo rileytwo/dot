@@ -9,13 +9,13 @@ function Write-Theme {
     )
 
     #check the last command state and indicate if failed
-    $promtSymbolColor = $sl.Colors.PromptSymbolColor
-    If ($lastCommandFailed) {
-        $promtSymbolColor = $sl.Colors.WithForegroundColor
-    }
+    # $promtSymbolColor = $sl.Colors.PromptSymbolColor
+    # If ($lastCommandFailed) {
+    #     $promtSymbolColor = $sl.Colors.WithForegroundColor
+    # }
 
-    # Writes the postfixes to the prompt
-    #$prompt += Write-Prompt -Object ($sl.PromptSymbols.PromptIndicator + "  ") -ForegroundColor $promtSymbolColor
+    # # Writes the postfixes to the prompt
+    # $prompt += Write-Prompt -Object ($sl.PromptSymbols.PromptIndicator + "  ") -ForegroundColor $promtSymbolColor
 
     # Writes the drive portion
     $drive = "~"
@@ -31,11 +31,12 @@ function Write-Theme {
         $prompt += Write-Prompt -Object ")" -ForegroundColor $sl.Colors.PromptHighlightColor
         if ($status.Working.Length -gt 0) {
             $prompt += Write-Prompt -Object (" " + $sl.PromptSymbols.GitDirtyIndicator) -ForegroundColor $sl.Colors.GitDirtyColor
-        } else {
+        }
+        else {
             $prompt += Write-Prompt -Object (" " + $sl.PromptSymbols.GitDefaultIndicator) -ForegroundColor $sl.Colors.GitDefaultColor
         }
-    } 
-    
+    }
+
     $prompt += "`r`n"
     $prompt += "> "
     $prompt
