@@ -10,7 +10,7 @@ if ($IsWindows) {
     $env:PSModulePath += ";C:\Users\RRoach\scoop\modules"
     $Env:Path += ";C:\ProgramData\jetpack\bin"
 
-    function Conda-Start {
+    function Start-Conda {
         (& "C:\Users\RRoach\scoop\apps\miniconda3\current\Scripts\conda.exe" "shell.powershell" "hook") | Out-String | Invoke-Expression
     }
 }
@@ -52,28 +52,28 @@ else {
 ## // handy aliases
 #
 # // general
-function print-path {
+function Get-Path {
     $Env:Path.Split(';')
 }
-Set-Alias -name 'path' -value print-path
+Set-Alias -name 'path' -value Get-Path
 Set-Alias -name 'l' -value Get-ChildItemColor
 Set-Alias -name 'which' -value Get-Command
 #
 # // git
-function git-commit {
+function Send-GitCommit {
     git commit $args
 }
-Set-Alias -name 'gt' git-commit
+Set-Alias -name 'gt' Send-GitCommit
 
-function git-remote-update {
+function Get-GitRemoteUpdate {
     git remote update $args
 }
-Set-Alias -name 'grup' git-remote-update
+Set-Alias -name 'grup' Get-GitRemoteUpdate
 
-function git-status {
+function Get-GitStatus {
     git status $args
 }
-Set-Alias -name 'gs' git-status
+Set-Alias -name 'gs' Get-GitStatus
 #
 # // other
 Set-Alias -name 'rr' -value 'radian'
