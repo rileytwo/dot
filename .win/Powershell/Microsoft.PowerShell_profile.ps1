@@ -7,7 +7,7 @@ if ($IsWindows) {
         Import-Module "$ChocolateyProfile"
     }
 
-    $env:PSModulePath += ";C:\Users\RRoach\scoop\modules"
+    $Env:PSModulePath += ";C:\Users\RRoach\scoop\modules"
     $Env:Path += ";C:\ProgramData\jetpack\bin"
 
     function Start-Conda {
