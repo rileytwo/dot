@@ -1,12 +1,16 @@
 # Version 1.0 -- Generated content!
-include          = '{*}'
-exclude          = '.git, .DS_Store'
+windowTitle      = "$TM_DISPLAYNAME — ${CWD/^.*\///}"
+
+include          = "{$include}"
+exclude          = "{$exclude, *.git, *.DS_Store, Music, Movies}"
+excludeInBrowser = "{$excludeFilesBrowser, .ccache, .electron, node_modeules, dist, Movies, Music}"
+
 fontName         = FuraCodeNerdFontComplete-Regular
 fontSize         = 13
 showInvisibles   = false
 showWrapColumn   = true
 softWrap         = true
-wrapColumn       = 0
+wrapColumn       = "Use Window Frame"
 
 [ *.txt ]
 fileType         = source.shell
