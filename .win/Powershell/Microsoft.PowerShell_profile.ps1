@@ -70,10 +70,10 @@ function Get-GitRemoteUpdate {
 }
 Set-Alias -name 'grup' Get-GitRemoteUpdate
 
-function Get-GitStatus {
+function Get-GitRepositoryStatus {
     git status $args
 }
-Set-Alias -name 'gs' Get-GitStatus
+Set-Alias -name 'gs' Get-GitRepositoryStatus
 #
 # // other
 Set-Alias -name 'rr' -value 'radian'
