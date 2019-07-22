@@ -141,5 +141,6 @@
     "r.rterm.mac": "/Users/riley/.pyenv/shims/radian",
     "[rmd]": {
 
-    }
+    },
+    "editor.fontFamily": "\"FuraCodeNerdFontComplete-Retina\", \"FuraCode Retina\", \"SFMono-Regular\", Menlo, Monaco, 'Courier New', monospace"
 }
