@@ -199,12 +199,12 @@
         ],
         "requestedTheme" : "system",
         "showTabsInTitlebar" : false,
-        "showTerminalTitleInTitlebar" : true
+        "showTerminalTitleInTitlebar" : false
     },
     "profiles" : 
     [
         {
-            "acrylicOpacity" : 1.0,
+            "acrylicOpacity" : 0.75,
             "closeOnExit" : true,
             "colorScheme" : "Riley",
             "commandline" : "C:\\Program Files\\PowerShell\\6\\pwsh.exe",
