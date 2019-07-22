@@ -126,7 +126,6 @@
     "explorer.sortOrder": "filesFirst",
     "r.lsp.diagnostics": false,
     "problems.autoReveal": false,
-    "problems.decorations.enabled": false,
     "outline.problems.enabled": false,
     "extensions.autoCheckUpdates": false,
     "git.detectSubmodulesLimit": 2,
@@ -142,5 +141,7 @@
     "[rmd]": {
 
     },
-    "editor.fontFamily": "\"FuraCodeNerdFontComplete-Retina\", \"FuraCode Retina\", \"SFMono-Regular\", Menlo, Monaco, 'Courier New', monospace"
+    "editor.fontFamily": "\"FuraCodeNerdFontComplete-Retina\", \"FuraCode Retina\", \"SFMono-Regular\", Menlo, Monaco, 'Courier New', monospace",
+    "workbench.enableExperiments": false,
+    "workbench.settings.enableNaturalLanguageSearch": false
 }
