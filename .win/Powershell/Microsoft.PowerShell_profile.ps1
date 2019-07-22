@@ -6,9 +6,13 @@ if ($IsWindows) {
     if (Test-Path($ChocolateyProfile)) {
         Import-Module "$ChocolateyProfile"
     }
-    
+
     $env:PSModulePath += ";C:\Users\RRoach\scoop\modules"
     $Env:Path += ";C:\ProgramData\jetpack\bin"
+
+    function Conda-Start {
+        (& "C:\Users\RRoach\scoop\apps\miniconda3\current\Scripts\conda.exe" "shell.powershell" "hook") | Out-String | Invoke-Expression
+    }
 }
 
 Set-PSReadLineOption -Colors @{
