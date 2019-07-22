@@ -124,7 +124,6 @@
     "javascript.validate.enable": false,
     "workbench.iconTheme": "eq-material-theme-icons-darker",
     "explorer.sortOrder": "filesFirst",
-    "editor.fontFamily": "FiraCode-Retina, Menlo, Monaco, 'Courier New', monospace",
     "r.lsp.diagnostics": false,
     "problems.autoReveal": false,
     "problems.decorations.enabled": false,
