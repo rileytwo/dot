@@ -29,6 +29,7 @@ Plug 'gaalcaras/ncm-R', {'for': 'R'}
 Plug 'dkarter/bullets.vim'
 Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
 Plug 'deoplete-plugins/deoplete-jedi', {'for': 'python'}
+
 Plug 'chrisbra/vim-zsh'
 Plug 'vitalk/vim-shebang'
 
@@ -88,7 +89,7 @@ set splitbelow
 set splitright
 set modifiable
 
-if &term=~# 'nvim' || has('mac') || has('linux') 
+if has('mac') || has('linux') 
     set number
     set numberwidth=1
     set guicursor=
@@ -98,6 +99,10 @@ if &term=~# 'nvim' || has('mac') || has('linux')
     set cursorline
 else
     set guicursor=
+        \n-v-c-sm:hor20,
+        \i-ci-ve:ver25,
+        \r-cr-o:block
+    set cursorline
 endif
 
 set showtabline=2
