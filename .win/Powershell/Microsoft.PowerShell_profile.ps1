@@ -1,6 +1,4 @@
 if ($IsWindows) {
-    Set-Location "C:\Users\RRoach\.dot"
-
     # Chocolatey profile
     $ChocolateyProfile = "$env:ChocolateyInstall\helpers\chocolateyProfile.psm1"
     if (Test-Path($ChocolateyProfile)) {
@@ -27,7 +25,9 @@ $PSDefaultParameterValues = @{
 }
 
 # // module imports
-
+# (FIXME there has to be a better way than checking each module
+# before importing)
+ 
 if (Get-Module "Get-ChildItemColor") {
     Import-Module Get-ChildItemColor
 }
@@ -39,6 +39,10 @@ if (Get-Module "oh-my-posh") {
 }
 if (Get-Module "ZLocation") {
     Import-Module ZLocation
+}
+if (Get-Module -ListAvailable "PSFzf") {
+    Remove-PSReadlineKeyHandler 'Ctrl+r'
+    Import-Module PSFzf
 }
 
 Set-Theme riley ; if ($?) {
