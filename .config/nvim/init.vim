@@ -207,7 +207,7 @@ let g:indent_guides_guide_size = 1
 
 
 " lightline/ale 
-" more info at: info at maximbaz/dotfiles/.config/nvim/init.vim
+" more info at maximbaz/dotfiles/.config/nvim/init.vim
 if has('mac') || has('linux') || &term =~# 'nvim'
     let g:lightline = {
         \ 'colorscheme': 'twofirewatch',
