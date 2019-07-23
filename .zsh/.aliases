@@ -15,6 +15,7 @@ alias dot='~/.dot'
 alias plistbuddy='/usr/libexec/PlistBuddy'
 
 ## echo each path/fpath entry on newline
+# `print -rl -- "${(@s/:/)PATH}"` also works
 alias path='echo -e ${PATH//:/\\n}'
 alias fpath='echo -e ${FPATH//:/\\n}'
 
