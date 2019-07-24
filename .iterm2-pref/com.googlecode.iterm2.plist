@@ -50669,7 +50669,7 @@ Show Toolbelt</string>
 	<key>MinimumWeightDifferenceForBoldFont</key>
 	<integer>3</integer>
 	<key>NSColorPanelMode</key>
-	<string>1</string>
+	<string>6</string>
 	<key>NSColorPickerPreferredRGBEntryMode</key>
 	<integer>2</integer>
 	<key>NSColorPickerSlidersDefaults</key>
@@ -50729,7 +50729,7 @@ Show Toolbelt</string>
 		<string>@a</string>
 	</dict>
 	<key>NSWindow Frame NSColorPanel</key>
-	<string>180 525 328 295 0 0 1440 877 </string>
+	<string>527 526 328 259 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>708 233 732 582 0 0 1440 877 </string>
 	<key>New Bookmarks</key>
@@ -50787,13 +50787,13 @@ Show Toolbelt</string>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.61633026599884033</real>
+				<real>0.64705882349999999</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.9747205376625061</real>
+				<real>0.94509803920000002</real>
 				<key>Red Component</key>
-				<real>0.95514363050460815</real>
+				<real>0.97647058819999999</real>
 			</dict>
 			<key>Ansi 12 Color</key>
 			<dict>
@@ -50865,13 +50865,13 @@ Show Toolbelt</string>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.61633026599884033</real>
+				<real>0.61679995059967041</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.9747205376625061</real>
+				<real>0.90814518928527832</real>
 				<key>Red Component</key>
-				<real>0.95514363050460815</real>
+				<real>0.93966645002365112</real>
 			</dict>
 			<key>Ansi 4 Color</key>
 			<dict>
@@ -58661,9 +58661,9 @@ Show Toolbelt</string>
 	</array>
 	<key>NoSyncAllAppVersions</key>
 	<array>
-		<string>3.3.0beta13</string>
 		<string>3.3.0beta11</string>
 		<string>3.3.0beta9</string>
+		<string>3.3.0beta13</string>
 	</array>
 	<key>NoSyncBFPFavorites</key>
 	<array>
@@ -58697,14 +58697,14 @@ Show Toolbelt</string>
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1440, 900}}</string>
 		<key>topLeft</key>
-		<string>{0, 832}</string>
+		<string>{387, 846}</string>
 	</dict>
 	<key>NoSyncInstallationId</key>
 	<string>78E2F140-557C-4115-91AC-4DB26E1EFA8B</string>
 	<key>NoSyncLastTipTime</key>
-	<real>582943872.17159104</real>
+	<real>585361631.22538805</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>493</integer>
+	<integer>500</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -59414,6 +59414,10 @@ Show Toolbelt</string>
 		<string>0003</string>
 		<string>0004</string>
 		<string>0005</string>
+		<string>0005</string>
+		<string>0006</string>
+		<string>0007</string>
+		<string>0008</string>
 	</array>
 	<key>NoSyncToolbeltProportions</key>
 	<dict>
@@ -59517,7 +59521,7 @@ Show Toolbelt</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-07-19T01:08:24Z</date>
+	<date>2019-07-24T22:05:05Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>Selection Respects Soft Boundaries</key>
@@ -59663,13 +59667,13 @@ Show Toolbelt</string>
 												<key>Alpha Component</key>
 												<real>1</real>
 												<key>Blue Component</key>
-												<real>0.61633026599884033</real>
+												<real>0.64705882349999999</real>
 												<key>Color Space</key>
 												<string>sRGB</string>
 												<key>Green Component</key>
-												<real>0.9747205376625061</real>
+												<real>0.94509803920000002</real>
 												<key>Red Component</key>
-												<real>0.95514363050460815</real>
+												<real>0.97647058819999999</real>
 											</dict>
 											<key>Ansi 12 Color</key>
 											<dict>
@@ -59741,13 +59745,13 @@ Show Toolbelt</string>
 												<key>Alpha Component</key>
 												<real>1</real>
 												<key>Blue Component</key>
-												<real>0.61633026599884033</real>
+												<real>0.61679995059967041</real>
 												<key>Color Space</key>
 												<string>sRGB</string>
 												<key>Green Component</key>
-												<real>0.9747205376625061</real>
+												<real>0.90814518928527832</real>
 												<key>Red Component</key>
-												<real>0.95514363050460815</real>
+												<real>0.93966645002365112</real>
 											</dict>
 											<key>Ansi 4 Color</key>
 											<dict>
@@ -59868,7 +59872,7 @@ Show Toolbelt</string>
 											<key>Blend</key>
 											<real>0.050000000000000003</real>
 											<key>Blink Allowed</key>
-											<true/>
+											<false/>
 											<key>Blinking Cursor</key>
 											<false/>
 											<key>Blur</key>
@@ -60603,7 +60607,7 @@ Show Toolbelt</string>
 											<key>Terminal Type</key>
 											<string>xterm-256color</string>
 											<key>Thin Strokes</key>
-											<integer>3</integer>
+											<integer>4</integer>
 											<key>Title Components</key>
 											<integer>2</integer>
 											<key>Transparency</key>
@@ -60653,11 +60657,46 @@ Show Toolbelt</string>
 										<key>Columns</key>
 										<integer>90</integer>
 										<key>Commands</key>
-										<array/>
+										<array>
+											<string>zprof | head -n 10</string>
+											<string>trash -e</string>
+											<string>brew update &amp;&amp; brew upgrade</string>
+											<string>ipython</string>
+											<string>e</string>
+											<string>brew cask upgrade</string>
+											<string>ipython</string>
+											<string>truelies</string>
+											<string>type gh</string>
+											<string>rr</string>
+											<string>npm update -g</string>
+											<string>rr</string>
+											<string>cd .dot</string>
+											<string>gs</string>
+											<string>git pull --rebase</string>
+											<string>code .vscode/extensions/alice/</string>
+										</array>
 										<key>Directories</key>
 										<array>
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
 										</array>
 										<key>Environment</key>
 										<dict>
@@ -60666,6 +60705,114 @@ Show Toolbelt</string>
 										</dict>
 										<key>Hosts</key>
 										<array>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
 											<dict>
 												<key>Host name</key>
 												<string>rmbp</string>
@@ -60690,10 +60837,8 @@ Show Toolbelt</string>
 										</dict>
 										<key>Program</key>
 										<dict>
-											<key>Command</key>
-											<string>login -fqp "riley"</string>
 											<key>Type</key>
-											<string>Command</string>
+											<string>Shell Launcher</string>
 										</dict>
 										<key>Rows</key>
 										<integer>30</integer>
@@ -60706,7 +60851,7 @@ Show Toolbelt</string>
 										<key>Substitutions</key>
 										<dict/>
 										<key>Working Directory</key>
-										<string>/Users/riley</string>
+										<string>/Users/riley/.dot</string>
 									</dict>
 									<key>View Type</key>
 									<string>SessionView</string>
@@ -60751,7 +60896,7 @@ Show Toolbelt</string>
 							<key>heightAsFraction</key>
 							<real>1</real>
 							<key>name</key>
-							<string>Profiles</string>
+							<string>Command History</string>
 						</dict>
 					</array>
 				</dict>
