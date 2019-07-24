@@ -8,6 +8,7 @@ Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-scriptease'
+Plug 'tpope/vim-sleuth'
 
 " // Completion, snippets
 Plug 'w0rp/ale'
@@ -35,6 +36,9 @@ Plug 'vitalk/vim-shebang'
 
 " // Auto closing delimiters
 Plug 'Raimondi/delimitMate'
+
+" // Detect Indentation
+" Plug 'ciaranm/detectindent'
 
 " // Colorschemes
 Plug 'ntk148v/vim-horizon'
@@ -205,6 +209,8 @@ let g:indent_guides_enable_on_vim_startup = 1
 let g:indent_guides_start_level = 2
 let g:indent_guides_guide_size = 1
 
+let g:delimitMate_expand_space = 1
+let g:delimitMate_expand_cr = 2
 
 " lightline/ale 
 " more info at maximbaz/dotfiles/.config/nvim/init.vim
