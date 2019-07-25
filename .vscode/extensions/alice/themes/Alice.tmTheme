@@ -808,7 +808,8 @@
             <string>R Parentheses</string>
             <key>scope</key>
             <string>
-                punctuation.section.parens.begin.r,punctuation.section.parens.end.r
+                punctuation.section.parens.begin.r,
+                punctuation.section.parens.end.r
             </string>
             <key>settings</key>
             <dict>
