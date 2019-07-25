@@ -3,6 +3,7 @@
     "activateEnvironment" : "Cmd+E",
     "activateFiles" : "Cmd+F",
     "activateHelp" : "Cmd+L",
+    "activatePlots" : "Cmd+P",
     "activateSource" : "Cmd+K Cmd+E",
     "activateTerminal" : "Cmd+K Cmd+T",
     "addCursorAbove" : "Ctrl+Alt+Up",
