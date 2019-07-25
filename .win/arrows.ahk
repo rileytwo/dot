@@ -8,7 +8,7 @@ SendMode Input  ; Recommended for new scripts due to its superior speed and reli
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 ;;
 
-;; alt+{wasd} for navigating text 
+;; alt+{wasd} for navigating text
 !a::Send {Left}    ;; left
 Return
 
@@ -22,6 +22,8 @@ Return
 Return
 
 ^h::WinMinimize, A ;; minimize (hide) windows with {control}{h}
+
+;; TODO: fix "alt+right ctrl+"
 
 #Esc::
 
