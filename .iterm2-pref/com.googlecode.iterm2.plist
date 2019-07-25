@@ -50508,11 +50508,11 @@
 	<key>DimInactiveSplitPanes</key>
 	<false/>
 	<key>DimOnlyText</key>
-	<true/>
+	<false/>
 	<key>DisableAdaptiveFrameRateInInteractiveApps</key>
 	<true/>
 	<key>DisableFullscreenTransparency</key>
-	<false/>
+	<true/>
 	<key>DisableWindowShadowWhenTransparencyPreMojave</key>
 	<true/>
 	<key>DisableWindowSizeSnap</key>
@@ -50692,8 +50692,8 @@ Show Toolbelt</string>
 	<false/>
 	<key>NSSplitView Subview Frames NSColorPanelSplitView</key>
 	<array>
-		<string>0.000000, 0.000000, 328.000000, 256.000000, NO, NO</string>
-		<string>0.000000, 257.000000, 328.000000, 108.000000, NO, NO</string>
+		<string>0.000000, 0.000000, 328.000000, 307.000000, NO, NO</string>
+		<string>0.000000, 308.000000, 328.000000, 96.000000, NO, NO</string>
 	</array>
 	<key>NSTableView Columns v2 KeyBingingTable</key>
 	<data>
@@ -50729,7 +50729,7 @@ Show Toolbelt</string>
 		<string>@a</string>
 	</dict>
 	<key>NSWindow Frame NSColorPanel</key>
-	<string>527 512 328 237 0 0 1440 877 </string>
+	<string>527 415 328 298 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>708 270 732 582 0 0 1440 877 </string>
 	<key>New Bookmarks</key>
@@ -50962,13 +50962,13 @@ Show Toolbelt</string>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.08235294371843338</real>
+				<real>0.08235294118</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.08235294371843338</real>
+				<real>0.08235294118</real>
 				<key>Red Component</key>
-				<real>0.08235294371843338</real>
+				<real>0.08235294118</real>
 			</dict>
 			<key>Background Image Location</key>
 			<string></string>
@@ -51438,7 +51438,9 @@ Show Toolbelt</string>
 			<key>Scrollback Lines</key>
 			<integer>8000</integer>
 			<key>Scrollback With Status Bar</key>
-			<true/>
+			<false/>
+			<key>Scrollback in Alternate Screen</key>
+			<false/>
 			<key>Selected Text Color</key>
 			<dict>
 				<key>Alpha Component</key>
@@ -53021,13 +53023,13 @@ Show Toolbelt</string>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.082352941176470587</real>
+				<real>0.08235294371843338</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.082352941176470587</real>
+				<real>0.08235294371843338</real>
 				<key>Red Component</key>
-				<real>0.082352941176470587</real>
+				<real>0.08235294371843338</real>
 			</dict>
 			<key>Background Image Location</key>
 			<string></string>
@@ -58663,6 +58665,7 @@ Show Toolbelt</string>
 	<array>
 		<string>3.3.0beta9</string>
 		<string>3.3.0beta13</string>
+		<string>3.3.0beta15</string>
 		<string>3.3.0beta11</string>
 	</array>
 	<key>NoSyncBFPFavorites</key>
@@ -58697,14 +58700,14 @@ Show Toolbelt</string>
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1440, 900}}</string>
 		<key>topLeft</key>
-		<string>{-17, 877}</string>
+		<string>{0, 877}</string>
 	</dict>
 	<key>NoSyncInstallationId</key>
 	<string>78E2F140-557C-4115-91AC-4DB26E1EFA8B</string>
 	<key>NoSyncLastTipTime</key>
 	<real>585361631.22538805</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>501</integer>
+	<integer>506</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -59034,6 +59037,22 @@ Show Toolbelt</string>
 				<true/>
 				<key>name</key>
 				<string>currentTab.iterm2.localhostName</string>
+				<key>nonterminalContext</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>isTerminal</key>
+				<true/>
+				<key>name</key>
+				<string>style</string>
+				<key>nonterminalContext</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>isTerminal</key>
+				<true/>
+				<key>name</key>
+				<string>frame</string>
 				<key>nonterminalContext</key>
 				<integer>0</integer>
 			</dict>
@@ -59521,7 +59540,7 @@ Show Toolbelt</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-07-24T22:05:05Z</date>
+	<date>2019-07-25T20:55:22Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>Selection Respects Soft Boundaries</key>
@@ -59541,7 +59560,7 @@ Show Toolbelt</string>
 	<key>SoundForEsc</key>
 	<false/>
 	<key>SplitPaneDimmingAmount</key>
-	<real>0.26496287677305003</real>
+	<real>0.10000000000000001</real>
 	<key>StatusBarPosition</key>
 	<integer>0</integer>
 	<key>StretchTabsToFillBar</key>
@@ -59566,6 +59585,8 @@ Show Toolbelt</string>
 	<real>1</real>
 	<key>UnderlineCursorOffset</key>
 	<real>0.0</real>
+	<key>UseAdaptiveFrameRate</key>
+	<true/>
 	<key>UseBorder</key>
 	<false/>
 	<key>UseDivorcedProfileToSplit</key>
@@ -60966,7 +60987,7 @@ Show Toolbelt</string>
 	<key>findMode_iTerm</key>
 	<integer>0</integer>
 	<key>iTerm Version</key>
-	<string>3.3.0beta13</string>
+	<string>3.3.0beta15</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
