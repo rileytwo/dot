@@ -1,54 +1,49 @@
-# general
+## // general
 *.DS_Store
 history
 
-## // .config
-#
-# hammerspoon
+# .config/hammerspoon
 spoons/
 
-# karabiner
+# .config/karabiner
 configstore/
 automatic_backups/
 
-# .config
+# .config/hub
 hub
 
-# vim/nvim
-.config/vifm/colors
+# .config/{vim,vifm}
+vifm/colors
 plugged/
 autoload/
-log
 share/
+log
 
-## // win
-# .win/.R/desktop.ini
+# .win/.R/
 desktop.ini
 
 # conemu
 .win/conemu/ConEmu.xml
 
-# vscode
-#*.code-workspace
-
 # keypirinha
 *.history
-.Rproj.user
 
-# zsh
+# .R/
+.Rproj.user
+*rsthemes_*
+*rscodeio*
+
+# .zsh/
 .zlogin
 
-# powershell
+# .config/powershell
 *.ps1
 NuGet/
 
-*.links
-
-*.pyc
-
+# .scripts/
 get-pip.py
 
+# extras
+*.links
 est
 
-*rsthemes_*
-*rscodeio*
