@@ -207,7 +207,7 @@
             "acrylicOpacity" : 0.75,
             "closeOnExit" : true,
             "colorScheme" : "Riley",
-            "commandline" : "C:\\Program Files\\PowerShell\\6\\pwsh.exe",
+            "commandline": "C:\\Users\\RRoach\\scoop\\shims\\pwsh.exe",
             "cursorColor" : "#FFFFFF",
             "cursorShape" : "bar",
             "fontFace" : "FuraCode NF Retina",
@@ -314,7 +314,7 @@
             "purple" : "#7B5EF2",
             "red" : "#D64145",
             "white" : "#E4E7F1",
-            "yellow" : "#F1FF40"
+            "yellow" : "#F9F1A5"
         },
         {
             "background" : "#282C34",
