@@ -7,16 +7,7 @@ function Write-Theme {
         [string]
         $with
     )
-
-    #check the last command state and indicate if failed
-    # $promtSymbolColor = $sl.Colors.PromptSymbolColor
-    # If ($lastCommandFailed) {
-    #     $promtSymbolColor = $sl.Colors.WithForegroundColor
-    # }
-
-    # # Writes the postfixes to the prompt
-    # $prompt += Write-Prompt -Object ($sl.PromptSymbols.PromptIndicator + "  ") -ForegroundColor $promtSymbolColor
-
+    
     # Writes the drive portion
     $drive = "~"
     if ($pwd.Path -ne $HOME) {
@@ -37,6 +28,20 @@ function Write-Theme {
         }
     }
 
+    # Python virtual Env
+    # $venv = Get-VirtualEnvName
+    # if (Test-VirtualEnv) {
+        # $BufferWidth = [Console]::BufferWidth
+        # $lineLength = ($line -replace "\u001B.*?{L}").Length
+        
+        # $Align = $BufferWidth - $lineLength - $prompt.Length
+        # $venvAligned = "{0, $Align}" -f $venv
+
+        # $prompt += Write-Prompt -Object "$venvAligned" `
+            # -ForegroundColor $sl.Colors.VirtualEnvForegroundColor
+    # }
+    
+
     $prompt += "`r`n"
     $prompt += "> "
     $prompt
@@ -53,3 +58,4 @@ $sl.PromptSymbols.GitDefaultIndicator = ""
 $sl.PromptSymbols.GitDirtyIndicator = '署'
 $sl.Colors.GitDefaultColor = [ConsoleColor]::DarkGreen
 $sl.Colors.GitDirtyColor = [ConsoleColor]::DarkRed
+$sl.Colors.VirtualEnvForegroundColor = [ConsoleColor]::Green
