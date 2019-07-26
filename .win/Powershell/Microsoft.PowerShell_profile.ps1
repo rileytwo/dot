@@ -10,6 +10,7 @@ if ($IsWindows) {
 
     function Start-Conda {
         (& "C:\Users\RRoach\scoop\apps\miniconda3\current\Scripts\conda.exe" "shell.powershell" "hook") | Out-String | Invoke-Expression
+        $Env:CONDA_PROMPT_MODIFIER=""
     }
 }
 
