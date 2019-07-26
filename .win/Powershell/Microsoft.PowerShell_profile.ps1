@@ -43,6 +43,7 @@ if (Get-Module "ZLocation") {
 if (Get-Module -ListAvailable "PSFzf") {
     Remove-PSReadlineKeyHandler 'Ctrl+r'
     Import-Module PSFzf
+    $Env:FZF_DEFAULT_COMMAND = "rg --files --no-ignore-vcs --hidden"
 }
 
 Set-Theme riley ; if ($?) {
