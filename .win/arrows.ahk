@@ -20,9 +20,13 @@ Return
 !d::Send {Right}   ;; right
 Return
 
+^q::Send !{F4}
+Return
+
 ^h::WinMinimize, A ;; minimize (hide) windows with {control}{h}
 
 #Esc::
+
 
 ;;; FILE EXPLORER
 #If WinActive("ahk_class CabinetWClass")
@@ -46,13 +50,8 @@ Return
 ^Right::Send !{Right}
 #If
 
+
 ;;; EVERNOTE
-#If WinActive("ahk_class ENMainFrame")
-^q::Send !{F4}
-Return
-#If
-
-
 #If WinActive("ahk_class ENMainFrame")
 ^l::^q
 
