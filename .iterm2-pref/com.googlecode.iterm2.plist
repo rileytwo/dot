@@ -50667,7 +50667,7 @@ Show Toolbelt</string>
 	<key>MinimumWeightDifferenceForBoldFont</key>
 	<integer>3</integer>
 	<key>NSColorPanelMode</key>
-	<string>7</string>
+	<string>1</string>
 	<key>NSColorPickerPreferredRGBEntryMode</key>
 	<integer>2</integer>
 	<key>NSColorPickerSlidersDefaults</key>
@@ -50690,8 +50690,8 @@ Show Toolbelt</string>
 	<false/>
 	<key>NSSplitView Subview Frames NSColorPanelSplitView</key>
 	<array>
-		<string>0.000000, 0.000000, 328.000000, 370.000000, NO, NO</string>
-		<string>0.000000, 371.000000, 328.000000, 43.000000, NO, NO</string>
+		<string>0.000000, 0.000000, 328.000000, 384.000000, NO, NO</string>
+		<string>0.000000, 385.000000, 328.000000, 164.000000, NO, NO</string>
 	</array>
 	<key>NSTableView Columns v2 KeyBingingTable</key>
 	<data>
@@ -50727,9 +50727,9 @@ Show Toolbelt</string>
 		<string>@a</string>
 	</dict>
 	<key>NSWindow Frame NSColorPanel</key>
-	<string>1731 335 328 298 1440 -180 1920 1057 </string>
+	<string>1611 248 328 401 1440 -180 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>2384 149 976 700 1440 -180 1920 1057 </string>
+	<string>2634 249 726 600 1440 -180 1920 1057 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -51082,13 +51082,13 @@ Show Toolbelt</string>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.94999999999999996</real>
+				<real>0.94999998809999997</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.94999999999999996</real>
+				<real>0.94999998809999997</real>
 				<key>Red Component</key>
-				<real>0.94999999999999996</real>
+				<real>0.94999998809999997</real>
 			</dict>
 			<key>Guid</key>
 			<string>C2CD2FD3-775C-44B4-AB74-0853DACAE166</string>
@@ -51414,7 +51414,7 @@ Show Toolbelt</string>
 			<key>Non-ASCII Ligatures</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>FiraCode-Retina 13</string>
+			<string>FiraCode-Regular 13</string>
 			<key>Only The Default BG Color Uses Transparency</key>
 			<false/>
 			<key>Open Toolbelt</key>
@@ -58705,7 +58705,7 @@ Show Toolbelt</string>
 	<key>NoSyncLastTipTime</key>
 	<real>585361631.22538805</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>515</integer>
+	<integer>517</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -59554,7 +59554,7 @@ Show Toolbelt</string>
 	<key>ShowPaneTitles</key>
 	<false/>
 	<key>SmartPlacement</key>
-	<false/>
+	<true/>
 	<key>SoundForEsc</key>
 	<false/>
 	<key>SplitPaneDimmingAmount</key>
