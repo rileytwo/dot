@@ -48,5 +48,6 @@ get-pip.py
 
 # extras
 *.links
+*links
 est
 
