@@ -50,4 +50,4 @@ get-pip.py
 *.links
 *links*
 est
-
+*.png
