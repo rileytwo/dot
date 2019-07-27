@@ -13,11 +13,14 @@ automatic_backups/
 hub
 
 # .config/{vim,vifm}
-vifm/colors
+**/vifm/colors/
 plugged/
 autoload/
 share/
 log
+
+# pycache
+**/__pycache__/
 
 # .win/.R/
 desktop.ini
