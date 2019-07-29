@@ -28,9 +28,6 @@ desktop.ini
 # conemu
 .win/conemu/ConEmu.xml
 
-# keypirinha
-*.history
-
 # .R/
 .Rproj.user
 *rsthemes_*
@@ -51,3 +48,11 @@ get-pip.py
 *links*
 est
 *.png
+
+# keypirinha
+.win/Keypirinha/portable/Profile/User/*
+!filescatalog.ini
+!Keypirinha.ini
+
+*.history
+
