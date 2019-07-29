@@ -1,4 +1,4 @@
 # vim: filetype=conf
 --theme="base16"
 --style="numbers,changes,header"
---pager="less -RF"
+--pager="less"
