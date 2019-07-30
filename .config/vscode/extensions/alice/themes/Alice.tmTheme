@@ -103,7 +103,7 @@
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#3fb2ff</string>
+                <string>#96ffb1</string>
             </dict>
         </dict>
         <dict>
@@ -214,9 +214,9 @@
             <key>settings</key>
             <dict>
                 <key>fontStyle</key>
-                <string>bold</string>
+                <string></string>
                 <key>foreground</key>
-                <string>#DF5F5F</string>
+                <string>#3fb2ff</string>
             </dict>
         </dict>
         <dict>
@@ -353,7 +353,7 @@
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#66a9ec</string>
+                <string>#39bae6</string>
             </dict>
         </dict>
 
@@ -1067,7 +1067,52 @@
                 <string>#9691ff</string>
             </dict>
         </dict>
-
+        <dict>
+            <key>name</key>
+            <string>PowerShell Drive</string>
+            <key>scope</key>
+            <string>
+                support.variable.drive.powershell
+            </string>
+            <key>settings</key>
+            <dict>
+                <key>fontStyle</key>
+                <string></string>
+                <key>foreground</key>
+                <string>#96ffb1</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>PowerShell ReadWrite Variable</string>
+            <key>scope</key>
+            <string>
+                variable.other.readwrite.powershell
+            </string>
+            <key>settings</key>
+            <dict>
+                <key>fontStyle</key>
+                <string></string>
+                <key>foreground</key>
+                <string>#E6E6E6</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>PowerShell Hashtable Begin</string>
+            <key>scope</key>
+            <string>
+                keyword.other.hashtable.begin.powershell,
+                keyword.other.hashtable.end.powershell
+            </string>
+            <key>settings</key>
+            <dict>
+                <key>fontStyle</key>
+                <string></string>
+                <key>foreground</key>
+                <string>#F9F1A5</string>
+            </dict>
+        </dict>
 
         <!-- TWIG -->
         <dict>
