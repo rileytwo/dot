@@ -64,8 +64,16 @@ function Get-Path {
     $Env:Path.Split(';')
 }
 Set-Alias -name 'path' -value Get-Path
-Set-Alias -name 'l' -value Get-ChildItemColor
+
+Remove-Item alias:where -Force
+function Get-Commands {
+    cmd /c where $args
+}
+Set-Alias -name 'where' -value Get-Commands
 Set-Alias -name 'which' -value Get-Command
+Set-Alias -name 'l' -value Get-ChildItemColor
+
+
 #
 # // git
 function Send-GitCommit {
