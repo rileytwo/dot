@@ -139,5 +139,6 @@
     },
     "editor.fontFamily": "\"FuraCodeNerdFontComplete-Retina\", \"FuraCode Retina\", \"FuraCode NF Retina\", \"FuraCode NF\", \"Fira Code Retina\", \"SFMono-Regular\", Menlo, Monaco, 'Courier New', monospace",
     "workbench.enableExperiments": false,
-    "workbench.settings.enableNaturalLanguageSearch": false
+    "workbench.settings.enableNaturalLanguageSearch": false,
+    "vsicons.dontShowNewVersionMessage": true
 }
