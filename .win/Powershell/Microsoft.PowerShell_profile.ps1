@@ -28,7 +28,7 @@ $PSDefaultParameterValues = @{
 }
 
 # // module imports
-# (FIXME there has to be a better way than checking each module
+# (TODO: there has to be a better way than checking each module
 # before importing)
  
 if (Get-Module "Get-ChildItemColor") {
@@ -48,6 +48,10 @@ if (Get-Module -ListAvailable "PSFzf") {
     Import-Module PSFzf
     $Env:FZF_DEFAULT_COMMAND = "rg --files --no-ignore-vcs --hidden"
 }
+if (Get-Module -ListAvailable "git-aliases") {
+    Import-Module git-aliases -DisableNameChecking
+}
+
 
 Set-Theme riley ; if ($?) {
     Set-Theme riley
