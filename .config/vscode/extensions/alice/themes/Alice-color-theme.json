@@ -1,16 +1,59 @@
 {
 	"tokenColors": "./Alice.tmTheme",
 	"colors": {
-		"button.background": "#e06c75",
-		"badge.background": "#e06c75",
 
+		// UI Elements
+		"focusBorder": "#3f3e6d",
+		"foreground": "#a1a1a1",
+		"widget.shadow": "#111111",
+
+		"input.background": "#222222",
+		"input.border": "#2b2b2b",
+		"inputOption.activeBorder": "#333333",
+		"input.foreground": "#ffffff",
+
+		"activityBar.background": "#151515",
+		"titleBar.activeBackground": "#151515",
+		
+		"statusBar.background": "#151515",
+		"statusBar.noFolderBackground": "#151515",
+		"statusBar.debuggingBackground": "#151515",
+		"statusBar.border": "#151515",
+
+		"tab.inactiveBackground": "#151515",
+		"tab.activeBackground": "#151515",
+		"tab.activeModifiedBorder": "#9691ff",
+		"tab.activeBorder": "#9691ff",
+		
+		"list.activeSelectionForeground": "#e3e3e3",
+		"list.focusBackground": "#4d4c85",
+		"list.focusForeground": "#ffffff",
+		"list.hoverBackground": "#2c2c4d",
+		"list.hoverForeground": "#e3e3e3",
+		"list.highlightForeground": "#e3e3e3",
+
+		"sideBar.background": "#151515",
+		"sideBar.border": "#151515",
+
+		"dropdown.background": "#222222",
+		"dropdown.border": "#2b2b2b",
+		"dropdown.foreground": "#e3e3e3",
+
+		"button.background": "#9691ff",
+		"button.foreground": "#FFFFFF",
+		"button.hoverBackground": "#3f3e6d",
+
+		
+		// Editor
 		"editor.background": "#151515",
-		"editor.lineHighlightBackground": "#1E1E1E",
-		"editor.findMatchBackground": "#3FB2FF40",
-		"editor.findMatchHighlightBackground": "#3FB2FF20",
-        "editor.selectionBackground": "#625F5F",
 		"editor.foreground": "#ffffff",
-		"editor.selectionHighlightBackground": "#3838388a",
+		"editor.lineHighlightBackground": "#1E1E1E",
+
+		"editor.findMatchBackground": "#666666",
+		"editor.findMatchHighlightBackground": "#333333",
+
+        "editor.selectionBackground": "#444444",
+		"editor.selectionHighlightBackground": "#222222",
 
 		"editorCursor.foreground": "#FF7E81",
 		"editorWhitespace.foreground": "#ffffff",
@@ -21,24 +64,7 @@
 		"editorBracketMatch.border": "#000000",
 		"editorBracketMatch.background": "#505050",
 		"editorLineNumber.activeForeground": "#00beff",
-		"editorLineNumber.foreground": "#a6a6a6",
-
-		"activityBar.background": "#151515",
-
-		"titleBar.activeBackground": "#151515",
-
-		"statusBar.background": "#151515",
-		"statusBar.noFolderBackground": "#151515",
-		"statusBar.debuggingBackground": "#151515",
-		"statusBar.border": "#222222",
-
-		"tab.inactiveBackground": "#151515",
-		"tab.activeBackground": "#151515",
-		"tab.activeModifiedBorder": "#00beff",
-		"tab.activeBorder": "#00beff",
-
-		"sideBar.background": "#151515",
-		"sideBar.border": "#222222"
+		"editorLineNumber.foreground": "#a6a6a6"
 
 	},
 	"name": "Alice"
