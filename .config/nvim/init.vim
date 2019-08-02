@@ -13,7 +13,7 @@ Plug 'tpope/vim-sleuth'
 " // Completion, snippets
 Plug 'w0rp/ale'
 Plug 'Shougo/deoplete.nvim', {'do': ':UpdateRemotePlugins'}
-Plug 'deoplete-plugins/deoplete-zsh'
+Plug 'deoplete-plugins/deoplete-zsh', {'for': 'zsh'}
 Plug 'ncm2/ncm2'
 Plug 'roxma/nvim-yarp'
 Plug 'ncm2/ncm2-path'
@@ -23,8 +23,8 @@ Plug 'sirver/UltiSnips',
 Plug 'ncm2/ncm2-ultisnips'
 
 " // Lang specific
-Plug 'tpope/vim-markdown'
-Plug 'PProvost/vim-ps1'
+Plug 'tpope/vim-markdown', {'for': 'markdown'}
+Plug 'PProvost/vim-ps1', {'for': 'powershell'}
 Plug 'jalvesaq/Nvim-R', {'for': 'R'}
 Plug 'gaalcaras/ncm-R', {'for': 'R'}
 Plug 'dkarter/bullets.vim'

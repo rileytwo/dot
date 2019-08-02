@@ -69,15 +69,18 @@ let g:vim_indent_cont = &shiftwidth
 "" // plugins
 call plug#begin('~/.vim/plugged')
 
-Plug 'tpope/vim-markdown'
+Plug 'tpope/vim-markdown', {'for': 'markdown'}
 Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-scriptease'
+Plug 'tpope/vim-sleuth'
 
 Plug 'itchyny/vim-gitbranch'
 Plug 'Yggdroot/indentLine'
 
-Plug 'Shougo/deoplete.nvim'
+Plug 'Shougo/deoplete.nvim', {'do': ':UpdateRemotePlugins'}
+Plug 'deoplete-plugins/deoplete-zsh', {'for': 'zsh'}
 Plug 'ncm2/ncm2'
 Plug 'ncm2/ncm2-path'
 Plug 'ncm2/ncm2-jedi'
@@ -86,7 +89,7 @@ Plug 'roxma/nvim-yarp'
 Plug 'roxma/vim-hug-neovim-rpc'
 
 Plug 'jalvesaq/Nvim-R', {'for': 'R'}
-Plug 'PProvost/vim-ps1'
+Plug 'PProvost/vim-ps1', {'for': 'powershell'}
 Plug 'scrooloose/nerdtree', {'on': 'NERDTreeToggle'}
 Plug 'ryanoasis/vim-devicons'
 
@@ -111,7 +114,6 @@ endif
 
 Plug 'w0rp/ale'
 Plug 'maximbaz/lightline-ale'
-
 
 call plug#end()
 
