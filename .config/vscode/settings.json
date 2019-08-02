@@ -141,5 +141,8 @@
     "workbench.enableExperiments": false,
     "workbench.settings.enableNaturalLanguageSearch": false,
     "vsicons.dontShowNewVersionMessage": true,
-    "color-highlight.markRuler": false
+    "color-highlight.markRuler": false,
+    "[css]": {
+        "editor.defaultFormatter": "HookyQR.beautify"
+    }
 }
