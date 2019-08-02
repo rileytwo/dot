@@ -7,3 +7,6 @@ if has('win32') || has('win64') && &term =~# 'nvim'
     hi! Normal guibg=#171717
 endif
 
+if has('gui_vimr')
+    hi! Normal guibg=#151515
+endif
