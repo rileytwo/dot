@@ -50804,11 +50804,11 @@ Show Toolbelt</string>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.98823529409999999</real>
+				<real>0.98823529481887817</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.75686274509999996</real>
+				<real>0.75686275959014893</real>
 				<key>Red Component</key>
 				<real>0.0</real>
 			</dict>
@@ -50966,13 +50966,13 @@ Show Toolbelt</string>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.08235294118</real>
+				<real>0.082352941176470587</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.08235294118</real>
+				<real>0.082352941176470587</real>
 				<key>Red Component</key>
-				<real>0.08235294118</real>
+				<real>0.082352941176470587</real>
 			</dict>
 			<key>Background Image Location</key>
 			<string></string>
@@ -58671,6 +58671,7 @@ Show Toolbelt</string>
 	<array>
 		<string>3.3.0beta9</string>
 		<string>3.3.0beta13</string>
+		<string>3.3.0</string>
 		<string>3.3.0beta15</string>
 		<string>3.3.0beta11</string>
 	</array>
@@ -58706,14 +58707,14 @@ Show Toolbelt</string>
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1440, 900}}</string>
 		<key>topLeft</key>
-		<string>{234, 755}</string>
+		<string>{10, 810}</string>
 	</dict>
 	<key>NoSyncInstallationId</key>
 	<string>78E2F140-557C-4115-91AC-4DB26E1EFA8B</string>
 	<key>NoSyncLastTipTime</key>
 	<real>585361631.22538805</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>534</integer>
+	<integer>540</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -58808,6 +58809,14 @@ Show Toolbelt</string>
 				<true/>
 				<key>name</key>
 				<string>columns</string>
+				<key>nonterminalContext</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>isTerminal</key>
+				<true/>
+				<key>name</key>
+				<string>tab.tmuxWindowTitle</string>
 				<key>nonterminalContext</key>
 				<integer>0</integer>
 			</dict>
@@ -59546,7 +59555,7 @@ Show Toolbelt</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-07-27T01:09:30Z</date>
+	<date>2019-08-01T21:14:33Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>Selection Respects Soft Boundaries</key>
@@ -62082,7 +62091,7 @@ Show Toolbelt</string>
 	<key>findMode_iTerm</key>
 	<integer>0</integer>
 	<key>iTerm Version</key>
-	<string>3.3.0beta15</string>
+	<string>3.3.0</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
