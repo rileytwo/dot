@@ -25,5 +25,9 @@ if (( $+commands[exa] )); then
     alias ee='exa -lh'
 fi
 
+if (( $+commands[trash] )); then
+    alias rm='trash'
+fi
+
 alias gs='git status'
 alias hsg='history | grep'
