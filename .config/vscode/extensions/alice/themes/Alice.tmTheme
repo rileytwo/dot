@@ -247,19 +247,6 @@
         </dict>
         <dict>
             <key>name</key>
-            <string>Tag attribute</string>
-            <key>scope</key>
-            <string>entity.other.attribute-name</string>
-            <key>settings</key>
-            <dict>
-                <key>fontStyle</key>
-                <string></string>
-                <key>foreground</key>
-                <string>#8cdaff</string>
-            </dict>
-        </dict>
-        <dict>
-            <key>name</key>
             <string>Library function</string>
             <key>scope</key>
             <string>support.function</string>
@@ -343,17 +330,6 @@
             <dict>
                 <key>foreground</key>
                 <string>#3fb2ff</string>
-            </dict>
-        </dict>
-        <dict>
-            <key>name</key>
-            <string>Attribute IDs</string>
-            <key>scope</key>
-            <string>entity.other.attribute-name.id, punctuation.definition.entity</string>
-            <key>settings</key>
-            <dict>
-                <key>foreground</key>
-                <string>#39bae6</string>
             </dict>
         </dict>
 
@@ -835,15 +811,116 @@
         <!-- CSS -->
         <dict>
             <key>name</key>
-            <string>CSS Functions &#x2f; Property Values</string>
+            <string>CSS Functions: Property Values (& !important)</string>
             <key>scope</key>
-            <string>support.function.misc.css, support.constant.property-value.css, support.constant.font-name.css</string>
+            <string>
+                support.function.misc.css,
+                support.constant.property-value.css,
+                support.constant.font-name.css,
+                keyword.other.important.css
+            </string>
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#ff6666</string>
+                <string>#FF8F86</string>
             </dict>
         </dict>
+        <dict>
+            <key>name</key>
+            <string>CSS Control @ Rule</string>
+            <key>scope</key>
+            <string>
+                keyword.control.at-rule.css,
+                punctuation.definition.keyword.css
+            </string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#9691FF</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>CSS Control @ Rule Headers</string>
+            <key>scope</key>
+            <string>
+                meta.at-rule.header.css
+            </string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#aca8ff</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>CSS Attributes</string>
+            <key>scope</key>
+            <string>
+                entity.other.attribute-name.class.css,
+                meta.selector.css,
+                meta.at-rule.body.css
+            </string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#3FB2FF</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>Tag attribute</string>
+            <key>scope</key>
+            <string>
+                entity.other.attribute-name
+            </string>
+            <key>settings</key>
+            <dict>
+                <key>fontStyle</key>
+                <string></string>
+                <key>foreground</key>
+                <string>#f9f1a5</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>CSS Pseudo Classes</string>
+            <key>scope</key>
+            <string>
+                entity.other.attribute-name.pseudo-class.css
+            </string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#FF7E81</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>CSS Name Tags</string>
+            <key>scope</key>
+            <string>
+                entity.name.tag.css
+            </string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#f7a9a8</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>Attribute IDs</string>
+            <key>scope</key>
+            <string>entity.other.attribute-name.id, punctuation.definition.entity</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#9691FF</string>
+            </dict>
+        </dict>
+
+
 
 
         <!-- MARKDOWN -->
