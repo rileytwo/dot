@@ -29,5 +29,9 @@ if (( $+commands[trash] )); then
     alias rm='trash'
 fi
 
+if (( $+commands[foaas-cli] )); then
+    alias f='foaas-cli'
+fi
+
 alias gs='git status'
 alias hsg='history | grep'
