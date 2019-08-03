@@ -50735,7 +50735,7 @@ Show Toolbelt</string>
 	<key>NSWindow Frame NSColorPanel</key>
 	<string>1611 248 328 401 1440 -180 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>1208 394 712 597 0 0 1920 1057 </string>
+	<string>948 325 972 702 0 0 1920 1057 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -58714,7 +58714,7 @@ Show Toolbelt</string>
 	<key>NoSyncLastTipTime</key>
 	<real>585361631.22538805</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>552</integer>
+	<integer>553</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -60890,7 +60890,7 @@ Show Toolbelt</string>
 				<key>Has Toolbelt</key>
 				<false/>
 				<key>Height</key>
-				<real>597</real>
+				<real>702</real>
 				<key>Hide After Opening</key>
 				<false/>
 				<key>Hiding Toolbelt Should Resize Window</key>
@@ -61277,7 +61277,7 @@ Show Toolbelt</string>
 												<real>0.94999998809999997</real>
 											</dict>
 											<key>Guid</key>
-											<string>A56985F5-ECC4-4E84-BFB8-4D08FB60E4BC</string>
+											<string>1C4A2204-5FA6-448F-B14B-BC33508FA4DC</string>
 											<key>Has Hotkey</key>
 											<false/>
 											<key>Horizontal Spacing</key>
@@ -61967,7 +61967,7 @@ Show Toolbelt</string>
 											<string>alice</string>
 										</dict>
 										<key>Columns</key>
-										<integer>88</integer>
+										<integer>120</integer>
 										<key>Commands</key>
 										<array>
 											<string>cd .dot</string>
@@ -61977,6 +61977,16 @@ Show Toolbelt</string>
 											<string>gp</string>
 											<string>e</string>
 											<string>cd</string>
+											<string>cd .dot</string>
+											<string>gs</string>
+											<string>git add .iterm2-pref/com.googlecode.iterm2.plist &amp;&amp; git commit -m 'iterm2'</string>
+											<string>gp</string>
+											<string>cd</string>
+											<string>brew update &amp;&amp; brew upgrade</string>
+											<string>pip search kivy</string>
+											<string>brew search cinebench</string>
+											<string>brew info cinebench</string>
+											<string>brew cask install cinebench</string>
 										</array>
 										<key>Directories</key>
 										<array>
@@ -61993,14 +62003,98 @@ Show Toolbelt</string>
 											<string>/Users/riley/.dot</string>
 											<string>/Users/riley/.dot</string>
 											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
 										</array>
 										<key>Environment</key>
 										<dict>
 											<key>PWD</key>
-											<string>/Users/riley/.dot</string>
+											<string>/Users/riley</string>
 										</dict>
 										<key>Hosts</key>
 										<array>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
 											<dict>
 												<key>Host name</key>
 												<string>rmbp</string>
@@ -62095,7 +62189,7 @@ Show Toolbelt</string>
 											<string>Shell Launcher</string>
 										</dict>
 										<key>Rows</key>
-										<integer>30</integer>
+										<integer>36</integer>
 										<key>Session GUID</key>
 										<string>E7DFCCBA-2A46-4468-8A10-5FAD02F8E40E</string>
 										<key>Shell Integration Ever Used</key>
@@ -62112,9 +62206,9 @@ Show Toolbelt</string>
 									<key>frame</key>
 									<dict>
 										<key>height</key>
-										<real>559</real>
+										<real>664</real>
 										<key>width</key>
-										<real>712</real>
+										<real>972</real>
 										<key>x</key>
 										<real>0.0</real>
 										<key>y</key>
@@ -62127,9 +62221,9 @@ Show Toolbelt</string>
 							<key>frame</key>
 							<dict>
 								<key>height</key>
-								<real>559</real>
+								<real>664</real>
 								<key>width</key>
-								<real>712</real>
+								<real>972</real>
 								<key>x</key>
 								<real>0.0</real>
 								<key>y</key>
@@ -62157,13 +62251,13 @@ Show Toolbelt</string>
 				<key>Use Transparency</key>
 				<false/>
 				<key>Width</key>
-				<real>712</real>
+				<real>972</real>
 				<key>Window Type</key>
 				<integer>13</integer>
 				<key>X Origin</key>
-				<real>1208</real>
+				<real>948</real>
 				<key>Y Origin</key>
-				<real>394</real>
+				<real>325</real>
 			</dict>
 		</array>
 	</dict>
