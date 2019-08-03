@@ -50492,7 +50492,7 @@
 	<key>DarkThemeHasBlackTitlebar</key>
 	<false/>
 	<key>Default Arrangement Name</key>
-	<string>Arrangement 2</string>
+	<string>Arrangement 1</string>
 	<key>Default Bookmark Guid</key>
 	<string>C2CD2FD3-775C-44B4-AB74-0853DACAE166</string>
 	<key>Default Toolbelt Width</key>
@@ -50706,7 +50706,7 @@ Show Toolbelt</string>
 	gAKACoAN0xAJChEVGVdOUy5rZXlzoxITFIADgASABaMWFxiABoAHgAiACVpJZGVudGlm
 	aWVyVVdpZHRoVkhpZGRlblEwI0BowAAAAAAACNIhIiMkWiRjbGFzc25hbWVYJGNsYXNz
 	ZXNcTlNEaWN0aW9uYXJ5oiMlWE5TT2JqZWN00xAJCicrGaMSExSAA4AEgAWjLC0YgAuA
-	DIAIgAlRMSNAc7Gdsi0OVtIhIjM0Xk5TTXV0YWJsZUFycmF5ozM1JVdOU0FycmF5XxAP
+	DIAIgAlRMSNAdKGdsi0OVtIhIjM0Xk5TTXV0YWJsZUFycmF5ozM1JVdOU0FycmF5XxAP
 	TlNLZXllZEFyY2hpdmVy0Tg5VUFycmF5gAEACAARABoAIwAtADIANwBGAEwAUQBcAGMA
 	ZgBoAGoAbABzAHsAfwCBAIMAhQCJAIsAjQCPAJEAnACiAKkAqwC0ALUAugDFAM4A2wDe
 	AOcA7gDyAPQA9gD4APwA/gEAAQIBBAEGAQ8BFAEjAScBLwFBAUQBSgAAAAAAAAIBAAAA
@@ -50735,7 +50735,7 @@ Show Toolbelt</string>
 	<key>NSWindow Frame NSColorPanel</key>
 	<string>1611 248 328 401 1440 -180 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>948 325 972 702 0 0 1920 1057 </string>
+	<string>468 175 972 702 0 0 1440 877 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -58705,16 +58705,16 @@ Show Toolbelt</string>
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
 		<key>screenFrame</key>
-		<string>{{0, 0}, {1920, 1080}}</string>
+		<string>{{0, 0}, {1440, 900}}</string>
 		<key>topLeft</key>
-		<string>{104, 928}</string>
+		<string>{133, 836}</string>
 	</dict>
 	<key>NoSyncInstallationId</key>
 	<string>78E2F140-557C-4115-91AC-4DB26E1EFA8B</string>
 	<key>NoSyncLastTipTime</key>
 	<real>585361631.22538805</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>553</integer>
+	<integer>556</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -59555,7 +59555,7 @@ Show Toolbelt</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-08-01T21:14:33Z</date>
+	<date>2019-08-03T22:39:07Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>Selection Respects Soft Boundaries</key>
