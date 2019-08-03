@@ -199,7 +199,8 @@
         ],
         "requestedTheme" : "system",
         "showTabsInTitlebar" : false,
-        "showTerminalTitleInTitlebar" : false
+        "showTerminalTitleInTitlebar" : false,
+        "wordDelimiters" : " ./\\()\"'-:,.;<>~!@#$%^&*|+=[]{}~?\u2502"
     },
     "profiles" : 
     [
@@ -207,7 +208,7 @@
             "acrylicOpacity" : 0.75,
             "closeOnExit" : true,
             "colorScheme" : "Riley",
-            "commandline": "C:\\Users\\RRoach\\scoop\\shims\\pwsh.exe",
+            "commandline" : "C:\\Users\\RRoach\\scoop\\shims\\pwsh.exe",
             "cursorColor" : "#FFFFFF",
             "cursorShape" : "bar",
             "fontFace" : "FuraCode NF Retina",
