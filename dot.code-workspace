@@ -1,13 +1,10 @@
 {
-	"folders": [
-		{
-			"path": "."
-		}
-	],
+    "folders": [{
+        "path": "."
+    }],
     "settings": {
         "editor.formatOnType": true,
         "editor.formatOnPaste": true,
-        "editor.formatOnSave": true,
         "files.watcherExclude": {
             "**/.brew": true,
             "**/.git": true,
@@ -20,7 +17,7 @@
         },
         "files.exclude": {
             "**/.Rproj.user": true
-        },
-        "StatusBarTag.text": "dot"
+        }
+        // ,"StatusBarTag.text": "dot"
     }
 }
