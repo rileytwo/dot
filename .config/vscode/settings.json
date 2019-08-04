@@ -152,5 +152,7 @@
     },
     "lua.format.indentCount": 3,
     "lua.targetVersion": "5.3",
-    "codemetrics.basics.ComplexityColorNormal": "#fff7a3"
+    "codemetrics.basics.ComplexityColorNormal": "#fff7a3",
+    "editor.parameterHints.enabled": false,
+    "code-runner.fileDirectoryAsCwd": true
 }
