@@ -29,7 +29,6 @@
     "editor.tabCompletion": "onlySnippets",
     "python.autoComplete.addBrackets": true,
     "editor.fontSize": 13,
-    "lua.format.indentCount": 4,
     "markdown.extension.print.imgToBase64": true,
     "markdown.extension.toc.githubCompatibility": true,
     "json.format.enable": false,
@@ -38,8 +37,8 @@
     //"vim.disableExtension": true,
     // "gitProjectManager.displayProjectPath": true,
     // "gitProjectManager.baseProjectsFolders": [
-        // "/Users/Riley/.dot",
-        // "/Users/Riley/Documents/Projects/github"
+    // "/Users/Riley/.dot",
+    // "/Users/Riley/Documents/Projects/github"
     // ],
     // "gitProjectManager.maxDepthRecursion": 1,
     // "gitProjectManager.checkRemoteOrigin": false,
@@ -121,14 +120,14 @@
     "javascript.validate.enable": false,
     "workbench.iconTheme": "eq-material-theme-icons-darker",
     "explorer.sortOrder": "filesFirst",
-    "r.lsp.diagnostics": false,
+    // "r.lsp.diagnostics": false,
     "outline.problems.enabled": false,
     "extensions.autoCheckUpdates": false,
     "git.detectSubmodulesLimit": 2,
     "git.autorefresh": false,
     "git.autoRepositoryDetection": false,
     "git.enabled": false,
-    "StatusBarTag.text": "",
+    // "StatusBarTag.text": "",
     "editor.formatOnPaste": true,
     "editor.formatOnSave": true,
     "editor.formatOnType": false,
@@ -144,5 +143,14 @@
     "color-highlight.markRuler": false,
     "[css]": {
         "editor.defaultFormatter": "HookyQR.beautify"
-    }
+    },
+    "[lua]": {
+        "editor.formatOnPaste": false,
+        "editor.formatOnSave": false,
+        "editor.tabSize": 3,
+        "editor.autoIndent": true
+    },
+    "lua.format.indentCount": 3,
+    "lua.targetVersion": "5.3",
+    "codemetrics.basics.ComplexityColorNormal": "#fff7a3"
 }
