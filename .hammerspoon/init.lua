@@ -19,30 +19,37 @@
 hs.console.darkMode(true)
 
 hs.window.animationDuration = 0
-previous_frame_sizes = {}
 modification_keys = {"cmd", "ctrl", "alt", "shift"}
+previous_frame_sizes = {}
 
-hs.hotkey.bind(modification_keys, "R", function()
-	hs.notify.new({
-        title           = "Hammerspoon",
-        informativeText = "Config reloaded!"
-    }):send()
-    hs.reload()
-    --hs.alert.show("Reloaded") 
-end)
+hs.hotkey.bind(
+	modification_keys, "R",
+	function()
+		hs.notify.new({
+			title           = "Hammerspoon",
+			informativeText = "Config reloaded!"
+		}):send()
+		hs.reload()
+	end
+)
 
-hs.hotkey.bind(modification_keys, "W", function()
-	hs.alert.show("Hello world!")
-end)
+hs.hotkey.bind(
+	modification_keys, "W",
+	function()
+		hs.alert.show("Hello world!")
+	end
+)
 
 function is_almost_equal_to_win_frame(geo)
 	local epsilon = 2
 	local win = hs.window.focusedWindow()
 	local win_frame = win:frame()
-	if  math.abs(win_frame.x - geo.x) < epsilon and
-	math.abs(win_frame.y - geo.y) < epsilon and
-	math.abs(win_frame.w - geo.w) < epsilon and
-	math.abs(win_frame.h - geo.h) < epsilon then
+
+	if math.abs(win_frame.x - geo.x) < epsilon and
+	   math.abs(win_frame.y - geo.y) < epsilon and
+	   math.abs(win_frame.w - geo.w) < epsilon and
+	   math.abs(win_frame.h - geo.h) < epsilon then
+
 		return true
 	else
 		return false
@@ -55,9 +62,10 @@ function get_screen_win_frame()
 end
 
 function get_fill_left_win_frame()
-	local win = hs.window.focusedWindow()
-	local win_frame = win:frame()
+	local win          = hs.window.focusedWindow()
+	local win_frame    = win:frame()
 	local screen_frame = win:screen():frame()
+
 	win_frame.x = screen_frame.x
 	win_frame.y = screen_frame.y
 	win_frame.w = screen_frame.w / 2
@@ -66,8 +74,8 @@ function get_fill_left_win_frame()
 end
 
 function get_fill_right_win_frame()
-	local win         = hs.window.focusedWindow()
-	local win_frame   = win:frame()
+	local win          = hs.window.focusedWindow()
+	local win_frame    = win:frame()
 	local screen_frame = win:screen():frame()
 	win_frame.x = screen_frame.x + screen_frame.w / 2
 	win_frame.y = screen_frame.y
@@ -78,8 +86,9 @@ end
 
 function is_predefined_win_frame_size()
 	if is_almost_equal_to_win_frame(get_screen_win_frame()) or
-	is_almost_equal_to_win_frame(get_fill_left_win_frame()) or
-	is_almost_equal_to_win_frame(get_fill_right_win_frame()) then
+		is_almost_equal_to_win_frame(get_fill_left_win_frame()) or
+		is_almost_equal_to_win_frame(get_fill_right_win_frame()) then
+
 		return true
 	else
 		return false
@@ -87,22 +96,27 @@ function is_predefined_win_frame_size()
 end
 
 function bind_resize_and_restore_keys(key, resize_frame_fn)
-	hs.hotkey.bind(modification_keys, key, function()
-		local win         = hs.window.focusedWindow()
-		local win_frame   = win:frame()
-		local targetFrame = resize_frame_fn()
-		
-		if is_predefined_win_frame_size() and
-		not is_almost_equal_to_win_frame(targetFrame) then
-			win:setFrame(targetFrame)
-		elseif previous_frame_sizes[win:id()] then
-			win:setFrame(previous_frame_sizes[win:id()])
-			previous_frame_sizes[win:id()] = nil
-		else
-			previous_frame_sizes[win:id()] = win_frame
-			win:setFrame(targetFrame)
+	hs.hotkey.bind(
+		modification_keys, key,
+		function()
+			local win         = hs.window.focusedWindow()
+			local win_frame   = win:frame()
+			local targetFrame = resize_frame_fn()
+
+			if is_predefined_win_frame_size() and not
+				is_almost_equal_to_win_frame(targetFrame) then
+
+				win:setFrame(targetFrame)
+			elseif previous_frame_sizes[win:id()] then
+
+				win:setFrame(previous_frame_sizes[win:id()])
+				previous_frame_sizes[win:id()] = nil
+			else
+				previous_frame_sizes[win:id()] = win_frame
+				win:setFrame(targetFrame)
+			end
 		end
-	end)
+	)
 end
 
 bind_resize_and_restore_keys("F", get_screen_win_frame)
@@ -114,8 +128,8 @@ bind_resize_and_restore_keys("]", get_fill_right_win_frame)
 function is_right()
 	local win          = hs.window.focusedWindow()
 	local win_frame    = win:frame()
-    local screen_frame = win:screen():frame()
-	
+	local screen_frame = win:screen():frame()
+
 	if (screen_frame.w - (win_frame.x + win_frame.w)) <= 50 then
 		return true
 	else
@@ -127,7 +141,7 @@ end
 function is_top()
 	local win       = hs.window.focusedWindow()
 	local win_frame = win:frame()
-	
+
 	if win_frame.y <= 100 then
 		return true
 	else
@@ -141,7 +155,7 @@ hs.hotkey.bind(modification_keys, "H", function()
 	local win          = hs.window.focusedWindow()
 	local win_frame    = win:frame()
 	local screen_frame = win:screen():frame()
-	
+
 	if is_right() and win_frame.x >= 0 then
 		win_frame.x = win_frame.x - 50
 		win_frame.w = win_frame.w + 50
@@ -161,7 +175,7 @@ hs.hotkey.bind(modification_keys, "L", function()
 	-- decrease window width
 	local win = hs.window.focusedWindow()
 	local win_frame = win:frame()
-	
+
 	if is_right() then
 		win_frame.x = win_frame.x + 50
 		win_frame.w = win_frame.w - 50
@@ -176,7 +190,7 @@ hs.hotkey.bind(modification_keys, "K", function()
 	-- increase window height
 	local win       = hs.window.focusedWindow()
 	local win_frame = win:frame()
-	
+
 	if is_top() then
 		win_frame.h = win_frame.h + 50
 		win:setFrame(win_frame)
@@ -191,9 +205,8 @@ hs.hotkey.bind(modification_keys, "J", function()
 	local win          = hs.window.focusedWindow()
 	local win_frame    = win:frame()
 	local screen_frame = win:screen():frame()
-	
+
 	if is_top() then
-		--win_frame.y = win_frame.y + 50
 		win_frame.h = win_frame.h - 50
 		win:setFrame(win_frame)
 	else
@@ -204,10 +217,10 @@ end)
 
 hs.hotkey.bind(modification_keys, "Right", function()
 	-- move to screen right
-	--   wraps around to first screen
+	-- wraps around to first screen
 	local win = hs.window.focusedWindow()
 	local win_screen = win:screen()
-	
+
 	win:moveToScreen(win_screen:next())
 end)
 
@@ -216,6 +229,6 @@ hs.hotkey.bind(modification_keys, "Left", function()
 	--   wraps around to last screen
 	local win = hs.window.focusedWindow()
 	local win_screen = win:screen()
-	
+
 	win:moveToScreen(win_screen:previous())
 end)
