@@ -27,6 +27,7 @@ $PSDefaultParameterValues = @{
     "Format-Table:Autosize" = $True
 }
 
+
 # // module imports
 # (TODO: there has to be a better way than checking each module
 # before importing)
@@ -40,9 +41,6 @@ if (Get-Module "posh-git") {
 if (Get-Module "oh-my-posh") {
     Import-Module oh-my-posh -DisableNameChecking
 }
-if (Get-Module "ZLocation") {
-    Import-Module ZLocation
-}
 if (Get-Module -ListAvailable "PSFzf") {
     Remove-PSReadlineKeyHandler 'Ctrl+r'
     Import-Module PSFzf
@@ -51,6 +49,10 @@ if (Get-Module -ListAvailable "PSFzf") {
 if (Get-Module -ListAvailable "git-aliases") {
     Import-Module git-aliases -DisableNameChecking
 }
+Invoke-Expression ($(
+        lua "C:\Users\RRoach\github\z\z.lua" --init powershell
+    ) -join "`n"
+) 
 
 
 Set-Theme riley ; if ($?) {
