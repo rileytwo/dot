@@ -7,6 +7,7 @@ if ($IsWindows) {
 
     $Env:PSModulePath += ";C:\Users\RRoach\scoop\modules"
     $Env:Path += ";C:\ProgramData\jetpack\bin"
+    $Env:Path += ";C:\Users\RRoach\.cargo\bin"
 
     function Start-Conda {
         (& "C:\Users\RRoach\scoop\apps\miniconda3\current\Scripts\conda.exe" "shell.powershell" "hook") | Out-String | Invoke-Expression
