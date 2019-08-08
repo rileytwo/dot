@@ -12,5 +12,6 @@ fi
 
 for d in "${ZSH_CUSTOM_PLUGS}"/*;
     do
-        [ -d "$d" ] && cd "$d"; echo "${BL}Updating $d${END}"; git pull --rebase
+        [ -d "$d" ] \
+            && cd "$d"; echo "${BL}Updating $d${END}"; git pull --rebase
 done;
