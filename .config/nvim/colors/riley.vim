@@ -17,6 +17,7 @@ let g:colors_name = 'riley'
 hi!               ColorColumn ctermbg = NONE                guibg = NONE
 hi!              CursorColumn ctermbg = NONE                guibg = NONE
 hi!                CursorLine cterm   = NONE ctermbg = 234  guibg = #1e1e1e
+hi!                     Class                ctermfg = 37                   guifg = #FF7E81
 hi!                   Comment                ctermfg = 242                  guifg = #555555
 hi!                   Conceal ctermbg = NONE ctermfg = 255  guibg = NONE    guifg = #303030
 hi!                  Constant                ctermfg = 209                  guifg = #FF7DE9
@@ -127,9 +128,26 @@ hi! link zshOption Type
 hi! link zshDeref PreProc
 hi! link zshRepeat shLoop
 
+hi! link vimContinue Comment
+hi! link vimFuncSID vimFunction
+hi! link vimFuncVar Normal
+hi! link vimFunction Function
+hi! link vimNotFunc Keyword
+hi! link vimMapModKey Special
+hi! link vimOption Type
+hi! link vimVar StorageClass
+hi! link vimEnvvar Statement
+hi! link vimUserFunc Operator
+hi! link vimHiGroup Normal
+hi! link vimCommand Function
+"" hi! link vimGroup Statement
+"" hi! link vimHiTerm Identifier
+
 hi! link rFunction Statement
 hi! link rAssign Operator
 hi! link rConditional Operator
+
+hi! link pythonFunction Class
 
 hi! link cssBraces Delimiter
 hi! link cssClassName Structure
@@ -150,29 +168,12 @@ hi! link htmlEndTag Statement
 hi! link htmlTag Statement
 hi! link jsonQuote Normal
 hi! link phpVarSelector Identifier
-hi! link pythonFunction Title
 hi! link rubyDefine Statement
 hi! link rubyFunction Title
 hi! link rubyInterpolationDelimiter String
 hi! link rubySharpBang Comment
 hi! link rubyStringDelimiter String
 hi! link sassClass Special
-
-hi! link vimContinue Comment
-hi! link vimFuncSID vimFunction
-hi! link vimFuncVar Normal
-hi! link vimFunction Function
-hi! link vimNotFunc Keyword
-hi! link vimMapModKey Special
-hi! link vimOption Type
-hi! link vimVar StorageClass
-hi! link vimEnvvar Statement
-hi! link vimUserFunc Operator
-hi! link vimHiGroup Normal
-hi! link vimCommand Function
-"" hi! link vimGroup Statement
-"" hi! link vimHiTerm Identifier
-
 hi! link xmlAttrib Constant
 hi! link xmlAttribPunct Statement
 hi! link xmlEndTag Statement
