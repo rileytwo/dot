@@ -51,7 +51,7 @@
     // "r.linting.pascalCase": false,
 
     "window.title": "${activeEditorMedium}",
-    "workbench.activityBar.visible": true,
+    "workbench.activityBar.visible": false,
     "workbench.colorTheme": "Alice",
     "scm.providers.visible": 0,
     "git.countBadge": "tracked",
