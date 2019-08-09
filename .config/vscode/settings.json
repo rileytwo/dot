@@ -51,7 +51,7 @@
     // "r.linting.pascalCase": false,
 
     "window.title": "${activeEditorMedium}",
-    "workbench.activityBar.visible": false,
+    "workbench.activityBar.visible": true,
     "workbench.colorTheme": "Alice",
     "scm.providers.visible": 0,
     "git.countBadge": "tracked",
@@ -155,5 +155,5 @@
     "codemetrics.basics.ComplexityColorNormal": "#fff7a3",
     "editor.parameterHints.enabled": false,
     "code-runner.fileDirectoryAsCwd": true,
-    "workbench.startupEditor": "none"
+    "workbench.startupEditor": "welcomePage"
 }
