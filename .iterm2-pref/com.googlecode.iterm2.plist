@@ -50735,7 +50735,7 @@ Show Toolbelt</string>
 	<key>NSWindow Frame NSColorPanel</key>
 	<string>1611 248 328 401 1440 -180 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>712 241 712 597 0 0 1440 877 </string>
+	<string>708 253 732 564 0 0 1440 877 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -51621,7 +51621,7 @@ Show Toolbelt</string>
 			<key>Use libtickit protocol</key>
 			<false/>
 			<key>Vertical Spacing</key>
-			<real>1</real>
+			<real>0.93999999999999995</real>
 			<key>Visual Bell</key>
 			<true/>
 			<key>Window Type</key>
@@ -58516,6 +58516,7 @@ Show Toolbelt</string>
 	</array>
 	<key>NoSyncAllAppVersions</key>
 	<array>
+		<string>3.3.1</string>
 		<string>3.3.0beta9</string>
 		<string>3.3.0beta13</string>
 		<string>3.3.0</string>
@@ -58561,7 +58562,7 @@ Show Toolbelt</string>
 	<key>NoSyncLastTipTime</key>
 	<real>585361631.22538805</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>569</integer>
+	<integer>578</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -59402,7 +59403,7 @@ Show Toolbelt</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-08-04T17:21:36Z</date>
+	<date>2019-08-08T01:53:21Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>Selection Respects Soft Boundaries</key>
@@ -59473,7 +59474,7 @@ Show Toolbelt</string>
 				<key>Has Toolbelt</key>
 				<false/>
 				<key>Height</key>
-				<real>597</real>
+				<real>564</real>
 				<key>Hide After Opening</key>
 				<false/>
 				<key>Hiding Toolbelt Should Resize Window</key>
@@ -59860,7 +59861,7 @@ Show Toolbelt</string>
 												<real>0.94999998809999997</real>
 											</dict>
 											<key>Guid</key>
-											<string>0E9DFD61-37A2-4C05-8AAB-F3BB647BCC34</string>
+											<string>7D7832FC-2637-4D8D-84B8-54CBDB1DA21A</string>
 											<key>Has Hotkey</key>
 											<false/>
 											<key>Horizontal Spacing</key>
@@ -60539,7 +60540,7 @@ Show Toolbelt</string>
 											<key>Use libtickit protocol</key>
 											<false/>
 											<key>Vertical Spacing</key>
-											<real>1</real>
+											<real>0.93999999999999995</real>
 											<key>Visual Bell</key>
 											<true/>
 											<key>Window Type</key>
@@ -60550,7 +60551,7 @@ Show Toolbelt</string>
 											<string>alice</string>
 										</dict>
 										<key>Columns</key>
-										<integer>88</integer>
+										<integer>90</integer>
 										<key>Commands</key>
 										<array>
 											<string>cd .dot</string>
@@ -60559,11 +60560,19 @@ Show Toolbelt</string>
 											<string>git pull --rebase</string>
 											<string>gp</string>
 											<string>e</string>
+											<string>gs</string>
+											<string>git add .config/vscode/settings.json &amp;&amp; gc -m 'vscod'</string>
+											<string>gp</string>
 										</array>
 										<key>Directories</key>
 										<array>
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
 											<string>/Users/riley/.dot</string>
 											<string>/Users/riley/.dot</string>
 											<string>/Users/riley/.dot</string>
@@ -60580,6 +60589,36 @@ Show Toolbelt</string>
 										</dict>
 										<key>Hosts</key>
 										<array>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
 											<dict>
 												<key>Host name</key>
 												<string>rmbp</string>
@@ -60673,9 +60712,9 @@ Show Toolbelt</string>
 									<key>frame</key>
 									<dict>
 										<key>height</key>
-										<real>559</real>
+										<real>526</real>
 										<key>width</key>
-										<real>712</real>
+										<real>732</real>
 										<key>x</key>
 										<real>0.0</real>
 										<key>y</key>
@@ -60688,9 +60727,9 @@ Show Toolbelt</string>
 							<key>frame</key>
 							<dict>
 								<key>height</key>
-								<real>559</real>
+								<real>526</real>
 								<key>width</key>
-								<real>712</real>
+								<real>732</real>
 								<key>x</key>
 								<real>0.0</real>
 								<key>y</key>
@@ -60718,13 +60757,13 @@ Show Toolbelt</string>
 				<key>Use Transparency</key>
 				<false/>
 				<key>Width</key>
-				<real>712</real>
+				<real>732</real>
 				<key>Window Type</key>
 				<integer>13</integer>
 				<key>X Origin</key>
-				<real>728</real>
+				<real>708</real>
 				<key>Y Origin</key>
-				<real>220</real>
+				<real>253</real>
 			</dict>
 		</array>
 		<key>Arrangement 2</key>
@@ -62119,7 +62158,7 @@ Show Toolbelt</string>
 	<key>findMode_iTerm</key>
 	<integer>0</integer>
 	<key>iTerm Version</key>
-	<string>3.3.0</string>
+	<string>3.3.1</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
