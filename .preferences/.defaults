@@ -18,7 +18,8 @@ while true; do sudo -n; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 if [[ "$(command -v brew)" == "" ]]; then
     echo "Installing Homebrew"
-    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    /usr/bin/ruby -e \
+        "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
     brew analytics off
 else
     echo "Homebrew is installed"
