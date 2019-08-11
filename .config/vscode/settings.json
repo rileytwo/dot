@@ -154,5 +154,6 @@
     "codemetrics.basics.ComplexityColorNormal": "#fff7a3",
     "editor.parameterHints.enabled": false,
     "code-runner.fileDirectoryAsCwd": true,
-    "workbench.startupEditor": "welcomePage"
+    "workbench.startupEditor": "welcomePage",
+    "workbench.fontAliasing": "antialiased"
 }
