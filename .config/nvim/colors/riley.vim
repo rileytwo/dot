@@ -107,7 +107,7 @@ hi!                  ZenSpace ctermbg = 203                 guibg = #eC6a88
 " links
 hi! link shFunction Function
 hi! link shRange Type
-hi! link shDerefVar Structure
+hi! link shDerefVar Constant
 hi! link shDeref Special
 hi! link shVariable StorageClass
 hi! link shConditional Keyword
@@ -115,6 +115,8 @@ hi! link shLoop Keyword
 hi! link shTestOpr Type
 hi! link shExpr Type
 hi! link shDblBrace PreProc
+hi! link shCommandSub PreProc
+hi! link shOption Operator
 
 hi! link zshCommands Function
 hi! link zshConditional Keyword
