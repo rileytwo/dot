@@ -29,15 +29,11 @@ Plug 'jalvesaq/Nvim-R', {'for': 'R'}
 Plug 'gaalcaras/ncm-R', {'for': 'R'}
 Plug 'dkarter/bullets.vim'
 Plug 'deoplete-plugins/deoplete-jedi', {'for': 'python'}
-
-Plug 'chrisbra/vim-zsh'
+Plug 'chrisbra/vim-zsh' , {'for': 'zsh'}
 Plug 'vitalk/vim-shebang'
 
 " // Auto closing delimiters
 Plug 'Raimondi/delimitMate'
-
-" // Detect Indentation
-" Plug 'ciaranm/detectindent'
 
 " // Colorschemes
 Plug 'ntk148v/vim-horizon'
@@ -45,8 +41,12 @@ Plug 'rafi/awesome-vim-colorschemes'
 Plug 'rakr/vim-two-firewatch'
 Plug 'aonemd/kuroi.vim'
 
+" // Statusline
 Plug 'itchyny/lightline.vim'
 Plug 'maximbaz/lightline-ale'
+
+
+
 
 if !has('win32') && !has('win64')
     " mac specific plugs cause windows is hard
@@ -56,15 +56,14 @@ if &term=~# 'nvim'
     Plug 'terryma/vim-multiple-cursors'
 endif
 
-" // helpful
+" // Extensibility
+Plug 'justinmk/vim-gtfo' 
 Plug 'itchyny/vim-gitbranch'
 Plug 'Yggdroot/indentLine'
 Plug 'scrooloose/nerdtree', {'on': 'NERDTreeToggle'}
 Plug 'ryanoasis/vim-devicons'
 Plug 'ap/vim-css-color'
 Plug 'PeterRincker/vim-searchlight'
-
-" // cool
 Plug 'godlygeek/tabular'
 Plug 'metakirby5/codi.vim'
 
@@ -121,7 +120,7 @@ filetype plugin indent on
 let g:vim_indent_cont = &shiftwidth
 let g:deoplete#enable_at_startup = 1
 call deoplete#custom#source('_', 'max_menu_width', 80)
-
+let g:gtfo#terminals = { 'mac': 'iterm' }
 
 " ----------
 " //
