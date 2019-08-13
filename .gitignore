@@ -12,12 +12,13 @@ automatic_backups/
 # .config/hub
 hub
 
-# .config/{vim,vifm}
+# .config/{vim,vifm,nvim}
 **/vifm/colors/
 plugged/
 autoload/
 share/
 log
+**/nvim/pack/
 
 # pycache
 **/__pycache__/
