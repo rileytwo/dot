@@ -217,21 +217,18 @@ if has('mac') || has('linux') || &term =~# 'nvim'
         \ 'colorscheme': 'twofirewatch',
         \ 'active': {
         \   'left': [ [ 'mode', 'paste' ],
-        \             [ 'readonly', 'filename', 'modified' ],
-        \             [ 'LightLineFilename' ] ],
+        \             [ 'readonly', 'modified' ],
+        \             [ 'relativepath' ] ],
         \   'right': [ [ 'lineinfo' ],
         \              [ 'fileformat', 'filetype' ] ]
-        \ },
-        \ 'component_function': {
-        \   'filename': 'LightLineFilename'
         \ }
         \ }
 endif
 
 " show full/path/to/file in buffer in LightLine
-function! LightLineFilename()
-    return expand('%')
-endfunction
+" function! LightLineFilename()
+"     return expand('%')
+" endfunction
 
 " check for truecolor support in current terminal
 " macOS Terminal.app does not support truecolor
