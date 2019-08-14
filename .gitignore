@@ -19,6 +19,7 @@ autoload/
 share/
 log
 **/nvim/pack/
+*.netrwhist
 
 # pycache
 **/__pycache__/
