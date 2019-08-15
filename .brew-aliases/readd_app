@@ -1,0 +1,6 @@
+#! /usr/local/bin/bash
+# alias: brew readd-app
+#:  * `readd-app` [args...]
+#:    `brew readd-app` is an alias for `brew cask install`
+brew cask install $*
+
