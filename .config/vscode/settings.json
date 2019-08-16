@@ -1,17 +1,9 @@
 {
     "window.zoomLevel": 0,
-    "editor.minimap.enabled": false,
     "telemetry.enableTelemetry": false,
     "telemetry.enableCrashReporter": false,
     "update.showReleaseNotes": false,
-    "files.associations": {
-        "*.rstheme": "css",
-        ".functions": "shellscript",
-        ".aliases": "shellscript",
-        "*.rmd": "markdown",
-        "Rpkg": "r",
-        "*.Rmd": "rmd"
-    },
+
     "css.lint.duplicateProperties": "warning",
     "editor.wordWrap": "on",
     "editor.codeLens": false,
@@ -20,15 +12,23 @@
         "comments": true,
         "strings": false
     },
-    "less.lint.duplicateProperties": "warning",
-    "scss.lint.duplicateProperties": "warning",
+    "editor.minimap.enabled": false,
     "editor.parameterHints.cycle": true,
     "editor.acceptSuggestionOnEnter": "smart",
-    "editor.hover.enabled": false,
     "editor.suggest.localityBonus": true,
     "editor.tabCompletion": "onlySnippets",
-    "python.autoComplete.addBrackets": true,
     "editor.fontSize": 13,
+    "editor.copyWithSyntaxHighlighting": false,
+    "editor.fontLigatures": true,
+    "editor.lineHeight": 17,
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnType": false,
+    "editor.parameterHints.enabled": false,
+    "editor.accessibilitySupport": "off",
+
+    "less.lint.duplicateProperties": "warning",
+    "scss.lint.duplicateProperties": "warning",
     "markdown.extension.print.imgToBase64": true,
     "markdown.extension.toc.githubCompatibility": true,
     "json.format.enable": false,
@@ -59,29 +59,31 @@
     "git.openDiffOnClick": false,
     "git.showInlineOpenFileAction": false,
     "git.showProgress": false,
-    "editor.copyWithSyntaxHighlighting": false,
+    "git.detectSubmodulesLimit": 2,
+    "git.autorefresh": false,
+    "git.autoRepositoryDetection": false,
+    "git.enabled": false,
     "workbench.statusBar.visible": true,
     "code-runner.clearPreviousOutput": true,
     "terminal.external.osxExec": "iTerm.app",
+
+    "code-runner.enableAppInsights": false,
+    "workbench.settings.useSplitJSON": true,
+    "zenMode.fullScreen": false,
+    "zenMode.hideLineNumbers": false,
+    "python.autoComplete.addBrackets": true,
+    "python.venvPath": "~/.pyenv",
     "python.linting.pylintEnabled": false,
     "python.linting.flake8Enabled": true,
     "python.linting.enabled": true,
-    "code-runner.enableAppInsights": false,
-    "workbench.settings.useSplitJSON": true,
-    "python.venvPath": "~/.pyenv",
-    "zenMode.fullScreen": false,
-    "zenMode.hideLineNumbers": false,
     "python.dataScience.allowLiveShare": false,
     "python.dataScience.enabled": false,
     "python.dataScience.searchForJupyter": false,
     "python.linting.pylintCategorySeverity.convention": "Warning",
     "python.pythonPath": "/Users/riley/.pyenv/shims/python",
-    "files.trimTrailingWhitespace": true,
-    "editor.fontLigatures": true,
-    "editor.lineHeight": 17,
-    "editor.accessibilitySupport": "off",
-    "code-runner.saveFileBeforeRun": true,
     "python.terminal.activateEnvironment": false,
+    "files.trimTrailingWhitespace": true,
+    "code-runner.saveFileBeforeRun": true,
     "terminal.integrated.fontSize": 13,
     "terminal.integrated.fontFamily": "FuraCodeNerdFontComplete-Retina, Menlo, Monaco, 'Courier New', monospace",
     "files.defaultLanguage": "txt",
@@ -122,24 +124,39 @@
     "explorer.sortOrder": "filesFirst",
     // "r.lsp.diagnostics": false,
     "outline.problems.enabled": false,
-    "git.detectSubmodulesLimit": 2,
-    "git.autorefresh": false,
-    "git.autoRepositoryDetection": false,
-    "git.enabled": false,
     // "StatusBarTag.text": "",
-    "editor.formatOnPaste": true,
-    "editor.formatOnSave": true,
-    "editor.formatOnType": false,
+
     "r.rterm.option": [],
     "r.rterm.mac": "/Users/riley/.pyenv/shims/radian",
-    "[rmd]": {
 
-    },
     "editor.fontFamily": "\"FuraCodeNerdFontComplete-Retina\", \"FuraCode Retina\", \"FuraCode NF Retina\", \"FuraCode NF\", \"Fira Code Retina\", \"SFMono-Regular\", Menlo, Monaco, 'Courier New', monospace",
     "workbench.enableExperiments": false,
     "workbench.settings.enableNaturalLanguageSearch": false,
     "vsicons.dontShowNewVersionMessage": true,
     "color-highlight.markRuler": false,
+    "lua.format.indentCount": 3,
+    "lua.targetVersion": "5.3",
+    "codemetrics.basics.ComplexityColorNormal": "#fff7a3",
+    "code-runner.fileDirectoryAsCwd": true,
+    "workbench.startupEditor": "welcomePage",
+
+    "files.associations": {
+        "*.rstheme" : "css",
+        ".functions": "shellscript",
+        ".aliases"  : "shellscript",
+        "*.rmd"     : "markdown",
+        "Rpkg"      : "r",
+        "*.Rmd"     : "rmd"
+    },
+    "[jsonc]": {
+        "editor.formatOnSave": false
+    },
+    "[json]": {
+        "editor.formatOnSave": false
+    },
+    "[rmd]": {
+
+    },
     "[css]": {
         "editor.defaultFormatter": "HookyQR.beautify"
     },
@@ -149,11 +166,5 @@
         "editor.tabSize": 3,
         "editor.autoIndent": true
     },
-    "lua.format.indentCount": 3,
-    "lua.targetVersion": "5.3",
-    "codemetrics.basics.ComplexityColorNormal": "#fff7a3",
-    "editor.parameterHints.enabled": false,
-    "code-runner.fileDirectoryAsCwd": true,
-    "workbench.startupEditor": "welcomePage",
-    "workbench.fontAliasing": "antialiased"
+    "editor.colorDecorators": false
 }
