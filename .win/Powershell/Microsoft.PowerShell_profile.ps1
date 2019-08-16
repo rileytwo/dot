@@ -83,16 +83,6 @@ Set-Alias -name 'l' -value Get-ChildItemColor
 
 #
 # // git
-function Send-GitCommit {
-    git commit $args
-}
-Set-Alias -name 'gt' Send-GitCommit
-
-function Get-GitRemoteUpdate {
-    git remote update $args
-}
-Set-Alias -name 'grup' Get-GitRemoteUpdate
-
 function Get-GitRepositoryStatus {
     git status $args
 }
