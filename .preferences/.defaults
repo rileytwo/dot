@@ -87,6 +87,7 @@ defaults write org.n8gray.QLColorCode hlTheme moria
 
 # indicator lights for open applications in dock
 defaults write com.apple.dock show-process-indicators -bool true
+defaults write com.apple.dock scroll-to-open -bool true
 
 # disable crash report
 defaults write com.apple.CrashReporter DialogueType -string "none"
