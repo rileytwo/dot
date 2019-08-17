@@ -166,5 +166,9 @@
         "editor.tabSize": 3,
         "editor.autoIndent": true
     },
-    "editor.colorDecorators": false
+    "editor.colorDecorators": false,
+    "editor.cursorBlinking": "smooth",
+    "editor.cursorSmoothCaretAnimation": true,
+    "terminal.integrated.cursorStyle": "underline",
+    "editor.hover.sticky": false
 }
