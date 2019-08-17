@@ -1,3 +1,6 @@
+#
+# vim: shiftwidth=4
+#
 zmodload zsh/zprof
 
 #### // neofetch
