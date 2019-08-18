@@ -142,6 +142,50 @@
                         ]
                     },
                     {
+                        "description": "Disable command+control+option+shift+period",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "period",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "command",
+                                            "shift",
+                                            "option",
+                                            "control"
+                                        ]
+                                    }
+                                },
+                                "to": {
+                                    "key_code": "slash"
+                                },
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Disable command+control+option+shift+comma",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "comma",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "command",
+                                            "shift",
+                                            "option",
+                                            "control"
+                                        ]
+                                    }
+                                },
+                                "to": {
+                                    "key_code": "slash"
+                                },
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
                         "description": "⌘ + ⌫ | Delete to line begin",
                         "manipulators": [
                             {
@@ -546,50 +590,6 @@
                                         ]
                                     }
                                 ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Disable command+control+option+shift+period",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "period",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "command",
-                                            "shift",
-                                            "option",
-                                            "control"
-                                        ]
-                                    }
-                                },
-                                "to": {
-                                    "key_code": "slash"
-                                },
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Disable command+control+option+shift+comma",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "comma",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "command",
-                                            "shift",
-                                            "option",
-                                            "control"
-                                        ]
-                                    }
-                                },
-                                "to": {
-                                    "key_code": "slash"
-                                },
                                 "type": "basic"
                             }
                         ]
