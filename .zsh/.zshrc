@@ -197,6 +197,9 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
     [[ -d "/snap/bin" ]] \
         && export PATH="/snap/bin:$PATH"
 
+    [[ -d "${HOME}/.pyenv" ]] \
+        && export PATH="${HOME}/.pyenv/bin:$PATH"
+
 elif [[ "$OSTYPE" =~ "darwin" ]]; then
     # // macports
     [[ -f /opt/local/bin/port ]] \
