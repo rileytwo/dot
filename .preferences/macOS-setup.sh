@@ -36,6 +36,10 @@ defaults write -g WebKitDeveloperExtras -bool true
 # disable dashboard
 defaults write com.apple.dashboard mcx-disabled -boolean YES
 
+# key repeat
+defaults write NSGlobalDomain KeyRepeat -int 0.3
+defaults write NSGlobalDomain InitialKeyRepeat -int 0.2
+
 # select text in quicklook
 defaults write com.apple.finder QLEnabletextSelection -bool TRUE
 
