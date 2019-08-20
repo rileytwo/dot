@@ -68,7 +68,6 @@
     "terminal.external.osxExec": "iTerm.app",
 
     "code-runner.enableAppInsights": false,
-    "workbench.settings.useSplitJSON": true,
     "zenMode.fullScreen": false,
     "zenMode.hideLineNumbers": false,
     "python.autoComplete.addBrackets": true,
