@@ -255,7 +255,12 @@ disable r
 [[ -f ~/.aliases ]] && . ~/.aliases
 #
 # // fzf
-[[ -f ~/.fzf.zsh ]] && . ~/.fzf.zsh
+if [[ -f ~/.fzf.zsh ]]; then
+    . ~/.fzf.zsh
+elif [[ -f /usr/share/doc/fzf/examples/key-bindings.zsh ]]; then
+    . /usr/share/doc/fzf/examples/key-bindings.zsh
+fi
+
 if (( $+commands[rg] )); then
     export FZF_DEFAULT_COMMAND='rg --files --no-ignore-vcs --hidden'
 fi
