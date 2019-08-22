@@ -91,7 +91,7 @@ set splitbelow
 set splitright
 set modifiable
 
-if has('mac') || has('linux') 
+if has('mac') || has('unix') 
     set number
     set numberwidth=1
     set guicursor=
