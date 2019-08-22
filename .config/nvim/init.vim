@@ -44,9 +44,7 @@ Plug 'aonemd/kuroi.vim'
 " // Statusline
 Plug 'itchyny/lightline.vim'
 Plug 'maximbaz/lightline-ale'
-
-
-
+Plug 'lambdalisue/suda.vim'
 
 if !has('win32') && !has('win64')
     " mac specific plugs cause windows is hard
@@ -117,10 +115,13 @@ set expandtab
 set autoindent
 
 filetype plugin indent on
+let g:gtfo#terminals = { 'mac': 'iterm' }
 let g:vim_indent_cont = &shiftwidth
+
 let g:deoplete#enable_at_startup = 1
 call deoplete#custom#source('_', 'max_menu_width', 80)
-let g:gtfo#terminals = { 'mac': 'iterm' }
+
+let g:suda#prefix = ['suda://', 'sudo://', '_://']
 
 " ----------
 " //
