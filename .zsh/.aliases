@@ -33,5 +33,9 @@ if (( $+commands[foaas-cli] )); then
     alias f='foaas-cli'
 fi
 
+if (( $+commands[base16-manager] )); then
+    alias bxm='base16-manager'
+fi
+
 alias gs='git status'
 alias hsg='history | grep'
