@@ -163,7 +163,7 @@ ZSH_HIGHLIGHT_STYLES[named-fd]='fg=green'
 
 #### // zsh autosuggestions
 #
-ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=8'
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=7'
 ZSH_AUTOSUGGEST_STRATEGY=match_prev_cmd
 
 # This speeds up pasting w/ autosuggest
