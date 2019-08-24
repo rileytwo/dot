@@ -169,5 +169,8 @@
     "editor.cursorBlinking": "smooth",
     "editor.cursorSmoothCaretAnimation": true,
     "terminal.integrated.cursorStyle": "underline",
-    "editor.hover.sticky": false
+    "editor.hover.sticky": false,
+    "[shellscript]": {
+        "editor.defaultFormatter": "foxundermoon.shell-format"
+    }
 }
