@@ -20,18 +20,18 @@ config.set('content.javascript.enabled', True, 'qute://*/*')
 # *- Fonts -* #
 # Monospace
 c.fonts.monospace = '"SF Mono", ' + c.fonts.monospace
-c.fonts.completion.category = "13pt monospace"
-c.fonts.completion.entry = "13pt monospace"
-c.fonts.debug_console = "13pt monospace"
-c.fonts.downloads = "13pt monospace"
-c.fonts.hints = "13pt monospace"
-c.fonts.keyhint = "13pt monospace"
-c.fonts.messages.error = "13pt monospace"
-c.fonts.messages.info = "13pt monospace"
-c.fonts.messages.warning = "13pt monospace"
-c.fonts.prompts = "13pt monospace"
-c.fonts.statusbar = "13pt monospace"
-c.fonts.tabs = "13pt monospace"
+c.fonts.completion.category = "10pt monospace"
+c.fonts.completion.entry = "10pt monospace"
+c.fonts.debug_console = "10pt monospace"
+c.fonts.downloads = "10pt monospace"
+c.fonts.hints = "10pt monospace"
+c.fonts.keyhint = "10pt monospace"
+c.fonts.messages.error = "10pt monospace"
+c.fonts.messages.info = "10pt monospace"
+c.fonts.messages.warning = "10pt monospace"
+c.fonts.prompts = "10pt monospace"
+c.fonts.statusbar = "10pt monospace"
+c.fonts.tabs = "10pt monospace"
 
 # Web Family
 c.fonts.web.family.standard = "Roboto"
@@ -91,7 +91,7 @@ c.colors.completion.item.selected.border.top = base0D
 c.colors.completion.item.selected.border.bottom = base0D
 
 # Foreground color of the matched text in the selected completion item.
-c.colors.completion.item.selected.match.fg = base00
+#c.colors.completion.item.selected.match.fg = base00
 
 # Foreground color of the matched text in the completion.
 c.colors.completion.match.fg = base09
@@ -274,40 +274,40 @@ c.colors.tabs.even.fg = base05
 c.colors.tabs.even.bg = base00
 
 # Background color of pinned unselected even tabs.
-c.colors.tabs.pinned.even.bg = base0B
+#c.colors.tabs.pinned.even.bg = base0B
 
 # Foreground color of pinned unselected even tabs.
-c.colors.tabs.pinned.even.fg = base00
+#c.colors.tabs.pinned.even.fg = base00
 
 # Background color of pinned unselected odd tabs.
-c.colors.tabs.pinned.odd.bg = base0B
+#c.colors.tabs.pinned.odd.bg = base0B
 
 # Foreground color of pinned unselected odd tabs.
-c.colors.tabs.pinned.odd.fg = base00
+#c.colors.tabs.pinned.odd.fg = base00
 
 # Background color of pinned selected even tabs.
-c.colors.tabs.pinned.selected.even.bg = base0D
+#c.colors.tabs.pinned.selected.even.bg = base0D
 
 # Foreground color of pinned selected even tabs.
-c.colors.tabs.pinned.selected.even.fg = base00
+#c.colors.tabs.pinned.selected.even.fg = base00
 
 # Background color of pinned selected odd tabs.
-c.colors.tabs.pinned.selected.odd.bg = base0D
+#c.colors.tabs.pinned.selected.odd.bg = base0D
 
 # Foreground color of pinned selected odd tabs.
-c.colors.tabs.pinned.selected.odd.fg = base00
+#c.colors.tabs.pinned.selected.odd.fg = base00
 
 # Foreground color of selected odd tabs.
-c.colors.tabs.selected.odd.fg = base00
+#c.colors.tabs.selected.odd.fg = base00
 
 # Background color of selected odd tabs.
-c.colors.tabs.selected.odd.bg = base0D
+#c.colors.tabs.selected.odd.bg = base0D
 
 # Foreground color of selected even tabs.
-c.colors.tabs.selected.even.fg = base00
+#c.colors.tabs.selected.even.fg = base00
 
 # Background color of selected even tabs.
-c.colors.tabs.selected.even.bg = base0D
+#c.colors.tabs.selected.even.bg = base0D
 
 # Background color for webpages if unset (or empty to use the theme's
 # color).
