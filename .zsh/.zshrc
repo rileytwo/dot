@@ -10,6 +10,7 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
         echo "vscode"
     else
         neofetch \
+            --config "${HOME}"/.config/neofetch/lnxconfig.conf \
             --ascii_distro kubuntu \
             --colors 5 7 7 4 7 15
     fi
