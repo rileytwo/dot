@@ -4,7 +4,9 @@
 zmodload zsh/zprof
 
 #### // neofetch
-#
+# color order:
+# 'title' '@' 'underline'
+# 'subtitle' 'colon' 'info'
 if [[ "$OSTYPE" == "linux-gnu" ]]; then
     if [[ "$TERM_PROGRAM" == "vscode" ]]; then
         echo "vscode"
