@@ -35,7 +35,7 @@ c.fonts.tabs = "10pt monospace"
 
 # Web Family
 c.fonts.web.family.standard = "Roboto"
-c.fonts.web.family.fixed = "SF Mono"
+# c.fonts.web.family.fixed = "SF Mono"
 
 
 # *- Colors -* #
