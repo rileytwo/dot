@@ -130,6 +130,7 @@ hi! link zshQuoted Special
 hi! link zshOption Type
 hi! link zshDeref Type
 hi! link zshRepeat shLoop
+hi! link zshFunction shFunction
 
 hi! link vimContinue Comment
 hi! link vimFuncSID vimFunction
