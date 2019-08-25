@@ -9,14 +9,16 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
     if [[ "$TERM_PROGRAM" == "vscode" ]]; then
         echo "vscode"
     else
-        neofetch --ascii_distro kubuntu
+        neofetch \
+            --ascii_distro kubuntu \
+            --colors 5 7 7 4 7 15
     fi
 elif [[ -f "${HOME}/.dot/.config/neofetch/mac/current" ]]; then
     if [[ "$TERM_PROGRAM" == "vscode" ]]; then
         echo "vscode"
     else
         neofetch \
-            --ascii ~/.dot/.config/neofetch/mac/current \
+            --ascii "${HOME}"/.dot/.config/neofetch/mac/current \
             --colors 5 7 7 4 7 15
     fi
 fi
@@ -63,7 +65,7 @@ fi
 #
 if [[ -d "${HOME}/.functions" ]]; then
     fpath+=("${HOME}/.functions")
-    autoload -Uz ~/.functions/**/*
+    autoload -Uz "${HOME}"/.functions/**/*
 fi
 
 #### // completions
@@ -213,28 +215,28 @@ fi
 
 #### // path
 #
-# // ~/bin
+# // "${HOME}"/bin
 [[ -d "${HOME}/bin" ]] \
     && export PATH="$HOME/bin:$PATH"
 #
-# // ~/.local/bin
+# // "${HOME}"/.local/bin
 [[ -d "${HOME}/.local/bin" ]] \
     && export PATH="$HOME/.local/bin:$PATH"
 #
-# // ~/.rbenv
+# // "${HOME}"/.rbenv
 [[ -d "${HOME}/.rbenv/shims" ]] \
     && eval "$(rbenv init -)"
 #
-# // ~/go
+# // "${HOME}"/go
 [[ -d "${HOME}/go" ]] \
     && export GOPATH="${HOME}/go" \
     && export PATH="${GOPATH//://bin:}/bin:$PATH"
 #
-# // ~/.cargo
+# // "${HOME}"/.cargo
 [[ -d "${HOME}/.cargo" ]] \
     && export PATH="${HOME}/.cargo/bin:$PATH"
 #
-# // ~/.pyenv
+# // "${HOME}"/.pyenv
 if (( $+commands[pyenv] )) && (( $+commands[pyenv-virtualenv-init])); then
     eval "$(pyenv init -)"
     eval "$(pyenv virtualenv-init -)"
@@ -252,11 +254,11 @@ disable r
 #### // helper files
 #
 # // aliases
-[[ -f ~/.aliases ]] && . ~/.aliases
+[[ -f "${HOME}"/.aliases ]] && . "${HOME}"/.aliases
 #
 # // fzf
-if [[ -f ~/.fzf.zsh ]]; then
-    . ~/.fzf.zsh
+if [[ -f "${HOME}"/.fzf.zsh ]]; then
+    . "${HOME}"/.fzf.zsh
 elif [[ -f /usr/share/doc/fzf/examples/key-bindings.zsh ]]; then
     . /usr/share/doc/fzf/examples/key-bindings.zsh
 fi
