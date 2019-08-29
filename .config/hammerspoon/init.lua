@@ -12,10 +12,17 @@
 --   -  ⌘ + ⌃ + ⌥ + ⇧ + K, Increase window height;
 --   -  ⌘ + ⌃ + ⌥ + ⇧ + L, Decrease window width;
 --   -  ⌘ + ⌃ + ⌥ + ⇧ + J, Decrease window height;
+
 --
 -- 3. Window Placement:
 --   -  ⌘ + ⌃ + ⌥ + ⇧ + Left, Move window to screen left;
 --   -  ⌘ + ⌃ + ⌥ + ⇧ + Right, Move window to screen right;
+--   -  ⌘ + ⌃ + ⌥ + ⇧ + U, Move window up;
+--   -  ⌘ + ⌃ + ⌥ + ⇧ + D, Move window down;
+--   -  ⌘ + ⌃ + ⌥ + ⇧ + N, Move window left;
+--   -  ⌘ + ⌃ + ⌥ + ⇧ + M, Move window right;
+
+
 
 -- 0. --
 hs.console.darkMode(true)
