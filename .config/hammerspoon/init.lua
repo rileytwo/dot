@@ -137,7 +137,7 @@ function is_right_win_frame()
 end
 
 
-function is_top()
+function is_top_win_frame()
 	local win       = hs.window.focusedWindow()
 	local win_frame = win:frame()
 
@@ -190,7 +190,7 @@ hs.hotkey.bind(modification_keys, "K", function()
 	local win       = hs.window.focusedWindow()
 	local win_frame = win:frame()
 
-	if is_top() then
+	if is_top_win_frame() then
 		win_frame.h = win_frame.h + 50
 		win:setFrame(win_frame)
 	else
@@ -205,7 +205,7 @@ hs.hotkey.bind(modification_keys, "J", function()
 	local win_frame    = win:frame()
 	local screen_frame = win:screen():frame()
 
-	if is_top() then
+	if is_top_win_frame() then
 		win_frame.h = win_frame.h - 50
 		win:setFrame(win_frame)
 	else
