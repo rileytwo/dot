@@ -14,9 +14,12 @@
 --   -  ⌘ + ⌃ + ⌥ + ⇧ + J, Decrease window height;
 
 
--- 1. --
+-- 0. --
 hs.console.darkMode(true)
+hs.console.alpha(0.95)
 
+
+-- 1. --
 hs.window.animationDuration = 0
 modification_keys = {"cmd", "ctrl", "alt", "shift"}
 previous_frame_sizes = {}
@@ -76,6 +79,7 @@ function get_fill_right_win_frame()
 	local win          = hs.window.focusedWindow()
 	local win_frame    = win:frame()
 	local screen_frame = win:screen():frame()
+
 	win_frame.x = screen_frame.x + screen_frame.w / 2
 	win_frame.y = screen_frame.y
 	win_frame.w = screen_frame.w / 2
