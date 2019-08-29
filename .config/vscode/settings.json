@@ -6,7 +6,6 @@
 
     "css.lint.duplicateProperties": "warning",
     "editor.wordWrap": "on",
-    "editor.codeLens": false,
     "editor.quickSuggestions": {
         "other": true,
         "comments": true,
@@ -135,7 +134,6 @@
     "color-highlight.markRuler": false,
     "lua.format.indentCount": 3,
     "lua.targetVersion": "5.3",
-    "codemetrics.basics.ComplexityColorNormal": "#fff7a3",
     "code-runner.fileDirectoryAsCwd": true,
     "workbench.startupEditor": "welcomePage",
 
@@ -172,5 +170,6 @@
     "editor.hover.sticky": false,
     "[shellscript]": {
         "editor.defaultFormatter": "foxundermoon.shell-format"
-    }
+    },
+    "editor.codeLens": false
 }
