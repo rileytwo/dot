@@ -13,9 +13,8 @@
 --   -  ⌘ + ⌃ + ⌥ + ⇧ + L, Decrease window width;
 --   -  ⌘ + ⌃ + ⌥ + ⇧ + J, Decrease window height;
 
--- 1. --
---hs.alert("Configuration loaded.")
 
+-- 1. --
 hs.console.darkMode(true)
 
 hs.window.animationDuration = 0
@@ -125,7 +124,7 @@ bind_resize_and_restore_keys("]", get_fill_right_win_frame)
 
 
 -- 2. --
-function is_right()
+function is_right_win_frame()
 	local win          = hs.window.focusedWindow()
 	local win_frame    = win:frame()
 	local screen_frame = win:screen():frame()
@@ -156,7 +155,7 @@ hs.hotkey.bind(modification_keys, "H", function()
 	local win_frame    = win:frame()
 	local screen_frame = win:screen():frame()
 
-	if is_right() and win_frame.x >= 0 then
+	if is_right_win_frame() and win_frame.x >= 0 then
 		win_frame.x = win_frame.x - 50
 		win_frame.w = win_frame.w + 50
 		win:setFrame(win_frame)
@@ -176,7 +175,7 @@ hs.hotkey.bind(modification_keys, "L", function()
 	local win = hs.window.focusedWindow()
 	local win_frame = win:frame()
 
-	if is_right() then
+	if is_right_win_frame() then
 		win_frame.x = win_frame.x + 50
 		win_frame.w = win_frame.w - 50
 		win:setFrame(win_frame)
