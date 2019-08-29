@@ -13,7 +13,7 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
     else
         neofetch \
             --config "${HOME}"/.config/neofetch/lnxconfig.conf \
-            #--ascii_distro kubuntu \
+            --ascii_distro kubuntu \
             --colors 5 7 7 4 7 15
     fi
 elif [[ -f "${HOME}/.dot/.config/neofetch/mac/current" ]]; then
