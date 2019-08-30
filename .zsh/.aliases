@@ -37,5 +37,9 @@ if (( $+commands[base16-manager] )); then
     alias bxm='base16-manager'
 fi
 
+if (( $+commands[apt] )); then
+    alias yum='apt'
+fi
+
 alias gs='git status'
 alias hsg='history | grep'
