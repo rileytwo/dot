@@ -1,0 +1,16 @@
+QWidget, QTabWidget::pane, QTabWidget::tab-bar {
+    background-color: #0e0e0e;
+}
+
+QTabBar::tab
+{
+    color: #999;
+}
+
+
+QTabBar::tab:selected
+{
+    font-weight: bold;
+    color: #EEE;
+    border-bottom: 0px;
+}
