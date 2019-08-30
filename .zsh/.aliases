@@ -37,8 +37,9 @@ if (( $+commands[base16-manager] )); then
     alias bxm='base16-manager'
 fi
 
-if (( $+commands[apt] )); then
-    alias yum='apt'
+if (( $+commands[pyenv] )); then
+    alias p='pyenv'
+    alias pv='pyenv versions'
 fi
 
 alias gs='git status'
