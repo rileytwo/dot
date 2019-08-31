@@ -77,28 +77,30 @@ end
 
 
 function get_fill_left_win_frame()
+	local gap          = 5
 	local win          = hs.window.focusedWindow()
 	local win_frame    = win:frame()
 	local screen_frame = win:screen():frame()
 
-	win_frame.x = screen_frame.x
-	win_frame.y = screen_frame.y
-	win_frame.w = screen_frame.w / 2
-	win_frame.h = screen_frame.h
+	win_frame.x = screen_frame.x + gap
+	win_frame.y = screen_frame.y + gap
+	win_frame.w = (screen_frame.w - (gap *2)) / 2
+	win_frame.h = screen_frame.h - (gap * 2)
 
 	return win_frame
 end
 
 
 function get_fill_right_win_frame()
+	local gap          = 5
 	local win          = hs.window.focusedWindow()
 	local win_frame    = win:frame()
 	local screen_frame = win:screen():frame()
 
-	win_frame.x = screen_frame.x + screen_frame.w / 2
-	win_frame.y = screen_frame.y
-	win_frame.w = screen_frame.w / 2
-	win_frame.h = screen_frame.h
+	win_frame.x = (screen_frame.x + screen_frame.w + gap) / 2
+	win_frame.y = screen_frame.y + gap
+	win_frame.w = (screen_frame.w - (gap * 2)) / 2
+	win_frame.h = screen_frame.h - (gap * 2)
 
 	return win_frame
 end
@@ -259,6 +261,8 @@ hs.hotkey.bind(modification_keys, "O", function()
 	win_frame.w = win_frame.w + 25
 	win:setFrame(win_frame)
 end)
+
+
 -- 3 --------------------------
 hs.hotkey.bind(modification_keys, "U", function()
 	--	move window up
