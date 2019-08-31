@@ -51046,7 +51046,7 @@ Show Toolbelt</string>
 	<key>NSColorPickerSlidersDefaults</key>
 	<string>1</string>
 	<key>NSNavLastRootDirectory</key>
-	<string>~</string>
+	<string>~/.dot/.config/iterm2/config</string>
 	<key>NSNavLastUserSetHideExtensionButtonState</key>
 	<false/>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
@@ -51102,7 +51102,7 @@ Show Toolbelt</string>
 	<key>NSWindow Frame NSColorPanel</key>
 	<string>1611 248 328 401 1440 -180 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>788 184 649 554 0 0 1440 877 </string>
+	<string>0 5 717 872 0 0 1440 877 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -59044,8 +59044,8 @@ Show Toolbelt</string>
 		<string>3.3.0beta9</string>
 		<string>3.3.0beta13</string>
 		<string>3.3.0</string>
-		<string>3.3.1</string>
 		<string>3.3.0beta15</string>
+		<string>3.3.1</string>
 	</array>
 	<key>NoSyncBFPFavorites</key>
 	<array>
@@ -59081,12 +59081,14 @@ Show Toolbelt</string>
 		<key>topLeft</key>
 		<string>{28, 802}</string>
 	</dict>
+	<key>NoSyncHaveUsedCopyMode</key>
+	<true/>
 	<key>NoSyncInstallationId</key>
 	<string>78E2F140-557C-4115-91AC-4DB26E1EFA8B</string>
 	<key>NoSyncLastTipTime</key>
 	<real>585361631.22538805</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>647</integer>
+	<integer>649</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -59873,6 +59875,8 @@ Show Toolbelt</string>
 	<false/>
 	<key>OpenTmuxWindowsIn</key>
 	<integer>2</integer>
+	<key>PMPrintingExpandedStateForPrint2</key>
+	<false/>
 	<key>PasteSpecialRegex</key>
 	<string></string>
 	<key>PasteSpecialSubstitution</key>
@@ -59917,8 +59921,10 @@ Show Toolbelt</string>
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>/Users/riley/.dot/.iterm2-pref</string>
+	<string>/Users/riley/.dot/.config/iterm2/config</string>
 	<key>PreserveWindowSizeWhenTabBarVisibilityChanges</key>
+	<true/>
+	<key>Print In Black And White</key>
 	<true/>
 	<key>PromptOnQuit</key>
 	<false/>
