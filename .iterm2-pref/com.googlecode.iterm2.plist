@@ -50867,7 +50867,7 @@
 	<key>DefaultTabBarHeight</key>
 	<real>24</real>
 	<key>DeleteProfile_SilenceUntil</key>
-	<real>581812700.52547801</real>
+	<real>588966842.09259701</real>
 	<key>DeleteProfile_selection</key>
 	<integer>0</integer>
 	<key>DetectPasswordInput</key>
@@ -50881,7 +50881,7 @@
 	<key>DisableAdaptiveFrameRateInInteractiveApps</key>
 	<true/>
 	<key>DisableFullscreenTransparency</key>
-	<true/>
+	<false/>
 	<key>DisableWindowShadowWhenTransparencyPreMojave</key>
 	<true/>
 	<key>DisableWindowSizeSnap</key>
@@ -51046,7 +51046,7 @@ Show Toolbelt</string>
 	<key>NSColorPickerSlidersDefaults</key>
 	<string>1</string>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/.dot/.iterm2-pref</string>
+	<string>~</string>
 	<key>NSNavLastUserSetHideExtensionButtonState</key>
 	<false/>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
@@ -51102,7 +51102,7 @@ Show Toolbelt</string>
 	<key>NSWindow Frame NSColorPanel</key>
 	<string>1611 248 328 401 1440 -180 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>792 225 648 552 0 0 1440 877 </string>
+	<string>788 184 649 554 0 0 1440 877 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -51117,7 +51117,7 @@ Show Toolbelt</string>
 			<key>Ansi 0 Color</key>
 			<dict>
 				<key>Alpha Component</key>
-				<real>1</real>
+				<integer>1</integer>
 				<key>Blue Component</key>
 				<real>0.15000000596046448</real>
 				<key>Color Space</key>
@@ -51130,7 +51130,7 @@ Show Toolbelt</string>
 			<key>Ansi 1 Color</key>
 			<dict>
 				<key>Alpha Component</key>
-				<real>1</real>
+				<integer>1</integer>
 				<key>Blue Component</key>
 				<real>0.46310701966285706</real>
 				<key>Color Space</key>
@@ -51143,7 +51143,7 @@ Show Toolbelt</string>
 			<key>Ansi 10 Color</key>
 			<dict>
 				<key>Alpha Component</key>
-				<real>1</real>
+				<integer>1</integer>
 				<key>Blue Component</key>
 				<real>0.65098041296005249</real>
 				<key>Color Space</key>
@@ -51156,7 +51156,7 @@ Show Toolbelt</string>
 			<key>Ansi 11 Color</key>
 			<dict>
 				<key>Alpha Component</key>
-				<real>1</real>
+				<integer>1</integer>
 				<key>Blue Component</key>
 				<real>0.64705884459999996</real>
 				<key>Color Space</key>
@@ -51169,7 +51169,7 @@ Show Toolbelt</string>
 			<key>Ansi 12 Color</key>
 			<dict>
 				<key>Alpha Component</key>
-				<real>1</real>
+				<integer>1</integer>
 				<key>Blue Component</key>
 				<real>0.98823529409999999</real>
 				<key>Color Space</key>
@@ -51177,14 +51177,14 @@ Show Toolbelt</string>
 				<key>Green Component</key>
 				<real>0.75686274509999996</real>
 				<key>Red Component</key>
-				<real>0.0</real>
+				<integer>0</integer>
 			</dict>
 			<key>Ansi 13 Color</key>
 			<dict>
 				<key>Alpha Component</key>
-				<real>1</real>
+				<integer>1</integer>
 				<key>Blue Component</key>
-				<real>1</real>
+				<integer>1</integer>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
@@ -51195,7 +51195,7 @@ Show Toolbelt</string>
 			<key>Ansi 14 Color</key>
 			<dict>
 				<key>Alpha Component</key>
-				<real>1</real>
+				<integer>1</integer>
 				<key>Blue Component</key>
 				<real>0.9993787408</real>
 				<key>Color Space</key>
@@ -51203,12 +51203,12 @@ Show Toolbelt</string>
 				<key>Green Component</key>
 				<real>0.88278455440000003</real>
 				<key>Red Component</key>
-				<real>0.0</real>
+				<integer>0</integer>
 			</dict>
 			<key>Ansi 15 Color</key>
 			<dict>
 				<key>Alpha Component</key>
-				<real>1</real>
+				<integer>1</integer>
 				<key>Blue Component</key>
 				<real>0.94901960784313721</real>
 				<key>Color Space</key>
@@ -51221,7 +51221,7 @@ Show Toolbelt</string>
 			<key>Ansi 2 Color</key>
 			<dict>
 				<key>Alpha Component</key>
-				<real>1</real>
+				<integer>1</integer>
 				<key>Blue Component</key>
 				<real>0.62367786960000005</real>
 				<key>Color Space</key>
@@ -51234,7 +51234,7 @@ Show Toolbelt</string>
 			<key>Ansi 3 Color</key>
 			<dict>
 				<key>Alpha Component</key>
-				<real>1</real>
+				<integer>1</integer>
 				<key>Blue Component</key>
 				<real>0.61679995059967041</real>
 				<key>Color Space</key>
@@ -51247,9 +51247,9 @@ Show Toolbelt</string>
 			<key>Ansi 4 Color</key>
 			<dict>
 				<key>Alpha Component</key>
-				<real>1</real>
+				<integer>1</integer>
 				<key>Blue Component</key>
-				<real>1</real>
+				<integer>1</integer>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
@@ -51260,9 +51260,9 @@ Show Toolbelt</string>
 			<key>Ansi 5 Color</key>
 			<dict>
 				<key>Alpha Component</key>
-				<real>1</real>
+				<integer>1</integer>
 				<key>Blue Component</key>
-				<real>1</real>
+				<integer>1</integer>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
@@ -51273,7 +51273,7 @@ Show Toolbelt</string>
 			<key>Ansi 6 Color</key>
 			<dict>
 				<key>Alpha Component</key>
-				<real>1</real>
+				<integer>1</integer>
 				<key>Blue Component</key>
 				<real>0.83999999999999997</real>
 				<key>Color Space</key>
@@ -51281,12 +51281,12 @@ Show Toolbelt</string>
 				<key>Green Component</key>
 				<real>0.74199999999999999</real>
 				<key>Red Component</key>
-				<real>0.0</real>
+				<integer>0</integer>
 			</dict>
 			<key>Ansi 7 Color</key>
 			<dict>
 				<key>Alpha Component</key>
-				<real>1</real>
+				<integer>1</integer>
 				<key>Blue Component</key>
 				<real>0.41960784313725491</real>
 				<key>Color Space</key>
@@ -51299,7 +51299,7 @@ Show Toolbelt</string>
 			<key>Ansi 8 Color</key>
 			<dict>
 				<key>Alpha Component</key>
-				<real>1</real>
+				<integer>1</integer>
 				<key>Blue Component</key>
 				<real>0.4078223705291748</real>
 				<key>Color Space</key>
@@ -51312,7 +51312,7 @@ Show Toolbelt</string>
 			<key>Ansi 9 Color</key>
 			<dict>
 				<key>Alpha Component</key>
-				<real>1</real>
+				<integer>1</integer>
 				<key>Blue Component</key>
 				<real>0.50619852542877197</real>
 				<key>Color Space</key>
@@ -51320,7 +51320,7 @@ Show Toolbelt</string>
 				<key>Green Component</key>
 				<real>0.49256539344787598</real>
 				<key>Red Component</key>
-				<real>1</real>
+				<integer>1</integer>
 			</dict>
 			<key>Application Keypad Allowed</key>
 			<false/>
@@ -51331,7 +51331,7 @@ Show Toolbelt</string>
 			<key>Background Color</key>
 			<dict>
 				<key>Alpha Component</key>
-				<real>1</real>
+				<integer>1</integer>
 				<key>Blue Component</key>
 				<real>0.08235294118</real>
 				<key>Color Space</key>
@@ -51350,13 +51350,13 @@ Show Toolbelt</string>
 				<key>Alpha Component</key>
 				<real>0.5</real>
 				<key>Blue Component</key>
-				<real>0.0</real>
+				<integer>0</integer>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
 				<real>0.1491314172744751</real>
 				<key>Red Component</key>
-				<real>1</real>
+				<integer>1</integer>
 			</dict>
 			<key>Badge Text</key>
 			<string></string>
@@ -51373,13 +51373,13 @@ Show Toolbelt</string>
 			<key>Bold Color</key>
 			<dict>
 				<key>Alpha Component</key>
-				<real>1</real>
+				<integer>1</integer>
 				<key>Blue Component</key>
-				<real>1</real>
+				<integer>1</integer>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>1</real>
+				<integer>1</integer>
 				<key>Red Component</key>
 				<real>0.99999600648880005</real>
 			</dict>
@@ -51392,13 +51392,13 @@ Show Toolbelt</string>
 			<key>Columns</key>
 			<integer>80</integer>
 			<key>Command</key>
-			<string>login</string>
+			<string></string>
 			<key>Cursor Boost</key>
-			<real>0.0</real>
+			<integer>0</integer>
 			<key>Cursor Color</key>
 			<dict>
 				<key>Alpha Component</key>
-				<real>1</real>
+				<integer>1</integer>
 				<key>Blue Component</key>
 				<real>0.50619852542877197</real>
 				<key>Color Space</key>
@@ -51406,14 +51406,14 @@ Show Toolbelt</string>
 				<key>Green Component</key>
 				<real>0.49256539344787598</real>
 				<key>Red Component</key>
-				<real>1</real>
+				<integer>1</integer>
 			</dict>
 			<key>Cursor Guide Color</key>
 			<dict>
 				<key>Alpha Component</key>
 				<real>0.25</real>
 				<key>Blue Component</key>
-				<real>1</real>
+				<integer>1</integer>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
@@ -51424,7 +51424,7 @@ Show Toolbelt</string>
 			<key>Cursor Text Color</key>
 			<dict>
 				<key>Alpha Component</key>
-				<real>1</real>
+				<integer>1</integer>
 				<key>Blue Component</key>
 				<real>0.50619852542877197</real>
 				<key>Color Space</key>
@@ -51432,12 +51432,12 @@ Show Toolbelt</string>
 				<key>Green Component</key>
 				<real>0.49256539344787598</real>
 				<key>Red Component</key>
-				<real>1</real>
+				<integer>1</integer>
 			</dict>
 			<key>Cursor Type</key>
 			<integer>0</integer>
 			<key>Custom Command</key>
-			<string>No</string>
+			<string>Yes</string>
 			<key>Custom Directory</key>
 			<string>No</string>
 			<key>Default Bookmark</key>
@@ -51453,7 +51453,7 @@ Show Toolbelt</string>
 			<key>Foreground Color</key>
 			<dict>
 				<key>Alpha Component</key>
-				<real>1</real>
+				<integer>1</integer>
 				<key>Blue Component</key>
 				<real>0.94999998809999997</real>
 				<key>Color Space</key>
@@ -51468,7 +51468,7 @@ Show Toolbelt</string>
 			<key>Has Hotkey</key>
 			<false/>
 			<key>Horizontal Spacing</key>
-			<real>1</real>
+			<integer>1</integer>
 			<key>HotKey Activated By Modifier</key>
 			<false/>
 			<key>HotKey Alternate Shortcuts</key>
@@ -51497,6 +51497,8 @@ Show Toolbelt</string>
 			<integer>1</integer>
 			<key>Idle Code</key>
 			<integer>0</integer>
+			<key>Initial Text</key>
+			<string></string>
 			<key>Initial Use Transparency</key>
 			<false/>
 			<key>Jobs to Ignore</key>
@@ -51764,7 +51766,7 @@ Show Toolbelt</string>
 			<key>Link Color</key>
 			<dict>
 				<key>Alpha Component</key>
-				<real>1</real>
+				<integer>1</integer>
 				<key>Blue Component</key>
 				<real>0.73423302173614502</real>
 				<key>Color Space</key>
@@ -51772,10 +51774,10 @@ Show Toolbelt</string>
 				<key>Green Component</key>
 				<real>0.35916060209274292</real>
 				<key>Red Component</key>
-				<real>0.0</real>
+				<integer>0</integer>
 			</dict>
 			<key>Minimum Contrast</key>
-			<real>0.0</real>
+			<integer>0</integer>
 			<key>Mouse Reporting</key>
 			<true/>
 			<key>Name</key>
@@ -51817,7 +51819,7 @@ Show Toolbelt</string>
 			<key>Selected Text Color</key>
 			<dict>
 				<key>Alpha Component</key>
-				<real>1</real>
+				<integer>1</integer>
 				<key>Blue Component</key>
 				<real>0.98136156797409058</real>
 				<key>Color Space</key>
@@ -51825,12 +51827,12 @@ Show Toolbelt</string>
 				<key>Green Component</key>
 				<real>0.9824872612953186</real>
 				<key>Red Component</key>
-				<real>1</real>
+				<integer>1</integer>
 			</dict>
 			<key>Selection Color</key>
 			<dict>
 				<key>Alpha Component</key>
-				<real>1</real>
+				<integer>1</integer>
 				<key>Blue Component</key>
 				<real>0.22878958284854889</real>
 				<key>Color Space</key>
@@ -51859,7 +51861,7 @@ Show Toolbelt</string>
 					<key>default text color</key>
 					<dict>
 						<key>Alpha Component</key>
-						<real>1</real>
+						<integer>1</integer>
 						<key>Blue Component</key>
 						<real>0.99937874078750999</real>
 						<key>Color Space</key>
@@ -51867,7 +51869,7 @@ Show Toolbelt</string>
 						<key>Green Component</key>
 						<real>0.75085854530333995</real>
 						<key>Red Component</key>
-						<real>0.0</real>
+						<integer>0</integer>
 					</dict>
 					<key>font</key>
 					<string>.AppleSystemUIFont 12</string>
@@ -51884,13 +51886,13 @@ Show Toolbelt</string>
 								<key>base: compression resistance</key>
 								<integer>1</integer>
 								<key>base: priority</key>
-								<real>5</real>
+								<integer>5</integer>
 								<key>format</key>
 								<string>M-dd h:mm</string>
 								<key>shared text color</key>
 								<dict>
 									<key>Alpha Component</key>
-									<real>1</real>
+									<integer>1</integer>
 									<key>Blue Component</key>
 									<real>0.63</real>
 									<key>Color Space</key>
@@ -51908,7 +51910,7 @@ Show Toolbelt</string>
 								<key>default text color</key>
 								<dict>
 									<key>Alpha Component</key>
-									<real>1</real>
+									<integer>1</integer>
 									<key>Blue Component</key>
 									<real>0.99937874078750999</real>
 									<key>Color Space</key>
@@ -51916,7 +51918,7 @@ Show Toolbelt</string>
 									<key>Green Component</key>
 									<real>0.75085854530333995</real>
 									<key>Red Component</key>
-									<real>0.0</real>
+									<integer>0</integer>
 								</dict>
 								<key>font</key>
 								<string>.AppleSystemUIFont 12</string>
@@ -51931,15 +51933,15 @@ Show Toolbelt</string>
 							<key>knobs</key>
 							<dict>
 								<key>base: compression resistance</key>
-								<real>2</real>
+								<integer>2</integer>
 								<key>base: priority</key>
-								<real>5</real>
+								<integer>5</integer>
 								<key>path</key>
 								<string>username</string>
 								<key>shared text color</key>
 								<dict>
 									<key>Alpha Component</key>
-									<real>1</real>
+									<integer>1</integer>
 									<key>Blue Component</key>
 									<real>0.63</real>
 									<key>Color Space</key>
@@ -51957,7 +51959,7 @@ Show Toolbelt</string>
 								<key>default text color</key>
 								<dict>
 									<key>Alpha Component</key>
-									<real>1</real>
+									<integer>1</integer>
 									<key>Blue Component</key>
 									<real>0.99937874078750999</real>
 									<key>Color Space</key>
@@ -51965,7 +51967,7 @@ Show Toolbelt</string>
 									<key>Green Component</key>
 									<real>0.75085854530333995</real>
 									<key>Red Component</key>
-									<real>0.0</real>
+									<integer>0</integer>
 								</dict>
 								<key>font</key>
 								<string>.AppleSystemUIFont 12</string>
@@ -51982,9 +51984,9 @@ Show Toolbelt</string>
 								<key>base: compression resistance</key>
 								<integer>1</integer>
 								<key>base: priority</key>
-								<real>5</real>
+								<integer>5</integer>
 								<key>maxwidth</key>
-								<real>+infinity</real>
+								<real>1.7976931348623157e+308</real>
 								<key>minwidth</key>
 								<integer>0</integer>
 								<key>path</key>
@@ -51992,7 +51994,7 @@ Show Toolbelt</string>
 								<key>shared text color</key>
 								<dict>
 									<key>Alpha Component</key>
-									<real>1</real>
+									<integer>1</integer>
 									<key>Blue Component</key>
 									<real>0.90000000000000002</real>
 									<key>Color Space</key>
@@ -52010,7 +52012,7 @@ Show Toolbelt</string>
 								<key>default text color</key>
 								<dict>
 									<key>Alpha Component</key>
-									<real>1</real>
+									<integer>1</integer>
 									<key>Blue Component</key>
 									<real>0.99937874078750999</real>
 									<key>Color Space</key>
@@ -52018,7 +52020,7 @@ Show Toolbelt</string>
 									<key>Green Component</key>
 									<real>0.75085854530333995</real>
 									<key>Red Component</key>
-									<real>0.0</real>
+									<integer>0</integer>
 								</dict>
 								<key>font</key>
 								<string>.AppleSystemUIFont 12</string>
@@ -52035,7 +52037,7 @@ Show Toolbelt</string>
 								<key>base: compression resistance</key>
 								<integer>1</integer>
 								<key>base: priority</key>
-								<real>5</real>
+								<integer>5</integer>
 								<key>iTermStatusBarSpringComponentSizeMultipleKey</key>
 								<integer>1</integer>
 								<key>iTermStatusBarSpringComponentSpringConstantKey</key>
@@ -52058,11 +52060,11 @@ Show Toolbelt</string>
 								<key>base: compression resistance</key>
 								<integer>1</integer>
 								<key>base: priority</key>
-								<real>5</real>
+								<integer>5</integer>
 								<key>shared text color</key>
 								<dict>
 									<key>Alpha Component</key>
-									<real>1</real>
+									<integer>1</integer>
 									<key>Blue Component</key>
 									<real>0.90000000000000002</real>
 									<key>Color Space</key>
@@ -52087,15 +52089,15 @@ Show Toolbelt</string>
 			<key>Tab Color</key>
 			<dict>
 				<key>Alpha Component</key>
-				<real>1</real>
+				<integer>1</integer>
 				<key>Blue Component</key>
-				<real>0.082352941176470587</real>
+				<real>0.082352941176470601</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.082352941176470587</real>
+				<real>0.082352941176470601</real>
 				<key>Red Component</key>
-				<real>0.082352941176470587</real>
+				<real>0.082352941176470601</real>
 			</dict>
 			<key>Tags</key>
 			<array/>
@@ -52110,15 +52112,15 @@ Show Toolbelt</string>
 			<key>Underline Color</key>
 			<dict>
 				<key>Alpha Component</key>
-				<real>1</real>
+				<integer>1</integer>
 				<key>Blue Component</key>
-				<real>0.058823529409999999</real>
+				<real>0.058823529410000006</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.058823529409999999</real>
+				<real>0.058823529410000006</real>
 				<key>Red Component</key>
-				<real>0.058823529409999999</real>
+				<real>0.058823529410000006</real>
 			</dict>
 			<key>Unicode Version</key>
 			<integer>9</integer>
@@ -52411,9 +52413,9 @@ Show Toolbelt</string>
 			<key>Blinking Cursor</key>
 			<false/>
 			<key>Blur</key>
-			<true/>
+			<false/>
 			<key>Blur Radius</key>
-			<real>7.2192734771573601</real>
+			<real>0.10000000000000001</real>
 			<key>Bold Color</key>
 			<dict>
 				<key>Alpha Component</key>
@@ -53144,7 +53146,7 @@ Show Toolbelt</string>
 			<key>Title Components</key>
 			<integer>2</integer>
 			<key>Transparency</key>
-			<real>0.0056749682741116751</real>
+			<real>0.0</real>
 			<key>Unlimited Scrollback</key>
 			<false/>
 			<key>Use Bold Font</key>
@@ -59070,21 +59072,21 @@ Show Toolbelt</string>
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1440, 900}}</string>
 		<key>topLeft</key>
-		<string>{69, 704}</string>
+		<string>{723, 852}</string>
 	</dict>
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1440, 900}}</string>
 		<key>topLeft</key>
-		<string>{0, 877}</string>
+		<string>{28, 802}</string>
 	</dict>
 	<key>NoSyncInstallationId</key>
 	<string>78E2F140-557C-4115-91AC-4DB26E1EFA8B</string>
 	<key>NoSyncLastTipTime</key>
 	<real>585361631.22538805</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>623</integer>
+	<integer>647</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -59943,7 +59945,7 @@ Show Toolbelt</string>
 	<key>ShowBookmarkName</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
-	<false/>
+	<true/>
 	<key>ShowNewOutputIndicator</key>
 	<false/>
 	<key>ShowPaneTitles</key>
@@ -59953,7 +59955,7 @@ Show Toolbelt</string>
 	<key>SoundForEsc</key>
 	<false/>
 	<key>SplitPaneDimmingAmount</key>
-	<real>0.10000000000000001</real>
+	<real>0.16862256205673759</real>
 	<key>StatusBarPosition</key>
 	<integer>0</integer>
 	<key>StretchTabsToFillBar</key>
@@ -60004,7 +60006,7 @@ Show Toolbelt</string>
 				<key>Has Toolbelt</key>
 				<false/>
 				<key>Height</key>
-				<real>552</real>
+				<real>554</real>
 				<key>Hide After Opening</key>
 				<false/>
 				<key>Hiding Toolbelt Should Resize Window</key>
@@ -60044,7 +60046,7 @@ Show Toolbelt</string>
 											<key>Ansi 0 Color</key>
 											<dict>
 												<key>Alpha Component</key>
-												<real>1</real>
+												<integer>1</integer>
 												<key>Blue Component</key>
 												<real>0.15000000596046448</real>
 												<key>Color Space</key>
@@ -60057,7 +60059,7 @@ Show Toolbelt</string>
 											<key>Ansi 1 Color</key>
 											<dict>
 												<key>Alpha Component</key>
-												<real>1</real>
+												<integer>1</integer>
 												<key>Blue Component</key>
 												<real>0.46310701966285706</real>
 												<key>Color Space</key>
@@ -60070,7 +60072,7 @@ Show Toolbelt</string>
 											<key>Ansi 10 Color</key>
 											<dict>
 												<key>Alpha Component</key>
-												<real>1</real>
+												<integer>1</integer>
 												<key>Blue Component</key>
 												<real>0.65098041296005249</real>
 												<key>Color Space</key>
@@ -60083,7 +60085,7 @@ Show Toolbelt</string>
 											<key>Ansi 11 Color</key>
 											<dict>
 												<key>Alpha Component</key>
-												<real>1</real>
+												<integer>1</integer>
 												<key>Blue Component</key>
 												<real>0.64705884459999996</real>
 												<key>Color Space</key>
@@ -60096,7 +60098,7 @@ Show Toolbelt</string>
 											<key>Ansi 12 Color</key>
 											<dict>
 												<key>Alpha Component</key>
-												<real>1</real>
+												<integer>1</integer>
 												<key>Blue Component</key>
 												<real>0.98823529409999999</real>
 												<key>Color Space</key>
@@ -60104,14 +60106,14 @@ Show Toolbelt</string>
 												<key>Green Component</key>
 												<real>0.75686274509999996</real>
 												<key>Red Component</key>
-												<real>0.0</real>
+												<integer>0</integer>
 											</dict>
 											<key>Ansi 13 Color</key>
 											<dict>
 												<key>Alpha Component</key>
-												<real>1</real>
+												<integer>1</integer>
 												<key>Blue Component</key>
-												<real>1</real>
+												<integer>1</integer>
 												<key>Color Space</key>
 												<string>sRGB</string>
 												<key>Green Component</key>
@@ -60122,7 +60124,7 @@ Show Toolbelt</string>
 											<key>Ansi 14 Color</key>
 											<dict>
 												<key>Alpha Component</key>
-												<real>1</real>
+												<integer>1</integer>
 												<key>Blue Component</key>
 												<real>0.9993787408</real>
 												<key>Color Space</key>
@@ -60130,12 +60132,12 @@ Show Toolbelt</string>
 												<key>Green Component</key>
 												<real>0.88278455440000003</real>
 												<key>Red Component</key>
-												<real>0.0</real>
+												<integer>0</integer>
 											</dict>
 											<key>Ansi 15 Color</key>
 											<dict>
 												<key>Alpha Component</key>
-												<real>1</real>
+												<integer>1</integer>
 												<key>Blue Component</key>
 												<real>0.94901960784313721</real>
 												<key>Color Space</key>
@@ -60148,7 +60150,7 @@ Show Toolbelt</string>
 											<key>Ansi 2 Color</key>
 											<dict>
 												<key>Alpha Component</key>
-												<real>1</real>
+												<integer>1</integer>
 												<key>Blue Component</key>
 												<real>0.62367786960000005</real>
 												<key>Color Space</key>
@@ -60161,7 +60163,7 @@ Show Toolbelt</string>
 											<key>Ansi 3 Color</key>
 											<dict>
 												<key>Alpha Component</key>
-												<real>1</real>
+												<integer>1</integer>
 												<key>Blue Component</key>
 												<real>0.61679995059967041</real>
 												<key>Color Space</key>
@@ -60174,9 +60176,9 @@ Show Toolbelt</string>
 											<key>Ansi 4 Color</key>
 											<dict>
 												<key>Alpha Component</key>
-												<real>1</real>
+												<integer>1</integer>
 												<key>Blue Component</key>
-												<real>1</real>
+												<integer>1</integer>
 												<key>Color Space</key>
 												<string>sRGB</string>
 												<key>Green Component</key>
@@ -60187,9 +60189,9 @@ Show Toolbelt</string>
 											<key>Ansi 5 Color</key>
 											<dict>
 												<key>Alpha Component</key>
-												<real>1</real>
+												<integer>1</integer>
 												<key>Blue Component</key>
-												<real>1</real>
+												<integer>1</integer>
 												<key>Color Space</key>
 												<string>sRGB</string>
 												<key>Green Component</key>
@@ -60200,7 +60202,7 @@ Show Toolbelt</string>
 											<key>Ansi 6 Color</key>
 											<dict>
 												<key>Alpha Component</key>
-												<real>1</real>
+												<integer>1</integer>
 												<key>Blue Component</key>
 												<real>0.83999999999999997</real>
 												<key>Color Space</key>
@@ -60208,12 +60210,12 @@ Show Toolbelt</string>
 												<key>Green Component</key>
 												<real>0.74199999999999999</real>
 												<key>Red Component</key>
-												<real>0.0</real>
+												<integer>0</integer>
 											</dict>
 											<key>Ansi 7 Color</key>
 											<dict>
 												<key>Alpha Component</key>
-												<real>1</real>
+												<integer>1</integer>
 												<key>Blue Component</key>
 												<real>0.41960784313725491</real>
 												<key>Color Space</key>
@@ -60226,7 +60228,7 @@ Show Toolbelt</string>
 											<key>Ansi 8 Color</key>
 											<dict>
 												<key>Alpha Component</key>
-												<real>1</real>
+												<integer>1</integer>
 												<key>Blue Component</key>
 												<real>0.4078223705291748</real>
 												<key>Color Space</key>
@@ -60239,7 +60241,7 @@ Show Toolbelt</string>
 											<key>Ansi 9 Color</key>
 											<dict>
 												<key>Alpha Component</key>
-												<real>1</real>
+												<integer>1</integer>
 												<key>Blue Component</key>
 												<real>0.50619852542877197</real>
 												<key>Color Space</key>
@@ -60247,7 +60249,7 @@ Show Toolbelt</string>
 												<key>Green Component</key>
 												<real>0.49256539344787598</real>
 												<key>Red Component</key>
-												<real>1</real>
+												<integer>1</integer>
 											</dict>
 											<key>Application Keypad Allowed</key>
 											<false/>
@@ -60258,7 +60260,7 @@ Show Toolbelt</string>
 											<key>Background Color</key>
 											<dict>
 												<key>Alpha Component</key>
-												<real>1</real>
+												<integer>1</integer>
 												<key>Blue Component</key>
 												<real>0.08235294118</real>
 												<key>Color Space</key>
@@ -60277,13 +60279,13 @@ Show Toolbelt</string>
 												<key>Alpha Component</key>
 												<real>0.5</real>
 												<key>Blue Component</key>
-												<real>0.0</real>
+												<integer>0</integer>
 												<key>Color Space</key>
 												<string>sRGB</string>
 												<key>Green Component</key>
 												<real>0.1491314172744751</real>
 												<key>Red Component</key>
-												<real>1</real>
+												<integer>1</integer>
 											</dict>
 											<key>Badge Text</key>
 											<string></string>
@@ -60300,13 +60302,13 @@ Show Toolbelt</string>
 											<key>Bold Color</key>
 											<dict>
 												<key>Alpha Component</key>
-												<real>1</real>
+												<integer>1</integer>
 												<key>Blue Component</key>
-												<real>1</real>
+												<integer>1</integer>
 												<key>Color Space</key>
 												<string>sRGB</string>
 												<key>Green Component</key>
-												<real>1</real>
+												<integer>1</integer>
 												<key>Red Component</key>
 												<real>0.99999600648880005</real>
 											</dict>
@@ -60319,13 +60321,13 @@ Show Toolbelt</string>
 											<key>Columns</key>
 											<integer>80</integer>
 											<key>Command</key>
-											<string>login</string>
+											<string></string>
 											<key>Cursor Boost</key>
-											<real>0.0</real>
+											<integer>0</integer>
 											<key>Cursor Color</key>
 											<dict>
 												<key>Alpha Component</key>
-												<real>1</real>
+												<integer>1</integer>
 												<key>Blue Component</key>
 												<real>0.50619852542877197</real>
 												<key>Color Space</key>
@@ -60333,14 +60335,14 @@ Show Toolbelt</string>
 												<key>Green Component</key>
 												<real>0.49256539344787598</real>
 												<key>Red Component</key>
-												<real>1</real>
+												<integer>1</integer>
 											</dict>
 											<key>Cursor Guide Color</key>
 											<dict>
 												<key>Alpha Component</key>
 												<real>0.25</real>
 												<key>Blue Component</key>
-												<real>1</real>
+												<integer>1</integer>
 												<key>Color Space</key>
 												<string>sRGB</string>
 												<key>Green Component</key>
@@ -60351,7 +60353,7 @@ Show Toolbelt</string>
 											<key>Cursor Text Color</key>
 											<dict>
 												<key>Alpha Component</key>
-												<real>1</real>
+												<integer>1</integer>
 												<key>Blue Component</key>
 												<real>0.50619852542877197</real>
 												<key>Color Space</key>
@@ -60359,12 +60361,12 @@ Show Toolbelt</string>
 												<key>Green Component</key>
 												<real>0.49256539344787598</real>
 												<key>Red Component</key>
-												<real>1</real>
+												<integer>1</integer>
 											</dict>
 											<key>Cursor Type</key>
 											<integer>0</integer>
 											<key>Custom Command</key>
-											<string>No</string>
+											<string>Yes</string>
 											<key>Custom Directory</key>
 											<string>No</string>
 											<key>Default Bookmark</key>
@@ -60380,7 +60382,7 @@ Show Toolbelt</string>
 											<key>Foreground Color</key>
 											<dict>
 												<key>Alpha Component</key>
-												<real>1</real>
+												<integer>1</integer>
 												<key>Blue Component</key>
 												<real>0.94999998809999997</real>
 												<key>Color Space</key>
@@ -60395,7 +60397,7 @@ Show Toolbelt</string>
 											<key>Has Hotkey</key>
 											<false/>
 											<key>Horizontal Spacing</key>
-											<real>1</real>
+											<integer>1</integer>
 											<key>HotKey Activated By Modifier</key>
 											<false/>
 											<key>HotKey Alternate Shortcuts</key>
@@ -60424,6 +60426,8 @@ Show Toolbelt</string>
 											<integer>1</integer>
 											<key>Idle Code</key>
 											<integer>0</integer>
+											<key>Initial Text</key>
+											<string></string>
 											<key>Initial Use Transparency</key>
 											<false/>
 											<key>Jobs to Ignore</key>
@@ -60691,7 +60695,7 @@ Show Toolbelt</string>
 											<key>Link Color</key>
 											<dict>
 												<key>Alpha Component</key>
-												<real>1</real>
+												<integer>1</integer>
 												<key>Blue Component</key>
 												<real>0.73423302173614502</real>
 												<key>Color Space</key>
@@ -60699,10 +60703,10 @@ Show Toolbelt</string>
 												<key>Green Component</key>
 												<real>0.35916060209274292</real>
 												<key>Red Component</key>
-												<real>0.0</real>
+												<integer>0</integer>
 											</dict>
 											<key>Minimum Contrast</key>
-											<real>0.0</real>
+											<integer>0</integer>
 											<key>Mouse Reporting</key>
 											<true/>
 											<key>Name</key>
@@ -60744,7 +60748,7 @@ Show Toolbelt</string>
 											<key>Selected Text Color</key>
 											<dict>
 												<key>Alpha Component</key>
-												<real>1</real>
+												<integer>1</integer>
 												<key>Blue Component</key>
 												<real>0.98136156797409058</real>
 												<key>Color Space</key>
@@ -60752,12 +60756,12 @@ Show Toolbelt</string>
 												<key>Green Component</key>
 												<real>0.9824872612953186</real>
 												<key>Red Component</key>
-												<real>1</real>
+												<integer>1</integer>
 											</dict>
 											<key>Selection Color</key>
 											<dict>
 												<key>Alpha Component</key>
-												<real>1</real>
+												<integer>1</integer>
 												<key>Blue Component</key>
 												<real>0.22878958284854889</real>
 												<key>Color Space</key>
@@ -60786,7 +60790,7 @@ Show Toolbelt</string>
 													<key>default text color</key>
 													<dict>
 														<key>Alpha Component</key>
-														<real>1</real>
+														<integer>1</integer>
 														<key>Blue Component</key>
 														<real>0.99937874078750999</real>
 														<key>Color Space</key>
@@ -60794,7 +60798,7 @@ Show Toolbelt</string>
 														<key>Green Component</key>
 														<real>0.75085854530333995</real>
 														<key>Red Component</key>
-														<real>0.0</real>
+														<integer>0</integer>
 													</dict>
 													<key>font</key>
 													<string>.AppleSystemUIFont 12</string>
@@ -60811,13 +60815,13 @@ Show Toolbelt</string>
 																<key>base: compression resistance</key>
 																<integer>1</integer>
 																<key>base: priority</key>
-																<real>5</real>
+																<integer>5</integer>
 																<key>format</key>
 																<string>M-dd h:mm</string>
 																<key>shared text color</key>
 																<dict>
 																	<key>Alpha Component</key>
-																	<real>1</real>
+																	<integer>1</integer>
 																	<key>Blue Component</key>
 																	<real>0.63</real>
 																	<key>Color Space</key>
@@ -60835,7 +60839,7 @@ Show Toolbelt</string>
 																<key>default text color</key>
 																<dict>
 																	<key>Alpha Component</key>
-																	<real>1</real>
+																	<integer>1</integer>
 																	<key>Blue Component</key>
 																	<real>0.99937874078750999</real>
 																	<key>Color Space</key>
@@ -60843,7 +60847,7 @@ Show Toolbelt</string>
 																	<key>Green Component</key>
 																	<real>0.75085854530333995</real>
 																	<key>Red Component</key>
-																	<real>0.0</real>
+																	<integer>0</integer>
 																</dict>
 																<key>font</key>
 																<string>.AppleSystemUIFont 12</string>
@@ -60858,15 +60862,15 @@ Show Toolbelt</string>
 															<key>knobs</key>
 															<dict>
 																<key>base: compression resistance</key>
-																<real>2</real>
+																<integer>2</integer>
 																<key>base: priority</key>
-																<real>5</real>
+																<integer>5</integer>
 																<key>path</key>
 																<string>username</string>
 																<key>shared text color</key>
 																<dict>
 																	<key>Alpha Component</key>
-																	<real>1</real>
+																	<integer>1</integer>
 																	<key>Blue Component</key>
 																	<real>0.63</real>
 																	<key>Color Space</key>
@@ -60884,7 +60888,7 @@ Show Toolbelt</string>
 																<key>default text color</key>
 																<dict>
 																	<key>Alpha Component</key>
-																	<real>1</real>
+																	<integer>1</integer>
 																	<key>Blue Component</key>
 																	<real>0.99937874078750999</real>
 																	<key>Color Space</key>
@@ -60892,7 +60896,7 @@ Show Toolbelt</string>
 																	<key>Green Component</key>
 																	<real>0.75085854530333995</real>
 																	<key>Red Component</key>
-																	<real>0.0</real>
+																	<integer>0</integer>
 																</dict>
 																<key>font</key>
 																<string>.AppleSystemUIFont 12</string>
@@ -60909,9 +60913,9 @@ Show Toolbelt</string>
 																<key>base: compression resistance</key>
 																<integer>1</integer>
 																<key>base: priority</key>
-																<real>5</real>
+																<integer>5</integer>
 																<key>maxwidth</key>
-																<real>+infinity</real>
+																<real>1.7976931348623157e+308</real>
 																<key>minwidth</key>
 																<integer>0</integer>
 																<key>path</key>
@@ -60919,7 +60923,7 @@ Show Toolbelt</string>
 																<key>shared text color</key>
 																<dict>
 																	<key>Alpha Component</key>
-																	<real>1</real>
+																	<integer>1</integer>
 																	<key>Blue Component</key>
 																	<real>0.90000000000000002</real>
 																	<key>Color Space</key>
@@ -60937,7 +60941,7 @@ Show Toolbelt</string>
 																<key>default text color</key>
 																<dict>
 																	<key>Alpha Component</key>
-																	<real>1</real>
+																	<integer>1</integer>
 																	<key>Blue Component</key>
 																	<real>0.99937874078750999</real>
 																	<key>Color Space</key>
@@ -60945,7 +60949,7 @@ Show Toolbelt</string>
 																	<key>Green Component</key>
 																	<real>0.75085854530333995</real>
 																	<key>Red Component</key>
-																	<real>0.0</real>
+																	<integer>0</integer>
 																</dict>
 																<key>font</key>
 																<string>.AppleSystemUIFont 12</string>
@@ -60962,7 +60966,7 @@ Show Toolbelt</string>
 																<key>base: compression resistance</key>
 																<integer>1</integer>
 																<key>base: priority</key>
-																<real>5</real>
+																<integer>5</integer>
 																<key>iTermStatusBarSpringComponentSizeMultipleKey</key>
 																<integer>1</integer>
 																<key>iTermStatusBarSpringComponentSpringConstantKey</key>
@@ -60985,11 +60989,11 @@ Show Toolbelt</string>
 																<key>base: compression resistance</key>
 																<integer>1</integer>
 																<key>base: priority</key>
-																<real>5</real>
+																<integer>5</integer>
 																<key>shared text color</key>
 																<dict>
 																	<key>Alpha Component</key>
-																	<real>1</real>
+																	<integer>1</integer>
 																	<key>Blue Component</key>
 																	<real>0.90000000000000002</real>
 																	<key>Color Space</key>
@@ -61014,15 +61018,15 @@ Show Toolbelt</string>
 											<key>Tab Color</key>
 											<dict>
 												<key>Alpha Component</key>
-												<real>1</real>
+												<integer>1</integer>
 												<key>Blue Component</key>
-												<real>0.082352941176470587</real>
+												<real>0.082352941176470601</real>
 												<key>Color Space</key>
 												<string>sRGB</string>
 												<key>Green Component</key>
-												<real>0.082352941176470587</real>
+												<real>0.082352941176470601</real>
 												<key>Red Component</key>
-												<real>0.082352941176470587</real>
+												<real>0.082352941176470601</real>
 											</dict>
 											<key>Tags</key>
 											<array/>
@@ -61037,15 +61041,15 @@ Show Toolbelt</string>
 											<key>Underline Color</key>
 											<dict>
 												<key>Alpha Component</key>
-												<real>1</real>
+												<integer>1</integer>
 												<key>Blue Component</key>
-												<real>0.058823529409999999</real>
+												<real>0.058823529410000006</real>
 												<key>Color Space</key>
 												<string>sRGB</string>
 												<key>Green Component</key>
-												<real>0.058823529409999999</real>
+												<real>0.058823529410000006</real>
 												<key>Red Component</key>
-												<real>0.058823529409999999</real>
+												<real>0.058823529410000006</real>
 											</dict>
 											<key>Unicode Version</key>
 											<integer>9</integer>
@@ -61131,7 +61135,7 @@ Show Toolbelt</string>
 										<key>Rows</key>
 										<integer>30</integer>
 										<key>Session GUID</key>
-										<string>AA207875-60D6-4021-A60D-2605ECA66FD0</string>
+										<string>6BB59617-42FD-4CBB-AF43-FE9BC271E933</string>
 										<key>Shell Integration Ever Used</key>
 										<true/>
 										<key>Short Lived Single Use</key>
@@ -61146,9 +61150,9 @@ Show Toolbelt</string>
 									<key>frame</key>
 									<dict>
 										<key>height</key>
-										<real>514</real>
+										<real>516</real>
 										<key>width</key>
-										<real>648</real>
+										<real>649</real>
 										<key>x</key>
 										<real>0.0</real>
 										<key>y</key>
@@ -61161,9 +61165,9 @@ Show Toolbelt</string>
 							<key>frame</key>
 							<dict>
 								<key>height</key>
-								<real>514</real>
+								<real>516</real>
 								<key>width</key>
-								<real>648</real>
+								<real>649</real>
 								<key>x</key>
 								<real>0.0</real>
 								<key>y</key>
@@ -61175,7 +61179,7 @@ Show Toolbelt</string>
 					</dict>
 				</array>
 				<key>TerminalGuid</key>
-				<string>pty-3D2B9226-69ED-4673-B2DF-9DB6F5A9CFF2</string>
+				<string>pty-57717C0C-B9A3-4E72-884D-C71ABFB57111</string>
 				<key>Toolbelt Proportions</key>
 				<dict>
 					<key>proportions</key>
@@ -61191,13 +61195,13 @@ Show Toolbelt</string>
 				<key>Use Transparency</key>
 				<false/>
 				<key>Width</key>
-				<real>648</real>
+				<real>649</real>
 				<key>Window Type</key>
 				<integer>13</integer>
 				<key>X Origin</key>
-				<real>792</real>
+				<real>788</real>
 				<key>Y Origin</key>
-				<real>225</real>
+				<real>184</real>
 			</dict>
 		</array>
 	</dict>
@@ -61220,7 +61224,7 @@ Show Toolbelt</string>
 	<key>kCPKUseSystemColorPicker</key>
 	<true/>
 	<key>metalMaximizeThroughput</key>
-	<false/>
+	<true/>
 	<key>preferIntegratedGPU</key>
 	<false/>
 </dict>
