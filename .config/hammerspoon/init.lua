@@ -1,4 +1,7 @@
--- This is a configuration for Hammerspoon:
+-- Hammerspoon config.
+-- Original code inspired (and copied) from https://blog.igorw.org/.
+--
+--
 -- Modification Keys: Cmd + Ctrl + Alt + Shift (⌘ + ⌃ + ⌥ + ⇧)
 -- Karabiner-elements is used to bind Caps Lock to Modification Keys
 -- Caps Lock (⇪) -> Cmd + Ctrl + Alt + Shift (⌘ + ⌃ + ⌥ + ⇧)
@@ -36,12 +39,16 @@ end
 
 
 -- 1 --------------------------
-hs.window.animationDuration = 0
-modification_keys    = {"cmd", "ctrl", "alt", "shift"}
-previous_frame_sizes = {}
+hs.window.animationDuration = 0.05
+mod_keys                    = {"cmd", "ctrl", "alt", "shift"}
+previous_frame_sizes        = {}
+
+hs.hotkey.bind(mod_keys, "Y", function()
+	hs.toggleConsole()
+end)
 
 hs.hotkey.bind(
-	modification_keys, "R",
+	mod_keys, "R",
 	function()
 		hs.notify.new({
 			title           = "Hammerspoon",
@@ -70,9 +77,17 @@ end
 
 
 function get_screen_win_frame()
-	local win = hs.window.focusedWindow()
+	local gap          = 5
+	local win          = hs.window.focusedWindow()
+	local win_frame    = win:frame()
+	local screen_frame = win:screen():frame()
 
-	return win:screen():frame()
+	win_frame.x = screen_frame.x + gap
+	win_frame.y = screen_frame.y + gap
+	win_frame.w = screen_frame.w - (gap * 2.5)
+	win_frame.h = screen_frame.h - (gap * 2.5)
+
+	return win_frame
 end
 
 
@@ -84,8 +99,8 @@ function get_fill_left_win_frame()
 
 	win_frame.x = screen_frame.x + gap
 	win_frame.y = screen_frame.y + gap
-	win_frame.w = (screen_frame.w - (gap *2)) / 2
-	win_frame.h = screen_frame.h - (gap * 2)
+	win_frame.w = (screen_frame.w - (gap * 2.5)) / 2
+	win_frame.h = screen_frame.h - (gap * 2.5)
 
 	return win_frame
 end
@@ -99,8 +114,8 @@ function get_fill_right_win_frame()
 
 	win_frame.x = (screen_frame.x + screen_frame.w + gap) / 2
 	win_frame.y = screen_frame.y + gap
-	win_frame.w = (screen_frame.w - (gap * 2)) / 2
-	win_frame.h = screen_frame.h - (gap * 2)
+	win_frame.w = (screen_frame.w - (gap * 2.5)) / 2
+	win_frame.h = screen_frame.h - (gap * 2.5)
 
 	return win_frame
 end
@@ -119,8 +134,7 @@ end
 
 
 function bind_resize_and_restore_keys(key, resize_frame_fn)
-	hs.hotkey.bind(
-		modification_keys, key,
+	hs.hotkey.bind(mod_keys, key,
 		function()
 			local win          = hs.window.focusedWindow()
 			local win_frame    = win:frame()
@@ -174,7 +188,7 @@ function is_top_win_frame()
 end
 
 
-hs.hotkey.bind(modification_keys, "H", function()
+hs.hotkey.bind(mod_keys, "H", function()
 	-- push western frame west (increases window width)
 	local win          = hs.window.focusedWindow()
 	local win_frame    = win:frame()
@@ -195,7 +209,7 @@ hs.hotkey.bind(modification_keys, "H", function()
 end)
 
 
-hs.hotkey.bind(modification_keys, "L", function()
+hs.hotkey.bind(mod_keys, "L", function()
 	-- pull western frame east (decreases window width)
 	local win = hs.window.focusedWindow()
 	local win_frame = win:frame()
@@ -211,7 +225,7 @@ hs.hotkey.bind(modification_keys, "L", function()
 end)
 
 
-hs.hotkey.bind(modification_keys, "J", function()
+hs.hotkey.bind(mod_keys, "J", function()
 	-- push southern frame south (increases window height)
 	local win       = hs.window.focusedWindow()
 	local win_frame = win:frame()
@@ -226,7 +240,7 @@ hs.hotkey.bind(modification_keys, "J", function()
 end)
 
 
-hs.hotkey.bind(modification_keys, "K", function()
+hs.hotkey.bind(mod_keys, "K", function()
 	-- pull southern frame north (decreases window height)
 	local win          = hs.window.focusedWindow()
 	local win_frame    = win:frame()
@@ -241,7 +255,7 @@ hs.hotkey.bind(modification_keys, "K", function()
 end)
 
 
-hs.hotkey.bind(modification_keys, "I", function()
+hs.hotkey.bind(mod_keys, "I", function()
 	-- resize window, from all corners, inward (shrink)
 	local win       = hs.window.focusedWindow()
 	local win_frame = win:frame()
@@ -252,7 +266,7 @@ hs.hotkey.bind(modification_keys, "I", function()
 end)
 
 
-hs.hotkey.bind(modification_keys, "O", function()
+hs.hotkey.bind(mod_keys, "O", function()
 	-- resize window, from all corners, outward (expand)
 	local win       = hs.window.focusedWindow()
 	local win_frame = win:frame()
@@ -264,7 +278,7 @@ end)
 
 
 -- 3 --------------------------
-hs.hotkey.bind(modification_keys, "U", function()
+hs.hotkey.bind(mod_keys, "U", function()
 	--	move window up
 	local win          = hs.window.focusedWindow()
 	local win_frame    = win:frame()
@@ -274,7 +288,7 @@ hs.hotkey.bind(modification_keys, "U", function()
  end)
 
 
-hs.hotkey.bind(modification_keys, "D", function()
+hs.hotkey.bind(mod_keys, "D", function()
 	--	move window down
 	local win          = hs.window.focusedWindow()
 	local win_frame    = win:frame()
@@ -285,7 +299,7 @@ hs.hotkey.bind(modification_keys, "D", function()
 end)
 
 
-hs.hotkey.bind(modification_keys, "N", function()
+hs.hotkey.bind(mod_keys, "N", function()
 	--	move window left
 	local win          = hs.window.focusedWindow()
 	local win_frame    = win:frame()
@@ -295,7 +309,7 @@ hs.hotkey.bind(modification_keys, "N", function()
 end)
 
 
-hs.hotkey.bind(modification_keys, "M", function()
+hs.hotkey.bind(mod_keys, "M", function()
 	--	move window right
 	local win          = hs.window.focusedWindow()
 	local win_frame    = win:frame()
@@ -305,7 +319,7 @@ hs.hotkey.bind(modification_keys, "M", function()
 end)
 
 
-hs.hotkey.bind(modification_keys, "Right", function()
+hs.hotkey.bind(mod_keys, "Right", function()
 	-- move to screen right
 	-- wraps around to first screen
 	local win        = hs.window.focusedWindow()
@@ -315,7 +329,7 @@ hs.hotkey.bind(modification_keys, "Right", function()
 end)
 
 
-hs.hotkey.bind(modification_keys, "Left", function()
+hs.hotkey.bind(mod_keys, "Left", function()
 	-- move to screen left
 	--   wraps around to last screen
 	local win        = hs.window.focusedWindow()
