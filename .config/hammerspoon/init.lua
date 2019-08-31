@@ -2,29 +2,30 @@
 -- Modification Keys: Cmd + Ctrl + Alt + Shift (⌘ + ⌃ + ⌥ + ⇧)
 -- Karabiner-elements is used to bind Caps Lock to Modification Keys
 -- Caps Lock (⇪) -> Cmd + Ctrl + Alt + Shift (⌘ + ⌃ + ⌥ + ⇧)
--- 1. Window Layout Management:
---   -  ⌘ + ⌃ + ⌥ + ⇧ + [, Toggle current window to left/restore;
---   -  ⌘ + ⌃ + ⌥ + ⇧ + ], Toggle current window to right/restore;
---   -  ⌘ + ⌃ + ⌥ + ⇧ + F, Toggle current window to screenimize/restore;
 --
--- 2. Window Resizing:
---   -  ⌘ + ⌃ + ⌥ + ⇧ + H, Increase window width;
---   -  ⌘ + ⌃ + ⌥ + ⇧ + K, Increase window height;
---   -  ⌘ + ⌃ + ⌥ + ⇧ + L, Decrease window width;
---   -  ⌘ + ⌃ + ⌥ + ⇧ + J, Decrease window height;
-
 --
--- 3. Window Placement:
---   -  ⌘ + ⌃ + ⌥ + ⇧ + Left, Move window to screen left;
---   -  ⌘ + ⌃ + ⌥ + ⇧ + Right, Move window to screen right;
---   -  ⌘ + ⌃ + ⌥ + ⇧ + U, Move window up;
---   -  ⌘ + ⌃ + ⌥ + ⇧ + D, Move window down;
---   -  ⌘ + ⌃ + ⌥ + ⇧ + N, Move window left;
---   -  ⌘ + ⌃ + ⌥ + ⇧ + M, Move window right;
+--  1: Window Layout Management
+--    -  ⌘ + ⌃ + ⌥ + ⇧ + [, Toggle current window to left/restore;
+--    -  ⌘ + ⌃ + ⌥ + ⇧ + ], Toggle current window to right/restore;
+--    -  ⌘ + ⌃ + ⌥ + ⇧ + F, Toggle current window to screenimize/restore;
+--
+--  2: Window Resizing
+--    -  ⌘ + ⌃ + ⌥ + ⇧ + H, Increase window width;
+--    -  ⌘ + ⌃ + ⌥ + ⇧ + J, Increase window height;
+--    -  ⌘ + ⌃ + ⌥ + ⇧ + L, Decrease window width;
+--    -  ⌘ + ⌃ + ⌥ + ⇧ + K, Decrease window height;
+--
+--  3: Window Placement:
+--    -  ⌘ + ⌃ + ⌥ + ⇧ + Left, Move window to screen left;
+--    -  ⌘ + ⌃ + ⌥ + ⇧ + Right, Move window to screen right;
+--    -  ⌘ + ⌃ + ⌥ + ⇧ + U, Move window up;
+--    -  ⌘ + ⌃ + ⌥ + ⇧ + D, Move window down;
+--    -  ⌘ + ⌃ + ⌥ + ⇧ + N, Move window left;
+--    -  ⌘ + ⌃ + ⌥ + ⇧ + M, Move window right;
 
 
 
--- 0. --
+-- 0 --------------------------
 hs.console.darkMode(true)
 
 if hs.console.darkMode(true) then
@@ -33,9 +34,10 @@ if hs.console.darkMode(true) then
 	hs.console.outputBackgroundColor{ white = 0.15 }
 end
 
--- 1. --
+
+-- 1 --------------------------
 hs.window.animationDuration = 0
-modification_keys = {"cmd", "ctrl", "alt", "shift"}
+modification_keys    = {"cmd", "ctrl", "alt", "shift"}
 previous_frame_sizes = {}
 
 hs.hotkey.bind(
@@ -51,8 +53,8 @@ hs.hotkey.bind(
 
 
 function is_almost_equal_to_win_frame(geo)
-	local epsilon = 2
-	local win = hs.window.focusedWindow()
+	local epsilon   = 2
+	local win       = hs.window.focusedWindow()
 	local win_frame = win:frame()
 
 	if math.abs(win_frame.x - geo.x) < epsilon and
@@ -138,12 +140,13 @@ function bind_resize_and_restore_keys(key, resize_frame_fn)
 	)
 end
 
+
 bind_resize_and_restore_keys("F", get_screen_win_frame)
 bind_resize_and_restore_keys("[", get_fill_left_win_frame)
 bind_resize_and_restore_keys("]", get_fill_right_win_frame)
 
 
--- 2. --
+-- 2 --------------------------
 function is_right_win_frame()
 	local win          = hs.window.focusedWindow()
 	local win_frame    = win:frame()
@@ -170,7 +173,7 @@ end
 
 
 hs.hotkey.bind(modification_keys, "H", function()
-	-- increase window width
+	-- push western frame west (increases window width)
 	local win          = hs.window.focusedWindow()
 	local win_frame    = win:frame()
 	local screen_frame = win:screen():frame()
@@ -191,7 +194,7 @@ end)
 
 
 hs.hotkey.bind(modification_keys, "L", function()
-	-- decrease window width
+	-- pull western frame east (decreases window width)
 	local win = hs.window.focusedWindow()
 	local win_frame = win:frame()
 
@@ -206,8 +209,8 @@ hs.hotkey.bind(modification_keys, "L", function()
 end)
 
 
-hs.hotkey.bind(modification_keys, "K", function()
-	-- increase window height
+hs.hotkey.bind(modification_keys, "J", function()
+	-- push southern frame south (increases window height)
 	local win       = hs.window.focusedWindow()
 	local win_frame = win:frame()
 
@@ -221,8 +224,8 @@ hs.hotkey.bind(modification_keys, "K", function()
 end)
 
 
-hs.hotkey.bind(modification_keys, "J", function()
-	-- decrease window height
+hs.hotkey.bind(modification_keys, "K", function()
+	-- pull southern frame north (decreases window height)
 	local win          = hs.window.focusedWindow()
 	local win_frame    = win:frame()
 
@@ -236,7 +239,27 @@ hs.hotkey.bind(modification_keys, "J", function()
 end)
 
 
--- WIP --
+hs.hotkey.bind(modification_keys, "I", function()
+	-- resize window, from all corners, inward (shrink)
+	local win       = hs.window.focusedWindow()
+	local win_frame = win:frame()
+
+	win_frame.h = win_frame.h - 25
+	win_frame.w = win_frame.w - 25
+	win:setFrame(win_frame)
+end)
+
+
+hs.hotkey.bind(modification_keys, "O", function()
+	-- resize window, from all corners, outward (expand)
+	local win       = hs.window.focusedWindow()
+	local win_frame = win:frame()
+
+	win_frame.h = win_frame.h + 25
+	win_frame.w = win_frame.w + 25
+	win:setFrame(win_frame)
+end)
+-- 3 --------------------------
 hs.hotkey.bind(modification_keys, "U", function()
 	--	move window up
 	local win          = hs.window.focusedWindow()
@@ -276,14 +299,12 @@ hs.hotkey.bind(modification_keys, "M", function()
 	win_frame.x = win_frame.x + 25
 	win:setFrame(win_frame)
 end)
--- END WIP --
 
 
--- 3. --
 hs.hotkey.bind(modification_keys, "Right", function()
 	-- move to screen right
 	-- wraps around to first screen
-	local win = hs.window.focusedWindow()
+	local win        = hs.window.focusedWindow()
 	local win_screen = win:screen()
 
 	win:moveToScreen(win_screen:next())
@@ -293,9 +314,8 @@ end)
 hs.hotkey.bind(modification_keys, "Left", function()
 	-- move to screen left
 	--   wraps around to last screen
-	local win = hs.window.focusedWindow()
+	local win        = hs.window.focusedWindow()
 	local win_screen = win:screen()
 
 	win:moveToScreen(win_screen:previous())
 end)
-
