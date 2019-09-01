@@ -1,11 +1,14 @@
 [Background]
-Color=21,21,21
+Color=14,14,14
+MaxRandomHue=0
+MaxRandomSaturation=0
+MaxRandomValue=0
 
 [BackgroundFaint]
 Color=21,21,21
 
 [BackgroundIntense]
-Color=21,21,21
+Color=14,14,14
 
 [Color0]
 Color=81,81,81
@@ -71,16 +74,16 @@ Color=8,132,181
 Color=12,186,255
 
 [Color7]
-Color=141,141,141
+Color=118,118,118
 
 [Color7Faint]
 Color=104,104,104
 
 [Color7Intense]
-Color=157,157,157
+Color=255,255,255
 
 [Foreground]
-Color=230,230,230
+Color=244,244,244
 
 [ForegroundFaint]
 Color=101,101,101
@@ -91,5 +94,5 @@ Color=255,255,255
 [General]
 Blur=true
 Description=Alice
-Opacity=0.95
+Opacity=0.9
 Wallpaper=
