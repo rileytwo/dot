@@ -114,7 +114,8 @@
         "#C4C4C4"
     ],
     "bracket-pair-colorizer-2.excludedLanguages": [
-        "python"
+        "python",
+        "shellscript"
     ],
     "javascript.format.insertSpaceAfterSemicolonInForStatements": false,
     "javascript.validate.enable": false,
