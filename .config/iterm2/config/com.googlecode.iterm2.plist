@@ -51104,7 +51104,7 @@ Show Toolbelt</string>
 	<key>NSWindow Frame NSColorPanel</key>
 	<string>1611 248 328 401 1440 -180 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>742 8 690 558 0 0 1440 877 </string>
+	<string>722 78 713 564 0 0 1440 877 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -59042,12 +59042,12 @@ Show Toolbelt</string>
 	</array>
 	<key>NoSyncAllAppVersions</key>
 	<array>
-		<string>3.3.0beta11</string>
+		<string>3.3.0beta15</string>
 		<string>3.3.0beta13</string>
 		<string>3.3.1</string>
-		<string>3.3.0beta9</string>
 		<string>3.3.0</string>
-		<string>3.3.0beta15</string>
+		<string>3.3.0beta9</string>
+		<string>3.3.0beta11</string>
 	</array>
 	<key>NoSyncBFPFavorites</key>
 	<array>
@@ -59090,7 +59090,7 @@ Show Toolbelt</string>
 	<key>NoSyncLastTipTime</key>
 	<real>585361631.22538805</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>659</integer>
+	<integer>664</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -59943,7 +59943,7 @@ Show Toolbelt</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-09-02T14:16:21Z</date>
+	<date>2019-09-02T20:34:28Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>Selection Respects Soft Boundaries</key>
@@ -60014,7 +60014,7 @@ Show Toolbelt</string>
 				<key>Has Toolbelt</key>
 				<false/>
 				<key>Height</key>
-				<real>558</real>
+				<real>564</real>
 				<key>Hide After Opening</key>
 				<false/>
 				<key>Hiding Toolbelt Should Resize Window</key>
@@ -61091,7 +61091,7 @@ Show Toolbelt</string>
 											<string>alice</string>
 										</dict>
 										<key>Columns</key>
-										<integer>85</integer>
+										<integer>88</integer>
 										<key>Commands</key>
 										<array>
 											<string>cd .dot</string>
@@ -61119,11 +61119,13 @@ Show Toolbelt</string>
 											<string>/Users/riley/.dot</string>
 											<string>/Users/riley/.dot</string>
 											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
 										</array>
 										<key>Environment</key>
 										<dict>
 											<key>PWD</key>
-											<string>/Users/riley</string>
+											<string>/Users/riley/.dot</string>
 										</dict>
 										<key>Hostname to Shell</key>
 										<dict>
@@ -61132,6 +61134,18 @@ Show Toolbelt</string>
 										</dict>
 										<key>Hosts</key>
 										<array>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
 											<dict>
 												<key>Host name</key>
 												<string>rmbp</string>
@@ -61249,9 +61263,9 @@ Show Toolbelt</string>
 									<key>frame</key>
 									<dict>
 										<key>height</key>
-										<real>520</real>
+										<real>526</real>
 										<key>width</key>
-										<real>690</real>
+										<real>713</real>
 										<key>x</key>
 										<real>0.0</real>
 										<key>y</key>
@@ -61264,9 +61278,9 @@ Show Toolbelt</string>
 							<key>frame</key>
 							<dict>
 								<key>height</key>
-								<real>520</real>
+								<real>526</real>
 								<key>width</key>
-								<real>690</real>
+								<real>713</real>
 								<key>x</key>
 								<real>0.0</real>
 								<key>y</key>
@@ -61294,13 +61308,13 @@ Show Toolbelt</string>
 				<key>Use Transparency</key>
 				<false/>
 				<key>Width</key>
-				<real>690</real>
+				<real>713</real>
 				<key>Window Type</key>
 				<integer>13</integer>
 				<key>X Origin</key>
-				<real>742</real>
+				<real>722</real>
 				<key>Y Origin</key>
-				<real>7</real>
+				<real>78</real>
 			</dict>
 		</array>
 		<key>Two Panel Bottom 85x30</key>
