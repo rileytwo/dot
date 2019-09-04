@@ -32,6 +32,8 @@ Plug 'deoplete-plugins/deoplete-jedi', {'for': 'python'}
 Plug 'chrisbra/vim-zsh' , {'for': 'zsh'}
 Plug 'vitalk/vim-shebang'
 Plug 'xu-cheng/brew.vim'
+Plug 'cespare/vim-toml'
+
 
 " // Auto closing delimiters
 Plug 'Raimondi/delimitMate'
