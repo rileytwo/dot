@@ -51096,6 +51096,10 @@ Show Toolbelt</string>
 	</dict>
 	<key>NSUserKeyEquivalents</key>
 	<dict>
+		<key>Move Tab Left</key>
+		<string>^$[</string>
+		<key>Move Tab Right</key>
+		<string>^$]</string>
 		<key>Select All</key>
 		<string>@$a</string>
 		<key>Select Current Command</key>
@@ -51171,15 +51175,15 @@ Show Toolbelt</string>
 			<key>Ansi 12 Color</key>
 			<dict>
 				<key>Alpha Component</key>
-				<integer>1</integer>
+				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.98823529409999999</real>
+				<real>0.93183511500000005</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.75686274509999996</real>
+				<real>0.64323061699999995</real>
 				<key>Red Component</key>
-				<integer>0</integer>
+				<real>0.21592763070000001</real>
 			</dict>
 			<key>Ansi 13 Color</key>
 			<dict>
@@ -51249,9 +51253,9 @@ Show Toolbelt</string>
 			<key>Ansi 4 Color</key>
 			<dict>
 				<key>Alpha Component</key>
-				<integer>1</integer>
+				<real>1</real>
 				<key>Blue Component</key>
-				<integer>1</integer>
+				<real>1</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
@@ -59042,11 +59046,11 @@ Show Toolbelt</string>
 	</array>
 	<key>NoSyncAllAppVersions</key>
 	<array>
-		<string>3.3.0beta15</string>
+		<string>3.3.0beta9</string>
 		<string>3.3.0beta13</string>
 		<string>3.3.1</string>
 		<string>3.3.0</string>
-		<string>3.3.0beta9</string>
+		<string>3.3.0beta15</string>
 		<string>3.3.0beta11</string>
 	</array>
 	<key>NoSyncBFPFavorites</key>
@@ -59090,7 +59094,7 @@ Show Toolbelt</string>
 	<key>NoSyncLastTipTime</key>
 	<real>585361631.22538805</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>664</integer>
+	<integer>666</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
