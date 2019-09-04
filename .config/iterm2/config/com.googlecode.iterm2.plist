@@ -51046,7 +51046,7 @@ Show Toolbelt</string>
 	<key>NSColorPickerSlidersDefaults</key>
 	<string>1</string>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/.dot/.config/iterm2/config</string>
+	<string>~/.dot/.config/iterm2/colors</string>
 	<key>NSNavLastUserSetHideExtensionButtonState</key>
 	<false/>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
@@ -51106,7 +51106,7 @@ Show Toolbelt</string>
 		<string>@a</string>
 	</dict>
 	<key>NSWindow Frame NSColorPanel</key>
-	<string>1611 248 328 401 1440 -180 1920 1057 </string>
+	<string>119 339 328 365 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>722 78 713 564 0 0 1440 877 </string>
 	<key>New Bookmarks</key>
@@ -51177,13 +51177,13 @@ Show Toolbelt</string>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.93183511500000005</real>
+				<real>1</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.64323061699999995</real>
+				<real>0.69803921570000005</real>
 				<key>Red Component</key>
-				<real>0.21592763070000001</real>
+				<real>0.2470588235</real>
 			</dict>
 			<key>Ansi 13 Color</key>
 			<dict>
@@ -51255,13 +51255,13 @@ Show Toolbelt</string>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>1</real>
+				<real>0.93183511500000005</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.69803923368453979</real>
+				<real>0.64323061699999995</real>
 				<key>Red Component</key>
-				<real>0.24705882370471954</real>
+				<real>0.21592763070000001</real>
 			</dict>
 			<key>Ansi 5 Color</key>
 			<dict>
@@ -51337,15 +51337,15 @@ Show Toolbelt</string>
 			<key>Background Color</key>
 			<dict>
 				<key>Alpha Component</key>
-				<integer>1</integer>
+				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.08235294118</real>
+				<real>0.08235294371843338</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.08235294118</real>
+				<real>0.08235294371843338</real>
 				<key>Red Component</key>
-				<real>0.08235294118</real>
+				<real>0.08235294371843338</real>
 			</dict>
 			<key>Background Image Location</key>
 			<string></string>
@@ -59046,12 +59046,12 @@ Show Toolbelt</string>
 	</array>
 	<key>NoSyncAllAppVersions</key>
 	<array>
+		<string>3.3.0beta11</string>
 		<string>3.3.0beta9</string>
 		<string>3.3.0beta13</string>
 		<string>3.3.1</string>
 		<string>3.3.0</string>
 		<string>3.3.0beta15</string>
-		<string>3.3.0beta11</string>
 	</array>
 	<key>NoSyncBFPFavorites</key>
 	<array>
@@ -59094,7 +59094,7 @@ Show Toolbelt</string>
 	<key>NoSyncLastTipTime</key>
 	<real>585361631.22538805</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>666</integer>
+	<integer>667</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -60110,15 +60110,15 @@ Show Toolbelt</string>
 											<key>Ansi 12 Color</key>
 											<dict>
 												<key>Alpha Component</key>
-												<integer>1</integer>
+												<real>1</real>
 												<key>Blue Component</key>
-												<real>0.98823529409999999</real>
+												<real>1</real>
 												<key>Color Space</key>
 												<string>sRGB</string>
 												<key>Green Component</key>
-												<real>0.75686274509999996</real>
+												<real>0.69803921570000005</real>
 												<key>Red Component</key>
-												<integer>0</integer>
+												<real>0.2470588235</real>
 											</dict>
 											<key>Ansi 13 Color</key>
 											<dict>
@@ -60188,15 +60188,15 @@ Show Toolbelt</string>
 											<key>Ansi 4 Color</key>
 											<dict>
 												<key>Alpha Component</key>
-												<integer>1</integer>
+												<real>1</real>
 												<key>Blue Component</key>
-												<integer>1</integer>
+												<real>0.93183511500000005</real>
 												<key>Color Space</key>
 												<string>sRGB</string>
 												<key>Green Component</key>
-												<real>0.69803923368453979</real>
+												<real>0.64323061699999995</real>
 												<key>Red Component</key>
-												<real>0.24705882370471954</real>
+												<real>0.21592763070000001</real>
 											</dict>
 											<key>Ansi 5 Color</key>
 											<dict>
@@ -60272,15 +60272,15 @@ Show Toolbelt</string>
 											<key>Background Color</key>
 											<dict>
 												<key>Alpha Component</key>
-												<integer>1</integer>
+												<real>1</real>
 												<key>Blue Component</key>
-												<real>0.08235294118</real>
+												<real>0.08235294371843338</real>
 												<key>Color Space</key>
 												<string>sRGB</string>
 												<key>Green Component</key>
-												<real>0.08235294118</real>
+												<real>0.08235294371843338</real>
 												<key>Red Component</key>
-												<real>0.08235294118</real>
+												<real>0.08235294371843338</real>
 											</dict>
 											<key>Background Image Location</key>
 											<string></string>
@@ -61106,6 +61106,9 @@ Show Toolbelt</string>
 											<string>brew services</string>
 											<string>brew services list</string>
 											<string>brew search launchctl</string>
+											<string>gup</string>
+											<string>cd</string>
+											<string>clear</string>
 										</array>
 										<key>Directories</key>
 										<array>
@@ -61125,6 +61128,11 @@ Show Toolbelt</string>
 											<string>/Users/riley/.dot</string>
 											<string>/Users/riley/.dot</string>
 											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
 										</array>
 										<key>Environment</key>
 										<dict>
@@ -61138,6 +61146,36 @@ Show Toolbelt</string>
 										</dict>
 										<key>Hosts</key>
 										<array>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
 											<dict>
 												<key>Host name</key>
 												<string>rmbp</string>
@@ -61260,7 +61298,7 @@ Show Toolbelt</string>
 										<key>Substitutions</key>
 										<dict/>
 										<key>Working Directory</key>
-										<string>/Users/riley/.dot</string>
+										<string>/Users/riley</string>
 									</dict>
 									<key>View Type</key>
 									<string>SessionView</string>
