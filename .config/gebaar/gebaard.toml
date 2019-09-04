@@ -1,7 +1,7 @@
 [commands.swipe.three]
 left_up = ""
 right_up = ""
-up = ""
+up = "xdotool key ctrl+F10"
 left_down = ""
 right_down = ""
 down = ""
