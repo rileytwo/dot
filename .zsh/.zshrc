@@ -277,4 +277,5 @@ export FZF_DEFAULT_OPTS='
 #
 # // iterm integration
 [[ -e "${HOME}/.iterm2_shell_integration.zsh" ]] \
-    && source "${HOME}/.iterm2_shell_integration.zsh"
+    && source "${HOME}/.iterm2_shell_integration.zsh" \
+    || :
