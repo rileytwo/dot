@@ -29,12 +29,20 @@
 
 
 -- 0 --------------------------
+hs.console.consoleFont("FuraCode Nerd Font")
 hs.console.darkMode(true)
 
 if hs.console.darkMode(true) then
-	hs.console.alpha(0.95)
-	hs.console.consoleCommandColor{ white = 0.80 }
-	hs.console.outputBackgroundColor{ white = 0.15 }
+	hs.console.outputBackgroundColor{alpha = 0.5}
+	hs.console.consoleCommandColor{
+		red = 0.25, blue = 1, green = 0.7
+	}
+	hs.console.consoleResultColor{
+		red = 0.2, blue = 0.2, green = 0.9
+	}
+	hs.console.consolePrintColor{
+		red = 0.9, blue = 0.1, green = 0.9
+	}
 end
 
 
