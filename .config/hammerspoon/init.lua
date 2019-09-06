@@ -92,8 +92,8 @@ function get_screen_win_frame()
 
 	win_frame.x = screen_frame.x + gap
 	win_frame.y = screen_frame.y + gap
-	win_frame.w = screen_frame.w - (gap * 2.5)
-	win_frame.h = screen_frame.h - (gap * 2.5)
+	win_frame.w = screen_frame.w - (gap * 2)
+	win_frame.h = screen_frame.h - (gap * 2)
 
 	return win_frame
 end
@@ -103,12 +103,12 @@ function get_fill_left_win_frame()
 	local gap          = 5
 	local win          = hs.window.focusedWindow()
 	local win_frame    = win:frame()
-	local screen_frame = win:screen():frame()
+		local screen_frame = win:screen():frame()
 
 	win_frame.x = screen_frame.x + gap
 	win_frame.y = screen_frame.y + gap
-	win_frame.w = (screen_frame.w - (gap * 2.5)) / 2
-	win_frame.h = screen_frame.h - (gap * 2.5)
+	win_frame.w = (screen_frame.w - (gap * 3)) / 2
+	win_frame.h = screen_frame.h - (gap * 2)
 
 	return win_frame
 end
@@ -122,16 +122,16 @@ function get_fill_right_win_frame()
 
 	win_frame.x = (screen_frame.x + screen_frame.w + gap) / 2
 	win_frame.y = screen_frame.y + gap
-	win_frame.w = (screen_frame.w - (gap * 2.5)) / 2
-	win_frame.h = screen_frame.h - (gap * 2.5)
+	win_frame.w = (screen_frame.w - (gap * 3)) / 2
+	win_frame.h = screen_frame.h - (gap * 2)
 
 	return win_frame
 end
 
 
 function is_predefined_win_frame_size()
-	if is_almost_equal_to_win_frame(get_screen_win_frame()) or
-		is_almost_equal_to_win_frame(get_fill_left_win_frame()) or
+	if is_almost_equal_to_win_frame(get_screen_win_frame())     or
+		is_almost_equal_to_win_frame(get_fill_left_win_frame())  or
 		is_almost_equal_to_win_frame(get_fill_right_win_frame()) then
 
 		return true
@@ -250,8 +250,8 @@ end)
 
 hs.hotkey.bind(mod_keys, "K", function()
 	-- pull southern frame north (decreases window height)
-	local win          = hs.window.focusedWindow()
-	local win_frame    = win:frame()
+	local win       = hs.window.focusedWindow()
+	local win_frame = win:frame()
 
 	if is_top_win_frame() then
 		win_frame.h = win_frame.h - 50
@@ -288,8 +288,8 @@ end)
 -- 3 --------------------------
 hs.hotkey.bind(mod_keys, "U", function()
 	--	move window up
-	local win          = hs.window.focusedWindow()
-	local win_frame    = win:frame()
+	local win       = hs.window.focusedWindow()
+	local win_frame = win:frame()
 
 	win_frame.y = win_frame.y - 25
 	win:setFrame(win_frame)
@@ -298,8 +298,8 @@ hs.hotkey.bind(mod_keys, "U", function()
 
 hs.hotkey.bind(mod_keys, "D", function()
 	--	move window down
-	local win          = hs.window.focusedWindow()
-	local win_frame    = win:frame()
+	local win       = hs.window.focusedWindow()
+	local win_frame = win:frame()
 
 
 	win_frame.y = win_frame.y + 25
@@ -309,8 +309,8 @@ end)
 
 hs.hotkey.bind(mod_keys, "N", function()
 	--	move window left
-	local win          = hs.window.focusedWindow()
-	local win_frame    = win:frame()
+	local win       = hs.window.focusedWindow()
+	local win_frame = win:frame()
 
 	win_frame.x = win_frame.x - 25
 	win:setFrame(win_frame)
@@ -319,8 +319,8 @@ end)
 
 hs.hotkey.bind(mod_keys, "M", function()
 	--	move window right
-	local win          = hs.window.focusedWindow()
-	local win_frame    = win:frame()
+	local win       = hs.window.focusedWindow()
+	local win_frame = win:frame()
 
 	win_frame.x = win_frame.x + 25
 	win:setFrame(win_frame)
