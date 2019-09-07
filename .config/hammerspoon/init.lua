@@ -103,11 +103,11 @@ function get_fill_left_win_frame()
 	local gap          = 5
 	local win          = hs.window.focusedWindow()
 	local win_frame    = win:frame()
-		local screen_frame = win:screen():frame()
+	local screen_frame = win:screen():frame()
 
 	win_frame.x = screen_frame.x + gap
 	win_frame.y = screen_frame.y + gap
-	win_frame.w = (screen_frame.w - (gap * 3)) / 2
+	win_frame.w = (screen_frame.w / 2) - (gap * 1.5)
 	win_frame.h = screen_frame.h - (gap * 2)
 
 	return win_frame
@@ -120,9 +120,9 @@ function get_fill_right_win_frame()
 	local win_frame    = win:frame()
 	local screen_frame = win:screen():frame()
 
-	win_frame.x = (screen_frame.x + screen_frame.w + gap) / 2
+	win_frame.x = (screen_frame.w + gap) / 2
 	win_frame.y = screen_frame.y + gap
-	win_frame.w = (screen_frame.w - (gap * 3)) / 2
+	win_frame.w = (screen_frame.w / 2) - (gap * 1.5)
 	win_frame.h = screen_frame.h - (gap * 2)
 
 	return win_frame
