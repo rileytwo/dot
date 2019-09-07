@@ -39,6 +39,7 @@ export ZSH="${HOME}/.oh-my-zsh"
 plugins=(
     git
     forgit
+    zsh-interactive-cd
     zsh-autopair
     zsh-completions
     zsh-history-substring-search
