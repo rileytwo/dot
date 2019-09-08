@@ -29,9 +29,9 @@ desktop.ini
 *rscodeio*
 
 
-# .zsh/
+# .config/zsh
 .zlogin
-
+antibody/
 
 # .config/alfred/
 *.alfredpreferences
