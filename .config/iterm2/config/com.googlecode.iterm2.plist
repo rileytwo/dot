@@ -51063,8 +51063,8 @@ Show Toolbelt</string>
 	<false/>
 	<key>NSSplitView Subview Frames NSColorPanelSplitView</key>
 	<array>
-		<string>0.000000, 0.000000, 328.000000, 384.000000, NO, NO</string>
-		<string>0.000000, 385.000000, 328.000000, 164.000000, NO, NO</string>
+		<string>0.000000, 0.000000, 328.000000, 348.000000, NO, NO</string>
+		<string>0.000000, 349.000000, 328.000000, 164.000000, NO, NO</string>
 	</array>
 	<key>NSTableView Columns v2 KeyBingingTable</key>
 	<data>
@@ -59047,11 +59047,12 @@ Show Toolbelt</string>
 	<key>NoSyncAllAppVersions</key>
 	<array>
 		<string>3.3.0beta11</string>
-		<string>3.3.0beta9</string>
-		<string>3.3.0beta13</string>
 		<string>3.3.1</string>
-		<string>3.3.0</string>
+		<string>3.3.0beta13</string>
+		<string>2.9.20150313</string>
+		<string>3.3.0beta9</string>
 		<string>3.3.0beta15</string>
+		<string>3.3.0</string>
 	</array>
 	<key>NoSyncBFPFavorites</key>
 	<array>
@@ -59066,10 +59067,10 @@ Show Toolbelt</string>
 	</array>
 	<key>NoSyncBFPRecents</key>
 	<array>
+		<string>FuraCode Nerd Font</string>
 		<string>Fira Code</string>
 		<string>Menlo</string>
 		<string>Input Mono</string>
-		<string>Hack Nerd Font</string>
 	</array>
 	<key>NoSyncCommandHistoryHasEverBeenUsed</key>
 	<true/>
@@ -59085,7 +59086,7 @@ Show Toolbelt</string>
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1440, 900}}</string>
 		<key>topLeft</key>
-		<string>{28, 802}</string>
+		<string>{17, 867}</string>
 	</dict>
 	<key>NoSyncHaveUsedCopyMode</key>
 	<true/>
@@ -59094,7 +59095,7 @@ Show Toolbelt</string>
 	<key>NoSyncLastTipTime</key>
 	<real>585361631.22538805</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>667</integer>
+	<integer>685</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -61109,6 +61110,36 @@ Show Toolbelt</string>
 											<string>gup</string>
 											<string>cd</string>
 											<string>clear</string>
+											<string>brew search alacritty</string>
+											<string>brew cask install alacritty</string>
+											<string>brew cask install</string>
+											<string>brew cask uninstall alacritty</string>
+											<string>brew cask install homebrew/homebrew-cask/alacritty</string>
+											<string>brew cleanup -s</string>
+											<string>brew untap alehouse/homebrew-unofficial</string>
+											<string>brew remove alacritty</string>
+											<string>brew cask remove alacritty</string>
+											<string>brew cleanup -s</string>
+											<string>brew tap-info</string>
+											<string>brew tap-info --installed</string>
+											<string>brew cask install alacritty</string>
+											<string>code .config/alacritty/alacritty.yml</string>
+											<string>rm -rf .config/alacritty</string>
+											<string>git checkout -- .config/alacritty</string>
+											<string>brew cask install alacritty --HEAD</string>
+											<string>mdfind alacritty</string>
+											<string>nvim .config/alacritty/alacritty.yml</string>
+											<string>nvim .config/alacritty/alacritty.yml</string>
+											<string>fc-cache -rv</string>
+											<string>e .cache/fontconfig</string>
+											<string>fc-cache -fv</string>
+											<string>brew install fontforge</string>
+											<string>fontforge</string>
+											<string>fontforge -h</string>
+											<string>fontforge --help</string>
+											<string>fontforge ~/Library/Fonts/FiraCode\ Nerd\ Font.otf</string>
+											<string>cd github</string>
+											<string>cd</string>
 										</array>
 										<key>Directories</key>
 										<array>
@@ -61133,11 +61164,53 @@ Show Toolbelt</string>
 											<string>/Users/riley/.dot</string>
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley/github</string>
+											<string>/Users/riley</string>
 										</array>
 										<key>Environment</key>
 										<dict>
 											<key>PWD</key>
-											<string>/Users/riley/.dot</string>
+											<string>/Users/riley</string>
 										</dict>
 										<key>Hostname to Shell</key>
 										<dict>
@@ -61146,6 +61219,258 @@ Show Toolbelt</string>
 										</dict>
 										<key>Hosts</key>
 										<array>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
 											<dict>
 												<key>Host name</key>
 												<string>rmbp</string>
