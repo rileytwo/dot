@@ -29,6 +29,7 @@
 
 
 -- 0 --------------------------
+hs.preferencesDarkMode(true)
 hs.console.consoleFont("FuraCode Nerd Font")
 hs.console.darkMode(true)
 
