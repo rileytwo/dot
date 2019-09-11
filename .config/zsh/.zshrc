@@ -228,8 +228,8 @@ fi
     && export PATH="$HOME/.local/bin:$PATH"
 #
 # // "${HOME}"/.rbenv
-[[ -d "${HOME}/.rbenv/shims" ]] \
-    && eval "$(rbenv init -)"
+#[[ -d "${HOME}/.rbenv/shims" ]] \
+#    && eval "$(rbenv init -)"
 #
 # // "${HOME}"/go
 [[ -d "${HOME}/go" ]] \
