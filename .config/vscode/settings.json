@@ -119,7 +119,7 @@
     ],
     "javascript.format.insertSpaceAfterSemicolonInForStatements": false,
     "javascript.validate.enable": false,
-    "workbench.iconTheme": "eq-material-theme-icons-darker",
+    "workbench.iconTheme": "ayu",
     "explorer.sortOrder": "filesFirst",
     // "r.lsp.diagnostics": false,
     "outline.problems.enabled": false,
@@ -139,12 +139,13 @@
     "workbench.startupEditor": "welcomePage",
 
     "files.associations": {
-        "*.rstheme" : "css",
+        "*.rstheme": "css",
         ".functions": "shellscript",
-        ".aliases"  : "shellscript",
-        "*.rmd"     : "markdown",
-        "Rpkg"      : "r",
-        "*.Rmd"     : "rmd"
+        ".aliases": "shellscript",
+        "*.rmd": "markdown",
+        "Rpkg": "r",
+        "*.Rmd": "rmd",
+        ".gitignore": "shellscript"
     },
     "[jsonc]": {
         "editor.formatOnSave": false
@@ -172,5 +173,6 @@
     "[shellscript]": {
         "editor.defaultFormatter": "foxundermoon.shell-format"
     },
-    "editor.codeLens": false
+    "editor.codeLens": false,
+    "explorer.confirmDelete": false
 }
