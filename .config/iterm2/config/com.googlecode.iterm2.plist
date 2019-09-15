@@ -51108,7 +51108,7 @@ Show Toolbelt</string>
 	<key>NSWindow Frame NSColorPanel</key>
 	<string>119 339 328 365 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>781 107 654 535 0 0 1440 877 </string>
+	<string>417 174 659 544 0 0 1440 877 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -51136,7 +51136,7 @@ Show Toolbelt</string>
 			<key>Ansi 1 Color</key>
 			<dict>
 				<key>Alpha Component</key>
-				<integer>1</integer>
+				<real>1</real>
 				<key>Blue Component</key>
 				<real>0.46310701966285706</real>
 				<key>Color Space</key>
@@ -51227,20 +51227,20 @@ Show Toolbelt</string>
 			<key>Ansi 2 Color</key>
 			<dict>
 				<key>Alpha Component</key>
-				<integer>1</integer>
+				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.62367786960000005</real>
+				<real>0.62367784976959229</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.95999999999999996</real>
+				<real>0.95999997854232788</real>
 				<key>Red Component</key>
-				<real>0.38400000000000001</real>
+				<real>0.38400000333786011</real>
 			</dict>
 			<key>Ansi 3 Color</key>
 			<dict>
 				<key>Alpha Component</key>
-				<integer>1</integer>
+				<real>1</real>
 				<key>Blue Component</key>
 				<real>0.61679995059967041</real>
 				<key>Color Space</key>
@@ -51474,7 +51474,7 @@ Show Toolbelt</string>
 			<key>Has Hotkey</key>
 			<false/>
 			<key>Horizontal Spacing</key>
-			<integer>1</integer>
+			<real>1</real>
 			<key>HotKey Activated By Modifier</key>
 			<false/>
 			<key>HotKey Alternate Shortcuts</key>
@@ -59095,7 +59095,7 @@ Show Toolbelt</string>
 	<key>NoSyncLastTipTime</key>
 	<real>585361631.22538805</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>688</integer>
+	<integer>699</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
