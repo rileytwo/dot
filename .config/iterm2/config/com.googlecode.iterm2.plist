@@ -51108,7 +51108,7 @@ Show Toolbelt</string>
 	<key>NSWindow Frame NSColorPanel</key>
 	<string>119 339 328 365 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>417 174 659 544 0 0 1440 877 </string>
+	<string>755 258 654 535 0 0 1440 877 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -51214,15 +51214,15 @@ Show Toolbelt</string>
 			<key>Ansi 15 Color</key>
 			<dict>
 				<key>Alpha Component</key>
-				<integer>1</integer>
+				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.94901960784313721</real>
+				<real>0.94901960780000005</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.94901960784313721</real>
+				<real>0.94901960780000005</real>
 				<key>Red Component</key>
-				<real>0.94901960784313721</real>
+				<real>0.94901960780000005</real>
 			</dict>
 			<key>Ansi 2 Color</key>
 			<dict>
@@ -59095,7 +59095,7 @@ Show Toolbelt</string>
 	<key>NoSyncLastTipTime</key>
 	<real>585361631.22538805</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>699</integer>
+	<integer>703</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
