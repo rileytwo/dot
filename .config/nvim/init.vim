@@ -101,6 +101,8 @@ if has('mac') || has('unix')
         \r-cr-o:block
     set cursorline
 else
+    set number
+    set numberwidth=1
     set guicursor=
         \n-v-c-sm:hor20,
         \i-ci-ve:ver25,
