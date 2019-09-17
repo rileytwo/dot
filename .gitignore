@@ -21,7 +21,7 @@ est
 
 # .win/.R/
 desktop.ini
-
+.R/rstudio/themes/
 
 # .R/
 .Rproj.user
