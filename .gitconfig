@@ -10,7 +10,7 @@
 	excludesfile = .gitignore_global
 	trustctime = false
 	pager = less -F -X
-	autocrlf = true
+	autocrlf = false
 	filemode = false
 [hub]
 	protocol = https
