@@ -1,6 +1,0 @@
-#! /usr/local/bin/bash
-# alias: brew s
-#:  * `s` [args...]
-#:    `brew s` is an alias for `brew search`
-brew search $*
-

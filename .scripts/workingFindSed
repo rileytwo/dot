@@ -1,1 +1,0 @@
-find documents/projects/ -type f -not -path "*/.git/*" -not -path "*/.idea/*" -not -path "*venv*" \( -name \*.R -or -name \*.py \) -exec sed -i '' 's/rileyroach/riley/g' {} \; 

@@ -1,6 +1,0 @@
-#! /usr/local/bin/bash
-# alias: brew app
-#:  * `app` [args...]
-#:    `brew app` is an alias for `brew cask`
-brew cask $*
-

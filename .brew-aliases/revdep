@@ -1,6 +1,0 @@
-#! /usr/local/bin/bash
-# alias: brew revdep
-#:  * `revdep` [args...]
-#:    `brew revdep` is an alias for `brew uses`
-brew uses $*
-

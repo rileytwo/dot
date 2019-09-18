@@ -1,6 +1,0 @@
-#! /usr/local/bin/bash
-# alias: brew ii
-#:  * `ii` [args...]
-#:    `brew ii` is an alias for `brew info`
-brew info $*
-
