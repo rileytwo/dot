@@ -11,6 +11,7 @@
 	trustctime = false
 	pager = less -F -X
 	autocrlf = true
+	filemode = false
 [hub]
 	protocol = https
 
