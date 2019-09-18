@@ -1,0 +1,49 @@
+#!/usr/bin/env zsh
+
+## handy little "refresh environment" alias
+alias refresh="exec "${SHELL}" -l"
+## radian console
+alias rr="radian"
+
+## github directory alias
+alias gh='~/github'
+
+## dotfiles directory alias
+alias dot='~/.dot'
+
+## plistbuddy alias
+alias plistbuddy='/usr/libexec/PlistBuddy'
+
+## echo each path/fpath entry on newline
+# `print -rl -- "${(@s/:/)PATH}"` also works
+alias path='echo -e ${PATH//:/\\n}'
+alias fpath='echo -e ${FPATH//:/\\n}'
+
+## exa, A modern replacement for ls
+if (( $+commands[exa] )); then
+    alias e='exa -lah'
+    alias ee='exa -lh'
+fi
+
+if (( $+commands[trash] )); then
+    alias rm='trash'
+fi
+
+if (( $+commands[foaas-cli] )); then
+    alias f='foaas-cli'
+fi
+
+if (( $+commands[base16-manager] )); then
+    alias bxm='base16-manager'
+fi
+
+if (( $+commands[pyenv] )); then
+    alias p='pyenv'
+    alias pv='pyenv versions'
+fi
+
+alias gs='git status'
+alias hsg='history | grep'
+alias please='sudo'
+alias pls='sudo'
+alias plz='sudo'

@@ -1,0 +1,26 @@
+sparklines:
+  - title: CPU usage
+    position: [[0, 10], [40, 11]]
+    rate-ms: 200
+    scale: 0
+    sample: ps -A -o %cpu | awk '{s+=$1} END {print s}'
+  - title: Free memory pages
+    position: [[40, 10], [40, 11]]
+    rate-ms: 200
+    scale: 0
+    sample: memory_pressure | grep 'Pages free' | awk '{print $3}'
+textboxes:
+  - title: Local weather
+    position: [[0, 21], [30, 14]]
+    rate-ms: 10000
+    color: 9
+    sample: curl wttr.in?0ATQF
+    border: false
+asciiboxes:
+  - title: UTC time
+    position: [[0, 0], [80, 10]]
+    rate-ms: 500
+    color: 12
+    sample: env TZ=UTC date +%r
+    border: false
+    font: 2d

@@ -1,0 +1,8 @@
+package basename-compat
+package brew
+package config
+package fzf
+package z
+theme clearance
+theme default
+theme spacefish

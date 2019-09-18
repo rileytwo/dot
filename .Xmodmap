@@ -1,0 +1,13 @@
+keycode 134 = Mode_switch
+keysym a = a A Left
+keysym d = d D Right
+keysym s = s S Down
+keysym w = w W Up
+
+remove Control = Control_R
+remove Mod1 = Alt_R
+keycode 105 = Alt_R
+keycode 108 = Control_R
+add Control = Control_R
+add Mod1 = Alt_R
+

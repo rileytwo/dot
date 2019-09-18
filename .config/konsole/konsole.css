@@ -1,0 +1,22 @@
+QWidget, QTabWidget::pane, QTabWidget::tab-bar {
+    background-color: inherit;
+    opacity: inherit;
+}
+
+
+QTabBar::tab
+{
+    color: #999;
+    background-color: inherit;
+    opacity: inherit;
+}
+
+
+QTabBar::tab:selected
+{
+    font-weight: bold;
+    color: #EEE;
+    background-color: inherit;
+    border-bottom: 0px;
+    opacity: inherit;
+}

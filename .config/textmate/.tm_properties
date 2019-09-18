@@ -1,0 +1,39 @@
+# Version 1.0 -- Generated content!
+windowTitle      = "$TM_DISPLAYNAME — ${CWD/^.*\///}"
+
+include          = "{$include}"
+exclude          = "{$exclude, *.git, *.DS_Store, Music, Movies}"
+excludeInBrowser = "{$excludeFilesBrowser, .ccache, .electron, node_modeules, dist, Movies, Music}"
+
+fontName         = FuraCodeNerdFontComplete-Regular
+fontSize         = 13
+showInvisibles   = false
+showWrapColumn   = true
+softWrap         = true
+wrapColumn       = "Use Window Frame"
+
+[ *.txt ]
+fileType         = source.shell
+
+[ .zshrc ]
+fileType         = source.shell
+
+[ *.zsh-theme ]
+fileType         = source.shell
+
+[ *.rstheme ]
+fileType         = source.css
+
+[ .Rrofile ]
+fileType         = source.r
+
+[ .rprofile ]
+fileType         = source.r
+
+[ .tmTheme ]
+fileType         = source.xml
+
+[ attr.file.unknown-type ]
+fileType         = source.shell
+
+

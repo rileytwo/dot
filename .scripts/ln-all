@@ -1,0 +1,2 @@
+for f in ; do ln -s  /target; done && ls -al /target
+for f in $\(ls -d /base/*); do ln -s  /target; done && ls -al /target

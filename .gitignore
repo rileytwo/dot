@@ -1,0 +1,81 @@
+## // general
+*.DS_Store
+history
+
+
+# .scripts/
+get-pip.py
+
+
+# unnecessary
+*.links
+*links*
+est
+*.png
+*.history
+
+
+# pycache
+**/__pycache__/
+
+
+# .win/.R/
+desktop.ini
+.R/rstudio/themes/
+
+# .R/
+.Rproj.user
+*rsthemes_*
+*rscodeio*
+
+
+# .config/zsh
+.zlogin
+antibody/
+
+# .config/alfred/
+*.alfredpreferences
+
+
+# .config/hammerspoon
+spoons/
+
+
+# .config/karabiner
+configstore/
+automatic_backups/
+
+
+# .config/hub
+hub
+
+
+# .config/{vim,vifm,nvim}
+**/vifm/colors/
+**/vifm/vifminfo
+plugged/
+autoload/
+share/
+log
+**/nvim/pack/
+*.netrwhist
+
+
+# .config/powershell
+*.ps1
+NuGet/
+
+
+
+# // Windows
+#
+# keypirinha
+.win/Keypirinha/portable/Profile/User/*
+!filescatalog.ini
+!Keypirinha.ini
+
+
+# conemu
+.win/conemu/ConEmu.xml
+
+
