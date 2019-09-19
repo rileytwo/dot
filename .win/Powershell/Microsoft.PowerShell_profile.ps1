@@ -37,48 +37,54 @@ $PSDefaultParameterValues = @{
 # (TODO: there has to be a better way than checking each module
 # before importing)
 
-if (Get-Module "Get-ChildItemColor") {
-    Import-Module Get-ChildItemColor
-}
-if (Get-Module "posh-git") {
-    Import-Module posh-git
-}
-if (Get-Module "oh-my-posh") {
-    Import-Module oh-my-posh -DisableNameChecking
-}
-if (Get-Module -ListAvailable "PSFzf") {
-    Remove-PSReadlineKeyHandler 'Ctrl+r'
-    Import-Module PSFzf
-    $Env:FZF_DEFAULT_COMMAND = "rg --files --no-ignore-vcs --hidden"
-}
-if (Get-Module -ListAvailable "git-aliases") {
-    Import-Module git-aliases -DisableNameChecking
+function Get-Modules {
+    if (Get-Module "Get-ChildItemColor") {
+        Import-Module Get-ChildItemColor
+    }
+    if (Get-Module "posh-git") {
+        Import-Module posh-git
+    }
+    if (Get-Module "oh-my-posh") {
+        Import-Module oh-my-posh -DisableNameChecking
+    }
+    if (Get-Module -ListAvailable "PSFzf") {
+        Remove-PSReadLineKeyHandler 'Ctrl+r'
+        Import-Module PSFzf
+        $Env:FZF_DEFAULT_COMMAND = "rg --files --no-ignore-vcs --hidden"
+    }
+    if (Get-Module -ListAvailable "git-aliases") {
+        Import-Module git-aliases -DisableNameChecking
+    }
 }
 
 
-Set-Theme riley ; if ($?) {
-    Set-Theme riley
-}
-else {
-    Set-Theme Avit
+function Set-MyTheme {
+    if (Test-Path "$($ThemeSettings.MyThemesLocation)/riley.psm1") {
+        Set-Theme riley
+    }
+    else {
+        Set-Theme Avit
+    }
 }
 
 
 ## // handy aliases
 #
 # // general
+Set-Alias -Name 'which' -value Get-Command
+Set-Alias -Name 'l' -value Get-ChildItemColor
+
 function Get-Path {
     $Env:Path.Split(';')
 }
-Set-Alias -name 'path' -value Get-Path
+Set-Alias -Name 'path' -value Get-Path
 
 Remove-Item alias:where -Force
 function Get-Commands {
     cmd /c where $args
 }
-Set-Alias -name 'where' -value Get-Commands
-Set-Alias -name 'which' -value Get-Command
-Set-Alias -name 'l' -value Get-ChildItemColor
+Set-Alias -Name 'where' -value Get-Commands
+
 
 
 #
@@ -86,10 +92,10 @@ Set-Alias -name 'l' -value Get-ChildItemColor
 function Get-GitRepositoryStatus {
     git status $args
 }
-Set-Alias -name 'gs' Get-GitRepositoryStatus
+Set-Alias -Name 'gs' Get-GitRepositoryStatus
 #
 # // other
-Set-Alias -name 'rr' -value 'radian'
-Set-Alias -name 'r' -value 'Rscript'
+Set-Alias -Name 'rr' -value 'radian'
+Set-Alias -Name 'r' -value 'Rscript'
 
 
