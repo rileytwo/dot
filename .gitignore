@@ -62,7 +62,7 @@ log
 
 
 # .config/powershell
-*.ps1
+#*.ps1
 NuGet/
 
 
