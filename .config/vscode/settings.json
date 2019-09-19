@@ -174,5 +174,9 @@
         "editor.defaultFormatter": "foxundermoon.shell-format"
     },
     "editor.codeLens": false,
-    "explorer.confirmDelete": false
+    "explorer.confirmDelete": false,
+    "powershell.bugReporting.project": "",
+    "powershell.codeFormatting.useCorrectCasing": true,
+    "powershell.integratedConsole.showOnStartup": false,
+    "powershell.sideBar.CommandExplorerVisibility": false
 }
