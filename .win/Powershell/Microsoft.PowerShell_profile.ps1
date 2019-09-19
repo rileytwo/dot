@@ -15,6 +15,10 @@ if ($IsWindows) {
     if (Get-VirtualEnvName) {
         $Env:CONDA_PROMPT_MODIFIER = ""
     }
+    Invoke-Expression (
+        $(lua "C:\Users\RRoach\github\z\z.lua" --init powershell) -join "`n"
+    )
+
 }
 
 Set-PSReadLineOption -Colors @{
@@ -32,7 +36,7 @@ $PSDefaultParameterValues = @{
 # // module imports
 # (TODO: there has to be a better way than checking each module
 # before importing)
- 
+
 if (Get-Module "Get-ChildItemColor") {
     Import-Module Get-ChildItemColor
 }
@@ -50,9 +54,6 @@ if (Get-Module -ListAvailable "PSFzf") {
 if (Get-Module -ListAvailable "git-aliases") {
     Import-Module git-aliases -DisableNameChecking
 }
-Invoke-Expression (
-    $(lua "C:\Users\RRoach\github\z\z.lua" --init powershell) -join "`n"
-) 
 
 
 Set-Theme riley ; if ($?) {
