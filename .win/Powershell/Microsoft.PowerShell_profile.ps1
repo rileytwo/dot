@@ -38,6 +38,9 @@ $PSDefaultParameterValues = @{
 # before importing)
 
 function Get-Modules {
+    # look more into this:
+    # gci $env:PSModulePath.Split(':')
+    # | Where-Object { $_.Name -match "Micro" }
     if (Get-Module "Get-ChildItemColor") {
         Import-Module Get-ChildItemColor
     }
@@ -57,9 +60,11 @@ function Get-Modules {
     }
 }
 
+Get-Modules
+
 
 function Set-MyTheme {
-    if (Test-Path "$($ThemeSettings.MyThemesLocation)/riley.psm1") {
+    if (Test-Path -IsValid "$($ThemeSettings.MyThemesLocation)/riley.psm1") {
         Set-Theme riley
     }
     else {
@@ -67,6 +72,7 @@ function Set-MyTheme {
     }
 }
 
+Set-MyTheme
 
 ## // handy aliases
 #
