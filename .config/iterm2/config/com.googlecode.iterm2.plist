@@ -51102,13 +51102,11 @@ Show Toolbelt</string>
 		<string>^$]</string>
 		<key>Select All</key>
 		<string>@$a</string>
-		<key>Select Current Command</key>
-		<string>@a</string>
 	</dict>
 	<key>NSWindow Frame NSColorPanel</key>
 	<string>119 339 328 365 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>694 79 741 524 0 0 1440 877 </string>
+	<string>781 160 654 535 0 0 1440 877 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -60134,7 +60132,7 @@ Show Toolbelt</string>
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1440, 900}}</string>
 		<key>topLeft</key>
-		<string>{16, 867}</string>
+		<string>{15, 867}</string>
 	</dict>
 	<key>NoSyncHaveUsedCopyMode</key>
 	<true/>
@@ -60143,7 +60141,7 @@ Show Toolbelt</string>
 	<key>NoSyncLastTipTime</key>
 	<real>585361631.22538805</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>711</integer>
+	<integer>714</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -61000,7 +60998,7 @@ Show Toolbelt</string>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>Selection Respects Soft Boundaries</key>
-	<true/>
+	<false/>
 	<key>SeparateStatusBarsPerPane</key>
 	<true/>
 	<key>ShowBookmarkName</key>
