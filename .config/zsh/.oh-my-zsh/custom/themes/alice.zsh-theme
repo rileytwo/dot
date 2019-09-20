@@ -9,16 +9,16 @@ local green_bold=$fg_bold[green]
 local magenta=$fg[magenta]
 local yellow=$fg[yellow]
 
+
 ## prompt substitutions
 local git_info='$(git_prompt_info)'
-#local git_status='$(git_prompt_status)'
-local venv_prompt='$(virtualenv_prompt_info)'
 local smiley="%(?,%{$green%}:%)%{$reset_color%},%{$red_bold%}:(%{$reset_color%})"
+local check="%{$green%}%{$reset_color%}"
 
 ## git info
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$blue_bold%}git:(%{$red_bold%}"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
-ZSH_THEME_GIT_PROMPT_CLEAN="%{$blue%}) "
+ZSH_THEME_GIT_PROMPT_CLEAN="%{$blue%}) ${check}"
 ZSH_THEME_GIT_PROMPT_DIRTY="%{$blue%})%{$red_bold%} 署"
 
 ## git status
@@ -36,9 +36,8 @@ precmd_prompt() {
     PROMPT+=$'\n'
     PROMPT+="-> "
 
-    RPROMPT="${venv_prompt} ${smiley}"
+    RPROMPT="${smiley}"
 
     PROMPT2="-> "
 }
 precmd_functions+=(precmd_prompt)
-
