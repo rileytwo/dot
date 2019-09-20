@@ -51040,7 +51040,7 @@ Show Toolbelt</string>
 	<key>MinimumWeightDifferenceForBoldFont</key>
 	<integer>3</integer>
 	<key>NSColorPanelMode</key>
-	<string>1</string>
+	<string>6</string>
 	<key>NSColorPickerPreferredRGBEntryMode</key>
 	<integer>2</integer>
 	<key>NSColorPickerSlidersDefaults</key>
@@ -51504,7 +51504,7 @@ Show Toolbelt</string>
 			<key>Initial Text</key>
 			<string></string>
 			<key>Initial Use Transparency</key>
-			<false/>
+			<true/>
 			<key>Jobs to Ignore</key>
 			<array>
 				<string>rlogin</string>
@@ -60132,7 +60132,7 @@ Show Toolbelt</string>
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1440, 900}}</string>
 		<key>topLeft</key>
-		<string>{15, 867}</string>
+		<string>{6, 830}</string>
 	</dict>
 	<key>NoSyncHaveUsedCopyMode</key>
 	<true/>
@@ -60141,7 +60141,7 @@ Show Toolbelt</string>
 	<key>NoSyncLastTipTime</key>
 	<real>585361631.22538805</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>717</integer>
+	<integer>721</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -61014,7 +61014,7 @@ Show Toolbelt</string>
 	<key>SoundForEsc</key>
 	<false/>
 	<key>SplitPaneDimmingAmount</key>
-	<real>0.16862256205673759</real>
+	<real>0.18005042109929079</real>
 	<key>StatusBarPosition</key>
 	<integer>0</integer>
 	<key>StretchTabsToFillBar</key>
@@ -61035,6 +61035,8 @@ Show Toolbelt</string>
 	<array>
 		<string>Command History</string>
 	</array>
+	<key>TripleClickSelectsFullWrappedLines</key>
+	<true/>
 	<key>UnderlineCursorHeight</key>
 	<real>1</real>
 	<key>UnderlineCursorOffset</key>
