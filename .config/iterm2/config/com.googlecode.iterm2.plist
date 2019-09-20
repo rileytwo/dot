@@ -51106,7 +51106,7 @@ Show Toolbelt</string>
 	<key>NSWindow Frame NSColorPanel</key>
 	<string>119 339 328 365 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>781 160 654 535 0 0 1440 877 </string>
+	<string>738 107 697 535 0 0 1440 877 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -60141,7 +60141,7 @@ Show Toolbelt</string>
 	<key>NoSyncLastTipTime</key>
 	<real>585361631.22538805</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>714</integer>
+	<integer>717</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -61118,7 +61118,7 @@ Show Toolbelt</string>
 											<key>Ansi 1 Color</key>
 											<dict>
 												<key>Alpha Component</key>
-												<integer>1</integer>
+												<real>1</real>
 												<key>Blue Component</key>
 												<real>0.46310701966285706</real>
 												<key>Color Space</key>
@@ -61196,33 +61196,33 @@ Show Toolbelt</string>
 											<key>Ansi 15 Color</key>
 											<dict>
 												<key>Alpha Component</key>
-												<integer>1</integer>
+												<real>1</real>
 												<key>Blue Component</key>
-												<real>0.94901960784313721</real>
+												<real>0.94901960780000005</real>
 												<key>Color Space</key>
 												<string>sRGB</string>
 												<key>Green Component</key>
-												<real>0.94901960784313721</real>
+												<real>0.94901960780000005</real>
 												<key>Red Component</key>
-												<real>0.94901960784313721</real>
+												<real>0.94901960780000005</real>
 											</dict>
 											<key>Ansi 2 Color</key>
 											<dict>
 												<key>Alpha Component</key>
-												<integer>1</integer>
+												<real>1</real>
 												<key>Blue Component</key>
-												<real>0.62367786960000005</real>
+												<real>0.62367784976959229</real>
 												<key>Color Space</key>
 												<string>sRGB</string>
 												<key>Green Component</key>
-												<real>0.95999999999999996</real>
+												<real>0.95999997854232788</real>
 												<key>Red Component</key>
-												<real>0.38400000000000001</real>
+												<real>0.38400000333786011</real>
 											</dict>
 											<key>Ansi 3 Color</key>
 											<dict>
 												<key>Alpha Component</key>
-												<integer>1</integer>
+												<real>1</real>
 												<key>Blue Component</key>
 												<real>0.61679995059967041</real>
 												<key>Color Space</key>
@@ -61452,11 +61452,11 @@ Show Toolbelt</string>
 												<real>0.94999998809999997</real>
 											</dict>
 											<key>Guid</key>
-											<string>C2CD2FD3-775C-44B4-AB74-0853DACAE166</string>
+											<string>D07E7554-352A-490E-87B2-529CCB089F3E</string>
 											<key>Has Hotkey</key>
 											<false/>
 											<key>Horizontal Spacing</key>
-											<integer>1</integer>
+											<real>1</real>
 											<key>HotKey Activated By Modifier</key>
 											<false/>
 											<key>HotKey Alternate Shortcuts</key>
@@ -61784,6 +61784,8 @@ Show Toolbelt</string>
 											<false/>
 											<key>Option Key Sends</key>
 											<integer>2</integer>
+											<key>Original Guid</key>
+											<string>C2CD2FD3-775C-44B4-AB74-0853DACAE166</string>
 											<key>Place Prompt at First Column</key>
 											<true/>
 											<key>Prevent Opening in a Tab</key>
@@ -62142,7 +62144,7 @@ Show Toolbelt</string>
 											<string>alice</string>
 										</dict>
 										<key>Columns</key>
-										<integer>80</integer>
+										<integer>86</integer>
 										<key>Commands</key>
 										<array>
 											<string>cd .dot</string>
@@ -62186,6 +62188,14 @@ Show Toolbelt</string>
 											<string>fontforge ~/Library/Fonts/FiraCode\ Nerd\ Font.otf</string>
 											<string>cd github</string>
 											<string>cd</string>
+											<string>cd .dot</string>
+											<string>g</string>
+											<string>gs</string>
+											<string>cd</string>
+											<string>nvim $ZSH_THEME</string>
+											<string>echo $ZSH_THEME</string>
+											<string>env</string>
+											<string>nvim .config/zsh/.oh-my-zsh/custom/themes/alice.zsh-theme</string>
 										</array>
 										<key>Directories</key>
 										<array>
@@ -62251,6 +62261,15 @@ Show Toolbelt</string>
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
 											<string>/Users/riley/github</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley</string>
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
@@ -62657,15 +62676,73 @@ Show Toolbelt</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
 										</array>
 										<key>Is UTF-8</key>
 										<true/>
 										<key>Name Controller State</key>
 										<dict>
 											<key>icon title stack</key>
-											<array/>
+											<array>
+												<string>nvim</string>
+											</array>
 											<key>window title stack</key>
-											<array/>
+											<array>
+												<string>nvim .config/zsh/.oh-my-zsh/custom/themes/alice.zsh-theme</string>
+											</array>
 										</dict>
 										<key>Program</key>
 										<dict>
@@ -62692,7 +62769,7 @@ Show Toolbelt</string>
 										<key>height</key>
 										<real>497</real>
 										<key>width</key>
-										<real>654</real>
+										<real>697</real>
 										<key>x</key>
 										<real>0.0</real>
 										<key>y</key>
@@ -62707,7 +62784,7 @@ Show Toolbelt</string>
 								<key>height</key>
 								<real>497</real>
 								<key>width</key>
-								<real>654</real>
+								<real>697</real>
 								<key>x</key>
 								<real>0.0</real>
 								<key>y</key>
@@ -62735,11 +62812,11 @@ Show Toolbelt</string>
 				<key>Use Transparency</key>
 				<false/>
 				<key>Width</key>
-				<real>654</real>
+				<real>697</real>
 				<key>Window Type</key>
 				<integer>13</integer>
 				<key>X Origin</key>
-				<real>781</real>
+				<real>738</real>
 				<key>Y Origin</key>
 				<real>107</real>
 			</dict>
