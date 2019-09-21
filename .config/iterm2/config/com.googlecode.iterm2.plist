@@ -51247,6 +51247,8 @@
 	<false/>
 	<key>DisableAdaptiveFrameRateInInteractiveApps</key>
 	<true/>
+	<key>DisableCustomBoxDrawing</key>
+	<false/>
 	<key>DisableFullscreenTransparency</key>
 	<false/>
 	<key>DisableWindowShadowWhenTransparencyPreMojave</key>
@@ -60495,7 +60497,7 @@ Show Toolbelt</string>
 	<key>NoSyncLastTipTime</key>
 	<real>585361631.22538805</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>723</integer>
+	<integer>725</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -61290,6 +61292,8 @@ Show Toolbelt</string>
 	<string></string>
 	<key>PasteSpecialUseRegexSubstitution</key>
 	<false/>
+	<key>PathToTelnet</key>
+	<string>/usr/local/bin/telnet</string>
 	<key>PerformDictionaryLookupOnQuickLook</key>
 	<false/>
 	<key>PinchToChangeFontSizeDisabled</key>
@@ -61359,6 +61363,8 @@ Show Toolbelt</string>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
 	<true/>
+	<key>ShowMetalFPSmeter</key>
+	<false/>
 	<key>ShowNewOutputIndicator</key>
 	<false/>
 	<key>ShowPaneTitles</key>
