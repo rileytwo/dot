@@ -1,6 +1,7 @@
 " ====================
 " // Plugins (vim-plug)
 " ----------
+
 call plug#begin('~/.vim/plugged')
 
 " tpope
@@ -9,6 +10,7 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-scriptease'
 Plug 'tpope/vim-sleuth'
+
 
 " // Completion, snippets
 Plug 'w0rp/ale'
@@ -22,6 +24,7 @@ Plug 'ncm2/ncm2-jedi'
 Plug 'sirver/UltiSnips',
 Plug 'ncm2/ncm2-ultisnips'
 
+
 " // Lang specific
 Plug 'tpope/vim-markdown', {'for': 'markdown'}
 Plug 'PProvost/vim-ps1', {'for': 'powershell'}
@@ -33,10 +36,12 @@ Plug 'chrisbra/vim-zsh' , {'for': 'zsh'}
 Plug 'vitalk/vim-shebang'
 Plug 'xu-cheng/brew.vim'
 Plug 'cespare/vim-toml'
+Plug 'darfink/vim-plist'
 
 
 " // Auto closing delimiters
 Plug 'Raimondi/delimitMate'
+
 
 " // Colorschemes
 Plug 'ntk148v/vim-horizon'
@@ -44,10 +49,12 @@ Plug 'rafi/awesome-vim-colorschemes'
 Plug 'rakr/vim-two-firewatch'
 Plug 'aonemd/kuroi.vim'
 
+
 " // Statusline
 Plug 'itchyny/lightline.vim'
 Plug 'maximbaz/lightline-ale'
 Plug 'lambdalisue/suda.vim'
+
 
 if !has('win32') && !has('win64')
     " mac specific plugs cause windows is hard
@@ -56,6 +63,7 @@ endif
 if &term=~# 'nvim'
     Plug 'terryma/vim-multiple-cursors'
 endif
+
 
 " // Extensibility
 Plug 'justinmk/vim-gtfo' 
@@ -68,10 +76,13 @@ Plug 'PeterRincker/vim-searchlight'
 Plug 'godlygeek/tabular'
 Plug 'metakirby5/codi.vim'
 
+
 " ----------
 " // add plugins to &runtimepath
 call plug#end()
 " ====================
+
+
 
 " ====================
 " // Options
@@ -133,6 +144,7 @@ let g:suda#prefix = ['suda://', 'sudo://', '_://']
 " ====================
 
 
+
 " ====================
 " // Key Remaps
 " ----------
@@ -172,21 +184,24 @@ nnoremap <leader>p "+p
 nnoremap <leader>P "+P
 vnoremap <leader>p "+p
 vnoremap <leader>P "+P
+
 " ----------
 " //
 " ====================
 
 
+
 " ====================
 " // Variables
 " ----------
-"
+
 " Pynvim
 if has('mac') || has('unix')
     let g:python_host_prog = $HOME.'/.pyenv/versions/neovim2/bin/python'
     let g:python3_host_prog = $HOME.'/.pyenv/versions/neovim3/bin/python'
 endif
-"
+
+
 " R
 let R_app = 'radian'
 let R_cmd = 'R'
@@ -195,6 +210,8 @@ let R_args = []  " if you had set any
 let R_bracketed_paste = 1
 let R_assign = 0
 let R_hi_fun_globenv = 1
+
+
 "" markdown
 let g:markdown_syntax_conceal = 0
 let g:markdown_fenced_languages = [
@@ -212,10 +229,12 @@ let g:bullets_enabled_file_types = [
     \ 'scratch'
     \ ]
 
+
 " NERDTree
 let NERDTreeShowHidden = 1
 let NERDTreeMinimalUI = 1
 let NERDTreeDirArrows = 1
+
 
 " indentline
 let g:indentLine_setColors = 0
@@ -249,6 +268,7 @@ endif
 
 " check for truecolor support in current terminal
 " macOS Terminal.app does not support truecolor
+
 
 if has('mac')
     let g:os = 'Darwin'
