@@ -2,8 +2,12 @@
 
 ## handy little "refresh environment" alias
 alias refresh="exec "${SHELL}" -l"
+
 ## radian console
 alias rr="radian"
+
+## R
+alias r='r --no-save'
 
 ## github directory alias
 alias gh='~/github'
@@ -39,7 +43,8 @@ fi
 
 if (( $+commands[pyenv] )); then
     alias p='pyenv'
-    alias pv='pyenv versions'
+    alias pv='pyenv version'
+    alias pvs='pyenv versions'
 fi
 
 alias gs='git status'
