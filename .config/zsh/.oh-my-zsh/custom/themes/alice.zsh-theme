@@ -8,6 +8,7 @@ local green=$fg[green]
 local green_bold=$fg_bold[green]
 local magenta=$fg[magenta]
 local yellow=$fg[yellow]
+local white=$fg[white]
 
 
 ## prompt substitutions
@@ -38,6 +39,6 @@ precmd_prompt() {
 
     RPROMPT="${smiley}"
 
-    PROMPT2="-> "
+    PROMPT2="%{$white}-> "
 }
 precmd_functions+=(precmd_prompt)
