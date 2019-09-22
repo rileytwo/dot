@@ -216,11 +216,11 @@
   "HotKey Window Dock Click Action" : 0,
   "BM Growl" : false,
   "Underline Color" : {
-    "Red Component" : 0.058823529410000006,
+    "Red Component" : 0.058823529410000019,
     "Color Space" : "sRGB",
-    "Blue Component" : 0.058823529410000006,
+    "Blue Component" : 0.058823529410000019,
     "Alpha Component" : 1,
-    "Green Component" : 0.058823529410000006
+    "Green Component" : 0.058823529410000019
   },
   "Prompt Before Closing 2" : false,
   "Command" : "",
@@ -262,11 +262,11 @@
   "Disable Window Resizing" : true,
   "Close Sessions On End" : true,
   "Tab Color" : {
-    "Red Component" : 0.082352941176470601,
+    "Red Component" : 0.082352941176470615,
     "Color Space" : "sRGB",
-    "Blue Component" : 0.082352941176470601,
+    "Blue Component" : 0.082352941176470615,
     "Alpha Component" : 1,
-    "Green Component" : 0.082352941176470601
+    "Green Component" : 0.082352941176470615
   },
   "Default Bookmark" : "No",
   "HotKey Activated By Modifier" : false,
@@ -384,7 +384,7 @@
   "Working Directory" : "\/Users\/riley",
   "ASCII Anti Aliased" : true,
   "HotKey Window AutoHides" : true,
-  "Shortcut" : "",
+  "Shortcut" : "0",
   "Mouse Reporting" : true,
   "Non-ASCII Ligatures" : true,
   "Tags" : [
@@ -393,7 +393,7 @@
   "Blur Radius" : 0.10000000000000001,
   "tmux Pane Title" : "alice",
   "Background Image Location" : "",
-  "Allow Title Setting" : true,
+  "Allow Title Setting" : false,
   "Use Bold Font" : true,
   "Ansi 2 Color" : {
     "Red Component" : 0.38400000000000001,
@@ -420,7 +420,6 @@
         "configuration" : {
           "knobs" : {
             "base: priority" : 5,
-            "base: compression resistance" : 1,
             "shared text color" : {
               "Red Component" : 0.90000000000000002,
               "Color Space" : "sRGB",
@@ -428,6 +427,7 @@
               "Alpha Component" : 1,
               "Green Component" : 0.63
             },
+            "base: compression resistance" : 1,
             "format" : "M-dd h:mm"
           },
           "layout advanced configuration dictionary value" : {
@@ -478,7 +478,6 @@
             "path" : "path",
             "maxwidth" : 1.7976931348623157e+308,
             "base: priority" : 5,
-            "base: compression resistance" : 1,
             "shared text color" : {
               "Red Component" : 0.63,
               "Color Space" : "sRGB",
@@ -486,7 +485,8 @@
               "Alpha Component" : 1,
               "Green Component" : 0.90000000000000002
             },
-            "minwidth" : 0
+            "minwidth" : 0,
+            "base: compression resistance" : 1
           },
           "layout advanced configuration dictionary value" : {
             "font" : ".AppleSystemUIFont 12",
