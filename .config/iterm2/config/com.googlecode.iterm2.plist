@@ -150,9 +150,9 @@
 	<key>MinimalTabStyleOutlineStrength</key>
 	<real>0.0</real>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/.dot/.config/iterm2/config</string>
+	<string>~/.dot/.config/iterm2/profiles</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
-	<string>{712, 448}</string>
+	<string>{799, 448}</string>
 	<key>NSQuotedKeystrokeBinding</key>
 	<string></string>
 	<key>NSRepeatCountBinding</key>
@@ -195,7 +195,7 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>723 70 712 522 0 0 1440 877 </string>
+	<string>757 70 678 522 0 0 1440 877 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -1861,7 +1861,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>D63D2116-5E4B-4D84-BA85-79C89444AD5B</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>7</integer>
+	<integer>10</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -3076,7 +3076,7 @@
 												<real>0.94999998809999997</real>
 											</dict>
 											<key>Guid</key>
-											<string>74C76F17-CD71-4E06-8F3D-7A17A835FB0E</string>
+											<string>439B7F0C-77BD-4751-B532-2F3116E6CE89</string>
 											<key>Has Hotkey</key>
 											<false/>
 											<key>Horizontal Spacing</key>
@@ -3768,7 +3768,7 @@
 											<string>alice</string>
 										</dict>
 										<key>Columns</key>
-										<integer>88</integer>
+										<integer>84</integer>
 										<key>Commands</key>
 										<array>
 											<string>zprof | head -n 10</string>
@@ -3777,6 +3777,8 @@
 										</array>
 										<key>Directories</key>
 										<array>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
@@ -3806,6 +3808,18 @@
 										</dict>
 										<key>Hosts</key>
 										<array>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
 											<dict>
 												<key>Host name</key>
 												<string>rmbp</string>
@@ -3937,7 +3951,7 @@
 										<key>height</key>
 										<real>484</real>
 										<key>width</key>
-										<real>712</real>
+										<real>678</real>
 										<key>x</key>
 										<real>0.0</real>
 										<key>y</key>
@@ -3952,7 +3966,7 @@
 								<key>height</key>
 								<real>484</real>
 								<key>width</key>
-								<real>712</real>
+								<real>678</real>
 								<key>x</key>
 								<real>0.0</real>
 								<key>y</key>
@@ -3980,11 +3994,11 @@
 				<key>Use Transparency</key>
 				<false/>
 				<key>Width</key>
-				<real>712</real>
+				<real>678</real>
 				<key>Window Type</key>
 				<integer>13</integer>
 				<key>X Origin</key>
-				<real>723</real>
+				<real>757</real>
 				<key>Y Origin</key>
 				<real>70</real>
 			</dict>
