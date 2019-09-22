@@ -1861,7 +1861,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>D63D2116-5E4B-4D84-BA85-79C89444AD5B</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>10</integer>
+	<integer>11</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -3076,7 +3076,7 @@
 												<real>0.94999998809999997</real>
 											</dict>
 											<key>Guid</key>
-											<string>439B7F0C-77BD-4751-B532-2F3116E6CE89</string>
+											<string>F80AA645-4CA1-4A93-A1D1-3EB3563E5EDB</string>
 											<key>Has Hotkey</key>
 											<false/>
 											<key>Horizontal Spacing</key>
@@ -3768,15 +3768,19 @@
 											<string>alice</string>
 										</dict>
 										<key>Columns</key>
-										<integer>84</integer>
+										<integer>82</integer>
 										<key>Commands</key>
 										<array>
 											<string>zprof | head -n 10</string>
 											<string>e</string>
 											<string>curl -L https://iterm2.com/shell_integration/install_shell_integration_and_utilities.sh | bash</string>
+											<string>brew search speedyfox</string>
 										</array>
 										<key>Directories</key>
 										<array>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
@@ -3808,6 +3812,24 @@
 										</dict>
 										<key>Hosts</key>
 										<array>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
 											<dict>
 												<key>Host name</key>
 												<string>rmbp</string>
@@ -3951,7 +3973,7 @@
 										<key>height</key>
 										<real>484</real>
 										<key>width</key>
-										<real>678</real>
+										<real>662</real>
 										<key>x</key>
 										<real>0.0</real>
 										<key>y</key>
@@ -3966,7 +3988,7 @@
 								<key>height</key>
 								<real>484</real>
 								<key>width</key>
-								<real>678</real>
+								<real>662</real>
 								<key>x</key>
 								<real>0.0</real>
 								<key>y</key>
@@ -3994,13 +4016,13 @@
 				<key>Use Transparency</key>
 				<false/>
 				<key>Width</key>
-				<real>678</real>
+				<real>662</real>
 				<key>Window Type</key>
 				<integer>13</integer>
 				<key>X Origin</key>
-				<real>757</real>
+				<real>773</real>
 				<key>Y Origin</key>
-				<real>70</real>
+				<real>233</real>
 			</dict>
 		</array>
 	</dict>
