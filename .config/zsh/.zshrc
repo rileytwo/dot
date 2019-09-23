@@ -216,6 +216,9 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
   [[ -d "${HOME}/.pyenv" ]] \
     && export PATH="${HOME}/.pyenv/bin:$PATH"
 
+  [[ -d "${HOME}/.npm-global" ]] \
+    && export PATH="${HOME}/.npm-global/bin:$PATH"
+
 elif [[ "$OSTYPE" =~ "darwin" ]]; then
 
   [[ -f /opt/local/bin/port ]] \
