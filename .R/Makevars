@@ -8,6 +8,9 @@ HB=/usr/local/bin
 HO=/usr/local/opt
 HL=/usr/local/lib
 
+# macOS SDK
+SDK=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk
+
 # ccache
 CCACHE=$(HB)/ccache
 
@@ -18,8 +21,8 @@ MAKE=make -j`nproc`
 VER=9
 
 # LLVM (Clang) compiler options
-CC=$(CCACHE) $(HO)/llvm/bin/clang
-CXX=$(CC)++
+CC=$(CCACHE) $(HO)/llvm/bin/clang -isysroot $(SDK)
+CXX=$(CC)++ -isysroot $(SDK)
 
 # FORTRAN
 FC=$(CCACHE) $(HB)/gfortran-$(VER)
