@@ -10,13 +10,15 @@ if ($IsWindows) {
     $Env:Path += ";C:\Users\RRoach\.cargo\bin"
 
     function Start-Conda {
-        (& "C:\Users\RRoach\scoop\apps\miniconda3\current\Scripts\conda.exe" "shell.powershell" "hook") | Out-String | Invoke-Expression
+        (& "C:\Users\RRoach\scoop\apps\miniconda3\current\Scripts\conda.exe" "shell.powershell" "hook") | 
+        Out-String | 
+        Invoke-Expression
     }
     if (Get-VirtualEnvName) {
         $Env:CONDA_PROMPT_MODIFIER = ""
     }
     Invoke-Expression (
-        $(lua "C:\Users\RRoach\github\z\z.lua" --init powershell) -join "`n"
+        $(lua "C:\Users\RRoach\github\z\z.lua" --init powershell enhanced) -join "`n"
     )
 
 }
