@@ -254,6 +254,10 @@ elif (( $+commands[pyenv] )); then
 
 fi
 
+if (( $+commands[rbenv] )); then
+  eval "$(rbenv init -)"
+fi
+
 
 
 #### // options
