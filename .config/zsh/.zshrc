@@ -220,7 +220,7 @@ if [[ "$OSTYPE" =~ "linux-gnu" ]]; then
     && export PATH="${HOME}/.npm-global/bin:$PATH"
 
   [[ -d "/usr/share/swift" ]] \
-    && export PATH="/usr/share/swift/bin:$PATH"
+    && export PATH="/usr/share/swift/usr/bin:$PATH"
 
 elif [[ "$OSTYPE" =~ "darwin" ]]; then
 
