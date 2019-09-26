@@ -202,7 +202,7 @@ ZSH_AUTOSUGGEST_CLEAR_WIDGETS+=(bracketed-paste)
 
 #### // OS specific stuff
 
-if [[ "$OSTYPE" == "linux-gnu" ]]; then
+if [[ "$OSTYPE" =~ "linux-gnu" ]]; then
 
   [[ -f "${HOME}/z.sh" ]] \
     && . "${HOME}/z.sh"
