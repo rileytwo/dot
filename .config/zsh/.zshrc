@@ -12,7 +12,7 @@ zmodload zsh/zprof
 
 if [[ "$OSTYPE" == "linux-gnu" ]]; then
   if [[ "$TERM_PROGRAM" == "vscode" ]]; then
-    echo "vscode"
+    :
   else
     neofetch \
       --config "${HOME}"/.config/neofetch/lnxconfig.conf \
@@ -21,7 +21,7 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
   fi
 elif [[ -f "${HOME}/.dot/.config/neofetch/mac/current" ]]; then
   if [[ "$TERM_PROGRAM" == "vscode" ]]; then
-    echo "vscode"
+    :
   else
     neofetch \
       --ascii "${HOME}"/.dot/.config/neofetch/mac/current \
