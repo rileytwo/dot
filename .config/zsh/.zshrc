@@ -219,6 +219,9 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
   [[ -d "${HOME}/.npm-global" ]] \
     && export PATH="${HOME}/.npm-global/bin:$PATH"
 
+  [[ -d "/usr/share/swift" ]] \
+    && export PATH="/usr/share/swift/bin:$PATH"
+
 elif [[ "$OSTYPE" =~ "darwin" ]]; then
 
   [[ -f /opt/local/bin/port ]] \
