@@ -688,18 +688,9 @@
                         "product_id": 45082,
                         "vendor_id": 1133
                     },
-                    "ignore": false,
+                    "ignore": true,
                     "manipulate_caps_lock_led": false,
-                    "simple_modifications": [
-                        {
-                            "from": {
-                                "pointing_button": "button4"
-                            },
-                            "to": {
-                                "pointing_button": "button4"
-                            }
-                        }
-                    ]
+                    "simple_modifications": []
                 }
             ],
             "fn_function_keys": [
