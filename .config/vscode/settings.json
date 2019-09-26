@@ -30,7 +30,6 @@
     "scss.lint.duplicateProperties": "warning",
     "markdown.extension.print.imgToBase64": true,
     "markdown.extension.toc.githubCompatibility": true,
-    "json.format.enable": false,
     // "update.enableWindowsBackgroundUpdates": false,
     // "workbench.statusBar.feedback.visible": false,
     //"vim.disableExtension": true,
@@ -151,7 +150,8 @@
         "editor.formatOnSave": false
     },
     "[json]": {
-        "editor.formatOnSave": false
+        "editor.formatOnSave": false,
+        "editor.defaultFormatter": "HookyQR.beautify"
     },
     "[rmd]": {
 
