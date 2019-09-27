@@ -29,11 +29,11 @@ while getopts "ha" opt; do
 	  display_usage
 	  ;;
 	:)
-	  echo "-${OPTARG} requires an argument"
+	  echo "-${opt} requires an argument"
 	  exit 1
 	  ;;
 	*)
-	  echo "Invalid option: ${OPTARG}"
+	  echo "Invalid option: ${opt}"
 	  exit 1
 	  ;;
   esac
