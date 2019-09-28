@@ -229,7 +229,7 @@
 	<key>NSWindow Frame NSColorPanel</key>
 	<string>0 131 224 275 0 0 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>773 233 662 522 0 0 1440 877 </string>
+	<string>750 232 660 522 0 0 1440 877 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -1274,7 +1274,7 @@
 			<key>Visual Bell</key>
 			<true/>
 			<key>Window Type</key>
-			<integer>13</integer>
+			<integer>0</integer>
 			<key>Working Directory</key>
 			<string>/Users/riley</string>
 			<key>tmux Pane Title</key>
@@ -2956,7 +2956,7 @@
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1440, 900}}</string>
 		<key>topLeft</key>
-		<string>{70, 789}</string>
+		<string>{32, 821}</string>
 	</dict>
 	<key>NoSyncHaveUsedCopyMode</key>
 	<true/>
@@ -2967,7 +2967,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>D63D2116-5E4B-4D84-BA85-79C89444AD5B</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>33</integer>
+	<integer>36</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -3772,7 +3772,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-09-27T01:56:45Z</date>
+	<date>2019-09-28T02:08:21Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SoundForEsc</key>
