@@ -9,7 +9,12 @@ HO=/usr/local/opt
 HL=/usr/local/lib
 
 # macOS SDK
-SDK=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk
+# use this if you installed Xcode CLT without Xcode
+# SDK=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk
+#
+# use this if you installed Xcode CLT with Xcode
+XCODE=/Applications/Xcode.app/Contents
+SDK=$(XCODE)/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk
 
 # ccache
 CCACHE=$(HB)/ccache
