@@ -14,6 +14,8 @@
 	<string>manual</string>
 	<key>BootstrapDaemon</key>
 	<false/>
+	<key>CGFontRenderingFontSmoothingDisabled</key>
+	<false/>
 	<key>ColoredSelectedTabOutlineStrength</key>
 	<real>0.20000000298023224</real>
 	<key>Default Arrangement Name</key>
@@ -203,7 +205,7 @@
 	dWxs0g0ODxJaTlMub2JqZWN0c1YkY2xhc3OiEBGAAoAKgA3TFA0OFRkdV05TLmtleXOj
 	FhcYgAOABIAFoxobHIAGgAeACIAJWklkZW50aWZpZXJVV2lkdGhWSGlkZGVuUTAjQGjA
 	AAAAAAAI0iUmJyhaJGNsYXNzbmFtZVgkY2xhc3Nlc1xOU0RpY3Rpb25hcnmiJylYTlNP
-	YmplY3TTFA0OKy8doxYXGIADgASABaMwMRyAC4AMgAiACVExI0BzsZ2yLQ5W0iUmNzhe
+	YmplY3TTFA0OKy8doxYXGIADgASABaMwMRyAC4AMgAiACVExI0B0oZ2yLQ5W0iUmNzhe
 	TlNNdXRhYmxlQXJyYXmjNzkpV05TQXJyYXkACAARABoAJAApADIANwBJAEwAUgBUAGMA
 	aQBuAHkAgACDAIUAhwCJAJAAmACcAJ4AoACiAKYAqACqAKwArgC5AL8AxgDIANEA0gDX
 	AOIA6wD4APsBBAELAQ8BEQETARUBGQEbAR0BHwEhASMBLAExAUABRAAAAAAAAAIBAAAA
@@ -227,7 +229,7 @@
 	<key>NSWindow Frame NSColorPanel</key>
 	<string>0 131 224 275 0 0 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>647 468 662 536 0 0 1920 1057 </string>
+	<string>773 233 662 522 0 0 1440 877 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -970,7 +972,7 @@
 			<key>Send Code When Idle</key>
 			<false/>
 			<key>Shortcut</key>
-			<string>0</string>
+			<string>1</string>
 			<key>Show Mark Indicators</key>
 			<false/>
 			<key>Show Status Bar</key>
@@ -2018,7 +2020,7 @@
 			<key>Send Code When Idle</key>
 			<false/>
 			<key>Shortcut</key>
-			<string>1</string>
+			<string>2</string>
 			<key>Show Mark Indicators</key>
 			<false/>
 			<key>Show Status Bar</key>
@@ -2928,9 +2930,12 @@
 		<string>Hack Nerd Font</string>
 		<string>FuraCode Nerd Font</string>
 		<string>RobotoMono Nerd Font</string>
+		<string>SF Mono</string>
+		<string>Fira Code</string>
 	</array>
 	<key>NoSyncBFPRecents</key>
 	<array>
+		<string>SF Mono</string>
 		<string>Fira Code</string>
 	</array>
 	<key>NoSyncCommandHistoryHasEverBeenUsed</key>
@@ -2949,9 +2954,9 @@
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
 		<key>screenFrame</key>
-		<string>{{0, 0}, {1920, 1080}}</string>
+		<string>{{0, 0}, {1440, 900}}</string>
 		<key>topLeft</key>
-		<string>{49, 899}</string>
+		<string>{70, 789}</string>
 	</dict>
 	<key>NoSyncHaveUsedCopyMode</key>
 	<true/>
@@ -2962,7 +2967,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>D63D2116-5E4B-4D84-BA85-79C89444AD5B</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>30</integer>
+	<integer>33</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -3766,6 +3771,8 @@
 	<string>https://iterm2.com/appcasts/final_new.xml?shard=70</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
+	<key>SULastCheckTime</key>
+	<date>2019-09-27T01:56:45Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SoundForEsc</key>
