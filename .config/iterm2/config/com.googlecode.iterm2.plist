@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>AdjustWindowForFontSizeChange</key>
-	<false/>
+	<true/>
 	<key>AppleAntiAliasingThreshold</key>
 	<integer>1</integer>
 	<key>AppleScrollAnimationEnabled</key>
@@ -229,7 +229,7 @@
 	<key>NSWindow Frame NSColorPanel</key>
 	<string>0 131 224 275 0 0 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>750 232 660 522 0 0 1440 877 </string>
+	<string>-1387 343 660 517 -1440 180 1440 877 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -2954,9 +2954,9 @@
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
 		<key>screenFrame</key>
-		<string>{{0, 0}, {1440, 900}}</string>
+		<string>{{0, 0}, {1920, 1080}}</string>
 		<key>topLeft</key>
-		<string>{32, 821}</string>
+		<string>{172, 952}</string>
 	</dict>
 	<key>NoSyncHaveUsedCopyMode</key>
 	<true/>
@@ -2967,7 +2967,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>D63D2116-5E4B-4D84-BA85-79C89444AD5B</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>36</integer>
+	<integer>39</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -5142,5 +5142,9 @@
 	<string>/-+\~_.</string>
 	<key>iTerm Version</key>
 	<string>3.3.4</string>
+	<key>kCPKSelectionViewPreferredModeKey</key>
+	<integer>0</integer>
+	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
+	<false/>
 </dict>
 </plist>
