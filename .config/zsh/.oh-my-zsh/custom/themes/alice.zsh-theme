@@ -39,6 +39,6 @@ precmd_prompt() {
 
     RPROMPT="${smiley}"
 
-    PROMPT2="%{$white}-> "
+    PROMPT2="%{$white%}-> "
 }
 precmd_functions+=(precmd_prompt)
