@@ -232,7 +232,7 @@
 		<string></string>
 	</dict>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>773 233 662 522 0 0 1440 877 </string>
+	<string>53 241 662 522 0 0 1440 877 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -2946,15 +2946,17 @@
 	<key>NoSyncInstallationId</key>
 	<string>1B480254-E265-41B7-98EA-0689375CEC49</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>12</integer>
+	<integer>15</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
 	<integer>0</integer>
 	<key>NoSyncNextAnnoyanceTime</key>
-	<real>591644604.16708899</real>
+	<real>591740840.972996</real>
 	<key>NoSyncOnboardingWindowHasBeenShown</key>
 	<true/>
+	<key>NoSyncPermissionToShowTip</key>
+	<false/>
 	<key>NoSyncRecordedVariables</key>
 	<dict>
 		<key>0</key>
@@ -3753,7 +3755,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-09-30T13:36:26Z</date>
+	<date>2019-10-01T03:29:54Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SoundForEsc</key>
@@ -3766,6 +3768,15 @@
 	<integer>5</integer>
 	<key>TerminalMargin</key>
 	<integer>2</integer>
+	<key>ToolbeltTools</key>
+	<array>
+		<string>Actions</string>
+		<string>Profiles</string>
+		<string>Recent Directories</string>
+		<string>Captured Output</string>
+		<string>Command History</string>
+		<string>Jobs</string>
+	</array>
 	<key>VisualIndicatorForEsc</key>
 	<false/>
 	<key>Window Arrangements</key>
