@@ -37,7 +37,7 @@ Plug 'vitalk/vim-shebang'
 Plug 'xu-cheng/brew.vim'
 Plug 'cespare/vim-toml'
 Plug 'darfink/vim-plist'
-
+Plug 'keith/swift.vim'
 
 " // Auto closing delimiters
 Plug 'Raimondi/delimitMate'
