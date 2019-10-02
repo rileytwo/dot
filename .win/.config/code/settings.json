@@ -183,7 +183,6 @@
     "editor.cursorBlinking": "smooth",
     "editor.dragAndDrop": false,
     "workbench.editor.restoreViewState": false,
-    "editor.formatOnSave": true,
     "files.hotExit": "off",
     "files.defaultLanguage": "txt",
     "extensions.ignoreRecommendations": true,
