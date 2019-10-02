@@ -11,16 +11,21 @@ if ($IsWindows) {
 
     function Start-Conda {
         (& "C:\Users\RRoach\scoop\apps\miniconda3\current\Scripts\conda.exe" "shell.powershell" "hook") | 
-        Out-String | 
-        Invoke-Expression
+            Out-String | 
+            Invoke-Expression
     }
+    
     if (Get-VirtualEnvName) {
         $Env:CONDA_PROMPT_MODIFIER = ""
     }
+
     Invoke-Expression (
         $(lua "C:\Users\RRoach\github\z\z.lua" --init powershell enhanced) -join "`n"
     )
 
+    if (Get-Command codium.cmd -ErrorAction SilentlyContinue) {
+        Set-Alias -name 'code' -value codium.cmd
+    } 
 }
 
 Set-PSReadLineOption -Colors @{
