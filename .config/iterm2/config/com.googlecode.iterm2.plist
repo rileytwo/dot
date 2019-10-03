@@ -14,8 +14,12 @@
 	<string>manual</string>
 	<key>BootstrapDaemon</key>
 	<false/>
+	<key>BracketedPasteMode</key>
+	<true/>
 	<key>ColoredSelectedTabOutlineStrength</key>
 	<real>0.20000000298023224</real>
+	<key>ConvertDosNewlines</key>
+	<true/>
 	<key>Default Arrangement Name</key>
 	<string>Arrangement 1</string>
 	<key>Default Bookmark Guid</key>
@@ -29,6 +33,8 @@
 	<key>EnableAPIServer</key>
 	<true/>
 	<key>EnableDivisionView</key>
+	<false/>
+	<key>EscapeShellCharsWithBackslash</key>
 	<false/>
 	<key>GlobalKeyMap</key>
 	<dict>
@@ -232,7 +238,7 @@
 		<string></string>
 	</dict>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>53 241 662 522 0 0 1440 877 </string>
+	<string>685 240 662 522 0 0 1440 877 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -2946,7 +2952,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>1B480254-E265-41B7-98EA-0689375CEC49</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>15</integer>
+	<integer>19</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -3704,6 +3710,12 @@
 	<key>OpenNoWindowsAtStartup</key>
 	<false/>
 	<key>PMPrintingExpandedStateForPrint2</key>
+	<false/>
+	<key>PasteSpecialRegex</key>
+	<string></string>
+	<key>PasteSpecialSubstitution</key>
+	<string></string>
+	<key>PasteSpecialUseRegexSubstitution</key>
 	<false/>
 	<key>PointerActions</key>
 	<dict>
