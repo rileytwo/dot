@@ -323,7 +323,7 @@ end)
 
 hs.hotkey.bind(mod_keys, "Right", function()
 	-- move to screen right
-	-- wraps around to first screen
+	--   wraps around to first screen
 	local win        = hs.window.focusedWindow()
 	local win_screen = win:screen()
 
