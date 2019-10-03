@@ -172,24 +172,27 @@ bind_resize_and_restore_keys("]", get_fill_right_win_frame)
 
 
 -- 2 --------------------------
+-- function is_top_win_frame()
+-- 	local gap         = 5
+-- 	local menubar     = 23
+-- 	local extra_space = 20 -- adjustable
+
+-- 	local top_area = gap + menubar + extra_space
+
+-- 	if hs.window.focusedWindow():frame().y <= top_area then
+-- 		return true
+-- 	else
+-- 		return false
+-- 	end
+-- end
+
+
 function is_right_win_frame()
 	local win          = hs.window.focusedWindow()
 	local win_frame    = win:frame()
 	local screen_frame = win:screen():frame()
 
 	if (screen_frame.w - (win_frame.x + win_frame.w)) <= 50 then
-		return true
-	else
-		return false
-	end
-end
-
-
-function is_top_win_frame()
-	local win       = hs.window.focusedWindow()
-	local win_frame = win:frame()
-
-	if win_frame.y <= 100 then
 		return true
 	else
 		return false
@@ -239,13 +242,8 @@ hs.hotkey.bind(mod_keys, "J", function()
 	local win       = hs.window.focusedWindow()
 	local win_frame = win:frame()
 
-	if is_top_win_frame() then
-		win_frame.h = win_frame.h + 50
-		win:setFrame(win_frame)
-	else
-		win_frame.h = win_frame.h + 50
-		win:setFrame(win_frame)
-	end
+	win_frame.h = win_frame.h + 50
+	win:setFrame(win_frame)
 end)
 
 
@@ -254,13 +252,8 @@ hs.hotkey.bind(mod_keys, "K", function()
 	local win       = hs.window.focusedWindow()
 	local win_frame = win:frame()
 
-	if is_top_win_frame() then
-		win_frame.h = win_frame.h - 50
-		win:setFrame(win_frame)
-	else
-		win_frame.h = win_frame.h - 50
-		win:setFrame(win_frame)
-	end
+	win_frame.h = win_frame.h - 50
+	win:setFrame(win_frame)
 end)
 
 
