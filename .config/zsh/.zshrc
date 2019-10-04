@@ -42,6 +42,7 @@ export ZSH="${HOME}/.oh-my-zsh"
 plugins=(
   git
   forgit
+  swiftpm
   zsh-interactive-cd
   zsh-autopair
   zsh-completions
