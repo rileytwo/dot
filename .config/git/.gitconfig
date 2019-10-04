@@ -7,7 +7,7 @@
 	process = git-lfs filter-process
 	required = true
 [core]
-	excludesfile = .gitignore_global
+	excludesfile = .gitignore-global
 	trustctime = false
 	pager = less -F -X
 	autocrlf = input
