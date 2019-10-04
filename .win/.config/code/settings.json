@@ -49,7 +49,8 @@
     "files.associations": {
         "*.rstheme": "css",
         "*.rmd": "markdown",
-        "*.inc": "txt"
+        "*.inc": "txt",
+        "*.qss": "css"
     },
     "update.enableWindowsBackgroundUpdates": false,
     "update.showReleaseNotes": false,
@@ -188,5 +189,6 @@
     "extensions.ignoreRecommendations": true,
     "python.dataScience.ignoreVscodeTheme": true,
     "python.dataScience.askForKernelRestart": false,
-    "python.jediEnabled": false
+    "python.jediEnabled": false,
+    "r.rterm.windows": "C:\\Users\\RRoach\\scoop\\shims\\r.exe"
 }
