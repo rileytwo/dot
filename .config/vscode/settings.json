@@ -171,7 +171,8 @@
     "terminal.integrated.cursorStyle": "underline",
     "editor.hover.sticky": false,
     "[shellscript]": {
-        "editor.defaultFormatter": "foxundermoon.shell-format"
+        "editor.defaultFormatter": "foxundermoon.shell-format",
+        "editor.tabSize": 2
     },
     "editor.codeLens": false,
     "explorer.confirmDelete": false,
