@@ -2,7 +2,7 @@
 " // Plugins (vim-plug)
 " ----------
 
-call plug#begin('~/.vim/plugged')
+call plug#begin('~/.config/vim/plugged')
 
 " tpope
 Plug 'tpope/vim-eunuch'
