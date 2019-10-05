@@ -13,8 +13,8 @@ local white=$fg[white]
 
 ## prompt substitutions
 local git_info='$(git_prompt_info)'
-local smiley="%(?,%{$green%}:%)%{$reset_color%},%{$red_bold%}:(%{$reset_color%})"
 local check="%{$green%}%{$reset_color%}"
+#local smiley="%(?,%{$green%}:%)%{$reset_color%},%{$red_bold%}:(%{$reset_color%})"
 
 ## git info
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$blue_bold%}git:(%{$red_bold%}"
@@ -37,7 +37,7 @@ precmd_prompt() {
     PROMPT+=$'\n'
     PROMPT+="-> "
 
-    RPROMPT="${smiley}"
+    #RPROMPT="${smiley}"
 
     PROMPT2="%{$white%}-> "
 }
