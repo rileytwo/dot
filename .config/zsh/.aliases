@@ -23,7 +23,11 @@ alias plistbuddy='/usr/libexec/PlistBuddy'
 alias path='echo -e ${PATH//:/\\n}'
 alias fpath='echo -e ${FPATH//:/\\n}'
 
-## exa, A modern replacement for ls
+
+if (( $+commands[karabiner_cli] )); then
+    alias kb='karabiner_cli'
+fi
+
 if (( $+commands[exa] )); then
     alias e='exa -lah'
     alias ee='exa -lh'
