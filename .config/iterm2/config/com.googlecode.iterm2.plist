@@ -16,6 +16,8 @@
 	<false/>
 	<key>BracketedPasteMode</key>
 	<true/>
+	<key>CheckTestRelease</key>
+	<true/>
 	<key>ColoredSelectedTabOutlineStrength</key>
 	<real>0.20000000298023224</real>
 	<key>ConvertDosNewlines</key>
@@ -45,6 +47,13 @@
 			<key>Text</key>
 			<string></string>
 		</dict>
+		<key>0x44-0x160000</key>
+		<dict>
+			<key>Action</key>
+			<integer>28</integer>
+			<key>Text</key>
+			<string>C2CD2FD3-775C-44B4-AB74-0853DACAE166</string>
+		</dict>
 		<key>0x4a-0x160000</key>
 		<dict>
 			<key>Action</key>
@@ -58,6 +67,13 @@
 			<integer>9</integer>
 			<key>Text</key>
 			<string></string>
+		</dict>
+		<key>0x64-0x1c0000</key>
+		<dict>
+			<key>Action</key>
+			<integer>29</integer>
+			<key>Text</key>
+			<string>C2CD2FD3-775C-44B4-AB74-0853DACAE166</string>
 		</dict>
 		<key>0x6a-0x140000</key>
 		<dict>
@@ -237,8 +253,10 @@
 		<key>Make iTerm2 Default Term</key>
 		<string></string>
 	</dict>
+	<key>NSWindow Frame SUUpdateAlert</key>
+	<string>410 363 620 392 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>685 240 662 522 0 0 1440 877 </string>
+	<string>5 5 712 867 0 0 1440 877 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -2947,12 +2965,12 @@
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1440, 900}}</string>
 		<key>topLeft</key>
-		<string>{37, 832}</string>
+		<string>{246, 745}</string>
 	</dict>
 	<key>NoSyncInstallationId</key>
 	<string>1B480254-E265-41B7-98EA-0689375CEC49</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>19</integer>
+	<integer>25</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -3763,13 +3781,15 @@
 	<key>SUFeedAlternateAppNameKey</key>
 	<string>iTerm</string>
 	<key>SUFeedURL</key>
-	<string>https://iterm2.com/appcasts/final_new.xml?shard=66</string>
+	<string>https://iterm2.com/appcasts/testing_new.xml?shard=66</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-10-01T03:29:54Z</date>
+	<date>2019-10-05T14:00:51Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
+	<key>SUUpdateRelaunchingMarker</key>
+	<true/>
 	<key>SoundForEsc</key>
 	<false/>
 	<key>SplitPaneDimmingAmount</key>
