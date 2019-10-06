@@ -63,7 +63,7 @@ let g:vim_indent_cont = &shiftwidth
 
 
 "" // plugins
-call plug#begin('~/.vim/plugged')
+call plug#begin('~/.config/vim/plugged')
 
 Plug 'tpope/vim-markdown', {'for': 'markdown'}
 Plug 'tpope/vim-eunuch'
