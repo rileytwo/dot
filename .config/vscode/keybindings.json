@@ -558,5 +558,21 @@
     {
         "key": "ctrl+\\",
         "command": "workbench.action.toggleActivityBarVisibility"
+    },
+    {
+        "key": "cmd+b",
+        "command": "sde.commands.buildPackage"
+    },
+    {
+        "key": "alt+b",
+        "command": "-sde.commands.buildPackage"
+    },
+    {
+        "key": "alt+b",
+        "command": "-sde.commands.buildPackage"
+    },
+    {
+        "key": "alt+b",
+        "command": "-sde.commands.buildPackage"
     }
 ]

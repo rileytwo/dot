@@ -179,5 +179,7 @@
     "powershell.bugReporting.project": "",
     "powershell.codeFormatting.useCorrectCasing": true,
     "powershell.integratedConsole.showOnStartup": false,
-    "powershell.sideBar.CommandExplorerVisibility": false
+    "powershell.sideBar.CommandExplorerVisibility": false,
+    "sourcekit-lsp.serverPath": "/usr/local/bin/sourcekit-lsp",
+    "swift.path.sourcekite": "/usr/local/bin/sourcekite"
 }
