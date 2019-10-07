@@ -327,7 +327,11 @@ hs.hotkey.bind(mod_keys, "Right", function()
 	local win        = hs.window.focusedWindow()
 	local win_screen = win:screen()
 
-	win:moveToScreen(win_screen:next())
+	win:moveToScreen(
+		win_screen:next(),
+		{"noResize"},
+		{"ensureInScreenBounds"}
+	)
 end)
 
 
@@ -337,5 +341,9 @@ hs.hotkey.bind(mod_keys, "Left", function()
 	local win        = hs.window.focusedWindow()
 	local win_screen = win:screen()
 
-	win:moveToScreen(win_screen:previous())
+	win:moveToScreen(
+		win_screen:previous(),
+		{"noResize"},
+		{"ensureInScreenBounds"}
+	)
 end)
