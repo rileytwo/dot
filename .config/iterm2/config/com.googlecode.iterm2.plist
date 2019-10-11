@@ -201,14 +201,20 @@
 	<real>0.05000000074505806</real>
 	<key>MinimalTabStyleOutlineStrength</key>
 	<real>0.0</real>
+	<key>NSColorPanelMode</key>
+	<string>1</string>
+	<key>NSColorPickerPreferredRGBEntryMode</key>
+	<integer>2</integer>
+	<key>NSColorPickerSlidersDefaults</key>
+	<string>1</string>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/.dot/.config/iterm2/keybindings</string>
+	<string>~/.dot/.config/iterm2/colors</string>
 	<key>NSNavLastUserSetHideExtensionButtonState</key>
 	<false/>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
 	<string>{712, 448}</string>
 	<key>NSNavPanelExpandedSizeForSaveMode</key>
-	<string>{712, 448}</string>
+	<string>{841, 448}</string>
 	<key>NSQuotedKeystrokeBinding</key>
 	<string></string>
 	<key>NSRepeatCountBinding</key>
@@ -219,8 +225,8 @@
 	<false/>
 	<key>NSSplitView Subview Frames NSColorPanelSplitView</key>
 	<array>
-		<string>0.000000, 0.000000, 224.000000, 258.000000, NO, NO</string>
-		<string>0.000000, 259.000000, 224.000000, 48.000000, NO, NO</string>
+		<string>0.000000, 0.000000, 326.000000, 330.500000, NO, NO</string>
+		<string>0.000000, 331.500000, 326.000000, 138.500000, NO, NO</string>
 	</array>
 	<key>NSTableView Columns v2 KeyBingingTable</key>
 	<data>
@@ -229,7 +235,7 @@
 	dWxs0g0ODxJaTlMub2JqZWN0c1YkY2xhc3OiEBGAAoAKgA3TFA0OFRkdV05TLmtleXOj
 	FhcYgAOABIAFoxobHIAGgAeACIAJWklkZW50aWZpZXJVV2lkdGhWSGlkZGVuUTAjQGjA
 	AAAAAAAI0iUmJyhaJGNsYXNzbmFtZVgkY2xhc3Nlc1xOU0RpY3Rpb25hcnmiJylYTlNP
-	YmplY3TTFA0OKy8doxYXGIADgASABaMwMRyAC4AMgAiACVExI0BzsZ2yLQ5W0iUmNzhe
+	YmplY3TTFA0OKy8doxYXGIADgASABaMwMRyAC4AMgAiACVExI0B0oZ2yLQ5W0iUmNzhe
 	TlNNdXRhYmxlQXJyYXmjNzkpV05TQXJyYXkACAARABoAJAApADIANwBJAEwAUgBUAGMA
 	aQBuAHkAgACDAIUAhwCJAJAAmACcAJ4AoACiAKYAqACqAKwArgC5AL8AxgDIANEA0gDX
 	AOIA6wD4APsBBAELAQ8BEQETARUBGQEbAR0BHwEhASMBLAExAUABRAAAAAAAAAIBAAAA
@@ -261,10 +267,14 @@
 		<key>Move Divider Up</key>
 		<string>^=</string>
 	</dict>
+	<key>NSWindow Frame NSColorPanel</key>
+	<string>242 326 326 347 0 0 1440 877 </string>
+	<key>NSWindow Frame NSNavPanelAutosaveName</key>
+	<string>299 305 841 470 0 0 1440 877 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>410 363 620 392 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>1544 655 660 519 0 0 2560 1417 </string>
+	<string>773 233 662 522 0 0 1440 877 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -305,15 +315,15 @@
 			<key>Ansi 10 Color</key>
 			<dict>
 				<key>Alpha Component</key>
-				<integer>1</integer>
+				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.65098041296005249</real>
+				<real>0.74117648599999997</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.99215686321258545</real>
+				<real>0.98823529480000005</real>
 				<key>Red Component</key>
-				<real>0.40784314274787903</real>
+				<real>0.51372551919999998</real>
 			</dict>
 			<key>Ansi 11 Color</key>
 			<dict>
@@ -383,15 +393,15 @@
 			<key>Ansi 2 Color</key>
 			<dict>
 				<key>Alpha Component</key>
-				<integer>1</integer>
+				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.62367786960000005</real>
+				<real>0.63462895154953003</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.95999999999999996</real>
+				<real>0.93000000715255737</real>
 				<key>Red Component</key>
-				<real>0.38400000000000001</real>
+				<real>0.36269998550415039</real>
 			</dict>
 			<key>Ansi 3 Color</key>
 			<dict>
@@ -2959,6 +2969,7 @@
 	<array>
 		<string>3.3.4</string>
 		<string>3.3.5beta3</string>
+		<string>3.3.7beta1</string>
 	</array>
 	<key>NoSyncCommandHistoryHasEverBeenUsed</key>
 	<true/>
@@ -2967,19 +2978,21 @@
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1440, 900}}</string>
 		<key>topLeft</key>
-		<string>{417, 787}</string>
+		<string>{808, 691}</string>
 	</dict>
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
 		<key>screenFrame</key>
-		<string>{{0, 0}, {2560, 1440}}</string>
+		<string>{{0, 0}, {1440, 900}}</string>
 		<key>topLeft</key>
-		<string>{898, 925}</string>
+		<string>{0, 776}</string>
 	</dict>
+	<key>NoSyncHaveUsedCopyMode</key>
+	<true/>
 	<key>NoSyncInstallationId</key>
 	<string>1B480254-E265-41B7-98EA-0689375CEC49</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>47</integer>
+	<integer>61</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -3810,7 +3823,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-10-06T16:47:35Z</date>
+	<date>2019-10-10T19:54:54Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
@@ -3914,15 +3927,15 @@
 											<key>Ansi 10 Color</key>
 											<dict>
 												<key>Alpha Component</key>
-												<integer>1</integer>
+												<real>1</real>
 												<key>Blue Component</key>
-												<real>0.65098041296005249</real>
+												<real>0.74117648601531982</real>
 												<key>Color Space</key>
 												<string>sRGB</string>
 												<key>Green Component</key>
-												<real>0.99215686321258545</real>
+												<real>0.98823529481887817</real>
 												<key>Red Component</key>
-												<real>0.40784314274787903</real>
+												<real>0.51372551918029785</real>
 											</dict>
 											<key>Ansi 11 Color</key>
 											<dict>
@@ -3992,15 +4005,15 @@
 											<key>Ansi 2 Color</key>
 											<dict>
 												<key>Alpha Component</key>
-												<integer>1</integer>
+												<real>1</real>
 												<key>Blue Component</key>
-												<real>0.62367786960000005</real>
+												<real>0.63529411759999999</real>
 												<key>Color Space</key>
 												<string>sRGB</string>
 												<key>Green Component</key>
-												<real>0.95999999999999996</real>
+												<real>0.92941176469999998</real>
 												<key>Red Component</key>
-												<real>0.38400000000000001</real>
+												<real>0.36078431370000003</real>
 											</dict>
 											<key>Ansi 3 Color</key>
 											<dict>
@@ -4235,7 +4248,7 @@
 												<real>0.94999998809999997</real>
 											</dict>
 											<key>Guid</key>
-											<string>F80AA645-4CA1-4A93-A1D1-3EB3563E5EDB</string>
+											<string>E3C6DE68-FEE0-48BD-8E9D-B31D7E02F855</string>
 											<key>Has Hotkey</key>
 											<false/>
 											<key>Horizontal Spacing</key>
@@ -4958,6 +4971,8 @@
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
 										</array>
 										<key>Environment</key>
 										<dict>
@@ -4971,6 +4986,18 @@
 										</dict>
 										<key>Hosts</key>
 										<array>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
 											<dict>
 												<key>Host name</key>
 												<string>rmbp</string>
@@ -5124,6 +5151,8 @@
 										<dict/>
 										<key>Working Directory</key>
 										<string>/Users/riley</string>
+										<key>Working Directory Poller Disabled</key>
+										<true/>
 									</dict>
 									<key>View Type</key>
 									<string>SessionView</string>
@@ -5166,9 +5195,39 @@
 					<array>
 						<dict>
 							<key>heightAsFraction</key>
-							<real>1</real>
+							<real>0.1760154738878143</real>
+							<key>name</key>
+							<string>Actions</string>
+						</dict>
+						<dict>
+							<key>heightAsFraction</key>
+							<real>0.23017408123791103</real>
 							<key>name</key>
 							<string>Profiles</string>
+						</dict>
+						<dict>
+							<key>heightAsFraction</key>
+							<real>0.23017408123791103</real>
+							<key>name</key>
+							<string>Recent Directories</string>
+						</dict>
+						<dict>
+							<key>heightAsFraction</key>
+							<real>0.1760154738878143</real>
+							<key>name</key>
+							<string>Captured Output</string>
+						</dict>
+						<dict>
+							<key>heightAsFraction</key>
+							<real>0.23017408123791103</real>
+							<key>name</key>
+							<string>Command History</string>
+						</dict>
+						<dict>
+							<key>heightAsFraction</key>
+							<real>-0.042553191489361701</real>
+							<key>name</key>
+							<string>Jobs</string>
 						</dict>
 					</array>
 				</dict>
@@ -5190,10 +5249,12 @@
 	<key>WordCharacters</key>
 	<string>/-+\~_.</string>
 	<key>iTerm Version</key>
-	<string>3.3.5beta3</string>
+	<string>3.3.7beta1</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
 	<false/>
+	<key>kCPKUseSystemColorPicker</key>
+	<true/>
 </dict>
 </plist>
