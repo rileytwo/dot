@@ -68,7 +68,7 @@ hs.hotkey.bind(
 )
 
 
-function gf_screen_win_frame()
+function gs_screen_win_frame()
 	local gap          = 5
 	local win          = hs.window.focusedWindow()
 	local win_frame    = win:frame()
@@ -83,7 +83,7 @@ function gf_screen_win_frame()
 end
 
 
-function gf_left_win_frame()
+function gs_left_win_frame()
 	local gap          = 5
 	local win          = hs.window.focusedWindow()
 	local win_frame    = win:frame()
@@ -98,7 +98,7 @@ function gf_left_win_frame()
 end
 
 
-function gf_right_win_frame()
+function gs_right_win_frame()
 	local gap          = 5
 	local win          = hs.window.focusedWindow()
 	local win_frame    = win:frame()
@@ -142,9 +142,9 @@ end
 
 
 function is_predefined_win_frame_size()
-	if is_almost_equal_to_win_frame(gf_screen_win_frame())     or
-		is_almost_equal_to_win_frame(gf_left_win_frame())  or
-		is_almost_equal_to_win_frame(gf_right_win_frame()) then
+	if is_almost_equal_to_win_frame(gs_screen_win_frame())     or
+		is_almost_equal_to_win_frame(gs_left_win_frame())  or
+		is_almost_equal_to_win_frame(gs_right_win_frame()) then
 
 		return true
 	else
@@ -177,9 +177,9 @@ function bind_resize_restore(key, resize_frame_fn)
 end
 
 
-bind_resize_restore("F", gf_screen_win_frame)
-bind_resize_restore("[", gf_left_win_frame)
-bind_resize_restore("]", gf_right_win_frame)
+bind_resize_restore("F", gs_screen_win_frame)
+bind_resize_restore("[", gs_left_win_frame)
+bind_resize_restore("]", gs_right_win_frame)
 
 
 -- 2 --------------------------
