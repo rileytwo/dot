@@ -10,7 +10,7 @@
 --  1: Window Layout Management
 --    -  ⌘ + ⌃ + ⌥ + ⇧ + [, Toggle current window to left/restore;
 --    -  ⌘ + ⌃ + ⌥ + ⇧ + ], Toggle current window to right/restore;
---    -  ⌘ + ⌃ + ⌥ + ⇧ + F, Toggle current window to screenimize/restore;
+--    -  ⌘ + ⌃ + ⌥ + ⇧ + F, Toggle current window to screen/restore;
 --
 --  2: Window Resizing
 --    -  ⌘ + ⌃ + ⌥ + ⇧ + H, Increase window width;
@@ -68,6 +68,7 @@ hs.hotkey.bind(
 )
 
 
+-- gs = "get & set"
 function gs_screen_win_frame()
 	local gap          = 5
 	local win          = hs.window.focusedWindow()
@@ -113,17 +114,6 @@ function gs_right_win_frame()
 end
 
 
-function adjust_right()
-	-- fix for windows that can't be resized
-	-- lower than a predetermined width
-	local win = hs.window.focusedWindow()
-	local win_frame = win:frame()
-	local screen_frame = win:screen():frame()
-
-
-
-end
-
 function is_almost_equal_to_win_frame(geo)
 	local epsilon   = 5
 	local win       = hs.window.focusedWindow()
@@ -142,9 +132,9 @@ end
 
 
 function is_predefined_win_frame_size()
-	if is_almost_equal_to_win_frame(gs_screen_win_frame())     or
-		is_almost_equal_to_win_frame(gs_left_win_frame())  or
-		is_almost_equal_to_win_frame(gs_right_win_frame()) then
+	if is_almost_equal_to_win_frame(gs_screen_win_frame()) or
+		is_almost_equal_to_win_frame(gs_left_win_frame())   or
+		is_almost_equal_to_win_frame(gs_right_win_frame())  then
 
 		return true
 	else
