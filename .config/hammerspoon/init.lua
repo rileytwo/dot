@@ -68,7 +68,7 @@ hs.hotkey.bind(
 )
 
 
-function get_screen_win_frame()
+function gf_screen_win_frame()
 	local gap          = 5
 	local win          = hs.window.focusedWindow()
 	local win_frame    = win:frame()
@@ -83,7 +83,7 @@ function get_screen_win_frame()
 end
 
 
-function get_fill_left_win_frame()
+function gf_left_win_frame()
 	local gap          = 5
 	local win          = hs.window.focusedWindow()
 	local win_frame    = win:frame()
@@ -98,7 +98,7 @@ function get_fill_left_win_frame()
 end
 
 
-function get_fill_right_win_frame()
+function gf_right_win_frame()
 	local gap          = 5
 	local win          = hs.window.focusedWindow()
 	local win_frame    = win:frame()
@@ -113,17 +113,16 @@ function get_fill_right_win_frame()
 end
 
 
-function is_predefined_win_frame_size()
-	if is_almost_equal_to_win_frame(get_screen_win_frame())     or
-		is_almost_equal_to_win_frame(get_fill_left_win_frame())  or
-		is_almost_equal_to_win_frame(get_fill_right_win_frame()) then
+function adjust_right()
+	-- fix for windows that can't be resized
+	-- lower than a predetermined width
+	local win = hs.window.focusedWindow()
+	local win_frame = win:frame()
+	local screen_frame = win:screen():frame()
 
-		return true
-	else
-		return false
-	end
+
+
 end
-
 
 function is_almost_equal_to_win_frame(geo)
 	local epsilon   = 5
@@ -134,6 +133,18 @@ function is_almost_equal_to_win_frame(geo)
 	   math.abs(win_frame.y - geo.y) < epsilon and
 	   math.abs(win_frame.w - geo.w) < epsilon and
 	   math.abs(win_frame.h - geo.h) < epsilon then
+
+		return true
+	else
+		return false
+	end
+end
+
+
+function is_predefined_win_frame_size()
+	if is_almost_equal_to_win_frame(gf_screen_win_frame())     or
+		is_almost_equal_to_win_frame(gf_left_win_frame())  or
+		is_almost_equal_to_win_frame(gf_right_win_frame()) then
 
 		return true
 	else
@@ -166,9 +177,9 @@ function bind_resize_restore(key, resize_frame_fn)
 end
 
 
-bind_resize_restore("F", get_screen_win_frame)
-bind_resize_restore("[", get_fill_left_win_frame)
-bind_resize_restore("]", get_fill_right_win_frame)
+bind_resize_restore("F", gf_screen_win_frame)
+bind_resize_restore("[", gf_left_win_frame)
+bind_resize_restore("]", gf_right_win_frame)
 
 
 -- 2 --------------------------
@@ -227,8 +238,8 @@ hs.hotkey.bind(mod_keys, "L", function()
 	local win_frame = win:frame()
 
 	if is_right_win_frame() then
-		win_frame.x = win_frame.x + 50
 		win_frame.w = win_frame.w - 50
+		win_frame.x = win_frame.x + 50
 		win:setFrame(win_frame)
 	else
 		win_frame.w = win_frame.w - 50
