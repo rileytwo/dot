@@ -68,23 +68,6 @@ hs.hotkey.bind(
 )
 
 
-function is_almost_equal_to_win_frame(geo)
-	local epsilon   = 2
-	local win       = hs.window.focusedWindow()
-	local win_frame = win:frame()
-
-	if math.abs(win_frame.x - geo.x) < epsilon and
-	   math.abs(win_frame.y - geo.y) < epsilon and
-	   math.abs(win_frame.w - geo.w) < epsilon and
-	   math.abs(win_frame.h - geo.h) < epsilon then
-
-		return true
-	else
-		return false
-	end
-end
-
-
 function get_screen_win_frame()
 	local gap          = 5
 	local win          = hs.window.focusedWindow()
@@ -134,6 +117,23 @@ function is_predefined_win_frame_size()
 	if is_almost_equal_to_win_frame(get_screen_win_frame())     or
 		is_almost_equal_to_win_frame(get_fill_left_win_frame())  or
 		is_almost_equal_to_win_frame(get_fill_right_win_frame()) then
+
+		return true
+	else
+		return false
+	end
+end
+
+
+function is_almost_equal_to_win_frame(geo)
+	local epsilon   = 2
+	local win       = hs.window.focusedWindow()
+	local win_frame = win:frame()
+
+	if math.abs(win_frame.x - geo.x) < epsilon and
+	   math.abs(win_frame.y - geo.y) < epsilon and
+	   math.abs(win_frame.w - geo.w) < epsilon and
+	   math.abs(win_frame.h - geo.h) < epsilon then
 
 		return true
 	else
