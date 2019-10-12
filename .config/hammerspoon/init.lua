@@ -142,7 +142,7 @@ function is_almost_equal_to_win_frame(geo)
 end
 
 
-function bind_resize_and_restore_keys(key, resize_frame_fn)
+function bind_resize_restore(key, resize_frame_fn)
 	hs.hotkey.bind(mod_keys, key,
 		function()
 			local win          = hs.window.focusedWindow()
@@ -166,26 +166,26 @@ function bind_resize_and_restore_keys(key, resize_frame_fn)
 end
 
 
-bind_resize_and_restore_keys("F", get_screen_win_frame)
-bind_resize_and_restore_keys("[", get_fill_left_win_frame)
-bind_resize_and_restore_keys("]", get_fill_right_win_frame)
+bind_resize_restore("F", get_screen_win_frame)
+bind_resize_restore("[", get_fill_left_win_frame)
+bind_resize_restore("]", get_fill_right_win_frame)
 
 
 -- 2 --------------------------
--- function is_top_win_frame()
--- 	local gap         = 5
--- 	local menubar     = 23
--- 	local extra_space = 20 -- adjustable
+	-- function is_top_win_frame()
+	-- 	local gap         = 5
+	-- 	local menubar     = 23
+	-- 	local extra_space = 20 -- adjustable
 
--- 	local top_area = gap + menubar + extra_space
+	-- 	local top_area = gap + menubar + extra_space
 
--- 	if hs.window.focusedWindow():frame().y <= top_area then
--- 		return true
--- 	else
--- 		return false
--- 	end
--- end
-
+	-- 	if hs.window.focusedWindow():frame().y <= top_area then
+	-- 		return true
+	-- 	else
+	-- 		return false
+	-- 	end
+	-- end
+--
 
 function is_right_win_frame()
 	local win          = hs.window.focusedWindow()
