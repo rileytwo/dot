@@ -126,7 +126,7 @@ end
 
 
 function is_almost_equal_to_win_frame(geo)
-	local epsilon   = 2
+	local epsilon   = 5
 	local win       = hs.window.focusedWindow()
 	local win_frame = win:frame()
 
