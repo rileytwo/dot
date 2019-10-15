@@ -6,8 +6,13 @@
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
+; ^ = CTRL
+; ! = ALT
+; + = SHIFT
+; # = Windows Key
 
-;; alt+{wasd} for navigating text
+
+;; alt+{w/a/s/d} for navigating text
 !a::Send {Left}    ;; left
 Return
 
@@ -20,8 +25,12 @@ Return
 !d::Send {Right}   ;; right
 Return
 
-^q::Send !{F4}
+^q::Send !{F4}     ;; alt+F4 (close window)
 Return
+
+;; alt+shift+{a/d} ;; jump/move word left and right
+>!+a::Send ^{Left}
+>!+d::Send ^{Right}
 
 ^h::WinMinimize, A ;; minimize (hide) windows with {control}{h}
 
