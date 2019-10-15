@@ -42,7 +42,7 @@
     //"prettier.useTabs": true,
     "editor.renderIndentGuides": true,
     "workbench.statusBar.visible": true,
-    "workbench.activityBar.visible": false,
+    "workbench.activityBar.visible": true,
     "explorer.confirmDragAndDrop": false,
     "terminal.integrated.macOptionIsMeta": true,
     "terminal.integrated.rendererType": "canvas",
