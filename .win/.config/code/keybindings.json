@@ -838,10 +838,10 @@
     },
     {
         "key": "ctrl+left",
-        "command": "cursorWordLeft"
+        "command": "cursorWordPartLeft"
     },
     {
         "key": "ctrl+right",
-        "command": "cursorWordRight"
+        "command": "cursorWordPartRight"
     }
 ]
