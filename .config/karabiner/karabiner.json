@@ -155,7 +155,7 @@
                         ]
                     },
                     {
-                        "description": "Change control + shift + A/D to Option + Left/Right",
+                        "description": "⌃ + ⇧ + A/D | Move cursor one word Left/Right",
                         "manipulators": [
                             {
                                 "from": {
