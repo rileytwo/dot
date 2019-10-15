@@ -650,14 +650,6 @@
         "when": "suggestWidgetVisible && textInputFocus"
     },
     {
-        "key": "shift+alt+d",
-        "command": "cursorWordPartRight"
-    },
-    {
-        "key": "shift+alt+a",
-        "command": "cursorWordPartLeft"
-    },
-    {
         "key": "ctrl+u",
         "command": "-cursorUndo",
         "when": "textInputFocus"
@@ -825,10 +817,6 @@
         "command": "cursorWordPartRightSelect"
     },
     {
-        "key": "ctrl+shift+a",
-        "command": "cursorWordPartLeftSelect"
-    },
-    {
         "key": "ctrl+k ctrl+i",
         "command": "workbench.action.selectIconTheme"
     },
@@ -847,5 +835,13 @@
     {
         "key": "ctrl+shift+f",
         "command": "-workbench.action.findInFiles"
+    },
+    {
+        "key": "ctrl+left",
+        "command": "cursorWordLeft"
+    },
+    {
+        "key": "ctrl+right",
+        "command": "cursorWordRight"
     }
 ]
