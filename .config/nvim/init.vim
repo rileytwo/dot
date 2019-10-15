@@ -39,6 +39,7 @@ Plug 'cespare/vim-toml'
 Plug 'darfink/vim-plist'
 Plug 'keith/swift.vim'
 
+
 " // Auto closing delimiters
 Plug 'Raimondi/delimitMate'
 
@@ -75,6 +76,7 @@ Plug 'ap/vim-css-color'
 Plug 'PeterRincker/vim-searchlight'
 Plug 'godlygeek/tabular'
 Plug 'metakirby5/codi.vim'
+Plug 'voldikss/vim-floaterm'
 
 
 " ----------
