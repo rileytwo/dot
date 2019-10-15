@@ -78,4 +78,5 @@ NuGet/
 # conemu
 .win/conemu/ConEmu.xml
 
-
+# arrows
+*.exe
