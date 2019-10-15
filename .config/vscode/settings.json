@@ -108,13 +108,19 @@
     },
     "editor.matchBrackets": false,
     "bracket-pair-colorizer-2.colors": [
-        "#FFFFFF",
-        "#DEE0DF",
-        "#C4C4C4"
+        "#3fb2ff",
+        "#aaa6ff",
+        "#ff96ed"
     ],
     "bracket-pair-colorizer-2.excludedLanguages": [
         "python",
-        "shellscript"
+        "shellscript",
+        "r",
+        "ruby",
+        "javascript",
+        "typescript",
+        "makefile",
+        "lua"
     ],
     "javascript.format.insertSpaceAfterSemicolonInForStatements": false,
     "javascript.validate.enable": false,
@@ -180,5 +186,9 @@
     "powershell.integratedConsole.showOnStartup": false,
     "powershell.sideBar.CommandExplorerVisibility": false,
     "sourcekit-lsp.serverPath": "/usr/local/bin/sourcekit-lsp",
-    "swift.path.sourcekite": "/usr/local/bin/sourcekite"
+    "swift.path.sourcekite": "/usr/local/bin/sourcekite",
+    "editor.cursorStyle": "underline",
+    "[plaintext]": {
+
+    }
 }

@@ -184,16 +184,6 @@
         "when": "textInputFocus && !editorReadonly"
     },
     {
-        "key": "alt+backspace",
-        "command": "deleteAllLeft",
-        "when": "textInputFocus && !editorReadonly"
-    },
-    {
-        "key": "cmd+backspace",
-        "command": "-deleteAllLeft",
-        "when": "textInputFocus && !editorReadonly"
-    },
-    {
         "key": "cmd+k cmd+r",
         "command": "-workbench.action.keybindingsReference"
     },
@@ -356,11 +346,6 @@
         "when": "editorFocus"
     },
     {
-        "key": "cmd+d",
-        "command": "editor.action.insertCursorBelow",
-        "when": "editorTextFocus"
-    },
-    {
         "key": "alt+cmd+down",
         "command": "-editor.action.insertCursorBelow",
         "when": "editorTextFocus"
@@ -408,28 +393,13 @@
         "command": "cursorWordEndRightSelect"
     },
     {
-        "key": "ctrl+shift+d",
+        "key": "alt+right",
         "command": "cursorWordPartRight",
         "when": "textInputFocus"
     },
     {
         "key": "ctrl+alt+right",
         "command": "-cursorWordPartRight",
-        "when": "textInputFocus"
-    },
-    {
-        "key": "ctrl+shift+a",
-        "command": "cursorWordPartLeft",
-        "when": "textInputFocus"
-    },
-    {
-        "key": "ctrl+alt+left",
-        "command": "-cursorWordPartLeft",
-        "when": "textInputFocus"
-    },
-    {
-        "key": "ctrl+shift+cmd+a",
-        "command": "cursorWordStartLeftSelect",
         "when": "textInputFocus"
     },
     {
@@ -574,5 +544,15 @@
     {
         "key": "alt+b",
         "command": "-sde.commands.buildPackage"
+    },
+    {
+        "key": "alt+left",
+        "command": "cursorWordPartLeft",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+alt+left",
+        "command": "-cursorWordPartLeft",
+        "when": "textInputFocus"
     }
 ]
