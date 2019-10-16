@@ -214,8 +214,6 @@ if [[ "$OSTYPE" =~ "linux-gnu" ]]; then
   [[ -d "/snap/bin" ]] \
     && export PATH="/snap/bin:$PATH"
 
-  [[ -d "${HOME}/.pyenv" ]] \
-    && export PATH="${HOME}/.pyenv/bin:$PATH"
 
   [[ -d "${HOME}/.npm-global" ]] \
     && export PATH="${HOME}/.npm-global/bin:$PATH"
@@ -249,6 +247,9 @@ fi
 
 [[ -d "${HOME}/.cargo" ]] \
   && export PATH="${HOME}/.cargo/bin:$PATH"
+
+[[ -d "${HOME}/.pyenv" ]] \
+  && export PATH="${HOME}/.pyenv/bin:$PATH"
 
 if (( $+commands[pyenv] )) && (( $+commands[pyenv-virtualenv-init])); then
   eval "$(pyenv init -)"
