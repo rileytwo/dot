@@ -67,19 +67,19 @@ hi!   StatusLineTerm ctermbg = 234  ctermfg = 245  guibg = #171717 guifg = #8185
 hi!     StatusLineNC ctermbg = 237  ctermfg = 233  guibg = #333333 guifg = #0f1117 gui = reverse
 hi! StatusLineTermNC ctermbg = 237  ctermfg = 233  guibg = #333333 guifg = #0f1117 gui = reverse
 hi!     StorageClass                ctermfg = 37                   guifg = #FF7E81
-hi!           String                ctermfg = 209                  guifg = #aefcc5
+hi!           String                ctermfg = 209                  guifg = #83fcbd
 hi!        Structure                ctermfg = 37                   guifg = #3fb2ff
 hi!          TabLine ctermbg = 245  ctermfg = 234  guibg = #818596 guifg = #17171b gui = NONE
 hi!      TabLineFill ctermbg = 234  ctermfg = 245  guibg = #171717 guifg = #818596 gui = reverse
 hi!       TabLineSel ctermbg = 234  ctermfg = 247  guibg = #e95678 guifg = #9a9ca5 gui = NONE
 hi!            Title                ctermfg = 37                   guifg = #FF96ED gui = bold
-hi!             Todo ctermbg = 59   ctermfg = 48   guibg = #45493e guifg = #96ffb1 gui = inverse,bold
+hi!             Todo ctermbg = 59   ctermfg = 48   guibg = #45493e guifg = #67fccc gui = inverse,bold
 hi!             Type                ctermfg = 209                  guifg = #fcb4ae gui = NONE
 hi!       Underlined                ctermfg = 37                   guifg = #FF96ED gui = underline
 hi!        VertSplit ctermbg = 233  ctermfg = 233  guibg = #0f1117 guifg = #0f1117 gui = bold
 hi!           Visual ctermbg = 236                 guibg = #2e435c
 hi!         WildMenu ctermbg = 255  ctermfg = 234  guibg = #d4d5db guifg = #17171b
-hi!        diffAdded                ctermfg = 48                   guifg = #96ffb1
+hi!        diffAdded                ctermfg = 48                   guifg = #67fccc
 hi!      diffRemoved                ctermfg = 203                  guifg = #eC6a88
 hi!       CtrlPMode1 ctermbg = 241  ctermfg = 234  guibg = #5a5f72 guifg = #17171b
 hi!            Sneak ctermbg = 140  ctermfg = 234  guibg = #f09483 guifg = #e95678
