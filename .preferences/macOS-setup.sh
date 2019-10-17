@@ -29,19 +29,22 @@ fi
 
 
 # Enabling Safari developer options...
-defaults write com.apple.Safari IncludeDevelopMenu -bool true && \
-defaults write com.apple.Safari WebKitDeveloperExtrasEnabledPreferenceKey -bool true && \
-defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled -bool true && \
-defaults write -g WebKitDeveloperExtras -bool true
+#defaults write com.apple.Safari IncludeDevelopMenu -bool true
+#defaults write com.apple.Safari \
+#    WebKitDeveloperExtrasEnabledPreferenceKey -bool true
+#defaults write com.apple.Safari \
+#    com.apple.Safari.ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled -bool true
+#defaults write -g WebKitDeveloperExtras -bool true
+
 # disable dashboard
-defaults write com.apple.dashboard mcx-disabled -boolean YES
+#defaults write com.apple.dashboard mcx-disabled -boolean YES
 
 # key repeat
-defaults write NSGlobalDomain KeyRepeat -int 0.3
-defaults write NSGlobalDomain InitialKeyRepeat -int 0.2
+#defaults write NSGlobalDomain KeyRepeat -int 0.3
+#defaults write NSGlobalDomain InitialKeyRepeat -int 0.2
 
-# select text in quicklook
-defaults write com.apple.finder QLEnabletextSelection -bool TRUE
+# select text in quicklook (disabled by macOS)
+#defaults write com.apple.finder QLEnabletextSelection -bool TRUE
 
 # show ~/Library
 chflags nohidden ~/Library
@@ -84,20 +87,21 @@ defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
 # keep folders on top when sorting by name
 defaults write com.apple.finder _FXSortFoldersFirst -bool true
 
-# for use with QLColorCode and highlight
-defaults write org.n8gray.QLColorCode pathHL /usr/local/bin/highlight
-
-defaults write org.n8gray.QLColorCode hlTheme moria
+# for use with QLColorCode and highlight (hasn't been working in Catalina)
+#defaults write org.n8gray.QLColorCode pathHL /usr/local/bin/highlight
+#defaults write org.n8gray.QLColorCode hlTheme moria
 
 # indicator lights for open applications in dock
 defaults write com.apple.dock show-process-indicators -bool true
+
+# scroll while hovering over app in dock to show windows
 defaults write com.apple.dock scroll-to-open -bool true
 
 # disable crash report
 defaults write com.apple.CrashReporter DialogueType -string "none"
 
 # disable sudden motion sensor (not useful for SSDs)
-sudo pmset -a sms 0
+#sudo pmset -a sms 0
 
 
 # clean up
@@ -132,7 +136,7 @@ function restart() {
 
 # call restart
 if [[ "Yes" == $(reboot) ]]; then
-    echo "Rebooting."
+    echo "Rebooting..."
     sudo sh -c 'reboot'
     exit 0
 else
