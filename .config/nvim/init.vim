@@ -298,5 +298,3 @@ endif
 " function! LightLineFilename()
 "     return expand('%')
 " endfunction
-
-
