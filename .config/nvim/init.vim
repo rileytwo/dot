@@ -167,7 +167,7 @@ call deoplete#custom#source('_', 'max_menu_width', 80)
 
 let g:suda#prefix = ['suda://', 'sudo://', '_://']
 
-if has('termguicolors')
+if has('mac') && has('termguicolors')
     lua require'colorizer'.setup()
 endif
 
