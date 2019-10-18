@@ -1,4 +1,30 @@
 " ====================
+" // Detect Host
+" ----------
+" check for truecolor support in current terminal
+" macOS Terminal.app does not support truecolor
+
+if has('mac')
+    let g:os = 'Darwin'
+    if $COLORTERM =~# 'truecolor' || $COLORTERM =~# '24bit'
+        set termguicolors
+        colorscheme riley
+    else
+        colorscheme one
+    endif
+elseif has('win32') || has('win64')
+    let g:os = 'Windows'
+    set termguicolors
+    colorscheme riley
+else
+    let g:os = 'Linux'
+    set termguicolors
+    colorscheme riley
+endif
+
+
+
+" ====================
 " // Plugins (vim-plug)
 " ----------
 
@@ -57,27 +83,27 @@ Plug 'maximbaz/lightline-ale'
 Plug 'lambdalisue/suda.vim'
 
 
-if !has('win32') && !has('win64')
-    " mac specific plugs cause windows is hard
-    Plug '/usr/local/opt/fzf'
-endif
-if &term=~# 'nvim'
-    Plug 'terryma/vim-multiple-cursors'
-endif
-
-
 " // Extensibility
 Plug 'justinmk/vim-gtfo' 
 Plug 'itchyny/vim-gitbranch'
 Plug 'Yggdroot/indentLine'
 Plug 'scrooloose/nerdtree', {'on': 'NERDTreeToggle'}
 Plug 'ryanoasis/vim-devicons'
-Plug 'ap/vim-css-color'
+"Plug 'ap/vim-css-color'
+Plug 'norcalli/nvim-colorizer.lua'
 Plug 'PeterRincker/vim-searchlight'
 Plug 'godlygeek/tabular'
 Plug 'metakirby5/codi.vim'
 Plug 'voldikss/vim-floaterm'
 
+
+if !has('win32') && !has('win64')
+    " mac specific plugs cause windows is hard
+    Plug '/usr/local/opt/fzf'
+endif
+if &term=~# 'nvim' || &term=~# 'vimr' 
+    Plug 'terryma/vim-multiple-cursors'
+endif
 
 " ----------
 " // add plugins to &runtimepath
@@ -140,6 +166,11 @@ let g:deoplete#enable_at_startup = 1
 call deoplete#custom#source('_', 'max_menu_width', 80)
 
 let g:suda#prefix = ['suda://', 'sudo://', '_://']
+
+if has('termguicolors')
+    lua require'colorizer'.setup()
+endif
+
 
 " ----------
 " //
@@ -267,27 +298,5 @@ endif
 " function! LightLineFilename()
 "     return expand('%')
 " endfunction
-
-" check for truecolor support in current terminal
-" macOS Terminal.app does not support truecolor
-
-
-if has('mac')
-    let g:os = 'Darwin'
-    if $COLORTERM =~# 'truecolor' || $COLORTERM =~# '24bit'
-        set termguicolors
-        colorscheme riley
-    else
-        colorscheme one
-    endif
-elseif has('win32') || has('win64')
-    let g:os = 'Windows'
-    set termguicolors
-    colorscheme riley
-else
-    let g:os = 'Linux'
-    set termguicolors
-    colorscheme riley
-endif
 
 
