@@ -43,7 +43,7 @@ plugins=(
   git
   forgit
   swiftpm
-  zsh-interactive-cd
+  #zsh-interactive-cd
   zsh-autopair
   zsh-completions
   zsh-history-substring-search
