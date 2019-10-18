@@ -2754,7 +2754,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>1B480254-E265-41B7-98EA-0689375CEC49</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>77</integer>
+	<integer>68</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -3585,7 +3585,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-10-15T13:29:14Z</date>
+	<date>2019-10-12T19:36:12Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
@@ -5129,13 +5129,13 @@
 												<key>Alpha Component</key>
 												<real>1</real>
 												<key>Blue Component</key>
-												<real>0.63529411759999999</real>
+												<real>0.63462895154953003</real>
 												<key>Color Space</key>
 												<string>sRGB</string>
 												<key>Green Component</key>
-												<real>0.92941176469999998</real>
+												<real>0.93000000715255737</real>
 												<key>Red Component</key>
-												<real>0.36078431370000003</real>
+												<real>0.36269998550415039</real>
 											</dict>
 											<key>Ansi 3 Color</key>
 											<dict>
@@ -5370,7 +5370,7 @@
 												<real>0.94999998809999997</real>
 											</dict>
 											<key>Guid</key>
-											<string>95280017-C902-4A6A-9B67-4CBFA1D76842</string>
+											<string>FEEA9620-CB0D-4851-8FB1-1607505DBE40</string>
 											<key>Has Hotkey</key>
 											<false/>
 											<key>Horizontal Spacing</key>
@@ -5683,7 +5683,7 @@
 											<key>Send Code When Idle</key>
 											<false/>
 											<key>Shortcut</key>
-											<string>0</string>
+											<string>1</string>
 											<key>Show Mark Indicators</key>
 											<false/>
 											<key>Show Status Bar</key>
@@ -5985,7 +5985,7 @@
 											<key>Visual Bell</key>
 											<true/>
 											<key>Window Type</key>
-											<integer>13</integer>
+											<integer>0</integer>
 											<key>Working Directory</key>
 											<string>/Users/riley</string>
 											<key>tmux Pane Title</key>
@@ -6002,6 +6002,15 @@
 											<string>launchctl print-disabled user/501</string>
 											<string>brew update &amp;&amp; brew upgrade</string>
 											<string>pyenv install --list</string>
+											<string>./.scripts/install-pyenv</string>
+											<string>rm -rf .pyenv</string>
+											<string>./.scripts/install-pyenv</string>
+											<string>pyenv update</string>
+											<string>pyenv install 3.8.0</string>
+											<string>pyenv install 2.7.16</string>
+											<string>cd .dot</string>
+											<string>gs</string>
+											<string>cd</string>
 										</array>
 										<key>Directories</key>
 										<array>
@@ -6033,6 +6042,17 @@
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley</string>
 										</array>
 										<key>Environment</key>
 										<dict>
@@ -6046,6 +6066,72 @@
 										</dict>
 										<key>Hosts</key>
 										<array>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
 											<dict>
 												<key>Host name</key>
 												<string>rmbp</string>
