@@ -61,3 +61,5 @@ export SCM_CHECK=true
 # Load Bash It
 source "$BASH_IT"/bash_it.sh
 
+
+[[ -f /usr/local/bin/typex ]] && . /usr/local/bin/typex # Added by typex -i; typex -u to remove.
