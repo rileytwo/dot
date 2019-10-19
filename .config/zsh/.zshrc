@@ -278,6 +278,8 @@ disable r
 
 #### // helpers
 
+[[ -f /usr/local/bin/typex ]] && . /usr/local/bin/typex
+
 [[ -f "${HOME}"/.aliases ]] && . "${HOME}"/.aliases
 
 if [[ -f "${HOME}"/.fzf.zsh ]]; then
@@ -298,3 +300,4 @@ export FZF_DEFAULT_OPTS='
 [[ -e "${HOME}/.iterm2_shell_integration.zsh" ]] \
   && source "${HOME}/.iterm2_shell_integration.zsh" \
   || :
+
