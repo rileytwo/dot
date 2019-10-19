@@ -52,7 +52,7 @@ hi!        PmenuSbar ctermbg = 233                 guibg = #333333
 hi!         PmenuSel ctermbg = 240  ctermfg = 255  guibg = #007bb8 guifg = #eff0f4
 hi!       PmenuThumb ctermbg = 233                 guibg = #222222
 hi!          PreProc                ctermfg = 150                  guifg = #FF7E81
-hi!         Question                ctermfg = 150                  guifg = #96ffb1
+hi!         Question                ctermfg = 150                  guifg = #83fcbd
 hi!     QuickFixLine ctermbg = 233  ctermfg = 252  guibg = #222222 guifg = #ffffff
 hi!           Search ctermbg = 216  ctermfg = 234  guibg = #fff26d guifg = #222222
 hi!        IncSearch                               guibg = #d0aa80 guifg = #333333
@@ -92,10 +92,10 @@ hi!            ALEWarningSign ctermbg = 233  ctermfg = 209  guibg = NONE    guif
 hi!       ALEVirtualTextError                ctermfg = 203                  guifg = #eC6a88
 hi!     ALEVirtualTextWarning                ctermfg = 209                  guifg = #FFD2A6
 hi!           EasyMotionShade                ctermfg = 239                  guifg = #3d425b
-hi!          EasyMotionTarget                ctermfg = 48                   guifg = #96ffb1
+hi!          EasyMotionTarget                ctermfg = 48                   guifg = #67fccc
 hi!    EasyMotionTarget2First                ctermfg = 209                  guifg = #FFD2A6
 hi!   EasyMotionTarget2Second                ctermfg = 209                  guifg = #FFD2A6
-hi!              GitGutterAdd ctermbg = 233  ctermfg = 48   guibg = NONE    guifg = #96ffb1
+hi!              GitGutterAdd ctermbg = 233  ctermfg = 48   guibg = NONE    guifg = #67fccc
 hi!           GitGutterChange ctermbg = 233  ctermfg = 109  guibg = NONE    guifg = #e95678
 hi!     GitGutterChangeDelete ctermbg = 233  ctermfg = 109  guibg = NONE    guifg = #e95678
 hi!           GitGutterDelete ctermbg = 233  ctermfg = 203  guibg = NONE    guifg = #eC6a88
@@ -153,7 +153,6 @@ hi! link rConditional Operator
 
 hi! link pythonFunction Class
 
-hi! link cssBraces Delimiter
 hi! link cssClassName Structure
 hi! link cssClassNameDot Normal
 hi! link cssDefinition StorageClass
@@ -165,6 +164,9 @@ hi! link cssTagName Statement
 hi! link cssUnitDecorators Identifier
 hi! link cssValueLength Constant
 hi! link cssVendor Identifier
+hi! link cssBraces Delimiter
+hi! link cssStringQQ String
+
 
 hi! link helpHyperTextJump Constant
 hi! link htmlArg Constant
