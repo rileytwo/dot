@@ -542,7 +542,7 @@
 				<key>GroupedAlternate</key>
 				<string>NO</string>
 				<key>Keyboard Shortcut</key>
-				<string>~`</string>
+				<string>~	</string>
 				<key>Navigation</key>
 				<string>NO</string>
 				<key>Title</key>
@@ -562,7 +562,7 @@
 				<key>GroupedAlternate</key>
 				<string>NO</string>
 				<key>Keyboard Shortcut</key>
-				<string>~\~</string>
+				<string>~$	</string>
 				<key>Navigation</key>
 				<string>NO</string>
 				<key>Title</key>
@@ -589,6 +589,46 @@
 				<string>Navigators</string>
 				<key>Title</key>
 				<string>Show Navigator</string>
+			</dict>
+			<dict>
+				<key>Action</key>
+				<string>openInAdjacentEditorWithAlternate:</string>
+				<key>Alternate</key>
+				<string>NO</string>
+				<key>CommandID</key>
+				<string>Xcode.IDEKit.CmdDefinition.OpenInAdjacentEditorWithAlternate</string>
+				<key>Group</key>
+				<string>Navigate Menu</string>
+				<key>GroupID</key>
+				<string>Xcode.IDEKit.MenuDefinition.Main</string>
+				<key>GroupedAlternate</key>
+				<string>NO</string>
+				<key>Keyboard Shortcut</key>
+				<string>~@d</string>
+				<key>Navigation</key>
+				<string>NO</string>
+				<key>Title</key>
+				<string>Open in…</string>
+			</dict>
+			<dict>
+				<key>Action</key>
+				<string>openInAdjacentEditorWithShiftPlusAlternate:</string>
+				<key>Alternate</key>
+				<string>YES</string>
+				<key>CommandID</key>
+				<string>Xcode.IDEKit.CmdDefinition.OpenInAdjacentEditorWithShiftPlusAlternate</string>
+				<key>Group</key>
+				<string>Navigate Menu</string>
+				<key>GroupID</key>
+				<string>Xcode.IDEKit.MenuDefinition.Main</string>
+				<key>GroupedAlternate</key>
+				<string>NO</string>
+				<key>Keyboard Shortcut</key>
+				<string>~$@D</string>
+				<key>Navigation</key>
+				<string>NO</string>
+				<key>Title</key>
+				<string>Open in…</string>
 			</dict>
 			<dict>
 				<key>Action</key>
@@ -670,6 +710,50 @@
 				<key>Title</key>
 				<string>Show Code Actions</string>
 			</dict>
+			<dict>
+				<key>Action</key>
+				<string>addVerticalGuide:</string>
+				<key>Alternate</key>
+				<string>NO</string>
+				<key>CommandGroupID</key>
+				<string>Xcode.InterfaceBuilderKit.CmdDefinition.AddVerticalGuide</string>
+				<key>CommandID</key>
+				<string>Xcode.InterfaceBuilderKit.CmdDefinition.AddVerticalGuide</string>
+				<key>Group</key>
+				<string>Editor Menu for Interface Builder - Storyboard</string>
+				<key>GroupID</key>
+				<string>Xcode.InterfaceBuilderKit.DocumentEditorMenu</string>
+				<key>GroupedAlternate</key>
+				<string>NO</string>
+				<key>Navigation</key>
+				<string>NO</string>
+				<key>Parent Title</key>
+				<string>Guides</string>
+				<key>Title</key>
+				<string>Add Vertical Guide</string>
+			</dict>
+			<dict>
+				<key>Action</key>
+				<string>addVerticalGuide:</string>
+				<key>Alternate</key>
+				<string>NO</string>
+				<key>CommandGroupID</key>
+				<string>Xcode.InterfaceBuilderKit.CmdDefinition.AddVerticalGuide</string>
+				<key>CommandID</key>
+				<string>Xcode.InterfaceBuilderKit.CmdDefinition.AddVerticalGuide</string>
+				<key>Group</key>
+				<string>Editor Menu for Interface Builder Cocoa Preview</string>
+				<key>GroupID</key>
+				<string>Xcode.InterfaceBuilderKit.DocumentEditorMenu</string>
+				<key>GroupedAlternate</key>
+				<string>NO</string>
+				<key>Navigation</key>
+				<string>NO</string>
+				<key>Parent Title</key>
+				<string>Guides</string>
+				<key>Title</key>
+				<string>Add Vertical Guide</string>
+			</dict>
 		</array>
 		<key>Version</key>
 		<integer>3</integer>
@@ -700,6 +784,8 @@
 			<string>yankAndSelect:</string>
 			<key>~</key>
 			<string>deleteWordBackward:</string>
+			<key>~$</key>
+			<string>insertTabIgnoringFieldEditor:</string>
 			<key>~</key>
 			<string>deleteToBeginningOfText:</string>
 		</dict>

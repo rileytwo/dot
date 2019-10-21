@@ -35,7 +35,7 @@
 	<key>DVTFontAndColorVersion</key>
 	<integer>1</integer>
 	<key>DVTLineSpacing</key>
-	<real>1</real>
+	<real>1.1000000238418579</real>
 	<key>DVTMarkupTextBackgroundColor</key>
 	<string>0.18856 0.195 0.22444 1</string>
 	<key>DVTMarkupTextBorderColor</key>
@@ -101,9 +101,9 @@
 	<key>DVTSourceTextSyntaxColors</key>
 	<dict>
 		<key>xcode.syntax.attribute</key>
-		<string>0.206508 0.629022 0.998621 1</string>
+		<string>0.988394 0.37355 0.638329 1</string>
 		<key>xcode.syntax.character</key>
-		<string>0.989599 0.485658 0.91144 1</string>
+		<string>0.364711 0.847099 0.998968 1</string>
 		<key>xcode.syntax.comment</key>
 		<string>0.316333 0.316324 0.316329 1</string>
 		<key>xcode.syntax.comment.doc</key>
@@ -111,106 +111,106 @@
 		<key>xcode.syntax.comment.doc.keyword</key>
 		<string>0.573795 0.632407 0.695829 1</string>
 		<key>xcode.syntax.declaration.other</key>
-		<string>0.952836 0.589489 0.594763 1</string>
+		<string>0.988394 0.37355 0.638329 1</string>
 		<key>xcode.syntax.declaration.type</key>
-		<string>0.989869 0.474538 0.452277 1</string>
+		<string>0.988394 0.37355 0.638329 1</string>
 		<key>xcode.syntax.identifier.class</key>
-		<string>0.516756 0.47284 0.998723 1</string>
+		<string>0.338166 0.702395 0.998779 1</string>
 		<key>xcode.syntax.identifier.class.system</key>
-		<string>0.989599 0.485658 0.91144 1</string>
+		<string>0.952836 0.589489 0.594763 1</string>
 		<key>xcode.syntax.identifier.constant</key>
-		<string>0.516756 0.47284 0.998723 1</string>
+		<string>0.206508 0.629022 0.998621 1</string>
 		<key>xcode.syntax.identifier.constant.system</key>
-		<string>0.989599 0.485658 0.91144 1</string>
+		<string>0.989869 0.474538 0.452277 1</string>
 		<key>xcode.syntax.identifier.function</key>
-		<string>0.516756 0.47284 0.998723 1</string>
+		<string>0.206508 0.629022 0.998621 1</string>
 		<key>xcode.syntax.identifier.function.system</key>
-		<string>0.989599 0.485658 0.91144 1</string>
+		<string>0.989869 0.474538 0.452277 1</string>
 		<key>xcode.syntax.identifier.macro</key>
 		<string>0.970025 0.940497 0.582471 1</string>
 		<key>xcode.syntax.identifier.macro.system</key>
 		<string>0.970025 0.940497 0.582471 1</string>
 		<key>xcode.syntax.identifier.type</key>
-		<string>0.516756 0.47284 0.998723 1</string>
+		<string>0.338166 0.702395 0.998779 1</string>
 		<key>xcode.syntax.identifier.type.system</key>
-		<string>0.989599 0.485658 0.91144 1</string>
+		<string>0.952836 0.589489 0.594763 1</string>
 		<key>xcode.syntax.identifier.variable</key>
-		<string>0.516756 0.47284 0.998723 1</string>
-		<key>xcode.syntax.identifier.variable.system</key>
-		<string>0.989599 0.485658 0.91144 1</string>
-		<key>xcode.syntax.keyword</key>
 		<string>0.206508 0.629022 0.998621 1</string>
+		<key>xcode.syntax.identifier.variable.system</key>
+		<string>0.989869 0.474538 0.452277 1</string>
+		<key>xcode.syntax.keyword</key>
+		<string>0.516756 0.47284 0.998723 1</string>
 		<key>xcode.syntax.mark</key>
 		<string>0.572549 0.631373 0.694118 1</string>
 		<key>xcode.syntax.markup.code</key>
 		<string>0.358752 1 0.755452 1</string>
 		<key>xcode.syntax.number</key>
-		<string>0.989599 0.485658 0.91144 1</string>
+		<string>0.362946 0.846428 0.998966 1</string>
 		<key>xcode.syntax.plain</key>
 		<string>0.955649 0.955621 0.955637 1</string>
 		<key>xcode.syntax.preprocessor</key>
 		<string>0.970025 0.940497 0.582471 1</string>
 		<key>xcode.syntax.string</key>
-		<string>0.632148 0.999184 0.725534 1</string>
+		<string>0.459581 1 0.687263 1</string>
 		<key>xcode.syntax.url</key>
 		<string>0.609822 0.577273 0.998916 1</string>
 	</dict>
 	<key>DVTSourceTextSyntaxFonts</key>
 	<dict>
 		<key>xcode.syntax.attribute</key>
-		<string>FuraCodeNerdFontComplete-Retina - 13.0</string>
+		<string>SFMono-Regular - 12.0</string>
 		<key>xcode.syntax.character</key>
-		<string>FuraCodeNerdFontComplete-Retina - 13.0</string>
+		<string>SFMono-Regular - 12.0</string>
 		<key>xcode.syntax.comment</key>
-		<string>FuraCodeNerdFontComplete-Retina - 13.0</string>
+		<string>SFMono-Regular - 12.0</string>
 		<key>xcode.syntax.comment.doc</key>
-		<string>FuraCodeNerdFontComplete-Retina - 13.0</string>
+		<string>SFMono-Regular - 12.0</string>
 		<key>xcode.syntax.comment.doc.keyword</key>
-		<string>FuraCodeNerdFontComplete-Retina - 13.0</string>
+		<string>SFMono-Regular - 12.0</string>
 		<key>xcode.syntax.declaration.other</key>
-		<string>FuraCodeNerdFontComplete-Retina - 13.0</string>
+		<string>SFMono-Regular - 12.0</string>
 		<key>xcode.syntax.declaration.type</key>
-		<string>FuraCodeNerdFontComplete-Retina - 13.0</string>
+		<string>SFMono-Regular - 12.0</string>
 		<key>xcode.syntax.identifier.class</key>
-		<string>FuraCodeNerdFontComplete-Retina - 13.0</string>
+		<string>SFMono-Regular - 12.0</string>
 		<key>xcode.syntax.identifier.class.system</key>
-		<string>FuraCodeNerdFontComplete-Retina - 13.0</string>
+		<string>SFMono-Regular - 12.0</string>
 		<key>xcode.syntax.identifier.constant</key>
-		<string>FuraCodeNerdFontComplete-Retina - 13.0</string>
+		<string>SFMono-Regular - 12.0</string>
 		<key>xcode.syntax.identifier.constant.system</key>
-		<string>FuraCodeNerdFontComplete-Retina - 13.0</string>
+		<string>SFMono-Regular - 12.0</string>
 		<key>xcode.syntax.identifier.function</key>
-		<string>FuraCodeNerdFontComplete-Retina - 13.0</string>
+		<string>SFMono-Regular - 12.0</string>
 		<key>xcode.syntax.identifier.function.system</key>
-		<string>FuraCodeNerdFontComplete-Retina - 13.0</string>
+		<string>SFMono-Regular - 12.0</string>
 		<key>xcode.syntax.identifier.macro</key>
-		<string>FuraCodeNerdFontComplete-Retina - 13.0</string>
+		<string>SFMono-Regular - 12.0</string>
 		<key>xcode.syntax.identifier.macro.system</key>
-		<string>FuraCodeNerdFontComplete-Retina - 13.0</string>
+		<string>SFMono-Regular - 12.0</string>
 		<key>xcode.syntax.identifier.type</key>
-		<string>FuraCodeNerdFontComplete-Retina - 13.0</string>
+		<string>SFMono-Regular - 12.0</string>
 		<key>xcode.syntax.identifier.type.system</key>
-		<string>FuraCodeNerdFontComplete-Retina - 13.0</string>
+		<string>SFMono-Regular - 12.0</string>
 		<key>xcode.syntax.identifier.variable</key>
-		<string>FuraCodeNerdFontComplete-Retina - 13.0</string>
+		<string>SFMono-Regular - 12.0</string>
 		<key>xcode.syntax.identifier.variable.system</key>
-		<string>FuraCodeNerdFontComplete-Retina - 13.0</string>
+		<string>SFMono-Regular - 12.0</string>
 		<key>xcode.syntax.keyword</key>
-		<string>FuraCodeNerdFontComplete-Retina - 13.0</string>
+		<string>SFMono-Regular - 12.0</string>
 		<key>xcode.syntax.mark</key>
-		<string>FuraCodeNerdFontComplete-Retina - 13.0</string>
+		<string>SFMono-Regular - 12.0</string>
 		<key>xcode.syntax.markup.code</key>
-		<string>FuraCodeNerdFontComplete-Retina - 13.0</string>
+		<string>SFMono-Regular - 12.0</string>
 		<key>xcode.syntax.number</key>
-		<string>FuraCodeNerdFontComplete-Retina - 13.0</string>
+		<string>SFMono-Regular - 12.0</string>
 		<key>xcode.syntax.plain</key>
-		<string>FuraCodeNerdFontComplete-Retina - 13.0</string>
+		<string>SFMono-Regular - 12.0</string>
 		<key>xcode.syntax.preprocessor</key>
-		<string>FuraCodeNerdFontComplete-Retina - 13.0</string>
+		<string>SFMono-Regular - 12.0</string>
 		<key>xcode.syntax.string</key>
-		<string>FuraCodeNerdFontComplete-Retina - 13.0</string>
+		<string>SFMono-Regular - 12.0</string>
 		<key>xcode.syntax.url</key>
-		<string>FuraCodeNerdFontComplete-Retina - 13.0</string>
+		<string>SFMono-Regular - 12.0</string>
 	</dict>
 </dict>
 </plist>
