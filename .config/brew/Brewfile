@@ -29,6 +29,7 @@ tap "vapor/tap"
 tap "vitorgalvao/tiny-scripts"
 tap "woodruffw/screenfetch-c"
 tap "yqrashawn/goku"
+cask "xquartz"
 # Search tool like grep, but optimized for programmers
 brew "ack"
 # The fastest shell plugin manager
@@ -314,18 +315,12 @@ brew "pkg-config"
 brew "ponysay"
 # Monitor data's progress through a pipe
 brew "pv"
-# Python version management
-brew "pyenv"
-# Make Python build faster, using the leverage of `ccache`
-brew "pyenv-ccache"
-# Pyenv plugin to manage virtualenv
-brew "pyenv-virtualenv"
-# Integrate pyenv and system commands
-brew "pyenv-which-ext"
 # Interpreted, interactive, object-oriented programming language
 brew "python@2"
 # Ruby version manager
 brew "rbenv"
+# Reattach process (e.g., tmux) to background
+brew "reattach-to-user-namespace"
 # Perl-powered file rename script with many helpful built-ins
 brew "rename"
 # Search tool like grep and The Silver Searcher
@@ -473,14 +468,18 @@ cask "alacritty"
 cask "alfred"
 cask "amethyst"
 cask "appgrid"
+cask "avibrazil-rdm"
 cask "balenaetcher"
 cask "bartender"
 cask "beaker-browser"
 cask "brooklyn"
 cask "cheatsheet"
+cask "cinebench"
 cask "clipy"
 cask "colorpicker-antetype"
 cask "colorpicker-skalacolor"
+cask "dash3"
+cask "db-browser-for-sqlite"
 cask "discord"
 cask "dockey"
 cask "dotnet"
@@ -504,8 +503,8 @@ cask "font-victor-mono"
 cask "forticlient"
 cask "gb-studio"
 cask "geekbench"
+cask "geektool"
 cask "gimp"
-cask "github"
 cask "hammerspoon"
 cask "hyper"
 cask "iina"
@@ -527,12 +526,12 @@ cask "menubar-colors"
 cask "microsoft-remote-desktop-beta"
 cask "microsoft-teams"
 cask "onedrive"
-cask "pdf-expert"
 cask "penc"
 cask "pock"
 cask "powershell"
 cask "profilecreator"
-cask "qlcolorcode"
+cask "pusher"
+cask "qlstephen"
 cask "qutebrowser"
 cask "rectangle"
 cask "rocket"
@@ -543,7 +542,6 @@ cask "slack"
 cask "spaceradar"
 cask "sublime-text"
 cask "suspicious-package"
-cask "swiftdefaultappsprefpane"
 cask "taskexplorer"
 cask "terminology"
 cask "touch-bar-simulator"
@@ -551,15 +549,7 @@ cask "tyke"
 cask "typora"
 cask "ubersicht"
 cask "vanilla"
-cask "vimr"
 cask "vscodium"
 cask "workbench"
+cask "wwdc"
 cask "finestructure/hummingbird/hummingbird"
-mas "Cascadea", id: 1432182561
-mas "Gifski", id: 1351639930
-mas "Magnet", id: 441258766
-mas "Nightlight", id: 1429386865
-mas "Patterns", id: 429449079
-mas "PLIST Editor", id: 1157491961
-mas "Source Tools", id: 1419674885
-mas "Xcode", id: 497799835
