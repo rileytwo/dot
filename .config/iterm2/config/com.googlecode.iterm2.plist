@@ -276,7 +276,7 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>410 363 620 392 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>786 182 648 515 0 0 1440 877 </string>
+	<string>773 225 662 530 0 0 1440 877 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -893,7 +893,7 @@
 			<key>Non-ASCII Ligatures</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>SFMono-Regular 13</string>
+			<string>FuraCodeNerdFontComplete-Retina 13</string>
 			<key>Only The Default BG Color Uses Transparency</key>
 			<false/>
 			<key>Open Toolbelt</key>
@@ -915,11 +915,11 @@
 			<key>Screen</key>
 			<integer>-2</integer>
 			<key>Scrollback Lines</key>
-			<integer>8000</integer>
+			<integer>10000</integer>
 			<key>Scrollback With Status Bar</key>
 			<false/>
 			<key>Scrollback in Alternate Screen</key>
-			<false/>
+			<true/>
 			<key>Selected Text Color</key>
 			<dict>
 				<key>Alpha Component</key>
@@ -1897,7 +1897,7 @@
 			<key>Scrollback With Status Bar</key>
 			<false/>
 			<key>Scrollback in Alternate Screen</key>
-			<false/>
+			<true/>
 			<key>Selected Text Color</key>
 			<dict>
 				<key>Alpha Component</key>
@@ -2776,7 +2776,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>1B480254-E265-41B7-98EA-0689375CEC49</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>92</integer>
+	<integer>93</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -5010,7 +5010,7 @@
 				<key>Has Toolbelt</key>
 				<false/>
 				<key>Height</key>
-				<real>522</real>
+				<real>530</real>
 				<key>Hide After Opening</key>
 				<false/>
 				<key>Hiding Toolbelt Should Resize Window</key>
@@ -5397,7 +5397,7 @@
 												<real>0.94999998809999997</real>
 											</dict>
 											<key>Guid</key>
-											<string>8A36811A-D961-4C9F-8425-BF87B4538049</string>
+											<string>D791874F-2F9A-419C-A7DE-FCE5CB3186DC</string>
 											<key>Has Hotkey</key>
 											<false/>
 											<key>Horizontal Spacing</key>
@@ -5676,11 +5676,11 @@
 											<key>Screen</key>
 											<integer>-2</integer>
 											<key>Scrollback Lines</key>
-											<integer>8000</integer>
+											<integer>10000</integer>
 											<key>Scrollback With Status Bar</key>
 											<false/>
 											<key>Scrollback in Alternate Screen</key>
-											<false/>
+											<true/>
 											<key>Selected Text Color</key>
 											<dict>
 												<key>Alpha Component</key>
@@ -6052,6 +6052,37 @@
 											<string>hub clone qvacua/vimr vimr</string>
 											<string>cd</string>
 											<string>uti.sh /private/etc/cups/cupsd.conf</string>
+											<string>swda</string>
+											<string>swda getSchemes</string>
+											<string>brew update &amp;&amp; brew upgrade &amp;&amp; brew cask upgrade</string>
+											<string>npm update -g &amp;&amp; gem update</string>
+											<string>pvs</string>
+											<string>brew bundle dump --describe</string>
+											<string>brew bundle dump --describe</string>
+											<string>mv Brewfile .dot/.config/brew/Brewfile</string>
+											<string>cd .dot</string>
+											<string>gs</string>
+											<string>rm .config/brew/.Brewfile</string>
+											<string>git add .config/brew/Brewfile</string>
+											<string>git add .config/brew/.Brewfile</string>
+											<string>gs</string>
+											<string>git commit -m 'update Brewfile'</string>
+											<string>git add .config/iterm2/config/com.googlecode.iterm2.plist &amp;&amp; gc -m 'iterm2'</string>
+											<string>gp</string>
+											<string>cd</string>
+											<string>pluginkit</string>
+											<string>pluginkit -m -av .hyper.js</string>
+											<string>pluginkit -m -avvv .hyper.js</string>
+											<string>pluginkit -mAvvv -p com.apple.quicklook.preview</string>
+											<string>pluginkit -mAvvv -p com.apple.quicklook.preview</string>
+											<string>pluginkit -mAvvv com.apple.quicklook.preview</string>
+											<string>pluginkit -mAv -p com.apple.quicklook.preview</string>
+											<string>pluginkit -mA -p com.apple.quicklook.preview</string>
+											<string>pluginkit -mAvv -p com.apple.quicklook.preview</string>
+											<string>pluginkit -mAvvv -p com.apple.quicklook.preview</string>
+											<string>pluginkit</string>
+											<string>man pluginkit</string>
+											<string>man pluginkit</string>
 										</array>
 										<key>Directories</key>
 										<array>
@@ -6110,6 +6141,39 @@
 											<string>/Users/riley/github</string>
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
 										</array>
 										<key>Environment</key>
 										<dict>
@@ -6123,6 +6187,204 @@
 										</dict>
 										<key>Hosts</key>
 										<array>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
 											<dict>
 												<key>Host name</key>
 												<string>rmbp</string>
@@ -6488,7 +6750,7 @@
 									<key>frame</key>
 									<dict>
 										<key>height</key>
-										<real>484</real>
+										<real>492</real>
 										<key>width</key>
 										<real>662</real>
 										<key>x</key>
@@ -6503,7 +6765,7 @@
 							<key>frame</key>
 							<dict>
 								<key>height</key>
-								<real>484</real>
+								<real>492</real>
 								<key>width</key>
 								<real>662</real>
 								<key>x</key>
@@ -6524,37 +6786,37 @@
 					<array>
 						<dict>
 							<key>heightAsFraction</key>
-							<real>0.1760154738878143</real>
+							<real>0.17333333333333334</real>
 							<key>name</key>
 							<string>Actions</string>
 						</dict>
 						<dict>
 							<key>heightAsFraction</key>
-							<real>0.23017408123791103</real>
+							<real>0.22666666666666666</real>
 							<key>name</key>
 							<string>Profiles</string>
 						</dict>
 						<dict>
 							<key>heightAsFraction</key>
-							<real>0.23017408123791103</real>
+							<real>0.22666666666666666</real>
 							<key>name</key>
 							<string>Recent Directories</string>
 						</dict>
 						<dict>
 							<key>heightAsFraction</key>
-							<real>0.1760154738878143</real>
+							<real>0.17333333333333334</real>
 							<key>name</key>
 							<string>Captured Output</string>
 						</dict>
 						<dict>
 							<key>heightAsFraction</key>
-							<real>0.23017408123791103</real>
+							<real>0.22666666666666666</real>
 							<key>name</key>
 							<string>Command History</string>
 						</dict>
 						<dict>
 							<key>heightAsFraction</key>
-							<real>-0.042553191489361701</real>
+							<real>-0.026666666666666668</real>
 							<key>name</key>
 							<string>Jobs</string>
 						</dict>
@@ -6569,7 +6831,7 @@
 				<key>X Origin</key>
 				<real>773</real>
 				<key>Y Origin</key>
-				<real>233</real>
+				<real>225</real>
 			</dict>
 		</array>
 	</dict>
