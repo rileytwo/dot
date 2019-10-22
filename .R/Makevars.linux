@@ -1,0 +1,39 @@
+# --------
+# Makevars
+# vim: filetype=make
+# --------
+
+CCACHE=/usr/bin/ccache
+
+# Make using all cores (set number to your number of cores)
+MAKE=make -j`nproc`
+
+# GNU version (assumes latest in Homebrew as of May 2019)
+VER=8
+
+# LLVM (Clang) compiler options
+CC=$(CCACHE) /usr/lib/llvm-$(VER)/bin/clang
+CXX=$(CC)++
+
+# FORTRAN
+FC=$(CCACHE) /usr/bin/gfortran-$(VER)
+F77=$(FC)
+FLIBS=-L/usr/lib/gcc/x86_64-linux-gnu/$(VER) -lgfortran -lquadmath -lm
+
+# STD libraries
+CXX1XSTD=-std=c++0x
+CXX11STD=-std=c++11
+CXX14STD=-std=c++14
+CXX17STD=-std=c++17
+
+# FLAGS
+CFLAGS=-g -O3 -Wall -pedantic -mtune=native -pipe
+CXXFLAGS=-g -O3 -Wall -pedantic -mtune=native -pipe
+#CPPFLAGS=-I$(HO)/llvm/include -I$(HO)/openssl/include -I$(HO)/gettext/include -I$(HO)/jpeg/include
+#LDFLAGS=-L$(HO)/llvm/lib -L$(HO)/openssl/lib -L$(HO)/gettext/lib -L$(HO)/jpeg/lib
+
+# R-specific flags for OpenMP support
+SHLIB_OPENMP_CFLAGS=-fopenmp
+SHLIB_OPENMP_CXXFLAGS=-fopenmp
+SHLIB_OPENMP_FCFLAGS=-fopenmp
+SHLIB_OPENMP_FFLAGS=-fopenmp
