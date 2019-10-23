@@ -29,8 +29,8 @@ CXX17STD=-std=c++17
 # FLAGS
 CFLAGS=-g -O3 -Wall -pedantic -mtune=native -pipe
 CXXFLAGS=-g -O3 -Wall -pedantic -mtune=native -pipe
-#CPPFLAGS=-I$(HO)/llvm/include -I$(HO)/openssl/include -I$(HO)/gettext/include -I$(HO)/jpeg/include
-#LDFLAGS=-L$(HO)/llvm/lib -L$(HO)/openssl/lib -L$(HO)/gettext/lib -L$(HO)/jpeg/lib
+CPPFLAGS=-I/usr/lib/llvm-$(VER)/include
+LDFLAGS=-L/usr/lib/llvm-$(VER)/lib
 
 # R-specific flags for OpenMP support
 SHLIB_OPENMP_CFLAGS=-fopenmp
