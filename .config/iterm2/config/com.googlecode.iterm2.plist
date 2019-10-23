@@ -2583,7 +2583,7 @@
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1440, 900}}</string>
 		<key>topLeft</key>
-		<string>{2, 859}</string>
+		<string>{2, 860}</string>
 	</dict>
 	<key>NoSyncHaveUsedCopyMode</key>
 	<true/>
@@ -2594,7 +2594,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>1B480254-E265-41B7-98EA-0689375CEC49</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>109</integer>
+	<integer>111</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -3435,7 +3435,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-10-23T11:19:15Z</date>
+	<date>2019-10-23T23:23:48Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
@@ -5224,7 +5224,7 @@
 												<real>0.94999998809999997</real>
 											</dict>
 											<key>Guid</key>
-											<string>0A8D3D83-86B6-431D-84F8-84DE914392EB</string>
+											<string>3068BB32-F1B5-4A64-BFEE-7F9CF9B5899F</string>
 											<key>Has Hotkey</key>
 											<false/>
 											<key>Horizontal Spacing</key>
@@ -5473,13 +5473,13 @@
 											<key>Name</key>
 											<string>Alice</string>
 											<key>Non Ascii Font</key>
-											<string>FuraCodeNerdFontComplete-Retina 13</string>
+											<string>FuraCodeNerdFontComplete-Retina 12</string>
 											<key>Non-ASCII Anti Aliased</key>
 											<true/>
 											<key>Non-ASCII Ligatures</key>
 											<true/>
 											<key>Normal Font</key>
-											<string>FiraCode-Retina 13</string>
+											<string>FuraCodeNerdFontComplete-Retina 13</string>
 											<key>Only The Default BG Color Uses Transparency</key>
 											<false/>
 											<key>Open Toolbelt</key>
@@ -5507,7 +5507,7 @@
 											<key>Scrollback With Status Bar</key>
 											<false/>
 											<key>Scrollback in Alternate Screen</key>
-											<true/>
+											<false/>
 											<key>Selected Text Color</key>
 											<dict>
 												<key>Alpha Component</key>
@@ -5553,228 +5553,21 @@
 													<key>default text color</key>
 													<dict>
 														<key>Alpha Component</key>
-														<integer>1</integer>
+														<real>1</real>
 														<key>Blue Component</key>
-														<real>0.99937874078750999</real>
+														<real>0.74000000953674316</real>
 														<key>Color Space</key>
 														<string>sRGB</string>
 														<key>Green Component</key>
-														<real>0.75085854530333995</real>
+														<real>0.74000000953674316</real>
 														<key>Red Component</key>
-														<integer>0</integer>
+														<real>0.74000000953674316</real>
 													</dict>
 													<key>font</key>
-													<string>.AppleSystemUIFont 12</string>
+													<string>FuraCodeNerdFontComplete-Regular 13</string>
 												</dict>
 												<key>components</key>
-												<array>
-													<dict>
-														<key>class</key>
-														<string>iTermStatusBarClockComponent</string>
-														<key>configuration</key>
-														<dict>
-															<key>knobs</key>
-															<dict>
-																<key>base: compression resistance</key>
-																<integer>1</integer>
-																<key>base: priority</key>
-																<integer>5</integer>
-																<key>format</key>
-																<string>M-dd h:mm</string>
-																<key>shared text color</key>
-																<dict>
-																	<key>Alpha Component</key>
-																	<integer>1</integer>
-																	<key>Blue Component</key>
-																	<real>0.63</real>
-																	<key>Color Space</key>
-																	<string>sRGB</string>
-																	<key>Green Component</key>
-																	<real>0.63</real>
-																	<key>Red Component</key>
-																	<real>0.90000000000000002</real>
-																</dict>
-															</dict>
-															<key>layout advanced configuration dictionary value</key>
-															<dict>
-																<key>algorithm</key>
-																<integer>1</integer>
-																<key>default text color</key>
-																<dict>
-																	<key>Alpha Component</key>
-																	<integer>1</integer>
-																	<key>Blue Component</key>
-																	<real>0.99937874078750999</real>
-																	<key>Color Space</key>
-																	<string>sRGB</string>
-																	<key>Green Component</key>
-																	<real>0.75085854530333995</real>
-																	<key>Red Component</key>
-																	<integer>0</integer>
-																</dict>
-																<key>font</key>
-																<string>.AppleSystemUIFont 12</string>
-															</dict>
-														</dict>
-													</dict>
-													<dict>
-														<key>class</key>
-														<string>iTermStatusBarUsernameComponent</string>
-														<key>configuration</key>
-														<dict>
-															<key>knobs</key>
-															<dict>
-																<key>base: compression resistance</key>
-																<integer>2</integer>
-																<key>base: priority</key>
-																<integer>5</integer>
-																<key>path</key>
-																<string>username</string>
-																<key>shared text color</key>
-																<dict>
-																	<key>Alpha Component</key>
-																	<integer>1</integer>
-																	<key>Blue Component</key>
-																	<real>0.63</real>
-																	<key>Color Space</key>
-																	<string>sRGB</string>
-																	<key>Green Component</key>
-																	<real>0.90000000000000002</real>
-																	<key>Red Component</key>
-																	<real>0.76500000000000001</real>
-																</dict>
-															</dict>
-															<key>layout advanced configuration dictionary value</key>
-															<dict>
-																<key>algorithm</key>
-																<integer>1</integer>
-																<key>default text color</key>
-																<dict>
-																	<key>Alpha Component</key>
-																	<integer>1</integer>
-																	<key>Blue Component</key>
-																	<real>0.99937874078750999</real>
-																	<key>Color Space</key>
-																	<string>sRGB</string>
-																	<key>Green Component</key>
-																	<real>0.75085854530333995</real>
-																	<key>Red Component</key>
-																	<integer>0</integer>
-																</dict>
-																<key>font</key>
-																<string>.AppleSystemUIFont 12</string>
-															</dict>
-														</dict>
-													</dict>
-													<dict>
-														<key>class</key>
-														<string>iTermStatusBarWorkingDirectoryComponent</string>
-														<key>configuration</key>
-														<dict>
-															<key>knobs</key>
-															<dict>
-																<key>base: compression resistance</key>
-																<integer>1</integer>
-																<key>base: priority</key>
-																<integer>5</integer>
-																<key>maxwidth</key>
-																<real>1.7976931348623157e+308</real>
-																<key>minwidth</key>
-																<integer>0</integer>
-																<key>path</key>
-																<string>path</string>
-																<key>shared text color</key>
-																<dict>
-																	<key>Alpha Component</key>
-																	<integer>1</integer>
-																	<key>Blue Component</key>
-																	<real>0.90000000000000002</real>
-																	<key>Color Space</key>
-																	<string>sRGB</string>
-																	<key>Green Component</key>
-																	<real>0.90000000000000002</real>
-																	<key>Red Component</key>
-																	<real>0.63</real>
-																</dict>
-															</dict>
-															<key>layout advanced configuration dictionary value</key>
-															<dict>
-																<key>algorithm</key>
-																<integer>1</integer>
-																<key>default text color</key>
-																<dict>
-																	<key>Alpha Component</key>
-																	<integer>1</integer>
-																	<key>Blue Component</key>
-																	<real>0.99937874078750999</real>
-																	<key>Color Space</key>
-																	<string>sRGB</string>
-																	<key>Green Component</key>
-																	<real>0.75085854530333995</real>
-																	<key>Red Component</key>
-																	<integer>0</integer>
-																</dict>
-																<key>font</key>
-																<string>.AppleSystemUIFont 12</string>
-															</dict>
-														</dict>
-													</dict>
-													<dict>
-														<key>class</key>
-														<string>iTermStatusBarSpringComponent</string>
-														<key>configuration</key>
-														<dict>
-															<key>knobs</key>
-															<dict>
-																<key>base: compression resistance</key>
-																<integer>1</integer>
-																<key>base: priority</key>
-																<integer>5</integer>
-																<key>iTermStatusBarSpringComponentSizeMultipleKey</key>
-																<integer>1</integer>
-																<key>iTermStatusBarSpringComponentSpringConstantKey</key>
-																<real>0.01</real>
-															</dict>
-															<key>layout advanced configuration dictionary value</key>
-															<dict>
-																<key>algorithm</key>
-																<integer>1</integer>
-															</dict>
-														</dict>
-													</dict>
-													<dict>
-														<key>class</key>
-														<string>iTermStatusBarSearchFieldComponent</string>
-														<key>configuration</key>
-														<dict>
-															<key>knobs</key>
-															<dict>
-																<key>base: compression resistance</key>
-																<integer>1</integer>
-																<key>base: priority</key>
-																<integer>5</integer>
-																<key>shared text color</key>
-																<dict>
-																	<key>Alpha Component</key>
-																	<integer>1</integer>
-																	<key>Blue Component</key>
-																	<real>0.90000000000000002</real>
-																	<key>Color Space</key>
-																	<string>sRGB</string>
-																	<key>Green Component</key>
-																	<real>0.63</real>
-																	<key>Red Component</key>
-																	<real>0.76500000000000001</real>
-																</dict>
-															</dict>
-															<key>layout advanced configuration dictionary value</key>
-															<dict>
-																<key>algorithm</key>
-																<integer>1</integer>
-															</dict>
-														</dict>
-													</dict>
-												</array>
+												<array/>
 											</dict>
 											<key>Sync Title</key>
 											<false/>
@@ -5835,7 +5628,7 @@
 											<key>Use libtickit protocol</key>
 											<false/>
 											<key>Vertical Spacing</key>
-											<real>0.93999999999999995</real>
+											<real>1</real>
 											<key>Visual Bell</key>
 											<true/>
 											<key>Window Type</key>
@@ -5849,8 +5642,6 @@
 										<integer>82</integer>
 										<key>Commands</key>
 										<array>
-											<string>zprof | head -n 10</string>
-											<string>e</string>
 											<string>curl -L https://iterm2.com/shell_integration/install_shell_integration_and_utilities.sh | bash</string>
 											<string>brew search speedyfox</string>
 											<string>launchctl print-disabled user/501</string>
@@ -5920,42 +5711,40 @@
 											<string>git push</string>
 											<string>xed QLExt.xcodeproj</string>
 											<string>cd</string>
+											<string>gitup</string>
+											<string>cd github/rileytwo/qlext</string>
+											<string>git checkout upstream</string>
+											<string>git checkout master</string>
+											<string>git pull --rebase upstream master</string>
+											<string>glo</string>
+											<string>cd</string>
+											<string>cd .dot</string>
+											<string>gs</string>
+											<string>git restore .config/hammerspoon/init.lua</string>
+											<string>gs</string>
+											<string>cd</string>
+											<string>brew update &amp;&amp; brew upgrade &amp;&amp; brew cask upgrade</string>
+											<string>sudo softwareupdate -l</string>
+											<string>npm update -g &amp;&amp; gem update</string>
+											<string>pyenv update</string>
+											<string>zshup.sh</string>
+											<string>upgrade_oh_my_zsh</string>
+											<string>ping -c 5</string>
+											<string>ping -c 5 -apple-time</string>
+											<string>ping -c 5 -apple-time 8.8.8</string>
+											<string>ping -c 5 -apple-time 8.8.8.8</string>
+											<string>ping -apple-time -c 5 8.8.8.8</string>
+											<string>ping -apple-time -c 8.8.8.8</string>
+											<string>ping -apple-time -c 5</string>
+											<string>ping -c 5 8.8.8.8</string>
+											<string>ping -c 5 8.8.8.8 -apple-time</string>
+											<string>ping -apple-time -c 5 8.8.8.8</string>
+											<string>ping -c 5 8.8.8.8</string>
+											<string>ping -c 5</string>
+											<string>man ping</string>
 										</array>
 										<key>Directories</key>
 										<array>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley/.dot</string>
 											<string>/Users/riley/.dot</string>
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
@@ -6022,12 +5811,45 @@
 											<string>/Users/riley/github/rileytwo/qlext</string>
 											<string>/Users/riley/github/rileytwo/qlext</string>
 											<string>/Users/riley/github/rileytwo/qlext</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley/github/rileytwo/qlext</string>
+											<string>/Users/riley/github/rileytwo/qlext</string>
+											<string>/Users/riley/github/rileytwo/qlext</string>
+											<string>/Users/riley/github/rileytwo/qlext</string>
+											<string>/Users/riley/github/rileytwo/qlext</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
 											<string>/Users/riley</string>
 										</array>
 										<key>Environment</key>
 										<dict>
 											<key>PWD</key>
-											<string>/Users/riley/github/rileytwo/qlext</string>
+											<string>/Users/riley</string>
 										</dict>
 										<key>Hostname to Shell</key>
 										<dict>
@@ -6701,6 +6523,19 @@
 				</array>
 				<key>TerminalGuid</key>
 				<string>pty-585CF904-5D76-4EE3-A9A8-93D9AC498932</string>
+				<key>Toolbelt</key>
+				<dict>
+					<key>Profiles</key>
+					<dict>
+						<key>iTermToolProfilesProfileListViewState</key>
+						<dict>
+							<key>iTermProfileListViewRestorableStateTagsFraction</key>
+							<real>0.0</real>
+							<key>iTermProfileListViewRestorableStateTagsVisible</key>
+							<false/>
+						</dict>
+					</dict>
+				</dict>
 				<key>Toolbelt Proportions</key>
 				<dict>
 					<key>proportions</key>
