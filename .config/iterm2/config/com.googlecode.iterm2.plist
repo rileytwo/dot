@@ -611,7 +611,7 @@
 			<key>Cursor Type</key>
 			<integer>0</integer>
 			<key>Custom Command</key>
-			<string>Yes</string>
+			<string>No</string>
 			<key>Custom Directory</key>
 			<string>No</string>
 			<key>Default Bookmark</key>
@@ -1544,7 +1544,7 @@
 			<key>Columns</key>
 			<integer>80</integer>
 			<key>Command</key>
-			<string></string>
+			<string>zsh -l</string>
 			<key>Cursor Boost</key>
 			<integer>0</integer>
 			<key>Cursor Color</key>
@@ -1589,7 +1589,7 @@
 			<key>Cursor Type</key>
 			<integer>0</integer>
 			<key>Custom Command</key>
-			<string>Yes</string>
+			<string>No</string>
 			<key>Custom Directory</key>
 			<string>No</string>
 			<key>Default Bookmark</key>
@@ -2776,7 +2776,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>1B480254-E265-41B7-98EA-0689375CEC49</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>93</integer>
+	<integer>100</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -5370,7 +5370,7 @@
 											<key>Cursor Type</key>
 											<integer>0</integer>
 											<key>Custom Command</key>
-											<string>Yes</string>
+											<string>No</string>
 											<key>Custom Directory</key>
 											<string>No</string>
 											<key>Default Bookmark</key>
@@ -5397,7 +5397,7 @@
 												<real>0.94999998809999997</real>
 											</dict>
 											<key>Guid</key>
-											<string>D791874F-2F9A-419C-A7DE-FCE5CB3186DC</string>
+											<string>0A8D3D83-86B6-431D-84F8-84DE914392EB</string>
 											<key>Has Hotkey</key>
 											<false/>
 											<key>Horizontal Spacing</key>
@@ -6083,6 +6083,16 @@
 											<string>pluginkit</string>
 											<string>man pluginkit</string>
 											<string>man pluginkit</string>
+											<string>echo $0</string>
+											<string>trash -h</string>
+											<string>trash -s</string>
+											<string>cd github/rileytwo/qlext</string>
+											<string>gs</string>
+											<string>git pull</string>
+											<string>gs</string>
+											<string>git push</string>
+											<string>xed QLExt.xcodeproj</string>
+											<string>cd</string>
 										</array>
 										<key>Directories</key>
 										<array>
@@ -6118,10 +6128,6 @@
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
 											<string>/Users/riley/.dot</string>
 											<string>/Users/riley/.dot</string>
 											<string>/Users/riley</string>
@@ -6173,12 +6179,28 @@
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley/github/rileytwo/qlext</string>
+											<string>/Users/riley/github/rileytwo/qlext</string>
+											<string>/Users/riley/github/rileytwo/qlext</string>
+											<string>/Users/riley/github/rileytwo/qlext</string>
+											<string>/Users/riley/github/rileytwo/qlext</string>
+											<string>/Users/riley/github/rileytwo/qlext</string>
+											<string>/Users/riley/github/rileytwo/qlext</string>
+											<string>/Users/riley/github/rileytwo/qlext</string>
 											<string>/Users/riley</string>
 										</array>
 										<key>Environment</key>
 										<dict>
 											<key>PWD</key>
-											<string>/Users/riley</string>
+											<string>/Users/riley/github/rileytwo/qlext</string>
 										</dict>
 										<key>Hostname to Shell</key>
 										<dict>
@@ -6187,6 +6209,78 @@
 										</dict>
 										<key>Hosts</key>
 										<array>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rmbp</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
 											<dict>
 												<key>Host name</key>
 												<string>rmbp</string>
@@ -6786,7 +6880,7 @@
 					<array>
 						<dict>
 							<key>heightAsFraction</key>
-							<real>0.17333333333333334</real>
+							<real>0.17238095238095238</real>
 							<key>name</key>
 							<string>Actions</string>
 						</dict>
@@ -6816,7 +6910,7 @@
 						</dict>
 						<dict>
 							<key>heightAsFraction</key>
-							<real>-0.026666666666666668</real>
+							<real>-0.025714285714285714</real>
 							<key>name</key>
 							<string>Jobs</string>
 						</dict>
