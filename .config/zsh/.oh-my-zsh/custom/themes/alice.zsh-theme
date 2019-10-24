@@ -1,26 +1,28 @@
 ## alice.zsh-theme
+# vim: tabstop=2:shiftwidth=2
 
 ## colors
-local blue=$fg[blue]
-local blue_bold=$fg_bold[blue]
-local red_bold=$fg_bold[red]
-local green=$fg[green]
-local green_bold=$fg_bold[green]
-local magenta=$fg[magenta]
-local yellow=$fg[yellow]
-local white=$fg[white]
+local b=$fg[blue]
+local g=$fg[green]
+local m=$fg[magenta]
+local y=$fg[yello]
+local w=$fg[white]
+local bb=$fg_bold[blue]
+local rb=$fg_bold[red]
+local gb=$fg_bold[green]
+
 
 
 ## prompt substitutions
 local git_info='$(git_prompt_info)'
-local check="%{$green%}%{$reset_color%}"
+local check="%{$g%}%{$reset_color%}"
 #local smiley="%(?,%{$green%}:%)%{$reset_color%},%{$red_bold%}:(%{$reset_color%})"
 
 ## git info
-ZSH_THEME_GIT_PROMPT_PREFIX="%{$blue_bold%}git:(%{$red_bold%}"
+ZSH_THEME_GIT_PROMPT_PREFIX="%{$bb%}git:(%{$rb%}"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
-ZSH_THEME_GIT_PROMPT_CLEAN="%{$blue%}) ${check}"
-ZSH_THEME_GIT_PROMPT_DIRTY="%{$blue%})%{$red_bold%} 署"
+ZSH_THEME_GIT_PROMPT_CLEAN="%{$b%}) ${check}"
+ZSH_THEME_GIT_PROMPT_DIRTY="%{$b%})%{$rb%} 署"
 
 ## git status
 #ZSH_THEME_GIT_PROMPT_ADDED="::%{$green_bold%}++"
@@ -33,12 +35,12 @@ ZSH_THEME_GIT_PROMPT_DIRTY="%{$blue%})%{$red_bold%} 署"
 ## prompt
 setopt PROMPT_SUBST
 precmd_prompt() {
-    PROMPT="%{$magenta%}${PWD/#$HOME/~}%  ${git_info}%{$reset_color%}"
-    PROMPT+=$'\n'
-    PROMPT+="-> "
+  PROMPT="%{$m%}${PWD/#$HOME/~}%  ${git_info}%{$reset_color%}"
+  PROMPT+=$'\n'
+  PROMPT+="-> "
 
-    #RPROMPT="${smiley}"
+  #RPROMPT="${smiley}"
 
-    PROMPT2="%{$white%}-> "
+  PROMPT2="%{$w%}-> "
 }
 precmd_functions+=(precmd_prompt)
