@@ -220,7 +220,7 @@
 	<key>NSFontPanelAttributes</key>
 	<string>1, 2</string>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/.dot/.config/iterm2/colors</string>
+	<string>~/.dot/.config/iterm2/config</string>
 	<key>NSNavLastUserSetHideExtensionButtonState</key>
 	<false/>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
@@ -288,7 +288,7 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>410 363 620 392 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>773 225 662 530 0 0 1440 877 </string>
+	<string>773 225 662 530 0 0 1680 1027 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -2595,9 +2595,9 @@
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
 		<key>screenFrame</key>
-		<string>{{0, 0}, {1440, 900}}</string>
+		<string>{{0, 0}, {1680, 1050}}</string>
 		<key>topLeft</key>
-		<string>{2, 860}</string>
+		<string>{67, 766}</string>
 	</dict>
 	<key>NoSyncHaveUsedCopyMode</key>
 	<true/>
@@ -2608,7 +2608,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>1B480254-E265-41B7-98EA-0689375CEC49</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>115</integer>
+	<integer>123</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -3449,7 +3449,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-10-24T11:27:29Z</date>
+	<date>2019-10-25T12:26:35Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
@@ -4851,7 +4851,7 @@
 				<key>Has Toolbelt</key>
 				<false/>
 				<key>Height</key>
-				<real>530</real>
+				<real>567</real>
 				<key>Hide After Opening</key>
 				<false/>
 				<key>Hiding Toolbelt Should Resize Window</key>
@@ -5238,7 +5238,7 @@
 												<real>0.94999998809999997</real>
 											</dict>
 											<key>Guid</key>
-											<string>3068BB32-F1B5-4A64-BFEE-7F9CF9B5899F</string>
+											<string>CFFF5F1B-CC94-4D55-B7B6-EA56E370D4F4</string>
 											<key>Has Hotkey</key>
 											<false/>
 											<key>Horizontal Spacing</key>
@@ -5653,7 +5653,7 @@
 											<string>alice</string>
 										</dict>
 										<key>Columns</key>
-										<integer>82</integer>
+										<integer>84</integer>
 										<key>Commands</key>
 										<array>
 											<string>curl -L https://iterm2.com/shell_integration/install_shell_integration_and_utilities.sh | bash</string>
@@ -5759,8 +5759,6 @@
 										</array>
 										<key>Directories</key>
 										<array>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley</string>
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
@@ -5839,6 +5837,8 @@
 											<string>/Users/riley/.dot</string>
 											<string>/Users/riley/.dot</string>
 											<string>/Users/riley/.dot</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
@@ -5868,6 +5868,8 @@
 										<key>Hostname to Shell</key>
 										<dict>
 											<key>riley@rmbp</key>
+											<string>zsh</string>
+											<key>riley@rxmbp</key>
 											<string>zsh</string>
 										</dict>
 										<key>Hosts</key>
@@ -6462,13 +6464,13 @@
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rmbp</string>
+												<string>rxmbp</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rmbp</string>
+												<string>rxmbp</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
@@ -6488,7 +6490,7 @@
 											<string>Shell Launcher</string>
 										</dict>
 										<key>Rows</key>
-										<integer>30</integer>
+										<integer>32</integer>
 										<key>Session GUID</key>
 										<string>0CD31097-3AC9-4EE1-8328-4C7862D8FD09</string>
 										<key>Shell Integration Ever Used</key>
@@ -6507,9 +6509,9 @@
 									<key>frame</key>
 									<dict>
 										<key>height</key>
-										<real>492</real>
+										<real>529</real>
 										<key>width</key>
-										<real>662</real>
+										<real>682</real>
 										<key>x</key>
 										<real>0.0</real>
 										<key>y</key>
@@ -6522,9 +6524,9 @@
 							<key>frame</key>
 							<dict>
 								<key>height</key>
-								<real>492</real>
+								<real>529</real>
 								<key>width</key>
-								<real>662</real>
+								<real>682</real>
 								<key>x</key>
 								<real>0.0</real>
 								<key>y</key>
@@ -6556,37 +6558,37 @@
 					<array>
 						<dict>
 							<key>heightAsFraction</key>
-							<real>0.17238095238095238</real>
+							<real>0.16192170818505339</real>
 							<key>name</key>
 							<string>Actions</string>
 						</dict>
 						<dict>
 							<key>heightAsFraction</key>
-							<real>0.22666666666666666</real>
+							<real>0.21174377224199289</real>
 							<key>name</key>
 							<string>Profiles</string>
 						</dict>
 						<dict>
 							<key>heightAsFraction</key>
-							<real>0.22666666666666666</real>
+							<real>0.21174377224199289</real>
 							<key>name</key>
 							<string>Recent Directories</string>
 						</dict>
 						<dict>
 							<key>heightAsFraction</key>
-							<real>0.17333333333333334</real>
+							<real>0.16192170818505339</real>
 							<key>name</key>
 							<string>Captured Output</string>
 						</dict>
 						<dict>
 							<key>heightAsFraction</key>
-							<real>0.22666666666666666</real>
+							<real>0.21174377224199289</real>
 							<key>name</key>
 							<string>Command History</string>
 						</dict>
 						<dict>
 							<key>heightAsFraction</key>
-							<real>-0.025714285714285714</real>
+							<real>0.040925266903914591</real>
 							<key>name</key>
 							<string>Jobs</string>
 						</dict>
@@ -6595,13 +6597,13 @@
 				<key>Use Transparency</key>
 				<false/>
 				<key>Width</key>
-				<real>662</real>
+				<real>682</real>
 				<key>Window Type</key>
 				<integer>13</integer>
 				<key>X Origin</key>
-				<real>773</real>
+				<real>992</real>
 				<key>Y Origin</key>
-				<real>225</real>
+				<real>130</real>
 			</dict>
 		</array>
 	</dict>
