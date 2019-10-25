@@ -56,20 +56,16 @@ hs.hotkey.bind(mod_keys, "Y", function()
 	hs.toggleConsole()
 end)
 
-hs.hotkey.bind(
-	mod_keys, "R",
-	function()
-		hs.notify.new({
-			title           = "Hammerspoon",
-			informativeText = "Config reloaded!"
-		}):send()
-		hs.reload()
-	end
-)
+hs.hotkey.bind(mod_keys, "R", function()
+	hs.notify.new({
+		title           = "Hammerspoon",
+		informativeText = "Config reloaded!"
+	}):send()
+	hs.reload()
+end)
 
 
--- gs = "get & set"
-function gs_screen_win_frame()
+function define_full()
 	local gap          = 5
 	local win          = hs.window.focusedWindow()
 	local win_frame    = win:frame()
@@ -84,7 +80,7 @@ function gs_screen_win_frame()
 end
 
 
-function gs_left_win_frame()
+function define_left()
 	local gap          = 5
 	local win          = hs.window.focusedWindow()
 	local win_frame    = win:frame()
@@ -99,7 +95,7 @@ function gs_left_win_frame()
 end
 
 
-function gs_right_win_frame()
+function define_right()
 	local gap          = 5
 	local win          = hs.window.focusedWindow()
 	local win_frame    = win:frame()
@@ -123,8 +119,8 @@ function is_almost_equal_to_win_frame(geo)
 	   math.abs(win_frame.y - geo.y) < epsilon and
 	   math.abs(win_frame.w - geo.w) < epsilon and
 	   math.abs(win_frame.h - geo.h) < epsilon then
-
 		return true
+
 	else
 		return false
 	end
@@ -132,11 +128,11 @@ end
 
 
 function is_predefined_win_frame_size()
-	if is_almost_equal_to_win_frame(gs_screen_win_frame()) or
-		is_almost_equal_to_win_frame(gs_left_win_frame())   or
-		is_almost_equal_to_win_frame(gs_right_win_frame())  then
-
+	if is_almost_equal_to_win_frame(define_full()) or
+		is_almost_equal_to_win_frame(define_left()) or
+		is_almost_equal_to_win_frame(define_right())  then
 		return true
+
 	else
 		return false
 	end
@@ -152,12 +148,12 @@ function bind_resize_restore(key, resize_frame_fn)
 
 			if is_predefined_win_frame_size() and not
 				is_almost_equal_to_win_frame(target_frame) then
-
 				win:setFrame(target_frame)
-			elseif previous_frame_sizes[win:id()] then
 
+			elseif previous_frame_sizes[win:id()] then
 				win:setFrame(previous_frame_sizes[win:id()])
 				previous_frame_sizes[win:id()] = nil
+
 			else
 				previous_frame_sizes[win:id()] = win_frame
 				win:setFrame(target_frame)
@@ -167,9 +163,9 @@ function bind_resize_restore(key, resize_frame_fn)
 end
 
 
-bind_resize_restore("F", gs_screen_win_frame)
-bind_resize_restore("[", gs_left_win_frame)
-bind_resize_restore("]", gs_right_win_frame)
+bind_resize_restore("F", define_full)
+bind_resize_restore("[", define_left)
+bind_resize_restore("]", define_right)
 
 
 -- 2 --------------------------
@@ -195,6 +191,7 @@ function is_right_win_frame()
 
 	if (screen_frame.w - (win_frame.x + win_frame.w)) <= 50 then
 		return true
+
 	else
 		return false
 	end
@@ -211,10 +208,12 @@ hs.hotkey.bind(mod_keys, "H", function()
 		win_frame.x = win_frame.x - 50
 		win_frame.w = win_frame.w + 50
 		win:setFrame(win_frame)
+
 	elseif win_frame.x < 0 or win_frame.w > screen_frame.w then
 		win_frame.x = 0
 		win_frame.w = screen_frame.w
 		win:setFrame(win_frame)
+
 	else
 		win_frame.w = win_frame.w + 50
 		win:setFrame(win_frame)
@@ -231,6 +230,7 @@ hs.hotkey.bind(mod_keys, "L", function()
 		win_frame.w = win_frame.w - 50
 		win_frame.x = win_frame.x + 50
 		win:setFrame(win_frame)
+
 	else
 		win_frame.w = win_frame.w - 50
 		win:setFrame(win_frame)
