@@ -1,9 +1,6 @@
 #!/usr/bin/env bash
+# vim: tabstop=2:shiftwidth=2
 
-# ~/.dot/.preferences/.defaults
-
-# close any system preferences panes to prevent from overriding
-# settings this script will change
 
 OS=''
 
@@ -39,53 +36,70 @@ fi
 # ask for administrator password
 echo "Please enter your password"
 sudo -v
-# keep-alive: update exiting `sudo` time stamp until script is finished
-while true; do sudo -n; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
+# keep-alive: update exiting `sudo` time stamp until script is finished
+while true; do
+  sleep 300
+  sudo -n true
+  kill -0 "$$" 2>/dev/null || exit
+done &
 
 # Installing Brew & Xcode's Command Line Tools
 function check_brew() {
   echo "Checking if Homebrew is installed..."
   echo ""
   if [[ "$(command -v brew)" == "" ]]; then
-    read -r -p \
-      "Homebew is not installed. Would you like to install it now? (y/N)" choice
-    case "$choice" in
-      y  | Yes | yes)
-        echo "Installing Homebrew..."
-        /usr/bin/ruby -e \
-          "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-        echo ""
-        echo "Turning analytics off..."
-        brew analytics off
-        exit 0
-        ;;
-      n | N | No | no)
-        echo "No"
-        exit 0
-        ;;
-      * )
-        echo "Invalid answer. Enter \"y/yes\" or \"N/no\"" && return
-        ;;
+    retry=0
+    max_retry=10
+    
+    while [ "$retry" -lt "$max_retry" ]; do
+      read -r -p \
+        "Homebew is not installed. Would you like to install it now? (y/N)" choice;
+
+      case "$choice" in
+        y  | Yes | yes)
+          echo "Installing Homebrew..."
+          /usr/bin/ruby -e \
+            "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)";
+
+          echo ""
+          echo "Turning analytics off..."
+          brew analytics off
+          ;;
+
+        n | N | No | no)
+          echo "No"
+          ;;
+
+        * )
+          echo "Invalid answer. Enter \"y/yes\" or \"N/no\"" >&2
+          if [ $((++retries)) -ge "$max_retry" ]; then
+            break 2;
+          fi
+          ;;
+
       esac
+    done
+  
   else
     echo "Homebrew is installed!"
     brew analytics off
-    exit 0
   fi
 }
 
 
-function check_install() {
+function check_install_dir() {
+  echo "Checking for an install directory..."
   if [[ -d "./install" ]]; then
-    cd './install' || \
-      echo "Something went wrong" 
-    
+    cd './install' || echo "Something went wrong"; 
+    echo "Found it!"
+
+    echo "Checking for install scripts..."
     local install_scripts=('./*')
     
-    echo "Checking for install scripts..."
-    
-    if [ ${#install_scripts[@]} -gt 0 ]; then
+    if [ ${#install_scripts[@]} -eq 0 ]; then
+      echo "Didn't find any!"
+    else
       echo "Found some!"
       printf '%s\n' "${install_scripts[@]}" | sed 's/\.\/install-//g'
       echo ""
@@ -97,7 +111,6 @@ function check_install() {
           ;;
         n | N | No | no)
           echo "Okay! Not installing"
-          exit 0
           ;;
         * )
           echo "Invalid answer. Enter \"y/yes\" or \"N/no\"" && return
@@ -136,7 +149,6 @@ function set_defaults() {
         ;;
       n | N | No | no)
         echo "Okay! Not setting any defaults right now."
-        exit 0
         ;;
       * )
         echo "Invalid answer. Enter \"y/yes\" or \"N/no\"" && return
@@ -150,8 +162,8 @@ function set_defaults() {
 
 
 
-brew_check
-check_install
+check_brew
+check_install_dir
 set_defaults
 
 echo "Done!"
