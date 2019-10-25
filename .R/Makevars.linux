@@ -29,7 +29,7 @@ CXX17STD=-std=c++17
 # FLAGS
 CFLAGS=-g -O3 -Wall -pedantic -mtune=native -pipe
 CXXFLAGS=-g -O3 -Wall -pedantic -mtune=native -pipe
-CPPFLAGS=-I/usr/lib/llvm-$(VER)/include
+CPPFLAGS=-I/usr/lib/llvm-$(VER)/include -I/usr/include/openssl
 LDFLAGS=-L/usr/lib/llvm-$(VER)/lib
 
 # R-specific flags for OpenMP support
