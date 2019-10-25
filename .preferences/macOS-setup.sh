@@ -24,16 +24,16 @@ function brew_check() {
       "Homebew is not installed. Would you like to install it now? (y/N)" choice
     case "$choice" in
       y  | Yes | yes)
-        echo "Installing Homebrew...";
+        echo "Installing Homebrew..."
         /usr/bin/ruby -e \
-          "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)";
-        echo "";
-        echo "Turning analytics off...";
-        brew analytics off;
+          "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+        echo ""
+        echo "Turning analytics off..."
+        brew analytics off
         exit 0
         ;;
       n | N | No | no)
-        echo "No";
+        echo "No"
         exit 0
         ;;
       * )
@@ -41,29 +41,14 @@ function brew_check() {
         ;;
       esac
   else
-    echo "Homebrew is installed!";
-    brew analytics off;
+    echo "Homebrew is installed!"
+    brew analytics off
     exit 0
   fi
 }
 
-# Enabling Safari developer options...
-#defaults write com.apple.Safari IncludeDevelopMenu -bool true
-#defaults write com.apple.Safari \
-#    WebKitDeveloperExtrasEnabledPreferenceKey -bool true
-#defaults write com.apple.Safari \
-#    com.apple.Safari.ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled -bool true
-#defaults write -g WebKitDeveloperExtras -bool true
+brew_check
 
-# disable dashboard
-#defaults write com.apple.dashboard mcx-disabled -boolean YES
-
-# key repeat
-#defaults write NSGlobalDomain KeyRepeat -int 0.3
-#defaults write NSGlobalDomain InitialKeyRepeat -int 0.2
-
-# select text in quicklook (disabled by macOS)
-#defaults write com.apple.finder QLEnabletextSelection -bool TRUE
 
 # show ~/Library
 chflags nohidden ~/Library
@@ -124,40 +109,40 @@ defaults write com.apple.CrashReporter DialogueType -string "none"
 
 
 # clean up
-for app in "Activity Monitor" "Address Book" "Calendar" "Contacts" "cfprefsd" \
-           "Dock" "Finder" "Mail" "Messages" "Safari" "SystemUIServer" \
-           "Terminal" "Twitter" "iCal";
-  do
-    kill all "${app}" > /dev/null 2>&1
-  done 
-sleep 1
-
-# end setup
-
-
-# reboot?
-function restart() {
-  read -r -p "Do you want to reboot your computer now? (y/N)" choice
-  case "$choice" in
-    y | Yes | yes )
-      echo "Yes";
-      exit
-      ;;
-    n | N | No | no)
-      echo "No";
-      exit
-      ;;
-    * )
-      echo "Invalid answer. Enter \"y/yes\" or \"N/no\"" && return
-      ;;
-  esac
-}
-
-# call restart
-if [[ "Yes" == $(reboot) ]]; then
-  echo "Rebooting..."
-  sudo sh -c 'reboot'
-  exit 0
-else
-  exit 1
-fi
+#for app in "Activity Monitor" "Address Book" "Calendar" "Contacts" "cfprefsd" \
+#           "Dock" "Finder" "Mail" "Messages" "Safari" "SystemUIServer" \
+#           "Terminal" "Twitter" "iCal";
+#  do
+#    kill all "${app}" > /dev/null 2>&1
+#  done 
+#sleep 1
+#
+## end setup
+#
+#
+## reboot?
+#function restart() {
+#  read -r -p "Do you want to reboot your computer now? (y/N)" choice
+#  case "$choice" in
+#    y | Yes | yes )
+#      echo "Yes";
+#      exit
+#      ;;
+#    n | N | No | no)
+#      echo "No";
+#      exit
+#      ;;
+#    * )
+#      echo "Invalid answer. Enter \"y/yes\" or \"N/no\"" && return
+#      ;;
+#  esac
+#}
+#
+## call restart
+#if [[ "Yes" == $(reboot) ]]; then
+#  echo "Rebooting..."
+#  sudo sh -c 'reboot'
+#  exit 0
+#else
+#  exit 1
+#fi
