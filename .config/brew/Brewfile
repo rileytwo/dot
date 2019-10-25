@@ -468,6 +468,7 @@ cask "alacritty"
 cask "alfred"
 cask "amethyst"
 cask "appgrid"
+cask "apple-events"
 cask "avibrazil-rdm"
 cask "balenaetcher"
 cask "bartender"
@@ -503,7 +504,6 @@ cask "font-victor-mono"
 cask "forticlient"
 cask "gb-studio"
 cask "geekbench"
-cask "geektool"
 cask "gimp"
 cask "hammerspoon"
 cask "hyper"
@@ -524,8 +524,7 @@ cask "macs-fan-control"
 cask "marta"
 cask "menubar-colors"
 cask "microsoft-remote-desktop-beta"
-cask "microsoft-teams"
-cask "onedrive"
+cask "netnewswire"
 cask "penc"
 cask "pock"
 cask "powershell"
@@ -553,3 +552,16 @@ cask "vscodium"
 cask "workbench"
 cask "wwdc"
 cask "finestructure/hummingbird/hummingbird"
+mas "Cascadea", id: 1432182561
+mas "Dark Mode for Safari", id: 1397180934
+mas "EasyRes", id: 688211836
+mas "Filters for Photos", id: 1083965373
+mas "Gifski", id: 1351639930
+mas "HEIC Converter", id: 1294126402
+mas "Magnet", id: 441258766
+mas "Nightlight", id: 1429386865
+mas "Patterns", id: 429449079
+mas "PLIST Editor", id: 1157491961
+mas "Source Tools", id: 1419674885
+mas "Twitter", id: 1482454543
+mas "Xcode", id: 497799835
