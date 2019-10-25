@@ -49,6 +49,13 @@ function brew_check() {
 
 brew_check
 
+#function dev_check() {
+#  echo "Checking for install scripts..."
+#
+#  
+#}
+
+
 
 # show ~/Library
 chflags nohidden ~/Library
