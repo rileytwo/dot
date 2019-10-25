@@ -16,17 +16,36 @@ while true; do sudo -n; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 # Installing Brew & Xcode's Command Line Tools
 
-if [[ "$(command -v brew)" == "" ]]; then
-    echo "Installing Homebrew"
-    /usr/bin/ruby -e \
-        "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-    brew analytics off
-else
-    echo "Homebrew is installed"
-    brew analytics off
-    brew update
-fi
-
+function brew_check() {
+  echo "Checking if Homebrew is installed..."
+  echo ""
+  if [[ "$(command -v brew)" == "" ]]; then
+    read -r -p \
+      "Homebew is not installed. Would you like to install it now? (y/N)" choice
+    case "$choice" in
+      y  | Yes | yes)
+        echo "Installing Homebrew...";
+        /usr/bin/ruby -e \
+          "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)";
+        echo "";
+        echo "Turning analytics off...";
+        brew analytics off;
+        exit 0
+        ;;
+      n | N | No | no)
+        echo "No";
+        exit 0
+        ;;
+      * )
+        echo "Invalid answer. Enter \"y/yes\" or \"N/no\"" && return
+        ;;
+      esac
+  else
+    echo "Homebrew is installed!";
+    brew analytics off;
+    exit 0
+  fi
+}
 
 # Enabling Safari developer options...
 #defaults write com.apple.Safari IncludeDevelopMenu -bool true
@@ -108,9 +127,9 @@ defaults write com.apple.CrashReporter DialogueType -string "none"
 for app in "Activity Monitor" "Address Book" "Calendar" "Contacts" "cfprefsd" \
            "Dock" "Finder" "Mail" "Messages" "Safari" "SystemUIServer" \
            "Terminal" "Twitter" "iCal";
-       do
-           kill all "${app}" > /dev/null 2>&1
-       done 
+  do
+    kill all "${app}" > /dev/null 2>&1
+  done 
 sleep 1
 
 # end setup
@@ -118,27 +137,27 @@ sleep 1
 
 # reboot?
 function restart() {
-    read -r -p "Do you want to reboot your computer now? (y/N)" choice
-    case "$choice" in
-        y | Yes | yes )
-            echo "Yes";
-            exit
-            ;;
-        n | N | No | no)
-            echo "No";
-            exit
-            ;;
-        * )
-            echo "Invalid answer. Enter \"y/yes\" or \"N/no\"" && return
-            ;;
-    esac
+  read -r -p "Do you want to reboot your computer now? (y/N)" choice
+  case "$choice" in
+    y | Yes | yes )
+      echo "Yes";
+      exit
+      ;;
+    n | N | No | no)
+      echo "No";
+      exit
+      ;;
+    * )
+      echo "Invalid answer. Enter \"y/yes\" or \"N/no\"" && return
+      ;;
+  esac
 }
 
 # call restart
 if [[ "Yes" == $(reboot) ]]; then
-    echo "Rebooting..."
-    sudo sh -c 'reboot'
-    exit 0
+  echo "Rebooting..."
+  sudo sh -c 'reboot'
+  exit 0
 else
-    exit 1
+  exit 1
 fi

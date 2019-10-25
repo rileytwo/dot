@@ -17,6 +17,9 @@
         },
         "files.exclude": {
             "**/.Rproj.user": true
+        },
+        "[shellscript]": {
+            "editor.tabSize": 2
         }
         // ,"StatusBarTag.text": "dot"
     }
