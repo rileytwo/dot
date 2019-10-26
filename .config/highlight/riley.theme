@@ -1,0 +1,25 @@
+-- Theme made by Riley
+
+Description = "Riley"
+
+Categories = {"dark"}
+
+Default = { Colour="#dbdbdb" }
+Canvas  = { Colour="#151515" }
+Number  = { Colour="#3fb2ff" }
+Escape  = { Colour="#ff7ab2" }
+String  = { Colour="#83fcbd" }
+BlockComment = { Colour="#636363" }
+StringPreProc = String
+LineComment = BlockComment
+Operator = { Colour="#9691ff" }
+LineNum = BlockComment
+PreProcessor = { Colour="#f9f1a5" }
+Interpolation = { Colour="#6bdfff" }
+
+Keywords = {
+    { Colour="#9691ff" },
+    { Colour="#ff8f86" },
+    { Colour="#aca8ff" },
+    { Colour="f7a9a8" }
+}
