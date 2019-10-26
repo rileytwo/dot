@@ -1,0 +1,6 @@
+# -------------
+# .Renviron
+# vim: ft=conf
+# -------------
+
+PKG_CONFIG_PATH=/opt/X11/lib/pkgconfig
