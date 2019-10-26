@@ -19,7 +19,9 @@ Interpolation = { Colour="#6bdfff" }
 
 Keywords = {
     { Colour="#9691ff" },
-    { Colour="#ff8f86" },
     { Colour="#aca8ff" },
-    { Colour="f7a9a8" }
+    { Colour="#ff8f86" },
+    { Colour="#f7a9a8" },
+    { Colour="#3fb2ff" },
+    { Colour="#66c2ff" }
 }
