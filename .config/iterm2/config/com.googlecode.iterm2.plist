@@ -2615,11 +2615,11 @@
 	</array>
 	<key>NoSyncAllAppVersions</key>
 	<array>
-		<string>3.3.6</string>
+		<string>3.3.7beta1</string>
 		<string>3.3.5beta3</string>
 		<string>3.3.7beta2</string>
 		<string>3.3.4</string>
-		<string>3.3.7beta1</string>
+		<string>3.3.6</string>
 	</array>
 	<key>NoSyncBFPFavorites</key>
 	<array>
@@ -2664,7 +2664,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>1B480254-E265-41B7-98EA-0689375CEC49</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>132</integer>
+	<integer>133</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -3436,6 +3436,9 @@
 	</dict>
 	<key>NoSyncSearchHistory2</key>
 	<array>
+		<string>devtools</string>
+		<string>httpuv</string>
+		<string>macosx.sdk++</string>
 		<string>luarocks</string>
 		<string>error</string>
 	</array>
@@ -3461,11 +3464,6 @@
 		<dict>
 			<key>Action</key>
 			<string>kContextMenuPointerAction</string>
-		</dict>
-		<key>Button,2,1,,</key>
-		<dict>
-			<key>Action</key>
-			<string>kPasteFromClipboardPointerAction</string>
 		</dict>
 		<key>Gesture,ThreeFingerSwipeDown,,</key>
 		<dict>
