@@ -189,6 +189,27 @@
 			<string></string>
 		</dict>
 	</dict>
+	<key>GlobalTouchBarMap</key>
+	<dict>
+		<key>touchbar:A92D10B3-6FD0-4E51-B031-526529FE90EC</key>
+		<dict>
+			<key>Action</key>
+			<integer>0</integer>
+			<key>Label</key>
+			<string>Next Tab</string>
+			<key>Text</key>
+			<string></string>
+		</dict>
+		<key>touchbar:DDDC3AC2-5B8D-4DEF-9C24-D9CBECBFEC36</key>
+		<dict>
+			<key>Action</key>
+			<integer>2</integer>
+			<key>Label</key>
+			<string>Previous Tab</string>
+			<key>Text</key>
+			<string></string>
+		</dict>
+	</dict>
 	<key>HapticFeedbackForEsc</key>
 	<false/>
 	<key>HideActivityIndicator</key>
@@ -286,9 +307,9 @@
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
 	<string>299 305 841 470 0 0 1440 877 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>410 363 620 392 0 0 1440 877 </string>
+	<string>530 476 620 392 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>773 225 662 530 0 0 1680 1027 </string>
+	<string>992 130 682 567 0 0 1680 1027 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -2560,10 +2581,11 @@
 	</array>
 	<key>NoSyncAllAppVersions</key>
 	<array>
+		<string>3.3.7beta1</string>
 		<string>3.3.5beta3</string>
 		<string>3.3.7beta2</string>
 		<string>3.3.4</string>
-		<string>3.3.7beta1</string>
+		<string>3.3.6</string>
 	</array>
 	<key>NoSyncBFPFavorites</key>
 	<array>
@@ -2597,7 +2619,7 @@
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1680, 1050}}</string>
 		<key>topLeft</key>
-		<string>{67, 766}</string>
+		<string>{189, 803}</string>
 	</dict>
 	<key>NoSyncHaveUsedCopyMode</key>
 	<true/>
@@ -2608,7 +2630,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>1B480254-E265-41B7-98EA-0689375CEC49</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>123</integer>
+	<integer>127</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -3449,7 +3471,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-10-25T12:26:35Z</date>
+	<date>2019-10-25T22:05:32Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
