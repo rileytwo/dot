@@ -6,7 +6,7 @@
 
 if has('mac')
     let g:os = 'Darwin'
-    if $COLORTERM =~# 'truecolor' || $COLORTERM =~# '24bit'
+    if $COLORTERM =~# 'truecolor' || $COLORTERM =~# '24bit' || has('gui_vimr')
         set termguicolors
         colorscheme riley
     else
@@ -167,7 +167,7 @@ call deoplete#custom#source('_', 'max_menu_width', 80)
 
 let g:suda#prefix = ['suda://', 'sudo://', '_://']
 
-if has('mac') && has('termguicolors')
+if !has('gui_vimr') && has('mac') && has('termguicolors')
     lua require'colorizer'.setup()
 endif
 
