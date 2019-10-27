@@ -9,12 +9,6 @@ alias rr="radian"
 ## R
 alias r='r --no-save'
 
-## github directory alias
-alias gh='~/github'
-
-## dotfiles directory alias
-alias dot='~/.dot'
-
 ## plistbuddy alias
 alias plistbuddy='/usr/libexec/PlistBuddy'
 
@@ -23,6 +17,9 @@ alias plistbuddy='/usr/libexec/PlistBuddy'
 alias path='echo -e ${PATH//:/\\n}'
 alias fpath='echo -e ${FPATH//:/\\n}'
 
+# git aliases
+alias gs='git status'
+alias gcu='git checkout upstream'
 
 if (( $+commands[karabiner_cli] )); then
     alias kb='karabiner_cli'
@@ -51,7 +48,6 @@ if (( $+commands[pyenv] )); then
     alias pvs='pyenv versions'
 fi
 
-alias gs='git status'
 alias hsg='history | grep'
 alias please='sudo'
 alias pls='sudo'
