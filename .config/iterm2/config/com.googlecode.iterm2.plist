@@ -55,12 +55,19 @@
 			<key>Text</key>
 			<string></string>
 		</dict>
-		<key>0x44-0x160000</key>
+		<key>0x2b-0x60000</key>
 		<dict>
 			<key>Action</key>
-			<integer>28</integer>
+			<integer>49</integer>
 			<key>Text</key>
-			<string>C2CD2FD3-775C-44B4-AB74-0853DACAE166</string>
+			<string></string>
+		</dict>
+		<key>0x3d-0x40000</key>
+		<dict>
+			<key>Action</key>
+			<integer>50</integer>
+			<key>Text</key>
+			<string></string>
 		</dict>
 		<key>0x4a-0x160000</key>
 		<dict>
@@ -76,12 +83,19 @@
 			<key>Text</key>
 			<string></string>
 		</dict>
-		<key>0x64-0x1c0000</key>
+		<key>0x5b-0x40000</key>
 		<dict>
 			<key>Action</key>
-			<integer>29</integer>
+			<integer>51</integer>
 			<key>Text</key>
-			<string>C2CD2FD3-775C-44B4-AB74-0853DACAE166</string>
+			<string></string>
+		</dict>
+		<key>0x5d-0x40000</key>
+		<dict>
+			<key>Action</key>
+			<integer>52</integer>
+			<key>Text</key>
+			<string></string>
 		</dict>
 		<key>0x6a-0x140000</key>
 		<dict>
@@ -200,6 +214,15 @@
 			<key>Text</key>
 			<string></string>
 		</dict>
+		<key>touchbar:A5EAA8AA-B194-4B21-9713-C37E23B88B78</key>
+		<dict>
+			<key>Action</key>
+			<integer>28</integer>
+			<key>Label</key>
+			<string>Split Horizontally</string>
+			<key>Text</key>
+			<string>C2CD2FD3-775C-44B4-AB74-0853DACAE166</string>
+		</dict>
 		<key>touchbar:A92D10B3-6FD0-4E51-B031-526529FE90EC</key>
 		<dict>
 			<key>Action</key>
@@ -208,6 +231,15 @@
 			<string>Next Tab</string>
 			<key>Text</key>
 			<string></string>
+		</dict>
+		<key>touchbar:DD0C2B84-A8D9-4558-B040-48FC9129893C</key>
+		<dict>
+			<key>Action</key>
+			<integer>29</integer>
+			<key>Label</key>
+			<string>Split Vertically</string>
+			<key>Text</key>
+			<string>C2CD2FD3-775C-44B4-AB74-0853DACAE166</string>
 		</dict>
 		<key>touchbar:DDDC3AC2-5B8D-4DEF-9C24-D9CBECBFEC36</key>
 		<dict>
@@ -298,6 +330,30 @@
 		<key>TB Is Shown</key>
 		<integer>1</integer>
 	</dict>
+	<key>NSTouchBarConfig: full screen</key>
+	<dict>
+		<key>CurrentItems</key>
+		<array>
+			<string>iTermTouchBarIdentifierManPage</string>
+			<string>iTermTouchBarIdentifierColorPreset</string>
+			<string>NSTouchBarItemIdentifierFlexibleSpace</string>
+			<string>touchbar:A5EAA8AA-B194-4B21-9713-C37E23B88B78</string>
+			<string>touchbar:DD0C2B84-A8D9-4558-B040-48FC9129893C</string>
+			<string>NSTouchBarItemIdentifierOtherItemsProxy</string>
+		</array>
+		<key>DefaultItems</key>
+		<array>
+			<string>iTermTouchBarIdentifierManPage</string>
+			<string>iTermTouchBarIdentifierColorPreset</string>
+			<string>iTermTouchBarIdentifierFunctionKeys</string>
+			<string>NSTouchBarItemIdentifierFlexibleSpace</string>
+			<string>tab bar</string>
+			<string>NSTouchBarItemIdentifierOtherItemsProxy</string>
+			<string>iTermTouchBarIdentifierAddMark</string>
+			<string>iTermTouchBarIdentifierPreviousMark</string>
+			<string>iTermTouchBarIdentifierNextMark</string>
+		</array>
+	</dict>
 	<key>NSTouchBarConfig: regular</key>
 	<dict>
 		<key>CurrentItems</key>
@@ -305,7 +361,6 @@
 			<string>iTermTouchBarIdentifierFunctionKeys</string>
 			<string>iTermTouchBarIdentifierManPage</string>
 			<string>NSTouchBarItemIdentifierFlexibleSpace</string>
-			<string>iTermTouchBarIdentifierStatus</string>
 			<string>touchbar:72934D9B-E70C-4E20-B840-F5F06D51C120</string>
 			<string>touchbar:DDDC3AC2-5B8D-4DEF-9C24-D9CBECBFEC36</string>
 			<string>touchbar:A92D10B3-6FD0-4E51-B031-526529FE90EC</string>
@@ -343,7 +398,7 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>530 476 620 392 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>992 130 682 567 0 0 1680 1027 </string>
+	<string>191 124 644 552 0 0 1680 1027 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -2615,11 +2670,11 @@
 	</array>
 	<key>NoSyncAllAppVersions</key>
 	<array>
-		<string>3.3.7beta1</string>
+		<string>3.3.6</string>
 		<string>3.3.5beta3</string>
 		<string>3.3.7beta2</string>
 		<string>3.3.4</string>
-		<string>3.3.6</string>
+		<string>3.3.7beta1</string>
 	</array>
 	<key>NoSyncBFPFavorites</key>
 	<array>
@@ -2653,7 +2708,7 @@
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1680, 1050}}</string>
 		<key>topLeft</key>
-		<string>{44, 903}</string>
+		<string>{283, 1008}</string>
 	</dict>
 	<key>NoSyncHaveUsedCopyMode</key>
 	<true/>
@@ -2664,7 +2719,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>1B480254-E265-41B7-98EA-0689375CEC49</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>133</integer>
+	<integer>142</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -3503,7 +3558,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-10-25T22:05:32Z</date>
+	<date>2019-10-27T23:57:47Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
@@ -3518,6 +3573,10 @@
 	<true/>
 	<key>SuppressRestartAnnouncement</key>
 	<true/>
+	<key>SwitchPaneModifier</key>
+	<integer>5</integer>
+	<key>SwitchWindowModifier</key>
+	<integer>9</integer>
 	<key>TabStyleWithAutomaticOption</key>
 	<integer>5</integer>
 	<key>TerminalMargin</key>
@@ -4907,7 +4966,7 @@
 				<key>Has Toolbelt</key>
 				<false/>
 				<key>Height</key>
-				<real>567</real>
+				<real>617</real>
 				<key>Hide After Opening</key>
 				<false/>
 				<key>Hiding Toolbelt Should Resize Window</key>
@@ -5306,7 +5365,7 @@
 												<real>0.94999998809999997</real>
 											</dict>
 											<key>Guid</key>
-											<string>75202BB5-4BA8-48DD-952C-0B9C25EC3AE8</string>
+											<string>AC8CBEC0-7532-4EE4-A712-9F34E6811E78</string>
 											<key>Has Hotkey</key>
 											<false/>
 											<key>Horizontal Spacing</key>
@@ -5721,37 +5780,9 @@
 											<string>alice</string>
 										</dict>
 										<key>Columns</key>
-										<integer>84</integer>
+										<integer>91</integer>
 										<key>Commands</key>
 										<array>
-											<string>e</string>
-											<string>hub clone sethrfore/homebrew-r-srf</string>
-											<string>cd homebrew-r-srf</string>
-											<string>e</string>
-											<string>cd</string>
-											<string>brew install neovim vim</string>
-											<string>cd github/rileytwo/homebrew-r-srf</string>
-											<string>nvim r.rb</string>
-											<string>cd</string>
-											<string>pyenv</string>
-											<string>pvs</string>
-											<string>cd github/rileytwo/homebrew-r-srf</string>
-											<string>nvim r.rb</string>
-											<string>brew install ~/github/rileytwo/homebrew-r-srf/r.rb --verbose</string>
-											<string>cd</string>
-											<string>zprof | head -n 10</string>
-											<string>brew update &amp;&amp; brew upgrade &amp;&amp; brew cask upgrade --no-quarantine</string>
-											<string>brew update --verbose &amp;&amp; brew upgrade &amp;&amp; brew cask upgrade --no-quarantine</string>
-											<string>brew cask install energybar --no-quarantine</string>
-											<string>brew cask install mtmr --no-quarantine</string>
-											<string>cd github/rileytwo/daRkStudio</string>
-											<string>ln -sf /Users/riley/github/rileytwo/daRkStudio/index.htm /Applications/RStudio.app/Contents/Resources/www/index.htm</string>
-											<string>ln -sf /Users/riley/github/rileytwo/daRkStudio/custom_styles.css /Applications/RStudio.app/Contents/Resources/www/custom_styles.css</string>
-											<string>brew cask remove vscodium --force</string>
-											<string>brew cask install vscodium --no-quarantine</string>
-											<string>git add custom_styles.css</string>
-											<string>gc -m 'add proper coloring to "Packages ... are required..."'</string>
-											<string>gup</string>
 											<string>gp</string>
 											<string>cd</string>
 											<string>z darks</string>
@@ -5824,39 +5855,37 @@
 											<string>git commit -m 'update bookmarks'</string>
 											<string>gp</string>
 											<string>cd</string>
+											<string>vimr .config/nvim/init.vim</string>
+											<string>bat .config/nvim/init.vim</string>
+											<string>nvim .config/nvim/init.vim</string>
+											<string>vimr .config/nvim/init.vim</string>
+											<string>vimr .zshrc</string>
+											<string>vimr .zshrc</string>
+											<string>brew cask install vimr</string>
+											<string>rm /usr/local/bin/vimr</string>
+											<string>brew cask install vimr</string>
+											<string>cd .dot</string>
+											<string>gs</string>
+											<string>git add .config/nvim/init.vim</string>
+											<string>git commit -m 'fix odd issues in conflict with vimr appearance'</string>
+											<string>gp</string>
+											<string>z scsh</string>
+											<string>gs</string>
+											<string>gup</string>
+											<string>alias | grep -i "^g"</string>
+											<string>alias | grep -i "^g" | grep -i "check"</string>
+											<string>gcm</string>
+											<string>cd</string>
+											<string>nvim .aliases</string>
+											<string>cd .dot</string>
+											<string>gs</string>
+											<string>git add .config/zsh/.aliases</string>
+											<string>git commit -m 'remove folder aliases, alias gcu=git checkout upstream'</string>
+											<string>gp</string>
+											<string>cd</string>
 										</array>
 										<key>Directories</key>
 										<array>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley/github/rileytwo/homebrew-r-srf</string>
-											<string>/Users/riley/github/rileytwo/homebrew-r-srf</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley/github/rileytwo/homebrew-r-srf</string>
-											<string>/Users/riley/github/rileytwo/homebrew-r-srf</string>
-											<string>/Users/riley/github/rileytwo/homebrew-r-srf</string>
-											<string>/Users/riley/github/rileytwo/homebrew-r-srf</string>
-											<string>/Users/riley/github/rileytwo/homebrew-r-srf</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley/github/rileytwo/daRkStudio</string>
-											<string>/Users/riley/github/rileytwo/daRkStudio</string>
-											<string>/Users/riley/github/rileytwo/daRkStudio</string>
-											<string>/Users/riley/github/rileytwo/daRkStudio</string>
-											<string>/Users/riley/github/rileytwo/daRkStudio</string>
-											<string>/Users/riley/github/rileytwo/daRkStudio</string>
-											<string>/Users/riley/github/rileytwo/daRkStudio</string>
-											<string>/Users/riley/github/rileytwo/daRkStudio</string>
-											<string>/Users/riley/github/rileytwo/daRkStudio</string>
-											<string>/Users/riley</string>
 											<string>/Users/riley/github/rileytwo/daRkStudio</string>
 											<string>/Users/riley/github/rileytwo/daRkStudio</string>
 											<string>/Users/riley/github/rileytwo/daRkStudio</string>
@@ -5922,6 +5951,36 @@
 											<string>/Users/riley/github</string>
 											<string>/Users/riley/github</string>
 											<string>/Users/riley</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/github/rileytwo/scsh</string>
+											<string>/Users/riley/github/rileytwo/scsh</string>
+											<string>/Users/riley/github/rileytwo/scsh</string>
+											<string>/Users/riley/github/rileytwo/scsh</string>
+											<string>/Users/riley/github/rileytwo/scsh</string>
+											<string>/Users/riley/github/rileytwo/scsh</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley/.dot</string>
 											<string>/Users/riley/.dot</string>
 											<string>/Users/riley/.dot</string>
 											<string>/Users/riley/.dot</string>
@@ -5938,6 +5997,8 @@
 											<key>riley@rmbp</key>
 											<string>zsh</string>
 											<key>riley@rxmbp</key>
+											<string>zsh</string>
+											<key>riley@rxmbp.local</key>
 											<string>zsh</string>
 										</dict>
 										<key>Hosts</key>
@@ -6364,181 +6425,181 @@
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
@@ -6558,7 +6619,7 @@
 											<string>Shell Launcher</string>
 										</dict>
 										<key>Rows</key>
-										<integer>30</integer>
+										<integer>33</integer>
 										<key>Session GUID</key>
 										<string>0CD31097-3AC9-4EE1-8328-4C7862D8FD09</string>
 										<key>Shell Integration Ever Used</key>
@@ -6577,9 +6638,9 @@
 									<key>frame</key>
 									<dict>
 										<key>height</key>
-										<real>529</real>
+										<real>579</real>
 										<key>width</key>
-										<real>682</real>
+										<real>732</real>
 										<key>x</key>
 										<real>0.0</real>
 										<key>y</key>
@@ -6592,9 +6653,9 @@
 							<key>frame</key>
 							<dict>
 								<key>height</key>
-								<real>529</real>
+								<real>579</real>
 								<key>width</key>
-								<real>682</real>
+								<real>732</real>
 								<key>x</key>
 								<real>0.0</real>
 								<key>y</key>
@@ -6626,37 +6687,37 @@
 					<array>
 						<dict>
 							<key>heightAsFraction</key>
-							<real>0.16192170818505339</real>
+							<real>0.14869281045751634</real>
 							<key>name</key>
 							<string>Actions</string>
 						</dict>
 						<dict>
 							<key>heightAsFraction</key>
-							<real>0.21174377224199289</real>
+							<real>0.19444444444444445</real>
 							<key>name</key>
 							<string>Profiles</string>
 						</dict>
 						<dict>
 							<key>heightAsFraction</key>
-							<real>0.21174377224199289</real>
+							<real>0.19444444444444445</real>
 							<key>name</key>
 							<string>Recent Directories</string>
 						</dict>
 						<dict>
 							<key>heightAsFraction</key>
-							<real>0.16192170818505339</real>
+							<real>0.14869281045751634</real>
 							<key>name</key>
 							<string>Captured Output</string>
 						</dict>
 						<dict>
 							<key>heightAsFraction</key>
-							<real>0.21174377224199289</real>
+							<real>0.19444444444444445</real>
 							<key>name</key>
 							<string>Command History</string>
 						</dict>
 						<dict>
 							<key>heightAsFraction</key>
-							<real>0.040925266903914591</real>
+							<real>0.11928104575163399</real>
 							<key>name</key>
 							<string>Jobs</string>
 						</dict>
@@ -6665,13 +6726,13 @@
 				<key>Use Transparency</key>
 				<false/>
 				<key>Width</key>
-				<real>682</real>
+				<real>732</real>
 				<key>Window Type</key>
 				<integer>13</integer>
 				<key>X Origin</key>
-				<real>992</real>
+				<real>942</real>
 				<key>Y Origin</key>
-				<real>130</real>
+				<real>305</real>
 			</dict>
 		</array>
 	</dict>
