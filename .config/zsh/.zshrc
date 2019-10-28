@@ -248,6 +248,9 @@ fi
 [[ -d "${HOME}/.cargo" ]] \
   && export PATH="${HOME}/.cargo/bin:$PATH"
 
+[[ -d "${HOME}/.R/library/rt/bin" ]] \
+  && export PATH="${HOME}/.R/library/bin:$PATH"
+
 [[ -d "${HOME}/.pyenv" ]] \
   && export PATH="${HOME}/.pyenv/bin:$PATH"
 
