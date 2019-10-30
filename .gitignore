@@ -1,4 +1,8 @@
 ## // general
+private/
+.private/
+*.private
+
 *.DS_Store
 history
 
