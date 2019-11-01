@@ -1027,7 +1027,7 @@
 			<key>Non-ASCII Ligatures</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>LigaSF-Mono-Regular-Regular 13</string>
+			<string>SFL-Regular 13</string>
 			<key>Only The Default BG Color Uses Transparency</key>
 			<false/>
 			<key>Open Toolbelt</key>
@@ -2689,10 +2689,10 @@
 	</array>
 	<key>NoSyncBFPRecents</key>
 	<array>
+		<string>Helvetica</string>
 		<string>SF Mono</string>
 		<string>Fira Code</string>
 		<string>SourceCodePro+Powerline+Awesome Regular</string>
-		<string>Monaco</string>
 	</array>
 	<key>NoSyncCommandHistoryHasEverBeenUsed</key>
 	<true/>
@@ -2721,7 +2721,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>1B480254-E265-41B7-98EA-0689375CEC49</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>162</integer>
+	<integer>164</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -5367,7 +5367,7 @@
 												<real>0.94999998809999997</real>
 											</dict>
 											<key>Guid</key>
-											<string>6216CC99-D33F-47B3-9D20-6053C9C245B0</string>
+											<string>83F65B7B-559C-4168-BFEF-7BA00D41871F</string>
 											<key>Has Hotkey</key>
 											<false/>
 											<key>Horizontal Spacing</key>
@@ -5622,7 +5622,7 @@
 											<key>Non-ASCII Ligatures</key>
 											<true/>
 											<key>Normal Font</key>
-											<string>LigaSF-Mono-Regular-Regular 13</string>
+											<string>SFL-Regular 13</string>
 											<key>Only The Default BG Color Uses Transparency</key>
 											<false/>
 											<key>Open Toolbelt</key>
@@ -5888,8 +5888,6 @@
 										</array>
 										<key>Directories</key>
 										<array>
-											<string>/Users/riley/github/rileytwo/daRkStudio</string>
-											<string>/Users/riley/github/rileytwo/daRkStudio</string>
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
@@ -5985,6 +5983,8 @@
 											<string>/Users/riley/.dot</string>
 											<string>/Users/riley/.dot</string>
 											<string>/Users/riley/.dot</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
@@ -6403,13 +6403,13 @@
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
