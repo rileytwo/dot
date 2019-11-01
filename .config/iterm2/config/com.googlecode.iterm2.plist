@@ -2670,11 +2670,11 @@
 	</array>
 	<key>NoSyncAllAppVersions</key>
 	<array>
-		<string>3.3.7beta1</string>
+		<string>3.3.6</string>
 		<string>3.3.5beta3</string>
 		<string>3.3.7beta2</string>
 		<string>3.3.4</string>
-		<string>3.3.6</string>
+		<string>3.3.7beta1</string>
 	</array>
 	<key>NoSyncBFPFavorites</key>
 	<array>
@@ -2689,10 +2689,10 @@
 	</array>
 	<key>NoSyncBFPRecents</key>
 	<array>
+		<string>SF Mono</string>
 		<string>Hack Nerd Font</string>
 		<string>Cascadia Code</string>
 		<string>FuraCode Nerd Font</string>
-		<string>Helvetica</string>
 	</array>
 	<key>NoSyncCommandHistoryHasEverBeenUsed</key>
 	<true/>
@@ -2721,7 +2721,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>1B480254-E265-41B7-98EA-0689375CEC49</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>167</integer>
+	<integer>168</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -3560,7 +3560,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-10-30T22:44:33Z</date>
+	<date>2019-11-01T20:47:18Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
@@ -5367,7 +5367,7 @@
 												<real>0.94999998809999997</real>
 											</dict>
 											<key>Guid</key>
-											<string>2C550A1B-929F-43E9-BF28-E64967305093</string>
+											<string>D5A80DE3-9B95-4C0C-9D7E-ECD6CBE529C9</string>
 											<key>Has Hotkey</key>
 											<false/>
 											<key>Horizontal Spacing</key>
@@ -5785,35 +5785,6 @@
 										<integer>91</integer>
 										<key>Commands</key>
 										<array>
-											<string>gp</string>
-											<string>cd</string>
-											<string>brew cask install touchdock</string>
-											<string>gothub download \</string>
-											<string>gothub download \</string>
-											<string>unzip TouchDock.app.zip</string>
-											<string>xattr -d -r com.apple.quarantine /Applications/TouchDock.app</string>
-											<string>rm -rf Sites</string>
-											<string>e Sites</string>
-											<string>e</string>
-											<string>tag -a 'hidden' .config/git/*</string>
-											<string>tag -a 'hidden' .config/zsh/*</string>
-											<string>tag -a 'files' Sites</string>
-											<string>ping -c 5 https://github.com</string>
-											<string>ping -c 5 https://www.github.com</string>
-											<string>ping -c 5 https://www.reddit.com</string>
-											<string>uti.sh /etc/resolv.conf</string>
-											<string>spctl -vvv --assess /Applications/SourceCodeSyntaxHighlight.app</string>
-											<string>spctl -vvv --assess Library/Developer/Xcode/DerivedData/SourceCodeSyntaxHighlight-ckuicwhxbpfnqwgifirnsilfftzy/Build/Products/Release/SourceCodeSyntaxHighlight.app</string>
-											<string>codesign --deep --force --verify -s "Developer ID Application: Curt Tate-Roach (7MGU4K38T3)" /Applications/SourceCodeSyntaxHighlight.app</string>
-											<string>spctl -vvv --assess /Applications/SourceCodeSyntaxHighlight.app</string>
-											<string>rm -rf /Applications/SourceCodeSyntaxHighlight.app</string>
-											<string>rm -rf ~/Library/Developer/Xcode/DerivedData/SourceCodeSyntaxHighlight-ckuicwhxbpfnqwgifirnsilfftzy/Build/Products/Release</string>
-											<string>echo /usr/local/bin/zsh | sudo tee -a /etc/shells &gt; /dev/null</string>
-											<string>cat /etc/shells</string>
-											<string>echo /usr/local/bin/bash | sudo tee -a /etc/shells &gt; /dev/null</string>
-											<string>/bin/zsh --version</string>
-											<string>/usr/local/bin/zsh --version</string>
-											<string>uti.sh /etc/find.codes</string>
 											<string>uti.sh /etc/locate.rc</string>
 											<string>uti.sh /etc/cups/cups-files.conf</string>
 											<string>uti.sh /etc/cups/cups-files.conf.default</string>
@@ -5885,40 +5856,38 @@
 											<string>cd</string>
 											<string>cd .dot</string>
 											<string>cd</string>
+											<string>cd .dot</string>
+											<string>gs</string>
+											<string>git add .config/iterm2/config/com.googlecode.iterm2.plist &amp;&amp; gc -m 'iterm2 config'</string>
+											<string>gp</string>
+											<string>cd</string>
+											<string>cd /applications/xcode.app</string>
+											<string>fzf -e</string>
+											<string>fzf -e</string>
+											<string>cd</string>
+											<string>brew cask install clean-my-mac-x</string>
+											<string>brew search clean</string>
+											<string>brew cask install cleanmymac</string>
+											<string>brew cask info macclean preferencecleaner</string>
+											<string>brew cask install preferencecleaner --no-quarantine</string>
+											<string>brew cask uninstall preferencecleaner</string>
+											<string>trash -e</string>
+											<string>brew search steam</string>
+											<string>brew info archi-steam-farm</string>
+											<string>brew cask info steam steamcmd</string>
+											<string>brew cask install steam</string>
+											<string>brew cask install steam --no-quarantine</string>
+											<string>brew cask home steam</string>
+											<string>brew cask rm steam</string>
+											<string>brew cleanup -s</string>
+											<string>brew cask remove qlstephen</string>
+											<string>brew cask install qlstephen --no-quarantine</string>
+											<string>qlmanage -r cache &amp;&amp; qlmanage -r</string>
+											<string>brew cask install bettertouchtool --no-quarantine</string>
+											<string>qlmanage -r cache &amp;&amp; qlmanage -r</string>
 										</array>
 										<key>Directories</key>
 										<array>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley/github/rileytwo/scsh</string>
-											<string>/Users/riley/github/rileytwo/scsh</string>
-											<string>/Users/riley/github/rileytwo/scsh</string>
-											<string>/Users/riley/github/rileytwo/scsh</string>
-											<string>/Users/riley/github/rileytwo/scsh</string>
-											<string>/Users/riley/github/rileytwo/scsh</string>
 											<string>/Users/riley/github/rileytwo/scsh</string>
 											<string>/Users/riley/github/rileytwo</string>
 											<string>/Users/riley/github/rileytwo</string>
@@ -5987,12 +5956,43 @@
 											<string>/Users/riley/.dot</string>
 											<string>/Users/riley/.dot</string>
 											<string>/Users/riley/.dot</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley</string>
+											<string>/applications/xcode.app</string>
+											<string>/applications/xcode.app</string>
+											<string>/applications/xcode.app</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
 											<string>/Users/riley</string>
 										</array>
 										<key>Environment</key>
 										<dict>
 											<key>PWD</key>
-											<string>/Users/riley/.dot</string>
+											<string>/Users/riley</string>
 										</dict>
 										<key>Hostname to Shell</key>
 										<dict>
@@ -6163,187 +6163,187 @@
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
