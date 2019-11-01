@@ -16,10 +16,8 @@
     "editor.acceptSuggestionOnEnter": "smart",
     "editor.suggest.localityBonus": true,
     "editor.tabCompletion": "onlySnippets",
-    "editor.fontSize": 13,
     "editor.copyWithSyntaxHighlighting": false,
     "editor.fontLigatures": true,
-    "editor.lineHeight": 17,
     "editor.formatOnPaste": true,
     "editor.formatOnSave": true,
     "editor.formatOnType": false,
@@ -82,7 +80,7 @@
     "files.trimTrailingWhitespace": true,
     "code-runner.saveFileBeforeRun": true,
     "terminal.integrated.fontSize": 13,
-    "terminal.integrated.fontFamily": "FuraCodeNerdFontComplete-Retina, Menlo, Monaco, 'Courier New', monospace",
+    "terminal.integrated.fontFamily": "SFL-Regular, FuraCodeNerdFontComplete-Retina, Menlo, Monaco, 'Courier New', monospace",
     "files.defaultLanguage": "txt",
     "extensions.autoUpdate": false,
     "extensions.ignoreRecommendations": true,
@@ -133,7 +131,7 @@
     "r.rterm.option": [],
     "r.rterm.mac": "/Users/riley/.pyenv/shims/radian",
 
-    "editor.fontFamily": "\"FuraCodeNerdFontComplete-Retina\", \"FuraCode Retina\", \"FuraCode NF Retina\", \"FuraCode NF\", \"Fira Code Retina\", \"SFMono-Regular\", Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontFamily": "\"SFL-Regular\", \"FuraCodeNerdFontComplete-Retina\", \"FuraCode Retina\", \"FuraCode NF Retina\", \"FuraCode NF\", \"Fira Code Retina\", \"SFMono-Regular\", Menlo, Monaco, 'Courier New', monospace",
     "workbench.enableExperiments": false,
     "workbench.settings.enableNaturalLanguageSearch": false,
     "vsicons.dontShowNewVersionMessage": true,
@@ -190,5 +188,7 @@
     "editor.cursorStyle": "underline",
     "[plaintext]": {
 
-    }
+    },
+    "editor.fontSize": 13,
+    "editor.lineHeight": 17
 }
