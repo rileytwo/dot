@@ -2689,10 +2689,10 @@
 	</array>
 	<key>NoSyncBFPRecents</key>
 	<array>
+		<string>Helvetica</string>
 		<string>SF Mono</string>
 		<string>Hack Nerd Font</string>
 		<string>Cascadia Code</string>
-		<string>FuraCode Nerd Font</string>
 	</array>
 	<key>NoSyncCommandHistoryHasEverBeenUsed</key>
 	<true/>
@@ -2721,7 +2721,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>1B480254-E265-41B7-98EA-0689375CEC49</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>168</integer>
+	<integer>170</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -5367,7 +5367,7 @@
 												<real>0.94999998809999997</real>
 											</dict>
 											<key>Guid</key>
-											<string>D5A80DE3-9B95-4C0C-9D7E-ECD6CBE529C9</string>
+											<string>A4314850-1A9B-4FC4-A852-0E838E51A4EC</string>
 											<key>Has Hotkey</key>
 											<false/>
 											<key>Horizontal Spacing</key>
@@ -5785,15 +5785,6 @@
 										<integer>91</integer>
 										<key>Commands</key>
 										<array>
-											<string>uti.sh /etc/locate.rc</string>
-											<string>uti.sh /etc/cups/cups-files.conf</string>
-											<string>uti.sh /etc/cups/cups-files.conf.default</string>
-											<string>uti.sh /etc/cups/cupsd.conf.pre-update</string>
-											<string>rm -rf /Applications/SourceCodeSyntaxHighlight.app</string>
-											<string>rm -rf ~/Library/Developer/Xcode/DerivedData/SourceCodeSyntaxHighlight-ckuicwhxbpfnqwgifirnsilfftzy/Build/Products/Release</string>
-											<string>z scsh</string>
-											<string>gs</string>
-											<string>git add Application/Info.plist</string>
 											<string>git add QLExtension/Info.plist</string>
 											<string>gc -m 'add previews for .conf, .config, .default, .rc, and .pre-update'</string>
 											<string>gp</string>
@@ -5885,20 +5876,18 @@
 											<string>qlmanage -r cache &amp;&amp; qlmanage -r</string>
 											<string>brew cask install bettertouchtool --no-quarantine</string>
 											<string>qlmanage -r cache &amp;&amp; qlmanage -r</string>
+											<string>cd .dot</string>
+											<string>gs</string>
+											<string>cd</string>
+											<string>cd github/Ligaturizer</string>
+											<string>gs</string>
+											<string>fontforge -lang=py ligaturize.py --help</string>
+											<string>cd</string>
+											<string>cd .dot</string>
+											<string>cd</string>
 										</array>
 										<key>Directories</key>
 										<array>
-											<string>/Users/riley/github/rileytwo/scsh</string>
-											<string>/Users/riley/github/rileytwo</string>
-											<string>/Users/riley/github/rileytwo</string>
-											<string>/Users/riley/github/rileytwo/dockutil</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley/github/rileytwo/dockutil</string>
-											<string>/Users/riley/github/rileytwo/dockutil</string>
-											<string>/Users/riley/github/rileytwo/dockutil</string>
-											<string>/Users/riley/github/rileytwo/dockutil</string>
 											<string>/Users/riley/github/rileytwo</string>
 											<string>/Users/riley/github/rileytwo</string>
 											<string>/Users/riley/github</string>
@@ -5987,6 +5976,17 @@
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley/github/Ligaturizer</string>
+											<string>/Users/riley/github/Ligaturizer</string>
+											<string>/Users/riley/github/Ligaturizer</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley/.dot</string>
 											<string>/Users/riley</string>
 										</array>
 										<key>Environment</key>
@@ -6097,67 +6097,67 @@
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
