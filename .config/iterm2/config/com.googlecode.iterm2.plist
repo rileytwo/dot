@@ -1021,7 +1021,7 @@
 			<key>Name</key>
 			<string>Alice</string>
 			<key>Non Ascii Font</key>
-			<string>FuraCodeNerdFontComplete-Retina 13</string>
+			<string>HackNerdFontComplete-Regular 13</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Non-ASCII Ligatures</key>
@@ -2670,11 +2670,11 @@
 	</array>
 	<key>NoSyncAllAppVersions</key>
 	<array>
-		<string>3.3.6</string>
+		<string>3.3.7beta1</string>
 		<string>3.3.5beta3</string>
 		<string>3.3.7beta2</string>
 		<string>3.3.4</string>
-		<string>3.3.7beta1</string>
+		<string>3.3.6</string>
 	</array>
 	<key>NoSyncBFPFavorites</key>
 	<array>
@@ -2689,10 +2689,10 @@
 	</array>
 	<key>NoSyncBFPRecents</key>
 	<array>
+		<string>Hack Nerd Font</string>
+		<string>Cascadia Code</string>
+		<string>FuraCode Nerd Font</string>
 		<string>Helvetica</string>
-		<string>SF Mono</string>
-		<string>Fira Code</string>
-		<string>SourceCodePro+Powerline+Awesome Regular</string>
 	</array>
 	<key>NoSyncCommandHistoryHasEverBeenUsed</key>
 	<true/>
@@ -2721,7 +2721,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>1B480254-E265-41B7-98EA-0689375CEC49</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>164</integer>
+	<integer>167</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -5367,7 +5367,7 @@
 												<real>0.94999998809999997</real>
 											</dict>
 											<key>Guid</key>
-											<string>83F65B7B-559C-4168-BFEF-7BA00D41871F</string>
+											<string>2C550A1B-929F-43E9-BF28-E64967305093</string>
 											<key>Has Hotkey</key>
 											<false/>
 											<key>Horizontal Spacing</key>
@@ -5616,7 +5616,7 @@
 											<key>Name</key>
 											<string>Alice</string>
 											<key>Non Ascii Font</key>
-											<string>FuraCodeNerdFontComplete-Retina 13</string>
+											<string>HackNerdFontComplete-Regular 13</string>
 											<key>Non-ASCII Anti Aliased</key>
 											<true/>
 											<key>Non-ASCII Ligatures</key>
@@ -5787,11 +5787,6 @@
 										<array>
 											<string>gp</string>
 											<string>cd</string>
-											<string>z darks</string>
-											<string>git add custom_styles.css</string>
-											<string>gc -m 'fix pesky fonts not previously fixed'</string>
-											<string>gp</string>
-											<string>cd</string>
 											<string>brew cask install touchdock</string>
 											<string>gothub download \</string>
 											<string>gothub download \</string>
@@ -5885,6 +5880,11 @@
 											<string>git commit -m 'remove folder aliases, alias gcu=git checkout upstream'</string>
 											<string>gp</string>
 											<string>cd</string>
+											<string>cd .dot</string>
+											<string>gs</string>
+											<string>cd</string>
+											<string>cd .dot</string>
+											<string>cd</string>
 										</array>
 										<key>Directories</key>
 										<array>
@@ -5913,15 +5913,6 @@
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
 											<string>/Users/riley/github/rileytwo/scsh</string>
 											<string>/Users/riley/github/rileytwo/scsh</string>
 											<string>/Users/riley/github/rileytwo/scsh</string>
@@ -5987,12 +5978,21 @@
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
 											<string>/Users/riley</string>
 										</array>
 										<key>Environment</key>
 										<dict>
 											<key>PWD</key>
-											<string>/Users/riley</string>
+											<string>/Users/riley/.dot</string>
 										</dict>
 										<key>Hostname to Shell</key>
 										<dict>
@@ -6349,55 +6349,55 @@
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
