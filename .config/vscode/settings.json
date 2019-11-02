@@ -131,7 +131,7 @@
     "r.rterm.option": [],
     "r.rterm.mac": "/Users/riley/.pyenv/shims/radian",
 
-    "editor.fontFamily": "\"SFL-Regular\", \"FuraCodeNerdFontComplete-Retina\", \"FuraCode Retina\", \"FuraCode NF Retina\", \"FuraCode NF\", \"Fira Code Retina\", \"SFMono-Regular\", Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontFamily": "\"SFL Mono\", \"FuraCodeNerdFontComplete-Retina\", \"FuraCode Retina\", \"FuraCode NF Retina\", \"FuraCode NF\", \"Fira Code Retina\", \"SFMono-Regular\", Menlo, Monaco, 'Courier New', monospace",
     "workbench.enableExperiments": false,
     "workbench.settings.enableNaturalLanguageSearch": false,
     "vsicons.dontShowNewVersionMessage": true,
