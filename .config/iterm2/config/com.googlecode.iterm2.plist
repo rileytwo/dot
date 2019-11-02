@@ -398,7 +398,7 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>530 476 620 392 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>992 155 682 567 0 0 1680 1027 </string>
+	<string>981 155 693 567 0 0 1680 1027 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -2209,7 +2209,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>1B480254-E265-41B7-98EA-0689375CEC49</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>178</integer>
+	<integer>180</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -3910,11 +3910,16 @@
 											<string>alice</string>
 										</dict>
 										<key>Columns</key>
-										<integer>84</integer>
+										<integer>86</integer>
 										<key>Commands</key>
 										<array>
 											<string>brew cask install font-forge</string>
 											<string>brew cask install fontforge</string>
+											<string>cd .dot</string>
+											<string>gs</string>
+											<string>git add .config/iterm2/config/com.googlecode.iterm2.plist &amp;&amp; gc -m 'iterm2 config'</string>
+											<string>gp</string>
+											<string>cd</string>
 										</array>
 										<key>Directories</key>
 										<array>
@@ -3922,11 +3927,20 @@
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley</string>
 										</array>
 										<key>Environment</key>
 										<dict>
 											<key>PWD</key>
-											<string>/Users/riley</string>
+											<string>/Users/riley/.dot</string>
 										</dict>
 										<key>Hostname to Shell</key>
 										<dict>
@@ -3935,6 +3949,60 @@
 										</dict>
 										<key>Hosts</key>
 										<array>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
 											<dict>
 												<key>Host name</key>
 												<string>rxmbp.local</string>
@@ -3971,10 +4039,8 @@
 										</dict>
 										<key>Program</key>
 										<dict>
-											<key>Command</key>
-											<string>login -fqp "riley"</string>
 											<key>Type</key>
-											<string>Command</string>
+											<string>Shell Launcher</string>
 										</dict>
 										<key>Rows</key>
 										<integer>32</integer>
@@ -3989,7 +4055,7 @@
 										<key>Working Directory</key>
 										<string>/Users/riley</string>
 										<key>Working Directory Poller Disabled</key>
-										<false/>
+										<true/>
 									</dict>
 									<key>View Type</key>
 									<string>SessionView</string>
@@ -3998,7 +4064,7 @@
 										<key>height</key>
 										<real>529</real>
 										<key>width</key>
-										<real>682</real>
+										<real>693</real>
 										<key>x</key>
 										<real>0.0</real>
 										<key>y</key>
@@ -4013,7 +4079,7 @@
 								<key>height</key>
 								<real>529</real>
 								<key>width</key>
-								<real>682</real>
+								<real>693</real>
 								<key>x</key>
 								<real>0.0</real>
 								<key>y</key>
@@ -4045,37 +4111,37 @@
 					<array>
 						<dict>
 							<key>heightAsFraction</key>
-							<real>0.21064814814814814</real>
+							<real>0.16192170818505339</real>
 							<key>name</key>
 							<string>Actions</string>
 						</dict>
 						<dict>
 							<key>heightAsFraction</key>
-							<real>0.27546296296296297</real>
+							<real>0.21174377224199289</real>
 							<key>name</key>
 							<string>Profiles</string>
 						</dict>
 						<dict>
 							<key>heightAsFraction</key>
-							<real>0.27546296296296297</real>
+							<real>0.21174377224199289</real>
 							<key>name</key>
 							<string>Recent Directories</string>
 						</dict>
 						<dict>
 							<key>heightAsFraction</key>
-							<real>0.21064814814814814</real>
+							<real>0.16192170818505339</real>
 							<key>name</key>
 							<string>Captured Output</string>
 						</dict>
 						<dict>
 							<key>heightAsFraction</key>
-							<real>0.27546296296296297</real>
+							<real>0.21174377224199289</real>
 							<key>name</key>
 							<string>Command History</string>
 						</dict>
 						<dict>
 							<key>heightAsFraction</key>
-							<real>-0.24768518518518517</real>
+							<real>0.040925266903914591</real>
 							<key>name</key>
 							<string>Jobs</string>
 						</dict>
@@ -4084,11 +4150,11 @@
 				<key>Use Transparency</key>
 				<false/>
 				<key>Width</key>
-				<real>682</real>
+				<real>693</real>
 				<key>Window Type</key>
 				<integer>13</integer>
 				<key>X Origin</key>
-				<real>992</real>
+				<real>981</real>
 				<key>Y Origin</key>
 				<real>155</real>
 			</dict>
