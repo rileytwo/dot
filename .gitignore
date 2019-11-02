@@ -1,4 +1,5 @@
-## // general
+### general
+
 private/
 .private/
 *.private
@@ -40,19 +41,18 @@ antibody/
 # .config/alfred/
 *.alfredpreferences
 
+# .config/fontforge
+fontforge/
 
 # .config/hammerspoon
 spoons/
-
 
 # .config/karabiner
 configstore/
 automatic_backups/
 
-
 # .config/hub
 hub
-
 
 # .config/{vim,vifm,nvim}
 **/vifm/colors/
@@ -64,11 +64,9 @@ log
 **/nvim/pack/
 *.netrwhist
 
-
 # .config/powershell
 #*.ps1
 NuGet/
-
 
 
 # // Windows
