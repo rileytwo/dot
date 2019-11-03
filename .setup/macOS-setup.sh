@@ -5,21 +5,19 @@
 OS=''
 
 function get_os() {
+  shopt -s extglob
   case "$OSTYPE" in
-    [Dd]arwin)
+    [Dd]arwin*)
       echo "Let's set up this Mac!"
       OS="mac"
-      exit 0
       ;;
-    [Ll]inux)
+    [Ll]inux*)
       echo "WOO! Linux!"
       OS="linux"
-      exit 0
       ;;
-    [Ww]indows)
+    [Ww]indows*)
       echo "huh?"
       OS="windows"
-      exit 0
       ;;
     *)
       echo "i have no idea what this is"
@@ -30,11 +28,13 @@ function get_os() {
 
 if [[ "$OS" == "mac" ]]; then
   echo "Quitting System Preferences..."
+  echo ""
   osascript -e 'tell application "System Preferences" to quit'
 fi
 
 # ask for administrator password
 echo "Please enter your password"
+echo ""
 sudo -v
 
 # keep-alive: update exiting `sudo` time stamp until script is finished
@@ -51,7 +51,7 @@ function check_brew() {
   if [[ "$(command -v brew)" == "" ]]; then
     retry=0
     max_retry=10
-    
+
     while [ "$retry" -lt "$max_retry" ]; do
       read -r -p \
         "Homebew is not installed. Would you like to install it now? (y/N)" choice;
@@ -78,29 +78,36 @@ function check_brew() {
           fi
           ;;
 
-      esac
-    done
-  
-  else
-    echo "Homebrew is installed!"
-    brew analytics off
+        esac
+      done
+
+    else
+      echo "Homebrew is installed!"
+      echo ""
+      echo ""
+      brew analytics off
   fi
 }
 
 
 function check_install_dir() {
   echo "Checking for an install directory..."
-  if [[ -d "./install" ]]; then
-    cd './install' || echo "Something went wrong"; 
+  echo ""
+  if [[ -d "./install" || -d "../install" ]]; then
+    cd './install' || cd '../install' || echo "Something went wrong"; 
     echo "Found it!"
+    echo ""
 
     echo "Checking for install scripts..."
+    echo ""
     local install_scripts=('./*')
-    
+
     if [ ${#install_scripts[@]} -eq 0 ]; then
       echo "Didn't find any!"
+      echo ""
     else
       echo "Found some!"
+      echo ""
       printf '%s\n' "${install_scripts[@]}" | sed 's/\.\/install-//g'
       echo ""
 
@@ -108,16 +115,18 @@ function check_install_dir() {
       case "$choice" in
         y | Yes | yes)
           echo "Installing..."
+          echo ""
           ;;
         n | N | No | no)
           echo "Okay! Not installing"
+          echo ""
           ;;
         * )
           echo "Invalid answer. Enter \"y/yes\" or \"N/no\"" && return
           ;;
       esac
     fi
-  
+
   fi
 }
 
@@ -143,7 +152,7 @@ function set_defaults() {
         defaults write com.apple.finder _FXSortFoldersFirst -bool true
         defaults write com.apple.dock show-process-indicators -bool true
         defaults write com.apple.dock scroll-to-open -bool true
-        
+
         # disable "Are you sure you want to open this application?" dialogue
         defaults write com.apple.LaunchServices LSQuarantine -bool false
         ;;
@@ -162,9 +171,5 @@ function set_defaults() {
 
 
 
-check_brew
-check_install_dir
-set_defaults
-
+get_os && check_brew; check_install_dir; set_defaults
 echo "Done!"
-
