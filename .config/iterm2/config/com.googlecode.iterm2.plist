@@ -398,7 +398,7 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>530 476 620 392 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>981 155 693 567 0 0 1680 1027 </string>
+	<string>944 376 724 578 0 0 1680 1027 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -2208,7 +2208,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>1B480254-E265-41B7-98EA-0689375CEC49</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>182</integer>
+	<integer>188</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -3097,7 +3097,7 @@
 				<key>Has Toolbelt</key>
 				<false/>
 				<key>Height</key>
-				<real>567</real>
+				<real>578</real>
 				<key>Hide After Opening</key>
 				<false/>
 				<key>Hiding Toolbelt Should Resize Window</key>
@@ -3496,7 +3496,7 @@
 												<real>0.94999998809999997</real>
 											</dict>
 											<key>Guid</key>
-											<string>7C5D52AD-4C16-4FF3-A809-0D5C09CB1696</string>
+											<string>A0FCCC2C-3AE1-4D7D-9C6B-50143BA1B7A3</string>
 											<key>Has Hotkey</key>
 											<false/>
 											<key>Horizontal Spacing</key>
@@ -3911,7 +3911,7 @@
 											<string>alice</string>
 										</dict>
 										<key>Columns</key>
-										<integer>86</integer>
+										<integer>90</integer>
 										<key>Commands</key>
 										<array>
 											<string>brew cask install font-forge</string>
@@ -3920,6 +3920,15 @@
 											<string>gs</string>
 											<string>git add .config/iterm2/config/com.googlecode.iterm2.plist &amp;&amp; gc -m 'iterm2 config'</string>
 											<string>gp</string>
+											<string>cd</string>
+											<string>zshup.sh</string>
+											<string>nvim .zsh-plugins</string>
+											<string>mv .zsh-plugins .config/zsh/.zsh-plugins</string>
+											<string>cd .dot</string>
+											<string>git add .config/zsh/.zsh-plugins</string>
+											<string>git commit -m 'add zsh-plugins'</string>
+											<string>gp</string>
+											<string>nvim .setup/macOS-setup.sh</string>
 											<string>cd</string>
 										</array>
 										<key>Directories</key>
@@ -3939,6 +3948,17 @@
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley</string>
 										</array>
 										<key>Environment</key>
 										<dict>
@@ -3952,6 +3972,72 @@
 										</dict>
 										<key>Hosts</key>
 										<array>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
 											<dict>
 												<key>Host name</key>
 												<string>rxmbp.local</string>
@@ -4058,7 +4144,7 @@
 											<string>Shell Launcher</string>
 										</dict>
 										<key>Rows</key>
-										<integer>32</integer>
+										<integer>33</integer>
 										<key>Session GUID</key>
 										<string>B9002B3F-963B-485B-8D4F-D9B69ED3F0D4</string>
 										<key>Shell Integration Ever Used</key>
@@ -4077,9 +4163,9 @@
 									<key>frame</key>
 									<dict>
 										<key>height</key>
-										<real>529</real>
+										<real>540</real>
 										<key>width</key>
-										<real>693</real>
+										<real>724</real>
 										<key>x</key>
 										<real>0.0</real>
 										<key>y</key>
@@ -4092,9 +4178,9 @@
 							<key>frame</key>
 							<dict>
 								<key>height</key>
-								<real>529</real>
+								<real>540</real>
 								<key>width</key>
-								<real>693</real>
+								<real>724</real>
 								<key>x</key>
 								<real>0.0</real>
 								<key>y</key>
@@ -4126,37 +4212,37 @@
 					<array>
 						<dict>
 							<key>heightAsFraction</key>
-							<real>0.16192170818505339</real>
+							<real>0.15881326352530542</real>
 							<key>name</key>
 							<string>Actions</string>
 						</dict>
 						<dict>
 							<key>heightAsFraction</key>
-							<real>0.21174377224199289</real>
+							<real>0.20767888307155322</real>
 							<key>name</key>
 							<string>Profiles</string>
 						</dict>
 						<dict>
 							<key>heightAsFraction</key>
-							<real>0.21174377224199289</real>
+							<real>0.20767888307155322</real>
 							<key>name</key>
 							<string>Recent Directories</string>
 						</dict>
 						<dict>
 							<key>heightAsFraction</key>
-							<real>0.16192170818505339</real>
+							<real>0.15881326352530542</real>
 							<key>name</key>
 							<string>Captured Output</string>
 						</dict>
 						<dict>
 							<key>heightAsFraction</key>
-							<real>0.21174377224199289</real>
+							<real>0.20767888307155322</real>
 							<key>name</key>
 							<string>Command History</string>
 						</dict>
 						<dict>
 							<key>heightAsFraction</key>
-							<real>0.040925266903914591</real>
+							<real>0.059336823734729496</real>
 							<key>name</key>
 							<string>Jobs</string>
 						</dict>
@@ -4165,13 +4251,13 @@
 				<key>Use Transparency</key>
 				<false/>
 				<key>Width</key>
-				<real>693</real>
+				<real>724</real>
 				<key>Window Type</key>
 				<integer>13</integer>
 				<key>X Origin</key>
-				<real>981</real>
+				<real>944</real>
 				<key>Y Origin</key>
-				<real>155</real>
+				<real>376</real>
 			</dict>
 		</array>
 	</dict>
