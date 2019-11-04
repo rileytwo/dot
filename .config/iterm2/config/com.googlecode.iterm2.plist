@@ -398,7 +398,7 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>530 476 620 392 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>944 376 724 578 0 0 1680 1027 </string>
+	<string>942 330 732 567 0 0 1680 1027 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -2208,7 +2208,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>1B480254-E265-41B7-98EA-0689375CEC49</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>188</integer>
+	<integer>190</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -3049,7 +3049,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-11-01T20:47:18Z</date>
+	<date>2019-11-04T00:13:58Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
@@ -3097,7 +3097,7 @@
 				<key>Has Toolbelt</key>
 				<false/>
 				<key>Height</key>
-				<real>578</real>
+				<real>567</real>
 				<key>Hide After Opening</key>
 				<false/>
 				<key>Hiding Toolbelt Should Resize Window</key>
@@ -3496,7 +3496,7 @@
 												<real>0.94999998809999997</real>
 											</dict>
 											<key>Guid</key>
-											<string>A0FCCC2C-3AE1-4D7D-9C6B-50143BA1B7A3</string>
+											<string>647561DB-CCED-4E9A-9114-EFB209D8CEC5</string>
 											<key>Has Hotkey</key>
 											<false/>
 											<key>Horizontal Spacing</key>
@@ -3911,7 +3911,7 @@
 											<string>alice</string>
 										</dict>
 										<key>Columns</key>
-										<integer>90</integer>
+										<integer>91</integer>
 										<key>Commands</key>
 										<array>
 											<string>brew cask install font-forge</string>
@@ -3959,6 +3959,8 @@
 											<string>/Users/riley/.dot</string>
 											<string>/Users/riley/.dot</string>
 											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
 										</array>
 										<key>Environment</key>
 										<dict>
@@ -3972,6 +3974,18 @@
 										</dict>
 										<key>Hosts</key>
 										<array>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
 											<dict>
 												<key>Host name</key>
 												<string>rxmbp.local</string>
@@ -4144,7 +4158,7 @@
 											<string>Shell Launcher</string>
 										</dict>
 										<key>Rows</key>
-										<integer>33</integer>
+										<integer>32</integer>
 										<key>Session GUID</key>
 										<string>B9002B3F-963B-485B-8D4F-D9B69ED3F0D4</string>
 										<key>Shell Integration Ever Used</key>
@@ -4163,9 +4177,9 @@
 									<key>frame</key>
 									<dict>
 										<key>height</key>
-										<real>540</real>
+										<real>529</real>
 										<key>width</key>
-										<real>724</real>
+										<real>732</real>
 										<key>x</key>
 										<real>0.0</real>
 										<key>y</key>
@@ -4178,9 +4192,9 @@
 							<key>frame</key>
 							<dict>
 								<key>height</key>
-								<real>540</real>
+								<real>529</real>
 								<key>width</key>
-								<real>724</real>
+								<real>732</real>
 								<key>x</key>
 								<real>0.0</real>
 								<key>y</key>
@@ -4212,37 +4226,37 @@
 					<array>
 						<dict>
 							<key>heightAsFraction</key>
-							<real>0.15881326352530542</real>
+							<real>0.16192170818505339</real>
 							<key>name</key>
 							<string>Actions</string>
 						</dict>
 						<dict>
 							<key>heightAsFraction</key>
-							<real>0.20767888307155322</real>
+							<real>0.21085409252669038</real>
 							<key>name</key>
 							<string>Profiles</string>
 						</dict>
 						<dict>
 							<key>heightAsFraction</key>
-							<real>0.20767888307155322</real>
+							<real>0.21174377224199289</real>
 							<key>name</key>
 							<string>Recent Directories</string>
 						</dict>
 						<dict>
 							<key>heightAsFraction</key>
-							<real>0.15881326352530542</real>
+							<real>0.16192170818505339</real>
 							<key>name</key>
 							<string>Captured Output</string>
 						</dict>
 						<dict>
 							<key>heightAsFraction</key>
-							<real>0.20767888307155322</real>
+							<real>0.21085409252669038</real>
 							<key>name</key>
 							<string>Command History</string>
 						</dict>
 						<dict>
 							<key>heightAsFraction</key>
-							<real>0.059336823734729496</real>
+							<real>0.042704626334519574</real>
 							<key>name</key>
 							<string>Jobs</string>
 						</dict>
@@ -4251,13 +4265,13 @@
 				<key>Use Transparency</key>
 				<false/>
 				<key>Width</key>
-				<real>724</real>
+				<real>732</real>
 				<key>Window Type</key>
 				<integer>13</integer>
 				<key>X Origin</key>
-				<real>944</real>
+				<real>942</real>
 				<key>Y Origin</key>
-				<real>376</real>
+				<real>330</real>
 			</dict>
 		</array>
 	</dict>
