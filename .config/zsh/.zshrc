@@ -10,8 +10,8 @@ zmodload zsh/zprof
 #   'title' '@' 'underline'
 #   'subtitle' 'colon' 'info'
 
-if [[ "$OSTYPE" == "linux-gnu" ]]; then
-  if [[ "$TERM_PROGRAM" == "vscode" ]]; then
+if [[ "${OSTYPE}" == "linux-gnu" ]]; then
+  if [[ "${TERM_PROGRAM}" == "vscode" ]]; then
     :
   else
     neofetch \
@@ -20,7 +20,7 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
       --colors 5 7 7 4 7 15
   fi
 elif [[ -f "${HOME}/.dot/.config/neofetch/mac/current" ]]; then
-  if [[ "$TERM_PROGRAM" == "vscode" ]]; then
+  if [[ "${TERM_PROGRAM}" == "vscode" ]]; then
     :
   else
     neofetch \
@@ -28,6 +28,14 @@ elif [[ -f "${HOME}/.dot/.config/neofetch/mac/current" ]]; then
       --colors 5 7 7 4 7 15
   fi
 fi
+
+
+
+#### // iterm2 integration
+
+[[ -e "${HOME}/.iterm2_shell_integration.zsh" ]] \
+  && source "${HOME}/.iterm2_shell_integration.zsh" \
+  || :
 
 
 
@@ -66,7 +74,7 @@ export HOMEBREW_NO_AUTO_UPDATE=1
 export HOMEBREW_NO_INSTALL_CLEANUP=1
 export EDITOR=nvim
 
-if [[ $LC_TERMINAL =~ "i[tT]erm2" ]]; then
+if [[ ${LC_TERMINAL} =~ "i[tT]erm2" ]]; then
   export MPLBACKEND="module://itermplot"
   export ITERMPLOT=rv
 fi
@@ -88,10 +96,10 @@ autoload -Uz compinit
 setopt EXTENDEDGLOB
 for dump in ${HOME}/.zcompdump(#qN.m1); do
   compinit
-  if [[ -s "$dump" && (! -s "$dump.zwc" || \
-    "$dump" -nt "$dump.zwc") ]]; \
+  if [[ -s "${dump}" && (! -s "${dump}.zwc" || \
+    "${dump}" -nt "${dump}.zwc") ]]; \
   then
-    zcompile "$dump"
+    zcompile "${dump}"
   fi
 done
 unsetopt EXTENDEDGLOB
@@ -101,7 +109,7 @@ compinit -C
 
 #### // zstyle
 
-fignore=(DS_Store $fignore)
+fignore=(DS_Store ${fignore})
 
 # NOTE as follows `:completion:function:completer:command:argument:tag`
 zstyle ':completion:*' completer \
@@ -203,7 +211,7 @@ ZSH_AUTOSUGGEST_CLEAR_WIDGETS+=(bracketed-paste)
 
 #### // OS specific stuff
 
-if [[ "$OSTYPE" =~ "linux-gnu" ]]; then
+if [[ "${OSTYPE}" =~ "linux-gnu" ]]; then
 
   [[ -f "${HOME}/z.sh" ]] \
     && . "${HOME}/z.sh"
@@ -221,7 +229,7 @@ if [[ "$OSTYPE" =~ "linux-gnu" ]]; then
   [[ -d "/usr/share/swift" ]] \
     && export PATH="/usr/share/swift/usr/bin:$PATH"
 
-elif [[ "$OSTYPE" =~ "darwin" ]]; then
+elif [[ "${OSTYPE}" =~ "darwin" ]]; then
 
   [[ -f /opt/local/bin/port ]] \
     && export PATH="/opt/local/bin:$PATH"
@@ -300,7 +308,4 @@ export FZF_DEFAULT_OPTS='
 --color=info:#d4ce90,prompt:#9691ff,pointer:#ff7e81
 --color=marker:#73ff96,spinner:#ff7e81,header:#54cc72'
 
-[[ -e "${HOME}/.iterm2_shell_integration.zsh" ]] \
-  && source "${HOME}/.iterm2_shell_integration.zsh" \
-  || :
 
