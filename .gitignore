@@ -68,6 +68,9 @@ log
 #*.ps1
 NuGet/
 
+# .config/QtProject
+QtProject/
+
 
 # // Windows
 #
