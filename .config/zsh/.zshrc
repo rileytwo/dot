@@ -48,10 +48,10 @@ HISTFILE="${HOME}/.zsh_history"
 ZSH_THEME='alice'
 export ZSH="${HOME}/.oh-my-zsh"
 plugins=(
-  git
   forgit
   swiftpm
   #zsh-interactive-cd
+  git
   zsh-autopair
   zsh-completions
   zsh-history-substring-search
