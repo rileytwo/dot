@@ -687,16 +687,8 @@
                         "vendor_id": 12136
                     },
                     "ignore": false,
-                    "manipulate_caps_lock_led": false,
+                    "manipulate_caps_lock_led": true,
                     "simple_modifications": [
-                        {
-                            "from": {
-                                "key_code": "fn"
-                            },
-                            "to": {
-                                "key_code": "right_option"
-                            }
-                        },
                         {
                             "from": {
                                 "key_code": "left_command"
