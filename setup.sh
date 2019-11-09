@@ -1,185 +1,261 @@
 #!/usr/bin/env bash
-# vim: tabstop=2:shiftwidth=2
+# vim: tabstop=4:shiftwidth=4
 
+## set color variables, simply because i like when shell scripts
+## look nice
 
-OS=''
+echo ""
+
+RED="$(echo -e "\e[1;91m")"
+GREEN="$(echo -e "\e[1;92m")"
+YELLOW="$(echo -e "\e[1;93m")"
+BLUE="$(echo -e "\e[1;94m")"
+END="$(echo -e "\e[0m")"
+
+S="${GREEN}*${END}"
+Q="${YELLOW}?${END}"
+X="${RED}X${END}"
+YESNO="(${GREEN}y${END}/${RED}N${END}): "
+
+DOT=${DOT:-~/.dot}
+SETUP=${SETUP:-$DOT/.setup}
+INSTALL=${INSTALL:-$SETUP/install}
 
 function get_os() {
-  case "$OSTYPE" in
-    [Dd]arwin* )
-      echo "Let's set up this Mac!"
-      OS="mac"
-      ;;
-    [Ll]inux* )
-      echo "WOO! Linux!"
-      OS="linux"
-      ;;
-    [Ww]indows* )
-      echo "huh?"
-      OS="windows"
-      ;;
+    case "$OSTYPE" in
+    [Dd]arwin*)
+        echo " ${S} Let's set up this ${BLUE}Mac${END}! ${S}"
+        echo ""
+        echo ""
+        OS="mac"
+        ;;
+    [Ll]inux*)
+        echo " ${S} WOO! ${BLUE}Linux${END}! ${S}"
+        echo ""
+        echo ""
+        OS="linux"
+        ;;
+    [Ww]indows*)
+        echo " ${S} huh? ${S}"
+        echo ""
+        echo ""
+        OS="windows"
+        ;;
     *)
-      echo "I have no idea what this is. But let's give it a shot!"
-      OS="NULL"
-  esac
+        echo " ${S} I have ${RED}no idea${END} what ${RED}this is ${END}. ${S} "
+        echo "    But let's give it a shot!"
+        echo ""
+        echo ""
+        OS="NULL"
+        ;;
+    esac
 }
 
-if [[ "$OS" == "mac" ]]; then
-  echo "Quitting System Preferences..."
-  echo ""
-  osascript -e 'tell application "System Preferences" to quit'
-fi
-
 # ask for administrator password
-echo "Please enter your password"
-echo ""
-sudo -v
+#echo "${YELLOW}You may need to enter your password.${END}"
+#echo ""
+#sudo -v
+#
+## keep-alive: update exiting `sudo` time stamp until script is finished
+#while true; do
+#    sleep 300
+#    sudo -n true
+#    kill -0 "$$" 2>/dev/null || exit
+#done &
 
-# keep-alive: update exiting `sudo` time stamp until script is finished
-while true; do
-  sleep 300
-  sudo -n true
-  kill -0 "$$" 2>/dev/null || exit
-done &
+function quit_preferences() {
+    if [[ "$OS" == "mac" ]]; then
+        echo " ${S} Quitting System Preferences..."
+        echo ""
+        osascript -e 'tell application "System Preferences" to quit'
+    fi
+}
 
 # Installing Brew & Xcode's Command Line Tools
 function check_brew() {
-  echo "Checking if Homebrew is installed..."
-  echo ""
-  if [[ "$(command -v brew)" == "" ]]; then
-    retry=0
-    max_retry=10
+    echo " ${S} Checking if ${BLUE}Homebrew${END} is installed..."
+    echo ""
+    if [[ "$(command -v brew)" == "" ]]; then
+        retries=0
+        max_retries=10
 
-    while [ "$retry" -lt "$max_retry" ]; do
-      read -r -p \
-        "Homebew is not installed. Would you like to install it now? (y/N)" choice;
+        while [ "$retries" -lt "$max_retries" ]; do
+            echo "   - ${BLUE}Homebew${END} is ${YELLOW}not installed${END}."
+            qstn="   ${Q} Would you like to install it now? ${YESNO}"
 
-      case "$choice" in
-        y  | Yes | yes )
-          echo "Installing Homebrew..."
-          /usr/bin/ruby -e \
-            "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)";
+            read -r -p "$qstn" answer
+            echo ""
 
-          echo ""
-          echo "Turning analytics off..."
-          brew analytics off
-          ;;
+            case "$answer" in
+            y | Yes | yes)
+                echo "   - Installing Homebrew..."
+                /usr/bin/ruby -e \
+                    "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-        n | N | No | no )
-          echo "No"
-          ;;
+                echo ""
+                echo "    Turning analytics off..."
+                echo ""
+                brew analytics off
+                break
+                ;;
 
-        * )
-          echo "Invalid answer. Enter \"y/yes\" or \"N/no\"" >&2
-          if [ $((++retries)) -ge "$max_retry" ]; then
-            break 2;
-          fi
-          ;;
+            n | N | No | no)
+                echo "   - Okay! Not installing ${BLUE}Homebrew${END}."
+                echo ""
+                break
+                ;;
 
-        esac
-      done
+            *)
+                echo "   ${X} Invalid answer. Enter \"y/yes\" or \"N/no\"" >&2
+                echo ""
+                if [ $((++retries)) -ge "$max_retries" ]; then
+                    break
+                    echo "     ${X} Too many invalid answers."
+                fi
+                ;;
+
+            esac
+        done
 
     else
-      echo "Homebrew is installed!"
-      echo ""
-      echo ""
-      brew analytics off
-  fi
+        echo "   - Homebrew is installed!"
+        echo ""
+        brew analytics off
+    fi
+    echo ""
 }
 
-
 function check_install_dir() {
-  echo "Checking for an install directory... (there should only be one)"
-  echo ""
-  if [[ -d "./install" || -d "../install" ]]; then
-    cd './install' || cd '../install' || echo "Something went wrong"; 
-    echo "Found it!"
+    echo " ${S} Checking for an install directory... (there should only be one)"
     echo ""
 
-    echo "Checking for install scripts..."
-    echo ""
-    local install_scripts=(./*)
+    if [[ -d "${INSTALL}" ]]; then
+        cd "$INSTALL" || echo "  - Something went ${RED}wrong :(${END}"
+        echo "   - ${GREEN}Found it!${END}"
+        echo ""
 
-    if [ ${#install_scripts[@]} -eq 0 ]; then
-      echo "Didn't find any."
-      echo ""
+        echo "   - Checking for install scripts..."
+        echo ""
+        local install_scripts=(./*)
+
+        if [ ${#install_scripts[@]} -eq 0 ]; then
+            echo "     ${YELLOW}Didn't find any :(${END}"
+            echo ""
+        else
+            echo "     ${GREEN}Found some.${END}"
+            echo ""
+            printf "     - %s\n" "${install_scripts[@]}" | sed 's/\.\/install-//g'
+            echo ""
+
+            retries=0
+            max_retries=10
+
+            while [ "$retries" -lt "$max_retries" ]; do
+                read -r -p "   ${Q} Would you like to install these programs ${YESNO}" answer
+                echo ""
+                case "$answer" in
+                y | Yes | yes)
+                    echo "     Installing..."
+                    echo ""
+                    for ((i = 0; i < ${#install_scripts[@]}; i++)); do
+                        source "${install_scripts[$i]}"
+                    done
+                    echo ""
+                    break
+                    ;;
+
+                n | N | No | no)
+                    echo "     - Okay. Not installing."
+                    echo ""
+                    break
+                    ;;
+
+                *)
+                    echo "     ${X} Invalid answer. Enter \"y/yes\" or \"N/no\"" >&2
+                    echo ""
+                    if [ $((++retries)) -ge "$max_retries" ]; then
+                        break
+                        echo "     ${X} Too many invalid answers."
+                    fi
+                    ;;
+                esac
+            done
+        fi
+
     else
-      echo "Found some."
-      echo ""
-      printf '%s\n' "${install_scripts[@]}" #| sed 's/\.\/install-//g'
-      echo ""
-
-      read -r -p "Would you like to install these programs (y/N)" choice
-      case "$choice" in
-        y | Yes | yes )
-          echo "Installing..."
-          echo ""
-          for (( i=0; i<${#install_scripts[@]}; i++ )); do
-            source "${install_scripts[$i]}"
-          done 
-          echo ""
-          ;;
-
-        n | N | No | no )
-          echo "Okay. Not installing."
-          echo ""
-          ;;
-
-        * )
-          echo "Invalid answer. Enter \"y/yes\" or \"N/no\"" && return
-          ;;
-
-      esac
+        echo "    ${X} Didn't find one."
+        echo ""
     fi
-  else
-    echo "Didn't find one."
     echo ""
-  fi
 }
 
 function set_defaults() {
-  if [[ "$OS" == "mac" ]]; then
-    read -r -p "Would you like to set default preferences? (y/N)" choice
-    case "$choice" in
-      y | Yes | yes)
-        echo "Setting default preferences..."
-        chflags nohidden ~/Library
-        defaults write com.apple.helpviewer DevMode -bool true
-        defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
-        defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
-        defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
-        defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
-        defaults write NSGlobalDomain NSAutomaticPeriodSubstitutionEnabled -bool false
-        defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
-        defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
-        defaults write com.apple.finder AppleShowAllFiles -bool true
-        defaults write com.apple.finder AppleShowAllExtensions -bool true
-        defaults write com.apple.finder ShowPathbar -bool true
-        defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
-        defaults write com.apple.finder _FXSortFoldersFirst -bool true
-        defaults write com.apple.dock show-process-indicators -bool true
-        defaults write com.apple.dock scroll-to-open -bool true
-        #
-        # disable "Are you sure you want to open this application?" dialogue
-        defaults write com.apple.LaunchServices LSQuarantine -bool false
-        ;;
-      n | N | No | no)
-        echo "Okay! Not setting any defaults right now."
-        ;;
-      * )
-        echo "Invalid answer. Enter \"y/yes\" or \"N/no\"" && return
-        ;;
-    esac
-  else
-    :
-  fi
+    if [[ "$OS" == "mac" ]]; then
+
+        retries=0
+        max_retries=10
+        while [ "$retries" -lt "$max_retries" ]; do
+
+            qstn=" ${Q} Would you like to set default preferences? ${YESNO}"
+            read -r -p "$qstn" answer
+            echo ""
+            case "$answer" in
+            y | Yes | yes)
+                echo "   - Setting default preferences..."
+                echo ""
+                chflags nohidden ~/Library
+                defaults write com.apple.helpviewer DevMode -bool true
+                defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
+                defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
+                defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
+                defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
+                defaults write NSGlobalDomain NSAutomaticPeriodSubstitutionEnabled -bool false
+                defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
+                defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
+                defaults write com.apple.finder AppleShowAllFiles -bool true
+                defaults write com.apple.finder AppleShowAllExtensions -bool true
+                defaults write com.apple.finder ShowPathbar -bool true
+                defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
+                defaults write com.apple.finder _FXSortFoldersFirst -bool true
+                defaults write com.apple.dock show-process-indicators -bool true
+                defaults write com.apple.dock scroll-to-open -bool true
+                #
+                # disable "Are you sure you want to open this application?" dialogue
+                defaults write com.apple.LaunchServices LSQuarantine -bool false
+                break
+                ;;
+            n | N | No | no)
+                echo "   - Okay! Not setting any defaults right now."
+                echo ""
+                break
+                ;;
+            *)
+                echo "   ${X} Invalid answer. Enter \"y/yes\" or \"N/no\"" >&2
+                echo ""
+                if [ $((++retries)) -ge "$max_retries" ]; then
+                    break
+                    echo "     ${X} Too many invalid answers."
+                fi
+                ;;
+            esac
+        done
+    else
+        :
+    fi
+    echo ""
 }
 
+function setup() {
+    get_os
 
+    if [[ "$OS" == "mac" ]]; then
+        check_brew
+        set_defaults
+    fi
 
-get_os
-#check_brew
-check_install_dir
-#set_defaults
+    check_install_dir
+}
 
-echo "Done :)"
+setup
+
+echo " ${S} ${GREEN}Done ${BLUE}:)${END}"
