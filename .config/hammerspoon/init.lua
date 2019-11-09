@@ -209,7 +209,7 @@ hs.hotkey.bind(mod_keys, "H", function()
 		win_frame.w = win_frame.w + 50
 		win:setFrame(win_frame)
 
-	elseif win_frame.x < 0 or win_frame.w > screen_frame.w then
+	elseif win_frame.w > screen_frame.w then
 		win_frame.x = 0
 		win_frame.w = screen_frame.w
 		win:setFrame(win_frame)
