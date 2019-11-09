@@ -3,7 +3,6 @@
         "path": "."
     }],
     "settings": {
-        "editor.formatOnType": true,
         "editor.formatOnPaste": true,
         "files.watcherExclude": {
             "**/.brew": true,
@@ -19,8 +18,9 @@
             "**/.Rproj.user": true
         },
         "[shellscript]": {
-            "editor.tabSize": 2
-        }
+            "editor.tabSize": 4
+        },
+        "editor.formatOnType": true
         // ,"StatusBarTag.text": "dot"
     }
 }
