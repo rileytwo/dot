@@ -46,6 +46,7 @@ if hs.console.darkMode(true) then
 	}
 end
 
+local log = hs.logger.new('hammerspoon','debug')
 
 -- 1 --------------------------
 hs.window.animationDuration = 0.05
@@ -101,7 +102,11 @@ function define_right()
 	local win_frame    = win:frame()
 	local screen_frame = win:screen():frame()
 
-	win_frame.x = (screen_frame.w + gap) / 2
+	if screen_frame.x < 0 then
+		win_frame.x = (screen_frame.w + gap) / -2
+	else
+		win_frame.x = (screen_frame.w + gap) / 2
+	end
 	win_frame.y = screen_frame.y + gap
 	win_frame.w = (screen_frame.w / 2) - (gap * 1.5)
 	win_frame.h = screen_frame.h - (gap * 2)
