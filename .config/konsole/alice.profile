@@ -1,7 +1,7 @@
 [Appearance]
 BoldIntense=true
 ColorScheme=Alice
-Font=FiraCode Nerd Font,10,-1,5,50,0,0,0,0,0,Regular
+Font=Fira Code Retina,10,-1,5,53,0,0,0,0,0,Regular
 UseFontLineChararacters=false
 
 [Cursor Options]
@@ -21,7 +21,7 @@ TerminalRows=30
 [Interaction Options]
 AutoCopySelectedText=true
 MouseWheelZoomEnabled=false
-OpenLinksByDirectClickEnabled=true
+OpenLinksByDirectClickEnabled=false
 
 [Keyboard]
 KeyBindings=default
