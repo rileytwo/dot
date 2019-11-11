@@ -192,7 +192,7 @@ function check_install_dir() {
     echo ""
 }
 
-function set_defaults() {
+function write_defaults() {
     retries=0
     max_retries=10
     while [ "$retries" -lt "$max_retries" ]; do
@@ -247,7 +247,7 @@ function setup() {
 
     if [[ "$OS" == "mac" ]]; then
         check_brew
-        set_defaults
+        write_defaults
     fi
 
     check_install_dir
