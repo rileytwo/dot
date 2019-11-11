@@ -71,6 +71,11 @@ function quit_preferences() {
     fi
 }
 
+function invalid_answer() {
+    echo "   ${X} Invalid answer. Enter \"y/yes\" or \"N/no\"" >&2
+    echo ""
+}
+
 # Installing Brew & Xcode's Command Line Tools
 function check_brew() {
     echo " ${S} Checking if ${BLUE}Homebrew${END} is installed..."
@@ -106,8 +111,7 @@ function check_brew() {
                 ;;
 
             *)
-                echo "   ${X} Invalid answer. Enter \"y/yes\" or \"N/no\"" >&2
-                echo ""
+                invalid_answer
                 if [ $((++retries)) -ge "$max_retries" ]; then
                     break
                     echo "     ${X} Too many invalid answers."
@@ -171,8 +175,7 @@ function check_install_dir() {
                     ;;
 
                 *)
-                    echo "     ${X} Invalid answer. Enter \"y/yes\" or \"N/no\"" >&2
-                    echo ""
+                    invalid_answer
                     if [ $((++retries)) -ge "$max_retries" ]; then
                         break
                         echo "     ${X} Too many invalid answers."
@@ -190,58 +193,52 @@ function check_install_dir() {
 }
 
 function set_defaults() {
-    if [[ "$OS" == "mac" ]]; then
+    retries=0
+    max_retries=10
+    while [ "$retries" -lt "$max_retries" ]; do
 
-        retries=0
-        max_retries=10
-        while [ "$retries" -lt "$max_retries" ]; do
-
-            qstn=" ${Q} Would you like to set default preferences? ${YESNO}"
-            read -r -p "$qstn" answer
+        qstn=" ${Q} Would you like to set default preferences? ${YESNO}"
+        read -r -p "$qstn" answer
+        echo ""
+        case "$answer" in
+        y | Yes | yes)
+            echo "   - Setting default preferences..."
             echo ""
-            case "$answer" in
-            y | Yes | yes)
-                echo "   - Setting default preferences..."
-                echo ""
-                chflags nohidden ~/Library
-                defaults write com.apple.helpviewer DevMode -bool true
-                defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
-                defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
-                defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
-                defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
-                defaults write NSGlobalDomain NSAutomaticPeriodSubstitutionEnabled -bool false
-                defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
-                defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
-                defaults write com.apple.finder AppleShowAllFiles -bool true
-                defaults write com.apple.finder AppleShowAllExtensions -bool true
-                defaults write com.apple.finder ShowPathbar -bool true
-                defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
-                defaults write com.apple.finder _FXSortFoldersFirst -bool true
-                defaults write com.apple.dock show-process-indicators -bool true
-                defaults write com.apple.dock scroll-to-open -bool true
-                #
-                # disable "Are you sure you want to open this application?" dialogue
-                defaults write com.apple.LaunchServices LSQuarantine -bool false
+            chflags nohidden ~/Library
+            defaults write com.apple.helpviewer DevMode -bool true
+            defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
+            defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
+            defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
+            defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
+            defaults write NSGlobalDomain NSAutomaticPeriodSubstitutionEnabled -bool false
+            defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
+            defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
+            defaults write com.apple.finder AppleShowAllFiles -bool true
+            defaults write com.apple.finder AppleShowAllExtensions -bool true
+            defaults write com.apple.finder ShowPathbar -bool true
+            defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
+            defaults write com.apple.finder _FXSortFoldersFirst -bool true
+            defaults write com.apple.dock show-process-indicators -bool true
+            defaults write com.apple.dock scroll-to-open -bool true
+            #
+            # disable "Are you sure you want to open this application?" dialogue
+            defaults write com.apple.LaunchServices LSQuarantine -bool false
+            break
+            ;;
+        n | N | No | no)
+            echo "   - Okay! Not setting any defaults right now."
+            echo ""
+            break
+            ;;
+        *)
+            invalid_answer
+            if [ $((++retries)) -ge "$max_retries" ]; then
                 break
-                ;;
-            n | N | No | no)
-                echo "   - Okay! Not setting any defaults right now."
-                echo ""
-                break
-                ;;
-            *)
-                echo "   ${X} Invalid answer. Enter \"y/yes\" or \"N/no\"" >&2
-                echo ""
-                if [ $((++retries)) -ge "$max_retries" ]; then
-                    break
-                    echo "     ${X} Too many invalid answers."
-                fi
-                ;;
-            esac
-        done
-    else
-        :
-    fi
+                echo "     ${X} Too many invalid answers."
+            fi
+            ;;
+        esac
+    done
     echo ""
 }
 
