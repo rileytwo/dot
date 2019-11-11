@@ -652,7 +652,7 @@
 	<key>NSFontPanelAttributes</key>
 	<string>1, 2</string>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/.dot/.config/iterm2/colors</string>
+	<string>~/.dot/.config/iterm2/config</string>
 	<key>NSNavLastUserSetHideExtensionButtonState</key>
 	<false/>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
@@ -764,11 +764,11 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>315 401 445 205 0 0 1440 877 </string>
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
-	<string>440 434 799 448 0 0 1680 1027 </string>
+	<string>880 726 799 448 0 0 2560 1417 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>530 476 620 392 0 0 1680 1027 </string>
+	<string>76 581 620 392 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>942 330 732 567 0 0 1680 1027 </string>
+	<string>942 343 732 554 0 0 1680 1027 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -2539,6 +2539,7 @@
 		<string>3.3.5beta3</string>
 		<string>3.3.7beta2</string>
 		<string>3.3.4</string>
+		<string>3.3.7beta4</string>
 		<string>3.3.7beta3</string>
 		<string>3.3.6</string>
 	</array>
@@ -2568,7 +2569,7 @@
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1680, 1050}}</string>
 		<key>topLeft</key>
-		<string>{80, 956}</string>
+		<string>{33, 944}</string>
 	</dict>
 	<key>NoSyncHaveUsedCopyMode</key>
 	<true/>
@@ -2579,7 +2580,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>1B480254-E265-41B7-98EA-0689375CEC49</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>209</integer>
+	<integer>231</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -3420,7 +3421,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-11-07T12:54:53Z</date>
+	<date>2019-11-10T20:24:43Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
@@ -3447,11 +3448,6 @@
 	<true/>
 	<key>ToolbeltTools</key>
 	<array>
-		<string>Actions</string>
-		<string>Profiles</string>
-		<string>Recent Directories</string>
-		<string>Captured Output</string>
-		<string>Command History</string>
 		<string>Jobs</string>
 	</array>
 	<key>VisualIndicatorForEsc</key>
@@ -4669,7 +4665,7 @@
 	<key>findMode_iTerm</key>
 	<integer>0</integer>
 	<key>iTerm Version</key>
-	<string>3.3.7beta3</string>
+	<string>3.3.7beta4</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
