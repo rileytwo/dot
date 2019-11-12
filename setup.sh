@@ -20,6 +20,7 @@ YESNO="(${GREEN}y${END}/${RED}N${END}): "
 DOT=${DOT:-~/.dot}
 SETUP=${SETUP:-$DOT/.setup}
 INSTALL=${INSTALL:-$SETUP/install}
+SETTINGS=${SETTINGS:-$SETUP/settings}
 
 function get_os() {
     case "$OSTYPE" in
@@ -76,6 +77,12 @@ function invalid_answer() {
     echo ""
 }
 
+function source_files() {
+    for ((i = 0; i < ${#sources[@]}; i++)); do
+        source "${sources[$i]}"
+    done
+}
+
 # Installing Brew & Xcode's Command Line Tools
 function check_brew() {
     echo " ${S} Checking if ${BLUE}Homebrew${END} is installed..."
@@ -93,7 +100,7 @@ function check_brew() {
 
             case "$answer" in
             y | Yes | yes)
-                echo "   - Installing Homebrew..."
+                echo "   - Okay! Installing Homebrew."
                 /usr/bin/ruby -e \
                     "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
@@ -130,7 +137,7 @@ function check_brew() {
 }
 
 function check_install_dir() {
-    echo " ${S} Checking for an install directory... (there should only be one)"
+    echo " ${S} Checking for an install directory... (there should only be one!)"
     echo ""
 
     if [[ -d "${INSTALL}" ]]; then
@@ -140,15 +147,15 @@ function check_install_dir() {
 
         echo "   - Checking for install scripts..."
         echo ""
-        local install_scripts=(./*)
+        local sources=(./*)
 
-        if [ ${#install_scripts[@]} -eq 0 ]; then
+        if [ ${#sources[@]} -eq 0 ]; then
             echo "     ${YELLOW}Didn't find any :(${END}"
             echo ""
         else
             echo "     ${GREEN}Found some.${END}"
             echo ""
-            printf "     - %s\n" "${install_scripts[@]}" | sed 's/\.\/install-//g'
+            printf "     - %s\n" "${sources[@]}" | sed 's/\.\/install-//g'
             echo ""
 
             retries=0
@@ -159,11 +166,9 @@ function check_install_dir() {
                 echo ""
                 case "$answer" in
                 y | Yes | yes)
-                    echo "     Installing..."
+                    echo "     - Okay! Installing."
                     echo ""
-                    for ((i = 0; i < ${#install_scripts[@]}; i++)); do
-                        source "${install_scripts[$i]}"
-                    done
+                    source_files
                     echo ""
                     break
                     ;;
@@ -182,7 +187,9 @@ function check_install_dir() {
                     fi
                     ;;
                 esac
+
             done
+
         fi
 
     else
@@ -192,53 +199,48 @@ function check_install_dir() {
     echo ""
 }
 
-function write_defaults() {
-    retries=0
-    max_retries=10
-    while [ "$retries" -lt "$max_retries" ]; do
+function check_defaults() {
+    echo " ${S} Checking for settings directory... (there should only be one!!)"
+    echo ""
 
-        qstn=" ${Q} Would you like to set default preferences? ${YESNO}"
-        read -r -p "$qstn" answer
+    if [[ -d "${SETTINGS}" ]]; then
+        cd "$SETTINGS" || echo "  - Something went ${RED}wrong :(${END}"
+        echo "   - ${GREEN}Found it!${END}"
         echo ""
-        case "$answer" in
-        y | Yes | yes)
-            echo "   - Setting default preferences..."
+
+        echo "   - Checking for settings scripts..."
+        echo ""
+        local sources=(./*)
+
+        retries=0
+        max_retries=10
+        while [ "$retries" -lt "$max_retries" ]; do
+
+            qstn=" ${Q} Would you like to set your global settings? ${YESNO}"
+            read -r -p "$qstn" answer
             echo ""
-            chflags nohidden ~/Library
-            defaults write com.apple.helpviewer DevMode -bool true
-            defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
-            defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
-            defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
-            defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
-            defaults write NSGlobalDomain NSAutomaticPeriodSubstitutionEnabled -bool false
-            defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
-            defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
-            defaults write com.apple.finder AppleShowAllFiles -bool true
-            defaults write com.apple.finder AppleShowAllExtensions -bool true
-            defaults write com.apple.finder ShowPathbar -bool true
-            defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
-            defaults write com.apple.finder _FXSortFoldersFirst -bool true
-            defaults write com.apple.dock show-process-indicators -bool true
-            defaults write com.apple.dock scroll-to-open -bool true
-            #
-            # disable "Are you sure you want to open this application?" dialogue
-            defaults write com.apple.LaunchServices LSQuarantine -bool false
-            break
-            ;;
-        n | N | No | no)
-            echo "   - Okay! Not setting any defaults right now."
-            echo ""
-            break
-            ;;
-        *)
-            invalid_answer
-            if [ $((++retries)) -ge "$max_retries" ]; then
+            case "$answer" in
+            y | Yes | yes)
+                echo "   - Okay! Doing that now."
+                echo ""
+                source_files
                 break
-                echo "     ${X} Too many invalid answers."
-            fi
-            ;;
-        esac
-    done
+                ;;
+            n | N | No | no)
+                echo "   - Okay! Not setting anything right now."
+                echo ""
+                break
+                ;;
+            *)
+                invalid_answer
+                if [ $((++retries)) -ge "$max_retries" ]; then
+                    break
+                    echo "     ${X} Too many invalid answers."
+                fi
+                ;;
+            esac
+        done
+    fi
     echo ""
 }
 
@@ -247,7 +249,7 @@ function setup() {
 
     if [[ "$OS" == "mac" ]]; then
         check_brew
-        write_defaults
+        check_defaults
     fi
 
     check_install_dir
