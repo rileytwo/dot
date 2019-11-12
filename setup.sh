@@ -199,7 +199,7 @@ function check_install_dir() {
     echo ""
 }
 
-function check_defaults() {
+function check_settings() {
     echo " ${S} Checking for settings directory... (there should only be one!!)"
     echo ""
 
@@ -249,7 +249,7 @@ function setup() {
 
     if [[ "$OS" == "mac" ]]; then
         check_brew
-        check_defaults
+        check_settings
     fi
 
     check_install_dir
