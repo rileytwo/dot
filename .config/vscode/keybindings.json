@@ -554,5 +554,19 @@
         "key": "ctrl+alt+left",
         "command": "-cursorWordPartLeft",
         "when": "textInputFocus"
+    },
+    {
+        "key": "alt+backspace",
+        "command": "deleteAllLeft",
+        "when": "textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "cmd+backspace",
+        "command": "-deleteAllLeft",
+        "when": "textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "cmd+d",
+        "command": "editor.action.insertCursorBelow"
     }
 ]
