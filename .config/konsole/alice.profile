@@ -31,4 +31,4 @@ HistorySize=5000
 ScrollBarPosition=2
 
 [Terminal Features]
-UrlHintsModifiers=134217728
+UrlHintsModifiers=268435456
