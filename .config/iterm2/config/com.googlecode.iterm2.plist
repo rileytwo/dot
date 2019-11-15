@@ -768,7 +768,7 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>76 581 620 392 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>942 343 732 554 0 0 1680 1027 </string>
+	<string>909 320 732 567 0 0 1680 1027 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -2535,13 +2535,13 @@
 	</array>
 	<key>NoSyncAllAppVersions</key>
 	<array>
-		<string>3.3.7beta1</string>
-		<string>3.3.5beta3</string>
-		<string>3.3.7beta2</string>
-		<string>3.3.4</string>
+		<string>3.3.6</string>
 		<string>3.3.7beta4</string>
 		<string>3.3.7beta3</string>
-		<string>3.3.6</string>
+		<string>3.3.7beta2</string>
+		<string>3.3.5beta3</string>
+		<string>3.3.7beta1</string>
+		<string>3.3.4</string>
 	</array>
 	<key>NoSyncBFPFavorites</key>
 	<array>
@@ -2580,7 +2580,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>1B480254-E265-41B7-98EA-0689375CEC49</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>231</integer>
+	<integer>244</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -3421,7 +3421,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-11-10T20:24:43Z</date>
+	<date>2019-11-14T17:06:37Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
@@ -3450,6 +3450,8 @@
 	<array>
 		<string>Jobs</string>
 	</array>
+	<key>ViewManPageCommand</key>
+	<string>most %@ || sleep 3</string>
 	<key>VisualIndicatorForEsc</key>
 	<false/>
 	<key>Window Arrangements</key>
