@@ -17,7 +17,7 @@ let g:colors_name = 'riley'
 hi!      ColorColumn ctermbg = NONE                guibg = NONE
 hi!     CursorColumn ctermbg = NONE                guibg = NONE
 hi!       CursorLine cterm   = NONE ctermbg = 234  guibg = #1e1e1e
-hi!            Class                ctermfg = 37                   guifg = #FF7E81
+hi!            Class                ctermfg = 37                   guifg = #FF8F86
 hi!          Comment                ctermfg = 242                  guifg = #555555
 hi!          Conceal ctermbg = NONE ctermfg = 255  guibg = NONE    guifg = #303030
 hi!         Constant                ctermfg = 209                  guifg = #FF96ED
@@ -51,7 +51,7 @@ hi!            Pmenu ctermbg = 232  ctermfg = NONE guibg = #222222 guifg = #d5d8
 hi!        PmenuSbar ctermbg = 233                 guibg = #333333
 hi!         PmenuSel ctermbg = 240  ctermfg = 255  guibg = #007bb8 guifg = #eff0f4
 hi!       PmenuThumb ctermbg = 233                 guibg = #222222
-hi!          PreProc                ctermfg = 150                  guifg = #FF7E81
+hi!          PreProc                ctermfg = 150                  guifg = #FF8F86
 hi!         Question                ctermfg = 150                  guifg = #83fcbd
 hi!     QuickFixLine ctermbg = 233  ctermfg = 252  guibg = #222222 guifg = #ffffff
 hi!           Search ctermbg = 216  ctermfg = 234  guibg = #fff26d guifg = #222222
@@ -66,7 +66,7 @@ hi!       StatusLine ctermbg = 234  ctermfg = 245  guibg = #171717 guifg = #8185
 hi!   StatusLineTerm ctermbg = 234  ctermfg = 245  guibg = #171717 guifg = #818596 gui = reverse
 hi!     StatusLineNC ctermbg = 237  ctermfg = 233  guibg = #333333 guifg = #0f1117 gui = reverse
 hi! StatusLineTermNC ctermbg = 237  ctermfg = 233  guibg = #333333 guifg = #0f1117 gui = reverse
-hi!     StorageClass                ctermfg = 37                   guifg = #FF7E81
+hi!     StorageClass                ctermfg = 37                   guifg = #FF8F86
 hi!           String                ctermfg = 209                  guifg = #83fcbd
 hi!        Structure                ctermfg = 37                   guifg = #3fb2ff
 hi!          TabLine ctermbg = 245  ctermfg = 234  guibg = #818596 guifg = #17171b gui = NONE
@@ -137,10 +137,13 @@ hi! link vimFuncSID vimFunction
 hi! link vimFuncVar Normal
 hi! link vimFunction Function
 hi! link vimNotFunc Keyword
+hi! link vimLet Keyword
+hi! link vimSet Keyword
+hi! link vimIsCommand Keyword
 hi! link vimMapModKey Special
 hi! link vimOption Type
 hi! link vimVar StorageClass
-hi! link vimEnvvar Statement
+hi! link vimEnvvar StorageClass
 hi! link vimUserFunc Operator
 hi! link vimHiGroup Normal
 hi! link vimCommand Function
