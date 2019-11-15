@@ -768,7 +768,7 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>76 581 620 392 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>909 320 732 567 0 0 1680 1027 </string>
+	<string>943 330 732 567 0 0 1680 1027 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -2580,7 +2580,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>1B480254-E265-41B7-98EA-0689375CEC49</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>244</integer>
+	<integer>246</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -3865,7 +3865,7 @@
 												<real>0.94999998807907104</real>
 											</dict>
 											<key>Guid</key>
-											<string>28F6B41A-C830-4BCE-B8C0-66DE66C74889</string>
+											<string>62AD491F-8A80-433A-9991-963815EE34BC</string>
 											<key>Has Hotkey</key>
 											<false/>
 											<key>Horizontal Spacing</key>
@@ -4332,6 +4332,20 @@
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley</string>
 										</array>
 										<key>Environment</key>
 										<dict>
@@ -4345,6 +4359,90 @@
 										</dict>
 										<key>Hosts</key>
 										<array>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
 											<dict>
 												<key>Host name</key>
 												<string>rxmbp.local</string>
@@ -4593,55 +4691,14 @@
 				<key>TerminalGuid</key>
 				<string>pty-1DB4AA34-1183-4363-AF81-581573866C77</string>
 				<key>Toolbelt</key>
-				<dict>
-					<key>Profiles</key>
-					<dict>
-						<key>iTermToolProfilesProfileListViewState</key>
-						<dict>
-							<key>iTermProfileListViewRestorableStateTagsFraction</key>
-							<real>0.0</real>
-							<key>iTermProfileListViewRestorableStateTagsVisible</key>
-							<false/>
-						</dict>
-					</dict>
-				</dict>
+				<dict/>
 				<key>Toolbelt Proportions</key>
 				<dict>
 					<key>proportions</key>
 					<array>
 						<dict>
 							<key>heightAsFraction</key>
-							<real>0.16192170818505339</real>
-							<key>name</key>
-							<string>Actions</string>
-						</dict>
-						<dict>
-							<key>heightAsFraction</key>
-							<real>0.21174377224199289</real>
-							<key>name</key>
-							<string>Profiles</string>
-						</dict>
-						<dict>
-							<key>heightAsFraction</key>
-							<real>0.21174377224199289</real>
-							<key>name</key>
-							<string>Recent Directories</string>
-						</dict>
-						<dict>
-							<key>heightAsFraction</key>
-							<real>0.16192170818505339</real>
-							<key>name</key>
-							<string>Captured Output</string>
-						</dict>
-						<dict>
-							<key>heightAsFraction</key>
-							<real>0.21174377224199289</real>
-							<key>name</key>
-							<string>Command History</string>
-						</dict>
-						<dict>
-							<key>heightAsFraction</key>
-							<real>0.040925266903914591</real>
+							<real>1</real>
 							<key>name</key>
 							<string>Jobs</string>
 						</dict>
@@ -4654,7 +4711,7 @@
 				<key>Window Type</key>
 				<integer>13</integer>
 				<key>X Origin</key>
-				<real>942</real>
+				<real>943</real>
 				<key>Y Origin</key>
 				<real>330</real>
 			</dict>
@@ -4674,5 +4731,7 @@
 	<false/>
 	<key>kCPKUseSystemColorPicker</key>
 	<true/>
+	<key>preferIntegratedGPU</key>
+	<false/>
 </dict>
 </plist>
