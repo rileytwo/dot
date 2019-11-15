@@ -6,11 +6,12 @@
 
 if has('mac')
     let g:os = 'Darwin'
-    if $COLORTERM =~# 'truecolor' || $COLORTERM =~# '24bit' || has('gui_vimr')
+    if $TERM_PROGRAM =~# 'Apple_Terminal'
+        colorscheme one
+    else
+        "if $COLORTERM =~# 'truecolor' || $COLORTERM =~# '24bit' || has('gui_vimr')
         set termguicolors
         colorscheme riley
-    else
-        colorscheme one
     endif
 elseif has('win32') || has('win64')
     let g:os = 'Windows'
