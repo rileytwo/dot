@@ -11,16 +11,16 @@ if has('mac')
     else
         "if $COLORTERM =~# 'truecolor' || $COLORTERM =~# '24bit' || has('gui_vimr')
         set termguicolors
-        colorscheme riley
+        colorscheme Alice
     endif
 elseif has('win32') || has('win64')
     let g:os = 'Windows'
     set termguicolors
-    colorscheme riley
+    colorscheme Alice
 else
     let g:os = 'Linux'
     set termguicolors
-    colorscheme riley
+    colorscheme Alice
 endif
 
 
@@ -85,7 +85,7 @@ Plug 'lambdalisue/suda.vim'
 
 
 " // Extensibility
-Plug 'justinmk/vim-gtfo' 
+Plug 'justinmk/vim-gtfo'
 Plug 'itchyny/vim-gitbranch'
 Plug 'Yggdroot/indentLine'
 Plug 'scrooloose/nerdtree', {'on': 'NERDTreeToggle'}
@@ -102,7 +102,7 @@ if !has('win32') && !has('win64')
     " mac specific plugs cause windows is hard
     Plug '/usr/local/opt/fzf'
 endif
-if &term=~# 'nvim' || &term=~# 'vimr' 
+if &term=~# 'nvim' || &term=~# 'vimr'
     Plug 'terryma/vim-multiple-cursors'
 endif
 
@@ -128,11 +128,11 @@ set showcmd
 set gdefault
 set magic
 
-set splitbelow 
+set splitbelow
 set splitright
 set modifiable
 
-if has('mac') || has('unix') 
+if has('mac') || has('unix')
     set number
     set numberwidth=1
     set guicursor=
@@ -280,7 +280,7 @@ let g:indent_guides_guide_size = 1
 let g:delimitMate_expand_space = 1
 let g:delimitMate_expand_cr = 2
 
-" lightline/ale 
+" lightline/ale
 " more info at maximbaz/dotfiles/.config/nvim/init.vim
 if has('mac') || has('linux') || &term =~# 'nvim'
     let g:lightline = {
