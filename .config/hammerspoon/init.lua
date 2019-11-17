@@ -46,7 +46,7 @@ if hs.console.darkMode(true) then
 	}
 end
 
-local log = hs.logger.new('hammerspoon','debug')
+
 
 -- 1 --------------------------
 hs.window.animationDuration = 0.05
