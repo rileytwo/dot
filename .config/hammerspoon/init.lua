@@ -1,3 +1,4 @@
+--------------------------------------------------------------------[[
 -- Hammerspoon config.
 -- Original code inspired (and copied) from https://blog.igorw.org/.
 --
@@ -25,10 +26,10 @@
 --    -  ⌘ + ⌃ + ⌥ + ⇧ + D, Move window down;
 --    -  ⌘ + ⌃ + ⌥ + ⇧ + N, Move window left;
 --    -  ⌘ + ⌃ + ⌥ + ⇧ + M, Move window right;
+--------------------------------------------------------------------]]
 
 
-
--- 0 --------------------------
+--[[ 0 -------------------------------------------------------------]]
 hs.preferencesDarkMode(true)
 hs.console.consoleFont("FuraCode Nerd Font")
 hs.console.darkMode(true)
@@ -48,7 +49,7 @@ end
 
 
 
--- 1 --------------------------
+--[[ 1 -------------------------------------------------------------]]
 hs.window.animationDuration = 0.05
 mod_keys                    = {"cmd", "ctrl", "alt", "shift"}
 prev_frame_sizes        = {}
@@ -173,7 +174,8 @@ bind_resize_restore("[", define_left)
 bind_resize_restore("]", define_right)
 
 
--- 2 --------------------------
+
+--[[ 2 -------------------------------------------------------------]]
 	-- function is_top_win_frame()
 	-- 	local gap         = 5
 	-- 	local menubar     = 23
@@ -285,7 +287,8 @@ hs.hotkey.bind(mod_keys, "O", function()
 end)
 
 
--- 3 --------------------------
+
+--[[ 3 -------------------------------------------------------------]]
 hs.hotkey.bind(mod_keys, "U", function()
 	--	move window up
 	local win       = hs.window.focusedWindow()
@@ -300,7 +303,6 @@ hs.hotkey.bind(mod_keys, "D", function()
 	--	move window down
 	local win       = hs.window.focusedWindow()
 	local win_frame = win:frame()
-
 
 	win_frame.y = win_frame.y + 25
 	win:setFrame(win_frame)
