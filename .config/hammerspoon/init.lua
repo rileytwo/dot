@@ -51,7 +51,7 @@ end
 -- 1 --------------------------
 hs.window.animationDuration = 0.05
 mod_keys                    = {"cmd", "ctrl", "alt", "shift"}
-previous_frame_sizes        = {}
+prev_frame_sizes        = {}
 
 hs.hotkey.bind(mod_keys, "Y", function()
 	hs.toggleConsole()
@@ -155,12 +155,12 @@ function bind_resize_restore(key, resize_frame_fn)
 				is_almost_equal_to_win_frame(target_frame) then
 				win:setFrame(target_frame)
 
-			elseif previous_frame_sizes[win:id()] then
-				win:setFrame(previous_frame_sizes[win:id()])
-				previous_frame_sizes[win:id()] = nil
+			elseif prev_frame_sizes[win:id()] then
+				win:setFrame(prev_frame_sizes[win:id()])
+				prev_frame_sizes[win:id()] = nil
 
 			else
-				previous_frame_sizes[win:id()] = win_frame
+				prev_frame_sizes[win:id()] = win_frame
 				win:setFrame(target_frame)
 			end
 		end
