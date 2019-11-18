@@ -15,7 +15,7 @@ if has('mac')
     let g:os = 'Darwin'
     if $COLORTERM =~# 'truecolor' || $COLORTERM =~# '24bit'
         set termguicolors
-        colorscheme riley
+        colorscheme Alice
     endif
 else
     let g:os = 'Windows'
@@ -75,8 +75,8 @@ Plug 'tpope/vim-sleuth'
 Plug 'itchyny/vim-gitbranch'
 Plug 'Yggdroot/indentLine'
 
-Plug 'Shougo/deoplete.nvim', {'do': ':UpdateRemotePlugins'}
-Plug 'deoplete-plugins/deoplete-zsh', {'for': 'zsh'}
+"Plug 'Shougo/deoplete.nvim'
+"Plug 'deoplete-plugins/deoplete-zsh', {'for': 'zsh'}
 Plug 'ncm2/ncm2'
 Plug 'ncm2/ncm2-path'
 Plug 'ncm2/ncm2-jedi'
@@ -170,7 +170,6 @@ map <C-o> :NERDTreeToggle<CR>
 
 
 "" // Options
-Plug 'Shougo/deoplete.nvim'
 let g:deoplete#enable_at_startup = 1
 let NERDTreeShowHidden = 1
 let NERDTreeMinimalUI = 1
