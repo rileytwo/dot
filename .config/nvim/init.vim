@@ -33,38 +33,38 @@ call plug#begin('~/.config/vim/plugged')
 
 " tpope
 Plug 'tpope/vim-eunuch'
-Plug 'tpope/vim-surround'
 Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-markdown', {'for': 'markdown'}
 Plug 'tpope/vim-scriptease'
 Plug 'tpope/vim-sleuth'
+Plug 'tpope/vim-surround'
 
 
 " // Completion, snippets
 Plug 'w0rp/ale'
 Plug 'Shougo/deoplete.nvim', {'do': ':UpdateRemotePlugins'}
 Plug 'deoplete-plugins/deoplete-zsh', {'for': 'zsh'}
-Plug 'ncm2/ncm2'
-Plug 'roxma/nvim-yarp'
-Plug 'ncm2/ncm2-path'
-Plug 'ncm2/ncm2-bufword'
-Plug 'ncm2/ncm2-jedi'
 Plug 'sirver/UltiSnips',
+Plug 'roxma/nvim-yarp'
+Plug 'ncm2/ncm2'
+Plug 'ncm2/ncm2-bufword'
+Plug 'ncm2/ncm2-path'
+Plug 'ncm2/ncm2-jedi'
 Plug 'ncm2/ncm2-ultisnips'
 
 
 " // Lang specific
-Plug 'tpope/vim-markdown', {'for': 'markdown'}
 Plug 'PProvost/vim-ps1', {'for': 'powershell'}
-Plug 'jalvesaq/Nvim-R', {'for': 'R'}
 Plug 'gaalcaras/ncm-R', {'for': 'R'}
-Plug 'dkarter/bullets.vim'
+Plug 'jalvesaq/Nvim-R', {'for': 'R'}
 Plug 'deoplete-plugins/deoplete-jedi', {'for': 'python'}
 Plug 'chrisbra/vim-zsh' , {'for': 'zsh'}
 Plug 'vitalk/vim-shebang'
-Plug 'xu-cheng/brew.vim'
-Plug 'cespare/vim-toml'
 Plug 'darfink/vim-plist'
 Plug 'keith/swift.vim'
+Plug 'xu-cheng/brew.vim'
+Plug 'dkarter/bullets.vim'
+Plug 'cespare/vim-toml'
 
 
 " // Auto closing delimiters
@@ -85,17 +85,15 @@ Plug 'lambdalisue/suda.vim'
 
 
 " // Extensibility
-Plug 'justinmk/vim-gtfo'
-Plug 'itchyny/vim-gitbranch'
-Plug 'Yggdroot/indentLine'
 Plug 'scrooloose/nerdtree', {'on': 'NERDTreeToggle'}
+Plug 'Yggdroot/indentLine'
+Plug 'godlygeek/tabular'
 Plug 'ryanoasis/vim-devicons'
+Plug 'itchyny/vim-gitbranch'
 "Plug 'ap/vim-css-color'
 Plug 'norcalli/nvim-colorizer.lua'
 Plug 'PeterRincker/vim-searchlight'
-Plug 'godlygeek/tabular'
-Plug 'metakirby5/codi.vim'
-Plug 'voldikss/vim-floaterm'
+Plug 'psliwka/vim-smoothie'
 
 
 if !has('win32') && !has('win64')
