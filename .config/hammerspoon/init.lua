@@ -1,31 +1,34 @@
 --------------------------------------------------------------------[[
--- Hammerspoon config.
--- Original code inspired (and copied) from https://blog.igorw.org/.
---
---
--- Modification Keys: Cmd + Ctrl + Alt + Shift (⌘ + ⌃ + ⌥ + ⇧)
--- Karabiner-elements is used to bind Caps Lock to Modification Keys
--- Caps Lock (⇪) -> Cmd + Ctrl + Alt + Shift (⌘ + ⌃ + ⌥ + ⇧)
---
---
---  1: Window Layout Management
---    -  ⌘ + ⌃ + ⌥ + ⇧ + [, Toggle current window to left/restore;
---    -  ⌘ + ⌃ + ⌥ + ⇧ + ], Toggle current window to right/restore;
---    -  ⌘ + ⌃ + ⌥ + ⇧ + F, Toggle current window to screen/restore;
---
---  2: Window Resizing
---    -  ⌘ + ⌃ + ⌥ + ⇧ + H, Increase window width;
---    -  ⌘ + ⌃ + ⌥ + ⇧ + J, Increase window height;
---    -  ⌘ + ⌃ + ⌥ + ⇧ + L, Decrease window width;
---    -  ⌘ + ⌃ + ⌥ + ⇧ + K, Decrease window height;
---
---  3: Window Placement:
---    -  ⌘ + ⌃ + ⌥ + ⇧ + Left, Move window to screen left;
---    -  ⌘ + ⌃ + ⌥ + ⇧ + Right, Move window to screen right;
---    -  ⌘ + ⌃ + ⌥ + ⇧ + U, Move window up;
---    -  ⌘ + ⌃ + ⌥ + ⇧ + D, Move window down;
---    -  ⌘ + ⌃ + ⌥ + ⇧ + N, Move window left;
---    -  ⌘ + ⌃ + ⌥ + ⇧ + M, Move window right;
+--[[
+Hammerspoon config.
+Original code inspired (and copied) from https://blog.igorw.org/.
+
+
+Modification Keys: Cmd + Ctrl + Alt + Shift (⌘ + ⌃ + ⌥ + ⇧)
+Karabiner-elements is used to bind Caps Lock to Modification Keys
+Caps Lock (⇪) -> Cmd + Ctrl + Alt + Shift (⌘ + ⌃ + ⌥ + ⇧)
+
+
+1: Window Layout Management
+   -  ⌘ + ⌃ + ⌥ + ⇧ + [,    Toggle current window to left/restore;
+   -  ⌘ + ⌃ + ⌥ + ⇧ + ],    Toggle current window to right/restore;
+   -  ⌘ + ⌃ + ⌥ + ⇧ + F,    Toggle current window to screen/restore;
+
+2: Window Resizing
+   -  ⌘ + ⌃ + ⌥ + ⇧ + H,     Increase window width;
+   -  ⌘ + ⌃ + ⌥ + ⇧ + J,     Increase window height;
+   -  ⌘ + ⌃ + ⌥ + ⇧ + L,     Decrease window width;
+   -  ⌘ + ⌃ + ⌥ + ⇧ + K,     Decrease window height;
+
+3: Window Placement:
+   -  ⌘ + ⌃ + ⌥ + ⇧ + Left,  Move window to screen left;
+   -  ⌘ + ⌃ + ⌥ + ⇧ + Right, Move window to screen right;
+   -  ⌘ + ⌃ + ⌥ + ⇧ + U,     Move window up;
+   -  ⌘ + ⌃ + ⌥ + ⇧ + D,     Move window down;
+   -  ⌘ + ⌃ + ⌥ + ⇧ + N,     Move window left;
+   -  ⌘ + ⌃ + ⌥ + ⇧ + M,     Move window right;
+
+--]]
 --------------------------------------------------------------------]]
 
 
@@ -122,10 +125,10 @@ function is_almost_equal_to_win_frame(geo)
 	local win_frame = win:frame()
 
 	if math.abs(win_frame.x - geo.x) < epsilon and
-	   math.abs(win_frame.y - geo.y) < epsilon and
-	   math.abs(win_frame.w - geo.w) < epsilon and
-	   math.abs(win_frame.h - geo.h) < epsilon then
-		return true
+      math.abs(win_frame.y - geo.y) < epsilon and
+      math.abs(win_frame.w - geo.w) < epsilon and
+      math.abs(win_frame.h - geo.h) < epsilon then
+      return true
 
 	else
 		return false
@@ -296,7 +299,7 @@ hs.hotkey.bind(mod_keys, "U", function()
 
 	win_frame.y = win_frame.y - 25
 	win:setFrame(win_frame)
- end)
+end)
 
 
 hs.hotkey.bind(mod_keys, "D", function()
