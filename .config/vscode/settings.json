@@ -61,7 +61,6 @@
 
     "code-runner.enableAppInsights": false,
     "zenMode.fullScreen": false,
-    "zenMode.hideLineNumbers": false,
     "python.autoComplete.addBrackets": true,
     "python.venvPath": "~/.pyenv",
     "python.linting.pylintEnabled": false,
@@ -70,7 +69,6 @@
     "python.dataScience.allowLiveShare": false,
     "python.dataScience.enabled": false,
     "python.dataScience.searchForJupyter": false,
-    "python.linting.pylintCategorySeverity.convention": "Warning",
     "python.pythonPath": "/Users/riley/.pyenv/shims/python",
     "python.terminal.activateEnvironment": false,
     "files.trimTrailingWhitespace": true,
@@ -165,7 +163,6 @@
         "editor.tabSize": 3,
         "editor.autoIndent": true
     },
-    "editor.colorDecorators": false,
     "editor.cursorBlinking": "smooth",
     "editor.cursorSmoothCaretAnimation": true,
     "terminal.integrated.cursorStyle": "underline",
@@ -198,5 +195,31 @@
     "gitlens.hovers.currentLine.details": false,
     "gitlens.hovers.currentLine.enabled": false,
     "gitlens.hovers.enabled": false,
-    "editor.wrappingIndent": "indent"
+    "editor.wrappingIndent": "indent",
+    "editor.colorDecorators": false,
+    "todohighlight.isEnable": false,
+    "todo-tree.general.statusBar": "total",
+    "todo-tree.general.tags": [
+        "TODO",
+        "FIXME",
+        "TODO:",
+        "FIXME:",
+        "HELP:",
+        "HELP"
+    ],
+    "todo-tree.tree.expanded": true,
+    "todo-tree.regex.regex": "((//|#|<!--|--|;|/\\*|^)\\s*($TAGS)|^\\s*- \\[ \\])",
+    "workbench.tree.renderIndentGuides": "always",
+    "indentRainbow.colors": [
+        "rgba(255, 255, 255, 0.07)",
+        "rgba(255, 255, 255, 0.05)",
+        "rgba(255, 255, 255, 0.03)",
+        "rgba(255, 255, 255, 0.01)",
+
+    ],
+    "indentRainbow.ignoreLinePatterns": [
+        "/[ \t]* [*]/g",
+        "/[ \t]+[/]{2}/g"
+    ],
+    "todo-tree.highlights.enabled": true
 }
