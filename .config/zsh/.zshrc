@@ -81,15 +81,6 @@ fi
 
 
 
-## // fpath
-
-if [[ -d "${HOME}/.functions" ]]; then
-  fpath+=("${HOME}/.functions")
-  autoload -Uz "${HOME}"/.functions/**/*
-fi
-
-
-
 #### // completions
 
 autoload -Uz compinit
