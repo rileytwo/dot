@@ -53,7 +53,7 @@ end
 
 
 --[[ 1 -------------------------------------------------------------]]
-hs.window.animationDuration = 0.05
+hs.window.animationDuration = 0.20
 mod_keys                    = {"cmd", "ctrl", "alt", "shift"}
 prev_frame_sizes        = {}
 
