@@ -1040,8 +1040,8 @@
 	<false/>
 	<key>NSSplitView Subview Frames NSColorPanelSplitView</key>
 	<array>
-		<string>0.000000, 0.000000, 326.000000, 279.000000, NO, NO</string>
-		<string>0.000000, 280.000000, 326.000000, 189.000000, NO, NO</string>
+		<string>0.000000, 0.000000, 326.000000, 330.000000, NO, NO</string>
+		<string>0.000000, 331.000000, 326.000000, 189.000000, NO, NO</string>
 	</array>
 	<key>NSTableView Columns v2 KeyBingingTable</key>
 	<data>
@@ -2930,6 +2930,10 @@
 	</array>
 	<key>NoSyncCommandHistoryHasEverBeenUsed</key>
 	<true/>
+	<key>NoSyncConfirmRunOpenFile</key>
+	<true/>
+	<key>NoSyncConfirmRunOpenFile_selection</key>
+	<integer>0</integer>
 	<key>NoSyncConfirmShellIntegrationCommand</key>
 	<true/>
 	<key>NoSyncConfirmShellIntegrationCommand_selection</key>
@@ -2959,7 +2963,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>1B480254-E265-41B7-98EA-0689375CEC49</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>270</integer>
+	<integer>272</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -3829,8 +3833,10 @@
 	<array>
 		<string>Jobs</string>
 	</array>
+	<key>UpdateScreenParamsDelay</key>
+	<real>1</real>
 	<key>ViewManPageCommand</key>
-	<string>most %@ || sleep 3</string>
+	<string>man %@ || sleep 3</string>
 	<key>VisualIndicatorForEsc</key>
 	<false/>
 	<key>Window Arrangements</key>
