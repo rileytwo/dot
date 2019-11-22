@@ -1,5 +1,5 @@
 " ====================
-" // Detect Host
+" // Detect OS, TERM
 " ----------
 " check for truecolor support in current terminal
 " macOS Terminal.app does not support truecolor
