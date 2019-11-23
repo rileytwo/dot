@@ -20,13 +20,16 @@ Caps Lock (⇪) -> Cmd + Ctrl + Alt + Shift (⌘ + ⌃ + ⌥ + ⇧)
    -  ⌘ + ⌃ + ⌥ + ⇧ + L,     Decrease window width;
    -  ⌘ + ⌃ + ⌥ + ⇧ + K,     Decrease window height;
 
-3: Window Placement:
+3: Window Movement
    -  ⌘ + ⌃ + ⌥ + ⇧ + Left,  Move window to screen left;
    -  ⌘ + ⌃ + ⌥ + ⇧ + Right, Move window to screen right;
-   -  ⌘ + ⌃ + ⌥ + ⇧ + U,     Move window up;
-   -  ⌘ + ⌃ + ⌥ + ⇧ + D,     Move window down;
-   -  ⌘ + ⌃ + ⌥ + ⇧ + N,     Move window left;
-   -  ⌘ + ⌃ + ⌥ + ⇧ + M,     Move window right;
+   -  ⌘ + ⌃ + ⌥ + ⇧ + 8,     Move window up;
+   -  ⌘ + ⌃ + ⌥ + ⇧ + I,     Move window down;
+   -  ⌘ + ⌃ + ⌥ + ⇧ + U,     Move window left;
+   -  ⌘ + ⌃ + ⌥ + ⇧ + O,     Move window right;
+
+
+4: Put it all together
 
 --]]
 --------------------------------------------------------------------]]
@@ -179,21 +182,6 @@ bind_resize_restore("]", fill_right)
 
 
 --[[ 2 -------------------------------------------------------------]]
-	-- function is_top_win_frame()
-	-- 	local gap         = 5
-	-- 	local menubar     = 23
-	-- 	local extra_space = 20 -- adjustable
-
-	-- 	local top_area = gap + menubar + extra_space
-
-	-- 	if hs.window.focusedWindow():frame().y <= top_area then
-	-- 		return true
-	-- 	else
-	-- 		return false
-	-- 	end
-	-- end
---
-
 function is_right_win_frame()
 	local win          = hs.window.focusedWindow()
 	local win_frame    = win:frame()
@@ -208,7 +196,7 @@ function is_right_win_frame()
 end
 
 
-hs.hotkey.bind(mod_keys, "H", function()
+function push_left_west()
 	-- push western frame west (increases window width)
 	local win          = hs.window.focusedWindow()
 	local win_frame    = win:frame()
@@ -227,13 +215,15 @@ hs.hotkey.bind(mod_keys, "H", function()
 	else
 		win_frame.w = win_frame.w + 50
 		win:setFrame(win_frame)
-	end
-end)
+   end
+
+   return win_frame
+end
 
 
-hs.hotkey.bind(mod_keys, "L", function()
+function pull_right_east()
 	-- pull western frame east (decreases window width)
-	local win = hs.window.focusedWindow()
+	local win       = hs.window.focusedWindow()
 	local win_frame = win:frame()
 
 	if is_right_win_frame() then
@@ -244,95 +234,88 @@ hs.hotkey.bind(mod_keys, "L", function()
 	else
 		win_frame.w = win_frame.w - 50
 		win:setFrame(win_frame)
-	end
-end)
+   end
+
+   return win_frame
+end
 
 
-hs.hotkey.bind(mod_keys, "J", function()
+function push_bottom_south()
 	-- push southern frame south (increases window height)
 	local win       = hs.window.focusedWindow()
 	local win_frame = win:frame()
 
 	win_frame.h = win_frame.h + 50
-	win:setFrame(win_frame)
-end)
+   win:setFrame(win_frame)
+
+   return win_frame
+end
 
 
-hs.hotkey.bind(mod_keys, "K", function()
+function pull_bottom_north()
 	-- pull southern frame north (decreases window height)
 	local win       = hs.window.focusedWindow()
 	local win_frame = win:frame()
 
 	win_frame.h = win_frame.h - 50
-	win:setFrame(win_frame)
-end)
+   win:setFrame(win_frame)
 
-
-hs.hotkey.bind(mod_keys, "I", function()
-	-- resize window, from all corners, inward (shrink)
-	local win       = hs.window.focusedWindow()
-	local win_frame = win:frame()
-
-	win_frame.h = win_frame.h - 25
-	win_frame.w = win_frame.w - 25
-	win:setFrame(win_frame)
-end)
-
-
-hs.hotkey.bind(mod_keys, "O", function()
-	-- resize window, from all corners, outward (expand)
-	local win       = hs.window.focusedWindow()
-	local win_frame = win:frame()
-
-	win_frame.h = win_frame.h + 25
-	win_frame.w = win_frame.w + 25
-	win:setFrame(win_frame)
-end)
+   return win_frame
+end
 
 
 
 --[[ 3 -------------------------------------------------------------]]
-hs.hotkey.bind(mod_keys, "U", function()
+
+function move_up()
 	--	move window up
 	local win       = hs.window.focusedWindow()
 	local win_frame = win:frame()
 
-	win_frame.y = win_frame.y - 25
-	win:setFrame(win_frame)
-end)
+	win_frame.y = win_frame.y - 50
+   win:setFrame(win_frame)
+
+   return win_frame
+end
 
 
-hs.hotkey.bind(mod_keys, "D", function()
+function move_down()
 	--	move window down
 	local win       = hs.window.focusedWindow()
 	local win_frame = win:frame()
 
-	win_frame.y = win_frame.y + 25
+	win_frame.y = win_frame.y + 50
 	win:setFrame(win_frame)
-end)
+
+   return win_frame
+end
 
 
-hs.hotkey.bind(mod_keys, "N", function()
+function move_left()
 	--	move window left
-	local win       = hs.window.focusedWindow()
-	local win_frame = win:frame()
+	local win          = hs.window.focusedWindow()
+	local win_frame    = win:frame()
 
-	win_frame.x = win_frame.x - 25
+	win_frame.x = win_frame.x - 50
 	win:setFrame(win_frame)
-end)
+
+   return win_frame
+end
 
 
-hs.hotkey.bind(mod_keys, "M", function()
+function move_right()
 	--	move window right
-	local win       = hs.window.focusedWindow()
-	local win_frame = win:frame()
+	local win          = hs.window.focusedWindow()
+	local win_frame    = win:frame()
 
-	win_frame.x = win_frame.x + 25
+	win_frame.x = win_frame.x + 50
 	win:setFrame(win_frame)
-end)
+
+   return win_frame
+end
 
 
-hs.hotkey.bind(mod_keys, "Right", function()
+function move_screen_right()
 	-- move to screen right
 	--   wraps around to first screen
 	local win        = hs.window.focusedWindow()
@@ -343,10 +326,12 @@ hs.hotkey.bind(mod_keys, "Right", function()
 		{"noResize"},
 		{"ensureInScreenBounds"}
 	)
-end)
+
+   return win_screen
+end
 
 
-hs.hotkey.bind(mod_keys, "Left", function()
+function move_screen_left()
 	-- move to screen left
 	--   wraps around to last screen
 	local win        = hs.window.focusedWindow()
@@ -357,4 +342,35 @@ hs.hotkey.bind(mod_keys, "Left", function()
 		{"noResize"},
 		{"ensureInScreenBounds"}
 	)
-end)
+
+   return win_screen
+end
+
+
+
+--[[ 4 -------------------------------------------------------------]]
+function bind_win_manager(key, resize_frame_fn)
+	hs.hotkey.bind(mod_keys, key,
+		function()
+			local win          = hs.window.focusedWindow()
+--			local win_frame    = win:frame()
+--			local screen_frame = win:screen():frame()
+			local new_frame    = resize_frame_fn()
+
+			win:setFrame(new_frame)
+
+		end
+	)
+end
+
+
+bind_win_manager("H", push_left_west)
+bind_win_manager("L", pull_right_east)
+bind_win_manager("J", push_bottom_south)
+bind_win_manager("K", pull_bottom_north)
+bind_win_manager("8", move_up)
+bind_win_manager("I", move_down)
+bind_win_manager("U", move_left)
+bind_win_manager("O", move_right)
+bind_win_manager("Left", move_screen_left)
+bind_win_manager("Right", move_screen_right)
