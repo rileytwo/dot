@@ -70,7 +70,7 @@ hs.hotkey.bind(mod_keys, "R", function()
 end)
 
 
-function define_full()
+function fill_full()
 	local gap          = 5
 	local win          = hs.window.focusedWindow()
 	local win_frame    = win:frame()
@@ -85,7 +85,7 @@ function define_full()
 end
 
 
-function define_left()
+function fill_left()
 	local gap          = 5
 	local win          = hs.window.focusedWindow()
 	local win_frame    = win:frame()
@@ -100,7 +100,7 @@ function define_left()
 end
 
 
-function define_right()
+function fill_right()
 	local gap          = 5
 	local win          = hs.window.focusedWindow()
 	local win_frame    = win:frame()
@@ -137,9 +137,9 @@ end
 
 
 function is_predefined_win_frame_size()
-	if is_almost_equal_to_win_frame(define_full()) or
-		is_almost_equal_to_win_frame(define_left()) or
-		is_almost_equal_to_win_frame(define_right())  then
+	if is_almost_equal_to_win_frame(fill_full()) or
+		is_almost_equal_to_win_frame(fill_left()) or
+		is_almost_equal_to_win_frame(fill_right())  then
 		return true
 
 	else
@@ -172,9 +172,9 @@ function bind_resize_restore(key, resize_frame_fn)
 end
 
 
-bind_resize_restore("F", define_full)
-bind_resize_restore("[", define_left)
-bind_resize_restore("]", define_right)
+bind_resize_restore("F", fill_full)
+bind_resize_restore("[", fill_left)
+bind_resize_restore("]", fill_right)
 
 
 
