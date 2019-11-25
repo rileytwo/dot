@@ -11,16 +11,16 @@ if has('mac')
     else
         "if $COLORTERM =~# 'truecolor' || $COLORTERM =~# '24bit' || has('gui_vimr')
         set termguicolors
-        colorscheme Alice
+        colorscheme kiss
     endif
 elseif has('win32') || has('win64')
     let g:os = 'Windows'
     set termguicolors
-    colorscheme Alice
+    colorscheme kiss
 else
     let g:os = 'Linux'
     set termguicolors
-    colorscheme Alice
+    colorscheme kiss
 endif
 
 
