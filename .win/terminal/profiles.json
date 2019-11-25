@@ -5,62 +5,21 @@
 {
     "$schema": "https://aka.ms/terminal-profiles-schema",
 
-    "globals": {
-        "alwaysShowTabs": false,
-        "initialCols": 90,
-        "initialRows": 40,
-        "requestedTheme": "system",
-        "showTabsInTitlebar": false,
-        "showTerminalTitleInTitlebar": false,
-        "wordDelimiters": " ./\\()\"'-:,.;<>~!@#$%^&*|+=[]{}~?│",
-        "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}"
-    },
+    "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
 
     "profiles":
     [
-        {
-            "acrylicOpacity": 0.75,
-            "closeOnExit": true,
-            "colorScheme": "Riley",
-            "commandline": "C:\\Users\\RRoach\\scoop\\shims\\pwsh.exe",
-            "cursorColor": "#FFFFFF",
-            "cursorShape": "bar",
-            "fontFace": "FuraCode NF Retina",
-            "fontSize": 9,
-            "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
-            "historySize": 9001,
-            "icon": "ms-appx:///ProfileIcons/{574e775e-4f2a-5b96-ac1e-a2962a402336}.png",
-            "name": "PowerShell Core",
-            "padding": "4, 4, 4, 4",
-            "snapOnInput": true,
-            "startingDirectory": "%USERPROFILE%",
-            "useAcrylic": false
-        },
-        {
-            "acrylicOpacity": 0.5,
-            "background": "#171717",
-            "closeOnExit": true,
-            "colorScheme": "Riley",
-            "commandline": "powershell.exe",
-            "cursorColor": "#FFFFFF",
-            "cursorShape": "bar",
-            "fontFace": "FuraCode NF Retina",
-            "fontSize": 9,
-            "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
-            "historySize": 9001,
-            "icon": "ms-appx:///ProfileIcons/{61c54bbd-c2c6-5271-96e7-009a87ff44bf}.png",
-            "name": "Windows PowerShell",
-            "padding": "4, 4, 4, 4",
-            "snapOnInput": true,
-            "startingDirectory": "%USERPROFILE%",
-            "useAcrylic": false
-        }, 
         {
             // Make changes here to the powershell.exe profile
             "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
             "name": "Windows PowerShell",
             "commandline": "powershell.exe",
-            "hidden": false
+            "hidden": false,
+            "colorScheme": "Riley",
+            "cursorColor": "#FFFFFF",
+            "cursorShape": "bar",
+            "fontFace": "FuraCode NF Retina",
+            "fontSize": 9
         },
         {
             // Make changes here to the cmd.exe profile
@@ -73,24 +32,25 @@
             "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
             "hidden": false,
             "name": "PowerShell Core",
-            "source": "Windows.Terminal.PowershellCore"
+            "source": "Windows.Terminal.PowershellCore",
+            "commandline": "C:\\Users\\RRoach\\scoop\\shims\\pwsh.exe",
+            "colorScheme": "Riley",
+            "cursorColor": "#FFFFFF",
+            "cursorShape": "bar",
+            "fontFace": "FuraCode NF Retina",
+            "fontSize": 9
         },
         {
             "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
             "hidden": false,
             "name": "Ubuntu",
             "source": "Windows.Terminal.Wsl",
-            "closeOnExit": true,
             "colorScheme": "Riley",
             "commandline": "wsl.exe -d Ubuntu",
             "cursorColor": "#FFFFFF",
             "cursorShape": "bar",
             "fontFace": "FuraCode NF Retina",
-            "fontSize": 9,
-            "historySize": 9001,
-            "icon": "ms-appx:///ProfileIcons/{9acb9455-ca41-5af7-950f-6bca1bc9722f}.png",
-            "padding": "4, 4, 4, 4",
-            "snapOnInput": true
+            "fontSize": 9
         },
         {
             "guid": "{c6eaf9f4-32a7-5fdc-b5cf-066e8a4b1e40}",
@@ -217,7 +177,8 @@
 
     // Add any keybinding overrides to this array.
     // To unbind a default keybinding, set the command to "unbound"
-    "keybindings": [{
+    "keybindings": [
+        {
             "command": "closePane",
             "keys": [
                 "ctrl+shift+w"
