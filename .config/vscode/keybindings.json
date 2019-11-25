@@ -568,5 +568,18 @@
     {
         "key": "cmd+d",
         "command": "editor.action.insertCursorBelow"
+    },
+    {
+        "key": "shift+cmd+l",
+        "command": "-editor.action.selectHighlights",
+        "when": "editorFocus"
+    },
+    {
+        "key": "cmd+k cmd+z",
+        "command": "keybindings.editor.resetKeybinding"
+    },
+    {
+        "key": "shift+cmd+l",
+        "command": "gitlens.views.repositories:gitlens.focus"
     }
 ]

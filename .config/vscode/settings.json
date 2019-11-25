@@ -45,7 +45,7 @@
     // "r.linting.pascalCase": false,
 
     "window.title": "${folderPath}${activeEditorMedium}",
-    "workbench.colorTheme": "Alice",
+    "workbench.colorTheme": "Kiss",
     "scm.providers.visible": 0,
     "git.countBadge": "tracked",
     "git.detectSubmodules": false,
@@ -221,5 +221,6 @@
         "/[ \t]* [*]/g",
         "/[ \t]+[/]{2}/g"
     ],
-    "todo-tree.highlights.enabled": true
+    "todo-tree.highlights.enabled": true,
+    "workbench.sideBar.location": "right"
 }
