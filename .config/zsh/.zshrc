@@ -1,9 +1,12 @@
 #
 # vim: shiftwidth=2
 #
+
+
+# zsh modules
 zmodload zsh/zprof
 
-
+autoload zmv
 
 #### // neofetch
 # color order:
@@ -45,7 +48,7 @@ DISABLE_AUTO_UPDATE=true
 HISTSIZE=10000
 SAVEHIST=10000
 HISTFILE="${HOME}/.zsh_history"
-ZSH_THEME='alice'
+ZSH_THEME='kiss'
 export ZSH="${HOME}/.oh-my-zsh"
 plugins=(
   swiftpm
