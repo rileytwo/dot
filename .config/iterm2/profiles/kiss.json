@@ -179,11 +179,11 @@
   "HotKey Window Dock Click Action" : 0,
   "BM Growl" : false,
   "Underline Color" : {
-    "Red Component" : 0.058823529410000019,
+    "Red Component" : 0.058823529630899429,
     "Color Space" : "sRGB",
-    "Blue Component" : 0.058823529410000019,
+    "Blue Component" : 0.058823529630899429,
     "Alpha Component" : 1,
-    "Green Component" : 0.058823529410000019
+    "Green Component" : 0.058823529630899429
   },
   "Prompt Before Closing 2" : false,
   "Command" : "",
@@ -202,9 +202,9 @@
   "Ansi 6 Color" : {
     "Red Component" : 0,
     "Color Space" : "sRGB",
-    "Blue Component" : 0.83999999999999997,
+    "Blue Component" : 0.95104044675827026,
     "Alpha Component" : 1,
-    "Green Component" : 0.74199999999999999
+    "Green Component" : 0.83910858631134033
   },
   "Jobs to Ignore" : [
     "rlogin",
@@ -226,11 +226,11 @@
   "Disable Window Resizing" : true,
   "Close Sessions On End" : true,
   "Tab Color" : {
-    "Red Component" : 0.082352941176470615,
+    "Red Component" : 0.08235294371843338,
     "Color Space" : "sRGB",
-    "Blue Component" : 0.082352941176470615,
+    "Blue Component" : 0.08235294371843338,
     "Alpha Component" : 1,
-    "Green Component" : 0.082352941176470615
+    "Green Component" : 0.08235294371843338
   },
   "Default Bookmark" : "No",
   "HotKey Activated By Modifier" : false,
@@ -238,9 +238,9 @@
   "Ansi 9 Color" : {
     "Red Component" : 1,
     "Color Space" : "sRGB",
-    "Blue Component" : 0.50619852542877197,
+    "Blue Component" : 0.53885048627853394,
     "Alpha Component" : 1,
-    "Green Component" : 0.49256539344787598
+    "Green Component" : 0.52249544858932495
   },
   "Use libtickit protocol" : false,
   "Flashing Bell" : false,
@@ -249,34 +249,34 @@
   "Ansi 14 Color" : {
     "Red Component" : 0,
     "Color Space" : "sRGB",
-    "Blue Component" : 0.9993787408,
+    "Blue Component" : 1,
     "Alpha Component" : 1,
-    "Green Component" : 0.88278455440000003
+    "Green Component" : 0.89614838361740112
   },
   "Minimum Contrast" : 0,
   "Ansi 12 Color" : {
-    "Red Component" : 0.2470588235,
+    "Red Component" : 0.24702668190002441,
     "Color Space" : "sRGB",
     "Blue Component" : 1,
     "Alpha Component" : 1,
-    "Green Component" : 0.69803921570000005
+    "Green Component" : 0.71825826168060303
   },
   "Scrollback With Status Bar" : false,
   "HotKey Window Floats" : true,
   "Non-ASCII Anti Aliased" : true,
   "Ansi 10 Color" : {
-    "Red Component" : 0.51372551918029785,
+    "Red Component" : 0.52276355028152466,
     "Color Space" : "sRGB",
-    "Blue Component" : 0.74117648601531982,
+    "Blue Component" : 0.7542833685874939,
     "Alpha Component" : 1,
-    "Green Component" : 0.98823529481887817
+    "Green Component" : 1
   },
   "Foreground Color" : {
-    "Red Component" : 0.94999998809999997,
+    "Red Component" : 0.94999998807907104,
     "Color Space" : "sRGB",
-    "Blue Component" : 0.94999998809999997,
+    "Blue Component" : 0.94999998807907104,
     "Alpha Component" : 1,
-    "Green Component" : 0.94999998809999997
+    "Green Component" : 0.94999998807907104
   },
   "Blink Allowed" : false,
   "Description" : "Default",
@@ -288,7 +288,7 @@
     "Alpha Component" : 1,
     "Green Component" : 0.45080000162124634
   },
-  "Name" : "Alice",
+  "Name" : "kiss",
   "Transparency" : 0,
   "Horizontal Spacing" : 1,
   "Thin Strokes" : 4,
@@ -303,11 +303,11 @@
   "HotKey Key Code" : 50,
   "Idle Code" : 0,
   "Ansi 4 Color" : {
-    "Red Component" : 0.21592763070000001,
+    "Red Component" : 0.21592763066291809,
     "Color Space" : "sRGB",
-    "Blue Component" : 0.93183511500000005,
+    "Blue Component" : 0.9318351149559021,
     "Alpha Component" : 1,
-    "Green Component" : 0.64323061699999995
+    "Green Component" : 0.6432306170463562
   },
   "Prevent Opening in a Tab" : false,
   "Screen" : -2,
@@ -326,11 +326,11 @@
 
   ],
   "Ansi 7 Color" : {
-    "Red Component" : 0.79000000000000004,
+    "Red Component" : 0.79000002145767212,
     "Color Space" : "sRGB",
-    "Blue Component" : 0.79000000000000004,
+    "Blue Component" : 0.79000002145767212,
     "Alpha Component" : 1,
-    "Green Component" : 0.79000000000000004
+    "Green Component" : 0.79000002145767212
   },
   "Non Ascii Font" : "HackNerdFontComplete-Regular 13",
   "HotKey Window Animates" : true,
@@ -371,11 +371,11 @@
   "Unlimited Scrollback" : false,
   "AWDS Window Directory" : "",
   "Ansi 15 Color" : {
-    "Red Component" : 0.94901960784313721,
+    "Red Component" : 0.94901961088180542,
     "Color Space" : "sRGB",
-    "Blue Component" : 0.94901960784313721,
+    "Blue Component" : 0.94901961088180542,
     "Alpha Component" : 1,
-    "Green Component" : 0.94901960784313721
+    "Green Component" : 0.94901961088180542
   },
   "HotKey Characters Ignoring Modifiers" : "`",
   "Status Bar Layout" : {
@@ -400,11 +400,11 @@
   "Scrollback in Alternate Screen" : false,
   "Terminal Type" : "xterm-256color",
   "Ansi 13 Color" : {
-    "Red Component" : 0.58823529411764708,
+    "Red Component" : 0.60158032178878784,
     "Color Space" : "sRGB",
     "Blue Component" : 1,
     "Alpha Component" : 1,
-    "Green Component" : 0.56862745098039214
+    "Green Component" : 0.58485996723175049
   },
   "Link Color" : {
     "Red Component" : 0,
@@ -414,11 +414,11 @@
     "Green Component" : 0.35916060209274292
   },
   "Ansi 11 Color" : {
-    "Red Component" : 0.97647058959999999,
+    "Red Component" : 1,
     "Color Space" : "sRGB",
-    "Blue Component" : 0.64705884459999996,
+    "Blue Component" : 0.66634941101074219,
     "Alpha Component" : 1,
-    "Green Component" : 0.94509804249999996
+    "Green Component" : 0.97422975301742554
   },
   "Ansi 5 Color" : {
     "Red Component" : 0.51372551918029785,
