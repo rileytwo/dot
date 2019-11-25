@@ -30,373 +30,6 @@
 	<true/>
 	<key>Custom Color Presets</key>
 	<dict>
-		<key>alice</key>
-		<dict>
-			<key>Ansi 0 Color</key>
-			<dict>
-				<key>Alpha Component</key>
-				<real>1</real>
-				<key>Blue Component</key>
-				<real>0.15000000596046448</real>
-				<key>Color Space</key>
-				<string>sRGB</string>
-				<key>Green Component</key>
-				<real>0.15000000596046448</real>
-				<key>Red Component</key>
-				<real>0.15000000596046448</real>
-			</dict>
-			<key>Ansi 1 Color</key>
-			<dict>
-				<key>Alpha Component</key>
-				<real>1</real>
-				<key>Blue Component</key>
-				<real>0.46310701966285706</real>
-				<key>Color Space</key>
-				<string>sRGB</string>
-				<key>Green Component</key>
-				<real>0.45080000162124634</real>
-				<key>Red Component</key>
-				<real>0.98000001907348633</real>
-			</dict>
-			<key>Ansi 10 Color</key>
-			<dict>
-				<key>Alpha Component</key>
-				<real>1</real>
-				<key>Blue Component</key>
-				<real>0.7542833685874939</real>
-				<key>Color Space</key>
-				<string>sRGB</string>
-				<key>Green Component</key>
-				<real>1</real>
-				<key>Red Component</key>
-				<real>0.52276355028152466</real>
-			</dict>
-			<key>Ansi 11 Color</key>
-			<dict>
-				<key>Alpha Component</key>
-				<real>1</real>
-				<key>Blue Component</key>
-				<real>0.66634941101074219</real>
-				<key>Color Space</key>
-				<string>sRGB</string>
-				<key>Green Component</key>
-				<real>0.97422975301742554</real>
-				<key>Red Component</key>
-				<real>1</real>
-			</dict>
-			<key>Ansi 12 Color</key>
-			<dict>
-				<key>Alpha Component</key>
-				<real>1</real>
-				<key>Blue Component</key>
-				<real>1</real>
-				<key>Color Space</key>
-				<string>sRGB</string>
-				<key>Green Component</key>
-				<real>0.71825826168060303</real>
-				<key>Red Component</key>
-				<real>0.24702668190002441</real>
-			</dict>
-			<key>Ansi 13 Color</key>
-			<dict>
-				<key>Alpha Component</key>
-				<real>1</real>
-				<key>Blue Component</key>
-				<real>1</real>
-				<key>Color Space</key>
-				<string>sRGB</string>
-				<key>Green Component</key>
-				<real>0.58485996723175049</real>
-				<key>Red Component</key>
-				<real>0.60158032178878784</real>
-			</dict>
-			<key>Ansi 14 Color</key>
-			<dict>
-				<key>Alpha Component</key>
-				<real>1</real>
-				<key>Blue Component</key>
-				<real>1</real>
-				<key>Color Space</key>
-				<string>sRGB</string>
-				<key>Green Component</key>
-				<real>0.89614838361740112</real>
-				<key>Red Component</key>
-				<real>0.0</real>
-			</dict>
-			<key>Ansi 15 Color</key>
-			<dict>
-				<key>Alpha Component</key>
-				<real>1</real>
-				<key>Blue Component</key>
-				<real>0.94901961088180542</real>
-				<key>Color Space</key>
-				<string>sRGB</string>
-				<key>Green Component</key>
-				<real>0.94901961088180542</real>
-				<key>Red Component</key>
-				<real>0.94901961088180542</real>
-			</dict>
-			<key>Ansi 2 Color</key>
-			<dict>
-				<key>Alpha Component</key>
-				<real>1</real>
-				<key>Blue Component</key>
-				<real>0.63462895154953003</real>
-				<key>Color Space</key>
-				<string>sRGB</string>
-				<key>Green Component</key>
-				<real>0.93000000715255737</real>
-				<key>Red Component</key>
-				<real>0.36269998550415039</real>
-			</dict>
-			<key>Ansi 3 Color</key>
-			<dict>
-				<key>Alpha Component</key>
-				<real>1</real>
-				<key>Blue Component</key>
-				<real>0.61679995059967041</real>
-				<key>Color Space</key>
-				<string>sRGB</string>
-				<key>Green Component</key>
-				<real>0.90814518928527832</real>
-				<key>Red Component</key>
-				<real>0.93966645002365112</real>
-			</dict>
-			<key>Ansi 4 Color</key>
-			<dict>
-				<key>Alpha Component</key>
-				<real>1</real>
-				<key>Blue Component</key>
-				<real>0.9318351149559021</real>
-				<key>Color Space</key>
-				<string>sRGB</string>
-				<key>Green Component</key>
-				<real>0.6432306170463562</real>
-				<key>Red Component</key>
-				<real>0.21592763066291809</real>
-			</dict>
-			<key>Ansi 5 Color</key>
-			<dict>
-				<key>Alpha Component</key>
-				<real>1</real>
-				<key>Blue Component</key>
-				<real>1</real>
-				<key>Color Space</key>
-				<string>sRGB</string>
-				<key>Green Component</key>
-				<real>0.49019607901573181</real>
-				<key>Red Component</key>
-				<real>0.51372551918029785</real>
-			</dict>
-			<key>Ansi 6 Color</key>
-			<dict>
-				<key>Alpha Component</key>
-				<real>1</real>
-				<key>Blue Component</key>
-				<real>0.95104044675827026</real>
-				<key>Color Space</key>
-				<string>sRGB</string>
-				<key>Green Component</key>
-				<real>0.83910858631134033</real>
-				<key>Red Component</key>
-				<real>0.0</real>
-			</dict>
-			<key>Ansi 7 Color</key>
-			<dict>
-				<key>Alpha Component</key>
-				<real>1</real>
-				<key>Blue Component</key>
-				<real>0.79000002145767212</real>
-				<key>Color Space</key>
-				<string>sRGB</string>
-				<key>Green Component</key>
-				<real>0.79000002145767212</real>
-				<key>Red Component</key>
-				<real>0.79000002145767212</real>
-			</dict>
-			<key>Ansi 8 Color</key>
-			<dict>
-				<key>Alpha Component</key>
-				<real>1</real>
-				<key>Blue Component</key>
-				<real>0.4078223705291748</real>
-				<key>Color Space</key>
-				<string>sRGB</string>
-				<key>Green Component</key>
-				<real>0.40782788395881653</real>
-				<key>Red Component</key>
-				<real>0.40781760215759277</real>
-			</dict>
-			<key>Ansi 9 Color</key>
-			<dict>
-				<key>Alpha Component</key>
-				<real>1</real>
-				<key>Blue Component</key>
-				<real>0.53885048627853394</real>
-				<key>Color Space</key>
-				<string>sRGB</string>
-				<key>Green Component</key>
-				<real>0.52249544858932495</real>
-				<key>Red Component</key>
-				<real>1</real>
-			</dict>
-			<key>Background Color</key>
-			<dict>
-				<key>Alpha Component</key>
-				<real>1</real>
-				<key>Blue Component</key>
-				<real>0.08235294371843338</real>
-				<key>Color Space</key>
-				<string>sRGB</string>
-				<key>Green Component</key>
-				<real>0.08235294371843338</real>
-				<key>Red Component</key>
-				<real>0.08235294371843338</real>
-			</dict>
-			<key>Badge Color</key>
-			<dict>
-				<key>Alpha Component</key>
-				<real>0.5</real>
-				<key>Blue Component</key>
-				<real>0.0</real>
-				<key>Color Space</key>
-				<string>sRGB</string>
-				<key>Green Component</key>
-				<real>0.1491314172744751</real>
-				<key>Red Component</key>
-				<real>1</real>
-			</dict>
-			<key>Bold Color</key>
-			<dict>
-				<key>Alpha Component</key>
-				<real>1</real>
-				<key>Blue Component</key>
-				<real>1</real>
-				<key>Color Space</key>
-				<string>sRGB</string>
-				<key>Green Component</key>
-				<real>1</real>
-				<key>Red Component</key>
-				<real>0.99999600648880005</real>
-			</dict>
-			<key>Cursor Color</key>
-			<dict>
-				<key>Alpha Component</key>
-				<real>1</real>
-				<key>Blue Component</key>
-				<real>0.50619852542877197</real>
-				<key>Color Space</key>
-				<string>sRGB</string>
-				<key>Green Component</key>
-				<real>0.49256539344787598</real>
-				<key>Red Component</key>
-				<real>1</real>
-			</dict>
-			<key>Cursor Guide Color</key>
-			<dict>
-				<key>Alpha Component</key>
-				<real>0.25</real>
-				<key>Blue Component</key>
-				<real>1</real>
-				<key>Color Space</key>
-				<string>sRGB</string>
-				<key>Green Component</key>
-				<real>0.9268307089805603</real>
-				<key>Red Component</key>
-				<real>0.70213186740875244</real>
-			</dict>
-			<key>Cursor Text Color</key>
-			<dict>
-				<key>Alpha Component</key>
-				<real>1</real>
-				<key>Blue Component</key>
-				<real>0.50619852542877197</real>
-				<key>Color Space</key>
-				<string>sRGB</string>
-				<key>Green Component</key>
-				<real>0.49256539344787598</real>
-				<key>Red Component</key>
-				<real>1</real>
-			</dict>
-			<key>Foreground Color</key>
-			<dict>
-				<key>Alpha Component</key>
-				<real>1</real>
-				<key>Blue Component</key>
-				<real>0.94999998807907104</real>
-				<key>Color Space</key>
-				<string>sRGB</string>
-				<key>Green Component</key>
-				<real>0.94999998807907104</real>
-				<key>Red Component</key>
-				<real>0.94999998807907104</real>
-			</dict>
-			<key>Link Color</key>
-			<dict>
-				<key>Alpha Component</key>
-				<real>1</real>
-				<key>Blue Component</key>
-				<real>0.73423302173614502</real>
-				<key>Color Space</key>
-				<string>sRGB</string>
-				<key>Green Component</key>
-				<real>0.35916060209274292</real>
-				<key>Red Component</key>
-				<real>0.0</real>
-			</dict>
-			<key>Selected Text Color</key>
-			<dict>
-				<key>Alpha Component</key>
-				<real>1</real>
-				<key>Blue Component</key>
-				<real>0.98136156797409058</real>
-				<key>Color Space</key>
-				<string>sRGB</string>
-				<key>Green Component</key>
-				<real>0.9824872612953186</real>
-				<key>Red Component</key>
-				<real>1</real>
-			</dict>
-			<key>Selection Color</key>
-			<dict>
-				<key>Alpha Component</key>
-				<real>1</real>
-				<key>Blue Component</key>
-				<real>0.29621261358261108</real>
-				<key>Color Space</key>
-				<string>sRGB</string>
-				<key>Green Component</key>
-				<real>0.284496009349823</real>
-				<key>Red Component</key>
-				<real>0.28522062301635742</real>
-			</dict>
-			<key>Tab Color</key>
-			<dict>
-				<key>Alpha Component</key>
-				<real>1</real>
-				<key>Blue Component</key>
-				<real>0.08235294371843338</real>
-				<key>Color Space</key>
-				<string>sRGB</string>
-				<key>Green Component</key>
-				<real>0.08235294371843338</real>
-				<key>Red Component</key>
-				<real>0.08235294371843338</real>
-			</dict>
-			<key>Underline Color</key>
-			<dict>
-				<key>Alpha Component</key>
-				<real>1</real>
-				<key>Blue Component</key>
-				<real>0.058823529630899429</real>
-				<key>Color Space</key>
-				<string>sRGB</string>
-				<key>Green Component</key>
-				<real>0.058823529630899429</real>
-				<key>Red Component</key>
-				<real>0.058823529630899429</real>
-			</dict>
-		</dict>
 		<key>alice-old</key>
 		<dict>
 			<key>Ansi 0 Color</key>
@@ -604,6 +237,373 @@
 				<string>sRGB</string>
 				<key>Green Component</key>
 				<real>0.49256539344787598</real>
+				<key>Red Component</key>
+				<real>1</real>
+			</dict>
+			<key>Background Color</key>
+			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
+				<key>Blue Component</key>
+				<real>0.08235294371843338</real>
+				<key>Color Space</key>
+				<string>sRGB</string>
+				<key>Green Component</key>
+				<real>0.08235294371843338</real>
+				<key>Red Component</key>
+				<real>0.08235294371843338</real>
+			</dict>
+			<key>Badge Color</key>
+			<dict>
+				<key>Alpha Component</key>
+				<real>0.5</real>
+				<key>Blue Component</key>
+				<real>0.0</real>
+				<key>Color Space</key>
+				<string>sRGB</string>
+				<key>Green Component</key>
+				<real>0.1491314172744751</real>
+				<key>Red Component</key>
+				<real>1</real>
+			</dict>
+			<key>Bold Color</key>
+			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
+				<key>Blue Component</key>
+				<real>1</real>
+				<key>Color Space</key>
+				<string>sRGB</string>
+				<key>Green Component</key>
+				<real>1</real>
+				<key>Red Component</key>
+				<real>0.99999600648880005</real>
+			</dict>
+			<key>Cursor Color</key>
+			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
+				<key>Blue Component</key>
+				<real>0.50619852542877197</real>
+				<key>Color Space</key>
+				<string>sRGB</string>
+				<key>Green Component</key>
+				<real>0.49256539344787598</real>
+				<key>Red Component</key>
+				<real>1</real>
+			</dict>
+			<key>Cursor Guide Color</key>
+			<dict>
+				<key>Alpha Component</key>
+				<real>0.25</real>
+				<key>Blue Component</key>
+				<real>1</real>
+				<key>Color Space</key>
+				<string>sRGB</string>
+				<key>Green Component</key>
+				<real>0.9268307089805603</real>
+				<key>Red Component</key>
+				<real>0.70213186740875244</real>
+			</dict>
+			<key>Cursor Text Color</key>
+			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
+				<key>Blue Component</key>
+				<real>0.50619852542877197</real>
+				<key>Color Space</key>
+				<string>sRGB</string>
+				<key>Green Component</key>
+				<real>0.49256539344787598</real>
+				<key>Red Component</key>
+				<real>1</real>
+			</dict>
+			<key>Foreground Color</key>
+			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
+				<key>Blue Component</key>
+				<real>0.94999998807907104</real>
+				<key>Color Space</key>
+				<string>sRGB</string>
+				<key>Green Component</key>
+				<real>0.94999998807907104</real>
+				<key>Red Component</key>
+				<real>0.94999998807907104</real>
+			</dict>
+			<key>Link Color</key>
+			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
+				<key>Blue Component</key>
+				<real>0.73423302173614502</real>
+				<key>Color Space</key>
+				<string>sRGB</string>
+				<key>Green Component</key>
+				<real>0.35916060209274292</real>
+				<key>Red Component</key>
+				<real>0.0</real>
+			</dict>
+			<key>Selected Text Color</key>
+			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
+				<key>Blue Component</key>
+				<real>0.98136156797409058</real>
+				<key>Color Space</key>
+				<string>sRGB</string>
+				<key>Green Component</key>
+				<real>0.9824872612953186</real>
+				<key>Red Component</key>
+				<real>1</real>
+			</dict>
+			<key>Selection Color</key>
+			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
+				<key>Blue Component</key>
+				<real>0.29621261358261108</real>
+				<key>Color Space</key>
+				<string>sRGB</string>
+				<key>Green Component</key>
+				<real>0.284496009349823</real>
+				<key>Red Component</key>
+				<real>0.28522062301635742</real>
+			</dict>
+			<key>Tab Color</key>
+			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
+				<key>Blue Component</key>
+				<real>0.08235294371843338</real>
+				<key>Color Space</key>
+				<string>sRGB</string>
+				<key>Green Component</key>
+				<real>0.08235294371843338</real>
+				<key>Red Component</key>
+				<real>0.08235294371843338</real>
+			</dict>
+			<key>Underline Color</key>
+			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
+				<key>Blue Component</key>
+				<real>0.058823529630899429</real>
+				<key>Color Space</key>
+				<string>sRGB</string>
+				<key>Green Component</key>
+				<real>0.058823529630899429</real>
+				<key>Red Component</key>
+				<real>0.058823529630899429</real>
+			</dict>
+		</dict>
+		<key>kiss</key>
+		<dict>
+			<key>Ansi 0 Color</key>
+			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
+				<key>Blue Component</key>
+				<real>0.15000000596046448</real>
+				<key>Color Space</key>
+				<string>sRGB</string>
+				<key>Green Component</key>
+				<real>0.15000000596046448</real>
+				<key>Red Component</key>
+				<real>0.15000000596046448</real>
+			</dict>
+			<key>Ansi 1 Color</key>
+			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
+				<key>Blue Component</key>
+				<real>0.46310701966285706</real>
+				<key>Color Space</key>
+				<string>sRGB</string>
+				<key>Green Component</key>
+				<real>0.45080000162124634</real>
+				<key>Red Component</key>
+				<real>0.98000001907348633</real>
+			</dict>
+			<key>Ansi 10 Color</key>
+			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
+				<key>Blue Component</key>
+				<real>0.7542833685874939</real>
+				<key>Color Space</key>
+				<string>sRGB</string>
+				<key>Green Component</key>
+				<real>1</real>
+				<key>Red Component</key>
+				<real>0.52276355028152466</real>
+			</dict>
+			<key>Ansi 11 Color</key>
+			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
+				<key>Blue Component</key>
+				<real>0.66634941101074219</real>
+				<key>Color Space</key>
+				<string>sRGB</string>
+				<key>Green Component</key>
+				<real>0.97422975301742554</real>
+				<key>Red Component</key>
+				<real>1</real>
+			</dict>
+			<key>Ansi 12 Color</key>
+			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
+				<key>Blue Component</key>
+				<real>1</real>
+				<key>Color Space</key>
+				<string>sRGB</string>
+				<key>Green Component</key>
+				<real>0.71825826168060303</real>
+				<key>Red Component</key>
+				<real>0.24702668190002441</real>
+			</dict>
+			<key>Ansi 13 Color</key>
+			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
+				<key>Blue Component</key>
+				<real>1</real>
+				<key>Color Space</key>
+				<string>sRGB</string>
+				<key>Green Component</key>
+				<real>0.58485996723175049</real>
+				<key>Red Component</key>
+				<real>0.60158032178878784</real>
+			</dict>
+			<key>Ansi 14 Color</key>
+			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
+				<key>Blue Component</key>
+				<real>1</real>
+				<key>Color Space</key>
+				<string>sRGB</string>
+				<key>Green Component</key>
+				<real>0.89614838361740112</real>
+				<key>Red Component</key>
+				<real>0.0</real>
+			</dict>
+			<key>Ansi 15 Color</key>
+			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
+				<key>Blue Component</key>
+				<real>0.94901961088180542</real>
+				<key>Color Space</key>
+				<string>sRGB</string>
+				<key>Green Component</key>
+				<real>0.94901961088180542</real>
+				<key>Red Component</key>
+				<real>0.94901961088180542</real>
+			</dict>
+			<key>Ansi 2 Color</key>
+			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
+				<key>Blue Component</key>
+				<real>0.63462895154953003</real>
+				<key>Color Space</key>
+				<string>sRGB</string>
+				<key>Green Component</key>
+				<real>0.93000000715255737</real>
+				<key>Red Component</key>
+				<real>0.36269998550415039</real>
+			</dict>
+			<key>Ansi 3 Color</key>
+			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
+				<key>Blue Component</key>
+				<real>0.61679995059967041</real>
+				<key>Color Space</key>
+				<string>sRGB</string>
+				<key>Green Component</key>
+				<real>0.90814518928527832</real>
+				<key>Red Component</key>
+				<real>0.93966645002365112</real>
+			</dict>
+			<key>Ansi 4 Color</key>
+			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
+				<key>Blue Component</key>
+				<real>0.9318351149559021</real>
+				<key>Color Space</key>
+				<string>sRGB</string>
+				<key>Green Component</key>
+				<real>0.6432306170463562</real>
+				<key>Red Component</key>
+				<real>0.21592763066291809</real>
+			</dict>
+			<key>Ansi 5 Color</key>
+			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
+				<key>Blue Component</key>
+				<real>1</real>
+				<key>Color Space</key>
+				<string>sRGB</string>
+				<key>Green Component</key>
+				<real>0.49019607901573181</real>
+				<key>Red Component</key>
+				<real>0.51372551918029785</real>
+			</dict>
+			<key>Ansi 6 Color</key>
+			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
+				<key>Blue Component</key>
+				<real>0.95104044675827026</real>
+				<key>Color Space</key>
+				<string>sRGB</string>
+				<key>Green Component</key>
+				<real>0.83910858631134033</real>
+				<key>Red Component</key>
+				<real>0.0</real>
+			</dict>
+			<key>Ansi 7 Color</key>
+			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
+				<key>Blue Component</key>
+				<real>0.79000002145767212</real>
+				<key>Color Space</key>
+				<string>sRGB</string>
+				<key>Green Component</key>
+				<real>0.79000002145767212</real>
+				<key>Red Component</key>
+				<real>0.79000002145767212</real>
+			</dict>
+			<key>Ansi 8 Color</key>
+			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
+				<key>Blue Component</key>
+				<real>0.4078223705291748</real>
+				<key>Color Space</key>
+				<string>sRGB</string>
+				<key>Green Component</key>
+				<real>0.40782788395881653</real>
+				<key>Red Component</key>
+				<real>0.40781760215759277</real>
+			</dict>
+			<key>Ansi 9 Color</key>
+			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
+				<key>Blue Component</key>
+				<real>0.53885048627853394</real>
+				<key>Color Space</key>
+				<string>sRGB</string>
+				<key>Green Component</key>
+				<real>0.52249544858932495</real>
 				<key>Red Component</key>
 				<real>1</real>
 			</dict>
@@ -1015,7 +1015,7 @@
 	<key>MinimalTabStyleOutlineStrength</key>
 	<real>0.0</real>
 	<key>NSColorPanelMode</key>
-	<string>6</string>
+	<string>7</string>
 	<key>NSColorPickerPreferredRGBEntryMode</key>
 	<integer>2</integer>
 	<key>NSColorPickerSlidersDefaults</key>
@@ -1023,7 +1023,7 @@
 	<key>NSFontPanelAttributes</key>
 	<string>1, 2</string>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/.dot/.config/iterm2/colors</string>
+	<string>~/.dot/.config/iterm2/profiles</string>
 	<key>NSNavLastUserSetHideExtensionButtonState</key>
 	<false/>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
@@ -1040,8 +1040,8 @@
 	<false/>
 	<key>NSSplitView Subview Frames NSColorPanelSplitView</key>
 	<array>
-		<string>0.000000, 0.000000, 326.000000, 330.000000, NO, NO</string>
-		<string>0.000000, 331.000000, 326.000000, 189.000000, NO, NO</string>
+		<string>0.000000, 0.000000, 326.000000, 448.000000, NO, NO</string>
+		<string>0.000000, 449.000000, 326.000000, 189.000000, NO, NO</string>
 	</array>
 	<key>NSTableView Columns v2 KeyBingingTable</key>
 	<data>
@@ -1135,15 +1135,15 @@
 		<string>^=</string>
 	</dict>
 	<key>NSWindow Frame NSColorPanel</key>
-	<string>242 326 326 347 0 0 1440 877 </string>
+	<string>292 268 326 465 0 0 1680 1027 </string>
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>315 401 445 205 0 0 1440 877 </string>
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
-	<string>440 434 799 448 0 0 1680 1027 </string>
+	<string>419 417 841 470 0 0 1680 1027 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>76 581 620 392 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>943 330 732 567 0 0 1680 1027 </string>
+	<string>942 355 732 567 0 0 1680 1027 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -1764,7 +1764,7 @@
 			<key>Mouse Reporting</key>
 			<true/>
 			<key>Name</key>
-			<string>Alice</string>
+			<string>kiss</string>
 			<key>Non Ascii Font</key>
 			<string>HackNerdFontComplete-Regular 13</string>
 			<key>Non-ASCII Anti Aliased</key>
@@ -1827,6 +1827,8 @@
 			</dict>
 			<key>Send Code When Idle</key>
 			<false/>
+			<key>Session Close Undo Timeout</key>
+			<integer>2</integer>
 			<key>Shortcut</key>
 			<string>1</string>
 			<key>Show Mark Indicators</key>
@@ -1882,7 +1884,7 @@
 			<key>Thin Strokes</key>
 			<integer>4</integer>
 			<key>Title Components</key>
-			<integer>2</integer>
+			<integer>1</integer>
 			<key>Transparency</key>
 			<integer>0</integer>
 			<key>Underline Color</key>
@@ -1927,7 +1929,7 @@
 			<key>Working Directory</key>
 			<string>/Users/riley</string>
 			<key>tmux Pane Title</key>
-			<string>alice</string>
+			<string>kiss</string>
 		</dict>
 		<dict>
 			<key>ASCII Anti Aliased</key>
@@ -2535,7 +2537,7 @@
 			<key>Mouse Reporting</key>
 			<true/>
 			<key>Name</key>
-			<string>Alice SF Mono</string>
+			<string>kiss sf mono</string>
 			<key>Non Ascii Font</key>
 			<string>FuraCodeNerdFontComplete-Retina 13</string>
 			<key>Non-ASCII Anti Aliased</key>
@@ -2952,7 +2954,7 @@
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1680, 1050}}</string>
 		<key>topLeft</key>
-		<string>{14, 952}</string>
+		<string>{711, 924}</string>
 	</dict>
 	<key>NoSyncHaveUsedCopyMode</key>
 	<true/>
@@ -2963,7 +2965,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>1B480254-E265-41B7-98EA-0689375CEC49</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>272</integer>
+	<integer>290</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -3728,6 +3730,10 @@
 			</dict>
 		</array>
 	</dict>
+	<key>NoSyncReplaceProfileWarning</key>
+	<true/>
+	<key>NoSyncReplaceProfileWarning_selection</key>
+	<integer>0</integer>
 	<key>NoSyncSavePanelSavedSettings_SaveProfile</key>
 	<dict>
 		<key>Initial Directory</key>
@@ -3804,7 +3810,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-11-21T23:40:44Z</date>
+	<date>2019-11-25T12:57:42Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
@@ -4250,7 +4256,7 @@
 												<real>0.94999998807907104</real>
 											</dict>
 											<key>Guid</key>
-											<string>736198EC-84F2-44DE-A1F0-8A2AD357AE6F</string>
+											<string>168574FA-94A6-4EFD-B757-4FA84EB7D2C5</string>
 											<key>Has Hotkey</key>
 											<false/>
 											<key>Horizontal Spacing</key>
@@ -4497,7 +4503,7 @@
 											<key>Mouse Reporting</key>
 											<true/>
 											<key>Name</key>
-											<string>Alice</string>
+											<string>kiss</string>
 											<key>Non Ascii Font</key>
 											<string>HackNerdFontComplete-Regular 13</string>
 											<key>Non-ASCII Anti Aliased</key>
@@ -4562,6 +4568,8 @@
 											</dict>
 											<key>Send Code When Idle</key>
 											<false/>
+											<key>Session Close Undo Timeout</key>
+											<integer>2</integer>
 											<key>Shortcut</key>
 											<string>1</string>
 											<key>Show Mark Indicators</key>
@@ -4617,7 +4625,7 @@
 											<key>Thin Strokes</key>
 											<integer>4</integer>
 											<key>Title Components</key>
-											<integer>2</integer>
+											<integer>1</integer>
 											<key>Transparency</key>
 											<integer>0</integer>
 											<key>Underline Color</key>
@@ -4662,105 +4670,14 @@
 											<key>Working Directory</key>
 											<string>/Users/riley</string>
 											<key>tmux Pane Title</key>
-											<string>alice</string>
+											<string>kiss</string>
 										</dict>
 										<key>Columns</key>
 										<integer>91</integer>
 										<key>Commands</key>
-										<array>
-											<string>brew cask install font-forge</string>
-											<string>brew cask install fontforge</string>
-											<string>cd .dot</string>
-											<string>gs</string>
-											<string>git add .config/iterm2/config/com.googlecode.iterm2.plist &amp;&amp; gc -m 'iterm2 config'</string>
-											<string>gp</string>
-											<string>cd</string>
-											<string>zshup.sh</string>
-											<string>nvim .zsh-plugins</string>
-											<string>mv .zsh-plugins .config/zsh/.zsh-plugins</string>
-											<string>cd .dot</string>
-											<string>git add .config/zsh/.zsh-plugins</string>
-											<string>git commit -m 'add zsh-plugins'</string>
-											<string>gp</string>
-											<string>nvim .setup/macOS-setup.sh</string>
-											<string>cd</string>
-										</array>
+										<array/>
 										<key>Directories</key>
 										<array>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
 										</array>
@@ -4788,450 +4705,6 @@
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
-											<dict>
-												<key>Host name</key>
-												<string>rxmbp.local</string>
-												<key>User name</key>
-												<string>riley</string>
-											</dict>
-											<dict>
-												<key>Host name</key>
-												<string>rxmbp.local</string>
-												<key>User name</key>
-												<string>riley</string>
-											</dict>
-											<dict>
-												<key>Host name</key>
-												<string>rxmbp.local</string>
-												<key>User name</key>
-												<string>riley</string>
-											</dict>
-											<dict>
-												<key>Host name</key>
-												<string>rxmbp.local</string>
-												<key>User name</key>
-												<string>riley</string>
-											</dict>
-											<dict>
-												<key>Host name</key>
-												<string>rxmbp.local</string>
-												<key>User name</key>
-												<string>riley</string>
-											</dict>
-											<dict>
-												<key>Host name</key>
-												<string>rxmbp.local</string>
-												<key>User name</key>
-												<string>riley</string>
-											</dict>
-											<dict>
-												<key>Host name</key>
-												<string>rxmbp.local</string>
-												<key>User name</key>
-												<string>riley</string>
-											</dict>
-											<dict>
-												<key>Host name</key>
-												<string>rxmbp.local</string>
-												<key>User name</key>
-												<string>riley</string>
-											</dict>
-											<dict>
-												<key>Host name</key>
-												<string>rxmbp.local</string>
-												<key>User name</key>
-												<string>riley</string>
-											</dict>
-											<dict>
-												<key>Host name</key>
-												<string>rxmbp.local</string>
-												<key>User name</key>
-												<string>riley</string>
-											</dict>
-											<dict>
-												<key>Host name</key>
-												<string>rxmbp.local</string>
-												<key>User name</key>
-												<string>riley</string>
-											</dict>
-											<dict>
-												<key>Host name</key>
-												<string>rxmbp.local</string>
-												<key>User name</key>
-												<string>riley</string>
-											</dict>
-											<dict>
-												<key>Host name</key>
-												<string>rxmbp.local</string>
-												<key>User name</key>
-												<string>riley</string>
-											</dict>
-											<dict>
-												<key>Host name</key>
-												<string>rxmbp.local</string>
-												<key>User name</key>
-												<string>riley</string>
-											</dict>
-											<dict>
-												<key>Host name</key>
-												<string>rxmbp.local</string>
-												<key>User name</key>
-												<string>riley</string>
-											</dict>
-											<dict>
-												<key>Host name</key>
-												<string>rxmbp.local</string>
-												<key>User name</key>
-												<string>riley</string>
-											</dict>
-											<dict>
-												<key>Host name</key>
-												<string>rxmbp.local</string>
-												<key>User name</key>
-												<string>riley</string>
-											</dict>
-											<dict>
-												<key>Host name</key>
-												<string>rxmbp.local</string>
-												<key>User name</key>
-												<string>riley</string>
-											</dict>
-											<dict>
-												<key>Host name</key>
-												<string>rxmbp.local</string>
-												<key>User name</key>
-												<string>riley</string>
-											</dict>
-											<dict>
-												<key>Host name</key>
-												<string>rxmbp.local</string>
-												<key>User name</key>
-												<string>riley</string>
-											</dict>
-											<dict>
-												<key>Host name</key>
-												<string>rxmbp.local</string>
-												<key>User name</key>
-												<string>riley</string>
-											</dict>
-											<dict>
-												<key>Host name</key>
-												<string>rxmbp.local</string>
-												<key>User name</key>
-												<string>riley</string>
-											</dict>
-											<dict>
-												<key>Host name</key>
-												<string>rxmbp.local</string>
-												<key>User name</key>
-												<string>riley</string>
-											</dict>
-											<dict>
-												<key>Host name</key>
-												<string>rxmbp.local</string>
-												<key>User name</key>
-												<string>riley</string>
-											</dict>
-											<dict>
-												<key>Host name</key>
-												<string>rxmbp.local</string>
-												<key>User name</key>
-												<string>riley</string>
-											</dict>
-											<dict>
-												<key>Host name</key>
-												<string>rxmbp.local</string>
-												<key>User name</key>
-												<string>riley</string>
-											</dict>
-											<dict>
-												<key>Host name</key>
-												<string>rxmbp.local</string>
-												<key>User name</key>
-												<string>riley</string>
-											</dict>
-											<dict>
-												<key>Host name</key>
-												<string>rxmbp.local</string>
-												<key>User name</key>
-												<string>riley</string>
-											</dict>
-											<dict>
-												<key>Host name</key>
-												<string>rxmbp.local</string>
-												<key>User name</key>
-												<string>riley</string>
-											</dict>
-											<dict>
-												<key>Host name</key>
-												<string>rxmbp.local</string>
-												<key>User name</key>
-												<string>riley</string>
-											</dict>
-											<dict>
-												<key>Host name</key>
-												<string>rxmbp.local</string>
-												<key>User name</key>
-												<string>riley</string>
-											</dict>
-											<dict>
-												<key>Host name</key>
-												<string>rxmbp.local</string>
-												<key>User name</key>
-												<string>riley</string>
-											</dict>
-											<dict>
-												<key>Host name</key>
-												<string>rxmbp.local</string>
-												<key>User name</key>
-												<string>riley</string>
-											</dict>
-											<dict>
-												<key>Host name</key>
-												<string>rxmbp.local</string>
-												<key>User name</key>
-												<string>riley</string>
-											</dict>
-											<dict>
-												<key>Host name</key>
-												<string>rxmbp.local</string>
-												<key>User name</key>
-												<string>riley</string>
-											</dict>
-											<dict>
-												<key>Host name</key>
-												<string>rxmbp.local</string>
-												<key>User name</key>
-												<string>riley</string>
-											</dict>
-											<dict>
-												<key>Host name</key>
-												<string>rxmbp.local</string>
-												<key>User name</key>
-												<string>riley</string>
-											</dict>
-											<dict>
-												<key>Host name</key>
-												<string>rxmbp.local</string>
-												<key>User name</key>
-												<string>riley</string>
-											</dict>
-											<dict>
-												<key>Host name</key>
-												<string>rxmbp.local</string>
-												<key>User name</key>
-												<string>riley</string>
-											</dict>
-											<dict>
-												<key>Host name</key>
-												<string>rxmbp.local</string>
-												<key>User name</key>
-												<string>riley</string>
-											</dict>
-											<dict>
-												<key>Host name</key>
-												<string>rxmbp.local</string>
-												<key>User name</key>
-												<string>riley</string>
-											</dict>
-											<dict>
-												<key>Host name</key>
-												<string>rxmbp.local</string>
-												<key>User name</key>
-												<string>riley</string>
-											</dict>
-											<dict>
-												<key>Host name</key>
-												<string>rxmbp.local</string>
-												<key>User name</key>
-												<string>riley</string>
-											</dict>
-											<dict>
-												<key>Host name</key>
-												<string>rxmbp.local</string>
-												<key>User name</key>
-												<string>riley</string>
-											</dict>
-											<dict>
-												<key>Host name</key>
-												<string>rxmbp.local</string>
-												<key>User name</key>
-												<string>riley</string>
-											</dict>
-											<dict>
-												<key>Host name</key>
-												<string>rxmbp.local</string>
-												<key>User name</key>
-												<string>riley</string>
-											</dict>
-											<dict>
-												<key>Host name</key>
-												<string>rxmbp.local</string>
-												<key>User name</key>
-												<string>riley</string>
-											</dict>
-											<dict>
-												<key>Host name</key>
-												<string>rxmbp.local</string>
-												<key>User name</key>
-												<string>riley</string>
-											</dict>
-											<dict>
-												<key>Host name</key>
-												<string>rxmbp.local</string>
-												<key>User name</key>
-												<string>riley</string>
-											</dict>
-											<dict>
-												<key>Host name</key>
-												<string>rxmbp.local</string>
-												<key>User name</key>
-												<string>riley</string>
-											</dict>
-											<dict>
-												<key>Host name</key>
-												<string>rxmbp.local</string>
-												<key>User name</key>
-												<string>riley</string>
-											</dict>
-											<dict>
-												<key>Host name</key>
-												<string>rxmbp.local</string>
-												<key>User name</key>
-												<string>riley</string>
-											</dict>
-											<dict>
-												<key>Host name</key>
-												<string>rxmbp.local</string>
-												<key>User name</key>
-												<string>riley</string>
-											</dict>
-											<dict>
-												<key>Host name</key>
-												<string>rxmbp.local</string>
-												<key>User name</key>
-												<string>riley</string>
-											</dict>
-											<dict>
-												<key>Host name</key>
-												<string>rxmbp.local</string>
-												<key>User name</key>
-												<string>riley</string>
-											</dict>
-											<dict>
-												<key>Host name</key>
-												<string>rxmbp.local</string>
-												<key>User name</key>
-												<string>riley</string>
-											</dict>
-											<dict>
-												<key>Host name</key>
-												<string>rxmbp.local</string>
-												<key>User name</key>
-												<string>riley</string>
-											</dict>
-											<dict>
-												<key>Host name</key>
-												<string>rxmbp.local</string>
-												<key>User name</key>
-												<string>riley</string>
-											</dict>
-											<dict>
-												<key>Host name</key>
-												<string>rxmbp.local</string>
-												<key>User name</key>
-												<string>riley</string>
-											</dict>
-											<dict>
-												<key>Host name</key>
-												<string>rxmbp.local</string>
-												<key>User name</key>
-												<string>riley</string>
-											</dict>
-											<dict>
-												<key>Host name</key>
-												<string>rxmbp.local</string>
-												<key>User name</key>
-												<string>riley</string>
-											</dict>
-											<dict>
-												<key>Host name</key>
-												<string>rxmbp.local</string>
-												<key>User name</key>
-												<string>riley</string>
-											</dict>
-											<dict>
-												<key>Host name</key>
-												<string>rxmbp.local</string>
-												<key>User name</key>
-												<string>riley</string>
-											</dict>
-											<dict>
-												<key>Host name</key>
-												<string>rxmbp.local</string>
-												<key>User name</key>
-												<string>riley</string>
-											</dict>
-											<dict>
-												<key>Host name</key>
-												<string>rxmbp.local</string>
-												<key>User name</key>
-												<string>riley</string>
-											</dict>
-											<dict>
-												<key>Host name</key>
-												<string>rxmbp.local</string>
-												<key>User name</key>
-												<string>riley</string>
-											</dict>
-											<dict>
-												<key>Host name</key>
-												<string>rxmbp.local</string>
-												<key>User name</key>
-												<string>riley</string>
-											</dict>
-											<dict>
-												<key>Host name</key>
-												<string>rxmbp.local</string>
-												<key>User name</key>
-												<string>riley</string>
-											</dict>
-											<dict>
-												<key>Host name</key>
-												<string>rxmbp.local</string>
-												<key>User name</key>
-												<string>riley</string>
-											</dict>
-											<dict>
-												<key>Host name</key>
-												<string>rxmbp.local</string>
-												<key>User name</key>
-												<string>riley</string>
-											</dict>
-											<dict>
-												<key>Host name</key>
-												<string>rxmbp.local</string>
-												<key>User name</key>
-												<string>riley</string>
-											</dict>
-											<dict>
-												<key>Host name</key>
-												<string>rxmbp.local</string>
-												<key>User name</key>
-												<string>riley</string>
-											</dict>
-											<dict>
-												<key>Host name</key>
-												<string>rxmbp.local</string>
-												<key>User name</key>
-												<string>riley</string>
-											</dict>
-											<dict>
-												<key>Host name</key>
-												<string>rxmbp.local</string>
-												<key>User name</key>
-												<string>riley</string>
-											</dict>
 										</array>
 										<key>Is UTF-8</key>
 										<true/>
@@ -5244,25 +4717,27 @@
 										</dict>
 										<key>Program</key>
 										<dict>
+											<key>Command</key>
+											<string>login -fqp "riley"</string>
 											<key>Type</key>
-											<string>Shell Launcher</string>
+											<string>Command</string>
 										</dict>
 										<key>Rows</key>
 										<integer>32</integer>
 										<key>Session GUID</key>
-										<string>B9002B3F-963B-485B-8D4F-D9B69ED3F0D4</string>
+										<string>B74F8CA1-2A98-410E-A0DA-5BAE03D3C7B4</string>
 										<key>Short Lived Single Use</key>
 										<false/>
 										<key>Should Expect Current Dir Updates</key>
-										<true/>
+										<false/>
 										<key>Should Expect Prompt Marks</key>
-										<true/>
+										<false/>
 										<key>Substitutions</key>
 										<dict/>
 										<key>Working Directory</key>
 										<string>/Users/riley</string>
 										<key>Working Directory Poller Disabled</key>
-										<true/>
+										<false/>
 									</dict>
 									<key>View Type</key>
 									<string>SessionView</string>
@@ -5298,7 +4773,7 @@
 					</dict>
 				</array>
 				<key>TerminalGuid</key>
-				<string>pty-1DB4AA34-1183-4363-AF81-581573866C77</string>
+				<string>pty-9017910C-62D9-4847-848E-A2330B497DBF</string>
 				<key>Toolbelt</key>
 				<dict/>
 				<key>Toolbelt Proportions</key>
@@ -5320,9 +4795,9 @@
 				<key>Window Type</key>
 				<integer>13</integer>
 				<key>X Origin</key>
-				<real>943</real>
+				<real>942</real>
 				<key>Y Origin</key>
-				<real>330</real>
+				<real>355</real>
 			</dict>
 		</array>
 	</dict>
