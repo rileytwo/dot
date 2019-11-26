@@ -1,26 +1,5 @@
 #!/usr/bin/env zsh
 
-## handy little "refresh environment" alias
-alias refresh="exec "${SHELL}" -l"
-
-## radian console
-alias rr="radian"
-
-## R
-alias r='r --no-save'
-
-## plistbuddy alias
-alias plistbuddy='/usr/libexec/PlistBuddy'
-
-## echo each path/fpath entry on newline
-# `print -rl -- "${(@s/:/)PATH}"` also works
-alias path='echo -e ${PATH//:/\\n}'
-alias fpath='echo -e ${FPATH//:/\\n}'
-
-# git aliases
-alias gs='git status'
-alias gcu='git checkout upstream'
-
 if (( $+commands[karabiner_cli] )); then
     alias kb='karabiner_cli'
 fi
@@ -47,6 +26,27 @@ if (( $+commands[pyenv] )); then
     alias pv='pyenv version'
     alias pvs='pyenv versions'
 fi
+
+if (( $+commands[R] )); then
+    alias r='r --no-save'
+fi
+
+if (( $+commands[radian] )); then
+    alias rr="radian"
+fi
+
+
+## plistbuddy alias
+alias plistbuddy='/usr/libexec/PlistBuddy'
+
+## echo each path/fpath entry on newline
+# `print -rl -- "${(@s/:/)PATH}"` also works
+alias path='echo -e ${PATH//:/\\n}'
+alias fpath='echo -e ${FPATH//:/\\n}'
+
+# git aliases
+alias gs='git status'
+alias gcu='git checkout upstream'
 
 alias hsg='history | grep'
 alias please='sudo'
