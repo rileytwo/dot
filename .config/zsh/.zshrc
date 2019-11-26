@@ -8,8 +8,8 @@ zmodload zsh/zprof
 autoload zmv
 autoload -U edit-command-line
 zle -N edit-command-line
-bindkey '^x^e'
-
+bindkey '^x^e' edit-command-line
+bindkey '^xe' edit-command-line
 
 
 #### // neofetch
