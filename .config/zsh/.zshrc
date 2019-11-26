@@ -5,8 +5,12 @@
 
 # zsh modules
 zmodload zsh/zprof
-
 autoload zmv
+autoload -U edit-command-line
+zle -N edit-command-line
+bindkey '^x^e'
+
+
 
 #### // neofetch
 # color order:
@@ -125,10 +129,10 @@ zstyle ':completion:*:corrections' format \
 
 zstyle ':completion:*' list-colors \
   "${(s.:.)LS_COLORS}"
-  # NOTE `(s.:.)` forces field splitting at the separator *string*
+# NOTE `(s.:.)` forces field splitting at the separator *string*
 
-  zstyle ':completion:*' group-name ''
-  zstyle ':completion:*' verbose true
+zstyle ':completion:*' group-name ''
+zstyle ':completion:*' verbose true
 
 
 
