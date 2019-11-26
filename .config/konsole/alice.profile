@@ -1,7 +1,7 @@
 [Appearance]
 BoldIntense=true
 ColorScheme=Alice
-Font=FiraCode Nerd Font,10.5,-1,5,53,0,0,0,0,0,Retina
+Font=FiraCode Nerd Font,10,-1,5,53,0,0,0,0,0,Retina
 UseFontLineChararacters=false
 
 [Cursor Options]
@@ -22,6 +22,7 @@ TerminalRows=30
 AutoCopySelectedText=true
 MouseWheelZoomEnabled=false
 OpenLinksByDirectClickEnabled=false
+UnderlineLinksEnabled=false
 
 [Keyboard]
 KeyBindings=default
@@ -31,4 +32,5 @@ HistorySize=5000
 ScrollBarPosition=2
 
 [Terminal Features]
+ReverseUrlHints=true
 UrlHintsModifiers=268435456
