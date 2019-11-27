@@ -5,17 +5,16 @@ if ($IsWindows) {
         Import-Module "$ChocolateyProfile"
     }
 
-    $Env:PSModulePath += ";C:\Users\RRoach\scoop\modules"
+    $Env:PSModulePath += ";${HOME}\scoop\modules"
     $Env:Path += ";C:\ProgramData\jetpack\bin"
-    $Env:Path += ";C:\Users\RRoach\.cargo\bin"
+    $Env:Path += ";${HOME}\.cargo\bin"
 
     function Start-Conda {
-        (& "C:\Users\RRoach\scoop\apps\miniconda3\current\Scripts\conda.exe" `
+        (& "${HOME}\scoop\apps\miniconda3\current\Scripts\conda.exe" `
                 "shell.powershell" `
                 "hook"
         ) | 
-        Out-String | 
-        Invoke-Expression
+        Out-String | Invoke-Expression
     }
     
     if (Get-VirtualEnvName) {
@@ -24,7 +23,7 @@ if ($IsWindows) {
 
     if (Test-Path -IsValid "$($HOME)\github\z\z.lua") {
         Invoke-Expression (
-            $(lua "C:\Users\RRoach\github\z\z.lua" --init powershell enhanced) `
+            $(lua "${HOME}\github\z\z.lua" --init powershell enhanced) `
             -join "`n"
         )
     }
