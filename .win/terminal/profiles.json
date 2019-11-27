@@ -22,7 +22,7 @@
       "colorScheme": "Riley",
       "cursorColor": "#FFFFFF",
       "cursorShape": "bar",
-      "fontFace": "FuraCode NF Retina",
+      "fontFace": "SFL Mono",
       "fontSize": 9
     },
     {
@@ -41,7 +41,7 @@
       "colorScheme": "Riley",
       "cursorColor": "#FFFFFF",
       "cursorShape": "bar",
-      "fontFace": "FuraCode NF Retina",
+      "fontFace": "SFL Mono",
       "fontSize": 9
     },
     {
@@ -53,7 +53,7 @@
       "commandline": "wsl.exe -d Ubuntu",
       "cursorColor": "#FFFFFF",
       "cursorShape": "bar",
-      "fontFace": "FuraCode NF Retina",
+      "fontFace": "SFL Mono",
       "fontSize": 9
     },
     {
