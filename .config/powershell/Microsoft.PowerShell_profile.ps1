@@ -10,22 +10,24 @@ if ($IsWindows) {
     $Env:Path += ";C:\Users\RRoach\.cargo\bin"
 
     function Start-Conda {
-        (& "C:\Users\RRoach\scoop\apps\miniconda3\current\Scripts\conda.exe" "shell.powershell" "hook") | 
-            Out-String | 
-            Invoke-Expression
+        (& "C:\Users\RRoach\scoop\apps\miniconda3\current\Scripts\conda.exe" `
+                "shell.powershell" `
+                "hook"
+        ) | 
+        Out-String | 
+        Invoke-Expression
     }
     
     if (Get-VirtualEnvName) {
         $Env:CONDA_PROMPT_MODIFIER = ""
     }
 
-    Invoke-Expression (
-        $(lua "C:\Users\RRoach\github\z\z.lua" --init powershell enhanced) -join "`n"
-    )
-
-    if (Get-Command codium.cmd -ErrorAction SilentlyContinue) {
-        Set-Alias -name 'code' -value codium.cmd
-    } 
+    if (Test-Path -IsValid "$($HOME)\github\z\z.lua") {
+        Invoke-Expression (
+            $(lua "C:\Users\RRoach\github\z\z.lua" --init powershell enhanced) `
+            -join "`n"
+        )
+    }
 }
 
 Set-PSReadLineOption -Colors @{
@@ -94,7 +96,7 @@ Set-Alias -Name 'path' -value Get-Path
 
 Remove-Item alias:where -Force
 function Get-Commands {
-    cmd /c where $args
+    cmd /C "where $args"
 }
 Set-Alias -Name 'where' -value Get-Commands
 
