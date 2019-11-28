@@ -1,25 +1,30 @@
 #!/usr/bin/env zsh
 
-if (( $+commands[karabiner_cli] )); then
-    alias kb='karabiner_cli'
-fi
-
 if (( $+commands[exa] )); then
     alias e='exa -lah'
     alias ee='exa -lh'
 fi
 
+
 if (( $+commands[trash] )); then
     alias rm='trash'
 fi
+
+
+if (( $+commands[bat] )); then
+    alias cat='bat'
+fi
+
 
 if (( $+commands[foaas-cli] )); then
     alias f='foaas-cli'
 fi
 
-if (( $+commands[base16-manager] )); then
-    alias bxm='base16-manager'
+
+if (( $+commands[karabiner_cli] )); then
+    alias kb='karabiner_cli'
 fi
+
 
 if (( $+commands[pyenv] )); then
     alias p='pyenv'
@@ -27,13 +32,18 @@ if (( $+commands[pyenv] )); then
     alias pvs='pyenv versions'
 fi
 
+
 if (( $+commands[R] )); then
     alias r='r --no-save'
 fi
 
+
 if (( $+commands[radian] )); then
     alias rr="radian"
 fi
+
+
+
 
 
 ## plistbuddy alias
