@@ -9,9 +9,18 @@
 [core]
 	excludesfile = .gitignore-global
 	trustctime = false
-	pager = less -F -X
+	pager = diff-so-fancy | less --tabs=4 -RFX
 	autocrlf = input
 	filemode = false
 [hub]
 	protocol = https
 
+[color]
+	ui = true
+[color "diff"]
+	meta = 11
+	frag = "magenta bold"
+	commit = "yellow bold"
+	old = "red bold"
+	new = "green bold"
+	whitespace = "red reverse"
