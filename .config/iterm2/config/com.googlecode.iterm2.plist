@@ -1141,7 +1141,7 @@
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
 	<string>419 417 841 470 0 0 1680 1027 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>76 581 620 392 0 0 1680 1027 </string>
+	<string>530 476 620 392 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>942 355 732 567 0 0 1680 1027 </string>
 	<key>New Bookmarks</key>
@@ -1824,6 +1824,15 @@
 				<real>0.284496009349823</real>
 				<key>Red Component</key>
 				<real>0.28522062301635742</real>
+			</dict>
+			<key>Semantic History</key>
+			<dict>
+				<key>action</key>
+				<string>best editor</string>
+				<key>editor</key>
+				<string>com.github.atom</string>
+				<key>text</key>
+				<string></string>
 			</dict>
 			<key>Send Code When Idle</key>
 			<false/>
@@ -2914,11 +2923,12 @@
 	<array>
 		<string>3.3.6</string>
 		<string>3.3.7beta4</string>
+		<string>3.3.4</string>
 		<string>3.3.7beta3</string>
 		<string>3.3.7beta2</string>
 		<string>3.3.5beta3</string>
 		<string>3.3.7beta1</string>
-		<string>3.3.4</string>
+		<string>3.3.8beta1</string>
 	</array>
 	<key>NoSyncBFPFavorites</key>
 	<array>
@@ -2954,7 +2964,7 @@
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1680, 1050}}</string>
 		<key>topLeft</key>
-		<string>{711, 924}</string>
+		<string>{230, 919}</string>
 	</dict>
 	<key>NoSyncHaveUsedCopyMode</key>
 	<true/>
@@ -2965,7 +2975,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>1B480254-E265-41B7-98EA-0689375CEC49</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>290</integer>
+	<integer>308</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -3739,14 +3749,6 @@
 		<key>Initial Directory</key>
 		<string>/Users/riley/.dot/.config/iterm2/profiles</string>
 	</dict>
-	<key>NoSyncSearchHistory2</key>
-	<array>
-		<string>devtools</string>
-		<string>httpuv</string>
-		<string>macosx.sdk++</string>
-		<string>luarocks</string>
-		<string>error</string>
-	</array>
 	<key>NoSyncTipOfTheDayEligibilityBeganTime</key>
 	<real>591471804.16693401</real>
 	<key>OnlyWhenMoreTabs</key>
@@ -3810,7 +3812,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-11-25T12:57:42Z</date>
+	<date>2019-11-26T02:25:33Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
@@ -4808,7 +4810,7 @@
 	<key>findMode_iTerm</key>
 	<integer>0</integer>
 	<key>iTerm Version</key>
-	<string>3.3.7beta4</string>
+	<string>3.3.8beta1</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
