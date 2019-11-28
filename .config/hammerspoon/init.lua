@@ -37,7 +37,7 @@ Caps Lock (⇪) -> Cmd + Ctrl + Alt + Shift (⌘ + ⌃ + ⌥ + ⇧)
 
 --[[ 0 -------------------------------------------------------------]]
 hs.preferencesDarkMode(true)
-hs.console.consoleFont("FuraCode Nerd Font")
+hs.console.consoleFont("SFL Mono")
 hs.console.darkMode(true)
 
 if hs.console.darkMode(true) then
