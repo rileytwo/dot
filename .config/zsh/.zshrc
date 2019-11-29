@@ -20,7 +20,7 @@ bindkey '^xe' edit-command-line
 if [[ "${TERM_PROGRAM}" =~ "vscod" ]]; then
   :
 else 
-  if [[ -f "${OSTYPE}" =~ "darwin" ]]; then
+  if [[ "${OSTYPE}" =~ "darwin" ]]; then
     neofetch \
       --ascii "${HOME}"/.dot/.config/neofetch/config-mac.conf \
       --colors 5 7 7 4 7 15
