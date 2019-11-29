@@ -38,14 +38,6 @@ fi
 
 
 
-#### // iterm2 integration
-
-[[ -e "${HOME}/.iterm2_shell_integration.zsh" ]] \
-  && source "${HOME}/.iterm2_shell_integration.zsh" \
-  || :
-
-
-
 #### // oh my zsh
 
 DISABLE_AUTO_UPDATE=true
@@ -66,7 +58,6 @@ plugins=(
   zsh-syntax-highlighting
 )
 fpath=($ZSH/custom/plugins/zsh-completions/src $fpath)
-fpath=($ZSH/custom/plugins/zsh-pip-completion $fpath)
 source $ZSH/oh-my-zsh.sh
 
 
@@ -79,12 +70,29 @@ export LS_COLORS='di=1;4;34:fi=1;32:ln=1;35:pi=0:bd=0:cd=0:mi=1;4;31:ex=1;31'
 export TERM=xterm-256color
 export HOMEBREW_NO_AUTO_UPDATE=1
 export HOMEBREW_NO_INSTALL_CLEANUP=1
-export EDITOR=nvim
+setopt EXTENDED_GLOB
+setopt GLOB_DOTS
+setopt HIST_IGNORE_DUPS
+setopt HIST_IGNORE_SPACE
+setopt HIST_EXPIRE_DUPS_FIRST
+disable r
+
+if (( $+commands[vimr] )); then
+  export EDITOR=vimr
+elif (( $+commands[nvim] )); then
+  export EDITOR=nvim
+else
+  export EDITOR=vim
+fi
 
 if [[ ${LC_TERMINAL} =~ "i[tT]erm2" ]]; then
   export MPLBACKEND="module://itermplot"
   export ITERMPLOT=rv
 fi
+
+[[ -e "${HOME}/.iterm2_shell_integration.zsh" ]] \
+  && source "${HOME}/.iterm2_shell_integration.zsh" \
+  || :
 
 
 
@@ -220,7 +228,6 @@ if [[ "${OSTYPE}" =~ "linux-gnu" ]]; then
   [[ -d "/snap/bin" ]] \
     && export PATH="/snap/bin:$PATH"
 
-
   [[ -d "${HOME}/.npm-global" ]] \
     && export PATH="${HOME}/.npm-global/bin:$PATH"
 
@@ -265,36 +272,18 @@ if (( $+commands[pyenv] )) && (( $+commands[pyenv-virtualenv-init])); then
   eval "$(pyenv virtualenv-init -)"
 elif (( $+commands[pyenv] )); then
   eval "$(pyenv init -)"
-
 fi
 
 if (( $+commands[rbenv] )); then
   eval "$(rbenv init -)"
 fi
 
-
-
-#### // options
-
-setopt EXTENDED_GLOB
-setopt GLOB_DOTS
-setopt HIST_IGNORE_DUPS
-setopt HIST_IGNORE_SPACE
-setopt HIST_EXPIRE_DUPS_FIRST
-disable r
-
-
-
-#### // helpers
-
-[[ -f /usr/local/bin/typex ]] && . /usr/local/bin/typex
-
-[[ -f "${HOME}"/.aliases ]] && . "${HOME}"/.aliases
-
-if [[ -f "${HOME}"/.fzf.zsh ]]; then
-  . "${HOME}"/.fzf.zsh
-elif [[ -f /usr/share/doc/fzf/examples/key-bindings.zsh ]]; then
-  . /usr/share/doc/fzf/examples/key-bindings.zsh
+if (( $+commands[fzf] )); then
+  if [[ -f "${HOME}"/.fzf.zsh ]]; then
+    . "${HOME}"/.fzf.zsh
+  elif [[ -f /usr/share/doc/fzf/examples/key-bindings.zsh ]]; then
+    . /usr/share/doc/fzf/examples/key-bindings.zsh
+  fi
 fi
 
 if (( $+commands[rg] )); then
@@ -306,4 +295,11 @@ export FZF_DEFAULT_OPTS='
 --color=info:#d4ce90,prompt:#9691ff,pointer:#ff7e81
 --color=marker:#73ff96,spinner:#ff7e81,header:#54cc72'
 
+
+
+#### // helpers
+
+[[ -f /usr/local/bin/typex ]] && . /usr/local/bin/typex
+
+[[ -f "${HOME}/.aliases" ]] && . "${HOME}/.aliases"
 
