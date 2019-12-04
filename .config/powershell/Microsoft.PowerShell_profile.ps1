@@ -13,13 +13,14 @@ if ($IsWindows) {
         (& "${HOME}\scoop\apps\miniconda3\current\Scripts\conda.exe" `
                 "shell.powershell" `
                 "hook"
-        ) | 
-        Out-String | Invoke-Expression
+        ) | Out-String | Invoke-Expression
+
+        if (Get-VirtualEnvName) {
+            $Env:CONDA_PROMPT_MODIFIER = ""
+        }
     }
     
-    if (Get-VirtualEnvName) {
-        $Env:CONDA_PROMPT_MODIFIER = ""
-    }
+    
 
     if (Test-Path -IsValid "$($HOME)\github\z\z.lua") {
         Invoke-Expression (
