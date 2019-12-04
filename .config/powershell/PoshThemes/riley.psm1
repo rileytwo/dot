@@ -2,10 +2,8 @@
 
 function Write-Theme {
     param(
-        [bool]
-        $lastCommandFailed,
-        [string]
-        $with
+        [bool]$lastCommandFailed,
+        [string]$with
     )
     
     # Writes the drive portion
@@ -33,10 +31,10 @@ function Write-Theme {
     # if (Test-VirtualEnv) {
         # $BufferWidth = [Console]::BufferWidth
         # $lineLength = ($line -replace "\u001B.*?{L}").Length
-        
+        # 
         # $Align = $BufferWidth - $lineLength - $prompt.Length
         # $venvAligned = "{0, $Align}" -f $venv
-
+# 
         # $prompt += Write-Prompt -Object "$venvAligned" `
             # -ForegroundColor $sl.Colors.VirtualEnvForegroundColor
     # }
