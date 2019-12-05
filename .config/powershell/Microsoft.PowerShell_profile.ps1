@@ -19,17 +19,15 @@ if ($IsWindows) {
             $Env:CONDA_PROMPT_MODIFIER = ""
         }
     }
-    
-    
+}
 
-    if (Test-Path -IsValid "$($HOME)\github\z\z.lua") {
+if (Test-Path -IsValid "$($HOME)/github/z/z.lua") {
         Invoke-Expression (
-            $(lua "${HOME}\github\z\z.lua" --init powershell enhanced) `
+            $(lua "${HOME}/github/z/z.lua" --init powershell enhanced) `
             -join "`n"
         )
     }
-}
-
+    
 Set-PSReadLineOption -Colors @{
     "Command"   = "`e[34m"
     "Parameter" = "`e[35m"
