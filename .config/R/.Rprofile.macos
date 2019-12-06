@@ -30,7 +30,7 @@ if (interactive()) {
             # radian prompt
             #
             radian.tab_size           = 2,
-            radian.color_scheme       = "native",
+            radian.color_scheme       = "monokai",
             radian.editing_mode       = "vi",
             radian.auto_match         = TRUE,
             # radian.completion_timeout = 0.0,
