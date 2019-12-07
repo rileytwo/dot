@@ -118,9 +118,11 @@ fignore=(DS_Store ${fignore})
 zstyle ':completion:*' completer \
   _complete _match _approximate _ignored
 
+zstyle ':completion:*' accept-exact false
+zstyle ':completion:*' use-cache on
+zstyle ':completion:*' cache-path "${HOME}/.zsh/cache"
 zstyle ':completion:*' insert-tab pending
 zstyle ':completion:*' menu select=2
-zstyle ':completion:*' accept-exact false
 zstyle ':completion:*' special-dirs false
 zstyle ':completion:*:descriptions' format \
   "$fg[yellow]%B--- %d%b"
