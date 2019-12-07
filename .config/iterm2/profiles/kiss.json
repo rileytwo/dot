@@ -318,7 +318,7 @@
     "Alpha Component" : 1,
     "Green Component" : 0.284496009349823
   },
-  "Use Non-ASCII Font" : true,
+  "Use Non-ASCII Font" : false,
   "Character Encoding" : 4,
   "Application Keypad Allowed" : false,
   "Icon" : 1,
@@ -343,10 +343,15 @@
   },
   "Show Mark Indicators" : false,
   "Unicode Version" : 9,
-  "Title Components" : 2,
-  "Custom Directory" : "No",
+  "Title Components" : 1,
+  "Semantic History" : {
+    "action" : "best editor",
+    "text" : "",
+    "editor" : "com.github.atom"
+  },
   "Working Directory" : "\/Users\/riley",
   "ASCII Anti Aliased" : true,
+  "Custom Directory" : "No",
   "HotKey Window AutoHides" : true,
   "Shortcut" : "1",
   "Mouse Reporting" : true,
@@ -355,7 +360,7 @@
 
   ],
   "Blur Radius" : 0.10000000000000001,
-  "tmux Pane Title" : "alice",
+  "tmux Pane Title" : "kiss",
   "Background Image Location" : "",
   "Allow Title Setting" : false,
   "Use Bold Font" : true,
@@ -367,7 +372,7 @@
     "Green Component" : 0.93000000715255737
   },
   "Background Image Mode" : 0,
-  "Normal Font" : "SFLMono-Regular 13",
+  "Normal Font" : "SF-Mono-Plus-Regular 13",
   "Unlimited Scrollback" : false,
   "AWDS Window Directory" : "",
   "Ansi 15 Color" : {
@@ -395,8 +400,9 @@
     }
   },
   "Blur" : true,
-  "Initial Use Transparency" : false,
+  "Session Close Undo Timeout" : 2,
   "HotKey Characters" : "`",
+  "Initial Use Transparency" : false,
   "Scrollback in Alternate Screen" : false,
   "Terminal Type" : "xterm-256color",
   "Ansi 13 Color" : {
