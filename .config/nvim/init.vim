@@ -2,7 +2,7 @@
 " // Detect OS, TERM
 " ----------
 " check for truecolor support in current terminal
-" macOS Terminal.app does not support truecolor
+" NOTE: macOS Terminal.app does not support truecolor
 
 if has('mac')
     let g:os = 'Darwin'
@@ -28,24 +28,25 @@ endif
 " ====================
 " // Plugins (vim-plug)
 " ----------
-
 call plug#begin('~/.config/vim/plugged')
 
-" tpope
-Plug 'tpope/vim-eunuch'
-Plug 'tpope/vim-fugitive'
+
+" // tpope (he deserves his own section)
 Plug 'tpope/vim-markdown', {'for': 'markdown'}
 Plug 'tpope/vim-scriptease'
-Plug 'tpope/vim-sleuth'
+Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
+Plug 'tpope/vim-eunuch'
+Plug 'tpope/vim-sleuth'
 
 
 " // Completion, snippets
 Plug 'w0rp/ale'
-Plug 'Shougo/deoplete.nvim', {'do': ':UpdateRemotePlugins'}
+Plug 'Shougo/deoplete.nvim',          {'do': ':UpdateRemotePlugins'}
 Plug 'deoplete-plugins/deoplete-zsh', {'for': 'zsh'}
 Plug 'sirver/UltiSnips',
 Plug 'roxma/nvim-yarp'
+
 Plug 'ncm2/ncm2'
 Plug 'ncm2/ncm2-bufword'
 Plug 'ncm2/ncm2-path'
@@ -53,47 +54,42 @@ Plug 'ncm2/ncm2-jedi'
 Plug 'ncm2/ncm2-ultisnips'
 
 
-" // Lang specific
-Plug 'PProvost/vim-ps1', {'for': 'powershell'}
-Plug 'gaalcaras/ncm-R', {'for': 'R'}
-Plug 'jalvesaq/Nvim-R', {'for': 'R'}
+" // Language Plugins
 Plug 'deoplete-plugins/deoplete-jedi', {'for': 'python'}
-Plug 'chrisbra/vim-zsh' , {'for': 'zsh'}
+Plug 'PProvost/vim-ps1',               {'for': 'powershell'}
+Plug 'gaalcaras/ncm-R',                {'for': 'R'}
+Plug 'jalvesaq/Nvim-R',                {'for': 'R'}
+Plug 'chrisbra/vim-zsh',               {'for': 'zsh'}
+
 Plug 'vitalk/vim-shebang'
+Plug 'dkarter/bullets.vim'
+Plug 'cespare/vim-toml'
 Plug 'darfink/vim-plist'
 Plug 'keith/swift.vim'
 Plug 'xu-cheng/brew.vim'
-Plug 'dkarter/bullets.vim'
-Plug 'cespare/vim-toml'
 
 
-" // Auto closing delimiters
+" // Editor Plugins
+Plug 'scrooloose/nerdtree', {'on': 'NERDTreeToggle'}
+Plug 'PeterRincker/vim-searchlight'
+Plug 'norcalli/nvim-colorizer.lua'
+Plug 'ryanoasis/vim-devicons'
+Plug 'itchyny/vim-gitbranch'
+Plug 'lambdalisue/suda.vim'
+Plug 'psliwka/vim-smoothie'
 Plug 'Raimondi/delimitMate'
+Plug 'Yggdroot/indentLine'
+Plug 'godlygeek/tabular'
+
+Plug 'maximbaz/lightline-ale'
+Plug 'itchyny/lightline.vim'
 
 
 " // Colorschemes
-Plug 'ntk148v/vim-horizon'
 Plug 'rafi/awesome-vim-colorschemes'
 Plug 'rakr/vim-two-firewatch'
+Plug 'ntk148v/vim-horizon'
 Plug 'aonemd/kuroi.vim'
-
-
-" // Statusline
-Plug 'itchyny/lightline.vim'
-Plug 'maximbaz/lightline-ale'
-Plug 'lambdalisue/suda.vim'
-
-
-" // Extensibility
-Plug 'scrooloose/nerdtree', {'on': 'NERDTreeToggle'}
-Plug 'Yggdroot/indentLine'
-Plug 'godlygeek/tabular'
-Plug 'ryanoasis/vim-devicons'
-Plug 'itchyny/vim-gitbranch'
-"Plug 'ap/vim-css-color'
-Plug 'norcalli/nvim-colorizer.lua'
-Plug 'PeterRincker/vim-searchlight'
-Plug 'psliwka/vim-smoothie'
 
 
 if !has('win32') && !has('win64')
@@ -104,15 +100,17 @@ if &term=~# 'nvim' || &term=~# 'vimr'
     Plug 'terryma/vim-multiple-cursors'
 endif
 
-" ----------
-" // add plugins to &runtimepath
+
 call plug#end()
+" ----------
 " ====================
 
 
 
 " ====================
 " // Options
+" ':set is for setting options, 
+"  :let is for assigning a value to a variable'
 " ----------
 set encoding=UTF-8
 scriptencoding UTF-8
@@ -158,21 +156,92 @@ set expandtab
 set autoindent
 
 filetype plugin indent on
-let g:gtfo#terminals = { 'mac': 'iterm' }
-let g:vim_indent_cont = &shiftwidth
-
-let g:deoplete#enable_at_startup = 1
-call deoplete#custom#source('_', 'max_menu_width', 80)
-
-let g:suda#prefix = ['suda://', 'sudo://', '_://']
 
 if !has('gui_vimr') && has('mac') && has('termguicolors')
     lua require'colorizer'.setup()
 endif
-
-
 " ----------
-" //
+" ====================
+
+
+
+" ====================
+" // Variables
+" ----------
+let g:vim_indent_cont = &shiftwidth
+
+
+let g:deoplete#enable_at_startup = 1
+call deoplete#custom#source('_', 'max_menu_width', 80)
+
+
+let g:suda#prefix = ['suda://', 'sudo://', '_://']
+
+
+" Pynvim
+if has('mac') || has('unix')
+    let g:python_host_prog = $HOME.'/.pyenv/versions/neovim2/bin/python'
+    let g:python3_host_prog = $HOME.'/.pyenv/versions/neovim3/bin/python'
+endif
+
+
+" R
+let R_app = 'radian'
+let R_cmd = 'R'
+let R_hl_term = 0
+let R_args = []  " if you had set any
+let R_bracketed_paste = 1
+let R_assign = 0
+let R_hi_fun_globenv = 1
+
+
+"" markdown
+let g:markdown_syntax_conceal = 0
+let g:markdown_fenced_languages = [
+    \ 'html',
+    \ 'python',
+    \ 'bash=sh',
+    \ 'zsh=sh',
+    \ 'r'
+    \ ]
+
+let g:bullets_enabled_file_types = [
+    \ 'markdown',
+    \ 'text',
+    \ 'gitcommit',
+    \ 'scratch'
+    \ ]
+
+
+let NERDTreeShowHidden = 1
+let NERDTreeMinimalUI = 1
+let NERDTreeDirArrows = 1
+
+
+let g:indentLine_setColors = 0
+let g:indentLine_char = '│'
+let g:indent_guides_enable_on_vim_startup = 1
+let g:indent_guides_start_level = 2
+let g:indent_guides_guide_size = 1
+
+
+let g:delimitMate_expand_space = 1
+let g:delimitMate_expand_cr = 2
+
+
+if has('mac') || has('linux') || &term =~# 'nvim'
+    let g:lightline = {
+        \ 'colorscheme': 'twofirewatch',
+        \ 'active': {
+        \   'left': [ [ 'mode', 'paste' ],
+        \             [ 'readonly', 'modified' ],
+        \             [ 'relativepath' ] ],
+        \   'right': [ [ 'lineinfo' ],
+        \              [ 'fileformat', 'filetype' ] ]
+        \ }
+        \ }
+endif
+" ----------
 " ====================
 
 
@@ -216,84 +285,6 @@ nnoremap <leader>p "+p
 nnoremap <leader>P "+P
 vnoremap <leader>p "+p
 vnoremap <leader>P "+P
-
 " ----------
-" //
 " ====================
 
-
-
-" ====================
-" // Variables
-" ----------
-
-" Pynvim
-if has('mac') || has('unix')
-    let g:python_host_prog = $HOME.'/.pyenv/versions/neovim2/bin/python'
-    let g:python3_host_prog = $HOME.'/.pyenv/versions/neovim3/bin/python'
-endif
-
-
-" R
-let R_app = 'radian'
-let R_cmd = 'R'
-let R_hl_term = 0
-let R_args = []  " if you had set any
-let R_bracketed_paste = 1
-let R_assign = 0
-let R_hi_fun_globenv = 1
-
-
-"" markdown
-let g:markdown_syntax_conceal = 0
-let g:markdown_fenced_languages = [
-    \ 'html',
-    \ 'python',
-    \ 'bash=sh',
-    \ 'zsh=sh',
-    \ 'r'
-    \ ]
-
-let g:bullets_enabled_file_types = [
-    \ 'markdown',
-    \ 'text',
-    \ 'gitcommit',
-    \ 'scratch'
-    \ ]
-
-
-" NERDTree
-let NERDTreeShowHidden = 1
-let NERDTreeMinimalUI = 1
-let NERDTreeDirArrows = 1
-
-
-" indentline
-let g:indentLine_setColors = 0
-let g:indentLine_char = '│'
-let g:indent_guides_enable_on_vim_startup = 1
-let g:indent_guides_start_level = 2
-let g:indent_guides_guide_size = 1
-
-let g:delimitMate_expand_space = 1
-let g:delimitMate_expand_cr = 2
-
-" lightline/ale
-" more info at maximbaz/dotfiles/.config/nvim/init.vim
-if has('mac') || has('linux') || &term =~# 'nvim'
-    let g:lightline = {
-        \ 'colorscheme': 'twofirewatch',
-        \ 'active': {
-        \   'left': [ [ 'mode', 'paste' ],
-        \             [ 'readonly', 'modified' ],
-        \             [ 'relativepath' ] ],
-        \   'right': [ [ 'lineinfo' ],
-        \              [ 'fileformat', 'filetype' ] ]
-        \ }
-        \ }
-endif
-
-" show full/path/to/file in buffer in LightLine
-" function! LightLineFilename()
-"     return expand('%')
-" endfunction
