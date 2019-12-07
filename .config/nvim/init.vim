@@ -168,20 +168,38 @@ endif
 " ====================
 " // Variables
 " ----------
-let g:vim_indent_cont = &shiftwidth
-
-
-let g:deoplete#enable_at_startup = 1
-call deoplete#custom#source('_', 'max_menu_width', 80)
-
-
-let g:suda#prefix = ['suda://', 'sudo://', '_://']
-
-
-" Pynvim
 if has('mac') || has('unix')
     let g:python_host_prog = $HOME.'/.pyenv/versions/neovim2/bin/python'
     let g:python3_host_prog = $HOME.'/.pyenv/versions/neovim3/bin/python'
+endif
+
+
+let g:vim_indent_cont = &shiftwidth
+let g:deoplete#enable_at_startup = 1
+"call deoplete#custom#source('_', 'max_menu_width', 80)
+
+let g:suda#prefix = ['suda://', 'sudo://', '_://']
+
+let NERDTreeShowHidden = 1
+let NERDTreeMinimalUI = 1
+let NERDTreeDirArrows = 1
+
+let g:indentLine_setColors = 0
+let g:indentLine_char = '│'
+let g:indent_guides_enable_on_vim_startup = 1
+let g:indent_guides_start_level = 2
+let g:indent_guides_guide_size = 1
+
+let g:delimitMate_expand_space = 1
+let g:delimitMate_expand_cr = 2
+
+
+let entry_format = "'   ['. index .']'. repeat(' ', (3 - strlen(index)))"
+if exists('*WebDevIconsGetFileTypeSymbol')
+    let entry_format .= 
+        \ ". WebDevIconsGetFileTypeSymbol(entry_path) .' '.  entry_path" 
+else
+    let entry_format .= '. entry_path'
 endif
 
 
@@ -211,22 +229,6 @@ let g:bullets_enabled_file_types = [
     \ 'gitcommit',
     \ 'scratch'
     \ ]
-
-
-let NERDTreeShowHidden = 1
-let NERDTreeMinimalUI = 1
-let NERDTreeDirArrows = 1
-
-
-let g:indentLine_setColors = 0
-let g:indentLine_char = '│'
-let g:indent_guides_enable_on_vim_startup = 1
-let g:indent_guides_start_level = 2
-let g:indent_guides_guide_size = 1
-
-
-let g:delimitMate_expand_space = 1
-let g:delimitMate_expand_cr = 2
 
 
 if has('mac') || has('linux') || &term =~# 'nvim'
