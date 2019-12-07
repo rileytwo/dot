@@ -1015,7 +1015,7 @@
 	<key>MinimalTabStyleOutlineStrength</key>
 	<real>0.0</real>
 	<key>NSColorPanelMode</key>
-	<string>7</string>
+	<string>1</string>
 	<key>NSColorPickerPreferredRGBEntryMode</key>
 	<integer>2</integer>
 	<key>NSColorPickerSlidersDefaults</key>
@@ -1839,7 +1839,7 @@
 			<key>Show Mark Indicators</key>
 			<false/>
 			<key>Show Status Bar</key>
-			<false/>
+			<true/>
 			<key>Silence Bell</key>
 			<true/>
 			<key>Status Bar Layout</key>
@@ -1862,10 +1862,196 @@
 						<real>0.74000000953674316</real>
 					</dict>
 					<key>font</key>
-					<string>FuraCodeNerdFontComplete-Regular 13</string>
+					<string>SFLMono-Regular 13</string>
 				</dict>
 				<key>components</key>
-				<array/>
+				<array>
+					<dict>
+						<key>class</key>
+						<string>iTermStatusBarCPUUtilizationComponent</string>
+						<key>configuration</key>
+						<dict>
+							<key>knobs</key>
+							<dict>
+								<key>base: compression resistance</key>
+								<integer>1</integer>
+								<key>base: priority</key>
+								<real>5</real>
+								<key>shared text color</key>
+								<dict>
+									<key>Alpha Component</key>
+									<real>1</real>
+									<key>Blue Component</key>
+									<real>0.63</real>
+									<key>Color Space</key>
+									<string>sRGB</string>
+									<key>Green Component</key>
+									<real>0.63</real>
+									<key>Red Component</key>
+									<real>0.90000000000000002</real>
+								</dict>
+							</dict>
+							<key>layout advanced configuration dictionary value</key>
+							<dict>
+								<key>algorithm</key>
+								<integer>1</integer>
+							</dict>
+						</dict>
+					</dict>
+					<dict>
+						<key>class</key>
+						<string>iTermStatusBarMemoryUtilizationComponent</string>
+						<key>configuration</key>
+						<dict>
+							<key>knobs</key>
+							<dict>
+								<key>base: priority</key>
+								<real>5</real>
+								<key>shared text color</key>
+								<dict>
+									<key>Alpha Component</key>
+									<real>1</real>
+									<key>Blue Component</key>
+									<real>0.90000000000000002</real>
+									<key>Color Space</key>
+									<string>sRGB</string>
+									<key>Green Component</key>
+									<real>0.73799999999999988</real>
+									<key>Red Component</key>
+									<real>0.63</real>
+								</dict>
+							</dict>
+							<key>layout advanced configuration dictionary value</key>
+							<dict>
+								<key>algorithm</key>
+								<integer>1</integer>
+							</dict>
+						</dict>
+					</dict>
+					<dict>
+						<key>class</key>
+						<string>iTermStatusBarSpringComponent</string>
+						<key>configuration</key>
+						<dict>
+							<key>knobs</key>
+							<dict>
+								<key>base: compression resistance</key>
+								<integer>1</integer>
+								<key>base: priority</key>
+								<real>5</real>
+								<key>iTermStatusBarSpringComponentSizeMultipleKey</key>
+								<integer>1</integer>
+								<key>iTermStatusBarSpringComponentSpringConstantKey</key>
+								<real>0.01</real>
+								<key>shared text color</key>
+								<dict>
+									<key>Alpha Component</key>
+									<real>1</real>
+									<key>Blue Component</key>
+									<real>0.63</real>
+									<key>Color Space</key>
+									<string>sRGB</string>
+									<key>Green Component</key>
+									<real>0.90000000000000002</real>
+									<key>Red Component</key>
+									<real>0.84599999999999997</real>
+								</dict>
+							</dict>
+							<key>layout advanced configuration dictionary value</key>
+							<dict>
+								<key>algorithm</key>
+								<integer>1</integer>
+								<key>default text color</key>
+								<dict>
+									<key>Alpha Component</key>
+									<real>1</real>
+									<key>Blue Component</key>
+									<real>0.74000000953674316</real>
+									<key>Color Space</key>
+									<string>sRGB</string>
+									<key>Green Component</key>
+									<real>0.74000000953674316</real>
+									<key>Red Component</key>
+									<real>0.74000000953674316</real>
+								</dict>
+								<key>font</key>
+								<string>SFLMono-Regular 13</string>
+							</dict>
+						</dict>
+					</dict>
+					<dict>
+						<key>class</key>
+						<string>iTermStatusBarGitComponent</string>
+						<key>configuration</key>
+						<dict>
+							<key>knobs</key>
+							<dict>
+								<key>base: compression resistance</key>
+								<integer>1</integer>
+								<key>base: priority</key>
+								<real>5</real>
+								<key>iTermStatusBarGitComponentPollingIntervalKey</key>
+								<real>2</real>
+								<key>maxwidth</key>
+								<real>+infinity</real>
+								<key>minwidth</key>
+								<integer>0</integer>
+								<key>shared text color</key>
+								<dict>
+									<key>Alpha Component</key>
+									<real>1</real>
+									<key>Blue Component</key>
+									<real>0.90000000000000002</real>
+									<key>Color Space</key>
+									<string>sRGB</string>
+									<key>Green Component</key>
+									<real>0.63</real>
+									<key>Red Component</key>
+									<real>0.8460000000000002</real>
+								</dict>
+							</dict>
+							<key>layout advanced configuration dictionary value</key>
+							<dict>
+								<key>algorithm</key>
+								<integer>1</integer>
+							</dict>
+						</dict>
+					</dict>
+					<dict>
+						<key>class</key>
+						<string>iTermStatusBarClockComponent</string>
+						<key>configuration</key>
+						<dict>
+							<key>knobs</key>
+							<dict>
+								<key>base: compression resistance</key>
+								<integer>1</integer>
+								<key>base: priority</key>
+								<real>5</real>
+								<key>format</key>
+								<string>M/dd h:mm</string>
+								<key>shared text color</key>
+								<dict>
+									<key>Alpha Component</key>
+									<real>1</real>
+									<key>Blue Component</key>
+									<real>0.7380000000000001</real>
+									<key>Color Space</key>
+									<string>sRGB</string>
+									<key>Green Component</key>
+									<real>0.90000000000000002</real>
+									<key>Red Component</key>
+									<real>0.63</real>
+								</dict>
+							</dict>
+							<key>layout advanced configuration dictionary value</key>
+							<dict>
+								<key>algorithm</key>
+								<integer>1</integer>
+							</dict>
+						</dict>
+					</dict>
+				</array>
 			</dict>
 			<key>Sync Title</key>
 			<false/>
@@ -2919,12 +3105,12 @@
 	<array>
 		<string>3.3.6</string>
 		<string>3.3.7beta4</string>
-		<string>3.3.4</string>
+		<string>3.3.8beta1</string>
 		<string>3.3.7beta3</string>
 		<string>3.3.7beta2</string>
 		<string>3.3.5beta3</string>
 		<string>3.3.7beta1</string>
-		<string>3.3.8beta1</string>
+		<string>3.3.4</string>
 	</array>
 	<key>NoSyncBFPFavorites</key>
 	<array>
@@ -2974,7 +3160,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>1B480254-E265-41B7-98EA-0689375CEC49</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>344</integer>
+	<integer>345</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -3840,7 +4026,7 @@
 	<true/>
 	<key>ToolbeltTools</key>
 	<array>
-		<string>Jobs</string>
+		<string>Actions</string>
 	</array>
 	<key>UpdateScreenParamsDelay</key>
 	<real>1</real>
@@ -3866,7 +4052,7 @@
 				<key>Hide After Opening</key>
 				<false/>
 				<key>Hiding Toolbelt Should Resize Window</key>
-				<true/>
+				<false/>
 				<key>Initial Profile</key>
 				<dict/>
 				<key>Is Hotkey Window</key>
@@ -4261,7 +4447,7 @@
 												<real>0.94999998807907104</real>
 											</dict>
 											<key>Guid</key>
-											<string>6A984148-CC09-4D60-B33B-CAA4C2912561</string>
+											<string>8A51EC68-1517-49CC-88EB-B4EFCCDC12A3</string>
 											<key>Has Hotkey</key>
 											<false/>
 											<key>Horizontal Spacing</key>
@@ -4571,6 +4757,15 @@
 												<key>Red Component</key>
 												<real>0.28522062301635742</real>
 											</dict>
+											<key>Semantic History</key>
+											<dict>
+												<key>action</key>
+												<string>best editor</string>
+												<key>editor</key>
+												<string>com.github.atom</string>
+												<key>text</key>
+												<string></string>
+											</dict>
 											<key>Send Code When Idle</key>
 											<false/>
 											<key>Session Close Undo Timeout</key>
@@ -4580,7 +4775,7 @@
 											<key>Show Mark Indicators</key>
 											<false/>
 											<key>Show Status Bar</key>
-											<false/>
+											<true/>
 											<key>Silence Bell</key>
 											<true/>
 											<key>Status Bar Layout</key>
@@ -4603,10 +4798,196 @@
 														<real>0.74000000953674316</real>
 													</dict>
 													<key>font</key>
-													<string>FuraCodeNerdFontComplete-Regular 13</string>
+													<string>SFLMono-Regular 13</string>
 												</dict>
 												<key>components</key>
-												<array/>
+												<array>
+													<dict>
+														<key>class</key>
+														<string>iTermStatusBarCPUUtilizationComponent</string>
+														<key>configuration</key>
+														<dict>
+															<key>knobs</key>
+															<dict>
+																<key>base: compression resistance</key>
+																<integer>1</integer>
+																<key>base: priority</key>
+																<real>5</real>
+																<key>shared text color</key>
+																<dict>
+																	<key>Alpha Component</key>
+																	<real>1</real>
+																	<key>Blue Component</key>
+																	<real>0.63</real>
+																	<key>Color Space</key>
+																	<string>sRGB</string>
+																	<key>Green Component</key>
+																	<real>0.63</real>
+																	<key>Red Component</key>
+																	<real>0.90000000000000002</real>
+																</dict>
+															</dict>
+															<key>layout advanced configuration dictionary value</key>
+															<dict>
+																<key>algorithm</key>
+																<integer>1</integer>
+															</dict>
+														</dict>
+													</dict>
+													<dict>
+														<key>class</key>
+														<string>iTermStatusBarMemoryUtilizationComponent</string>
+														<key>configuration</key>
+														<dict>
+															<key>knobs</key>
+															<dict>
+																<key>base: priority</key>
+																<real>5</real>
+																<key>shared text color</key>
+																<dict>
+																	<key>Alpha Component</key>
+																	<real>1</real>
+																	<key>Blue Component</key>
+																	<real>0.90000000000000002</real>
+																	<key>Color Space</key>
+																	<string>sRGB</string>
+																	<key>Green Component</key>
+																	<real>0.73799999999999988</real>
+																	<key>Red Component</key>
+																	<real>0.63</real>
+																</dict>
+															</dict>
+															<key>layout advanced configuration dictionary value</key>
+															<dict>
+																<key>algorithm</key>
+																<integer>1</integer>
+															</dict>
+														</dict>
+													</dict>
+													<dict>
+														<key>class</key>
+														<string>iTermStatusBarSpringComponent</string>
+														<key>configuration</key>
+														<dict>
+															<key>knobs</key>
+															<dict>
+																<key>base: compression resistance</key>
+																<integer>1</integer>
+																<key>base: priority</key>
+																<real>5</real>
+																<key>iTermStatusBarSpringComponentSizeMultipleKey</key>
+																<integer>1</integer>
+																<key>iTermStatusBarSpringComponentSpringConstantKey</key>
+																<real>0.01</real>
+																<key>shared text color</key>
+																<dict>
+																	<key>Alpha Component</key>
+																	<real>1</real>
+																	<key>Blue Component</key>
+																	<real>0.63</real>
+																	<key>Color Space</key>
+																	<string>sRGB</string>
+																	<key>Green Component</key>
+																	<real>0.90000000000000002</real>
+																	<key>Red Component</key>
+																	<real>0.84599999999999997</real>
+																</dict>
+															</dict>
+															<key>layout advanced configuration dictionary value</key>
+															<dict>
+																<key>algorithm</key>
+																<integer>1</integer>
+																<key>default text color</key>
+																<dict>
+																	<key>Alpha Component</key>
+																	<real>1</real>
+																	<key>Blue Component</key>
+																	<real>0.74000000953674316</real>
+																	<key>Color Space</key>
+																	<string>sRGB</string>
+																	<key>Green Component</key>
+																	<real>0.74000000953674316</real>
+																	<key>Red Component</key>
+																	<real>0.74000000953674316</real>
+																</dict>
+																<key>font</key>
+																<string>SFLMono-Regular 13</string>
+															</dict>
+														</dict>
+													</dict>
+													<dict>
+														<key>class</key>
+														<string>iTermStatusBarGitComponent</string>
+														<key>configuration</key>
+														<dict>
+															<key>knobs</key>
+															<dict>
+																<key>base: compression resistance</key>
+																<integer>1</integer>
+																<key>base: priority</key>
+																<real>5</real>
+																<key>iTermStatusBarGitComponentPollingIntervalKey</key>
+																<real>2</real>
+																<key>maxwidth</key>
+																<real>+infinity</real>
+																<key>minwidth</key>
+																<integer>0</integer>
+																<key>shared text color</key>
+																<dict>
+																	<key>Alpha Component</key>
+																	<real>1</real>
+																	<key>Blue Component</key>
+																	<real>0.90000000000000002</real>
+																	<key>Color Space</key>
+																	<string>sRGB</string>
+																	<key>Green Component</key>
+																	<real>0.63</real>
+																	<key>Red Component</key>
+																	<real>0.8460000000000002</real>
+																</dict>
+															</dict>
+															<key>layout advanced configuration dictionary value</key>
+															<dict>
+																<key>algorithm</key>
+																<integer>1</integer>
+															</dict>
+														</dict>
+													</dict>
+													<dict>
+														<key>class</key>
+														<string>iTermStatusBarClockComponent</string>
+														<key>configuration</key>
+														<dict>
+															<key>knobs</key>
+															<dict>
+																<key>base: compression resistance</key>
+																<integer>1</integer>
+																<key>base: priority</key>
+																<real>5</real>
+																<key>format</key>
+																<string>M/dd h:mm</string>
+																<key>shared text color</key>
+																<dict>
+																	<key>Alpha Component</key>
+																	<real>1</real>
+																	<key>Blue Component</key>
+																	<real>0.7380000000000001</real>
+																	<key>Color Space</key>
+																	<string>sRGB</string>
+																	<key>Green Component</key>
+																	<real>0.90000000000000002</real>
+																	<key>Red Component</key>
+																	<real>0.63</real>
+																</dict>
+															</dict>
+															<key>layout advanced configuration dictionary value</key>
+															<dict>
+																<key>algorithm</key>
+																<integer>1</integer>
+															</dict>
+														</dict>
+													</dict>
+												</array>
 											</dict>
 											<key>Sync Title</key>
 											<false/>
@@ -4680,12 +5061,107 @@
 										<key>Columns</key>
 										<integer>91</integer>
 										<key>Commands</key>
-										<array/>
+										<array>
+											<string>cd .dot</string>
+											<string>gs</string>
+											<string>git add .config/iterm2/config/com.googlecode.iterm2.plist &amp;&amp; gc -m 'iterm2 config'</string>
+											<string>gp</string>
+											<string>cd</string>
+											<string>neofetch -h</string>
+											<string>neofetch --help</string>
+											<string>neofetch --ascii .config/neofetch/config-mac.conf</string>
+											<string>ln -sf /Users/riley/github/rileytwo/kiss/rstudio/kiss-improved.rstheme /Users/riley/.R/rstudio/themes/kiss-improved.rstheme</string>
+											<string>cd .dot</string>
+											<string>gs</string>
+											<string>cd</string>
+											<string>rm -rf .rstudio-desktop/*</string>
+											<string>defaults read com.rstudio.desktop</string>
+											<string>defaults delete com.rstudio.desktop</string>
+											<string>rm .R/rstudio/themes/Alice.rstheme .R/rstudio/themes/alice-improved.rstheme</string>
+											<string>rm .R/rstudio/themes/One\ Dark.rstheme</string>
+											<string>rm .R/rstudio/themes/One\ Dark\ Darker.rstheme</string>
+											<string>z kiss</string>
+											<string>e</string>
+											<string>vimr rstudio/kiss-improved.rstheme</string>
+											<string>ga</string>
+											<string>git commit -m 'update name'</string>
+											<string>gp</string>
+											<string>gs</string>
+											<string>vimr rstudio/kiss.rstheme</string>
+											<string>vimr rstudio/kiss-improved.rstheme</string>
+											<string>ga</string>
+											<string>ga</string>
+											<string>git commit -m 'update name'</string>
+											<string>gp</string>
+											<string>gs</string>
+											<string>cd</string>
+											<string>rr</string>
+											<string>pyenv update</string>
+											<string>zshup.sh</string>
+											<string>upgrade_oh_my_zsh</string>
+											<string>brew update &amp;&amp; brew upgrade; brew cask upgrade --no-quarantine</string>
+											<string>brew info r</string>
+											<string>brew info pcapplusplus</string>
+											<string>cd .dot</string>
+											<string>gs</string>
+											<string>cd</string>
+											<string>z scsh</string>
+											<string>gs</string>
+											<string>cd</string>
+										</array>
 										<key>Directories</key>
 										<array>
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley/github/rileytwo/kiss</string>
+											<string>/Users/riley/github/rileytwo/kiss</string>
+											<string>/Users/riley/github/rileytwo/kiss</string>
+											<string>/Users/riley/github/rileytwo/kiss</string>
+											<string>/Users/riley/github/rileytwo/kiss</string>
+											<string>/Users/riley/github/rileytwo/kiss</string>
+											<string>/Users/riley/github/rileytwo/kiss</string>
+											<string>/Users/riley/github/rileytwo/kiss</string>
+											<string>/Users/riley/github/rileytwo/kiss</string>
+											<string>/Users/riley/github/rileytwo/kiss</string>
+											<string>/Users/riley/github/rileytwo/kiss</string>
+											<string>/Users/riley/github/rileytwo/kiss</string>
+											<string>/Users/riley/github/rileytwo/kiss</string>
+											<string>/Users/riley/github/rileytwo/kiss</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley/github/rileytwo/scsh</string>
+											<string>/Users/riley/github/rileytwo/scsh</string>
 											<string>/Users/riley</string>
 										</array>
 										<key>Environment</key>
@@ -4700,6 +5176,294 @@
 										</dict>
 										<key>Hosts</key>
 										<array>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
 											<dict>
 												<key>Host name</key>
 												<string>rxmbp.local</string>
@@ -4740,13 +5504,13 @@
 											<string>Shell Launcher</string>
 										</dict>
 										<key>Rows</key>
-										<integer>32</integer>
+										<integer>31</integer>
 										<key>Session GUID</key>
 										<string>B74F8CA1-2A98-410E-A0DA-5BAE03D3C7B4</string>
 										<key>Short Lived Single Use</key>
 										<false/>
 										<key>Should Expect Current Dir Updates</key>
-										<false/>
+										<true/>
 										<key>Should Expect Prompt Marks</key>
 										<true/>
 										<key>Substitutions</key>
@@ -4754,14 +5518,14 @@
 										<key>Working Directory</key>
 										<string>/Users/riley</string>
 										<key>Working Directory Poller Disabled</key>
-										<false/>
+										<true/>
 									</dict>
 									<key>View Type</key>
 									<string>SessionView</string>
 									<key>frame</key>
 									<dict>
 										<key>height</key>
-										<real>529</real>
+										<real>508</real>
 										<key>width</key>
 										<real>732</real>
 										<key>x</key>
@@ -4776,7 +5540,7 @@
 							<key>frame</key>
 							<dict>
 								<key>height</key>
-								<real>529</real>
+								<real>508</real>
 								<key>width</key>
 								<real>732</real>
 								<key>x</key>
@@ -4801,7 +5565,7 @@
 							<key>heightAsFraction</key>
 							<real>1</real>
 							<key>name</key>
-							<string>Jobs</string>
+							<string>Actions</string>
 						</dict>
 					</array>
 				</dict>
