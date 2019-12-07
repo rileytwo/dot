@@ -16,21 +16,21 @@ bindkey '^xe' edit-command-line
 # color order:
 #   'title' '@' 'underline'
 #   'subtitle' 'colon' 'info'
-
-if [[ "${TERM_PROGRAM}" =~ "vscod" ]]; then
-  :
-else 
-  if [[ "${OSTYPE}" =~ "darwin" ]]; then
-    neofetch \
-      --ascii "${HOME}"/.dot/.config/neofetch/config-mac.conf \
-      --colors 5 7 7 4 7 15
-  elif [[ "${OSTYPE}" == "linux-gnu" ]]; then
-    neofetch \
-      --config "${HOME}"/.config/neofetch/config-linux.conf \
-      --ascii_distro kubuntu \
-      --colors 5 7 7 4 7 15
-  fi
-fi
+#
+#if [[ "${TERM_PROGRAM}" =~ "vscod" ]]; then
+#  :
+#else 
+#  if [[ "${OSTYPE}" =~ "darwin" ]]; then
+#    neofetch \
+#      --ascii "${HOME}"/.dot/.config/neofetch/config-mac.conf \
+#      --colors 5 7 7 4 7 15
+#  elif [[ "${OSTYPE}" == "linux-gnu" ]]; then
+#    neofetch \
+#      --config "${HOME}"/.config/neofetch/config-linux.conf \
+#      --ascii_distro kubuntu \
+#      --colors 5 7 7 4 7 15
+#  fi
+#fi
 
 
 #### // oh my zsh
@@ -59,7 +59,6 @@ source $ZSH/oh-my-zsh.sh
 
 #### // environment
 
-export PAGER=most
 export CLICOLOR=1
 export LS_COLORS='di=1;4;34:fi=1;32:ln=1;35:pi=0:bd=0:cd=0:mi=1;4;31:ex=1;31'
 export TERM=xterm-256color
@@ -71,6 +70,10 @@ setopt HIST_IGNORE_DUPS
 setopt HIST_IGNORE_SPACE
 setopt HIST_EXPIRE_DUPS_FIRST
 disable r
+
+if (( $+commands[most] )); then
+  export PAGER=most
+fi
 
 if (( $+commands[vimr] )); then
   export EDITOR=vimr
@@ -86,8 +89,7 @@ if [[ ${LC_TERMINAL} =~ "i[tT]erm2" ]]; then
 fi
 
 [[ -e "${HOME}/.iterm2_shell_integration.zsh" ]] \
-  && source "${HOME}/.iterm2_shell_integration.zsh" \
-  || :
+  && source "${HOME}/.iterm2_shell_integration.zsh" || :
 
 
 
@@ -215,10 +217,7 @@ ZSH_AUTOSUGGEST_CLEAR_WIDGETS+=(bracketed-paste)
 if [[ "${OSTYPE}" =~ "linux-gnu" ]]; then
 
   [[ -f "${HOME}/z.sh" ]] \
-    && . "${HOME}/z.sh"
-
-  [[ -d "/home/linuxbrew/.linuxbrew/bin" ]] \
-    && export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
+    && source "${HOME}/z.sh"
 
   [[ -d "/snap/bin" ]] \
     && export PATH="/snap/bin:$PATH"
@@ -229,13 +228,16 @@ if [[ "${OSTYPE}" =~ "linux-gnu" ]]; then
   [[ -d "/usr/share/swift" ]] \
     && export PATH="/usr/share/swift/usr/bin:$PATH"
 
+  [[ -d "/home/linuxbrew/.linuxbrew/bin" ]] \
+    && export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
+
 elif [[ "${OSTYPE}" =~ "darwin" ]]; then
 
   [[ -f /opt/local/bin/port ]] \
     && export PATH="/opt/local/bin:$PATH"
 
   [[ -f /usr/local/etc/profile.d/z.sh ]] \
-    && . /usr/local/etc/profile.d/z.sh
+    && source /usr/local/etc/profile.d/z.sh
 
 fi
 
@@ -256,9 +258,6 @@ fi
 [[ -d "${HOME}/.cargo" ]] \
   && export PATH="${HOME}/.cargo/bin:$PATH"
 
-[[ -d "/usr/local/lib/R/3.6/site-library/rt/bin" ]] \
-  && export PATH="/usr/local/lib/R/3.6/site-library/rt/bin:$PATH"
-
 [[ -d "${HOME}/.pyenv" ]] \
   && export PATH="${HOME}/.pyenv/bin:$PATH"
 
@@ -275,9 +274,9 @@ fi
 
 if (( $+commands[fzf] )); then
   if [[ -f "${HOME}"/.fzf.zsh ]]; then
-    . "${HOME}"/.fzf.zsh
+    source "${HOME}"/.fzf.zsh
   elif [[ -f /usr/share/doc/fzf/examples/key-bindings.zsh ]]; then
-    . /usr/share/doc/fzf/examples/key-bindings.zsh
+    source /usr/share/doc/fzf/examples/key-bindings.zsh
   fi
 fi
 
@@ -294,7 +293,7 @@ export FZF_DEFAULT_OPTS='
 
 #### // helpers
 
-[[ -f /usr/local/bin/typex ]] && . /usr/local/bin/typex
+[[ -f /usr/local/bin/typex ]] && source /usr/local/bin/typex
 
-[[ -f "${HOME}/.aliases" ]] && . "${HOME}/.aliases"
+[[ -f "${HOME}/.aliases" ]] && source "${HOME}/.aliases"
 
