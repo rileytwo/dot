@@ -79,6 +79,7 @@ Plug 'lambdalisue/suda.vim'
 Plug 'psliwka/vim-smoothie'
 Plug 'Raimondi/delimitMate'
 Plug 'Yggdroot/indentLine'
+Plug 'mhinz/vim-startify'
 Plug 'godlygeek/tabular'
 
 Plug 'maximbaz/lightline-ale'
@@ -88,7 +89,6 @@ Plug 'itchyny/lightline.vim'
 " // Colorschemes
 Plug 'rafi/awesome-vim-colorschemes'
 Plug 'rakr/vim-two-firewatch'
-Plug 'ntk148v/vim-horizon'
 Plug 'aonemd/kuroi.vim'
 
 
