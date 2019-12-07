@@ -17,20 +17,20 @@ bindkey '^xe' edit-command-line
 #   'title' '@' 'underline'
 #   'subtitle' 'colon' 'info'
 #
-#if [[ "${TERM_PROGRAM}" =~ "vscod" ]]; then
-#  :
-#else 
-#  if [[ "${OSTYPE}" =~ "darwin" ]]; then
-#    neofetch \
-#      --ascii "${HOME}"/.dot/.config/neofetch/config-mac.conf \
-#      --colors 5 7 7 4 7 15
-#  elif [[ "${OSTYPE}" == "linux-gnu" ]]; then
-#    neofetch \
-#      --config "${HOME}"/.config/neofetch/config-linux.conf \
-#      --ascii_distro kubuntu \
-#      --colors 5 7 7 4 7 15
-#  fi
-#fi
+if [[ "${TERM_PROGRAM}" =~ "vscod" ]]; then
+  :
+else 
+  if [[ "${OSTYPE}" =~ "darwin" ]]; then
+    neofetch \
+      --ascii "${HOME}"/.dot/.config/neofetch/config-mac.conf \
+      --colors 5 7 7 4 7 15
+  elif [[ "${OSTYPE}" == "linux-gnu" ]]; then
+    neofetch \
+      --config "${HOME}"/.config/neofetch/config-linux.conf \
+      --ascii_distro kubuntu \
+      --colors 5 7 7 4 7 15
+  fi
+fi
 
 
 #### // oh my zsh
