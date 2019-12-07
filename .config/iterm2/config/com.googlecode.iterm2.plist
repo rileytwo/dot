@@ -1862,7 +1862,7 @@
 						<real>0.74000000953674316</real>
 					</dict>
 					<key>font</key>
-					<string>SFLMono-Regular 13</string>
+					<string>SFLMono-Regular 11</string>
 				</dict>
 				<key>components</key>
 				<array>
@@ -1895,6 +1895,21 @@
 							<dict>
 								<key>algorithm</key>
 								<integer>1</integer>
+								<key>default text color</key>
+								<dict>
+									<key>Alpha Component</key>
+									<real>1</real>
+									<key>Blue Component</key>
+									<real>0.74000000953674316</real>
+									<key>Color Space</key>
+									<string>sRGB</string>
+									<key>Green Component</key>
+									<real>0.74000000953674316</real>
+									<key>Red Component</key>
+									<real>0.74000000953674316</real>
+								</dict>
+								<key>font</key>
+								<string>SFLMono-Regular 11</string>
 							</dict>
 						</dict>
 					</dict>
@@ -1925,6 +1940,21 @@
 							<dict>
 								<key>algorithm</key>
 								<integer>1</integer>
+								<key>default text color</key>
+								<dict>
+									<key>Alpha Component</key>
+									<real>1</real>
+									<key>Blue Component</key>
+									<real>0.74000000953674316</real>
+									<key>Color Space</key>
+									<string>sRGB</string>
+									<key>Green Component</key>
+									<real>0.74000000953674316</real>
+									<key>Red Component</key>
+									<real>0.74000000953674316</real>
+								</dict>
+								<key>font</key>
+								<string>SFLMono-Regular 11</string>
 							</dict>
 						</dict>
 					</dict>
@@ -1975,7 +2005,7 @@
 									<real>0.74000000953674316</real>
 								</dict>
 								<key>font</key>
-								<string>SFLMono-Regular 13</string>
+								<string>SFLMono-Regular 11</string>
 							</dict>
 						</dict>
 					</dict>
@@ -2014,6 +2044,21 @@
 							<dict>
 								<key>algorithm</key>
 								<integer>1</integer>
+								<key>default text color</key>
+								<dict>
+									<key>Alpha Component</key>
+									<real>1</real>
+									<key>Blue Component</key>
+									<real>0.74000000953674316</real>
+									<key>Color Space</key>
+									<string>sRGB</string>
+									<key>Green Component</key>
+									<real>0.74000000953674316</real>
+									<key>Red Component</key>
+									<real>0.74000000953674316</real>
+								</dict>
+								<key>font</key>
+								<string>SFLMono-Regular 11</string>
 							</dict>
 						</dict>
 					</dict>
@@ -2048,6 +2093,21 @@
 							<dict>
 								<key>algorithm</key>
 								<integer>1</integer>
+								<key>default text color</key>
+								<dict>
+									<key>Alpha Component</key>
+									<real>1</real>
+									<key>Blue Component</key>
+									<real>0.74000000953674316</real>
+									<key>Color Space</key>
+									<string>sRGB</string>
+									<key>Green Component</key>
+									<real>0.74000000953674316</real>
+									<key>Red Component</key>
+									<real>0.74000000953674316</real>
+								</dict>
+								<key>font</key>
+								<string>SFLMono-Regular 11</string>
 							</dict>
 						</dict>
 					</dict>
@@ -3105,12 +3165,12 @@
 	<array>
 		<string>3.3.6</string>
 		<string>3.3.7beta4</string>
-		<string>3.3.8beta1</string>
+		<string>3.3.4</string>
 		<string>3.3.7beta3</string>
 		<string>3.3.7beta2</string>
 		<string>3.3.5beta3</string>
 		<string>3.3.7beta1</string>
-		<string>3.3.4</string>
+		<string>3.3.8beta1</string>
 	</array>
 	<key>NoSyncBFPFavorites</key>
 	<array>
@@ -3160,7 +3220,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>1B480254-E265-41B7-98EA-0689375CEC49</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>345</integer>
+	<integer>348</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -4447,7 +4507,7 @@
 												<real>0.94999998807907104</real>
 											</dict>
 											<key>Guid</key>
-											<string>8A51EC68-1517-49CC-88EB-B4EFCCDC12A3</string>
+											<string>C0756093-3B5C-4A3F-A914-AA9B4EFF3334</string>
 											<key>Has Hotkey</key>
 											<false/>
 											<key>Horizontal Spacing</key>
@@ -4798,7 +4858,7 @@
 														<real>0.74000000953674316</real>
 													</dict>
 													<key>font</key>
-													<string>SFLMono-Regular 13</string>
+													<string>SFLMono-Regular 11</string>
 												</dict>
 												<key>components</key>
 												<array>
@@ -4831,6 +4891,21 @@
 															<dict>
 																<key>algorithm</key>
 																<integer>1</integer>
+																<key>default text color</key>
+																<dict>
+																	<key>Alpha Component</key>
+																	<real>1</real>
+																	<key>Blue Component</key>
+																	<real>0.74000000953674316</real>
+																	<key>Color Space</key>
+																	<string>sRGB</string>
+																	<key>Green Component</key>
+																	<real>0.74000000953674316</real>
+																	<key>Red Component</key>
+																	<real>0.74000000953674316</real>
+																</dict>
+																<key>font</key>
+																<string>SFLMono-Regular 11</string>
 															</dict>
 														</dict>
 													</dict>
@@ -4861,6 +4936,21 @@
 															<dict>
 																<key>algorithm</key>
 																<integer>1</integer>
+																<key>default text color</key>
+																<dict>
+																	<key>Alpha Component</key>
+																	<real>1</real>
+																	<key>Blue Component</key>
+																	<real>0.74000000953674316</real>
+																	<key>Color Space</key>
+																	<string>sRGB</string>
+																	<key>Green Component</key>
+																	<real>0.74000000953674316</real>
+																	<key>Red Component</key>
+																	<real>0.74000000953674316</real>
+																</dict>
+																<key>font</key>
+																<string>SFLMono-Regular 11</string>
 															</dict>
 														</dict>
 													</dict>
@@ -4911,7 +5001,7 @@
 																	<real>0.74000000953674316</real>
 																</dict>
 																<key>font</key>
-																<string>SFLMono-Regular 13</string>
+																<string>SFLMono-Regular 11</string>
 															</dict>
 														</dict>
 													</dict>
@@ -4950,6 +5040,21 @@
 															<dict>
 																<key>algorithm</key>
 																<integer>1</integer>
+																<key>default text color</key>
+																<dict>
+																	<key>Alpha Component</key>
+																	<real>1</real>
+																	<key>Blue Component</key>
+																	<real>0.74000000953674316</real>
+																	<key>Color Space</key>
+																	<string>sRGB</string>
+																	<key>Green Component</key>
+																	<real>0.74000000953674316</real>
+																	<key>Red Component</key>
+																	<real>0.74000000953674316</real>
+																</dict>
+																<key>font</key>
+																<string>SFLMono-Regular 11</string>
 															</dict>
 														</dict>
 													</dict>
@@ -4984,6 +5089,21 @@
 															<dict>
 																<key>algorithm</key>
 																<integer>1</integer>
+																<key>default text color</key>
+																<dict>
+																	<key>Alpha Component</key>
+																	<real>1</real>
+																	<key>Blue Component</key>
+																	<real>0.74000000953674316</real>
+																	<key>Color Space</key>
+																	<string>sRGB</string>
+																	<key>Green Component</key>
+																	<real>0.74000000953674316</real>
+																	<key>Red Component</key>
+																	<real>0.74000000953674316</real>
+																</dict>
+																<key>font</key>
+																<string>SFLMono-Regular 11</string>
 															</dict>
 														</dict>
 													</dict>
@@ -5108,6 +5228,7 @@
 											<string>z scsh</string>
 											<string>gs</string>
 											<string>cd</string>
+											<string>fzf -e</string>
 										</array>
 										<key>Directories</key>
 										<array>
@@ -5163,6 +5284,9 @@
 											<string>/Users/riley/github/rileytwo/scsh</string>
 											<string>/Users/riley/github/rileytwo/scsh</string>
 											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
 										</array>
 										<key>Environment</key>
 										<dict>
@@ -5176,6 +5300,24 @@
 										</dict>
 										<key>Hosts</key>
 										<array>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
 											<dict>
 												<key>Host name</key>
 												<string>rxmbp.local</string>
