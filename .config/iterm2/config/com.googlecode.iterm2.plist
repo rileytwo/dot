@@ -1040,8 +1040,8 @@
 	<false/>
 	<key>NSSplitView Subview Frames NSColorPanelSplitView</key>
 	<array>
-		<string>0.000000, 0.000000, 328.000000, 220.000000, NO, NO</string>
-		<string>0.000000, 221.000000, 328.000000, 103.000000, NO, NO</string>
+		<string>0.000000, 0.000000, 328.000000, 251.000000, NO, NO</string>
+		<string>0.000000, 252.000000, 328.000000, 165.000000, NO, NO</string>
 	</array>
 	<key>NSTableView Columns v2 KeyBingingTable</key>
 	<data>
@@ -1131,7 +1131,7 @@
 		<string>^=</string>
 	</dict>
 	<key>NSWindow Frame NSColorPanel</key>
-	<string>313 275 328 237 0 0 1680 1027 </string>
+	<string>828 246 328 232 0 0 1680 1027 </string>
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>315 401 445 205 0 0 1440 877 </string>
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
@@ -1382,13 +1382,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.08235294371843338</real>
+				<real>0.070588238537311554</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.08235294371843338</real>
+				<real>0.070588238537311554</real>
 				<key>Red Component</key>
-				<real>0.08235294371843338</real>
+				<real>0.070588238537311554</real>
 			</dict>
 			<key>Background Image Location</key>
 			<string></string>
@@ -1853,13 +1853,13 @@
 						<key>Alpha Component</key>
 						<real>1</real>
 						<key>Blue Component</key>
-						<real>0.16078431904315948</real>
+						<real>0.070588238537311554</real>
 						<key>Color Space</key>
 						<string>sRGB</string>
 						<key>Green Component</key>
-						<real>0.16078431904315948</real>
+						<real>0.070588238537311554</real>
 						<key>Red Component</key>
-						<real>0.16078431904315948</real>
+						<real>0.070588238537311554</real>
 					</dict>
 					<key>default text color</key>
 					<dict>
@@ -1875,7 +1875,7 @@
 						<real>1</real>
 					</dict>
 					<key>font</key>
-					<string>SF-Mono-Plus-Regular 12</string>
+					<string>SFMono-Regular 12</string>
 				</dict>
 				<key>components</key>
 				<array>
@@ -1904,13 +1904,13 @@
 									<key>Alpha Component</key>
 									<real>1</real>
 									<key>Blue Component</key>
-									<real>0.16078431904315948</real>
+									<real>0.070588238537311554</real>
 									<key>Color Space</key>
 									<string>sRGB</string>
 									<key>Green Component</key>
-									<real>0.16078431904315948</real>
+									<real>0.070588238537311554</real>
 									<key>Red Component</key>
-									<real>0.16078431904315948</real>
+									<real>0.070588238537311554</real>
 								</dict>
 								<key>default text color</key>
 								<dict>
@@ -1926,7 +1926,7 @@
 									<real>1</real>
 								</dict>
 								<key>font</key>
-								<string>SF-Mono-Plus-Regular 12</string>
+								<string>SFMono-Regular 12</string>
 							</dict>
 						</dict>
 					</dict>
@@ -1953,13 +1953,13 @@
 									<key>Alpha Component</key>
 									<real>1</real>
 									<key>Blue Component</key>
-									<real>0.16078431904315948</real>
+									<real>0.070588238537311554</real>
 									<key>Color Space</key>
 									<string>sRGB</string>
 									<key>Green Component</key>
-									<real>0.16078431904315948</real>
+									<real>0.070588238537311554</real>
 									<key>Red Component</key>
-									<real>0.16078431904315948</real>
+									<real>0.070588238537311554</real>
 								</dict>
 								<key>default text color</key>
 								<dict>
@@ -1975,7 +1975,7 @@
 									<real>1</real>
 								</dict>
 								<key>font</key>
-								<string>SF-Mono-Plus-Regular 12</string>
+								<string>SFMono-Regular 12</string>
 							</dict>
 						</dict>
 					</dict>
@@ -2011,13 +2011,13 @@
 									<key>Alpha Component</key>
 									<real>1</real>
 									<key>Blue Component</key>
-									<real>0.16078431904315948</real>
+									<real>0.070588238537311554</real>
 									<key>Color Space</key>
 									<string>sRGB</string>
 									<key>Green Component</key>
-									<real>0.16078431904315948</real>
+									<real>0.070588238537311554</real>
 									<key>Red Component</key>
-									<real>0.16078431904315948</real>
+									<real>0.070588238537311554</real>
 								</dict>
 								<key>default text color</key>
 								<dict>
@@ -2033,7 +2033,7 @@
 									<real>1</real>
 								</dict>
 								<key>font</key>
-								<string>SF-Mono-Plus-Regular 12</string>
+								<string>SFMono-Regular 12</string>
 							</dict>
 						</dict>
 					</dict>
@@ -2069,13 +2069,13 @@
 									<key>Alpha Component</key>
 									<real>1</real>
 									<key>Blue Component</key>
-									<real>0.16078431904315948</real>
+									<real>0.070588238537311554</real>
 									<key>Color Space</key>
 									<string>sRGB</string>
 									<key>Green Component</key>
-									<real>0.16078431904315948</real>
+									<real>0.070588238537311554</real>
 									<key>Red Component</key>
-									<real>0.16078431904315948</real>
+									<real>0.070588238537311554</real>
 								</dict>
 								<key>default text color</key>
 								<dict>
@@ -2091,7 +2091,7 @@
 									<real>1</real>
 								</dict>
 								<key>font</key>
-								<string>SF-Mono-Plus-Regular 12</string>
+								<string>SFMono-Regular 12</string>
 							</dict>
 						</dict>
 					</dict>
@@ -2118,13 +2118,13 @@
 									<key>Alpha Component</key>
 									<real>1</real>
 									<key>Blue Component</key>
-									<real>0.16078431904315948</real>
+									<real>0.070588238537311554</real>
 									<key>Color Space</key>
 									<string>sRGB</string>
 									<key>Green Component</key>
-									<real>0.16078431904315948</real>
+									<real>0.070588238537311554</real>
 									<key>Red Component</key>
-									<real>0.16078431904315948</real>
+									<real>0.070588238537311554</real>
 								</dict>
 								<key>default text color</key>
 								<dict>
@@ -2140,7 +2140,7 @@
 									<real>1</real>
 								</dict>
 								<key>font</key>
-								<string>SF-Mono-Plus-Regular 12</string>
+								<string>SFMono-Regular 12</string>
 							</dict>
 						</dict>
 					</dict>
@@ -2184,13 +2184,13 @@
 									<key>Alpha Component</key>
 									<real>1</real>
 									<key>Blue Component</key>
-									<real>0.16078431904315948</real>
+									<real>0.070588238537311554</real>
 									<key>Color Space</key>
 									<string>sRGB</string>
 									<key>Green Component</key>
-									<real>0.16078431904315948</real>
+									<real>0.070588238537311554</real>
 									<key>Red Component</key>
-									<real>0.16078431904315948</real>
+									<real>0.070588238537311554</real>
 								</dict>
 								<key>default text color</key>
 								<dict>
@@ -2206,7 +2206,7 @@
 									<real>1</real>
 								</dict>
 								<key>font</key>
-								<string>SF-Mono-Plus-Regular 12</string>
+								<string>SFMono-Regular 12</string>
 							</dict>
 						</dict>
 					</dict>
@@ -2507,7 +2507,7 @@
 			<key>Background Color</key>
 			<dict>
 				<key>Alpha Component</key>
-				<integer>1</integer>
+				<real>1</real>
 				<key>Blue Component</key>
 				<real>0.08235294371843338</real>
 				<key>Color Space</key>
@@ -3264,12 +3264,12 @@
 	<array>
 		<string>3.3.6</string>
 		<string>3.3.7beta4</string>
-		<string>3.3.8beta1</string>
+		<string>3.3.4</string>
 		<string>3.3.7beta3</string>
 		<string>3.3.7beta2</string>
 		<string>3.3.5beta3</string>
 		<string>3.3.7beta1</string>
-		<string>3.3.4</string>
+		<string>3.3.8beta1</string>
 	</array>
 	<key>NoSyncBFPFavorites</key>
 	<array>
@@ -3319,7 +3319,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>1B480254-E265-41B7-98EA-0689375CEC49</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>357</integer>
+	<integer>358</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -4477,13 +4477,13 @@
 												<key>Alpha Component</key>
 												<real>1</real>
 												<key>Blue Component</key>
-												<real>0.08235294371843338</real>
+												<real>0.070588238537311554</real>
 												<key>Color Space</key>
 												<string>sRGB</string>
 												<key>Green Component</key>
-												<real>0.08235294371843338</real>
+												<real>0.070588238537311554</real>
 												<key>Red Component</key>
-												<real>0.08235294371843338</real>
+												<real>0.070588238537311554</real>
 											</dict>
 											<key>Background Image Location</key>
 											<string></string>
@@ -4608,7 +4608,7 @@
 												<real>0.94999998807907104</real>
 											</dict>
 											<key>Guid</key>
-											<string>78796558-3C49-4A1E-BFCD-5061A98A62A6</string>
+											<string>AAA20182-7409-4398-91E6-AB6D2BFC6DB7</string>
 											<key>Has Hotkey</key>
 											<false/>
 											<key>Horizontal Spacing</key>
@@ -4950,13 +4950,13 @@
 														<key>Alpha Component</key>
 														<real>1</real>
 														<key>Blue Component</key>
-														<real>0.16078431904315948</real>
+														<real>0.070588238537311554</real>
 														<key>Color Space</key>
 														<string>sRGB</string>
 														<key>Green Component</key>
-														<real>0.16078431904315948</real>
+														<real>0.070588238537311554</real>
 														<key>Red Component</key>
-														<real>0.16078431904315948</real>
+														<real>0.070588238537311554</real>
 													</dict>
 													<key>default text color</key>
 													<dict>
@@ -4972,7 +4972,7 @@
 														<real>1</real>
 													</dict>
 													<key>font</key>
-													<string>SF-Mono-Plus-Regular 12</string>
+													<string>SFMono-Regular 12</string>
 												</dict>
 												<key>components</key>
 												<array>
@@ -5001,13 +5001,13 @@
 																	<key>Alpha Component</key>
 																	<real>1</real>
 																	<key>Blue Component</key>
-																	<real>0.16078431904315948</real>
+																	<real>0.070588238537311554</real>
 																	<key>Color Space</key>
 																	<string>sRGB</string>
 																	<key>Green Component</key>
-																	<real>0.16078431904315948</real>
+																	<real>0.070588238537311554</real>
 																	<key>Red Component</key>
-																	<real>0.16078431904315948</real>
+																	<real>0.070588238537311554</real>
 																</dict>
 																<key>default text color</key>
 																<dict>
@@ -5023,7 +5023,7 @@
 																	<real>1</real>
 																</dict>
 																<key>font</key>
-																<string>SF-Mono-Plus-Regular 12</string>
+																<string>SFMono-Regular 12</string>
 															</dict>
 														</dict>
 													</dict>
@@ -5050,13 +5050,13 @@
 																	<key>Alpha Component</key>
 																	<real>1</real>
 																	<key>Blue Component</key>
-																	<real>0.16078431904315948</real>
+																	<real>0.070588238537311554</real>
 																	<key>Color Space</key>
 																	<string>sRGB</string>
 																	<key>Green Component</key>
-																	<real>0.16078431904315948</real>
+																	<real>0.070588238537311554</real>
 																	<key>Red Component</key>
-																	<real>0.16078431904315948</real>
+																	<real>0.070588238537311554</real>
 																</dict>
 																<key>default text color</key>
 																<dict>
@@ -5072,7 +5072,7 @@
 																	<real>1</real>
 																</dict>
 																<key>font</key>
-																<string>SF-Mono-Plus-Regular 12</string>
+																<string>SFMono-Regular 12</string>
 															</dict>
 														</dict>
 													</dict>
@@ -5108,13 +5108,13 @@
 																	<key>Alpha Component</key>
 																	<real>1</real>
 																	<key>Blue Component</key>
-																	<real>0.16078431904315948</real>
+																	<real>0.070588238537311554</real>
 																	<key>Color Space</key>
 																	<string>sRGB</string>
 																	<key>Green Component</key>
-																	<real>0.16078431904315948</real>
+																	<real>0.070588238537311554</real>
 																	<key>Red Component</key>
-																	<real>0.16078431904315948</real>
+																	<real>0.070588238537311554</real>
 																</dict>
 																<key>default text color</key>
 																<dict>
@@ -5130,7 +5130,7 @@
 																	<real>1</real>
 																</dict>
 																<key>font</key>
-																<string>SF-Mono-Plus-Regular 12</string>
+																<string>SFMono-Regular 12</string>
 															</dict>
 														</dict>
 													</dict>
@@ -5166,13 +5166,13 @@
 																	<key>Alpha Component</key>
 																	<real>1</real>
 																	<key>Blue Component</key>
-																	<real>0.16078431904315948</real>
+																	<real>0.070588238537311554</real>
 																	<key>Color Space</key>
 																	<string>sRGB</string>
 																	<key>Green Component</key>
-																	<real>0.16078431904315948</real>
+																	<real>0.070588238537311554</real>
 																	<key>Red Component</key>
-																	<real>0.16078431904315948</real>
+																	<real>0.070588238537311554</real>
 																</dict>
 																<key>default text color</key>
 																<dict>
@@ -5188,7 +5188,7 @@
 																	<real>1</real>
 																</dict>
 																<key>font</key>
-																<string>SF-Mono-Plus-Regular 12</string>
+																<string>SFMono-Regular 12</string>
 															</dict>
 														</dict>
 													</dict>
@@ -5215,13 +5215,13 @@
 																	<key>Alpha Component</key>
 																	<real>1</real>
 																	<key>Blue Component</key>
-																	<real>0.16078431904315948</real>
+																	<real>0.070588238537311554</real>
 																	<key>Color Space</key>
 																	<string>sRGB</string>
 																	<key>Green Component</key>
-																	<real>0.16078431904315948</real>
+																	<real>0.070588238537311554</real>
 																	<key>Red Component</key>
-																	<real>0.16078431904315948</real>
+																	<real>0.070588238537311554</real>
 																</dict>
 																<key>default text color</key>
 																<dict>
@@ -5237,7 +5237,7 @@
 																	<real>1</real>
 																</dict>
 																<key>font</key>
-																<string>SF-Mono-Plus-Regular 12</string>
+																<string>SFMono-Regular 12</string>
 															</dict>
 														</dict>
 													</dict>
@@ -5281,13 +5281,13 @@
 																	<key>Alpha Component</key>
 																	<real>1</real>
 																	<key>Blue Component</key>
-																	<real>0.16078431904315948</real>
+																	<real>0.070588238537311554</real>
 																	<key>Color Space</key>
 																	<string>sRGB</string>
 																	<key>Green Component</key>
-																	<real>0.16078431904315948</real>
+																	<real>0.070588238537311554</real>
 																	<key>Red Component</key>
-																	<real>0.16078431904315948</real>
+																	<real>0.070588238537311554</real>
 																</dict>
 																<key>default text color</key>
 																<dict>
@@ -5303,7 +5303,7 @@
 																	<real>1</real>
 																</dict>
 																<key>font</key>
-																<string>SF-Mono-Plus-Regular 12</string>
+																<string>SFMono-Regular 12</string>
 															</dict>
 														</dict>
 													</dict>
@@ -5442,6 +5442,26 @@
 											<string>git add .config/iterm2/config/com.googlecode.iterm2.plist &amp;&amp; gc -m 'iterm2 config'</string>
 											<string>gp</string>
 											<string>cd</string>
+											<string>cd .dot</string>
+											<string>git add .config/iterm2/config/com.googlecode.iterm2.plist &amp;&amp; gc -m 'iterm2 config'</string>
+											<string>gp</string>
+											<string>cd</string>
+											<string>gitup -p</string>
+											<string>brew list | grep "docker"</string>
+											<string>brew info docker</string>
+											<string>brew install docker</string>
+											<string>docker</string>
+											<string>brew cask list | "box"</string>
+											<string>brew cask list | grep "box"</string>
+											<string>brew remove docker &amp;&amp; brew cask remove virtualbox</string>
+											<string>brew cleanup -s</string>
+											<string>brew install docker</string>
+											<string>docker run hello-world</string>
+											<string>docker run --help</string>
+											<string>e</string>
+											<string>e</string>
+											<string>e</string>
+											<string>clear</string>
 										</array>
 										<key>Directories</key>
 										<array>
@@ -5521,6 +5541,28 @@
 											<string>/Users/riley/.dot</string>
 											<string>/Users/riley/.dot</string>
 											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
 										</array>
 										<key>Environment</key>
 										<dict>
@@ -5534,6 +5576,138 @@
 										</dict>
 										<key>Hosts</key>
 										<array>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
 											<dict>
 												<key>Host name</key>
 												<string>rxmbp.local</string>
