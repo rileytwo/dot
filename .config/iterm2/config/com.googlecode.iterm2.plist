@@ -1041,7 +1041,7 @@
 	<key>NSSplitView Subview Frames NSColorPanelSplitView</key>
 	<array>
 		<string>0.000000, 0.000000, 328.000000, 256.000000, NO, NO</string>
-		<string>0.000000, 257.000000, 328.000000, 134.000000, NO, NO</string>
+		<string>0.000000, 257.000000, 328.000000, 103.000000, NO, NO</string>
 	</array>
 	<key>NSTableView Columns v2 KeyBingingTable</key>
 	<data>
@@ -1131,11 +1131,11 @@
 		<string>^=</string>
 	</dict>
 	<key>NSWindow Frame NSColorPanel</key>
-	<string>313 311 328 237 0 0 1680 1027 </string>
+	<string>313 275 328 237 0 0 1680 1027 </string>
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>315 401 445 205 0 0 1440 877 </string>
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
-	<string>419 417 841 470 0 0 1680 1027 </string>
+	<string>76 451 799 448 0 0 1680 1027 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>530 476 620 392 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
@@ -1847,19 +1847,19 @@
 				<key>advanced configuration</key>
 				<dict>
 					<key>algorithm</key>
-					<integer>1</integer>
+					<integer>0</integer>
 					<key>background color</key>
 					<dict>
 						<key>Alpha Component</key>
 						<real>1</real>
 						<key>Blue Component</key>
-						<real>0.87058824300765991</real>
+						<real>0.16078431904315948</real>
 						<key>Color Space</key>
 						<string>sRGB</string>
 						<key>Green Component</key>
-						<real>0.50980395078659058</real>
+						<real>0.16078431904315948</real>
 						<key>Red Component</key>
-						<real>0.0</real>
+						<real>0.16078431904315948</real>
 					</dict>
 					<key>default text color</key>
 					<dict>
@@ -1898,36 +1898,233 @@
 							<key>layout advanced configuration dictionary value</key>
 							<dict>
 								<key>algorithm</key>
-								<integer>1</integer>
-							</dict>
-						</dict>
-					</dict>
-					<dict>
-						<key>class</key>
-						<string>iTermStatusBarSpringComponent</string>
-						<key>configuration</key>
-						<dict>
-							<key>knobs</key>
-							<dict>
-								<key>iTermStatusBarSpringComponentSpringConstantKey</key>
-								<real>0.01</real>
-							</dict>
-							<key>layout advanced configuration dictionary value</key>
-							<dict>
-								<key>algorithm</key>
-								<integer>1</integer>
+								<integer>0</integer>
 								<key>background color</key>
 								<dict>
 									<key>Alpha Component</key>
 									<real>1</real>
 									<key>Blue Component</key>
-									<real>0.87058824300765991</real>
+									<real>0.16078431904315948</real>
 									<key>Color Space</key>
 									<string>sRGB</string>
 									<key>Green Component</key>
-									<real>0.50980395078659058</real>
+									<real>0.16078431904315948</real>
 									<key>Red Component</key>
-									<real>0.0</real>
+									<real>0.16078431904315948</real>
+								</dict>
+								<key>default text color</key>
+								<dict>
+									<key>Alpha Component</key>
+									<real>1</real>
+									<key>Blue Component</key>
+									<real>1</real>
+									<key>Color Space</key>
+									<string>sRGB</string>
+									<key>Green Component</key>
+									<real>1</real>
+									<key>Red Component</key>
+									<real>1</real>
+								</dict>
+								<key>font</key>
+								<string>SF-Mono-Plus-Regular 12</string>
+							</dict>
+						</dict>
+					</dict>
+					<dict>
+						<key>class</key>
+						<string>iTermStatusBarFixedSpacerComponent</string>
+						<key>configuration</key>
+						<dict>
+							<key>knobs</key>
+							<dict>
+								<key>base: compression resistance</key>
+								<integer>1</integer>
+								<key>base: priority</key>
+								<real>5</real>
+								<key>iTermStatusBarFixedSpacerComponentWidthKnob</key>
+								<integer>5</integer>
+							</dict>
+							<key>layout advanced configuration dictionary value</key>
+							<dict>
+								<key>algorithm</key>
+								<integer>0</integer>
+								<key>background color</key>
+								<dict>
+									<key>Alpha Component</key>
+									<real>1</real>
+									<key>Blue Component</key>
+									<real>0.16078431904315948</real>
+									<key>Color Space</key>
+									<string>sRGB</string>
+									<key>Green Component</key>
+									<real>0.16078431904315948</real>
+									<key>Red Component</key>
+									<real>0.16078431904315948</real>
+								</dict>
+								<key>default text color</key>
+								<dict>
+									<key>Alpha Component</key>
+									<real>1</real>
+									<key>Blue Component</key>
+									<real>1</real>
+									<key>Color Space</key>
+									<string>sRGB</string>
+									<key>Green Component</key>
+									<real>1</real>
+									<key>Red Component</key>
+									<real>1</real>
+								</dict>
+								<key>font</key>
+								<string>SF-Mono-Plus-Regular 12</string>
+							</dict>
+						</dict>
+					</dict>
+					<dict>
+						<key>class</key>
+						<string>iTermStatusBarCPUUtilizationComponent</string>
+						<key>configuration</key>
+						<dict>
+							<key>knobs</key>
+							<dict>
+								<key>base: priority</key>
+								<real>5</real>
+								<key>shared text color</key>
+								<dict>
+									<key>Alpha Component</key>
+									<real>1</real>
+									<key>Blue Component</key>
+									<real>1</real>
+									<key>Color Space</key>
+									<string>sRGB</string>
+									<key>Green Component</key>
+									<real>1</real>
+									<key>Red Component</key>
+									<real>1</real>
+								</dict>
+							</dict>
+							<key>layout advanced configuration dictionary value</key>
+							<dict>
+								<key>algorithm</key>
+								<integer>0</integer>
+								<key>background color</key>
+								<dict>
+									<key>Alpha Component</key>
+									<real>1</real>
+									<key>Blue Component</key>
+									<real>0.16078431904315948</real>
+									<key>Color Space</key>
+									<string>sRGB</string>
+									<key>Green Component</key>
+									<real>0.16078431904315948</real>
+									<key>Red Component</key>
+									<real>0.16078431904315948</real>
+								</dict>
+								<key>default text color</key>
+								<dict>
+									<key>Alpha Component</key>
+									<real>1</real>
+									<key>Blue Component</key>
+									<real>1</real>
+									<key>Color Space</key>
+									<string>sRGB</string>
+									<key>Green Component</key>
+									<real>1</real>
+									<key>Red Component</key>
+									<real>1</real>
+								</dict>
+								<key>font</key>
+								<string>SF-Mono-Plus-Regular 12</string>
+							</dict>
+						</dict>
+					</dict>
+					<dict>
+						<key>class</key>
+						<string>iTermStatusBarMemoryUtilizationComponent</string>
+						<key>configuration</key>
+						<dict>
+							<key>knobs</key>
+							<dict>
+								<key>base: priority</key>
+								<real>5</real>
+								<key>shared text color</key>
+								<dict>
+									<key>Alpha Component</key>
+									<real>1</real>
+									<key>Blue Component</key>
+									<real>1</real>
+									<key>Color Space</key>
+									<string>sRGB</string>
+									<key>Green Component</key>
+									<real>1</real>
+									<key>Red Component</key>
+									<real>1</real>
+								</dict>
+							</dict>
+							<key>layout advanced configuration dictionary value</key>
+							<dict>
+								<key>algorithm</key>
+								<integer>0</integer>
+								<key>background color</key>
+								<dict>
+									<key>Alpha Component</key>
+									<real>1</real>
+									<key>Blue Component</key>
+									<real>0.16078431904315948</real>
+									<key>Color Space</key>
+									<string>sRGB</string>
+									<key>Green Component</key>
+									<real>0.16078431904315948</real>
+									<key>Red Component</key>
+									<real>0.16078431904315948</real>
+								</dict>
+								<key>default text color</key>
+								<dict>
+									<key>Alpha Component</key>
+									<real>1</real>
+									<key>Blue Component</key>
+									<real>1</real>
+									<key>Color Space</key>
+									<string>sRGB</string>
+									<key>Green Component</key>
+									<real>1</real>
+									<key>Red Component</key>
+									<real>1</real>
+								</dict>
+								<key>font</key>
+								<string>SF-Mono-Plus-Regular 12</string>
+							</dict>
+						</dict>
+					</dict>
+					<dict>
+						<key>class</key>
+						<string>iTermStatusBarFixedSpacerComponent</string>
+						<key>configuration</key>
+						<dict>
+							<key>knobs</key>
+							<dict>
+								<key>base: compression resistance</key>
+								<integer>1</integer>
+								<key>base: priority</key>
+								<real>5</real>
+								<key>iTermStatusBarFixedSpacerComponentWidthKnob</key>
+								<integer>5</integer>
+							</dict>
+							<key>layout advanced configuration dictionary value</key>
+							<dict>
+								<key>algorithm</key>
+								<integer>0</integer>
+								<key>background color</key>
+								<dict>
+									<key>Alpha Component</key>
+									<real>1</real>
+									<key>Blue Component</key>
+									<real>0.16078431904315948</real>
+									<key>Color Space</key>
+									<string>sRGB</string>
+									<key>Green Component</key>
+									<real>0.16078431904315948</real>
+									<key>Red Component</key>
+									<real>0.16078431904315948</real>
 								</dict>
 								<key>default text color</key>
 								<dict>
@@ -1981,20 +2178,21 @@
 							<key>layout advanced configuration dictionary value</key>
 							<dict>
 								<key>algorithm</key>
-								<integer>1</integer>
-							</dict>
-						</dict>
-					</dict>
-					<dict>
-						<key>class</key>
-						<string>iTermStatusBarMemoryUtilizationComponent</string>
-						<key>configuration</key>
-						<dict>
-							<key>knobs</key>
-							<dict>
-								<key>base: priority</key>
-								<real>5</real>
-								<key>shared text color</key>
+								<integer>0</integer>
+								<key>background color</key>
+								<dict>
+									<key>Alpha Component</key>
+									<real>1</real>
+									<key>Blue Component</key>
+									<real>0.16078431904315948</real>
+									<key>Color Space</key>
+									<string>sRGB</string>
+									<key>Green Component</key>
+									<real>0.16078431904315948</real>
+									<key>Red Component</key>
+									<real>0.16078431904315948</real>
+								</dict>
+								<key>default text color</key>
 								<dict>
 									<key>Alpha Component</key>
 									<real>1</real>
@@ -2007,54 +2205,8 @@
 									<key>Red Component</key>
 									<real>1</real>
 								</dict>
-							</dict>
-							<key>layout advanced configuration dictionary value</key>
-							<dict>
-								<key>algorithm</key>
-								<integer>1</integer>
-							</dict>
-						</dict>
-					</dict>
-					<dict>
-						<key>class</key>
-						<string>iTermStatusBarCPUUtilizationComponent</string>
-						<key>configuration</key>
-						<dict>
-							<key>knobs</key>
-							<dict>
-								<key>base: priority</key>
-								<real>5</real>
-								<key>shared background color</key>
-								<dict>
-									<key>Alpha Component</key>
-									<real>1</real>
-									<key>Blue Component</key>
-									<real>0.87058823529999996</real>
-									<key>Color Space</key>
-									<string>sRGB</string>
-									<key>Green Component</key>
-									<real>0.50980392159999999</real>
-									<key>Red Component</key>
-									<real>0.0</real>
-								</dict>
-								<key>shared text color</key>
-								<dict>
-									<key>Alpha Component</key>
-									<real>1</real>
-									<key>Blue Component</key>
-									<real>1</real>
-									<key>Color Space</key>
-									<string>sRGB</string>
-									<key>Green Component</key>
-									<real>1</real>
-									<key>Red Component</key>
-									<real>1</real>
-								</dict>
-							</dict>
-							<key>layout advanced configuration dictionary value</key>
-							<dict>
-								<key>algorithm</key>
-								<integer>1</integer>
+								<key>font</key>
+								<string>SF-Mono-Plus-Regular 12</string>
 							</dict>
 						</dict>
 					</dict>
@@ -2082,7 +2234,7 @@
 			<key>Thin Strokes</key>
 			<integer>4</integer>
 			<key>Title Components</key>
-			<integer>2</integer>
+			<integer>1</integer>
 			<key>Transparency</key>
 			<integer>0</integer>
 			<key>Underline Color</key>
@@ -3167,7 +3319,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>1B480254-E265-41B7-98EA-0689375CEC49</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>354</integer>
+	<integer>356</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -4456,7 +4608,7 @@
 												<real>0.94999998807907104</real>
 											</dict>
 											<key>Guid</key>
-											<string>F0908DE7-DA6F-4B79-B033-AED2A20ACFAA</string>
+											<string>75D9CF7D-772D-482E-AED6-1F5DA0558033</string>
 											<key>Has Hotkey</key>
 											<false/>
 											<key>Horizontal Spacing</key>
@@ -4792,19 +4944,19 @@
 												<key>advanced configuration</key>
 												<dict>
 													<key>algorithm</key>
-													<integer>1</integer>
+													<integer>0</integer>
 													<key>background color</key>
 													<dict>
 														<key>Alpha Component</key>
 														<real>1</real>
 														<key>Blue Component</key>
-														<real>0.87058824300765991</real>
+														<real>0.16078431904315948</real>
 														<key>Color Space</key>
 														<string>sRGB</string>
 														<key>Green Component</key>
-														<real>0.50980395078659058</real>
+														<real>0.16078431904315948</real>
 														<key>Red Component</key>
-														<real>0.0</real>
+														<real>0.16078431904315948</real>
 													</dict>
 													<key>default text color</key>
 													<dict>
@@ -4843,36 +4995,233 @@
 															<key>layout advanced configuration dictionary value</key>
 															<dict>
 																<key>algorithm</key>
-																<integer>1</integer>
-															</dict>
-														</dict>
-													</dict>
-													<dict>
-														<key>class</key>
-														<string>iTermStatusBarSpringComponent</string>
-														<key>configuration</key>
-														<dict>
-															<key>knobs</key>
-															<dict>
-																<key>iTermStatusBarSpringComponentSpringConstantKey</key>
-																<real>0.01</real>
-															</dict>
-															<key>layout advanced configuration dictionary value</key>
-															<dict>
-																<key>algorithm</key>
-																<integer>1</integer>
+																<integer>0</integer>
 																<key>background color</key>
 																<dict>
 																	<key>Alpha Component</key>
 																	<real>1</real>
 																	<key>Blue Component</key>
-																	<real>0.87058824300765991</real>
+																	<real>0.16078431904315948</real>
 																	<key>Color Space</key>
 																	<string>sRGB</string>
 																	<key>Green Component</key>
-																	<real>0.50980395078659058</real>
+																	<real>0.16078431904315948</real>
 																	<key>Red Component</key>
-																	<real>0.0</real>
+																	<real>0.16078431904315948</real>
+																</dict>
+																<key>default text color</key>
+																<dict>
+																	<key>Alpha Component</key>
+																	<real>1</real>
+																	<key>Blue Component</key>
+																	<real>1</real>
+																	<key>Color Space</key>
+																	<string>sRGB</string>
+																	<key>Green Component</key>
+																	<real>1</real>
+																	<key>Red Component</key>
+																	<real>1</real>
+																</dict>
+																<key>font</key>
+																<string>SF-Mono-Plus-Regular 12</string>
+															</dict>
+														</dict>
+													</dict>
+													<dict>
+														<key>class</key>
+														<string>iTermStatusBarFixedSpacerComponent</string>
+														<key>configuration</key>
+														<dict>
+															<key>knobs</key>
+															<dict>
+																<key>base: compression resistance</key>
+																<integer>1</integer>
+																<key>base: priority</key>
+																<real>5</real>
+																<key>iTermStatusBarFixedSpacerComponentWidthKnob</key>
+																<integer>5</integer>
+															</dict>
+															<key>layout advanced configuration dictionary value</key>
+															<dict>
+																<key>algorithm</key>
+																<integer>0</integer>
+																<key>background color</key>
+																<dict>
+																	<key>Alpha Component</key>
+																	<real>1</real>
+																	<key>Blue Component</key>
+																	<real>0.16078431904315948</real>
+																	<key>Color Space</key>
+																	<string>sRGB</string>
+																	<key>Green Component</key>
+																	<real>0.16078431904315948</real>
+																	<key>Red Component</key>
+																	<real>0.16078431904315948</real>
+																</dict>
+																<key>default text color</key>
+																<dict>
+																	<key>Alpha Component</key>
+																	<real>1</real>
+																	<key>Blue Component</key>
+																	<real>1</real>
+																	<key>Color Space</key>
+																	<string>sRGB</string>
+																	<key>Green Component</key>
+																	<real>1</real>
+																	<key>Red Component</key>
+																	<real>1</real>
+																</dict>
+																<key>font</key>
+																<string>SF-Mono-Plus-Regular 12</string>
+															</dict>
+														</dict>
+													</dict>
+													<dict>
+														<key>class</key>
+														<string>iTermStatusBarCPUUtilizationComponent</string>
+														<key>configuration</key>
+														<dict>
+															<key>knobs</key>
+															<dict>
+																<key>base: priority</key>
+																<real>5</real>
+																<key>shared text color</key>
+																<dict>
+																	<key>Alpha Component</key>
+																	<real>1</real>
+																	<key>Blue Component</key>
+																	<real>1</real>
+																	<key>Color Space</key>
+																	<string>sRGB</string>
+																	<key>Green Component</key>
+																	<real>1</real>
+																	<key>Red Component</key>
+																	<real>1</real>
+																</dict>
+															</dict>
+															<key>layout advanced configuration dictionary value</key>
+															<dict>
+																<key>algorithm</key>
+																<integer>0</integer>
+																<key>background color</key>
+																<dict>
+																	<key>Alpha Component</key>
+																	<real>1</real>
+																	<key>Blue Component</key>
+																	<real>0.16078431904315948</real>
+																	<key>Color Space</key>
+																	<string>sRGB</string>
+																	<key>Green Component</key>
+																	<real>0.16078431904315948</real>
+																	<key>Red Component</key>
+																	<real>0.16078431904315948</real>
+																</dict>
+																<key>default text color</key>
+																<dict>
+																	<key>Alpha Component</key>
+																	<real>1</real>
+																	<key>Blue Component</key>
+																	<real>1</real>
+																	<key>Color Space</key>
+																	<string>sRGB</string>
+																	<key>Green Component</key>
+																	<real>1</real>
+																	<key>Red Component</key>
+																	<real>1</real>
+																</dict>
+																<key>font</key>
+																<string>SF-Mono-Plus-Regular 12</string>
+															</dict>
+														</dict>
+													</dict>
+													<dict>
+														<key>class</key>
+														<string>iTermStatusBarMemoryUtilizationComponent</string>
+														<key>configuration</key>
+														<dict>
+															<key>knobs</key>
+															<dict>
+																<key>base: priority</key>
+																<real>5</real>
+																<key>shared text color</key>
+																<dict>
+																	<key>Alpha Component</key>
+																	<real>1</real>
+																	<key>Blue Component</key>
+																	<real>1</real>
+																	<key>Color Space</key>
+																	<string>sRGB</string>
+																	<key>Green Component</key>
+																	<real>1</real>
+																	<key>Red Component</key>
+																	<real>1</real>
+																</dict>
+															</dict>
+															<key>layout advanced configuration dictionary value</key>
+															<dict>
+																<key>algorithm</key>
+																<integer>0</integer>
+																<key>background color</key>
+																<dict>
+																	<key>Alpha Component</key>
+																	<real>1</real>
+																	<key>Blue Component</key>
+																	<real>0.16078431904315948</real>
+																	<key>Color Space</key>
+																	<string>sRGB</string>
+																	<key>Green Component</key>
+																	<real>0.16078431904315948</real>
+																	<key>Red Component</key>
+																	<real>0.16078431904315948</real>
+																</dict>
+																<key>default text color</key>
+																<dict>
+																	<key>Alpha Component</key>
+																	<real>1</real>
+																	<key>Blue Component</key>
+																	<real>1</real>
+																	<key>Color Space</key>
+																	<string>sRGB</string>
+																	<key>Green Component</key>
+																	<real>1</real>
+																	<key>Red Component</key>
+																	<real>1</real>
+																</dict>
+																<key>font</key>
+																<string>SF-Mono-Plus-Regular 12</string>
+															</dict>
+														</dict>
+													</dict>
+													<dict>
+														<key>class</key>
+														<string>iTermStatusBarFixedSpacerComponent</string>
+														<key>configuration</key>
+														<dict>
+															<key>knobs</key>
+															<dict>
+																<key>base: compression resistance</key>
+																<integer>1</integer>
+																<key>base: priority</key>
+																<real>5</real>
+																<key>iTermStatusBarFixedSpacerComponentWidthKnob</key>
+																<integer>5</integer>
+															</dict>
+															<key>layout advanced configuration dictionary value</key>
+															<dict>
+																<key>algorithm</key>
+																<integer>0</integer>
+																<key>background color</key>
+																<dict>
+																	<key>Alpha Component</key>
+																	<real>1</real>
+																	<key>Blue Component</key>
+																	<real>0.16078431904315948</real>
+																	<key>Color Space</key>
+																	<string>sRGB</string>
+																	<key>Green Component</key>
+																	<real>0.16078431904315948</real>
+																	<key>Red Component</key>
+																	<real>0.16078431904315948</real>
 																</dict>
 																<key>default text color</key>
 																<dict>
@@ -4926,20 +5275,21 @@
 															<key>layout advanced configuration dictionary value</key>
 															<dict>
 																<key>algorithm</key>
-																<integer>1</integer>
-															</dict>
-														</dict>
-													</dict>
-													<dict>
-														<key>class</key>
-														<string>iTermStatusBarMemoryUtilizationComponent</string>
-														<key>configuration</key>
-														<dict>
-															<key>knobs</key>
-															<dict>
-																<key>base: priority</key>
-																<real>5</real>
-																<key>shared text color</key>
+																<integer>0</integer>
+																<key>background color</key>
+																<dict>
+																	<key>Alpha Component</key>
+																	<real>1</real>
+																	<key>Blue Component</key>
+																	<real>0.16078431904315948</real>
+																	<key>Color Space</key>
+																	<string>sRGB</string>
+																	<key>Green Component</key>
+																	<real>0.16078431904315948</real>
+																	<key>Red Component</key>
+																	<real>0.16078431904315948</real>
+																</dict>
+																<key>default text color</key>
 																<dict>
 																	<key>Alpha Component</key>
 																	<real>1</real>
@@ -4952,54 +5302,8 @@
 																	<key>Red Component</key>
 																	<real>1</real>
 																</dict>
-															</dict>
-															<key>layout advanced configuration dictionary value</key>
-															<dict>
-																<key>algorithm</key>
-																<integer>1</integer>
-															</dict>
-														</dict>
-													</dict>
-													<dict>
-														<key>class</key>
-														<string>iTermStatusBarCPUUtilizationComponent</string>
-														<key>configuration</key>
-														<dict>
-															<key>knobs</key>
-															<dict>
-																<key>base: priority</key>
-																<real>5</real>
-																<key>shared background color</key>
-																<dict>
-																	<key>Alpha Component</key>
-																	<real>1</real>
-																	<key>Blue Component</key>
-																	<real>0.87058823529999996</real>
-																	<key>Color Space</key>
-																	<string>sRGB</string>
-																	<key>Green Component</key>
-																	<real>0.50980392159999999</real>
-																	<key>Red Component</key>
-																	<real>0.0</real>
-																</dict>
-																<key>shared text color</key>
-																<dict>
-																	<key>Alpha Component</key>
-																	<real>1</real>
-																	<key>Blue Component</key>
-																	<real>1</real>
-																	<key>Color Space</key>
-																	<string>sRGB</string>
-																	<key>Green Component</key>
-																	<real>1</real>
-																	<key>Red Component</key>
-																	<real>1</real>
-																</dict>
-															</dict>
-															<key>layout advanced configuration dictionary value</key>
-															<dict>
-																<key>algorithm</key>
-																<integer>1</integer>
+																<key>font</key>
+																<string>SF-Mono-Plus-Regular 12</string>
 															</dict>
 														</dict>
 													</dict>
@@ -5027,7 +5331,7 @@
 											<key>Thin Strokes</key>
 											<integer>4</integer>
 											<key>Title Components</key>
-											<integer>2</integer>
+											<integer>1</integer>
 											<key>Transparency</key>
 											<integer>0</integer>
 											<key>Underline Color</key>
@@ -5127,6 +5431,13 @@
 											<string>fzf -e</string>
 											<string>l</string>
 											<string>brew update &amp;&amp; brew upgrade; brew cask upgrade --no-quarantine</string>
+											<string>cd .dot</string>
+											<string>gs</string>
+											<string>git add .config/iterm2/config/com.googlecode.iterm2.plist &amp;&amp; gc -m 'iterm2 config'</string>
+											<string>git add .config/iterm2/profiles/Terminal.json</string>
+											<string>gc -m 'update iterm2 profile'</string>
+											<string>gp</string>
+											<string>cd</string>
 										</array>
 										<key>Directories</key>
 										<array>
@@ -5189,11 +5500,22 @@
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley</string>
 										</array>
 										<key>Environment</key>
 										<dict>
 											<key>PWD</key>
-											<string>/Users/riley</string>
+											<string>/Users/riley/.dot</string>
 										</dict>
 										<key>Hostname to Shell</key>
 										<dict>
@@ -5202,6 +5524,72 @@
 										</dict>
 										<key>Hosts</key>
 										<array>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
 											<dict>
 												<key>Host name</key>
 												<string>rxmbp.local</string>
@@ -5654,6 +6042,8 @@
 	<false/>
 	<key>WordCharacters</key>
 	<string>/-+\~_.</string>
+	<key>disableMetalWhenUnplugged</key>
+	<true/>
 	<key>findMode_iTerm</key>
 	<integer>0</integer>
 	<key>iTerm Version</key>
