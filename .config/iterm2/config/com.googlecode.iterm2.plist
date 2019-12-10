@@ -1040,8 +1040,8 @@
 	<false/>
 	<key>NSSplitView Subview Frames NSColorPanelSplitView</key>
 	<array>
-		<string>0.000000, 0.000000, 328.000000, 251.000000, NO, NO</string>
-		<string>0.000000, 252.000000, 328.000000, 165.000000, NO, NO</string>
+		<string>0.000000, 0.000000, 328.000000, 215.000000, NO, NO</string>
+		<string>0.000000, 216.000000, 328.000000, 165.000000, NO, NO</string>
 	</array>
 	<key>NSTableView Columns v2 KeyBingingTable</key>
 	<data>
@@ -2156,7 +2156,7 @@
 								<key>base: priority</key>
 								<real>5</real>
 								<key>iTermStatusBarGitComponentPollingIntervalKey</key>
-								<real>2</real>
+								<real>4</real>
 								<key>maxwidth</key>
 								<real>+infinity</real>
 								<key>minwidth</key>
@@ -3264,12 +3264,12 @@
 	<array>
 		<string>3.3.6</string>
 		<string>3.3.7beta4</string>
-		<string>3.3.4</string>
+		<string>3.3.8beta1</string>
 		<string>3.3.7beta3</string>
 		<string>3.3.7beta2</string>
 		<string>3.3.5beta3</string>
 		<string>3.3.7beta1</string>
-		<string>3.3.8beta1</string>
+		<string>3.3.4</string>
 	</array>
 	<key>NoSyncBFPFavorites</key>
 	<array>
@@ -3319,7 +3319,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>1B480254-E265-41B7-98EA-0689375CEC49</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>358</integer>
+	<integer>363</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -4608,7 +4608,7 @@
 												<real>0.94999998807907104</real>
 											</dict>
 											<key>Guid</key>
-											<string>AAA20182-7409-4398-91E6-AB6D2BFC6DB7</string>
+											<string>125235C0-E43F-46E6-A4B2-99724D5A2802</string>
 											<key>Has Hotkey</key>
 											<false/>
 											<key>Horizontal Spacing</key>
@@ -5253,7 +5253,7 @@
 																<key>base: priority</key>
 																<real>5</real>
 																<key>iTermStatusBarGitComponentPollingIntervalKey</key>
-																<real>2</real>
+																<real>4</real>
 																<key>maxwidth</key>
 																<real>+infinity</real>
 																<key>minwidth</key>
@@ -5462,6 +5462,17 @@
 											<string>e</string>
 											<string>e</string>
 											<string>clear</string>
+											<string>brew update &amp;&amp; brew upgrade; brew cask upgrade --no-quarantine</string>
+											<string>brew update &amp;&amp; brew upgrade; brew cask upgrade --no-quarantine</string>
+											<string>brew info certbod</string>
+											<string>brew info certbot</string>
+											<string>brew info ncmpc scrcpy</string>
+											<string>trash -e</string>
+											<string>pyenv update</string>
+											<string>upgrade_oh_my_zsh</string>
+											<string>pyenv update</string>
+											<string>zshup.sh</string>
+											<string>rr</string>
 										</array>
 										<key>Directories</key>
 										<array>
@@ -5469,17 +5480,6 @@
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
 											<string>/Users/riley/.dot</string>
 											<string>/Users/riley/.dot</string>
 											<string>/Users/riley</string>
@@ -5546,6 +5546,19 @@
 											<string>/Users/riley/.dot</string>
 											<string>/Users/riley/.dot</string>
 											<string>/Users/riley/.dot</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
@@ -5576,6 +5589,18 @@
 										</dict>
 										<key>Hosts</key>
 										<array>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp.local</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
 											<dict>
 												<key>Host name</key>
 												<string>rxmbp.local</string>
