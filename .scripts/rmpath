@@ -1,0 +1,33 @@
+#!/usr/bin/env zsh
+
+BL="$(echo -e "\e[1;94m")"
+GR="$(echo -e "\e[1;92m")"
+END="$(echo -e "\e[0m")"
+
+function usage() {
+  echo ""
+  echo "${GR}Usage:${END}"
+  echo "  ${BL}rmpath.sh${END} <identifier>"
+  echo ""
+  echo "Removes the first entry from \$PATH"
+  echo ""
+}
+
+function rmpath() {
+  echo "${PATH}" | sed -e "s/^.*$1:\//\//"
+  echo "$1"
+}
+
+function main() {
+  if [[ "$#" == 0 ]]; then
+    usage
+
+  elif [[ "$1" =~ "-[hH]" || "$1" == "--help" ]]; then
+    usage
+
+  else
+    rmpath "$1"
+  fi
+}
+
+main "$@"
