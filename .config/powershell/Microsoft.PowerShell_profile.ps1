@@ -35,6 +35,8 @@ Set-PSReadLineOption -Colors @{
     "Operator"  = "`e[33m"
 }
 
+Set-PSReadlineKeyHandler -Key Tab -Function MenuComplete
+
 $PSDefaultParameterValues = @{
     "Format-Table:Autosize" = $True
 }
