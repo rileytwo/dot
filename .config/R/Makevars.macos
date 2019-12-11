@@ -57,14 +57,18 @@ CXX17FLAGS=$(STD_FLAGS)
 # Preprocessor FLAGS
 # NB: -isysroot refigures the include path to the Xcode SDK
 CPPFLAGS=-isysroot $(SDK) -I$(HI) \
-		 -I$(HO)/llvm/include -I$(HO)/openssl/include \
-		 -I$(HO)/gettext/include -I$(HO)/tcl-tk/include \
-		 -I$(HO)/jpeg/include
+		 -I$(HO)/llvm/include \
+		 -I$(HO)/openssl/include \
+		 -I$(HO)/gettext/include \
+		 -I$(HO)/tcl-tk/include \
+		 -I$(HO)/jpeg/include \
+		 -I$(HO)/libpng/include
 
 LDFLAGS+=-L$(HO)/llvm/lib -Wl,-rpath,$(HO)/llvm/lib \
 		 -L$(HO)/openssl/lib \
 		 -L$(HO)/gettext/lib \
-		 -L$(HO)/jpeg/lib
+		 -L$(HO)/jpeg/lib \
+		 -L$(HO)/libpng/lib
 
 # R-specific flags for OpenMP support
 SHLIB_OPENMP_CFLAGS=-fopenmp
