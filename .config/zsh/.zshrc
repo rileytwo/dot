@@ -218,6 +218,8 @@ ZSH_AUTOSUGGEST_CLEAR_WIDGETS+=(bracketed-paste)
 
 if [[ "${OSTYPE}" =~ "linux-gnu" ]]; then
 
+  umask 002
+
   [[ -f "${HOME}/z.sh" ]] \
     && source "${HOME}/z.sh"
 
