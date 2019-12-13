@@ -25,7 +25,7 @@ Return
 !d::Send {Right}   ;; right
 Return
 
-^q::Send !{F4}     ;; alt+F4 (close window)
+^q::Send {AltDown}{F4}{AltUp}     ;; alt+F4 (close window)
 Return
 
 ;; alt+shift+{a/d} ;; jump/move word left and right
@@ -42,12 +42,13 @@ Return
 ^l::Send ^e
 #If
 
+
 ;;; FIREFOX
 #If WinActive("ahk_exe firefox.exe")
 ^,::
-Send !t
-Sleep 1
-Send o
+    Send !t
+    Sleep 1
+    Send o
 Return
 
 ^z::Send ^+t
@@ -59,6 +60,11 @@ Return
 ^Right::Send !{Right}
 #If
 
+
+;;; 1Password
+#If WinActive("ahk_exe 1Password.exe")
+^,::Send {F9}
+#If
 
 ;;; EVERNOTE
 #If WinActive("ahk_class ENMainFrame")
