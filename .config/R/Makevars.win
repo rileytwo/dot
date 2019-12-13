@@ -1,0 +1,4 @@
+CXX14 = g++ -m$(WIN) -std=c++1y
+CFLAGS=-g -O3 -std=c11
+CXX11FLAGS=-g -O3 
+CXX14FLAGS=-g -O3 
