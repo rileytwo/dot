@@ -1,4 +1,23 @@
-CXX14 = g++ -m$(WIN) -std=c++1y
-CFLAGS=-g -O3 -std=c11
-CXX11FLAGS=-g -O3 
-CXX14FLAGS=-g -O3 
+# --------
+# Makevars
+# vim: filetype=make
+# --------
+
+MAKE=make -j`nproc`
+
+CC=$(BINPREF)gcc -m$(WIN) -std=c11
+CFLAGS=-O3 -march=native
+
+CXX11FLAGS=-O3 -march=native
+
+CXX14=$(BINPREF)g++ -m$(WIN) -std=c++1y
+CXX14FLAGS=-O3 -march=native
+
+SHLIB_OPENMP_CFLAGS=-fopenmp
+SHLIB_OPENMP_CXXFLAGS=-fopenmp
+SHLIB_OPENMP_CXX98FLAGS=-fopenmp
+SHLIB_OPENMP_CXX11FLAGS=-fopenmp
+SHLIB_OPENMP_CXX14FLAGS=-fopenmp
+SHLIB_OPENMP_CXX17FLAGS=-fopenmp
+SHLIB_OPENMP_FCFLAGS=-fopenmp
+SHLIB_OPENMP_FFLAGS=-fopenmp
