@@ -1,5 +1,103 @@
+# // some options
+Set-PSReadLineOption -Colors @{
+    "Command"   = "`e[34m"
+    "Parameter" = "`e[35m"
+    "String"    = "`e[33m"
+    "Operator"  = "`e[33m"
+}
+
+Set-PSReadLineKeyHandler -Key Tab -Function MenuComplete
+
+$PSDefaultParameterValues = @{
+    "Format-Table:Autosize" = $True
+}
+
+
+
+# // module imports
+# (TODO: maybe use a hashtable with modules and args?
+function Get-Modules {
+    $modules = @(
+        "Get-ChildItemColor",
+        "posh-git",
+        "oh-my-posh",
+        "PSFzf",
+        "git-aliases"
+    )
+
+    Remove-PSReadLineKeyHandler 'Ctrl+r'
+    
+    foreach ($module in $modules) {
+        if (Get-Module -ListAvailable $module) {
+            Import-Module $module -DisableNameChecking
+        }
+    }
+    
+    $Env:FZF_DEFAULT_COMMAND = "rg --files --no-ignore-vcs --hidden"
+}
+
+Get-Modules
+
+
+
+# // set theme
+function Set-MyTheme {
+    if ($ThemeSettings) {
+        if (Test-Path -IsValid "$($ThemeSettings.MyThemesLocation)/riley.psm1") {
+            Set-Theme riley
+        }
+        else {
+            Set-Theme Avit
+        }
+    }
+}
+
+Set-MyTheme
+
+
+
+# // aliases
+function Get-Path {
+    $Env:Path.Split(';')
+}
+Set-Alias -Name 'path' -Value Get-Path
+
+function Get-Commands {
+    cmd /C "where $args"
+}
+Remove-Item alias:where -Force
+Set-Alias -Name 'where' -Value Get-Commands
+
+function Get-GitRepositoryStatus {
+    git status $args
+}
+Set-Alias -Name 'gs' Get-GitRepositoryStatus
+
+Set-Alias -Name 'which' -Value Get-Command
+
+Set-Alias -Name 'l' -Value Get-ChildItemColor
+Set-Alias -Name 'r' -Value 'Rscript'
+Set-Alias -Name 'rr' -Value 'radian'
+
+
+
+
+# // cleanup
+$functions = @(
+    "Get-Modules",
+    "Set-MyTheme"
+)
+
+foreach ($function in $functions) {
+    Remove-Item Function:\$function
+}
+
+Remove-Item Variable:\functions
+
+
+
+# // OS special things
 if ($IsWindows) {
-    # Chocolatey profile
     $ChocolateyProfile = "$env:ChocolateyInstall\helpers\chocolateyProfile.psm1"
     if (Test-Path($ChocolateyProfile)) {
         Import-Module "$ChocolateyProfile"
@@ -20,90 +118,3 @@ if ($IsWindows) {
         }
     }
 }
-    
-Set-PSReadLineOption -Colors @{
-    "Command"   = "`e[34m"
-    "Parameter" = "`e[35m"
-    "String"    = "`e[33m"
-    "Operator"  = "`e[33m"
-}
-
-Set-PSReadlineKeyHandler -Key Tab -Function MenuComplete
-
-$PSDefaultParameterValues = @{
-    "Format-Table:Autosize" = $True
-}
-
-
-# // module imports
-# (TODO: there has to be a better way than checking each module
-# before importing)
-
-function Get-Modules {
-    # look more into this:
-    # gci $env:PSModulePath.Split(':')
-    # | Where-Object { $_.Name -match "Micro" }
-    if (Get-Module "Get-ChildItemColor") {
-        Import-Module Get-ChildItemColor
-    }
-    if (Get-Module "posh-git") {
-        Import-Module posh-git
-    }
-    if (Get-Module "oh-my-posh") {
-        Import-Module oh-my-posh -DisableNameChecking
-    }
-    if (Get-Module -ListAvailable "PSFzf") {
-        Remove-PSReadLineKeyHandler 'Ctrl+r'
-        Import-Module PSFzf
-        $Env:FZF_DEFAULT_COMMAND = "rg --files --no-ignore-vcs --hidden"
-    }
-    if (Get-Module -ListAvailable "git-aliases") {
-        Import-Module git-aliases -DisableNameChecking
-    }
-}
-
-Get-Modules
-
-
-function Set-MyTheme {
-    if (Test-Path -IsValid "$($ThemeSettings.MyThemesLocation)/riley.psm1") {
-        Set-Theme riley
-    }
-    else {
-        Set-Theme Avit
-    }
-}
-
-Set-MyTheme
-
-## // handy aliases
-#
-# // general
-Set-Alias -Name 'which' -value Get-Command
-Set-Alias -Name 'l' -value Get-ChildItemColor
-
-function Get-Path {
-    $Env:Path.Split(';')
-}
-Set-Alias -Name 'path' -value Get-Path
-
-Remove-Item alias:where -Force
-function Get-Commands {
-    cmd /C "where $args"
-}
-Set-Alias -Name 'where' -value Get-Commands
-
-
-
-#
-# // git
-function Get-GitRepositoryStatus {
-    git status $args
-}
-Set-Alias -Name 'gs' Get-GitRepositoryStatus
-#
-# // other
-Set-Alias -Name 'rr' -value 'radian'
-Set-Alias -Name 'r' -value 'Rscript'
-
-
