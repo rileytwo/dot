@@ -612,13 +612,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.08235294371843338</real>
+				<real>0.070588238537311554</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.08235294371843338</real>
+				<real>0.070588238537311554</real>
 				<key>Red Component</key>
-				<real>0.08235294371843338</real>
+				<real>0.070588238537311554</real>
 			</dict>
 			<key>Badge Color</key>
 			<dict>
@@ -1023,7 +1023,7 @@
 	<key>NSFontPanelAttributes</key>
 	<string>1, 2</string>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/.dot/.config/iterm2/profiles</string>
+	<string>~/.dot/.config/iterm2/colors</string>
 	<key>NSNavLastUserSetHideExtensionButtonState</key>
 	<false/>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
@@ -1040,8 +1040,8 @@
 	<false/>
 	<key>NSSplitView Subview Frames NSColorPanelSplitView</key>
 	<array>
-		<string>0.000000, 0.000000, 328.000000, 215.000000, NO, NO</string>
-		<string>0.000000, 216.000000, 328.000000, 165.000000, NO, NO</string>
+		<string>0.000000, 0.000000, 328.000000, 254.500000, NO, NO</string>
+		<string>0.000000, 255.500000, 328.000000, 130.500000, NO, NO</string>
 	</array>
 	<key>NSTableView Columns v2 KeyBingingTable</key>
 	<data>
@@ -1131,11 +1131,11 @@
 		<string>^=</string>
 	</dict>
 	<key>NSWindow Frame NSColorPanel</key>
-	<string>828 246 328 232 0 0 1680 1027 </string>
+	<string>347 250 328 201 0 0 1680 1027 </string>
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>315 401 445 205 0 0 1440 877 </string>
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
-	<string>76 451 799 448 0 0 1680 1027 </string>
+	<string>440 434 799 448 0 0 1680 1027 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>530 476 620 392 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
@@ -1443,48 +1443,48 @@
 			<key>Command</key>
 			<string></string>
 			<key>Cursor Boost</key>
-			<integer>0</integer>
+			<real>0.0</real>
 			<key>Cursor Color</key>
 			<dict>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.50619852542877197</real>
+				<real>1</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.49256539344787598</real>
+				<real>0.69803921570000005</real>
 				<key>Red Component</key>
-				<real>1</real>
+				<real>0.2470588235</real>
 			</dict>
 			<key>Cursor Guide Color</key>
 			<dict>
 				<key>Alpha Component</key>
 				<real>0.25</real>
 				<key>Blue Component</key>
-				<real>1</real>
+				<real>0.19</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.9268307089805603</real>
+				<real>0.19</real>
 				<key>Red Component</key>
-				<real>0.70213186740875244</real>
+				<real>0.19</real>
 			</dict>
 			<key>Cursor Text Color</key>
 			<dict>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.50619852542877197</real>
+				<real>0.0</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.49256539344787598</real>
+				<real>0.0</real>
 				<key>Red Component</key>
-				<real>1</real>
+				<real>0.0</real>
 			</dict>
 			<key>Cursor Type</key>
-			<integer>0</integer>
+			<integer>2</integer>
 			<key>Custom Command</key>
 			<string>No</string>
 			<key>Custom Directory</key>
@@ -1841,6 +1841,8 @@
 			<key>Show Status Bar</key>
 			<true/>
 			<key>Silence Bell</key>
+			<true/>
+			<key>Smart Cursor Color</key>
 			<true/>
 			<key>Status Bar Layout</key>
 			<dict>
@@ -3264,12 +3266,13 @@
 	<array>
 		<string>3.3.6</string>
 		<string>3.3.7beta4</string>
-		<string>3.3.8beta1</string>
+		<string>3.3.4</string>
 		<string>3.3.7beta3</string>
 		<string>3.3.7beta2</string>
 		<string>3.3.5beta3</string>
 		<string>3.3.7beta1</string>
-		<string>3.3.4</string>
+		<string>3.3.8beta2</string>
+		<string>3.3.8beta1</string>
 	</array>
 	<key>NoSyncBFPFavorites</key>
 	<array>
@@ -3308,7 +3311,7 @@
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1680, 1050}}</string>
 		<key>topLeft</key>
-		<string>{16, 977}</string>
+		<string>{14, 978}</string>
 	</dict>
 	<key>NoSyncHaveUsedCopyMode</key>
 	<true/>
@@ -3319,7 +3322,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>1B480254-E265-41B7-98EA-0689375CEC49</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>363</integer>
+	<integer>380</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -3328,8 +3331,17 @@
 	<real>591740840.972996</real>
 	<key>NoSyncOnboardingWindowHasBeenShown</key>
 	<true/>
+	<key>NoSyncOpenNewPythonScriptInDefaultEditor</key>
+	<true/>
+	<key>NoSyncOpenNewPythonScriptInDefaultEditor_selection</key>
+	<integer>0</integer>
 	<key>NoSyncPermissionToShowTip</key>
 	<false/>
+	<key>NoSyncPersistentRateLimitedUpdates</key>
+	<dict>
+		<key>CheckForUpdatedPythonRuntime</key>
+		<real>598312749.73965502</real>
+	</dict>
 	<key>NoSyncRecordedVariables</key>
 	<dict>
 		<key>0</key>
@@ -4156,7 +4168,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-12-06T23:33:16Z</date>
+	<date>2019-12-16T01:48:11Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
@@ -4538,48 +4550,48 @@
 											<key>Command</key>
 											<string></string>
 											<key>Cursor Boost</key>
-											<integer>0</integer>
+											<real>0.0</real>
 											<key>Cursor Color</key>
 											<dict>
 												<key>Alpha Component</key>
 												<real>1</real>
 												<key>Blue Component</key>
-												<real>0.50619852542877197</real>
+												<real>1</real>
 												<key>Color Space</key>
 												<string>sRGB</string>
 												<key>Green Component</key>
-												<real>0.49256539344787598</real>
+												<real>0.69803921570000005</real>
 												<key>Red Component</key>
-												<real>1</real>
+												<real>0.2470588235</real>
 											</dict>
 											<key>Cursor Guide Color</key>
 											<dict>
 												<key>Alpha Component</key>
 												<real>0.25</real>
 												<key>Blue Component</key>
-												<real>1</real>
+												<real>0.19</real>
 												<key>Color Space</key>
 												<string>sRGB</string>
 												<key>Green Component</key>
-												<real>0.9268307089805603</real>
+												<real>0.19</real>
 												<key>Red Component</key>
-												<real>0.70213186740875244</real>
+												<real>0.19</real>
 											</dict>
 											<key>Cursor Text Color</key>
 											<dict>
 												<key>Alpha Component</key>
 												<real>1</real>
 												<key>Blue Component</key>
-												<real>0.50619852542877197</real>
+												<real>0.0</real>
 												<key>Color Space</key>
 												<string>sRGB</string>
 												<key>Green Component</key>
-												<real>0.49256539344787598</real>
+												<real>0.0</real>
 												<key>Red Component</key>
-												<real>1</real>
+												<real>0.0</real>
 											</dict>
 											<key>Cursor Type</key>
-											<integer>0</integer>
+											<integer>2</integer>
 											<key>Custom Command</key>
 											<string>No</string>
 											<key>Custom Directory</key>
@@ -4608,7 +4620,7 @@
 												<real>0.94999998807907104</real>
 											</dict>
 											<key>Guid</key>
-											<string>125235C0-E43F-46E6-A4B2-99724D5A2802</string>
+											<string>A93AB9BB-5ABE-4A0B-9D5E-E10EC20FB4EE</string>
 											<key>Has Hotkey</key>
 											<false/>
 											<key>Horizontal Spacing</key>
@@ -4938,6 +4950,8 @@
 											<key>Show Status Bar</key>
 											<true/>
 											<key>Silence Bell</key>
+											<true/>
+											<key>Smart Cursor Color</key>
 											<true/>
 											<key>Status Bar Layout</key>
 											<dict>
@@ -5473,13 +5487,11 @@
 											<string>pyenv update</string>
 											<string>zshup.sh</string>
 											<string>rr</string>
+											<string>l</string>
+											<string>cd</string>
 										</array>
 										<key>Directories</key>
 										<array>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
 											<string>/Users/riley/.dot</string>
 											<string>/Users/riley/.dot</string>
 											<string>/Users/riley</string>
@@ -5546,6 +5558,10 @@
 											<string>/Users/riley/.dot</string>
 											<string>/Users/riley/.dot</string>
 											<string>/Users/riley/.dot</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
@@ -6292,7 +6308,7 @@
 	<key>findMode_iTerm</key>
 	<integer>0</integer>
 	<key>iTerm Version</key>
-	<string>3.3.8beta1</string>
+	<string>3.3.8beta2</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
