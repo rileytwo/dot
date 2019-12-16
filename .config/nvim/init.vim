@@ -131,10 +131,10 @@ set modifiable
 if has('mac') || has('unix')
     set number
     set numberwidth=1
-    set guicursor=
-        \n-v-c-sm:hor20,
-        \i-ci-ve:ver25,
-        \r-cr-o:block
+    "set guicursor=
+    "    \n-v-c-sm:hor20,
+    "    \i-ci-ve:ver25,
+    "    \r-cr-o:block
     set cursorline
 else
     set number
