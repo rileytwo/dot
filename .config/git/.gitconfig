@@ -12,9 +12,9 @@
 	pager = diff-so-fancy | less --tabs=4 -RFX
 	autocrlf = input
 	filemode = false
+	editor = vimr --wait
 [hub]
 	protocol = https
-
 [color]
 	ui = true
 [color "diff"]
