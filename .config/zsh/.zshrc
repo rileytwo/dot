@@ -52,8 +52,8 @@ plugins=(
   zsh-autosuggestions
   zsh-syntax-highlighting
 )
-fpath=($ZSH/custom/plugins/zsh-completions/src $fpath)
-source $ZSH/oh-my-zsh.sh
+fpath=(${ZSH}/custom/plugins/zsh-completions/src ${fpath})
+source "${ZSH}/oh-my-zsh.sh"
 
 
 
@@ -75,9 +75,7 @@ if (( $+commands[most] )); then
   export PAGER=most
 fi
 
-if (( $+commands[vimr] )); then
-  export EDITOR=vimr
-elif (( $+commands[nvim] )); then
+if (( $+commands[nvim] )); then
   export EDITOR=nvim
 else
   export EDITOR=vim
