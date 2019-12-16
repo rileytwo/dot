@@ -112,9 +112,5 @@ if ($IsWindows) {
                 "shell.powershell" `
                 "hook"
         ) | Out-String | Invoke-Expression
-
-        if (Get-VirtualEnvName) {
-            $Env:CONDA_PROMPT_MODIFIER = ""
-        }
     }
 }
