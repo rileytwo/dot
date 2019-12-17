@@ -107,10 +107,10 @@ if ($IsWindows) {
     $Env:Path += ";C:\ProgramData\jetpack\bin"
     $Env:Path += ";${HOME}\.cargo\bin"
 
-    function Start-Conda {
-        (& "${HOME}\scoop\apps\miniconda3\current\Scripts\conda.exe" `
-                "shell.powershell" `
-                "hook"
-        ) | Out-String | Invoke-Expression
-    }
+    #function Start-Conda {
+    #    (& "${HOME}\scoop\apps\miniconda3\current\Scripts\conda.exe" `
+    #            "shell.powershell" `
+    #            "hook"
+    #    ) | Out-String | Invoke-Expression
+    #}
 }
