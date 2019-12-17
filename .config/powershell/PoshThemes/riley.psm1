@@ -6,6 +6,13 @@ function Write-Theme {
         [string]$with
     )
     
+    # write virtualenv
+    if (Test-VirtualEnv) {
+        $prompt += Write-Prompt -Object "(" -ForegroundColor $sl.Colors.VirtualEnvForegroundColor
+        $prompt += Write-Prompt -Object "env: $(Get-VirtualEnvName)" -ForegroundColor $sl.Colors.VirtualEnvForegroundColor
+        $prompt += Write-Prompt -Object ") " -ForegroundColor $sl.Colors.VirtualEnvForegroundColor
+    }
+
     # Writes the drive portion
     $drive = "~"
     if ($pwd.Path -ne $HOME) {
@@ -26,27 +33,14 @@ function Write-Theme {
         }
     }
 
-    # Python virtual Env
-    # $venv = Get-VirtualEnvName
-    # if (Test-VirtualEnv) {
-        # $BufferWidth = [Console]::BufferWidth
-        # $lineLength = ($line -replace "\u001B.*?{L}").Length
-        # 
-        # $Align = $BufferWidth - $lineLength - $prompt.Length
-        # $venvAligned = "{0, $Align}" -f $venv
-# 
-        # $prompt += Write-Prompt -Object "$venvAligned" `
-            # -ForegroundColor $sl.Colors.VirtualEnvForegroundColor
-    # }
-    
-
     $prompt += "`r`n"
     $prompt += "> "
     $prompt
 }
 
 $sl = $global:ThemeSettings #local settings
-$sl.PromptSymbols.PromptIndicator = [char]::ConvertFromUtf32(0x221a)
+$sl.Colors.VirtualEnvForegroundColor = [ConsoleColor]::Green
+#$sl.PromptSymbols.PromptIndicator = [char]::ConvertFromUtf32(0x221a)
 $sl.Colors.PromptSymbolColor = [ConsoleColor]::Magenta
 $sl.Colors.PromptHighlightColor = [ConsoleColor]::Blue
 $sl.Colors.DriveForegroundColor = [ConsoleColor]::DarkMagenta
@@ -56,4 +50,3 @@ $sl.PromptSymbols.GitDefaultIndicator = ""
 $sl.PromptSymbols.GitDirtyIndicator = '署'
 $sl.Colors.GitDefaultColor = [ConsoleColor]::DarkGreen
 $sl.Colors.GitDirtyColor = [ConsoleColor]::DarkRed
-$sl.Colors.VirtualEnvForegroundColor = [ConsoleColor]::Green
