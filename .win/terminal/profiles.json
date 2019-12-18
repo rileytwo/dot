@@ -8,8 +8,8 @@
   "alwaysShowTabs": false,
   "showTabsInTitlebar": false,
   "requestedTheme": "system",
-  "initialCols": 90,
-  "initialRows": 40,
+  "initialCols": 100,
+  "initialRows": 45,
 
   "profiles": [
     {
