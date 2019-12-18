@@ -11,6 +11,7 @@ function Write-Theme {
         $prompt += Write-Prompt -Object "env:(" -ForegroundColor $sl.Colors.VirtualEnvForegroundColor
         $prompt += Write-Prompt -Object "$(Get-VirtualEnvName)"
         $prompt += Write-Prompt -Object ") " -ForegroundColor $sl.Colors.VirtualEnvForegroundColor
+        $prompt += Write-Prompt -Object "in " -ForegroundColor $sl.Colors.PromptAtColor
     }
 
     # Writes the drive portion
@@ -18,7 +19,6 @@ function Write-Theme {
     if ($pwd.Path -ne $HOME) {
         $drive = "$(Split-Path -path $pwd -Leaf)"
     }
-    $prompt += Write-Prompt -Object "in " -ForegroundColor $sl.Colors.PromptAtColor
     $prompt += Write-Prompt -Object $drive -ForegroundColor $sl.Colors.DriveForegroundColor
 
     $status = Get-VCSStatus
