@@ -121,6 +121,17 @@ function fill_right()
 	return win_frame
 end
 
+function fill_center()
+   local win          = hs.window.focusedWindow()
+   local win_frame    = win:frame()
+   local screen_frame = win:screen():frame()
+
+   win_frame.x = (screen_frame.w - win_frame.w) / 2
+   win_frame.y = (screen_frame.h - win_frame.h) / 2
+
+   return win_frame
+end
+
 
 function is_almost_equal_to_win_frame(geo)
 	local epsilon   = 5
@@ -140,8 +151,9 @@ end
 
 
 function is_predefined_win_frame_size()
-	if is_almost_equal_to_win_frame(fill_full()) or
-		is_almost_equal_to_win_frame(fill_left()) or
+	if is_almost_equal_to_win_frame(fill_full())   or
+      is_almost_equal_to_win_frame(fill_left())   or
+      is_almost_equal_to_win_frame(fill_center()) or
 		is_almost_equal_to_win_frame(fill_right())  then
 		return true
 
@@ -178,7 +190,7 @@ end
 bind_resize_restore("F", fill_full)
 bind_resize_restore("[", fill_left)
 bind_resize_restore("]", fill_right)
-
+bind_resize_restore("0", fill_center)
 
 
 --[[ 2 -------------------------------------------------------------]]
