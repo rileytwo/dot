@@ -32,7 +32,6 @@ call plug#begin('~/.config/vim/plugged')
 
 
 " // tpope (he deserves his own section)
-Plug 'tpope/vim-markdown', {'for': 'markdown'}
 Plug 'tpope/vim-scriptease'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
@@ -58,6 +57,8 @@ Plug 'ncm2/ncm2-ultisnips'
 Plug 'deoplete-plugins/deoplete-jedi', {'for': 'python'}
 Plug 'MaxMellon/vim-jsx-pretty',       {'for': 'jsx'}
 Plug 'pangloss/vim-javascript',        {'for': 'javascript'}
+Plug 'tpope/vim-markdown',             {'for': 'markdown'}
+Plug 'junegunn/goyo.vim',              {'for': 'markdown'}
 Plug 'PProvost/vim-ps1',               {'for': 'powershell'}
 Plug 'gaalcaras/ncm-R',                {'for': 'R'}
 Plug 'jalvesaq/Nvim-R',                {'for': 'R'}
