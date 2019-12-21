@@ -43,7 +43,7 @@ Plug 'tpope/vim-sleuth'
 " // Completion, snippets
 Plug 'w0rp/ale'
 Plug 'Shougo/deoplete.nvim',          {'do': ':UpdateRemotePlugins'}
-Plug 'deoplete-plugins/deoplete-zsh', {'for': 'zsh'}
+Plug 'deoplete-plugins/deoplete-zsh'
 Plug 'sirver/UltiSnips',
 Plug 'roxma/nvim-yarp'
 
@@ -56,10 +56,13 @@ Plug 'ncm2/ncm2-ultisnips'
 
 " // Language Plugins
 Plug 'deoplete-plugins/deoplete-jedi', {'for': 'python'}
+Plug 'MaxMellon/vim-jsx-pretty',       {'for': 'jsx'}
+Plug 'pangloss/vim-javascript',        {'for': 'javascript'}
 Plug 'PProvost/vim-ps1',               {'for': 'powershell'}
 Plug 'gaalcaras/ncm-R',                {'for': 'R'}
 Plug 'jalvesaq/Nvim-R',                {'for': 'R'}
 Plug 'chrisbra/vim-zsh',               {'for': 'zsh'}
+
 
 Plug 'vitalk/vim-shebang'
 Plug 'dkarter/bullets.vim'
@@ -71,19 +74,21 @@ Plug 'xu-cheng/brew.vim'
 
 " // Editor Plugins
 Plug 'scrooloose/nerdtree', {'on': 'NERDTreeToggle'}
-Plug 'PeterRincker/vim-searchlight'
-Plug 'norcalli/nvim-colorizer.lua'
 Plug 'ryanoasis/vim-devicons'
 Plug 'itchyny/vim-gitbranch'
 Plug 'lambdalisue/suda.vim'
-Plug 'psliwka/vim-smoothie'
+
+Plug 'psliwka/vim-smoothie'  " Smooth scrolling
+Plug 'PeterRincker/vim-searchlight'
+Plug 'norcalli/nvim-colorizer.lua'
+Plug 'junegunn/vim-easy-align'
 Plug 'Raimondi/delimitMate'
 Plug 'Yggdroot/indentLine'
-Plug 'mhinz/vim-startify'
-Plug 'godlygeek/tabular'
 
+Plug 'jeetsukumaran/vim-buffergator'
 Plug 'maximbaz/lightline-ale'
 Plug 'itchyny/lightline.vim'
+Plug 'mhinz/vim-startify'
 
 
 " // Colorschemes
@@ -266,6 +271,10 @@ nnoremap <C-I> gg=G``
 
 " NERDTreeToggle
 map <C-o> :NERDTreeToggle<CR>
+
+" vim-easy-align
+" start EasyAlign (ga) command
+nmap ga <Plug>(EasyAlign)
 
 " buffer resizing:
 "   = increase height
