@@ -1,5 +1,5 @@
 {
-    "title": "Navigation in All Apps",
+    "title": "Full Word Movement in All Apps",
     "rules": [{
         "description": "⌃ + ⇧ + A/D | Move cursor one word Left/Right",
         "manipulators": [{

@@ -1,7 +1,7 @@
 {
-  "title": "Gaming cursor keys [WASD]",
+  "title": "Arrow Keys as [WASD]",
   "rules": [{
-      "description": "Change fn + W/A/S/D to Arrow Keys",
+      "description": "fn + W/A/S/D to Arrow Keys",
       "manipulators": [{
           "type": "basic",
           "from": {
@@ -73,7 +73,7 @@
       ]
     },
     {
-      "description": "Change control + W/A/S/D to Arrow Keys",
+      "description": "⌃ + W/A/S/D to Arrow Keys",
       "manipulators": [{
           "type": "basic",
           "from": {
@@ -133,7 +133,7 @@
       ]
     },
     {
-      "description": "Change left_option + W/A/S/D to Arrow Keys",
+      "description": "(L)⌥ + W/A/S/D to Arrow Keys",
       "manipulators": [{
           "type": "basic",
           "from": {
