@@ -997,7 +997,7 @@
 	<key>HideMenuBarInFullscreen</key>
 	<false/>
 	<key>HideScrollbar</key>
-	<true/>
+	<false/>
 	<key>HideTabNumber</key>
 	<true/>
 	<key>HotkeyMigratedFromSingleToMulti</key>
@@ -1139,7 +1139,7 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>530 476 620 392 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>764 296 907 605 0 0 1680 1027 </string>
+	<string>942 305 732 617 0 0 1680 1027 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -4415,14 +4415,14 @@
 	<array>
 		<string>3.3.6</string>
 		<string>3.3.7beta4</string>
-		<string>3.3.4</string>
+		<string>3.3.8beta1</string>
 		<string>3.3.7beta3</string>
 		<string>3.3.7beta2</string>
 		<string>3.3.5beta3</string>
 		<string>3.3.7beta1</string>
 		<string>3.3.8beta3</string>
 		<string>3.3.8beta2</string>
-		<string>3.3.8beta1</string>
+		<string>3.3.4</string>
 	</array>
 	<key>NoSyncBFPFavorites</key>
 	<array>
@@ -4461,7 +4461,7 @@
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1680, 1050}}</string>
 		<key>topLeft</key>
-		<string>{13, 979}</string>
+		<string>{13, 980}</string>
 	</dict>
 	<key>NoSyncHaveUsedCopyMode</key>
 	<true/>
@@ -4472,7 +4472,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>1B480254-E265-41B7-98EA-0689375CEC49</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>396</integer>
+	<integer>399</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -5356,7 +5356,7 @@
 	<key>UseBorder</key>
 	<false/>
 	<key>ViewManPageCommand</key>
-	<string>man %@ || sleep 3</string>
+	<string>man -P /usr/local/bin/most %@ || sleep 3</string>
 	<key>VisualIndicatorForEsc</key>
 	<false/>
 	<key>Window Arrangements</key>
