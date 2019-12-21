@@ -37,19 +37,19 @@ Caps Lock (⇪) -> Cmd + Ctrl + Alt + Shift (⌘ + ⌃ + ⌥ + ⇧)
 
 --[[ 0 -------------------------------------------------------------]]
 hs.preferencesDarkMode(true)
-hs.console.consoleFont("SFL Mono")
+hs.console.consoleFont("SF Mono")
 hs.console.darkMode(true)
 
 if hs.console.darkMode(true) then
-	hs.console.outputBackgroundColor{alpha = 0.5}
+   hs.console.outputBackgroundColor{alpha = 0.5}
 	hs.console.consoleCommandColor{
-		red = 0.25, blue = 1, green = 0.7
+		red = 0.247, green = 0.698, blue = 1.0
 	}
 	hs.console.consoleResultColor{
-		red = 0.2, blue = 0.2, green = 0.9
-	}
+      red = 0.9767, green = 0.945, blue = 0.64
+   }
 	hs.console.consolePrintColor{
-		red = 0.9, blue = 0.1, green = 0.9
+		red = 0.514, green = 0.988, blue = 0.741
 	}
 end
 
