@@ -1,0 +1,376 @@
+apps:
+  pages:
+  - number: 1
+    items:
+    - folder: Apple Press
+      pages:
+      - number: 1
+        items:
+        - Apple Events
+        - WWDC
+    - folder: Browsers
+      pages:
+      - number: 1
+        items:
+        - Firefox
+    - folder: Communication
+      pages:
+      - number: 1
+        items:
+        - Slack
+        - Twitter
+        - Yack! - Beta
+    - folder: Developer Tools
+      pages:
+      - number: 1
+        items:
+        - Patterns
+        - Expressions
+    - folder: Documentation
+      pages:
+      - number: 1
+        items:
+        - Dash
+        - Guigna
+    - folder: Education
+      pages:
+      - number: 1
+        items:
+        - Books
+        - Dictionary
+        - Stocks
+    - folder: Finder Extensions
+      pages:
+      - number: 1
+        items:
+        - Quick Lock
+        - FinderGo
+    - folder: Fonts
+      pages:
+      - number: 1
+        items:
+        - KerxTester
+        - FTXViewer
+    - folder: Media
+      pages:
+      - number: 1
+        items:
+        - Music
+        - Podcasts
+        - TV
+        - Voice Memos
+        - News
+        - Photos
+    - folder: Menubar
+      pages:
+      - number: 1
+        items:
+        - Rocket
+        - Menubar Colors
+        - Kap
+        - gfxCardStatus
+        - Vanilla
+        - Quick View Calendar
+    - folder: Other
+      pages:
+      - number: 1
+        items:
+        - QuickTime Player
+        - TextEdit
+        - Grapher
+        - Time Machine
+        - Font Book
+        - Chess
+        - Stickies
+        - Image Capture
+        - VoiceOver Utility
+        - AirPort Utility
+        - Migration Assistant
+        - Terminal
+        - Activity Monitor
+        - Console
+        - Keychain Access
+        - System Information
+        - Automator
+        - Script Editor
+        - Disk Utility
+        - Boot Camp Assistant
+        - Digital Color Meter
+        - ColorSync Utility
+        - Screenshot
+        - Bluetooth File Exchange
+        - Audio MIDI Setup
+        - XQuartz
+        - Feedback Assistant
+    - folder: Pictures
+      pages:
+      - number: 1
+        items:
+        - Photo Booth
+        - Preview
+        - GIMP-2.10
+    - folder: Photography
+      pages:
+      - number: 1
+        items:
+        - Filters for Photos
+        - ImageOptim
+    - folder: Productivity
+      pages:
+      - number: 1
+        items:
+        - Calendar
+        - Reminders
+        - Contacts
+        - Microsoft OneNote
+    - folder: REPL
+      pages:
+      - number: 1
+        items:
+        - PowerShell
+        - Julia-1.2
+    - folder: Safari Extensions
+      pages:
+      - number: 1
+        items:
+        - Cascadea
+        - Nightlight
+        - Refined GitHub for Safari
+        - Dark Reader for Safari
+    - folder: Text Editors
+      pages:
+      - number: 1
+        items:
+        - TextMate
+        - VimR
+        - Sublime Text
+        - VSCodium
+    - folder: Terminals
+      pages:
+      - number: 1
+        items:
+        - iTerm
+        - Alacritty
+    - folder: Touch Bar
+      pages:
+      - number: 1
+        items:
+        - MTMR
+        - HapticKey
+        - EnergyBar
+        - Pock
+        - Touch Bar Simulator
+        - TouchSwitcher
+    - folder: Utilities
+      pages:
+      - number: 1
+        items:
+        - Karabiner-EventViewer
+        - Karabiner-Elements
+    - folder: Utilities
+      pages:
+      - number: 1
+        items:
+        - System Preferences
+        - Find My
+        - Mission Control
+        - Siri
+        - Calculator
+        - Maps
+        - Home
+    - folder: Utilities - Debug
+      pages:
+      - number: 1
+        items:
+        - Revisionist
+        - Aquiline Check
+        - Cirrus
+        - Scrub
+        - Pusher
+        - SilentKnight
+        - SearchKey
+        - Precize
+        - 32-bitCheck
+        - xattred
+        - SystHist
+        - Signet
+        - MorxTester
+        - Aquiliner
+        - Nalaprop
+        - Bailiff
+    - folder: Video
+      pages:
+      - number: 1
+        items:
+        - IINA
+        - Gifski
+    - folder: Window Managers
+      pages:
+      - number: 1
+        items:
+        - Rectangle
+        - Penc
+        - Hummingbird
+        - AppGrid
+        - Magnet
+    - App Store
+    - Safari
+    - Mail
+    - Notes
+    - FaceTime
+    - Messages
+    - Xcode
+    - Transporter
+    - iOS App Signer
+    - SourceTools
+    - DB Browser for SQLite
+    - ProfileCreator
+    - Geekbench 5
+    - SpaceRadar
+    - Steam
+    - EtreCheckPro
+    - OneDrive
+    - Microsoft Outlook
+    - Microsoft Excel
+    - Microsoft Word
+    - Click N Code
+    - XCFormat
+    - Metacode
+    - zoom.us
+    - Macs Fan Control
+  - number: 2
+    items:
+    - Copy Right
+    - Mission Control Plus
+    - SwiftPM Catalog
+    - Sharpshooter
+    - Tableau Reader 2019.4
+    - Logi Options
+    - TaskExplorer
+    - TaggyTagger
+    - Keyboard Cleaner
+    - RDM
+    - Suspicious Package
+    - qutebrowser
+    - Dark Mode for Safari
+    - Hammerspoon
+    - Übersicht
+    - Key Codes
+    - amac
+    - Microsoft Remote Desktop
+    - Twine
+    - 1Password 7
+    - windows95
+    - Mark Text
+    - Touch Bar Pong
+    - Mos
+    - Calculator+=
+    - Simulator
+    - Telegram
+    - MAC_FW_015_FN
+    - Mini Calendar
+    - Brave Browser Beta
+    - Itsycal
+    - Day-O
+    - Colorpicker
+    - Pennywise
+    - Pine
+    - Gray
+    - Vivaldi
+    - Syntax Highlight
+    - ColorSlurp
+    - Color Note
+    - Color Picker
+    - balenaEtcher
+    - Flotato
+    - AdGuard
+    - RStudio
+    - Novabench
+    - BetterTouchTool
+    - Browserosaurus
+    - kitty
+  - number: 3
+    items:
+    - NetNewsWire
+    - Pods Updater
+    - HEIC Converter
+    - TinkerTool
+    - eDEX-UI
+    - Intel Power Gadget
+    - Cinebench
+    - Fork
+    - Discord
+    - Clipy
+    - tyke
+    - dockey
+    - GB Studio
+    - KeepingYouAwake
+    - highlight-gui
+    - EasyRes
+    - LockRattler
+    - Marta
+    - Alfred 4
+    - CheatSheet
+    - Typora
+    - Lingon X
+    - PLIST Editor
+    - Workbench
+    - Airmail
+    - PhotoScape X
+    - Dato
+    - Canary Mail
+    - GIFs
+    - folder: Autodesk (Other)
+      pages:
+      - number: 1
+        items:
+        - SketchBook
+    - Vectornator
+    - Tableau Public
+    - Icons8
+    - ColorSnapper2
+    - Anki
+    - SF Symbols
+    - folder: Menubar Modifiers
+      pages:
+      - number: 1
+        items:
+        - Menu Bar Splitter
+        - Dozer
+        - Hidden Bar
+        - Bartender 3
+    - Latest
+    - Amethyst
+    - Haptic Touch Bar
+    - Finicky
+    - Drafts
+widgets:
+  pages: []
+dock_items:
+- ""
+- Firefox
+- Safari
+- TV
+- NetNewsWire
+- ""
+- Mail
+- Calendar
+- Books
+- Dictionary
+- Photos
+- App Store
+- ""
+- RStudio
+- VSCodium
+- VimR
+- Xcode
+- ""
+- iTerm
+- ""
+- Console
+- Activity Monitor
+- TinkerTool
+- System Preferences
+- ============
+- Downloads
+desktop: {}
