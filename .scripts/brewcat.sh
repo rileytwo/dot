@@ -25,6 +25,9 @@ function brew_cat() {
 }
 
 function main() {
+  check_brew
+  check_bat
+
   if [[ "$#" -eq 1 ]]; then
     brew_cat "$@"
   else
