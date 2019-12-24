@@ -1,9 +1,10 @@
 #!/usr/bin/env bash
 
 
+
 usage() {
   echo
-  echo "Usage: $0"
+  echo "Usage: ${0##*/}"
   echo "  notify.sh (-h | --help): Display this help message"
   echo "  notify.sh (-n | --notification) <notification text>"
   echo "  notify.sh (-t | --title) <notifiaction title>"
