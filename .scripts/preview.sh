@@ -4,7 +4,9 @@ function usage() {
   echo ''
   echo 'preview.sh'
   echo '  Performs a recursive search of the current directory'
-  echo '  using fzf and preview the file with bat'
+  echo '  using fzf and previews the file with bat'
+  echo ''
+  echo '  (-h | --help)  Print this message and exit'
   echo ''
 }
 
@@ -25,6 +27,8 @@ function main() {
   check_bat
   if [[ "$#" -eq 0 ]]; then
     preview "$@"
+  elif [[ "$1" == "-h" || "$1" == "--help" ]]; then
+    usage
   else
     usage
   fi
