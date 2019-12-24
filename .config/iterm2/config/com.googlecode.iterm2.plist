@@ -1378,7 +1378,7 @@
 			<key>Automatically Log</key>
 			<false/>
 			<key>BM Growl</key>
-			<true/>
+			<false/>
 			<key>Background Color</key>
 			<dict>
 				<key>Alpha Component</key>
@@ -1837,7 +1837,7 @@
 			<key>Send Idle Alert</key>
 			<false/>
 			<key>Send New Output Alert</key>
-			<true/>
+			<false/>
 			<key>Session Close Undo Timeout</key>
 			<integer>2</integer>
 			<key>Shortcut</key>
@@ -4421,14 +4421,14 @@
 	<array>
 		<string>3.3.6</string>
 		<string>3.3.7beta4</string>
-		<string>3.3.4</string>
+		<string>3.3.8beta1</string>
 		<string>3.3.7beta3</string>
 		<string>3.3.7beta2</string>
 		<string>3.3.5beta3</string>
 		<string>3.3.7beta1</string>
 		<string>3.3.8beta3</string>
 		<string>3.3.8beta2</string>
-		<string>3.3.8beta1</string>
+		<string>3.3.4</string>
 	</array>
 	<key>NoSyncBFPFavorites</key>
 	<array>
@@ -4478,7 +4478,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>1B480254-E265-41B7-98EA-0689375CEC49</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>416</integer>
+	<integer>417</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -5643,7 +5643,7 @@
 											<key>Automatically Log</key>
 											<false/>
 											<key>BM Growl</key>
-											<true/>
+											<false/>
 											<key>Background Color</key>
 											<dict>
 												<key>Alpha Component</key>
@@ -5780,7 +5780,7 @@
 												<real>0.94999998807907104</real>
 											</dict>
 											<key>Guid</key>
-											<string>94174D60-CE23-400B-8686-C3A7EAB27BAA</string>
+											<string>F4E73B75-5B4C-4368-AEFF-B638D09A1831</string>
 											<key>Has Hotkey</key>
 											<false/>
 											<key>Horizontal Spacing</key>
@@ -6104,7 +6104,7 @@
 											<key>Send Idle Alert</key>
 											<false/>
 											<key>Send New Output Alert</key>
-											<true/>
+											<false/>
 											<key>Session Close Undo Timeout</key>
 											<integer>2</integer>
 											<key>Shortcut</key>
@@ -6565,48 +6565,6 @@
 										<integer>91</integer>
 										<key>Commands</key>
 										<array>
-											<string>l</string>
-											<string>brew update &amp;&amp; brew upgrade; brew cask upgrade --no-quarantine</string>
-											<string>cd .dot</string>
-											<string>gs</string>
-											<string>git add .config/iterm2/config/com.googlecode.iterm2.plist &amp;&amp; gc -m 'iterm2 config'</string>
-											<string>git add .config/iterm2/profiles/Terminal.json</string>
-											<string>gc -m 'update iterm2 profile'</string>
-											<string>gp</string>
-											<string>cd</string>
-											<string>cd .dot</string>
-											<string>git add .config/iterm2/config/com.googlecode.iterm2.plist &amp;&amp; gc -m 'iterm2 config'</string>
-											<string>gp</string>
-											<string>cd</string>
-											<string>cd .dot</string>
-											<string>git add .config/iterm2/config/com.googlecode.iterm2.plist &amp;&amp; gc -m 'iterm2 config'</string>
-											<string>gp</string>
-											<string>cd</string>
-											<string>gitup -p</string>
-											<string>brew list | grep "docker"</string>
-											<string>brew info docker</string>
-											<string>brew install docker</string>
-											<string>docker</string>
-											<string>brew cask list | "box"</string>
-											<string>brew cask list | grep "box"</string>
-											<string>brew remove docker &amp;&amp; brew cask remove virtualbox</string>
-											<string>brew cleanup -s</string>
-											<string>brew install docker</string>
-											<string>docker run hello-world</string>
-											<string>docker run --help</string>
-											<string>e</string>
-											<string>e</string>
-											<string>e</string>
-											<string>clear</string>
-											<string>brew update &amp;&amp; brew upgrade; brew cask upgrade --no-quarantine</string>
-											<string>brew update &amp;&amp; brew upgrade; brew cask upgrade --no-quarantine</string>
-											<string>brew info certbod</string>
-											<string>brew info certbot</string>
-											<string>brew info ncmpc scrcpy</string>
-											<string>trash -e</string>
-											<string>pyenv update</string>
-											<string>upgrade_oh_my_zsh</string>
-											<string>pyenv update</string>
 											<string>zshup.sh</string>
 											<string>rr</string>
 											<string>l</string>
@@ -6665,56 +6623,54 @@
 											<string>gc -m 'use ${0##*/} instead of $0 for printing script name'</string>
 											<string>gp</string>
 											<string>cd</string>
+											<string>cd .dot</string>
+											<string>gs</string>
+											<string>git add .config/iterm2/config/com.googlecode.iterm2.plist &amp;&amp; gc -m 'iterm2 config'</string>
+											<string>gp</string>
+											<string>cd</string>
+											<string>cd bin</string>
+											<string>nvim preview.sh</string>
+											<string>preview.sh asf</string>
+											<string>preview.sh -h</string>
+											<string>preview.sh --help</string>
+											<string>nvim preview.sh</string>
+											<string>cd</string>
+											<string>z dot</string>
+											<string>gs</string>
+											<string>git add .scripts/preview.sh</string>
+											<string>gc -m 'add option for -h and --help'</string>
+											<string>gp</string>
+											<string>cd</string>
+											<string>z scs</string>
+											<string>gs</string>
+											<string>git fetch upstream master</string>
+											<string>git merge upstream/master</string>
+											<string>gs</string>
+											<string>code .</string>
+											<string>gs</string>
+											<string>git add SourceCodeSyntaxHighlight.xcodeproj/project.pbxproj</string>
+											<string>gs</string>
+											<string>gc -m 'merge upstream master'</string>
+											<string>gs</string>
+											<string>gp</string>
+											<string>xed</string>
+											<string>gs</string>
+											<string>e</string>
+											<string>git submodule init</string>
+											<string>git submodule update</string>
+											<string>gs</string>
+											<string>cd lua4swift</string>
+											<string>gs</string>
+											<string>git checkout</string>
+											<string>cd ..</string>
+											<string>xed SourceCodeSyntaxHighlight.xcodeproj</string>
+											<string>cd</string>
 										</array>
 										<key>Directories</key>
 										<array>
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
 											<string>/Users/riley/.dot</string>
@@ -6767,6 +6723,50 @@
 											<string>/Users/riley/.dot</string>
 											<string>/Users/riley/.dot</string>
 											<string>/Users/riley/.dot</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley/bin</string>
+											<string>/Users/riley/bin</string>
+											<string>/Users/riley/bin</string>
+											<string>/Users/riley/bin</string>
+											<string>/Users/riley/bin</string>
+											<string>/Users/riley/bin</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley/github/rileytwo/scsh</string>
+											<string>/Users/riley/github/rileytwo/scsh</string>
+											<string>/Users/riley/github/rileytwo/scsh</string>
+											<string>/Users/riley/github/rileytwo/scsh</string>
+											<string>/Users/riley/github/rileytwo/scsh</string>
+											<string>/Users/riley/github/rileytwo/scsh</string>
+											<string>/Users/riley/github/rileytwo/scsh</string>
+											<string>/Users/riley/github/rileytwo/scsh</string>
+											<string>/Users/riley/github/rileytwo/scsh</string>
+											<string>/Users/riley/github/rileytwo/scsh</string>
+											<string>/Users/riley/github/rileytwo/scsh</string>
+											<string>/Users/riley/github/rileytwo/scsh</string>
+											<string>/Users/riley/github/rileytwo/scsh</string>
+											<string>/Users/riley/github/rileytwo/scsh</string>
+											<string>/Users/riley/github/rileytwo/scsh</string>
+											<string>/Users/riley/github/rileytwo/scsh</string>
+											<string>/Users/riley/github/rileytwo/scsh</string>
+											<string>/Users/riley/github/rileytwo/scsh</string>
+											<string>/Users/riley/github/rileytwo/scsh/lua4swift</string>
+											<string>/Users/riley/github/rileytwo/scsh/lua4swift</string>
+											<string>/Users/riley/github/rileytwo/scsh/lua4swift</string>
+											<string>/Users/riley/github/rileytwo/scsh</string>
+											<string>/Users/riley/github/rileytwo/scsh</string>
 											<string>/Users/riley</string>
 										</array>
 										<key>Environment</key>
