@@ -1141,7 +1141,7 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>530 476 620 392 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>942 69 732 603 0 0 1680 1027 </string>
+	<string>942 319 732 603 0 0 1680 1027 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -4421,14 +4421,14 @@
 	<array>
 		<string>3.3.6</string>
 		<string>3.3.7beta4</string>
-		<string>3.3.8beta1</string>
+		<string>3.3.4</string>
 		<string>3.3.7beta3</string>
 		<string>3.3.7beta2</string>
 		<string>3.3.5beta3</string>
 		<string>3.3.7beta1</string>
 		<string>3.3.8beta3</string>
 		<string>3.3.8beta2</string>
-		<string>3.3.4</string>
+		<string>3.3.8beta1</string>
 	</array>
 	<key>NoSyncBFPFavorites</key>
 	<array>
@@ -4478,7 +4478,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>1B480254-E265-41B7-98EA-0689375CEC49</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>415</integer>
+	<integer>416</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -5780,7 +5780,7 @@
 												<real>0.94999998807907104</real>
 											</dict>
 											<key>Guid</key>
-											<string>6CBA0292-D236-4FE7-A5F2-C161A870FF5E</string>
+											<string>94174D60-CE23-400B-8686-C3A7EAB27BAA</string>
 											<key>Has Hotkey</key>
 											<false/>
 											<key>Horizontal Spacing</key>
@@ -6565,53 +6565,6 @@
 										<integer>91</integer>
 										<key>Commands</key>
 										<array>
-											<string>cd .dot</string>
-											<string>gs</string>
-											<string>git add .config/iterm2/config/com.googlecode.iterm2.plist &amp;&amp; gc -m 'iterm2 config'</string>
-											<string>gp</string>
-											<string>cd</string>
-											<string>neofetch -h</string>
-											<string>neofetch --help</string>
-											<string>neofetch --ascii .config/neofetch/config-mac.conf</string>
-											<string>ln -sf /Users/riley/github/rileytwo/kiss/rstudio/kiss-improved.rstheme /Users/riley/.R/rstudio/themes/kiss-improved.rstheme</string>
-											<string>cd .dot</string>
-											<string>gs</string>
-											<string>cd</string>
-											<string>rm -rf .rstudio-desktop/*</string>
-											<string>defaults read com.rstudio.desktop</string>
-											<string>defaults delete com.rstudio.desktop</string>
-											<string>rm .R/rstudio/themes/Alice.rstheme .R/rstudio/themes/alice-improved.rstheme</string>
-											<string>rm .R/rstudio/themes/One\ Dark.rstheme</string>
-											<string>rm .R/rstudio/themes/One\ Dark\ Darker.rstheme</string>
-											<string>z kiss</string>
-											<string>e</string>
-											<string>vimr rstudio/kiss-improved.rstheme</string>
-											<string>ga</string>
-											<string>git commit -m 'update name'</string>
-											<string>gp</string>
-											<string>gs</string>
-											<string>vimr rstudio/kiss.rstheme</string>
-											<string>vimr rstudio/kiss-improved.rstheme</string>
-											<string>ga</string>
-											<string>ga</string>
-											<string>git commit -m 'update name'</string>
-											<string>gp</string>
-											<string>gs</string>
-											<string>cd</string>
-											<string>rr</string>
-											<string>pyenv update</string>
-											<string>zshup.sh</string>
-											<string>upgrade_oh_my_zsh</string>
-											<string>brew update &amp;&amp; brew upgrade; brew cask upgrade --no-quarantine</string>
-											<string>brew info r</string>
-											<string>brew info pcapplusplus</string>
-											<string>cd .dot</string>
-											<string>gs</string>
-											<string>cd</string>
-											<string>z scsh</string>
-											<string>gs</string>
-											<string>cd</string>
-											<string>fzf -e</string>
 											<string>l</string>
 											<string>brew update &amp;&amp; brew upgrade; brew cask upgrade --no-quarantine</string>
 											<string>cd .dot</string>
@@ -6661,64 +6614,62 @@
 											<string>brew update &amp;&amp; brew upgrade; brew cask upgrade --no-quarantine</string>
 											<string>docker</string>
 											<string>rr</string>
+											<string>cd .dot</string>
+											<string>gs</string>
+											<string>git add .config/iterm2/config/com.googlecode.iterm2.plist &amp;&amp; gc -m 'iterm2 config'</string>
+											<string>gp</string>
+											<string>tput</string>
+											<string>tput bel</string>
+											<string>man tput</string>
+											<string>noti</string>
+											<string>noti --help</string>
+											<string>cd</string>
+											<string>notify.sh</string>
+											<string>nvim bin/notify.sh</string>
+											<string>notify.sh</string>
+											<string>nvim bin/notify.sh</string>
+											<string>notify.sh</string>
+											<string>nvim bin/notify.sh</string>
+											<string>notify.sh</string>
+											<string>nvim bin/notify.sh</string>
+											<string>cd bin</string>
+											<string>e</string>
+											<string>nvim preview.sh</string>
+											<string>cat notify.sh</string>
+											<string>cat preview.sh</string>
+											<string>preview.sh</string>
+											<string>nvim preview.sh</string>
+											<string>preview.sh asf</string>
+											<string>nvim preview.sh</string>
+											<string>preview.sh asf</string>
+											<string>nvim preview.sh</string>
+											<string>preview.sh asf</string>
+											<string>preview.sh asf</string>
+											<string>preview.sh asf</string>
+											<string>preview.sh asf</string>
+											<string>preview.sh asf</string>
+											<string>preview.sh asf</string>
+											<string>preview.sh asf</string>
+											<string>preview.sh asf</string>
+											<string>preview.sh asf</string>
+											<string>preview.sh asf</string>
+											<string>z dot</string>
+											<string>gs</string>
+											<string>git restore .scripts/preview.sh</string>
+											<string>gs</string>
+											<string>ga</string>
+											<string>gs</string>
+											<string>git restore --staged .</string>
+											<string>gs</string>
+											<string>ga</string>
+											<string>gc -m 'use ${0##*/} instead of $0 for printing script name'</string>
+											<string>gp</string>
+											<string>cd</string>
 										</array>
 										<key>Directories</key>
 										<array>
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
-											<string>/Users/riley/github/rileytwo/kiss</string>
-											<string>/Users/riley/github/rileytwo/kiss</string>
-											<string>/Users/riley/github/rileytwo/kiss</string>
-											<string>/Users/riley/github/rileytwo/kiss</string>
-											<string>/Users/riley/github/rileytwo/kiss</string>
-											<string>/Users/riley/github/rileytwo/kiss</string>
-											<string>/Users/riley/github/rileytwo/kiss</string>
-											<string>/Users/riley/github/rileytwo/kiss</string>
-											<string>/Users/riley/github/rileytwo/kiss</string>
-											<string>/Users/riley/github/rileytwo/kiss</string>
-											<string>/Users/riley/github/rileytwo/kiss</string>
-											<string>/Users/riley/github/rileytwo/kiss</string>
-											<string>/Users/riley/github/rileytwo/kiss</string>
-											<string>/Users/riley/github/rileytwo/kiss</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley/github/rileytwo/scsh</string>
-											<string>/Users/riley/github/rileytwo/scsh</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
 											<string>/Users/riley</string>
 											<string>/Users/riley/.dot</string>
 											<string>/Users/riley/.dot</string>
@@ -6763,6 +6714,59 @@
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley/bin</string>
+											<string>/Users/riley/bin</string>
+											<string>/Users/riley/bin</string>
+											<string>/Users/riley/bin</string>
+											<string>/Users/riley/bin</string>
+											<string>/Users/riley/bin</string>
+											<string>/Users/riley/bin</string>
+											<string>/Users/riley/bin</string>
+											<string>/Users/riley/bin</string>
+											<string>/Users/riley/bin</string>
+											<string>/Users/riley/bin</string>
+											<string>/Users/riley/bin</string>
+											<string>/Users/riley/bin</string>
+											<string>/Users/riley/bin</string>
+											<string>/Users/riley/bin</string>
+											<string>/Users/riley/bin</string>
+											<string>/Users/riley/bin</string>
+											<string>/Users/riley/bin</string>
+											<string>/Users/riley/bin</string>
+											<string>/Users/riley/bin</string>
+											<string>/Users/riley/bin</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
 											<string>/Users/riley</string>
 										</array>
 										<key>Environment</key>
@@ -7467,7 +7471,7 @@
 				<key>X Origin</key>
 				<real>942</real>
 				<key>Y Origin</key>
-				<real>69</real>
+				<real>319</real>
 			</dict>
 		</array>
 	</dict>
