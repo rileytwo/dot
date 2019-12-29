@@ -86,21 +86,6 @@ Set-Alias -Name 'rr' -Value 'radian'
 
 
 
-
-# // cleanup
-$functions = @(
-    "Get-Modules",
-    "Set-MyTheme"
-)
-
-foreach ($function in $functions) {
-    Remove-Item Function:\$function
-}
-
-Remove-Item Variable:\functions
-
-
-
 # // OS special things
 if ($IsWindows) {
     $ChocolateyProfile = "$env:ChocolateyInstall\helpers\chocolateyProfile.psm1"
