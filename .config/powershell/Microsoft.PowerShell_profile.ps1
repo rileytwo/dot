@@ -59,10 +59,10 @@ Set-MyTheme
 # // aliases
 function Get-Path {
     if ($IsWindows) {
-        $Env:Path.Split(';')
+        $env:PATH.Split(';')
     }
     else {
-        $Env:Path.Split(':')
+        $env:PATH.Split(':')
     }
 }
 Set-Alias -Name 'path' -Value Get-Path
