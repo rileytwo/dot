@@ -68,7 +68,12 @@ function Get-Path {
 Set-Alias -Name 'path' -Value Get-Path
 
 function Get-Commands {
-    cmd /C "where $args"
+    if ($IsWindows) {
+        cmd /C "where $args"
+    }
+    else {
+        /usr/bin/which -a $args
+    }
 }
 Remove-Item alias:where -Force
 Set-Alias -Name 'where' -Value Get-Commands
@@ -96,11 +101,4 @@ if ($IsWindows) {
     $Env:PSModulePath += ";${HOME}\scoop\modules"
     $Env:Path += ";C:\ProgramData\jetpack\bin"
     $Env:Path += ";${HOME}\.cargo\bin"
-
-    #function Start-Conda {
-    #    (& "${HOME}\scoop\apps\miniconda3\current\Scripts\conda.exe" `
-    #            "shell.powershell" `
-    #            "hook"
-    #    ) | Out-String | Invoke-Expression
-    #}
 }
