@@ -235,8 +235,8 @@ if [[ "${OSTYPE}" =~ "linux-gnu" ]]; then
 
 elif [[ "${OSTYPE}" =~ "darwin" ]]; then
 
-  [[ -f /opt/local/bin/port ]] \
-    && export PATH="/opt/local/bin:$PATH"
+  #[[ -f /opt/local/bin/port ]] \
+  #  && export PATH="/opt/local/bin:$PATH"
 
   [[ -f /usr/local/etc/profile.d/z.sh ]] \
     && source /usr/local/etc/profile.d/z.sh
