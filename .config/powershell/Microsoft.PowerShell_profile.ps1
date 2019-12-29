@@ -26,13 +26,13 @@ function Get-Modules {
     )
 
     Remove-PSReadLineKeyHandler 'Ctrl+r'
-    
+
     foreach ($module in $modules) {
         if (Get-Module -ListAvailable $module) {
             Import-Module $module -DisableNameChecking
         }
     }
-    
+
     $Env:FZF_DEFAULT_COMMAND = "rg --files --no-ignore-vcs --hidden"
 }
 
@@ -58,7 +58,12 @@ Set-MyTheme
 
 # // aliases
 function Get-Path {
-    $Env:Path.Split(';')
+    if ($IsWindows) {
+        $Env:Path.Split(';')
+    }
+    else {
+        $Env:Path.Split(':')
+    }
 }
 Set-Alias -Name 'path' -Value Get-Path
 
