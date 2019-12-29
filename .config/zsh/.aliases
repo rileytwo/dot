@@ -33,6 +33,12 @@ if (( $+commands[pyenv] )); then
 fi
 
 
+if (( $+commands[conda] )); then
+    alias c='conda'
+    alias cv='conda env list'
+fi
+
+
 if (( $+commands[R] )); then
     alias r='r --no-save'
 fi
