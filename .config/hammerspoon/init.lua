@@ -365,8 +365,6 @@ function bind_win_manager(key, resize_frame_fn)
 	hs.hotkey.bind(mod_keys, key,
 		function()
 			local win          = hs.window.focusedWindow()
---			local win_frame    = win:frame()
---			local screen_frame = win:screen():frame()
 			local new_frame    = resize_frame_fn()
 
 			win:setFrame(new_frame)
