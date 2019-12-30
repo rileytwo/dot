@@ -20,16 +20,16 @@ Caps Lock (⇪) -> Cmd + Ctrl + Alt + Shift (⌘ + ⌃ + ⌥ + ⇧)
    -  ⌘ + ⌃ + ⌥ + ⇧ + L,     Decrease window width;
    -  ⌘ + ⌃ + ⌥ + ⇧ + K,     Decrease window height;
 
-3: Window Movement
-   -  ⌘ + ⌃ + ⌥ + ⇧ + Left,  Move window to screen left;
-   -  ⌘ + ⌃ + ⌥ + ⇧ + Right, Move window to screen right;
+3: Window Shifting
    -  ⌘ + ⌃ + ⌥ + ⇧ + 8,     Move window up;
    -  ⌘ + ⌃ + ⌥ + ⇧ + I,     Move window down;
    -  ⌘ + ⌃ + ⌥ + ⇧ + U,     Move window left;
    -  ⌘ + ⌃ + ⌥ + ⇧ + O,     Move window right;
 
 
-4: Put it all together
+4: Screen Management
+   -  ⌘ + ⌃ + ⌥ + ⇧ + Left,  Move window to previous screen;
+   -  ⌘ + ⌃ + ⌥ + ⇧ + Right, Move window to next screen;
 
 --]]
 --------------------------------------------------------------------]]
@@ -193,6 +193,7 @@ bind_resize_restore("]", fill_right)
 bind_resize_restore("0", fill_center)
 
 
+
 --[[ 2 -------------------------------------------------------------]]
 function is_right_win_frame()
 	local win          = hs.window.focusedWindow()
@@ -278,7 +279,6 @@ end
 
 
 --[[ 3 -------------------------------------------------------------]]
-
 function shift_up()
 	--	move window up
 	local win       = hs.window.focusedWindow()
@@ -327,40 +327,6 @@ function shift_right()
 end
 
 
-function move_screen_right()
-	-- move to screen right
-	--   wraps around to first screen
-	local win        = hs.window.focusedWindow()
-	local win_screen = win:screen()
-
-	win:moveToScreen(
-		win_screen:next(),
-		{"noResize"},
-		{"ensureInScreenBounds"}
-	)
-
-   return win_screen
-end
-
-
-function move_screen_left()
-	-- move to screen left
-	--   wraps around to last screen
-	local win        = hs.window.focusedWindow()
-	local win_screen = win:screen()
-
-	win:moveToScreen(
-		win_screen:previous(),
-		{"noResize"},
-		{"ensureInScreenBounds"}
-	)
-
-   return win_screen
-end
-
-
-
---[[ 4 -------------------------------------------------------------]]
 function bind_win_manager(key, resize_frame_fn)
 	hs.hotkey.bind(mod_keys, key,
 		function()
@@ -368,7 +334,6 @@ function bind_win_manager(key, resize_frame_fn)
 			local new_frame    = resize_frame_fn()
 
 			win:setFrame(new_frame)
-
 		end
 	)
 end
@@ -382,5 +347,46 @@ bind_win_manager("8", shift_up)
 bind_win_manager("I", shift_down)
 bind_win_manager("U", shift_left)
 bind_win_manager("O", shift_right)
-bind_win_manager("Left", move_screen_left)
-bind_win_manager("Right", move_screen_right)
+
+
+
+--[[ 4 -------------------------------------------------------------]]
+function move_screen_right()
+	-- move to screen right
+	--   wraps around to first screen
+	local win        = hs.window.focusedWindow()
+	local win_screen = win:screen()
+
+	win:moveToScreen(
+		win_screen:next()
+	)
+   return win_screen
+end
+
+
+function move_screen_left()
+	-- move to screen left
+	--   wraps around to last screen
+	local win        = hs.window.focusedWindow()
+	local win_screen = win:screen()
+
+	win:moveToScreen(
+		win_screen:previous()
+   )
+   return win_screen
+end
+
+
+function bind_screen_manager(key, screen_move_function)
+   hs.hotkey.bind(mod_keys, key,
+      function()
+         local win = hs.window.focusedWindow()
+         local new_screen = screen_move_function()
+
+         return new_screen
+      end
+   )
+end
+
+bind_screen_manager("Left", move_screen_left)
+bind_screen_manager("Right", move_screen_right)
