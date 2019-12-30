@@ -279,7 +279,7 @@ end
 
 --[[ 3 -------------------------------------------------------------]]
 
-function move_up()
+function shift_up()
 	--	move window up
 	local win       = hs.window.focusedWindow()
 	local win_frame = win:frame()
@@ -291,7 +291,7 @@ function move_up()
 end
 
 
-function move_down()
+function shift_down()
 	--	move window down
 	local win       = hs.window.focusedWindow()
 	local win_frame = win:frame()
@@ -303,7 +303,7 @@ function move_down()
 end
 
 
-function move_left()
+function shift_left()
 	--	move window left
 	local win          = hs.window.focusedWindow()
 	local win_frame    = win:frame()
@@ -315,7 +315,7 @@ function move_left()
 end
 
 
-function move_right()
+function shift_right()
 	--	move window right
 	local win          = hs.window.focusedWindow()
 	local win_frame    = win:frame()
@@ -380,9 +380,9 @@ bind_win_manager("H", push_left_west)
 bind_win_manager("L", pull_right_east)
 bind_win_manager("J", push_bottom_south)
 bind_win_manager("K", pull_bottom_north)
-bind_win_manager("8", move_up)
-bind_win_manager("I", move_down)
-bind_win_manager("U", move_left)
-bind_win_manager("O", move_right)
+bind_win_manager("8", shift_up)
+bind_win_manager("I", shift_down)
+bind_win_manager("U", shift_left)
+bind_win_manager("O", shift_right)
 bind_win_manager("Left", move_screen_left)
 bind_win_manager("Right", move_screen_right)
