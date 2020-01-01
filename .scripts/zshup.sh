@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env zsh
 
 BL="$(echo -e "\e[1;94m")"
 GR="$(echo -e "\e[1;92m")"
