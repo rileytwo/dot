@@ -32,13 +32,15 @@ function Get-Modules {
             Import-Module $module -DisableNameChecking
         }
     }
-
-    $env:FZF_DEFAULT_COMMAND = "rg --files --no-ignore-vcs --hidden"
 }
 
 Get-Modules
 
-
+if (Get-Command "rg") {
+    if ($env:FZF_DEFAULT_COMMAND) {
+        $env:FZF_DEFAULT_COMMAND = "rg --files --no-ignore-vcs --hidden"
+    }
+}
 
 # // set theme
 function Set-MyTheme {
