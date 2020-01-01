@@ -19,7 +19,7 @@ bindkey '^xe' edit-command-line
 #
 if [[ "${TERM_PROGRAM}" =~ "vscod" ]]; then
   :
-else 
+else
   if [[ "${OSTYPE}" =~ "darwin" ]]; then
     neofetch \
       --ascii "${HOME}"/.dot/.config/neofetch/config-mac.conf \
@@ -95,7 +95,7 @@ fi
 
 autoload -Uz compinit
 setopt EXTENDEDGLOB
-for dump in ${HOME}/.zcompdump(#qN.m1); do
+for dump in "${HOME}"/.zcompdump(#qN.m1); do
   compinit
   if [[ -s "${dump}" && (! -s "${dump}.zwc" || \
     "${dump}" -nt "${dump}.zwc") ]]; \
