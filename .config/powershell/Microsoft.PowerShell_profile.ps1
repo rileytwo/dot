@@ -33,7 +33,7 @@ function Get-Modules {
         }
     }
 
-    $Env:FZF_DEFAULT_COMMAND = "rg --files --no-ignore-vcs --hidden"
+    $env:FZF_DEFAULT_COMMAND = "rg --files --no-ignore-vcs --hidden"
 }
 
 Get-Modules
@@ -98,7 +98,7 @@ if ($IsWindows) {
         Import-Module "$ChocolateyProfile"
     }
 
-    $Env:PSModulePath += ";${HOME}\scoop\modules"
-    $Env:Path += ";C:\ProgramData\jetpack\bin"
-    $Env:Path += ";${HOME}\.cargo\bin"
+    $env:PSModulePath += ";${HOME}\scoop\modules"
+    $env:Path += ";C:\ProgramData\jetpack\bin"
+    $env:Path += ";${HOME}\.cargo\bin"
 }
