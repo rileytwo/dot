@@ -664,7 +664,7 @@
 	<key>NSFontPanelAttributes</key>
 	<string>1, 2</string>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/github/rileytwo/kiss/iterm2</string>
+	<string>~/.dot/.config/iterm2/profiles</string>
 	<key>NSNavLastUserSetHideExtensionButtonState</key>
 	<false/>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
@@ -740,7 +740,6 @@
 	<dict>
 		<key>CurrentItems</key>
 		<array>
-			<string>iTermTouchBarIdentifierFunctionKeys</string>
 			<string>iTermTouchBarIdentifierManPage</string>
 			<string>NSTouchBarItemIdentifierFlexibleSpace</string>
 			<string>touchbar:A5EAA8AA-B194-4B21-9713-C37E23B88B78</string>
@@ -782,7 +781,7 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>315 401 445 205 0 0 1440 877 </string>
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
-	<string>3120 506 799 448 0 0 2560 1417 </string>
+	<string>419 434 841 470 0 0 1680 1027 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>530 476 620 392 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
@@ -810,6 +809,8 @@
 			<string></string>
 			<key>AWDS Window Option</key>
 			<string>No</string>
+			<key>Allow Title Reporting</key>
+			<true/>
 			<key>Allow Title Setting</key>
 			<false/>
 			<key>Ambiguous Double Width</key>
@@ -2561,7 +2562,7 @@
 			<key>Mouse Reporting</key>
 			<true/>
 			<key>Name</key>
-			<string>☔️</string>
+			<string>⚡️🐚</string>
 			<key>Non Ascii Font</key>
 			<string>HackNerdFontComplete-Regular 13</string>
 			<key>Non-ASCII Anti Aliased</key>
@@ -6004,7 +6005,7 @@
 			<key>Mouse Reporting</key>
 			<true/>
 			<key>Name</key>
-			<string>bash🌧</string>
+			<string>bash☔️</string>
 			<key>Non Ascii Font</key>
 			<string>HackNerdFontComplete-Regular 13</string>
 			<key>Non-ASCII Anti Aliased</key>
@@ -6584,7 +6585,7 @@
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1680, 1050}}</string>
 		<key>topLeft</key>
-		<string>{519, 847}</string>
+		<string>{8, 1011}</string>
 	</dict>
 	<key>NoSyncHaveUsedCopyMode</key>
 	<true/>
@@ -6597,7 +6598,7 @@
 	<key>NoSyncLastTipTime</key>
 	<real>599534396.45447803</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>466</integer>
+	<integer>468</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
