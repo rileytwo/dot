@@ -209,8 +209,7 @@ function is_right_win_frame()
 end
 
 
-function push_left_west()
-	-- push western frame west (increases window width)
+function increase_win_width()
 	local win          = hs.window.focusedWindow()
 	local win_frame    = win:frame()
 	local screen_frame = win:screen():frame()
@@ -234,8 +233,7 @@ function push_left_west()
 end
 
 
-function pull_right_east()
-	-- pull western frame east (decreases window width)
+function decrease_win_width()
 	local win       = hs.window.focusedWindow()
 	local win_frame = win:frame()
 
@@ -253,8 +251,7 @@ function pull_right_east()
 end
 
 
-function push_bottom_south()
-	-- push southern frame south (increases window height)
+function increase_win_height()
 	local win       = hs.window.focusedWindow()
 	local win_frame = win:frame()
 
@@ -265,8 +262,7 @@ function push_bottom_south()
 end
 
 
-function pull_bottom_north()
-	-- pull southern frame north (decreases window height)
+function decrease_win_height()
 	local win       = hs.window.focusedWindow()
 	local win_frame = win:frame()
 
@@ -339,10 +335,10 @@ function bind_win_manager(key, resize_frame_fn)
 end
 
 
-bind_win_manager("H", push_left_west)
-bind_win_manager("L", pull_right_east)
-bind_win_manager("J", push_bottom_south)
-bind_win_manager("K", pull_bottom_north)
+bind_win_manager("H", increase_win_width)
+bind_win_manager("L", decrease_win_width)
+bind_win_manager("J", increase_win_height)
+bind_win_manager("K", decrease_win_height)
 bind_win_manager("8", shift_up)
 bind_win_manager("I", shift_down)
 bind_win_manager("U", shift_left)
