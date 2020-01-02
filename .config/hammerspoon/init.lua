@@ -323,6 +323,18 @@ function shift_right()
 end
 
 
+function toggle_win_lr()
+   local win          = hs.window.focusedWindow()
+   local win_frame    = win:frame()
+   local screen_frame = win:screen():frame()
+
+   win_frame.x = screen_frame.w - (win_frame.x + win_frame.w)
+   win:setFrame(win_frame)
+
+   return win_frame
+end
+
+
 function bind_win_manager(key, resize_frame_fn)
 	hs.hotkey.bind(mod_keys, key,
 		function()
@@ -335,15 +347,15 @@ function bind_win_manager(key, resize_frame_fn)
 end
 
 
-bind_win_manager("H", increase_win_width)
-bind_win_manager("L", decrease_win_width)
-bind_win_manager("J", increase_win_height)
-bind_win_manager("K", decrease_win_height)
-bind_win_manager("8", shift_up)
-bind_win_manager("I", shift_down)
-bind_win_manager("U", shift_left)
-bind_win_manager("O", shift_right)
-
+bind_win_manager("H",  increase_win_width)
+bind_win_manager("L",  decrease_win_width)
+bind_win_manager("J",  increase_win_height)
+bind_win_manager("K",  decrease_win_height)
+bind_win_manager("8",  shift_up)
+bind_win_manager("I",  shift_down)
+bind_win_manager("U",  shift_left)
+bind_win_manager("O",  shift_right)
+bind_win_manager("\\", toggle_win_lr)
 
 
 --[[ 4 -------------------------------------------------------------]]
