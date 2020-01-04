@@ -7,12 +7,13 @@
 	process = git-lfs filter-process
 	required = true
 [core]
-	excludesfile = .gitignore-global
+	excludesfile = /Users/riley/.gitignore-global
 	trustctime = false
 	pager = diff-so-fancy | less --tabs=4 -RFX
 	autocrlf = input
 	filemode = false
 	editor = vimr --wait
+	excludesfiles = ~/.gitignore-global
 [hub]
 	protocol = https
 [color]
@@ -24,3 +25,9 @@
 	old = "red bold"
 	new = "green bold"
 	whitespace = "red reverse"
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
