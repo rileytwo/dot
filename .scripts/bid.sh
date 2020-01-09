@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env zsh
 
 function display_usage() {
   echo 
@@ -15,35 +15,33 @@ function raise_error() {
 }
 
 function check_PlistBuddy() {
-  local no_PlistBuddyFound="PlistBuddy was not found"
-  [[ -f /usr/libexec/PlistBuddy ]] || { echo "${no_PlistBuddyFound}"; exit 1; }
+  local no_plistbuddy_found="PlistBuddy was not found"
+
+  if [[ -f "/usr/libexec/PlistBuddy" ]]; then
+    PBDY="/usr/libexec/PlistBuddy"
+  else
+    echo "${no_plistbuddy_found}"; exit 1;
+  fi
 }
 
 function print_bundle_identifier() {
-  /usr/libexec/PlistBuddy -c 'Print CFBundleIdentifier' \
-    "$1"/Contents/Info.plist
-  }
+  ${PBDY} -c 'Print CFBundleIdentifier' "$@"/Contents/Info.plist
+}
 
 
 function main() {
-
   check_PlistBuddy
 
   if [ "$#" -gt 0 ]; then
     case "$1" in
       "-a" | "--app" | "--application")
-	shift
-	print_bundle_identifier "$@"
+	print_bundle_identifier "$2"
 	;;
       "-h" | "--help" )
 	display_usage
 	;;
-      :)
-	echo "-$1 requires an argument"
-	exit 1
-	;;
       *)
-	echo "Invalid option: $1"
+	raise_error "Invalid option: $1"
 	exit 1
 	;;
     esac
