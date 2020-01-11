@@ -156,9 +156,9 @@ set showtabline=2
 set laststatus=2
 set noshowmode
 
-set tabstop=4
-set shiftwidth=4
 set expandtab
+set shiftwidth=4
+set softtabstop=4
 set autoindent
 
 filetype plugin indent on
