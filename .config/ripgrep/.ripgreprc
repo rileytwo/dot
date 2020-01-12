@@ -1,0 +1,6 @@
+# colors
+--colors=match:fg:blue
+--colors=match:style:nobold
+
+--colors=line:style:bold
+--colors=line:fg:black
