@@ -283,6 +283,7 @@ if (( $+commands[fzf] )); then
 fi
 
 if (( $+commands[rg] )); then
+  export RIPGREP_CONFIG_PATH="${HOME}/.config/ripgrep/.ripgreprc"
   export FZF_DEFAULT_COMMAND='rg --files --no-ignore-vcs --hidden'
 fi
 export FZF_DEFAULT_OPTS='
