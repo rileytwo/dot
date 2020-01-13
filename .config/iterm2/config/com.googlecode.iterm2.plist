@@ -645,6 +645,8 @@
 	<true/>
 	<key>IRMemory</key>
 	<integer>4</integer>
+	<key>LoadFromFindPasteboard</key>
+	<false/>
 	<key>LoadPrefsFromCustomFolder</key>
 	<true/>
 	<key>Log Smart Selection Debug Info</key>
@@ -6541,7 +6543,7 @@
 	<key>NoSyncLastTipTime</key>
 	<real>600564393.74382699</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>508</integer>
+	<integer>516</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -7389,6 +7391,8 @@
 	<key>Print In Black And White</key>
 	<true/>
 	<key>PromptOnQuit</key>
+	<false/>
+	<key>ProportionalScrollWheelReporting</key>
 	<false/>
 	<key>RunJobsInServers</key>
 	<false/>
