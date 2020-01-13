@@ -17,18 +17,20 @@ bindkey '^xe' edit-command-line
 #   'title' '@' 'underline'
 #   'subtitle' 'colon' 'info'
 #
-if [[ "${TERM_PROGRAM}" =~ "vscod" ]]; then
+if [[ "${0}" != "-zsh" ]]; then
   :
 else
   if [[ "${OSTYPE}" =~ "darwin" ]]; then
     neofetch \
       --ascii "${HOME}"/.dot/.config/neofetch/config-mac.conf \
       --colors 5 7 7 4 7 15
+
   elif [[ "${OSTYPE}" == "linux-gnu" ]]; then
     neofetch \
       --config "${HOME}"/.config/neofetch/config-linux.conf \
       --ascii_distro kubuntu \
       --colors 5 7 7 4 7 15
+
   fi
 fi
 
@@ -42,7 +44,7 @@ HISTFILE="${HOME}/.zsh_history"
 ZSH_THEME='kiss'
 export ZSH="${HOME}/.oh-my-zsh"
 plugins=(
-  swiftpm
+  #swiftpm
   #zsh-interactive-cd
   git
   forgit
@@ -134,10 +136,10 @@ zstyle ':completion:*:corrections' format \
 
 zstyle ':completion:*' list-colors \
   "${(s.:.)LS_COLORS}"
-# NOTE `(s.:.)` forces field splitting at the separator *string*
+  # NOTE `(s.:.)` forces field splitting at the separator *string*
 
-zstyle ':completion:*' group-name ''
-zstyle ':completion:*' verbose true
+  zstyle ':completion:*' group-name ''
+  zstyle ':completion:*' verbose true
 
 
 
@@ -234,9 +236,6 @@ if [[ "${OSTYPE}" =~ "linux-gnu" ]]; then
     && export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
 
 elif [[ "${OSTYPE}" =~ "darwin" ]]; then
-
-  #[[ -f /opt/local/bin/port ]] \
-  #  && export PATH="/opt/local/bin:$PATH"
 
   [[ -f /usr/local/etc/profile.d/z.sh ]] \
     && source /usr/local/etc/profile.d/z.sh
