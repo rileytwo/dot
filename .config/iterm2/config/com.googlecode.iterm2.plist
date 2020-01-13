@@ -681,8 +681,8 @@
 	<false/>
 	<key>NSSplitView Subview Frames NSColorPanelSplitView</key>
 	<array>
-		<string>0.000000, 0.000000, 389.000000, 220.000000, NO, NO</string>
-		<string>0.000000, 221.000000, 389.000000, 75.000000, NO, NO</string>
+		<string>0.000000, 0.000000, 356.000000, 215.000000, NO, NO</string>
+		<string>0.000000, 216.000000, 356.000000, 131.000000, NO, NO</string>
 	</array>
 	<key>NSTableView Columns v2 KeyBingingTable</key>
 	<data>
@@ -777,13 +777,13 @@
 		<string>^=</string>
 	</dict>
 	<key>NSWindow Frame NSColorPanel</key>
-	<string>822 497 389 237 0 0 2560 1417 </string>
+	<string>488 325 356 232 0 0 1680 1027 </string>
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>315 401 445 205 0 0 1440 877 </string>
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
 	<string>419 434 841 470 0 0 1680 1027 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>530 476 620 392 0 0 1680 1027 </string>
+	<string>530 492 620 392 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>942 331 732 591 0 0 1680 1027 </string>
 	<key>NeverWarnAboutShortLivedSessions_120FAA18-3181-488D-9B29-68949F1F0CE6</key>
@@ -1640,64 +1640,6 @@
 					<dict>
 						<key>class</key>
 						<string>iTermStatusBarCPUUtilizationComponent</string>
-						<key>configuration</key>
-						<dict>
-							<key>knobs</key>
-							<dict>
-								<key>base: priority</key>
-								<real>5</real>
-								<key>shared text color</key>
-								<dict>
-									<key>Alpha Component</key>
-									<real>1</real>
-									<key>Blue Component</key>
-									<real>1</real>
-									<key>Color Space</key>
-									<string>sRGB</string>
-									<key>Green Component</key>
-									<real>1</real>
-									<key>Red Component</key>
-									<real>1</real>
-								</dict>
-							</dict>
-							<key>layout advanced configuration dictionary value</key>
-							<dict>
-								<key>algorithm</key>
-								<integer>0</integer>
-								<key>background color</key>
-								<dict>
-									<key>Alpha Component</key>
-									<real>1</real>
-									<key>Blue Component</key>
-									<real>0.070588238537311554</real>
-									<key>Color Space</key>
-									<string>sRGB</string>
-									<key>Green Component</key>
-									<real>0.070588238537311554</real>
-									<key>Red Component</key>
-									<real>0.070588238537311554</real>
-								</dict>
-								<key>default text color</key>
-								<dict>
-									<key>Alpha Component</key>
-									<real>1</real>
-									<key>Blue Component</key>
-									<real>1</real>
-									<key>Color Space</key>
-									<string>sRGB</string>
-									<key>Green Component</key>
-									<real>1</real>
-									<key>Red Component</key>
-									<real>1</real>
-								</dict>
-								<key>font</key>
-								<string>SFMono-Regular 12</string>
-							</dict>
-						</dict>
-					</dict>
-					<dict>
-						<key>class</key>
-						<string>iTermStatusBarMemoryUtilizationComponent</string>
 						<key>configuration</key>
 						<dict>
 							<key>knobs</key>
@@ -6545,6 +6487,7 @@
 		<string>3.3.5beta3</string>
 		<string>3.3.7beta1</string>
 		<string>3.3.8beta3</string>
+		<string>3.3.8beta4</string>
 		<string>3.3.8beta2</string>
 		<string>3.3.8beta1</string>
 	</array>
@@ -6596,9 +6539,9 @@
 	<key>NoSyncInstallationId</key>
 	<string>1B480254-E265-41B7-98EA-0689375CEC49</string>
 	<key>NoSyncLastTipTime</key>
-	<real>599534396.45447803</real>
+	<real>600564393.74382699</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>468</integer>
+	<integer>508</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -7392,6 +7335,7 @@
 		<string>0003</string>
 		<string>0001</string>
 		<string>000</string>
+		<string>0004</string>
 		<string>0002</string>
 		<string>0000</string>
 		<string>0004</string>
@@ -7457,7 +7401,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-01-01T01:16:27Z</date>
+	<date>2020-01-12T23:26:31Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
@@ -7488,6 +7432,8 @@
 	<integer>2</integer>
 	<key>ThreeFingerEmulates</key>
 	<true/>
+	<key>TimeBetweenTips</key>
+	<real>86400</real>
 	<key>ToolbeltTools</key>
 	<array>
 		<string>Actions</string>
@@ -9615,7 +9561,7 @@
 	<key>findMode_iTerm</key>
 	<integer>0</integer>
 	<key>iTerm Version</key>
-	<string>3.3.8beta3</string>
+	<string>3.3.8beta4</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
