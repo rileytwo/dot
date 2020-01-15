@@ -17,7 +17,7 @@ bindkey '^xe' edit-command-line
 #   'title' '@' 'underline'
 #   'subtitle' 'colon' 'info'
 #
-if [[ "${0}" != "-zsh" || ! (( $+commands[neofetch] )) ]]; then
+if [[ "${0}" != "-zsh" ]] || ! (( $+commands[neofetch] )); then
   :
 else
   if [[ "${OSTYPE}" =~ "darwin" ]]; then
