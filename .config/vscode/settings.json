@@ -20,31 +20,11 @@
     "editor.fontLigatures": true,
     "editor.formatOnPaste": true,
     "editor.parameterHints.enabled": false,
-    "editor.accessibilitySupport": "off",
 
     "less.lint.duplicateProperties": "warning",
     "scss.lint.duplicateProperties": "warning",
     "markdown.extension.print.imgToBase64": true,
     "markdown.extension.toc.githubCompatibility": true,
-    // "update.enableWindowsBackgroundUpdates": false,
-    // "workbench.statusBar.feedback.visible": false,
-    //"vim.disableExtension": true,
-    // "gitProjectManager.displayProjectPath": true,
-    // "gitProjectManager.baseProjectsFolders": [
-    // "/Users/Riley/.dot",
-    // "/Users/Riley/Documents/Projects/github"
-    // ],
-    // "gitProjectManager.maxDepthRecursion": 1,
-    // "gitProjectManager.checkRemoteOrigin": false,
-    // "gitProjectManager.searchInsideProjects": false,
-    //"gitlens.showWhatsNewAfterUpgrades": false,
-    //"gitlens.advanced.similarityThreshold": 0,
-    //"gitlens.advanced.telemetry.enabled": false,
-    // "r.editor.tabSize": 4,
-    // "r.linting.multipleDots": false,
-    // "r.linting.pascalCase": false,
-
-    "window.title": "${folderPath}${activeEditorMedium}",
     "workbench.colorTheme": "Kiss",
     "scm.providers.visible": 0,
     "git.countBadge": "tracked",
@@ -67,7 +47,7 @@
     "python.linting.enabled": true,
     "python.dataScience.allowLiveShare": false,
     "python.dataScience.searchForJupyter": false,
-    "python.pythonPath": "/Users/riley/.pyenv/versions/3.8.0/bin/python",
+    "python.pythonPath": "/Users/riley/.pyenv/shims/python",
     "python.terminal.activateEnvironment": false,
     "files.trimTrailingWhitespace": true,
     "code-runner.saveFileBeforeRun": true,
@@ -139,15 +119,18 @@
         "*.rmd": "markdown",
         "Rpkg": "r",
         "*.Rmd": "rmd",
-        ".gitignore": "shellscript"
+        ".gitignore": "shellscript",
+        "*.log": "log"
     },
     "[jsonc]": {
-        "editor.formatOnSave": false
+        "editor.formatOnSave": false,
+        "editor.defaultFormatter": "HookyQR.beautify",
+        "editor.tabSize": 4
     },
     "[json]": {
         "editor.formatOnSave": false,
         "editor.defaultFormatter": "HookyQR.beautify",
-        "editor.tabSize": 2
+        "editor.tabSize": 4
     },
     "[rmd]": {
 
@@ -223,13 +206,28 @@
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "customizeUI.activityBar": "regular",
-    "workbench.activityBar.visible": false,
+    "workbench.activityBar.visible": true,
     "workbench.settings.useSplitJSON": true,
     "python.experiments.enabled": false,
     "vsintellicode.python.completionsEnabled": false,
-    "editor.formatOnSave": true,
     "python.jediEnabled": false,
     "python.analysis.memory.keepLibraryLocalVariables": true,
     "python.analysis.memory.keepLibraryAst": true,
-    "editor.renderLineHighlight": "gutter"
+    "editor.renderLineHighlight": "gutter",
+    "indentRainbow.ignoreErrorLanguages": [
+        "markdown",
+        "python",
+        "shellscript",
+        "r",
+        "sql",
+        "txt",
+        "log"
+    ],
+    "window.title": "${activeEditorLong}${separator}${rootName}",
+    "editor.rulers": [
+        ""
+    ],
+    "powershell.codeFormatting.ignoreOneLineBlock": false,
+    "powershell.codeFormatting.pipelineIndentationStyle": "IncreaseIndentationForFirstPipeline",
+    "extensions.autoCheckUpdates": false
 }

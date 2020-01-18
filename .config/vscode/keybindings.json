@@ -643,5 +643,32 @@
     {
         "key": "ctrl+g",
         "command": "-workbench.action.gotoLine"
+    },
+    {
+        "key": "cmd+t",
+        "command": "-workbench.action.showAllSymbols"
+    },
+    {
+        "key": "ctrl+k ,",
+        "command": "-extension.saveToHtml",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+k .",
+        "command": "-extension.clipToHtml",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+escape",
+        "command": "-closeFindWidget",
+        "when": "editorFocus && findWidgetVisible"
+    },
+    {
+        "key": "ctrl+=",
+        "command": "workbench.action.increaseViewSize"
+    },
+    {
+        "key": "ctrl+shift+=",
+        "command": "workbench.action.decreaseViewSize"
     }
 ]
