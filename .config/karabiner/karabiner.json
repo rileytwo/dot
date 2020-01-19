@@ -1038,7 +1038,7 @@
             ],
             "name": "🌺",
             "parameters": {
-                "delay_milliseconds_before_open_device": 1000
+                "delay_milliseconds_before_open_device": 10000
             },
             "selected": true,
             "simple_modifications": [],
