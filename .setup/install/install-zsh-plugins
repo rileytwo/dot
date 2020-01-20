@@ -1,0 +1,21 @@
+#!/usr/bin/env zsh
+
+if [[ -z "$ZSH_CUSTOM" ]]; then
+  ZSH_CUSTOM="$ZSH/custom"
+  ZCPLUGINS="$ZSH_CUSTOM/plugins"
+fi
+
+GITHUB="https://github.com/"
+
+PLUGS=(
+  'zsh-users/zsh-syntax-highlighting'
+  'zsh-users/zsh-completions'
+  'zsh-users/zsh-history-substring-search'
+  'zsh-users/zsh-autosuggestions'
+  'wfxr/forgit'
+  'hlissner/zsh-autopair'
+)
+
+for plug in $PLUGS; do
+  git clone "$GITHUB/$plug" "$ZCPLUGINS/$plug"
+done
