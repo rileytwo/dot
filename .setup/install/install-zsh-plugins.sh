@@ -16,6 +16,19 @@ PLUGS=(
   'hlissner/zsh-autopair'
 )
 
+PLUG_DIR=(
+  'zsh-syntax-highlighting'
+  'zsh-completions'
+  'zsh-history-substring-search'
+  'zsh-autosuggestions'
+  'forgit'
+  'zsh-autopair'
+)
+
+for plug_dir in $PLUG_DIRS; do
+  mkdir -p "$ZCPLUGINS/$plug_dir"
+done
+
 for plug in $PLUGS; do
-  git clone "$GITHUB/$plug" "$ZCPLUGINS/$plug"
+  git clone "$GITHUB/$plug" "$ZCPLUGINS/"
 done
