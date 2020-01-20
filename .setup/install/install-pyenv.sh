@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-bash -c "$(curl https://pyenv.run)"
+bash -c "$(curl https://pyenv.run)" && exit
