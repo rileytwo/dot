@@ -10,6 +10,8 @@
 	<true/>
 	<key>AppleAntiAliasingThreshold</key>
 	<integer>1</integer>
+	<key>ApplePressAndHoldEnabled</key>
+	<false/>
 	<key>AppleScrollAnimationEnabled</key>
 	<integer>0</integer>
 	<key>AppleSmoothFixedFontsSizeThreshold</key>
@@ -657,22 +659,12 @@
 	<real>0.05000000074505806</real>
 	<key>MinimalTabStyleOutlineStrength</key>
 	<real>0.0</real>
-	<key>NSColorPanelMode</key>
-	<string>1</string>
-	<key>NSColorPickerPreferredRGBEntryMode</key>
-	<integer>2</integer>
-	<key>NSColorPickerSlidersDefaults</key>
-	<string>1</string>
 	<key>NSFontPanelAttributes</key>
 	<string>1, 2</string>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/.dot/.config/iterm2/profiles</string>
-	<key>NSNavLastUserSetHideExtensionButtonState</key>
-	<false/>
+	<string>~/.dot/.config/iterm2/config</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
 	<string>{799, 448}</string>
-	<key>NSNavPanelExpandedSizeForSaveMode</key>
-	<string>{841, 448}</string>
 	<key>NSQuotedKeystrokeBinding</key>
 	<string></string>
 	<key>NSRepeatCountBinding</key>
@@ -683,8 +675,8 @@
 	<false/>
 	<key>NSSplitView Subview Frames NSColorPanelSplitView</key>
 	<array>
-		<string>0.000000, 0.000000, 356.000000, 215.000000, NO, NO</string>
-		<string>0.000000, 216.000000, 356.000000, 131.000000, NO, NO</string>
+		<string>0.000000, 0.000000, 224.000000, 258.000000, NO, NO</string>
+		<string>0.000000, 259.000000, 224.000000, 48.000000, NO, NO</string>
 	</array>
 	<key>NSTableView Columns v2 KeyBingingTable</key>
 	<data>
@@ -714,80 +706,14 @@
 		<key>TB Is Shown</key>
 		<integer>1</integer>
 	</dict>
-	<key>NSTouchBarConfig: full screen</key>
-	<dict>
-		<key>CurrentItems</key>
-		<array>
-			<string>iTermTouchBarIdentifierManPage</string>
-			<string>iTermTouchBarIdentifierColorPreset</string>
-			<string>NSTouchBarItemIdentifierFlexibleSpace</string>
-			<string>touchbar:A5EAA8AA-B194-4B21-9713-C37E23B88B78</string>
-			<string>touchbar:DD0C2B84-A8D9-4558-B040-48FC9129893C</string>
-			<string>NSTouchBarItemIdentifierOtherItemsProxy</string>
-		</array>
-		<key>DefaultItems</key>
-		<array>
-			<string>iTermTouchBarIdentifierManPage</string>
-			<string>iTermTouchBarIdentifierColorPreset</string>
-			<string>iTermTouchBarIdentifierFunctionKeys</string>
-			<string>NSTouchBarItemIdentifierFlexibleSpace</string>
-			<string>tab bar</string>
-			<string>NSTouchBarItemIdentifierOtherItemsProxy</string>
-			<string>iTermTouchBarIdentifierAddMark</string>
-			<string>iTermTouchBarIdentifierPreviousMark</string>
-			<string>iTermTouchBarIdentifierNextMark</string>
-		</array>
-	</dict>
-	<key>NSTouchBarConfig: regular</key>
-	<dict>
-		<key>CurrentItems</key>
-		<array>
-			<string>iTermTouchBarIdentifierManPage</string>
-			<string>NSTouchBarItemIdentifierFlexibleSpace</string>
-			<string>touchbar:A5EAA8AA-B194-4B21-9713-C37E23B88B78</string>
-			<string>touchbar:DD0C2B84-A8D9-4558-B040-48FC9129893C</string>
-			<string>NSTouchBarItemIdentifierFlexibleSpace</string>
-			<string>iTermTouchBarIdentifierStatus</string>
-			<string>NSTouchBarItemIdentifierFlexibleSpace</string>
-			<string>touchbar:72934D9B-E70C-4E20-B840-F5F06D51C120</string>
-			<string>touchbar:DDDC3AC2-5B8D-4DEF-9C24-D9CBECBFEC36</string>
-			<string>touchbar:A92D10B3-6FD0-4E51-B031-526529FE90EC</string>
-			<string>NSTouchBarItemIdentifierFlexibleSpace</string>
-			<string>NSTouchBarItemIdentifierOtherItemsProxy</string>
-		</array>
-		<key>DefaultItems</key>
-		<array>
-			<string>iTermTouchBarIdentifierManPage</string>
-			<string>iTermTouchBarIdentifierColorPreset</string>
-			<string>iTermTouchBarIdentifierFunctionKeys</string>
-			<string>NSTouchBarItemIdentifierFlexibleSpace</string>
-			<string>NSTouchBarItemIdentifierOtherItemsProxy</string>
-			<string>iTermTouchBarIdentifierAddMark</string>
-			<string>iTermTouchBarIdentifierPreviousMark</string>
-			<string>iTermTouchBarIdentifierNextMark</string>
-		</array>
-	</dict>
-	<key>NSUserKeyEquivalents</key>
-	<dict>
-		<key>Make Terminal Default Term</key>
-		<string></string>
-		<key>Make iTerm2 Default Term</key>
-		<string></string>
-		<key>Move Divider Down</key>
-		<string>^$=</string>
-		<key>Move Divider Up</key>
-		<string>^=</string>
-	</dict>
 	<key>NSWindow Frame NSColorPanel</key>
-	<string>488 325 356 232 0 0 1680 1027 </string>
-	<key>NSWindow Frame NSFontPanel</key>
-	<string>315 401 445 205 0 0 1440 877 </string>
+	<string>0 148 224 275 0 0 1680 1027 </string>
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
-	<string>419 434 841 470 0 0 1680 1027 </string>
+	<string>440 450 799 448 0 0 1680 1027 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>530 492 620 392 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>191 124 644 543 0 0 1680 1027 </string>
+	<string>942 331 732 591 0 0 1680 1027 </string>
 	<key>NeverWarnAboutShortLivedSessions_120FAA18-3181-488D-9B29-68949F1F0CE6</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_120FAA18-3181-488D-9B29-68949F1F0CE6_selection</key>
@@ -1535,7 +1461,7 @@
 						<real>1</real>
 					</dict>
 					<key>font</key>
-					<string>SFMono-Regular 12</string>
+					<string>SF-Mono-Plus-Regular 11</string>
 				</dict>
 				<key>components</key>
 				<array>
@@ -1586,7 +1512,7 @@
 									<real>1</real>
 								</dict>
 								<key>font</key>
-								<string>SFMono-Regular 12</string>
+								<string>SF-Mono-Plus-Regular 11</string>
 							</dict>
 						</dict>
 					</dict>
@@ -1635,7 +1561,7 @@
 									<real>1</real>
 								</dict>
 								<key>font</key>
-								<string>SFMono-Regular 12</string>
+								<string>SF-Mono-Plus-Regular 11</string>
 							</dict>
 						</dict>
 					</dict>
@@ -1693,7 +1619,7 @@
 									<real>1</real>
 								</dict>
 								<key>font</key>
-								<string>SFMono-Regular 12</string>
+								<string>SF-Mono-Plus-Regular 11</string>
 							</dict>
 						</dict>
 					</dict>
@@ -1742,7 +1668,7 @@
 									<real>1</real>
 								</dict>
 								<key>font</key>
-								<string>SFMono-Regular 12</string>
+								<string>SF-Mono-Plus-Regular 11</string>
 							</dict>
 						</dict>
 					</dict>
@@ -1808,7 +1734,7 @@
 									<real>1</real>
 								</dict>
 								<key>font</key>
-								<string>SFMono-Regular 12</string>
+								<string>SF-Mono-Plus-Regular 11</string>
 							</dict>
 						</dict>
 					</dict>
@@ -6481,88 +6407,34 @@
 	</array>
 	<key>NoSyncAllAppVersions</key>
 	<array>
-		<string>3.3.6</string>
-		<string>3.3.7beta4</string>
-		<string>3.3.4</string>
-		<string>3.3.7beta3</string>
-		<string>3.3.7beta2</string>
-		<string>3.3.5beta3</string>
-		<string>3.3.7beta1</string>
-		<string>3.3.8beta3</string>
-		<string>3.3.8beta4</string>
-		<string>3.3.8beta2</string>
-		<string>3.3.8beta1</string>
-	</array>
-	<key>NoSyncBFPFavorites</key>
-	<array>
-		<string>SF Mono</string>
-		<string>SFL Mono</string>
-		<string>SF Mono Plus</string>
-	</array>
-	<key>NoSyncBFPRecents</key>
-	<array>
-		<string>Fira Code</string>
-		<string>SF Mono Plus</string>
-		<string>SFL Mono</string>
-		<string>SF Mono</string>
+		<string>3.3.7</string>
+		<string>3.3.8beta5</string>
 	</array>
 	<key>NoSyncCommandHistoryHasEverBeenUsed</key>
 	<true/>
-	<key>NoSyncConfirmRunOpenFile</key>
-	<true/>
-	<key>NoSyncConfirmRunOpenFile_selection</key>
-	<integer>0</integer>
 	<key>NoSyncConfirmShellIntegrationCommand</key>
 	<true/>
 	<key>NoSyncConfirmShellIntegrationCommand_selection</key>
 	<integer>0</integer>
-	<key>NoSyncEnableAutomaticProfileSwitchingLogging</key>
-	<true/>
-	<key>NoSyncFrame_SessionsPreferences</key>
-	<dict>
-		<key>screenFrame</key>
-		<string>{{0, 0}, {2560, 1440}}</string>
-		<key>topLeft</key>
-		<string>{790, 763}</string>
-	</dict>
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1680, 1050}}</string>
 		<key>topLeft</key>
-		<string>{269, 595}</string>
+		<string>{77, 866}</string>
 	</dict>
-	<key>NoSyncHaveUsedCopyMode</key>
-	<true/>
-	<key>NoSyncInstallUtilitiesPackage</key>
-	<true/>
-	<key>NoSyncInstallUtilitiesPackage_selection</key>
-	<integer>0</integer>
 	<key>NoSyncInstallationId</key>
-	<string>1B480254-E265-41B7-98EA-0689375CEC49</string>
-	<key>NoSyncLastTipTime</key>
-	<real>600564393.74382699</real>
+	<string>F33A6FF2-B6BE-4CD9-8A49-42BC0194D190</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>562</integer>
+	<integer>9</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
 	<integer>0</integer>
 	<key>NoSyncNextAnnoyanceTime</key>
-	<real>591740840.972996</real>
+	<real>601430135.05498803</real>
 	<key>NoSyncOnboardingWindowHasBeenShown</key>
 	<true/>
-	<key>NoSyncOpenNewPythonScriptInDefaultEditor</key>
-	<true/>
-	<key>NoSyncOpenNewPythonScriptInDefaultEditor_selection</key>
-	<integer>0</integer>
-	<key>NoSyncPermissionToShowTip</key>
-	<false/>
-	<key>NoSyncPersistentRateLimitedUpdates</key>
-	<dict>
-		<key>CheckForUpdatedPythonRuntime</key>
-		<real>598312749.73965502</real>
-	</dict>
 	<key>NoSyncRecordedVariables</key>
 	<dict>
 		<key>0</key>
@@ -7082,19 +6954,19 @@
 			</dict>
 			<dict>
 				<key>isTerminal</key>
-				<true/>
-				<key>name</key>
-				<string>currentSession.terminalIconName</string>
-				<key>nonterminalContext</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>isTerminal</key>
 				<false/>
 				<key>name</key>
 				<string>title</string>
 				<key>nonterminalContext</key>
 				<integer>1</integer>
+			</dict>
+			<dict>
+				<key>isTerminal</key>
+				<true/>
+				<key>name</key>
+				<string>title</string>
+				<key>nonterminalContext</key>
+				<integer>0</integer>
 			</dict>
 			<dict>
 				<key>isTerminal</key>
@@ -7108,7 +6980,7 @@
 				<key>isTerminal</key>
 				<true/>
 				<key>name</key>
-				<string>title</string>
+				<string>currentSession.terminalIconName</string>
 				<key>nonterminalContext</key>
 				<integer>0</integer>
 			</dict>
@@ -7180,7 +7052,7 @@
 				<key>isTerminal</key>
 				<true/>
 				<key>name</key>
-				<string>window</string>
+				<string>currentSession.lastCommand</string>
 				<key>nonterminalContext</key>
 				<integer>0</integer>
 			</dict>
@@ -7188,7 +7060,7 @@
 				<key>isTerminal</key>
 				<true/>
 				<key>name</key>
-				<string>currentSession.lastCommand</string>
+				<string>window</string>
 				<key>nonterminalContext</key>
 				<integer>0</integer>
 			</dict>
@@ -7226,19 +7098,11 @@
 			</dict>
 			<dict>
 				<key>isTerminal</key>
-				<true/>
+				<false/>
 				<key>name</key>
-				<string>currentSession.path</string>
+				<string>iterm2</string>
 				<key>nonterminalContext</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>isTerminal</key>
-				<true/>
-				<key>name</key>
-				<string>currentSession.pid</string>
-				<key>nonterminalContext</key>
-				<integer>0</integer>
+				<integer>4</integer>
 			</dict>
 			<dict>
 				<key>isTerminal</key>
@@ -7252,23 +7116,31 @@
 				<key>isTerminal</key>
 				<true/>
 				<key>name</key>
+				<string>currentSession.terminalWindowName</string>
+				<key>nonterminalContext</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>isTerminal</key>
+				<true/>
+				<key>name</key>
 				<string>currentSession.hostname</string>
 				<key>nonterminalContext</key>
 				<integer>0</integer>
 			</dict>
 			<dict>
 				<key>isTerminal</key>
-				<false/>
+				<true/>
 				<key>name</key>
-				<string>iterm2</string>
+				<string>currentSession.path</string>
 				<key>nonterminalContext</key>
-				<integer>4</integer>
+				<integer>0</integer>
 			</dict>
 			<dict>
 				<key>isTerminal</key>
 				<true/>
 				<key>name</key>
-				<string>currentSession.terminalWindowName</string>
+				<string>currentSession.pid</string>
 				<key>nonterminalContext</key>
 				<integer>0</integer>
 			</dict>
@@ -7317,31 +7189,8 @@
 			</dict>
 		</array>
 	</dict>
-	<key>NoSyncReplaceProfileWarning</key>
-	<true/>
-	<key>NoSyncReplaceProfileWarning_selection</key>
-	<integer>0</integer>
-	<key>NoSyncSavePanelSavedSettings_SaveProfile</key>
-	<dict>
-		<key>Initial Directory</key>
-		<string>/Users/riley/.dot/.config/iterm2/profiles</string>
-	</dict>
-	<key>NoSyncSuppressDownloadConfirmation</key>
-	<true/>
-	<key>NoSyncSuppressDownloadConfirmation_selection</key>
-	<integer>0</integer>
 	<key>NoSyncTipOfTheDayEligibilityBeganTime</key>
-	<real>591471804.16693401</real>
-	<key>NoSyncTipsToNotShow</key>
-	<array>
-		<string>0003</string>
-		<string>0001</string>
-		<string>000</string>
-		<string>0004</string>
-		<string>0002</string>
-		<string>0000</string>
-		<string>0004</string>
-	</array>
+	<real>601257335.05481899</real>
 	<key>OnlyWhenMoreTabs</key>
 	<false/>
 	<key>OpenArrangementAtStartup</key>
@@ -7401,11 +7250,11 @@
 	<key>SUFeedAlternateAppNameKey</key>
 	<string>iTerm</string>
 	<key>SUFeedURL</key>
-	<string>https://iterm2.com/appcasts/testing_new.xml?shard=66</string>
+	<string>https://iterm2.com/appcasts/testing_new.xml?shard=16</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-01-18T21:14:41Z</date>
+	<date>2020-01-21T02:48:09Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
@@ -9565,7 +9414,7 @@
 	<key>findMode_iTerm</key>
 	<integer>0</integer>
 	<key>iTerm Version</key>
-	<string>3.3.8beta4</string>
+	<string>3.3.8beta5</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
