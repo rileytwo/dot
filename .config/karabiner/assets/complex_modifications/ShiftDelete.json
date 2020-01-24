@@ -2,7 +2,7 @@
     "title": "Change delete key (rev 2)",
     "rules": [
         {
-            "description": " Global: Change shift + delete to forward delete (rev 2)",
+            "description": "Global: Change shift + delete to forward delete (rev 2)",
             "manipulators": [
                 {
                     "type": "basic",

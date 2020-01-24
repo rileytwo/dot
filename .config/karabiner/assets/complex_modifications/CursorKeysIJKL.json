@@ -1,7 +1,7 @@
 {
     "title": "Diamond Cursor",
     "rules": [{
-        "description": "Global: Change fn + I/J/K/L to Arrow Keys",
+        "description": "Global: Change fn + I/J/K/L as Arrow Keys",
         "manipulators": [{
             "type": "basic",
             "from": {
@@ -73,7 +73,7 @@
                     ]
                 },
                 {
-                    "description": "Global: Change right_command+i/j/k/l to Arrows",
+                    "description": "Global: Change right_command+i/j/k/l as Arrow Keys",
                     "manipulators": [{
                         "type": "basic",
                         "from": {
