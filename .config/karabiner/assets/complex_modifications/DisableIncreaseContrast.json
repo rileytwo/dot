@@ -1,0 +1,27 @@
+{
+    "title": "Disable Increase Contrast Shortcut",
+    "rules": [
+        {
+            "description": "Disable: ⌘ + ⌃ + ⌥ + ⇧ + .",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "period",
+                        "modifiers": {
+                            "mandatory": [
+                                "command",
+                                "shift",
+                                "option",
+                                "control"
+                            ]
+                        }
+                    },
+                    "to": {
+                        "key_code": "h"
+                    }
+                }
+            ]
+        }
+    ]
+}

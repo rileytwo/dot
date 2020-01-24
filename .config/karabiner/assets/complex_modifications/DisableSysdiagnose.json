@@ -1,0 +1,27 @@
+{
+    "title": "Disable Sysdiagnose Shortcut",
+    "rules": [
+        {
+            "description": "Disable: ⌘ + ⌃ + ⌥ + ⇧ + ,",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "comma",
+                        "modifiers": {
+                            "mandatory": [
+                                "command",
+                                "shift",
+                                "option",
+                                "control"
+                            ]
+                        }
+                    },
+                    "to": {
+                        "key_code": "h"
+                    }
+                }
+            ]
+        }
+    ]
+}
