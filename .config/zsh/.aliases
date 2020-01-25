@@ -9,8 +9,10 @@ fi
 
 
 if (( $+commands[exa] )); then
-    alias e='exa -lah'
-    alias ee='exa -lh'
+    alias e='exa -lahF'
+    alias ee='exa -lhF'
+    alias et='exa -lahFT'
+    alias eg='exa -lahF --git'
 fi
 
 
