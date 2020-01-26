@@ -664,9 +664,15 @@
 	<key>NSFontPanelAttributes</key>
 	<string>1, 2</string>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/.dot/.config/iterm2/config</string>
+	<string>~/.dot/.config/iterm2/colors</string>
+	<key>NSNavLastUserSetHideExtensionButtonState</key>
+	<false/>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
 	<string>{799, 448}</string>
+	<key>NSNavPanelExpandedSizeForSaveMode</key>
+	<string>{841, 448}</string>
+	<key>NSNavPanelExpandedStateForSaveMode</key>
+	<true/>
 	<key>NSQuotedKeystrokeBinding</key>
 	<string></string>
 	<key>NSRepeatCountBinding</key>
@@ -677,8 +683,8 @@
 	<false/>
 	<key>NSSplitView Subview Frames NSColorPanelSplitView</key>
 	<array>
-		<string>0.000000, 0.000000, 279.000000, 279.500000, NO, NO</string>
-		<string>0.000000, 280.500000, 279.000000, 165.500000, NO, NO</string>
+		<string>0.000000, 0.000000, 279.000000, 361.500000, NO, NO</string>
+		<string>0.000000, 362.500000, 279.000000, 165.500000, NO, NO</string>
 	</array>
 	<key>NSTableView Columns v2 KeyBingingTable</key>
 	<data>
@@ -906,11 +912,11 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.95104044679999999</real>
+				<real>0.95104044675827026</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.83910858629999996</real>
+				<real>0.83910858631134033</real>
 				<key>Red Component</key>
 				<real>0.0</real>
 			</dict>
@@ -6430,14 +6436,14 @@
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1680, 1050}}</string>
 		<key>topLeft</key>
-		<string>{73, 868}</string>
+		<string>{61, 913}</string>
 	</dict>
 	<key>NoSyncInstallationId</key>
 	<string>F33A6FF2-B6BE-4CD9-8A49-42BC0194D190</string>
 	<key>NoSyncLastTipTime</key>
-	<real>601666628.09859705</real>
+	<real>601755605.70508599</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>26</integer>
+	<integer>38</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -7209,6 +7215,7 @@
 		<string>000</string>
 		<string>0000</string>
 		<string>0001</string>
+		<string>0002</string>
 	</array>
 	<key>OnlyWhenMoreTabs</key>
 	<false/>
@@ -7273,7 +7280,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-01-23T22:17:22Z</date>
+	<date>2020-01-26T20:35:49Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
