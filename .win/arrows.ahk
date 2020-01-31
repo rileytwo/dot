@@ -51,9 +51,6 @@ Return
     Send o
 Return
 
-^z::Send ^+t
-Return
-
 ^Left::Send !{Left}
 Return
 
