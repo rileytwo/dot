@@ -1,5 +1,5 @@
 {
-    "find" : "Shift+Cmd+F",
+    "find" : "Cmd+F",
     "fold" : "Cmd+\\|Alt+Cmd+L|Cmd+\\",
     "gotowordleft" : "Alt+Left",
     "gotowordright" : "Alt+Right",
