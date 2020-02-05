@@ -9,8 +9,8 @@
   "alwaysShowTabs": false,
   "showTabsInTitlebar": false,
   "requestedTheme": "system",
-  "initialCols": 90,
-  "initialRows": 40,
+  "initialCols": 120,
+  "initialRows": 50,
 
   "profiles": [
     {
@@ -22,8 +22,8 @@
       "colorScheme": "Riley",
       "cursorColor": "#FFFFFF",
       "cursorShape": "bar",
-      "fontFace"   : "Liga SFMono Nerd Font",
-      "fontSize"   : 10,
+      "fontFace"   : "FuraCode NF",
+      "fontSize"   : 9,
       "closeOnExit": false
     },
     {
@@ -43,8 +43,8 @@
       "colorScheme": "Riley",
       "cursorColor": "#FFFFFF",
       "cursorShape": "bar",
-      "fontFace"   : "Liga SFMono Nerd Font",
-      "fontSize"   : 10,
+      "fontFace"   : "FuraCode NF",
+      "fontSize"   : 9,
       "closeOnExit": false
     },
     {
@@ -56,8 +56,8 @@
       "commandline": "wsl.exe -d Ubuntu",
       "cursorColor": "#FFFFFF",
       "cursorShape": "bar",
-      "fontFace": "Liga SFMono Nerd Font",
-      "fontSize": 10,
+      "fontFace": "FuraCode NF",
+      "fontSize": 9,
       "closeOnExit": false
     },
     {
