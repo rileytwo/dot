@@ -1,4 +1,4 @@
-# // some options
+### some options
 Set-PSReadLineOption -Colors @{
     "Command"   = "`e[34m"
     "Parameter" = "`e[35m"
@@ -14,7 +14,7 @@ $PSDefaultParameterValues = @{
 
 
 
-# // module imports
+### modules
 # (TODO: maybe use a hashtable with modules and args?
 function Get-Modules {
     $modules = @(
@@ -36,11 +36,16 @@ function Get-Modules {
 
 Get-Modules
 
+
+
+### executables/cli tools
 if (Get-Command "rg") {
     if ($env:FZF_DEFAULT_COMMAND) {
         $env:FZF_DEFAULT_COMMAND = "rg --files --no-ignore-vcs --hidden"
     }
 }
+
+
 
 # // set theme
 function Set-MyTheme {
