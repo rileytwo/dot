@@ -54,7 +54,7 @@ plugins=(
   zsh-autosuggestions
   zsh-syntax-highlighting
 )
-fpath=(${ZSH}/custom/plugins/zsh-completions/src ${fpath})
+fpath=(/usr/local/share/zsh-completions ${fpath})
 source "${ZSH}/oh-my-zsh.sh"
 
 
@@ -124,6 +124,8 @@ zstyle ':completion:*' cache-path "${HOME}/.zsh/cache"
 zstyle ':completion:*' insert-tab pending
 zstyle ':completion:*' menu select=2
 zstyle ':completion:*' special-dirs false
+zstyle ':completion:*' group-name ''
+zstyle ':completion:*' verbose true
 zstyle ':completion:*:descriptions' format \
   "$fg[yellow]%B--- %d%b"
 
@@ -137,9 +139,6 @@ zstyle ':completion:*:corrections' format \
 zstyle ':completion:*' list-colors \
   "${(s.:.)LS_COLORS}"
   # NOTE `(s.:.)` forces field splitting at the separator *string*
-
-  zstyle ':completion:*' group-name ''
-  zstyle ':completion:*' verbose true
 
 
 
