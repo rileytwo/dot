@@ -15,11 +15,9 @@ function Write-Theme {
     }
 
     # Writes the drive portion
-    $drive = "~"
-    if ($pwd.Path -ne $HOME) {
-        $drive = "$(Split-Path -path $pwd -Leaf)"
-    }
-    $prompt += Write-Prompt -Object $drive -ForegroundColor $sl.Colors.DriveForegroundColor
+    $dir = Get-FullPath -dir $PWD
+    
+    $prompt += Write-Prompt -Object $dir -ForegroundColor $sl.Colors.DriveForegroundColor
 
     $status = Get-VCSStatus
     if ($status) {
