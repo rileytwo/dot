@@ -64,16 +64,6 @@ Set-MyTheme
 
 
 # // aliases
-function Get-Path {
-    if ($IsWindows) {
-        $env:PATH.Split(';')
-    }
-    else {
-        $env:PATH.Split(':')
-    }
-}
-Set-Alias -Name 'path' -Value Get-Path
-
 function Get-Commands {
     if ($IsWindows) {
         cmd /C "where $args"
@@ -85,10 +75,31 @@ function Get-Commands {
 Remove-Item alias:where -Force
 Set-Alias -Name 'where' -Value Get-Commands
 
+
+function Get-Path {
+    if ($IsWindows) {
+        $env:PATH.Split(';')
+    }
+    else {
+        $env:PATH.Split(':')
+    }
+}
+Set-Alias -Name 'path' -Value Get-Path
+
+
 function Get-GitRepositoryStatus {
     git status $args
 }
 Set-Alias -Name 'gs' Get-GitRepositoryStatus
+
+
+function Invoke-Sudo {
+    if ($IsWindows) {
+        if (Get-Command "gsudo") {
+            Set-Alias -Name sudo -Value "gsudo"
+        }
+    }
+}
 
 Set-Alias -Name 'which' -Value Get-Command
 
