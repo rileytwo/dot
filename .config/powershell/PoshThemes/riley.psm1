@@ -15,7 +15,7 @@ function Write-Theme {
     }
 
     # Writes the drive portion
-    $dir = Get-FullPath -dir $PWD
+    $dir = "$(Get-FullPath -dir $PWD)".Replace("\", "/")
     
     $prompt += Write-Prompt -Object $dir -ForegroundColor $sl.Colors.DriveForegroundColor
 
