@@ -5,7 +5,7 @@
 {
   "$schema": "https://aka.ms/terminal-profiles-schema",
 
-  "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
+  "defaultProfile": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
   "alwaysShowTabs": false,
   "showTabsInTitlebar": false,
   "requestedTheme": "system",
@@ -16,8 +16,8 @@
     {
       // Make changes here to the powershell.exe profile
       "guid"       : "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
-      "name"       : "Windows PowerShell",
-      "commandline": "powershell.exe",
+      "name"       : "PowerShell Core",
+      "commandline": "C:\\Users\\RRoach\\scoop\\shims\\pwsh.exe",
       "hidden"     : false,
       "colorScheme": "Riley",
       "cursorColor": "#FFFFFF",
