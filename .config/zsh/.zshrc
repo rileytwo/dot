@@ -59,40 +59,6 @@ source "${ZSH}/oh-my-zsh.sh"
 
 
 
-#### // environment
-
-export CLICOLOR=1
-export LS_COLORS='di=1;4;34:fi=1;32:ln=1;35:pi=0:bd=0:cd=0:mi=1;4;31:ex=1;31'
-export TERM=xterm-256color
-export HOMEBREW_NO_AUTO_UPDATE=1
-export HOMEBREW_NO_INSTALL_CLEANUP=1
-setopt EXTENDED_GLOB
-setopt GLOB_DOTS
-setopt HIST_IGNORE_DUPS
-setopt HIST_IGNORE_SPACE
-setopt HIST_EXPIRE_DUPS_FIRST
-disable r
-
-if (( $+commands[most] )); then
-  export PAGER=most
-fi
-
-if (( $+commands[nvim] )); then
-  export EDITOR=nvim
-else
-  export EDITOR=vim
-fi
-
-if [[ ${LC_TERMINAL} =~ "i[tT]erm2" ]]; then
-  export MPLBACKEND="module://itermplot"
-  export ITERMPLOT=rv
-fi
-
-[[ -e "${HOME}/.iterm2_shell_integration.zsh" ]] \
-  && source "${HOME}/.iterm2_shell_integration.zsh" || :
-
-
-
 #### // completions
 
 autoload -Uz compinit
@@ -297,4 +263,39 @@ export FZF_DEFAULT_OPTS='
 [[ -f /usr/local/bin/typex ]] && source /usr/local/bin/typex
 
 [[ -f "${HOME}/.aliases" ]] && source "${HOME}/.aliases"
+
+
+
+#### // environment
+
+export CLICOLOR=1
+export LS_COLORS='di=1;4;34:fi=1;32:ln=1;35:pi=0:bd=0:cd=0:mi=1;4;31:ex=1;31'
+export TERM=xterm-256color
+export HOMEBREW_NO_AUTO_UPDATE=1
+export HOMEBREW_NO_INSTALL_CLEANUP=1
+setopt EXTENDED_GLOB
+setopt GLOB_DOTS
+setopt HIST_IGNORE_DUPS
+setopt HIST_IGNORE_SPACE
+setopt HIST_EXPIRE_DUPS_FIRST
+disable r
+
+if (( $+commands[most] )); then
+  export PAGER=most
+fi
+
+if (( $+commands[nvim] )); then
+  export EDITOR=nvim
+else
+  export EDITOR=vim
+fi
+
+if [[ ${LC_TERMINAL} =~ "i[tT]erm2" ]]; then
+  export MPLBACKEND="module://itermplot"
+  export ITERMPLOT=rv
+fi
+
+[[ -e "${HOME}/.iterm2_shell_integration.zsh" ]] \
+  && source "${HOME}/.iterm2_shell_integration.zsh" || :
+
 
