@@ -46,10 +46,10 @@ if hs.console.darkMode(true) then
 		red = 0.247, green = 0.698, blue = 1.0
 	}
 	hs.console.consoleResultColor{
-      red = 0.9767, green = 0.945, blue = 0.64
+      red = 0.977, green = 0.945, blue = 0.640
    }
 	hs.console.consolePrintColor{
-		red = 0.514, green = 0.988, blue = 0.741
+		red = 1.0, green = 1.0, blue = 1.0
 	}
 end
 
