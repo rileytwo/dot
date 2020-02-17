@@ -21,8 +21,11 @@ LineNum       = BlockComment
 Keywords = {
     { Colour="#3fb2ff" },
     { Colour="#3fb2ff" },
-    { Colour="#9691ff" },
     { Colour="#ff8f86" },
+    { Colour="#ff8f86" },
+    { Colour="#9691ff" },
+    { Colour="#9691ff" },
+    { Colour="#3fb2ff" },
     { Colour="#ff8f86" },
     { Colour="#9691ff" }
 }
