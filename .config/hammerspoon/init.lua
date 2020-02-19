@@ -109,17 +109,19 @@ function fill_right()
 	local win_frame    = win:frame()
 	local screen_frame = win:screen():frame()
 
-	if screen_frame.x < 0 then
-		win_frame.x = (screen_frame.w + gap) / -2
-	else
-		win_frame.x = (screen_frame.w + gap) / 2
-	end
+	-- if screen_frame.x < 0 then
+		-- win_frame.x = (screen_frame.w + gap) / -2
+	-- else
+		-- win_frame.x = (screen_frame.w + gap) / 2
+   -- end
+   win_frame.x = (screen_frame.w + gap) / 2
 	win_frame.y = screen_frame.y + gap
 	win_frame.w = (screen_frame.w / 2) - (gap * 1.5)
 	win_frame.h = screen_frame.h - (gap * 2)
 
 	return win_frame
 end
+
 
 function fill_center()
    local win          = hs.window.focusedWindow()
@@ -133,57 +135,23 @@ function fill_center()
 end
 
 
-function is_almost_equal_to_win_frame(geo)
-	local epsilon   = 5
-	local win       = hs.window.focusedWindow()
-	local win_frame = win:frame()
-
-	if math.abs(win_frame.x - geo.x) < epsilon and
-      math.abs(win_frame.y - geo.y) < epsilon and
-      math.abs(win_frame.w - geo.w) < epsilon and
-      math.abs(win_frame.h - geo.h) < epsilon then
-      return true
-
-	else
-		return false
-	end
-end
-
-
-function is_predefined_win_frame_size()
-	if is_almost_equal_to_win_frame(fill_full())   or
-      is_almost_equal_to_win_frame(fill_left())   or
-      is_almost_equal_to_win_frame(fill_center()) or
-		is_almost_equal_to_win_frame(fill_right())  then
-		return true
-
-	else
-		return false
-	end
-end
-
-
 function bind_resize_restore(key, resize_frame_fn)
-	hs.hotkey.bind(mod_keys, key,
-		function()
-			local win          = hs.window.focusedWindow()
-			local win_frame    = win:frame()
-			local target_frame = resize_frame_fn()
+   hs.hotkey.bind(mod_keys, key,
+      function()
+         local win          = hs.window.focusedWindow()
+         local win_frame    = win:frame()
+         local target_frame = resize_frame_fn()
 
-			if is_predefined_win_frame_size() and not
-				is_almost_equal_to_win_frame(target_frame) then
-				win:setFrame(target_frame)
+         if prev_frame_sizes[win:id()] then
+            win:setFrame(prev_frame_sizes[win:id()])
+            prev_frame_sizes[win:id()] = nil
 
-			elseif prev_frame_sizes[win:id()] then
-				win:setFrame(prev_frame_sizes[win:id()])
-				prev_frame_sizes[win:id()] = nil
-
-			else
-				prev_frame_sizes[win:id()] = win_frame
-				win:setFrame(target_frame)
-			end
-		end
-	)
+         else
+            prev_frame_sizes[win:id()] = win_frame
+            win:setFrame(target_frame)
+         end
+      end
+   )
 end
 
 
@@ -328,7 +296,7 @@ function toggle_win_lr()
    local win_frame    = win:frame()
    local screen_frame = win:screen():frame()
 
-   win_frame.x = screen_frame.w - (win_frame.x + win_frame.w)
+   win_frame.x = screen_frame.x + screen_frame.w - (win_frame.x + win_frame.w)
    win:setFrame(win_frame)
 
    return win_frame
@@ -388,9 +356,10 @@ end
 function bind_screen_manager(key, screen_move_function)
    hs.hotkey.bind(mod_keys, key,
       function()
-         local win = hs.window.focusedWindow()
+         local win        = hs.window.focusedWindow()
          local new_screen = screen_move_function()
 
+         prev_frame_sizes[win:id()] = nil
          return new_screen
       end
    )
