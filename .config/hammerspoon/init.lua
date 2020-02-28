@@ -43,20 +43,20 @@ hs.console.darkMode(true)
 if hs.console.darkMode(true) then
    hs.console.outputBackgroundColor{alpha = 0.5}
 	hs.console.consoleCommandColor{
-		red = 0.247, green = 0.698, blue = 1.0
+		red = 0.25, green = 0.70, blue = 1.00
 	}
 	hs.console.consoleResultColor{
-      red = 0.977, green = 0.945, blue = 0.640
+      red = 0.98, green = 0.95, blue = 0.64
    }
 	hs.console.consolePrintColor{
-		red = 1.0, green = 1.0, blue = 1.0
+		red = 1.00, green = 1.00, blue = 1.00
 	}
 end
 
 
 
 --[[ 1 -------------------------------------------------------------]]
-hs.window.animationDuration = 0.20
+hs.window.animationDuration = 0.15
 mod_keys                    = {"cmd", "ctrl", "alt", "shift"}
 prev_frame_sizes        = {}
 
@@ -109,12 +109,7 @@ function fill_right()
 	local win_frame    = win:frame()
 	local screen_frame = win:screen():frame()
 
-	-- if screen_frame.x < 0 then
-		-- win_frame.x = (screen_frame.w + gap) / -2
-	-- else
-		-- win_frame.x = (screen_frame.w + gap) / 2
-   -- end
-   win_frame.x = (screen_frame.w + gap) / 2
+   win_frame.x = screen_frame.x + (screen_frame.w + gap) / 2
 	win_frame.y = screen_frame.y + gap
 	win_frame.w = (screen_frame.w / 2) - (gap * 1.5)
 	win_frame.h = screen_frame.h - (gap * 2)
@@ -281,8 +276,8 @@ end
 
 function shift_right()
 	--	move window right
-	local win          = hs.window.focusedWindow()
-	local win_frame    = win:frame()
+	local win       = hs.window.focusedWindow()
+	local win_frame = win:frame()
 
 	win_frame.x = win_frame.x + 50
 	win:setFrame(win_frame)
@@ -306,8 +301,8 @@ end
 function bind_win_manager(key, resize_frame_fn)
 	hs.hotkey.bind(mod_keys, key,
 		function()
-			local win          = hs.window.focusedWindow()
-			local new_frame    = resize_frame_fn()
+			local win       = hs.window.focusedWindow()
+			local new_frame = resize_frame_fn()
 
 			win:setFrame(new_frame)
 		end
