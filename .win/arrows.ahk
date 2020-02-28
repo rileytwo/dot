@@ -58,11 +58,6 @@ Return
 #If
 
 
-;;; 1Password
-#If WinActive("ahk_exe 1Password.exe")
-^,::Send {F9}
-#If
-
 ;;; EVERNOTE
 #If WinActive("ahk_class ENMainFrame")
 ^l::^q
