@@ -53,12 +53,12 @@ if hs.console.darkMode(true) then
 	}
 end
 
-
+local gap = 5
 
 --[[ 1 -------------------------------------------------------------]]
 hs.window.animationDuration = 0.15
+prev_frame_sizes            = {}
 mod_keys                    = {"cmd", "ctrl", "alt", "shift"}
-prev_frame_sizes        = {}
 
 hs.hotkey.bind(mod_keys, "Y", function()
 	hs.toggleConsole()
@@ -74,7 +74,7 @@ end)
 
 
 function fill_full()
-	local gap          = 5
+	local gap          = gap
 	local win          = hs.window.focusedWindow()
 	local win_frame    = win:frame()
 	local screen_frame = win:screen():frame()
@@ -89,30 +89,30 @@ end
 
 
 function fill_left()
-	local gap          = 5
+	local gap          = gap
 	local win          = hs.window.focusedWindow()
 	local win_frame    = win:frame()
 	local screen_frame = win:screen():frame()
 
 	win_frame.x = screen_frame.x + gap
 	win_frame.y = screen_frame.y + gap
-	win_frame.w = (screen_frame.w / 2) - (gap * 1.5)
-	win_frame.h = screen_frame.h - (gap * 2)
+	win_frame.w = (0.5 * screen_frame.w) - (1.5 * gap)
+	win_frame.h = screen_frame.h - (2 * gap)
 
 	return win_frame
 end
 
 
 function fill_right()
-	local gap          = 5
+	local gap          = gap
 	local win          = hs.window.focusedWindow()
 	local win_frame    = win:frame()
 	local screen_frame = win:screen():frame()
 
-   win_frame.x = screen_frame.x + (screen_frame.w + gap) / 2
+   win_frame.x = 0.5 * (screen_frame.x + (screen_frame.w + gap))
 	win_frame.y = screen_frame.y + gap
-	win_frame.w = (screen_frame.w / 2) - (gap * 1.5)
-	win_frame.h = screen_frame.h - (gap * 2)
+	win_frame.w = 0.5 * (screen_frame.w - (1.5 * gap))
+	win_frame.h = screen_frame.h - (2 * gap)
 
 	return win_frame
 end
@@ -123,8 +123,8 @@ function fill_center()
    local win_frame    = win:frame()
    local screen_frame = win:screen():frame()
 
-   win_frame.x = (screen_frame.w - win_frame.w) / 2
-   win_frame.y = (screen_frame.h - win_frame.h) / 2
+   win_frame.x = 0.5 * (screen_frame.w - win_frame.w)
+   win_frame.y = 0.5 * (screen_frame.h - win_frame.h)
 
    return win_frame
 end
@@ -159,11 +159,12 @@ bind_resize_restore("0", fill_center)
 
 --[[ 2 -------------------------------------------------------------]]
 function is_right_win_frame()
-	local win          = hs.window.focusedWindow()
-	local win_frame    = win:frame()
-	local screen_frame = win:screen():frame()
+   local gap          = gap
+   local win          = hs.window.focusedWindow()
+   local win_frame    = win:frame()
+   local screen_frame = win:screen():frame()
 
-	if (screen_frame.w - (win_frame.x + win_frame.w)) <= 50 then
+	if (screen_frame.w - (win_frame.x + win_frame.w)) <= (gap * 10) then
 		return true
 
 	else
@@ -291,7 +292,7 @@ function toggle_win_lr()
    local win_frame    = win:frame()
    local screen_frame = win:screen():frame()
 
-   win_frame.x = screen_frame.x + screen_frame.w - (win_frame.x + win_frame.w)
+   win_frame.x = (2 * screen_frame.x) + (screen_frame.w - (win_frame.x + win_frame.w))
    win:setFrame(win_frame)
 
    return win_frame
