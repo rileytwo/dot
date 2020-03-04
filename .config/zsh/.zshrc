@@ -35,25 +35,39 @@ else
 fi
 
 
+
 #### // oh my zsh
 
 DISABLE_AUTO_UPDATE=true
-HISTSIZE=10000
-SAVEHIST=10000
-HISTFILE="${HOME}/.zsh_history"
-ZSH_THEME='kiss'
+
 export ZSH="${HOME}/.oh-my-zsh"
-plugins=(
-  #swiftpm
-  #zsh-interactive-cd
-  git
-  forgit
-  zsh-autopair
-  zsh-completions
-  zsh-history-substring-search
-  zsh-autosuggestions
-  zsh-syntax-highlighting
-)
+ZSH_THEME='kiss'
+
+HISTFILE="${HOME}/.zsh_history"
+if [[ "$OSTYPE" =~ "linux-musl" ]]; then
+  HISTSIZE=500
+  SAVEHIST=500
+  plugins=(
+    zsh-autopair
+    zsh-autosuggestions
+    zsh-syntax-highlighting
+  )
+else
+  HISTSIZE=10000
+  SAVEHIST=10000
+  plugins=(
+    #swiftpm
+    #zsh-interactive-cd
+    git
+    forgit
+    zsh-autopair
+    zsh-completions
+    zsh-history-substring-search
+    zsh-autosuggestions
+    zsh-syntax-highlighting
+  )
+fi
+
 fpath=(/usr/local/share/zsh-completions ${fpath})
 source "${ZSH}/oh-my-zsh.sh"
 
