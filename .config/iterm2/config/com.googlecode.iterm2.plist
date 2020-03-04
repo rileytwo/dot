@@ -410,8 +410,12 @@
 	<real>599502607.08663404</real>
 	<key>DeleteProfile_selection</key>
 	<integer>0</integer>
-	<key>DimInactiveSplitPanes</key>
+	<key>DimBackgroundWindows</key>
 	<false/>
+	<key>DimInactiveSplitPanes</key>
+	<true/>
+	<key>DimOnlyText</key>
+	<true/>
 	<key>DisableFullscreenTransparency</key>
 	<true/>
 	<key>DisableWindowSizeSnap</key>
@@ -660,7 +664,11 @@
 	<key>MinimalTabStyleOutlineStrength</key>
 	<real>0.0</real>
 	<key>NSColorPanelMode</key>
-	<string>13370000</string>
+	<string>1</string>
+	<key>NSColorPickerPreferredRGBEntryMode</key>
+	<integer>2</integer>
+	<key>NSColorPickerSlidersDefaults</key>
+	<string>1</string>
 	<key>NSFontPanelAttributes</key>
 	<string>1, 2</string>
 	<key>NSNavLastRootDirectory</key>
@@ -719,9 +727,9 @@
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
 	<string>440 450 799 448 0 0 1680 1027 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>530 492 620 392 0 0 1680 1027 </string>
+	<string>167 351 700 586 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>942 331 732 591 0 0 1680 1027 </string>
+	<string>942 344 732 583 0 0 1680 1027 </string>
 	<key>NeverWarnAboutShortLivedSessions_120FAA18-3181-488D-9B29-68949F1F0CE6</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_120FAA18-3181-488D-9B29-68949F1F0CE6_selection</key>
@@ -838,7 +846,7 @@
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.89614838361740112</real>
+				<real>0.89803921568627454</real>
 				<key>Red Component</key>
 				<real>0.0</real>
 			</dict>
@@ -6415,8 +6423,20 @@
 	</array>
 	<key>NoSyncAllAppVersions</key>
 	<array>
+		<string>3.3.10beta2</string>
+		<string>3.3.10beta1</string>
+		<string>3.3.9beta1</string>
 		<string>3.3.7</string>
 		<string>3.3.8beta5</string>
+	</array>
+	<key>NoSyncBFPFavorites</key>
+	<array>
+		<string>SF Mono Plus</string>
+		<string>SF Mono</string>
+	</array>
+	<key>NoSyncBFPRecents</key>
+	<array>
+		<string>SF Mono Plus</string>
 	</array>
 	<key>NoSyncCommandHistoryHasEverBeenUsed</key>
 	<true/>
@@ -6436,7 +6456,7 @@
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1680, 1050}}</string>
 		<key>topLeft</key>
-		<string>{61, 913}</string>
+		<string>{0, 955}</string>
 	</dict>
 	<key>NoSyncHaveUsedCopyMode</key>
 	<true/>
@@ -6445,7 +6465,7 @@
 	<key>NoSyncLastTipTime</key>
 	<real>602207054.28538501</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>74</integer>
+	<integer>148</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -7288,7 +7308,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-02-07T22:32:16Z</date>
+	<date>2020-03-04T22:15:59Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
@@ -7300,7 +7320,7 @@
 	<key>SoundForEsc</key>
 	<false/>
 	<key>SplitPaneDimmingAmount</key>
-	<real>0.10000000000000001</real>
+	<real>0.14735981826241135</real>
 	<key>StatusBarPosition</key>
 	<integer>1</integer>
 	<key>StretchTabsToFillBar</key>
@@ -7313,6 +7333,8 @@
 	<integer>9</integer>
 	<key>TabStyleWithAutomaticOption</key>
 	<integer>5</integer>
+	<key>TabViewType</key>
+	<integer>0</integer>
 	<key>TabsHaveCloseButton</key>
 	<true/>
 	<key>TerminalMargin</key>
@@ -7328,7 +7350,7 @@
 	<key>UpdateScreenParamsDelay</key>
 	<real>1</real>
 	<key>UseBorder</key>
-	<false/>
+	<true/>
 	<key>ViewManPageCommand</key>
 	<string>man -P /usr/local/bin/most %@ || sleep 1</string>
 	<key>VisualIndicatorForEsc</key>
@@ -9448,7 +9470,7 @@
 	<key>findMode_iTerm</key>
 	<integer>0</integer>
 	<key>iTerm Version</key>
-	<string>3.3.8beta5</string>
+	<string>3.3.10beta2</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
