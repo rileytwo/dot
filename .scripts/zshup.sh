@@ -7,14 +7,14 @@ END="$(echo -e "\e[0m")"
 
 if [[ -z "$ZSH_CUSTOM" ]]; then
     ZSH_CUSTOM="$ZSH/custom"
-    ZCPLUGINS="$ZSH_CUSTOM/plugins"
+    ZSH_CUSTOM_PLUGINS="$ZSH_CUSTOM/plugins"
 fi
 
 
-for d in "${ZCPLUGINS}"/*; do
+for d in "${ZSH_CUSTOM_PLUGINS}"/*; do
     if [[ -d "$d" ]]; then
         case "$d" in 
-            "${ZCPLUGINS}/example")
+            "${ZSH_CUSTOM_PLUGINS}/example")
                 continue
                 ;;
             *)
