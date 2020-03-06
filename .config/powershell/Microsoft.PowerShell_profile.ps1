@@ -14,6 +14,47 @@ $PSDefaultParameterValues = @{
 
 
 
+### OS special things
+if ($IsWindows) {
+    $ChocolateyProfile = "$env:ChocolateyInstall\helpers\chocolateyProfile.psm1"
+    if (Test-Path($ChocolateyProfile)) {
+        Import-Module "$ChocolateyProfile"
+    }
+
+    $env:PSModulePath += ";${HOME}\scoop\modules"
+    $env:Path += ";C:\ProgramData\jetpack\bin"
+    $env:Path += ";${HOME}\.cargo\bin"
+}
+
+
+## inherit /etc/paths on macOS
+if ($IsMacOS) {
+    $env:PATH = (/usr/libexec/path_helper).Split('"')[1]
+}
+
+
+## macOS/linux paths
+function Add-Paths {
+    $paths = @(
+        "$HOME/bin",
+        "$HOME/.local/bin",
+        "$HOME/.pyenv/bin",
+        "$HOME/.pyenv/shims",
+        "$HOME/.rbenv/bin"
+        "$HOME/.rbenv/shims"
+    )
+
+    foreach ($path in $paths) {
+        if (Test-Path $path) {
+            $env:PATH = ($env:PATH).Insert(0, "${path}:")
+        }
+    }
+}
+
+Add-Paths
+
+
+
 ### modules
 # (TODO: maybe use a hashtable with modules and args?
 function Get-Modules {
@@ -63,7 +104,7 @@ Set-MyTheme
 
 
 
-# // aliases
+### aliases
 function Get-Commands {
     if ($IsWindows) {
         cmd /C "where $args"
@@ -72,9 +113,6 @@ function Get-Commands {
         /usr/bin/which -a $args
     }
 }
-Remove-Item alias:where -Force
-Set-Alias -Name 'where' -Value Get-Commands
-
 
 function Get-Path {
     if ($IsWindows) {
@@ -84,14 +122,10 @@ function Get-Path {
         $env:PATH.Split(':')
     }
 }
-Set-Alias -Name 'path' -Value Get-Path
-
 
 function Get-GitRepositoryStatus {
     git status $args
 }
-Set-Alias -Name 'gs' Get-GitRepositoryStatus
-
 
 function Invoke-Sudo {
     if ($IsWindows) {
@@ -101,22 +135,14 @@ function Invoke-Sudo {
     }
 }
 
-Set-Alias -Name 'which' -Value Get-Command
+Remove-Item alias:where -Force
+Set-Alias -Name 'where' -Value Get-Commands
 
+Set-Alias -Name 'path' -Value Get-Path
+
+Set-Alias -Name 'gs' Get-GitRepositoryStatus
+
+Set-Alias -Name 'which' -Value Get-Command
 Set-Alias -Name 'l' -Value Get-ChildItemColor
 Set-Alias -Name 'r' -Value 'Rscript'
 Set-Alias -Name 'rr' -Value 'radian'
-
-
-
-# // OS special things
-if ($IsWindows) {
-    $ChocolateyProfile = "$env:ChocolateyInstall\helpers\chocolateyProfile.psm1"
-    if (Test-Path($ChocolateyProfile)) {
-        Import-Module "$ChocolateyProfile"
-    }
-
-    $env:PSModulePath += ";${HOME}\scoop\modules"
-    $env:Path += ";C:\ProgramData\jetpack\bin"
-    $env:Path += ";${HOME}\.cargo\bin"
-}
