@@ -1,70 +1,41 @@
 --------------------------------------------------------------------[[
 --[[
+
+init.lua
+
 Hammerspoon config.
 Original code inspired (and copied) from https://blog.igorw.org/.
 
 
-Modification Keys: Cmd + Ctrl + Alt + Shift (⌘ + ⌃ + ⌥ + ⇧)
-Karabiner-elements is used to bind Caps Lock to Modification Keys
+Modifier Keys: Cmd + Ctrl + Alt + Shift (⌘ + ⌃ + ⌥ + ⇧)
+Karabiner-elements is used to bind Caps Lock to Modifier Keys
 Caps Lock (⇪) -> Cmd + Ctrl + Alt + Shift (⌘ + ⌃ + ⌥ + ⇧)
-
-
-1: Window Layout Management
-   -  ⌘ + ⌃ + ⌥ + ⇧ + [,    Toggle current window to left/restore;
-   -  ⌘ + ⌃ + ⌥ + ⇧ + ],    Toggle current window to right/restore;
-   -  ⌘ + ⌃ + ⌥ + ⇧ + F,    Toggle current window to screen/restore;
-
-2: Window Resizing
-   -  ⌘ + ⌃ + ⌥ + ⇧ + H,     Increase window width;
-   -  ⌘ + ⌃ + ⌥ + ⇧ + J,     Increase window height;
-   -  ⌘ + ⌃ + ⌥ + ⇧ + L,     Decrease window width;
-   -  ⌘ + ⌃ + ⌥ + ⇧ + K,     Decrease window height;
-
-3: Window Shifting
-   -  ⌘ + ⌃ + ⌥ + ⇧ + 8,     Move window up;
-   -  ⌘ + ⌃ + ⌥ + ⇧ + I,     Move window down;
-   -  ⌘ + ⌃ + ⌥ + ⇧ + U,     Move window left;
-   -  ⌘ + ⌃ + ⌥ + ⇧ + O,     Move window right;
-
-
-4: Screen Management
-   -  ⌘ + ⌃ + ⌥ + ⇧ + Left,  Move window to previous screen;
-   -  ⌘ + ⌃ + ⌥ + ⇧ + Right, Move window to next screen;
 
 --]]
 --------------------------------------------------------------------]]
 
+modifier_keys = {"cmd", "ctrl", "alt", "shift"}
+window_gap    = 5
 
---[[ 0 -------------------------------------------------------------]]
-hs.preferencesDarkMode(true)
-hs.console.consoleFont("SF Mono")
-hs.console.darkMode(true)
 
-if hs.console.darkMode(true) then
-   hs.console.outputBackgroundColor{alpha = 0.5}
-	hs.console.consoleCommandColor{
-		red = 0.25, green = 0.70, blue = 1.00
-	}
-	hs.console.consoleResultColor{
-      red = 0.98, green = 0.95, blue = 0.64
-   }
-	hs.console.consolePrintColor{
-		red = 1.00, green = 1.00, blue = 1.00
-	}
+local config = require("config")
+local wm     = require("wm")
+
+
+if modifier_keys then
+   wm.mod_keys = modifier_keys
 end
 
-local gap = 5
+if window_gap then
+   wm.gap = window_gap
+end
 
---[[ 1 -------------------------------------------------------------]]
-hs.window.animationDuration = 0.15
-prev_frame_sizes            = {}
-mod_keys                    = {"cmd", "ctrl", "alt", "shift"}
 
-hs.hotkey.bind(mod_keys, "Y", function()
-	hs.toggleConsole()
+hs.hotkey.bind(modifier_keys, "Y", function()
+   hs.toggleConsole()
 end)
 
-hs.hotkey.bind(mod_keys, "R", function()
+hs.hotkey.bind(modifier_keys, "R", function()
 	hs.notify.new({
 		title           = "Hammerspoon",
 		informativeText = "Config reloaded!"
@@ -73,293 +44,18 @@ hs.hotkey.bind(mod_keys, "R", function()
 end)
 
 
-function fill_full()
-	local gap          = gap
-	local win          = hs.window.focusedWindow()
-	local win_frame    = win:frame()
-	local screen_frame = win:screen():frame()
-
-	win_frame.x = screen_frame.x + gap
-	win_frame.y = screen_frame.y + gap
-	win_frame.w = screen_frame.w - (gap * 2)
-	win_frame.h = screen_frame.h - (gap * 2)
-
-	return win_frame
-end
-
-
-function fill_left()
-	local gap          = gap
-	local win          = hs.window.focusedWindow()
-	local win_frame    = win:frame()
-	local screen_frame = win:screen():frame()
-
-	win_frame.x = screen_frame.x + gap
-	win_frame.y = screen_frame.y + gap
-	win_frame.w = (0.5 * screen_frame.w) - (1.5 * gap)
-	win_frame.h = screen_frame.h - (2 * gap)
-
-	return win_frame
-end
-
-
-function fill_right()
-	local gap          = gap
-	local win          = hs.window.focusedWindow()
-	local win_frame    = win:frame()
-	local screen_frame = win:screen():frame()
-
-   win_frame.x = 0.5 * (screen_frame.x + (screen_frame.w + gap))
-	win_frame.y = screen_frame.y + gap
-	win_frame.w = 0.5 * (screen_frame.w - (1.5 * gap))
-	win_frame.h = screen_frame.h - (2 * gap)
-
-	return win_frame
-end
-
-
-function fill_center()
-   local win          = hs.window.focusedWindow()
-   local win_frame    = win:frame()
-   local screen_frame = win:screen():frame()
-
-   win_frame.x = 0.5 * (screen_frame.w - win_frame.w)
-   win_frame.y = 0.5 * (screen_frame.h - win_frame.h)
-
-   return win_frame
-end
-
-
-function bind_resize_restore(key, resize_frame_fn)
-   hs.hotkey.bind(mod_keys, key,
-      function()
-         local win          = hs.window.focusedWindow()
-         local win_frame    = win:frame()
-         local target_frame = resize_frame_fn()
-
-         if prev_frame_sizes[win:id()] then
-            win:setFrame(prev_frame_sizes[win:id()])
-            prev_frame_sizes[win:id()] = nil
-
-         else
-            prev_frame_sizes[win:id()] = win_frame
-            win:setFrame(target_frame)
-         end
-      end
-   )
-end
-
-
-bind_resize_restore("F", fill_full)
-bind_resize_restore("[", fill_left)
-bind_resize_restore("]", fill_right)
-bind_resize_restore("0", fill_center)
-
-
-
---[[ 2 -------------------------------------------------------------]]
-function is_right_win_frame()
-   local gap          = gap
-   local win          = hs.window.focusedWindow()
-   local win_frame    = win:frame()
-   local screen_frame = win:screen():frame()
-
-	if (screen_frame.w - (win_frame.x + win_frame.w)) <= (gap * 10) then
-		return true
-
-	else
-		return false
-	end
-end
-
-
-function increase_win_width()
-	local win          = hs.window.focusedWindow()
-	local win_frame    = win:frame()
-	local screen_frame = win:screen():frame()
-
-	if is_right_win_frame() and win_frame.x >= 0 then
-		win_frame.x = win_frame.x - 50
-		win_frame.w = win_frame.w + 50
-		win:setFrame(win_frame)
-
-	elseif win_frame.w > screen_frame.w then
-		win_frame.x = 0
-		win_frame.w = screen_frame.w
-		win:setFrame(win_frame)
-
-	else
-		win_frame.w = win_frame.w + 50
-		win:setFrame(win_frame)
-   end
-
-   return win_frame
-end
-
-
-function decrease_win_width()
-	local win       = hs.window.focusedWindow()
-	local win_frame = win:frame()
-
-	if is_right_win_frame() then
-		win_frame.w = win_frame.w - 50
-		win_frame.x = win_frame.x + 50
-		win:setFrame(win_frame)
-
-	else
-		win_frame.w = win_frame.w - 50
-		win:setFrame(win_frame)
-   end
-
-   return win_frame
-end
-
-
-function increase_win_height()
-	local win       = hs.window.focusedWindow()
-	local win_frame = win:frame()
-
-	win_frame.h = win_frame.h + 50
-   win:setFrame(win_frame)
-
-   return win_frame
-end
-
-
-function decrease_win_height()
-	local win       = hs.window.focusedWindow()
-	local win_frame = win:frame()
-
-	win_frame.h = win_frame.h - 50
-   win:setFrame(win_frame)
-
-   return win_frame
-end
-
-
-
---[[ 3 -------------------------------------------------------------]]
-function shift_up()
-	--	move window up
-	local win       = hs.window.focusedWindow()
-	local win_frame = win:frame()
-
-	win_frame.y = win_frame.y - 50
-   win:setFrame(win_frame)
-
-   return win_frame
-end
-
-
-function shift_down()
-	--	move window down
-	local win       = hs.window.focusedWindow()
-	local win_frame = win:frame()
-
-	win_frame.y = win_frame.y + 50
-	win:setFrame(win_frame)
-
-   return win_frame
-end
-
-
-function shift_left()
-	--	move window left
-	local win          = hs.window.focusedWindow()
-	local win_frame    = win:frame()
-
-	win_frame.x = win_frame.x - 50
-	win:setFrame(win_frame)
-
-   return win_frame
-end
-
-
-function shift_right()
-	--	move window right
-	local win       = hs.window.focusedWindow()
-	local win_frame = win:frame()
-
-	win_frame.x = win_frame.x + 50
-	win:setFrame(win_frame)
-
-   return win_frame
-end
-
-
-function toggle_win_lr()
-   local win          = hs.window.focusedWindow()
-   local win_frame    = win:frame()
-   local screen_frame = win:screen():frame()
-
-   win_frame.x = (2 * screen_frame.x) + (screen_frame.w - (win_frame.x + win_frame.w))
-   win:setFrame(win_frame)
-
-   return win_frame
-end
-
-
-function bind_win_manager(key, resize_frame_fn)
-	hs.hotkey.bind(mod_keys, key,
-		function()
-			local win       = hs.window.focusedWindow()
-			local new_frame = resize_frame_fn()
-
-			win:setFrame(new_frame)
-		end
-	)
-end
-
-
-bind_win_manager("H",  increase_win_width)
-bind_win_manager("L",  decrease_win_width)
-bind_win_manager("J",  increase_win_height)
-bind_win_manager("K",  decrease_win_height)
-bind_win_manager("8",  shift_up)
-bind_win_manager("I",  shift_down)
-bind_win_manager("U",  shift_left)
-bind_win_manager("O",  shift_right)
-bind_win_manager("\\", toggle_win_lr)
-
-
---[[ 4 -------------------------------------------------------------]]
-function move_screen_right()
-	-- move to screen right
-	--   wraps around to first screen
-	local win        = hs.window.focusedWindow()
-	local win_screen = win:screen()
-
-	win:moveToScreen(
-		win_screen:next()
-	)
-   return win_screen
-end
-
-
-function move_screen_left()
-	-- move to screen left
-	--   wraps around to last screen
-	local win        = hs.window.focusedWindow()
-	local win_screen = win:screen()
-
-	win:moveToScreen(
-		win_screen:previous()
-   )
-   return win_screen
-end
-
-
-function bind_screen_manager(key, screen_move_function)
-   hs.hotkey.bind(mod_keys, key,
-      function()
-         local win        = hs.window.focusedWindow()
-         local new_screen = screen_move_function()
-
-         prev_frame_sizes[win:id()] = nil
-         return new_screen
-      end
-   )
-end
-
-bind_screen_manager("Left", move_screen_left)
-bind_screen_manager("Right", move_screen_right)
+wm.bind("F", wm.fill_full, "restorable")
+wm.bind("[", wm.fill_left, "restorable")
+wm.bind("]", wm.fill_right, "restorable")
+wm.bind("0", wm.fill_center, "restorable")
+wm.bind("H", wm.increase_win_width)
+wm.bind("L", wm.decrease_win_width)
+wm.bind("J", wm.increase_win_height)
+wm.bind("K", wm.decrease_win_height)
+wm.bind("8", wm.shift_up)
+wm.bind("I", wm.shift_down)
+wm.bind("U", wm.shift_left)
+wm.bind("O", wm.shift_right)
+wm.bind("\\", wm.toggle_win_lr)
+wm.screen.bind("Left", wm.screen.previous)
+wm.screen.bind("Right", wm.screen.next)

@@ -29,7 +29,7 @@
 	<key>ColoredSelectedTabOutlineStrength</key>
 	<real>0.20000000298023224</real>
 	<key>Command</key>
-	<string>/usr/local/bin/zsh-f</string>
+	<string>/usr/local/bin/pwsh</string>
 	<key>ConvertDosNewlines</key>
 	<true/>
 	<key>Custom Color Presets</key>
@@ -729,7 +729,7 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>167 351 700 586 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>3523 106 952 1047 2560 101 1920 1057 </string>
+	<string>3620 473 699 607 2560 101 1920 1057 </string>
 	<key>NeverWarnAboutShortLivedSessions_120FAA18-3181-488D-9B29-68949F1F0CE6</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_120FAA18-3181-488D-9B29-68949F1F0CE6_selection</key>
@@ -6465,7 +6465,7 @@
 	<key>NoSyncLastTipTime</key>
 	<real>602207054.28538501</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>155</integer>
+	<integer>156</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
