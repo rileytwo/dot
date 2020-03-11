@@ -62,13 +62,15 @@ CPPFLAGS=-isysroot $(SDK) -I$(HI) \
 		 -I$(HO)/gettext/include \
 		 -I$(HO)/tcl-tk/include \
 		 -I$(HO)/jpeg/include \
-		 -I$(HO)/libpng/include
+		 -I$(HO)/libpng/include \
+		 -I$(HO)/libxml2/include/libxml2
 
 LDFLAGS+=-L$(HO)/llvm/lib -Wl,-rpath,$(HO)/llvm/lib \
 		 -L$(HO)/openssl/lib \
 		 -L$(HO)/gettext/lib \
 		 -L$(HO)/jpeg/lib \
-		 -L$(HO)/libpng/lib
+		 -L$(HO)/libpng/lib \
+		 -L$(HO)/libxml2/lib
 
 # R-specific flags for OpenMP support
 SHLIB_OPENMP_CFLAGS=-fopenmp
