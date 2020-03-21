@@ -60,6 +60,7 @@ else
     #zsh-interactive-cd
     git
     forgit
+    mac-zsh-completions
     zsh-autopair
     zsh-completions
     zsh-history-substring-search
