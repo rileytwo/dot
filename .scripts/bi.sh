@@ -70,19 +70,30 @@ function main() {
   if [ "$#" -gt 0 ]; then
     case "$1" in
       "-a" | "--app" | "--application")
-	shift
-	print_bundle_identifier "$1"
+
+	if [[ -d "$2" && "$2" =~ ".app" ]]; then
+	  print_bundle_identifier "$2" 
+	else
+	  echo "$2 is not an application"
+	fi
+	
 	;;
       "*.app" | *.app )
+	
 	print_bundle_identifier /Applications/"$1"
+	
 	;;
       "-h" | "--help" )
+	
 	display_usage
+	
 	;;
       *)
+	
 	raise_error "Invalid option: $1"
 	display_usage
 	exit 1
+	
 	;;
     esac
   else
