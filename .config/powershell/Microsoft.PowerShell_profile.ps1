@@ -127,12 +127,12 @@ function Get-GitRepositoryStatus {
     git status $args
 }
 
-function Invoke-Sudo {
-    if ($IsWindows) {
-        if (Get-Command "gsudo") {
-            Set-Alias -Name sudo -Value "gsudo"
-        }
-    }
+function Get-GitConfigLocal {
+    git config --local --list
+}
+
+function Get-GitConfigGlobal {
+    git config --global --list
 }
 
 Remove-Item alias:where -Force
@@ -141,6 +141,8 @@ Set-Alias -Name 'where' -Value Get-Commands
 Set-Alias -Name 'path' -Value Get-Path
 
 Set-Alias -Name 'gs' Get-GitRepositoryStatus
+Set-Alias -Name 'gnll' Get-GitConfigLocal
+Set-Alias -Name 'gngl' Get-GitConfigGlobal
 
 Set-Alias -Name 'which' -Value Get-Command
 Set-Alias -Name 'l' -Value Get-ChildItemColor
