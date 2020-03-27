@@ -40,15 +40,22 @@ Return
 ;;; FILE EXPLORER
 #If WinActive("ahk_class CabinetWClass")
 ^l::Send ^e
+
+^i::
+    Send !{h}
+    Sleep, 1
+    Send {p}{r}
+    Send {Enter}
+
 #If
 
 
 ;;; FIREFOX
 #If WinActive("ahk_exe firefox.exe")
 ^,::
-    Send !t
-    Sleep 1
-    Send o
+    Send !{t}
+    Sleep, 1
+    Send {o}
 Return
 
 ^Left::Send !{Left}
@@ -56,21 +63,3 @@ Return
 
 ^Right::Send !{Right}
 #If
-
-
-;;; EVERNOTE
-#If WinActive("ahk_class ENMainFrame")
-^l::^q
-
-#n::
-Send, {F6}
-Sleep, 10
-Send, {LControl Down}{n}{LControl Up}
-Return
-^\::Send {F10}
-Return
-
-^+\::Send {F11}
-Return
-#If
-
