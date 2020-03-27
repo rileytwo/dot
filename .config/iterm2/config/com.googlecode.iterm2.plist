@@ -6471,7 +6471,7 @@
 	<key>NoSyncLastTipTime</key>
 	<real>602207054.28538501</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>236</integer>
+	<integer>241</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -7265,6 +7265,10 @@
 	<string></string>
 	<key>PasteSpecialUseRegexSubstitution</key>
 	<false/>
+	<key>PathToFTP</key>
+	<string>/usr/local/bin/ftp</string>
+	<key>PathToTelnet</key>
+	<string>/usr/local/bin/telnet</string>
 	<key>PointerActions</key>
 	<dict>
 		<key>Button,1,1,,</key>
@@ -7330,7 +7334,7 @@
 	<key>SpacelessApplicationSupport</key>
 	<string></string>
 	<key>SplitPaneDimmingAmount</key>
-	<real>0.50075077570921989</real>
+	<real>0.14404920212765962</real>
 	<key>StatusBarPosition</key>
 	<integer>1</integer>
 	<key>StretchTabsToFillBar</key>
