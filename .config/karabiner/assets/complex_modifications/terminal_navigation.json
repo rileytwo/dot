@@ -2,7 +2,7 @@
     "title": "Navigation in Terminal Apps",
     "rules": [
         {
-            "description": "Terminal Apps: ⌘ + ← | Move cursor to line begin",
+            "description": "Terminals: ⌥ + ← | Move cursor to line begin",
             "manipulators": [
                 {
                     "type": "basic",
@@ -10,7 +10,7 @@
                         "key_code": "left_arrow",
                         "modifiers": {
                             "mandatory": [
-                                "command"
+                                "option"
                             ]
                         }
                     },
@@ -39,7 +39,7 @@
             ]
         },
         {
-            "description": "Terminal Apps: ⌘ + → | Move cursor to line end",
+            "description": "Terminals: ⌥ + → | Move cursor to line end",
             "manipulators": [
                 {
                     "type": "basic",
@@ -47,7 +47,7 @@
                         "key_code": "right_arrow",
                         "modifiers": {
                             "mandatory": [
-                                "command"
+                                "option"
                             ]
                         }
                     },
@@ -76,7 +76,7 @@
             ]
         },
         {
-            "description": "Terminal Apps: ⌥ + ← | Move cursor one word behind",
+            "description": "Terminals: ⌘ + ← | Move cursor one word behind",
             "manipulators": [
                 {
                     "type": "basic",
@@ -84,7 +84,7 @@
                         "key_code": "left_arrow",
                         "modifiers": {
                             "mandatory": [
-                                "option"
+                                "command"
                             ]
                         }
                     },
@@ -113,7 +113,7 @@
             ]
         },
         {
-            "description": "Terminal Apps: ⌥ + → | Move cursor one word ahead",
+            "description": "Terminals: ⌘ + → | Move cursor one word ahead",
             "manipulators": [
                 {
                     "type": "basic",
@@ -121,7 +121,7 @@
                         "key_code": "right_arrow",
                         "modifiers": {
                             "mandatory": [
-                                "option"
+                                "command"
                             ]
                         }
                     },
@@ -150,7 +150,7 @@
             ]
         },
         {
-            "description": "Terminal Apps: ⌥ + ⌫ | Delete one word",
+            "description": "Terminals: ⌘ + ⌫ | Delete one word",
             "manipulators": [
                 {
                     "type": "basic",
@@ -158,7 +158,7 @@
                         "key_code": "delete_or_backspace",
                         "modifiers": {
                             "mandatory": [
-                                "option"
+                                "command"
                             ]
                         }
                     },
@@ -187,7 +187,7 @@
             ]
         },
         {
-            "description": "Terminal Apps: ⌥ + ⌦ | Delete one word ahead",
+            "description": "Terminals: ⌘ + ⌦ | Delete one word ahead",
             "manipulators": [
                 {
                     "type": "basic",
@@ -195,7 +195,7 @@
                         "key_code": "delete_or_backspace",
                         "modifiers": {
                             "mandatory": [
-                                "option",
+                                "command",
                                 "fn"
                             ]
                         }
@@ -225,7 +225,7 @@
             ]
         },
         {
-            "description": "Terminal Apps: ⌘ + ⌫ | Delete to line begin",
+            "description": "Terminals: ⌥ + ⌫ | Delete to line begin",
             "manipulators": [
                 {
                     "type": "basic",
@@ -233,7 +233,7 @@
                         "key_code": "delete_or_backspace",
                         "modifiers": {
                             "mandatory": [
-                                "command"
+                                "option"
                             ]
                         }
                     },
@@ -262,7 +262,7 @@
             ]
         },
         {
-            "description": "Terminal Apps: ⌘ + ⌦ | Delete to line end",
+            "description": "Terminals: ⌥ + ⌦ | Delete to line end",
             "manipulators": [
                 {
                     "type": "basic",
@@ -270,7 +270,7 @@
                         "key_code": "delete_or_backspace",
                         "modifiers": {
                             "mandatory": [
-                                "command",
+                                "option",
                                 "fn"
                             ]
                         }

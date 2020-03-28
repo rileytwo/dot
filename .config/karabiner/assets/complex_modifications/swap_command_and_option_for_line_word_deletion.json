@@ -1,0 +1,149 @@
+{
+    "title": "Swap Command and Option for Line/Word Deletion",
+    "rules": [
+        {
+            "description": "Global: ⌥ + ← | Move cursor to line begin",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "left_arrow",
+                        "modifiers": {
+                            "mandatory": [
+                                "option"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "left_arrow",
+                            "modifiers": [
+                                "command"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "Global: ⌥ + → | Move cursor to line end",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "right_arrow",
+                        "modifiers": {
+                            "mandatory": [
+                                "option"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "right_arrow",
+                            "modifiers": [
+                                "command"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "Global: ⌘ + ← | Move cursor one word behind",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "left_arrow",
+                        "modifiers": {
+                            "mandatory": [
+                                "command"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "left_arrow",
+                            "modifiers": [
+                                "option"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "Global: ⌘ + → | Move cursor one word ahead",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "right_arrow",
+                        "modifiers": {
+                            "mandatory": [
+                                "command"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "right_arrow",
+                            "modifiers": [
+                                "option"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "Global: ⌘ + ⌫ | Delete one word",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "delete_or_backspace",
+                        "modifiers": {
+                            "mandatory": [
+                                "command"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "delete_or_backspace",
+                            "modifiers": [
+                                "option"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "Global: ⌥ + ⌫ | Delete to line begin",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "delete_or_backspace",
+                        "modifiers": {
+                            "mandatory": [
+                                "option"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "delete_or_backspace",
+                            "modifiers": [
+                                "command"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
