@@ -1,8 +1,8 @@
 {
     "global": {
         "check_for_updates_on_startup": false,
-        "show_in_menu_bar": true,
-        "show_profile_name_in_menu_bar": false
+        "show_in_menu_bar": false,
+        "show_profile_name_in_menu_bar": true
     },
     "profiles": [
         {
@@ -200,7 +200,7 @@
                         ]
                     },
                     {
-                        "description": "Terminal Apps: ⌘ + ← | Move cursor to line begin",
+                        "description": "Terminals: ⌥ + ← | Move cursor to line begin",
                         "manipulators": [
                             {
                                 "conditions": [
@@ -220,7 +220,7 @@
                                     "key_code": "left_arrow",
                                     "modifiers": {
                                         "mandatory": [
-                                            "command"
+                                            "option"
                                         ]
                                     }
                                 },
@@ -237,7 +237,7 @@
                         ]
                     },
                     {
-                        "description": "Terminal Apps: ⌘ + → | Move cursor to line end",
+                        "description": "Terminals: ⌥ + → | Move cursor to line end",
                         "manipulators": [
                             {
                                 "conditions": [
@@ -257,7 +257,7 @@
                                     "key_code": "right_arrow",
                                     "modifiers": {
                                         "mandatory": [
-                                            "command"
+                                            "option"
                                         ]
                                     }
                                 },
@@ -274,81 +274,7 @@
                         ]
                     },
                     {
-                        "description": "Terminal Apps: ⌥ + ← | Move cursor one word behind",
-                        "manipulators": [
-                            {
-                                "conditions": [
-                                    {
-                                        "bundle_identifiers": [
-                                            "^com\\.apple\\.Terminal$",
-                                            "^com\\.googlecode\\.iterm2$",
-                                            "^co\\.zeit\\.hyperterm$",
-                                            "^co\\.zeit\\.hyper$",
-                                            "^io\\.alacritty$",
-                                            "^net\\.kovidgoyal\\.kitty$"
-                                        ],
-                                        "type": "frontmost_application_if"
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "left_arrow",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "option"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "escape"
-                                    },
-                                    {
-                                        "key_code": "b"
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Terminal Apps: ⌥ + → | Move cursor one word ahead",
-                        "manipulators": [
-                            {
-                                "conditions": [
-                                    {
-                                        "bundle_identifiers": [
-                                            "^com\\.apple\\.Terminal$",
-                                            "^com\\.googlecode\\.iterm2$",
-                                            "^co\\.zeit\\.hyperterm$",
-                                            "^co\\.zeit\\.hyper$",
-                                            "^io\\.alacritty$",
-                                            "^net\\.kovidgoyal\\.kitty$"
-                                        ],
-                                        "type": "frontmost_application_if"
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "right_arrow",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "option"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "escape"
-                                    },
-                                    {
-                                        "key_code": "f"
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Terminal Apps: ⌥ + ⌫ | Delete one word",
+                        "description": "Terminals: ⌥ + ⌫ | Delete to line begin",
                         "manipulators": [
                             {
                                 "conditions": [
@@ -374,7 +300,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "w",
+                                        "key_code": "u",
                                         "modifiers": [
                                             "left_control"
                                         ]
@@ -385,7 +311,7 @@
                         ]
                     },
                     {
-                        "description": "Terminal Apps: ⌥ + ⌦ | Delete one word ahead",
+                        "description": "Terminals: ⌥ + ⌦ | Delete to line end",
                         "manipulators": [
                             {
                                 "conditions": [
@@ -406,81 +332,6 @@
                                     "modifiers": {
                                         "mandatory": [
                                             "option",
-                                            "fn"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "escape"
-                                    },
-                                    {
-                                        "key_code": "d"
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Terminal Apps: ⌘ + ⌫ | Delete to line begin",
-                        "manipulators": [
-                            {
-                                "conditions": [
-                                    {
-                                        "bundle_identifiers": [
-                                            "^com\\.apple\\.Terminal$",
-                                            "^com\\.googlecode\\.iterm2$",
-                                            "^co\\.zeit\\.hyperterm$",
-                                            "^co\\.zeit\\.hyper$",
-                                            "^io\\.alacritty$",
-                                            "^net\\.kovidgoyal\\.kitty$"
-                                        ],
-                                        "type": "frontmost_application_if"
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "delete_or_backspace",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "command"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "u",
-                                        "modifiers": [
-                                            "left_control"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Terminal Apps: ⌘ + ⌦ | Delete to line end",
-                        "manipulators": [
-                            {
-                                "conditions": [
-                                    {
-                                        "bundle_identifiers": [
-                                            "^com\\.apple\\.Terminal$",
-                                            "^com\\.googlecode\\.iterm2$",
-                                            "^co\\.zeit\\.hyperterm$",
-                                            "^co\\.zeit\\.hyper$",
-                                            "^io\\.alacritty$",
-                                            "^net\\.kovidgoyal\\.kitty$"
-                                        ],
-                                        "type": "frontmost_application_if"
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "delete_or_backspace",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "command",
                                             "fn"
                                         ]
                                     }
@@ -498,11 +349,155 @@
                         ]
                     },
                     {
-                        "description": "Disable: ⌘ + ⌃ + ⌥ + ⇧ + .",
+                        "description": "Global: ⌥ + ← | Move cursor to line begin",
                         "manipulators": [
                             {
                                 "from": {
-                                    "key_code": "period",
+                                    "key_code": "left_arrow",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "option"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "left_arrow",
+                                        "modifiers": [
+                                            "command"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Global: ⌥ + → | Move cursor to line end",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "right_arrow",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "option"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "right_arrow",
+                                        "modifiers": [
+                                            "command"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Global: ⌘ + ← | Move cursor one word behind",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "left_arrow",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "command"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "left_arrow",
+                                        "modifiers": [
+                                            "option"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Global: ⌘ + → | Move cursor one word ahead",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "right_arrow",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "command"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "right_arrow",
+                                        "modifiers": [
+                                            "option"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Global: ⌘ + ⌫ | Delete one word",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "delete_or_backspace",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "command"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "delete_or_backspace",
+                                        "modifiers": [
+                                            "option"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Global: ⌥ + ⌫ | Delete to line begin",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "delete_or_backspace",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "option"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "delete_or_backspace",
+                                        "modifiers": [
+                                            "command"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Disable: ⌘ + ⌃ + ⌥ + ⇧ + ,",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "comma",
                                     "modifiers": {
                                         "mandatory": [
                                             "command",
@@ -520,11 +515,11 @@
                         ]
                     },
                     {
-                        "description": "Disable: ⌘ + ⌃ + ⌥ + ⇧ + ,",
+                        "description": "Disable: ⌘ + ⌃ + ⌥ + ⇧ + .",
                         "manipulators": [
                             {
                                 "from": {
-                                    "key_code": "comma",
+                                    "key_code": "period",
                                     "modifiers": {
                                         "mandatory": [
                                             "command",
@@ -950,7 +945,7 @@
             ],
             "name": "🌺",
             "parameters": {
-                "delay_milliseconds_before_open_device": 1000
+                "delay_milliseconds_before_open_device": 5000
             },
             "selected": true,
             "simple_modifications": [],
