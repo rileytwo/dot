@@ -760,7 +760,7 @@
 			<key>Allow Title Reporting</key>
 			<true/>
 			<key>Allow Title Setting</key>
-			<false/>
+			<true/>
 			<key>Ambiguous Double Width</key>
 			<false/>
 			<key>Ansi 0 Color</key>
@@ -1143,7 +1143,7 @@
 			<key>HotKey Window Reopens On Activation</key>
 			<false/>
 			<key>Icon</key>
-			<integer>0</integer>
+			<integer>1</integer>
 			<key>Idle Code</key>
 			<integer>0</integer>
 			<key>Initial Text</key>
@@ -1789,7 +1789,7 @@
 			<key>Thin Strokes</key>
 			<integer>3</integer>
 			<key>Title Components</key>
-			<integer>32</integer>
+			<integer>384</integer>
 			<key>Transparency</key>
 			<integer>0</integer>
 			<key>Underline Color</key>
@@ -6462,7 +6462,7 @@
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1680, 1050}}</string>
 		<key>topLeft</key>
-		<string>{14, 827}</string>
+		<string>{178, 854}</string>
 	</dict>
 	<key>NoSyncHaveUsedCopyMode</key>
 	<true/>
@@ -6471,7 +6471,7 @@
 	<key>NoSyncLastTipTime</key>
 	<real>602207054.28538501</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>241</integer>
+	<integer>250</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -7429,7 +7429,7 @@
 											<key>Allow Title Reporting</key>
 											<true/>
 											<key>Allow Title Setting</key>
-											<false/>
+											<true/>
 											<key>Ambiguous Double Width</key>
 											<false/>
 											<key>Ansi 0 Color</key>
@@ -7812,7 +7812,7 @@
 											<key>HotKey Window Reopens On Activation</key>
 											<false/>
 											<key>Icon</key>
-											<integer>0</integer>
+											<integer>1</integer>
 											<key>Idle Code</key>
 											<integer>0</integer>
 											<key>Initial Text</key>
@@ -8458,7 +8458,7 @@
 											<key>Thin Strokes</key>
 											<integer>3</integer>
 											<key>Title Components</key>
-											<integer>32</integer>
+											<integer>384</integer>
 											<key>Transparency</key>
 											<integer>0</integer>
 											<key>Underline Color</key>
@@ -8509,12 +8509,6 @@
 										<integer>91</integer>
 										<key>Commands</key>
 										<array>
-											<string>ping BIWIN10</string>
-											<string>ping http://BIWIN10</string>
-											<string>cat /etc/resolv.conf</string>
-											<string>nvim /usr/local/etc/openfortivpn/work-config</string>
-											<string>ping local.imodules.com</string>
-											<string>ping prod.imodules.com</string>
 											<string>nvim /usr/local/etc/openfortivpn/work-config</string>
 											<string>sudo nvim /etc/resolv.conf</string>
 											<string>sudo nvim /etc/resolv.conf</string>
@@ -8609,6 +8603,12 @@
 											<string>gitup -p</string>
 											<string>cd</string>
 											<string>sudo softwareupdate -l</string>
+											<string>brew cask remove karabiner-elements --force</string>
+											<string>brew cask install karabiner-elements --no-quarantine</string>
+											<string>l .config/</string>
+											<string>l .config/karabiner</string>
+											<string>mv Downloads/access-code.txt</string>
+											<string>mv Downloads/access-code.txt Documents/Library/Network</string>
 										</array>
 										<key>Directories</key>
 										<array>
@@ -8634,14 +8634,6 @@
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
 											<string>/Users/riley/.openfortigui</string>
 											<string>/Users/riley/.openfortigui</string>
 											<string>/Users/riley</string>
@@ -8704,6 +8696,14 @@
 											<string>/Users/riley/.dot</string>
 											<string>/Users/riley/.dot</string>
 											<string>/Users/riley/.dot</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
@@ -9263,49 +9263,49 @@
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
