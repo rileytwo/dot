@@ -760,7 +760,7 @@
 			<key>Allow Title Reporting</key>
 			<true/>
 			<key>Allow Title Setting</key>
-			<true/>
+			<false/>
 			<key>Ambiguous Double Width</key>
 			<false/>
 			<key>Ansi 0 Color</key>
@@ -1360,7 +1360,7 @@
 			<key>Mouse Reporting</key>
 			<true/>
 			<key>Name</key>
-			<string>🌧</string>
+			<string>zsh</string>
 			<key>Non Ascii Font</key>
 			<string>HackNerdFontComplete-Regular 13</string>
 			<key>Non-ASCII Anti Aliased</key>
@@ -1779,17 +1779,16 @@
 			</dict>
 			<key>Tags</key>
 			<array>
-				<string>main</string>
-				<string>base</string>
-				<string>default</string>
 				<string>zsh</string>
+				<string>main</string>
+				<string>default</string>
 			</array>
 			<key>Terminal Type</key>
 			<string>xterm-256color</string>
 			<key>Thin Strokes</key>
 			<integer>3</integer>
 			<key>Title Components</key>
-			<integer>384</integer>
+			<integer>385</integer>
 			<key>Transparency</key>
 			<integer>0</integer>
 			<key>Underline Color</key>
@@ -2454,7 +2453,7 @@
 			<key>Mouse Reporting</key>
 			<true/>
 			<key>Name</key>
-			<string>⚡️🐚</string>
+			<string>pwsh</string>
 			<key>Non Ascii Font</key>
 			<string>HackNerdFontComplete-Regular 13</string>
 			<key>Non-ASCII Anti Aliased</key>
@@ -2933,7 +2932,7 @@
 			<key>Thin Strokes</key>
 			<integer>4</integer>
 			<key>Title Components</key>
-			<integer>32</integer>
+			<integer>385</integer>
 			<key>Transparency</key>
 			<integer>0</integer>
 			<key>Underline Color</key>
@@ -3598,7 +3597,7 @@
 			<key>Mouse Reporting</key>
 			<true/>
 			<key>Name</key>
-			<string>py37🌧</string>
+			<string>zsh@python/conda:spyder</string>
 			<key>Non Ascii Font</key>
 			<string>HackNerdFontComplete-Regular 13</string>
 			<key>Non-ASCII Anti Aliased</key>
@@ -3677,7 +3676,7 @@
 			<key>Session Close Undo Timeout</key>
 			<integer>5</integer>
 			<key>Shortcut</key>
-			<string>P</string>
+			<string>3</string>
 			<key>Show Mark Indicators</key>
 			<false/>
 			<key>Show Status Bar</key>
@@ -4073,16 +4072,14 @@
 			</dict>
 			<key>Tags</key>
 			<array>
-				<string>python</string>
-				<string>spyder</string>
-				<string>py37</string>
+				<string>zsh/python/conda/spyder</string>
 			</array>
 			<key>Terminal Type</key>
 			<string>xterm-256color</string>
 			<key>Thin Strokes</key>
 			<integer>3</integer>
 			<key>Title Components</key>
-			<integer>32</integer>
+			<integer>385</integer>
 			<key>Transparency</key>
 			<integer>0</integer>
 			<key>Underline Color</key>
@@ -4747,7 +4744,7 @@
 			<key>Mouse Reporting</key>
 			<true/>
 			<key>Name</key>
-			<string>conda🌧</string>
+			<string>zsh@python/conda</string>
 			<key>Non Ascii Font</key>
 			<string>HackNerdFontComplete-Regular 13</string>
 			<key>Non-ASCII Anti Aliased</key>
@@ -4826,7 +4823,7 @@
 			<key>Session Close Undo Timeout</key>
 			<integer>5</integer>
 			<key>Shortcut</key>
-			<string></string>
+			<string>4</string>
 			<key>Show Mark Indicators</key>
 			<false/>
 			<key>Show Status Bar</key>
@@ -5222,17 +5219,14 @@
 			</dict>
 			<key>Tags</key>
 			<array>
-				<string>main</string>
-				<string>base</string>
-				<string>default</string>
-				<string>zsh</string>
+				<string>zsh/python/conda</string>
 			</array>
 			<key>Terminal Type</key>
 			<string>xterm-256color</string>
 			<key>Thin Strokes</key>
 			<integer>3</integer>
 			<key>Title Components</key>
-			<integer>32</integer>
+			<integer>385</integer>
 			<key>Transparency</key>
 			<integer>0</integer>
 			<key>Underline Color</key>
@@ -5897,7 +5891,7 @@
 			<key>Mouse Reporting</key>
 			<true/>
 			<key>Name</key>
-			<string>bash☔️</string>
+			<string>bash</string>
 			<key>Non Ascii Font</key>
 			<string>HackNerdFontComplete-Regular 13</string>
 			<key>Non-ASCII Anti Aliased</key>
@@ -5976,7 +5970,7 @@
 			<key>Session Close Undo Timeout</key>
 			<integer>5</integer>
 			<key>Shortcut</key>
-			<string>3</string>
+			<string>5</string>
 			<key>Show Mark Indicators</key>
 			<false/>
 			<key>Show Status Bar</key>
@@ -6379,7 +6373,7 @@
 			<key>Thin Strokes</key>
 			<integer>3</integer>
 			<key>Title Components</key>
-			<integer>32</integer>
+			<integer>385</integer>
 			<key>Transparency</key>
 			<integer>0</integer>
 			<key>Underline Color</key>
@@ -6462,7 +6456,7 @@
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1680, 1050}}</string>
 		<key>topLeft</key>
-		<string>{178, 854}</string>
+		<string>{177, 855}</string>
 	</dict>
 	<key>NoSyncHaveUsedCopyMode</key>
 	<true/>
@@ -6471,7 +6465,7 @@
 	<key>NoSyncLastTipTime</key>
 	<real>602207054.28538501</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>250</integer>
+	<integer>252</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -7429,7 +7423,7 @@
 											<key>Allow Title Reporting</key>
 											<true/>
 											<key>Allow Title Setting</key>
-											<true/>
+											<false/>
 											<key>Ambiguous Double Width</key>
 											<false/>
 											<key>Ansi 0 Color</key>
@@ -7782,7 +7776,7 @@
 												<real>0.94999998807907104</real>
 											</dict>
 											<key>Guid</key>
-											<string>C2CD2FD3-775C-44B4-AB74-0853DACAE166</string>
+											<string>A5B4096D-4817-48D1-BF23-8E9EEB7BC141</string>
 											<key>Has Hotkey</key>
 											<false/>
 											<key>Horizontal Spacing</key>
@@ -8029,7 +8023,7 @@
 											<key>Mouse Reporting</key>
 											<true/>
 											<key>Name</key>
-											<string>🌧</string>
+											<string>zsh</string>
 											<key>Non Ascii Font</key>
 											<string>HackNerdFontComplete-Regular 13</string>
 											<key>Non-ASCII Anti Aliased</key>
@@ -8044,6 +8038,8 @@
 											<false/>
 											<key>Option Key Sends</key>
 											<integer>2</integer>
+											<key>Original Guid</key>
+											<string>C2CD2FD3-775C-44B4-AB74-0853DACAE166</string>
 											<key>Place Prompt at First Column</key>
 											<true/>
 											<key>Prevent Opening in a Tab</key>
@@ -8448,17 +8444,16 @@
 											</dict>
 											<key>Tags</key>
 											<array>
-												<string>main</string>
-												<string>base</string>
-												<string>default</string>
 												<string>zsh</string>
+												<string>main</string>
+												<string>default</string>
 											</array>
 											<key>Terminal Type</key>
 											<string>xterm-256color</string>
 											<key>Thin Strokes</key>
 											<integer>3</integer>
 											<key>Title Components</key>
-											<integer>384</integer>
+											<integer>385</integer>
 											<key>Transparency</key>
 											<integer>0</integer>
 											<key>Underline Color</key>
@@ -8509,24 +8504,6 @@
 										<integer>91</integer>
 										<key>Commands</key>
 										<array>
-											<string>nvim /usr/local/etc/openfortivpn/work-config</string>
-											<string>sudo nvim /etc/resolv.conf</string>
-											<string>sudo nvim /etc/resolv.conf</string>
-											<string>ping prod.imodules.com</string>
-											<string>nvim /usr/local/etc/openfortivpn/work-config</string>
-											<string>cat /etc/resolv.conf</string>
-											<string>sudo nvim /etc/resolv.conf</string>
-											<string>nvim /usr/local/etc/openfortivpn/work-config</string>
-											<string>trash -e</string>
-											<string>nvim .bash_profile</string>
-											<string>brew search gettext</string>
-											<string>brew info gettext</string>
-											<string>port search openfortigui</string>
-											<string>port search openforti</string>
-											<string>brew cask install qt-creator --no-quarantine</string>
-											<string>brew cask remove qt-creator</string>
-											<string>brew cask install qt-creator --no-quarantine</string>
-											<string>mdfind qtcreator</string>
 											<string>mdfind creator</string>
 											<string>mdfind creator | rg -v "caf"</string>
 											<string>mdfind creator | rg "qt"</string>
@@ -8609,35 +8586,29 @@
 											<string>l .config/karabiner</string>
 											<string>mv Downloads/access-code.txt</string>
 											<string>mv Downloads/access-code.txt Documents/Library/Network</string>
+											<string>cd .dot</string>
+											<string>gs</string>
+											<string>git add .config/iterm2/config/com.googlecode.iterm2.plist &amp;&amp; gc -m 'iterm2 config'</string>
+											<string>gp</string>
+											<string>cd</string>
+											<string>gitud</string>
+											<string>gitup -p</string>
+											<string>brew update &amp;&amp; brew upgrade &amp;&amp; brew cask upgrade --no-quarantine</string>
+											<string>cd .dot</string>
+											<string>gs</string>
+											<string>cd</string>
+											<string>brew update &amp;&amp; brew upgrade &amp;&amp; brew cask upgrade --no-quarantine</string>
+											<string>pyenv list</string>
+											<string>pvs</string>
+											<string>pyenv activate miniconda3-latest</string>
+											<string>conda env list</string>
+											<string>pyenv deactivate miniconda3-latest</string>
+											<string>pvs</string>
 										</array>
 										<key>Directories</key>
 										<array>
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley/.openfortigui</string>
-											<string>/Users/riley/.openfortigui</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
 											<string>/Users/riley/.openfortigui</string>
 											<string>/Users/riley/.openfortigui</string>
 											<string>/Users/riley/.openfortigui</string>
@@ -8702,6 +8673,30 @@
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
@@ -9119,145 +9114,145 @@
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
