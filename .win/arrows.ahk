@@ -13,42 +13,42 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 
 ;; alt+{w/a/s/d} for navigating text
-!a::Send {Left}    ;; left
-Return
-
-!w::Send {Up}      ;; up
-Return
-
-!s::Send {Down}    ;; down
-Return
-
-!d::Send {Right}   ;; right
-Return
-
-^q::Send {AltDown}{F4}{AltUp}     ;; alt+F4 (close window)
-Return
+!w::Send {Up}
+!s::Send {Down}
+!a::Send {Left}
+!d::Send {Right}
 
 ;; alt+shift+{a/d} ;; jump/move word left and right
 >!+a::Send ^{Left}
 >!+d::Send ^{Right}
 
-^h::WinMinimize, A ;; minimize (hide) windows with {control}{h}
+;; ^q => close window | ^h => minimize window
+^q::Send {AltDown}{F4}{AltUp}
+^h::WinMinimize, A
 
 #Esc::
 
 
 ;;; FILE EXPLORER
 #If WinActive("ahk_class CabinetWClass")
-^l::Send ^e
+^l::Send ^{e}
 
 ^i::
     Send !{h}
     Sleep, 1
     Send {p}{r}
     Send {Enter}
-
+Return
 #If
 
+;;; OUTLOOK
+#If WinActive("ahk_exe OUTLOOK.EXE")
+^+m::
+    Send !{h}
+    Sleep, 1
+    Send {m}{v}
+Return
+#If
 
 ;;; FIREFOX
 #If WinActive("ahk_exe firefox.exe")
@@ -59,7 +59,5 @@ Return
 Return
 
 ^Left::Send !{Left}
-Return
-
 ^Right::Send !{Right}
 #If
