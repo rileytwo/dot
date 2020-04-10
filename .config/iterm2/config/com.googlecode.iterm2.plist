@@ -6457,7 +6457,7 @@
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1680, 1050}}</string>
 		<key>topLeft</key>
-		<string>{93, 869}</string>
+		<string>{92, 870}</string>
 	</dict>
 	<key>NoSyncHaveUsedCopyMode</key>
 	<true/>
@@ -6466,7 +6466,7 @@
 	<key>NoSyncLastTipTime</key>
 	<real>602207054.28538501</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>267</integer>
+	<integer>296</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -7315,7 +7315,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-03-31T23:01:15Z</date>
+	<date>2020-04-08T20:58:13Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
@@ -7777,7 +7777,7 @@
 												<real>0.94999998807907104</real>
 											</dict>
 											<key>Guid</key>
-											<string>A5B4096D-4817-48D1-BF23-8E9EEB7BC141</string>
+											<string>676A659D-F75F-45C1-BFB8-7F1E6FFB092B</string>
 											<key>Has Hotkey</key>
 											<false/>
 											<key>Horizontal Spacing</key>
@@ -8608,8 +8608,6 @@
 										</array>
 										<key>Directories</key>
 										<array>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
 											<string>/Users/riley/.openfortigui</string>
 											<string>/Users/riley/.openfortigui</string>
 											<string>/Users/riley/.openfortigui</string>
@@ -8698,6 +8696,8 @@
 											<string>/Users/riley</string>
 											<string>/Users/riley/.dot</string>
 											<string>/Users/riley/.dot</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
@@ -9103,13 +9103,13 @@
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
