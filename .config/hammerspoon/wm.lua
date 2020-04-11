@@ -244,30 +244,46 @@ end
 
 ---[[ 4 ]]
 
-function wm.screen.next()
+function wm.screen.north()
+   local win = window.focusedWindow()
+   local win_screen = win:screen()
+
+   win:moveToScreen(win_screen:toNorth())
+   return win
+end
+
+
+function wm.screen.south()
+   local win = window.focusedWindow()
+   local win_screen = win:screen()
+
+   win:moveToScreen(win_screen:toSouth())
+   return win
+end
+
+
+function wm.screen.east()
+	local win        = window.focusedWindow()
+	local win_screen = win:screen()
+
+	win:moveToScreen(win_screen:toEast())
+   return win_screen
+end
+
+
+function wm.screen.west()
 	local win        = window.focusedWindow()
 	local win_screen = win:screen()
 
 	win:moveToScreen(
-		win_screen:next()
+		win_screen:toWest()
 	)
    return win_screen
 end
 
-
-function wm.screen.previous()
-	local win        = window.focusedWindow()
-	local win_screen = win:screen()
-
-	win:moveToScreen(
-		win_screen:previous()
-   )
-   return win_screen
-end
-
-
-
 ---[[ 5 ]]
+
+
 
 function wm.bind(key, resize_frame_fn, restorable)
    hs.hotkey.bind(wm.mod_keys, key,
@@ -292,11 +308,15 @@ function wm.bind(key, resize_frame_fn, restorable)
 end
 
 
-function wm.screen.bind(key, screen_move_function)
+function wm.screen.bind(key, screen_move_function, strict)
    hs.hotkey.bind(wm.mod_keys, key,
       function()
          local win        = hs.window.focusedWindow()
          local new_screen = screen_move_function()
+
+         if strict then
+            hs.screen.strictScreenInDirection = true
+         end
 
          wm.history[win:id()] = nil
          return new_screen
