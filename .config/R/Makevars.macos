@@ -5,7 +5,7 @@
 
 
 
-### macOS SDK
+### macOS SDK ###
 # use this if you installed Xcode CLT without Xcode
 SDK=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk
 
@@ -15,7 +15,7 @@ SDK=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk
 
 
 
-### Homebrew bin / opt / lib / include locations
+### Homebrew bin / opt / lib / include locations ###
 HB=/usr/local/bin
 HO=/usr/local/opt
 HL=/usr/local/lib
@@ -23,13 +23,12 @@ HI=/usr/local/include
 
 
 
-### Compiler config
-# ccache
-CCACHE=$(HB)/ccache
-
+### Compile config ###
 # Make using all cores
 MAKE=make -j`nproc`
 
+# ccache
+CCACHE=$(HB)/ccache
 
 # LLVM (Clang) compiler options
 CC=$(CCACHE) $(HO)/llvm/bin/clang
@@ -40,12 +39,11 @@ CXX14=$(CC)++
 CXX17=$(CC)++
 SHLIB_CXXLD=$(CC)++
 
-# Compilation standards
+# standards
 CXX1XSTD=-std=c++0x
 CXX11STD=-std=c++11
 CXX14STD=-std=c++14
 CXX17STD=-std=c++17
-
 
 # FORTRAN
 # GNU version (assumes latest in Homebrew as of April 2020)
@@ -57,6 +55,37 @@ FLIBS=-L$(HL)/gcc/$(V) -lgfortran -lquadmath -lm
 
 # FLAGS
 STD_FLAGS=-g -O3 -Wall -pedantic -mtune=native -pipe
+CFLAGS=$(STD_FLAGS) 
+CXXFLAGS=$(STD_FLAGS)
+CXX98FLAGS=$(STD_FLAGS)
+CXX11FLAGS=$(STD_FLAGS)
+CXX14FLAGS=$(STD_FLAGS)
+CXX17FLAGS=$(STD_FLAGS)
+
+FFLAGS=$(STD_FLAGS) 
+FCFLAGS=$(STD_FLAGS)
+
+
+# Preprocessor FLAGS
+# NB: -isysroot refigures the include path to the Xcode SDK
+CPPFLAGS=-isysroot $(SDK) \
+	 -I$(HI) \
+	 -I$(HO)/llvm/include \
+	 -I$(HO)/openssl/include \
+	 -I$(HO)/gettext/include \
+	 -I$(HO)/tcl-tk/include \
+	 -I$(HO)/jpeg/include \
+	 -I$(HO)/libpng/include \
+	 -I$(HO)/libxml2/include/libxml2
+
+LDFLAGS+=-L$(HO)/llvm/lib -Wl,-rpath,$(HO)/llvm/lib \
+	 -L$(HO)/openssl/lib \
+	 -L$(HO)/gettext/lib \
+	 -L$(HO)/tcl-tk/lib \
+	 -L$(HO)/jpeg/lib \
+	 -L$(HO)/libpng/lib \
+	 -L$(HO)/libxml2/lib
+
 
 # R-specific flags for OpenMP support
 SHLIB_OPENMP_CFLAGS=-fopenmp
@@ -65,33 +94,6 @@ SHLIB_OPENMP_CXX98FLAGS=-fopenmp
 SHLIB_OPENMP_CXX11FLAGS=-fopenmp
 SHLIB_OPENMP_CXX14FLAGS=-fopenmp
 SHLIB_OPENMP_CXX17FLAGS=-fopenmp
-SHLIB_OPENMP_FCFLAGS=-fopenmp
 SHLIB_OPENMP_FFLAGS=-fopenmp
+SHLIB_OPENMP_FCFLAGS=-fopenmp
 
-CFLAGS=$(STD_FLAGS) $(SHLIB_OPENMP_CFLAGS)
-CXXFLAGS=$(STD_FLAGS) $(SHLIB_OPENMP_CXXFLAGS)
-CXX98FLAGS=$(STD_FLAGS) $(SHLIB_OPENMP_CXX98FLAGS)
-CXX11FLAGS=$(STD_FLAGS) $(SHLIB_OPENMP_CXX11FLAGS)
-CXX14FLAGS=$(STD_FLAGS) $(SHLIB_OPENMP_CXX14FLAGS)
-CXX17FLAGS=$(STD_FLAGS) $(SHLIB_OPENMP_CXX17FLAGS)
-FCFLAGS=$(STD_FLAGS) $(SHLIB_OPENMP_FCFLAGS) 
-FFLAGS=$(STD_FLAGS) $(SHLIB_OPENMP_FFLAGS)  
-
-# Preprocessor FLAGS
-# NB: -isysroot refigures the include path to the Xcode SDK
-CPPFLAGS=-isysroot $(SDK) -I$(HI) \
-		 -I$(HO)/llvm/include \
-		 -I$(HO)/openssl/include \
-		 -I$(HO)/gettext/include \
-		 -I$(HO)/tcl-tk/include \
-		 -I$(HO)/jpeg/include \
-		 -I$(HO)/libpng/include \
-		 -I$(HO)/libxml2/include/libxml2
-
-LDFLAGS+=-L$(HO)/llvm/lib -Wl,-rpath,$(HO)/llvm/lib \
-		 -L$(HO)/openssl/lib \
-		 -L$(HO)/gettext/lib \
-		 -L$(HO)/tcl-tk/lib \
-		 -L$(HO)/jpeg/lib \
-		 -L$(HO)/libpng/lib \
-		 -L$(HO)/libxml2/lib
