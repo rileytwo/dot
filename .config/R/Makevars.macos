@@ -91,6 +91,7 @@ CPPFLAGS=-isysroot $(SDK) -I$(HI) \
 LDFLAGS+=-L$(HO)/llvm/lib -Wl,-rpath,$(HO)/llvm/lib \
 		 -L$(HO)/openssl/lib \
 		 -L$(HO)/gettext/lib \
+		 -L$(HO)/tcl-tk/lib \
 		 -L$(HO)/jpeg/lib \
 		 -L$(HO)/libpng/lib \
 		 -L$(HO)/libxml2/lib
