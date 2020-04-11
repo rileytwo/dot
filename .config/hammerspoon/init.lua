@@ -18,8 +18,8 @@ modifier_keys = {"cmd", "ctrl", "alt", "shift"}
 window_gap    = 5
 
 
-local config = require("config")
-local wm     = require("wm")
+local conf = require("conf")
+local wm   = require("wm")
 
 
 if modifier_keys then
@@ -57,5 +57,8 @@ wm.bind("I", wm.shift_down)
 wm.bind("U", wm.shift_left)
 wm.bind("O", wm.shift_right)
 wm.bind("\\", wm.toggle_win_lr)
-wm.screen.bind("Left", wm.screen.previous)
-wm.screen.bind("Right", wm.screen.next)
+
+wm.screen.bind("Up",    wm.screen.north, "strict")
+wm.screen.bind("Down",  wm.screen.south, "strict")
+wm.screen.bind("Right", wm.screen.east,  "strict")
+wm.screen.bind("Left",  wm.screen.west,  "strict")
