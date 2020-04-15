@@ -42,7 +42,7 @@
       "commandline": "C:\\Users\\RRoach\\scoop\\shims\\pwsh.exe",
       "colorScheme": "Riley",
       "cursorColor": "#FFFFFF",
-      "cursorShape": "bar",
+      "cursorShape": "filledBox",
       "fontFace"   : "Liga SFMono Nerd Font",
       "fontSize"   : 10,
       "closeOnExit": false
