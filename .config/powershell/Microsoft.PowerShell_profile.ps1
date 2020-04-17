@@ -117,8 +117,8 @@ function Get-Path {
     }
 }
 
-function Get-ChildItemColorAll {
-     Get-ChildItemColor -Force
+function Get-ChildItemColorForce {
+    Get-ChildItemColor -Path "$args" -Force
 }
 
 function Get-GitRepositoryStatus { 
@@ -137,7 +137,7 @@ if (Remove-Item alias:where -Force) {
 }
 Set-Alias -Name 'which' -Value Get-Command
 Set-Alias -Name 'path' -Value Get-Path
-Set-Alias -Name 'l' -Value Get-ChildItemColorAll
+Set-Alias -Name 'l' -Value Get-ChildItemColorForce
 Set-Alias -Name 'gngl' Get-GitConfigGlobal
 Set-Alias -Name 'gnll' Get-GitConfigLocal
 Set-Alias -Name 'gs' Get-GitRepositoryStatus
