@@ -1,15 +1,10 @@
 ### some options
+Set-PSReadLineKeyHandler -Key Tab -Function MenuComplete
 Set-PSReadLineOption -Colors @{
     "Command"   = "`e[34m"
     "Parameter" = "`e[35m"
     "String"    = "`e[33m"
     "Operator"  = "`e[33m"
-}
-
-Set-PSReadLineKeyHandler -Key Tab -Function MenuComplete
-
-$PSDefaultParameterValues = @{
-    "Format-Table:Autosize" = $True
 }
 
 
@@ -51,8 +46,6 @@ function Add-Paths {
     }
 }
 
-Add-Paths
-
 
 
 ### modules
@@ -66,11 +59,14 @@ function Get-Modules {
         "git-aliases"
     )
 
+    $loaded = @()
+
     Remove-PSReadLineKeyHandler 'Ctrl+r'
 
     foreach ($module in $modules) {
         if (Get-Module -ListAvailable $module) {
             Import-Module $module -DisableNameChecking
+            $loaded += $module
         }
     }
 }
@@ -81,9 +77,7 @@ Get-Modules
 
 ### executables/cli tools
 if (Get-Command "rg") {
-    if ($env:FZF_DEFAULT_COMMAND) {
-        $env:FZF_DEFAULT_COMMAND = "rg --files --no-ignore-vcs --hidden"
-    }
+    $env:FZF_DEFAULT_COMMAND = "rg --files --no-ignore-vcs --hidden"
 }
 
 
@@ -123,28 +117,29 @@ function Get-Path {
     }
 }
 
-function Get-GitRepositoryStatus {
+function Get-ChildItemColorAll {
+     Get-ChildItemColor -Force
+}
+
+function Get-GitRepositoryStatus { 
     git status $args
 }
-
-function Get-GitConfigLocal {
-    git config --local --list
+function Get-GitConfigGlobal { 
+    git config --global --list 
+}
+function Get-GitConfigLocal { 
+    git config --local --list 
 }
 
-function Get-GitConfigGlobal {
-    git config --global --list
+
+if (Remove-Item alias:where -Force) {
+    Set-Alias -Name 'where' -Value Get-Commands
 }
-
-Remove-Item alias:where -Force
-Set-Alias -Name 'where' -Value Get-Commands
-
-Set-Alias -Name 'path' -Value Get-Path
-
-Set-Alias -Name 'gs' Get-GitRepositoryStatus
-Set-Alias -Name 'gnll' Get-GitConfigLocal
-Set-Alias -Name 'gngl' Get-GitConfigGlobal
-
 Set-Alias -Name 'which' -Value Get-Command
-Set-Alias -Name 'l' -Value Get-ChildItemColor
-Set-Alias -Name 'r' -Value 'Rscript'
+Set-Alias -Name 'path' -Value Get-Path
+Set-Alias -Name 'l' -Value Get-ChildItemColorAll
+Set-Alias -Name 'gngl' Get-GitConfigGlobal
+Set-Alias -Name 'gnll' Get-GitConfigLocal
+Set-Alias -Name 'gs' Get-GitRepositoryStatus
 Set-Alias -Name 'rr' -Value 'radian'
+Set-Alias -Name 'r' -Value 'Rscript'
