@@ -117,7 +117,7 @@ function wm.is_right_win_frame()
 end
 
 
-function wm.increase_win_width()
+function wm.inc_win_width()
 	local win          = hs.window.focusedWindow()
 	local win_frame    = win:frame()
 	local screen_frame = win:screen():frame()
@@ -141,7 +141,7 @@ function wm.increase_win_width()
 end
 
 
-function wm.decrease_win_width()
+function wm.dec_win_width()
 	local win       = hs.window.focusedWindow()
 	local win_frame = win:frame()
 
@@ -159,7 +159,7 @@ function wm.decrease_win_width()
 end
 
 
-function wm.increase_win_height()
+function wm.inc_win_height()
 	local win       = hs.window.focusedWindow()
 	local win_frame = win:frame()
 
@@ -170,7 +170,7 @@ function wm.increase_win_height()
 end
 
 
-function wm.decrease_win_height()
+function wm.dec_win_height()
 	local win       = hs.window.focusedWindow()
 	local win_frame = win:frame()
 
