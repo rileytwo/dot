@@ -5,6 +5,8 @@ if (( $+commands[git] )); then
     alias gngl='git config --global --list'
     alias gnl='git config --local'
     alias gnll='git config --local --list'
+    alias gs='git status'
+    alias gcu='git checkout upstream'
 fi
 
 
@@ -59,22 +61,26 @@ if (( $+commands[radian] )); then
 fi
 
 
+if [[ -x "/usr/libexec/remotectl" ]]; then
+    alias remotectl='/usr/libexec/remotectl'
+fi
 
 
+if [[ -x "/usr/libexec/PlistBuddy" ]]; then
+    ## plistbuddy alias
+    alias plistbuddy='/usr/libexec/PlistBuddy'
+fi
 
-## plistbuddy alias
-alias plistbuddy='/usr/libexec/PlistBuddy'
+
+alias please='/usr/bin/sudo'
+alias pls='/usr/bin/sudo'
+alias plz='/usr/bin/sudo'
 
 ## echo each path/fpath entry on newline
 # `print -rl -- "${(@s/:/)PATH}"` also works
 alias path='echo -e ${PATH//:/\\n}'
 alias fpath='echo -e ${FPATH//:/\\n}'
 
-# git aliases
-alias gs='git status'
-alias gcu='git checkout upstream'
 
 alias hsg='history | grep'
-alias please='sudo'
-alias pls='sudo'
-alias plz='sudo'
+
