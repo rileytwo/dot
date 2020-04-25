@@ -16,6 +16,6 @@ if (interactive()) {
       radian.shell_prompt    = "\033[0;31m#!>\033[0m ",
       radian.browse_prompt   = "\033[0;33mBrowse[{}]>\033[0m "
     )
-    .libPaths(c("~/Library/R/3.6/library", .libPaths()))
+    .libPaths(c("~/Library/R/4.0/library", .libPaths()))
   })
 }
