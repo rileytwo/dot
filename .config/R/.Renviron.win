@@ -1,3 +1,4 @@
-BINPREF="C:/Rtools/mingw_64/bin/"
-PATH="C:\Rtools\bin\;C:\Rtools\mingw_64\bin\;${PATH}"
+#BINPREF="C:/Rtools/mingw_64/bin/"
+#PATH="C:\Rtools\bin\;C:\Rtools\mingw_64\bin\;${PATH}"
+PATH="${RTOOLS40_HOME}\usr\bin;${PATH}"
 R_LIBS="C:/Users/RRoach/R/win-library/4.0"
