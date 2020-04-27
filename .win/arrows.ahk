@@ -41,6 +41,14 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 Return
 #If
 
+;;; ONENOTE (for Windows)
+#If WinActive("ahk_exe ApplicationFrameHost.exe")
+^[::Send !+{Left}
+^]::Send !+{Right}
+Return
+#If
+
+
 ;;; OUTLOOK
 #If WinActive("ahk_exe OUTLOOK.EXE")
 ^+m::
