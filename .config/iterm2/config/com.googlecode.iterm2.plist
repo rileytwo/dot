@@ -6507,9 +6507,9 @@
 	<key>NoSyncInstallationId</key>
 	<string>F33A6FF2-B6BE-4CD9-8A49-42BC0194D190</string>
 	<key>NoSyncLastTipTime</key>
-	<real>602207054.28538501</real>
+	<real>609715118.613469</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>339</integer>
+	<integer>375</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -7277,9 +7277,10 @@
 	<key>NoSyncTipOfTheDayEligibilityBeganTime</key>
 	<real>601257335.05481899</real>
 	<key>NoSyncTipsDisabled</key>
-	<true/>
+	<false/>
 	<key>NoSyncTipsToNotShow</key>
 	<array>
+		<string>0006</string>
 		<string>0003</string>
 		<string>0000</string>
 		<string>0004</string>
@@ -7287,7 +7288,7 @@
 		<string>000</string>
 		<string>0005</string>
 		<string>0002</string>
-		<string>0006</string>
+		<string>0007</string>
 	</array>
 	<key>OnlyWhenMoreTabs</key>
 	<false/>
@@ -7358,7 +7359,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-04-18T23:28:19Z</date>
+	<date>2020-04-27T21:18:02Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
@@ -7394,7 +7395,7 @@
 	<key>ThreeFingerEmulates</key>
 	<true/>
 	<key>TimeBetweenTips</key>
-	<real>86400</real>
+	<real>604800</real>
 	<key>ToolbeltTools</key>
 	<array>
 		<string>Actions</string>
