@@ -1,5 +1,6 @@
+# symlink to ~/.R/Makevars.win
 # --------
-# Makevars
+# Makevars.win
 # vim: filetype=make
 # --------
 
