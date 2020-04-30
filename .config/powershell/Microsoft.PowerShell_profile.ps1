@@ -16,9 +16,7 @@ if ($IsWindows) {
         Import-Module "$ChocolateyProfile"
     }
 
-    $env:PSModulePath += ";${HOME}\scoop\modules"
-    $env:Path += ";C:\ProgramData\jetpack\bin"
-    $env:Path += ";${HOME}\.cargo\bin"
+    $env:PSModulePath = "${HOME}\scoop\modules;${env:PSModulePath}"
 }
 
 
