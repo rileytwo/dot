@@ -1,0 +1,52 @@
+{
+    "highlight_selected_line": true,
+    "panes": {
+        "quadrants": [
+            "Source",
+            "TabSet2",
+            "TabSet1",
+            "Console"
+        ],
+        "tabSet1": [
+            "Environment",
+            "Files",
+            "Plots",
+            "Connections",
+            "Packages",
+            "Help",
+            "Build",
+            "VCS",
+            "Tutorial",
+            "Viewer",
+            "Presentation"
+        ],
+        "tabSet2": [
+            "History"
+        ],
+        "console_left_on_top": false,
+        "console_right_on_top": false
+    },
+    "show_indent_guides": true,
+    "soft_wrap_r_files": true,
+    "syntax_color_console": true,
+    "highlight_r_function_calls": true,
+    "editor_theme": "Kiss",
+    "default_project_location": "~",
+    "source_with_echo": true,
+    "default_sweave_engine": "knitr",
+    "pdf_previewer": "rstudio",
+    "console_double_click_select": true,
+    "save_workspace": "never",
+    "remove_history_duplicates": true,
+    "reuse_sessions_for_project_links": true,
+    "git_exe_path": "/usr/local/bin/git",
+    "posix_terminal_shell": "zsh",
+    "continue_comments_on_newline": true,
+    "fold_style": "begin-only",
+    "font_size_points": 11,
+    "full_project_path_in_window_title": true,
+    "jobs_tab_visibility": "shown",
+    "custom_shell_command": "/usr/local/bin/zsh",
+    "custom_shell_options": "-l",
+    "terminal_bell_style": "none"
+}
