@@ -26,29 +26,29 @@ if ($IsMacOS) {
 }
 
 
-## macOS/linux paths
-function Add-Paths {
-    $paths = @(
-        "$HOME/bin",
-        "$HOME/.local/bin",
-        "$HOME/.pyenv/bin",
-        "$HOME/.pyenv/shims",
-        "$HOME/.rbenv/bin"
-        "$HOME/.rbenv/shims"
-    )
+## user-defined paths
+function Add-UserPaths([array] $Paths) {
 
-    foreach ($path in $paths) {
-        if (Test-Path $path) {
-            $env:PATH = ($env:PATH).Insert(0, "${path}:")
+    foreach ($Path in $Paths) {
+        if (Test-Path $Path) {
+            $env:PATH = ($env:PATH).Insert(0, "${Path}:")
         }
     }
 }
 
+Add-UserPaths -Paths @(
+    "$HOME/bin",
+    "$HOME/.local/bin",
+    "$HOME/.pyenv/bin",
+    "$HOME/.pyenv/shims",
+    "$HOME/.rbenv/bin",
+    "$HOME/.rbenv/shims"
+)
 
 
 ### modules
 # (TODO: maybe use a hashtable with modules and args?
-function Get-Modules([array] $Modules) {
+function Import-UserModules([array] $Modules) {
     $Loaded = @()
 
     Remove-PSReadLineKeyHandler 'Ctrl+r'
@@ -60,7 +60,7 @@ function Get-Modules([array] $Modules) {
     }
 }
 
-Get-Modules -Modules @(
+Import-UserModules -Modules @(
     "Get-ChildItemColor",
     "posh-git",
     "oh-my-posh",
@@ -77,7 +77,7 @@ if (Get-Command "rg") {
 
 
 # // set theme
-function Set-MyTheme([string] $Theme) {
+function Set-UserTheme([string] $Theme) {
     if ($ThemeSettings) {
         if (Test-Path -IsValid "$($ThemeSettings.MyThemesLocation)/riley.psm1") {
             Set-Theme $Theme
@@ -89,7 +89,7 @@ function Set-MyTheme([string] $Theme) {
     }
 }
 
-Set-MyTheme -Theme riley
+Set-UserTheme -Theme riley
 
 
 
