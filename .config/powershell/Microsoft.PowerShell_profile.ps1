@@ -11,7 +11,7 @@ Set-PSReadLineOption -Colors @{
 
 ### OS special things
 if ($IsWindows) {
-    $ChocolateyProfile = "$env:ChocolateyInstall\helpers\chocolateyProfile.psm1"
+    $ChocolateyProfile = "${env:ChocolateyInstall}\helpers\chocolateyProfile.psm1"
     if (Test-Path($ChocolateyProfile)) {
         Import-Module "$ChocolateyProfile"
     }
@@ -28,7 +28,6 @@ if ($IsMacOS) {
 
 ## user-defined paths
 function Add-UserPaths([array] $Paths) {
-
     foreach ($Path in $Paths) {
         if (Test-Path $Path) {
             $env:PATH = ($env:PATH).Insert(0, "${Path}:")
@@ -50,7 +49,6 @@ Add-UserPaths -Paths @(
 # (TODO: maybe use a hashtable with modules and args?
 function Import-UserModules([array] $Modules) {
     $Loaded = @()
-
     Remove-PSReadLineKeyHandler 'Ctrl+r'
     foreach ($Module in $Modules) {
         if (Get-Module -ListAvailable $Module) {
