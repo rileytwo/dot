@@ -48,29 +48,25 @@ function Add-Paths {
 
 ### modules
 # (TODO: maybe use a hashtable with modules and args?
-function Get-Modules {
-    $modules = @(
-        "Get-ChildItemColor",
-        "posh-git",
-        "oh-my-posh",
-        "PSFzf",
-        "git-aliases"
-    )
-
-    $loaded = @()
+function Get-Modules([array] $Modules) {
+    $Loaded = @()
 
     Remove-PSReadLineKeyHandler 'Ctrl+r'
-
-    foreach ($module in $modules) {
-        if (Get-Module -ListAvailable $module) {
-            Import-Module $module -DisableNameChecking
-            $loaded += $module
+    foreach ($Module in $Modules) {
+        if (Get-Module -ListAvailable $Module) {
+            Import-Module $Module -DisableNameChecking
+            $Loaded += $Module
         }
     }
 }
 
-Get-Modules
-
+Get-Modules -Modules @(
+    "Get-ChildItemColor",
+    "posh-git",
+    "oh-my-posh",
+    "PSFzf",
+    "git-aliases"
+)
 
 
 ### executables/cli tools
@@ -81,58 +77,33 @@ if (Get-Command "rg") {
 
 
 # // set theme
-function Set-MyTheme {
+function Set-MyTheme([string] $Theme) {
     if ($ThemeSettings) {
         if (Test-Path -IsValid "$($ThemeSettings.MyThemesLocation)/riley.psm1") {
-            Set-Theme riley
+            Set-Theme $Theme
         }
         else {
+            # Set a default oh-my-posh theme if riley.psm1 {is,was}n't set
             Set-Theme Avit
         }
     }
 }
 
-Set-MyTheme
+Set-MyTheme -Theme riley
 
 
 
 ### aliases
-function Get-Commands {
-    if ($IsWindows) {
-        cmd /C "where $args"
-    }
-    else {
-        /usr/bin/which -a $args
-    }
-}
-
 function Get-Path {
-    if ($IsWindows) {
-        $env:PATH.Split(';')
-    }
-    else {
-        $env:PATH.Split(':')
-    }
+    if ($IsWindows) { $env:PATH.Split(';') } else { $env:PATH.Split(':') }
 }
 
-function Get-ChildItemColorForce {
-    Get-ChildItemColor -Path "$args" -Force
-}
+function Get-ChildItemColorForce { Get-ChildItemColor -Path "$args" -Force }
 
-function Get-GitRepositoryStatus { 
-    git status $args
-}
-function Get-GitConfigGlobal { 
-    git config --global --list 
-}
-function Get-GitConfigLocal { 
-    git config --local --list 
-}
+function Get-GitRepositoryStatus { git status $args }
+function Get-GitConfigGlobal { git config --global --list }
+function Get-GitConfigLocal { git config --local --list }
 
-
-if (Remove-Item alias:where -Force) {
-    Set-Alias -Name 'where' -Value Get-Commands
-}
 Set-Alias -Name 'which' -Value Get-Command
 Set-Alias -Name 'path' -Value Get-Path
 Set-Alias -Name 'l' -Value Get-ChildItemColorForce
