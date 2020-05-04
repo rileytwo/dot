@@ -11,6 +11,21 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 ; + = SHIFT
 ; # = Windows Key
 
+;; Unbind Win+Esc
+#Esc::
+
+
+;; Caps as Hyper
+;;*CapsLock::
+;;    SetKeyDelay -1
+;;    Send {Blind}{Ctrl DownTemp}{Alt DownTemp}{Shift DownTemp}
+;;return
+;;
+;;*CapsLock up::
+;;    SetKeyDelay -1
+;;    Send {Blind}{Ctrl Up}{Alt Up}{Shift Up}
+;;return
+
 
 ;; alt+{w/a/s/d} for navigating text
 !w::Send {Up}
@@ -25,8 +40,6 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 ;; ^q => close window | ^h => minimize window
 ^q::Send {AltDown}{F4}{AltUp}
 ^h::WinMinimize, A
-
-#Esc::
 
 
 ;;; FILE EXPLORER
