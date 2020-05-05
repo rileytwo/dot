@@ -30,7 +30,11 @@ if ($IsMacOS) {
 function Add-UserPaths([array] $Paths) {
     foreach ($Path in $Paths) {
         if (Test-Path $Path) {
-            $env:PATH = ($env:PATH).Insert(0, "${Path}:")
+            switch($IsWindows) {
+                $True   { $Sep = ";" }
+                default { $Sep = ":" }
+            }
+            $env:PATH = ($env:PATH).Insert(0, "${Path}${Sep}")
         }
     }
 }
