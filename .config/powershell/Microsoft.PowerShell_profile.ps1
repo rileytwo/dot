@@ -11,12 +11,12 @@ Set-PSReadLineOption -Colors @{
 
 ### OS special things
 if ($IsWindows) {
-    $ChocolateyProfile = "${env:ChocolateyInstall}\helpers\chocolateyProfile.psm1"
+    $ChocolateyProfile = "${env:ChocolateyInstall}/helpers/chocolateyProfile.psm1"
     if (Test-Path($ChocolateyProfile)) {
         Import-Module "$ChocolateyProfile"
     }
 
-    $env:PSModulePath = "${HOME}\scoop\modules;${env:PSModulePath}"
+    $env:PSModulePath = "${HOME}/scoop/modules;${env:PSModulePath}"
 }
 
 
