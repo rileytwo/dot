@@ -41,13 +41,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.15000000596046448</real>
+				<real>0.34096416831016541</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.15000000596046448</real>
+				<real>0.34103506803512573</real>
 				<key>Red Component</key>
-				<real>0.15000000596046448</real>
+				<real>0.3409724235534668</real>
 			</dict>
 			<key>Ansi 1 Color</key>
 			<dict>
@@ -123,7 +123,7 @@
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.89614838361740112</real>
+				<real>0.89803922176361084</real>
 				<key>Red Component</key>
 				<real>0.0</real>
 			</dict>
@@ -223,13 +223,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.4078223705291748</real>
+				<real>0.48705083131790161</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.40782788395881653</real>
+				<real>0.48714786767959595</real>
 				<key>Red Component</key>
-				<real>0.40781760215759277</real>
+				<real>0.48706209659576416</real>
 			</dict>
 			<key>Ansi 9 Color</key>
 			<dict>
@@ -677,7 +677,7 @@
 	<key>MinimalTabStyleOutlineStrength</key>
 	<real>0.0</real>
 	<key>NSColorPanelMode</key>
-	<string>1</string>
+	<string>6</string>
 	<key>NSColorPickerPreferredRGBEntryMode</key>
 	<integer>2</integer>
 	<key>NSColorPickerSlidersDefaults</key>
@@ -685,7 +685,7 @@
 	<key>NSFontPanelAttributes</key>
 	<string>1, 2</string>
 	<key>NSNavLastRootDirectory</key>
-	<string>~</string>
+	<string>~/.dot/.config/iterm2/colors</string>
 	<key>NSNavLastUserSetHideExtensionButtonState</key>
 	<false/>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
@@ -714,7 +714,7 @@
 	dWxs0g0ODxJaTlMub2JqZWN0c1YkY2xhc3OiEBGAAoAKgA3TFA0OFRkdV05TLmtleXOj
 	FhcYgAOABIAFoxobHIAGgAeACIAJWklkZW50aWZpZXJVV2lkdGhWSGlkZGVuUTAjQGjA
 	AAAAAAAI0iUmJyhaJGNsYXNzbmFtZVgkY2xhc3Nlc1xOU0RpY3Rpb25hcnmiJylYTlNP
-	YmplY3TTFA0OKy8doxYXGIADgASABaMwMRyAC4AMgAiACVExI0BzsZ2yLQ5W0iUmNzhe
+	YmplY3TTFA0OKy8doxYXGIADgASABaMwMRyAC4AMgAiACVExI0B0oZ2yLQ5W0iUmNzhe
 	TlNNdXRhYmxlQXJyYXmjNzkpV05TQXJyYXkACAARABoAJAApADIANwBJAEwAUgBUAGMA
 	aQBuAHkAgACDAIUAhwCJAJAAmACcAJ4AoACiAKYAqACqAKwArgC5AL8AxgDIANEA0gDX
 	AOIA6wD4APsBBAELAQ8BEQETARUBGQEbAR0BHwEhASMBLAExAUABRAAAAAAAAAIBAAAA
@@ -770,11 +770,11 @@
 	<key>NSWindow Frame NSColorPanel</key>
 	<string>200 415 279 378 0 0 1680 1027 </string>
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
-	<string>419 431 841 449 0 0 1680 1027 </string>
+	<string>440 446 799 448 0 0 1680 1027 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>490 343 700 586 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>3522 155 956 998 2560 101 1920 1057 </string>
+	<string>942 304 736 618 0 0 1680 1027 </string>
 	<key>NeverWarnAboutShortLivedSessions_120FAA18-3181-488D-9B29-68949F1F0CE6</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_120FAA18-3181-488D-9B29-68949F1F0CE6_selection</key>
@@ -809,13 +809,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.15000000596046448</real>
+				<real>0.34096416831016541</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.15000000596046448</real>
+				<real>0.34103506803512573</real>
 				<key>Red Component</key>
-				<real>0.15000000596046448</real>
+				<real>0.3409724235534668</real>
 			</dict>
 			<key>Ansi 1 Color</key>
 			<dict>
@@ -891,7 +891,7 @@
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.89803921568627454</real>
+				<real>0.89803922176361084</real>
 				<key>Red Component</key>
 				<real>0.0</real>
 			</dict>
@@ -991,13 +991,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.4078223705291748</real>
+				<real>0.48705083131790161</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.40782788395881653</real>
+				<real>0.48714786767959595</real>
 				<key>Red Component</key>
-				<real>0.40781760215759277</real>
+				<real>0.48706209659576416</real>
 			</dict>
 			<key>Ansi 9 Color</key>
 			<dict>
@@ -1023,13 +1023,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.070588235294117646</real>
+				<real>0.070588238537311554</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.070588235294117646</real>
+				<real>0.070588238537311554</real>
 				<key>Red Component</key>
-				<real>0.070588235294117646</real>
+				<real>0.070588238537311554</real>
 			</dict>
 			<key>Background Image Location</key>
 			<string></string>
@@ -6501,9 +6501,9 @@
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
 		<key>screenFrame</key>
-		<string>{{2560, 101}, {1920, 1080}}</string>
+		<string>{{0, 0}, {1680, 1050}}</string>
 		<key>topLeft</key>
-		<string>{2602, 1008}</string>
+		<string>{43, 833}</string>
 	</dict>
 	<key>NoSyncHaveUsedCopyMode</key>
 	<true/>
@@ -6512,7 +6512,7 @@
 	<key>NoSyncLastTipTime</key>
 	<real>610321907.46694195</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>413</integer>
+	<integer>439</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -7363,7 +7363,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-05-02T23:51:16Z</date>
+	<date>2020-05-09T22:53:39Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
@@ -7424,7 +7424,7 @@
 				<key>Has Toolbelt</key>
 				<false/>
 				<key>Height</key>
-				<real>591</real>
+				<real>618</real>
 				<key>Hide After Opening</key>
 				<false/>
 				<key>Hiding Toolbelt Should Resize Window</key>
@@ -7480,13 +7480,13 @@
 												<key>Alpha Component</key>
 												<real>1</real>
 												<key>Blue Component</key>
-												<real>0.15000000596046448</real>
+												<real>0.34096416831016541</real>
 												<key>Color Space</key>
 												<string>sRGB</string>
 												<key>Green Component</key>
-												<real>0.15000000596046448</real>
+												<real>0.34103506803512573</real>
 												<key>Red Component</key>
-												<real>0.15000000596046448</real>
+												<real>0.3409724235534668</real>
 											</dict>
 											<key>Ansi 1 Color</key>
 											<dict>
@@ -7562,7 +7562,7 @@
 												<key>Color Space</key>
 												<string>sRGB</string>
 												<key>Green Component</key>
-												<real>0.89803921568627454</real>
+												<real>0.89803922176361084</real>
 												<key>Red Component</key>
 												<real>0.0</real>
 											</dict>
@@ -7662,13 +7662,13 @@
 												<key>Alpha Component</key>
 												<real>1</real>
 												<key>Blue Component</key>
-												<real>0.4078223705291748</real>
+												<real>0.48705083131790161</real>
 												<key>Color Space</key>
 												<string>sRGB</string>
 												<key>Green Component</key>
-												<real>0.40782788395881653</real>
+												<real>0.48714786767959595</real>
 												<key>Red Component</key>
-												<real>0.40781760215759277</real>
+												<real>0.48706209659576416</real>
 											</dict>
 											<key>Ansi 9 Color</key>
 											<dict>
@@ -7694,13 +7694,13 @@
 												<key>Alpha Component</key>
 												<real>1</real>
 												<key>Blue Component</key>
-												<real>0.070588235294117646</real>
+												<real>0.070588238537311554</real>
 												<key>Color Space</key>
 												<string>sRGB</string>
 												<key>Green Component</key>
-												<real>0.070588235294117646</real>
+												<real>0.070588238537311554</real>
 												<key>Red Component</key>
-												<real>0.070588235294117646</real>
+												<real>0.070588238537311554</real>
 											</dict>
 											<key>Background Image Location</key>
 											<string></string>
@@ -7825,7 +7825,7 @@
 												<real>0.94999998807907104</real>
 											</dict>
 											<key>Guid</key>
-											<string>676A659D-F75F-45C1-BFB8-7F1E6FFB092B</string>
+											<string>2C651CE0-396E-4380-A81F-1D40536AF3D0</string>
 											<key>Has Hotkey</key>
 											<false/>
 											<key>Horizontal Spacing</key>
@@ -8553,40 +8553,6 @@
 										<integer>91</integer>
 										<key>Commands</key>
 										<array>
-											<string>mdfind creator</string>
-											<string>mdfind creator | rg -v "caf"</string>
-											<string>mdfind creator | rg "qt"</string>
-											<string>bid.sh -a /Applications/Qt\ Creator.app</string>
-											<string>mdfind org.qt-projct.qtcreator</string>
-											<string>where ssl</string>
-											<string>where openssl</string>
-											<string>cat .R/Makevars</string>
-											<string>e /usr/local/include</string>
-											<string>e /usr/local/opt/openssl</string>
-											<string>l .openfortigui</string>
-											<string>cd .openfortigui</string>
-											<string>nvim main.conf</string>
-											<string>cd</string>
-											<string>nvim main.conf</string>
-											<string>cd .openfortigui</string>
-											<string>nvim main.conf</string>
-											<string>nvim main.conf</string>
-											<string>cat /etc/resolv.conf</string>
-											<string>ct /usr/local/etc/openfortivpn/work-config</string>
-											<string>cat /usr/local/etc/openfortivpn/work-config</string>
-											<string>mdfind openfortigui</string>
-											<string>cd</string>
-											<string>cd .dot</string>
-											<string>gs</string>
-											<string>ga</string>
-											<string>git restore .</string>
-											<string>gs</string>
-											<string>cd</string>
-											<string>brew update &amp;&amp; brew upgrade; brew cask upgrade --no-quarantine</string>
-											<string>brew changelog</string>
-											<string>brew search changelog</string>
-											<string>brew commands</string>
-											<string>brew changelog python</string>
 											<string>where brew-changelog.rb</string>
 											<string>where brew-changelog</string>
 											<string>where brew changelog</string>
@@ -8653,45 +8619,43 @@
 											<string>conda env list</string>
 											<string>pyenv deactivate miniconda3-latest</string>
 											<string>pvs</string>
+											<string>cd github/</string>
+											<string>cd Karabiner-DriverKit-VirtualHIDDevice</string>
+											<string>gs</string>
+											<string>e</string>
+											<string>cat .prettierrc.json</string>
+											<string>gs</string>
+											<string>e</string>
+											<string>xcodegen</string>
+											<string>cd src</string>
+											<string>e</string>
+											<string>xcodegen</string>
+											<string>e</string>
+											<string>open KarabinerDriverKitVirtualHIDDevice.xcodeproj</string>
+											<string>gs</string>
+											<string>cd</string>
+											<string>cd github/Karabiner-DriverKit-VirtualHIDDevice</string>
+											<string>l</string>
+											<string>cd ..</string>
+											<string>rm -rf Karabiner-DriverKit-VirtualHIDDevice</string>
+											<string>git clone https://github.com/pqrs-org/Karabiner-DriverKit-VirtualHIDDevice.git</string>
+											<string>cd Karabiner-DriverKit-VirtualHIDDevice</string>
+											<string>e</string>
+											<string>e src</string>
+											<string>cd src</string>
+											<string>e</string>
+											<string>e DriverKit</string>
+											<string>cd ExtensionManager</string>
+											<string>e</string>
+											<string>cd ..</string>
+											<string>e</string>
+											<string>cat project.yml</string>
+											<string>gs</string>
+											<string>cd</string>
+											<string>clear</string>
 										</array>
 										<key>Directories</key>
 										<array>
-											<string>/Users/riley/.openfortigui</string>
-											<string>/Users/riley/.openfortigui</string>
-											<string>/Users/riley/.openfortigui</string>
-											<string>/Users/riley/.openfortigui</string>
-											<string>/Users/riley/.openfortigui</string>
-											<string>/Users/riley/.openfortigui</string>
-											<string>/Users/riley/.openfortigui</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
 											<string>/Users/riley/.dot</string>
 											<string>/Users/riley/.dot</string>
 											<string>/Users/riley/.dot</string>
@@ -8754,6 +8718,42 @@
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley/github</string>
+											<string>/Users/riley/github/Karabiner-DriverKit-VirtualHIDDevice</string>
+											<string>/Users/riley/github/Karabiner-DriverKit-VirtualHIDDevice</string>
+											<string>/Users/riley/github/Karabiner-DriverKit-VirtualHIDDevice</string>
+											<string>/Users/riley/github/Karabiner-DriverKit-VirtualHIDDevice</string>
+											<string>/Users/riley/github/Karabiner-DriverKit-VirtualHIDDevice</string>
+											<string>/Users/riley/github/Karabiner-DriverKit-VirtualHIDDevice</string>
+											<string>/Users/riley/github/Karabiner-DriverKit-VirtualHIDDevice</string>
+											<string>/Users/riley/github/Karabiner-DriverKit-VirtualHIDDevice/src</string>
+											<string>/Users/riley/github/Karabiner-DriverKit-VirtualHIDDevice/src</string>
+											<string>/Users/riley/github/Karabiner-DriverKit-VirtualHIDDevice/src</string>
+											<string>/Users/riley/github/Karabiner-DriverKit-VirtualHIDDevice/src</string>
+											<string>/Users/riley/github/Karabiner-DriverKit-VirtualHIDDevice/src</string>
+											<string>/Users/riley/github/Karabiner-DriverKit-VirtualHIDDevice/src</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley/github/Karabiner-DriverKit-VirtualHIDDevice</string>
+											<string>/Users/riley/github/Karabiner-DriverKit-VirtualHIDDevice</string>
+											<string>/Users/riley/github</string>
+											<string>/Users/riley/github</string>
+											<string>/Users/riley/github</string>
+											<string>/Users/riley/github/Karabiner-DriverKit-VirtualHIDDevice</string>
+											<string>/Users/riley/github/Karabiner-DriverKit-VirtualHIDDevice</string>
+											<string>/Users/riley/github/Karabiner-DriverKit-VirtualHIDDevice</string>
+											<string>/Users/riley/github/Karabiner-DriverKit-VirtualHIDDevice/src</string>
+											<string>/Users/riley/github/Karabiner-DriverKit-VirtualHIDDevice/src</string>
+											<string>/Users/riley/github/Karabiner-DriverKit-VirtualHIDDevice/src</string>
+											<string>/Users/riley/github/Karabiner-DriverKit-VirtualHIDDevice/src/ExtensionManager</string>
+											<string>/Users/riley/github/Karabiner-DriverKit-VirtualHIDDevice/src/ExtensionManager</string>
+											<string>/Users/riley/github/Karabiner-DriverKit-VirtualHIDDevice/src</string>
+											<string>/Users/riley/github/Karabiner-DriverKit-VirtualHIDDevice/src</string>
+											<string>/Users/riley/github/Karabiner-DriverKit-VirtualHIDDevice/src</string>
+											<string>/Users/riley/github/Karabiner-DriverKit-VirtualHIDDevice/src</string>
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
 										</array>
@@ -8935,217 +8935,217 @@
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
@@ -9387,7 +9387,7 @@
 											<string>Shell Launcher</string>
 										</dict>
 										<key>Rows</key>
-										<integer>33</integer>
+										<integer>34</integer>
 										<key>Session GUID</key>
 										<string>89702BF7-0944-49B3-BA09-88B9751E9332</string>
 										<key>Short Lived Single Use</key>
@@ -9408,9 +9408,9 @@
 									<key>frame</key>
 									<dict>
 										<key>height</key>
-										<real>532</real>
+										<real>559</real>
 										<key>width</key>
-										<real>732</real>
+										<real>736</real>
 										<key>x</key>
 										<real>0.0</real>
 										<key>y</key>
@@ -9423,9 +9423,9 @@
 							<key>frame</key>
 							<dict>
 								<key>height</key>
-								<real>532</real>
+								<real>559</real>
 								<key>width</key>
-								<real>732</real>
+								<real>736</real>
 								<key>x</key>
 								<real>0.0</real>
 								<key>y</key>
@@ -9455,13 +9455,13 @@
 				<key>Use Transparency</key>
 				<false/>
 				<key>Width</key>
-				<real>732</real>
+				<real>736</real>
 				<key>Window Type</key>
 				<integer>13</integer>
 				<key>X Origin</key>
 				<real>942</real>
 				<key>Y Origin</key>
-				<real>331</real>
+				<real>304</real>
 			</dict>
 		</array>
 	</dict>
