@@ -16,7 +16,13 @@ if ($IsWindows) {
         Import-Module "$ChocolateyProfile"
     }
 
-    $env:PSModulePath = "${HOME}/scoop/modules;${env:PSModulePath}"
+    if (Test-Path("${HOME}/scoop/modules")) {
+        $env:PSModulePath = "${HOME}/scoop/modules;${env:PSModulePath}"
+    }
+
+    if (Test-Path("${HOME}/AppData/Local/Programs/Microsoft VS Code/bin")) {
+        $env:PATH = "${HOME}/AppData/Local/Programs/Microsoft VS Code/bin;${env:PATH}"
+    }
 }
 
 
