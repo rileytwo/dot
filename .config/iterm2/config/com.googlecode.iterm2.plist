@@ -714,7 +714,7 @@
 	dWxs0g0ODxJaTlMub2JqZWN0c1YkY2xhc3OiEBGAAoAKgA3TFA0OFRkdV05TLmtleXOj
 	FhcYgAOABIAFoxobHIAGgAeACIAJWklkZW50aWZpZXJVV2lkdGhWSGlkZGVuUTAjQGjA
 	AAAAAAAI0iUmJyhaJGNsYXNzbmFtZVgkY2xhc3Nlc1xOU0RpY3Rpb25hcnmiJylYTlNP
-	YmplY3TTFA0OKy8doxYXGIADgASABaMwMRyAC4AMgAiACVExI0B0oZ2yLQ5W0iUmNzhe
+	YmplY3TTFA0OKy8doxYXGIADgASABaMwMRyAC4AMgAiACVExI0BzsZ2yLQ5W0iUmNzhe
 	TlNNdXRhYmxlQXJyYXmjNzkpV05TQXJyYXkACAARABoAJAApADIANwBJAEwAUgBUAGMA
 	aQBuAHkAgACDAIUAhwCJAJAAmACcAJ4AoACiAKYAqACqAKwArgC5AL8AxgDIANEA0gDX
 	AOIA6wD4APsBBAELAQ8BEQETARUBGQEbAR0BHwEhASMBLAExAUABRAAAAAAAAAIBAAAA
@@ -774,7 +774,7 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>490 343 700 586 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>942 304 736 618 0 0 1680 1027 </string>
+	<string>3539 498 736 618 2560 101 1920 1057 </string>
 	<key>NeverWarnAboutShortLivedSessions_120FAA18-3181-488D-9B29-68949F1F0CE6</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_120FAA18-3181-488D-9B29-68949F1F0CE6_selection</key>
@@ -1524,7 +1524,7 @@
 						<real>0.75080698728561401</real>
 					</dict>
 					<key>font</key>
-					<string>SF-Mono-Plus-Regular 12</string>
+					<string>SF-Mono-Plus-Regular 11</string>
 				</dict>
 				<key>components</key>
 				<array>
@@ -1577,7 +1577,7 @@
 									<real>0.75080698728561401</real>
 								</dict>
 								<key>font</key>
-								<string>SF-Mono-Plus-Regular 12</string>
+								<string>SF-Mono-Plus-Regular 11</string>
 							</dict>
 						</dict>
 					</dict>
@@ -1628,7 +1628,7 @@
 									<real>0.75080698728561401</real>
 								</dict>
 								<key>font</key>
-								<string>SF-Mono-Plus-Regular 12</string>
+								<string>SF-Mono-Plus-Regular 11</string>
 							</dict>
 						</dict>
 					</dict>
@@ -1677,7 +1677,7 @@
 									<real>0.75080698728561401</real>
 								</dict>
 								<key>font</key>
-								<string>SF-Mono-Plus-Regular 12</string>
+								<string>SF-Mono-Plus-Regular 11</string>
 							</dict>
 						</dict>
 					</dict>
@@ -2493,7 +2493,7 @@
 						<real>0.74901962280273438</real>
 					</dict>
 					<key>font</key>
-					<string>SFMono-Regular 12</string>
+					<string>SFMono-Regular 11</string>
 				</dict>
 				<key>components</key>
 				<array>
@@ -2546,7 +2546,7 @@
 									<real>0.74901962280273438</real>
 								</dict>
 								<key>font</key>
-								<string>SFMono-Regular 12</string>
+								<string>SFMono-Regular 11</string>
 							</dict>
 						</dict>
 					</dict>
@@ -2570,6 +2570,34 @@
 								<integer>0</integer>
 								<key>auto-rainbow style</key>
 								<integer>0</integer>
+								<key>background color</key>
+								<dict>
+									<key>Alpha Component</key>
+									<real>1</real>
+									<key>Blue Component</key>
+									<real>0.070588238537311554</real>
+									<key>Color Space</key>
+									<string>sRGB</string>
+									<key>Green Component</key>
+									<real>0.070588238537311554</real>
+									<key>Red Component</key>
+									<real>0.070588238537311554</real>
+								</dict>
+								<key>default text color</key>
+								<dict>
+									<key>Alpha Component</key>
+									<real>1</real>
+									<key>Blue Component</key>
+									<real>0.74901962280273438</real>
+									<key>Color Space</key>
+									<string>sRGB</string>
+									<key>Green Component</key>
+									<real>0.74901962280273438</real>
+									<key>Red Component</key>
+									<real>0.74901962280273438</real>
+								</dict>
+								<key>font</key>
+								<string>SFMono-Regular 11</string>
 							</dict>
 						</dict>
 					</dict>
@@ -2591,6 +2619,34 @@
 								<integer>0</integer>
 								<key>auto-rainbow style</key>
 								<integer>0</integer>
+								<key>background color</key>
+								<dict>
+									<key>Alpha Component</key>
+									<real>1</real>
+									<key>Blue Component</key>
+									<real>0.070588238537311554</real>
+									<key>Color Space</key>
+									<string>sRGB</string>
+									<key>Green Component</key>
+									<real>0.070588238537311554</real>
+									<key>Red Component</key>
+									<real>0.070588238537311554</real>
+								</dict>
+								<key>default text color</key>
+								<dict>
+									<key>Alpha Component</key>
+									<real>1</real>
+									<key>Blue Component</key>
+									<real>0.74901962280273438</real>
+									<key>Color Space</key>
+									<string>sRGB</string>
+									<key>Green Component</key>
+									<real>0.74901962280273438</real>
+									<key>Red Component</key>
+									<real>0.74901962280273438</real>
+								</dict>
+								<key>font</key>
+								<string>SFMono-Regular 11</string>
 							</dict>
 						</dict>
 					</dict>
@@ -3409,7 +3465,7 @@
 						<real>0.74901962280273438</real>
 					</dict>
 					<key>font</key>
-					<string>SFMono-Regular 12</string>
+					<string>SFMono-Regular 11</string>
 				</dict>
 				<key>components</key>
 				<array>
@@ -3462,7 +3518,7 @@
 									<real>0.74901962280273438</real>
 								</dict>
 								<key>font</key>
-								<string>SFMono-Regular 12</string>
+								<string>SFMono-Regular 11</string>
 							</dict>
 						</dict>
 					</dict>
@@ -3486,6 +3542,34 @@
 								<integer>0</integer>
 								<key>auto-rainbow style</key>
 								<integer>0</integer>
+								<key>background color</key>
+								<dict>
+									<key>Alpha Component</key>
+									<real>1</real>
+									<key>Blue Component</key>
+									<real>0.070588238537311554</real>
+									<key>Color Space</key>
+									<string>sRGB</string>
+									<key>Green Component</key>
+									<real>0.070588238537311554</real>
+									<key>Red Component</key>
+									<real>0.070588238537311554</real>
+								</dict>
+								<key>default text color</key>
+								<dict>
+									<key>Alpha Component</key>
+									<real>1</real>
+									<key>Blue Component</key>
+									<real>0.74901962280273438</real>
+									<key>Color Space</key>
+									<string>sRGB</string>
+									<key>Green Component</key>
+									<real>0.74901962280273438</real>
+									<key>Red Component</key>
+									<real>0.74901962280273438</real>
+								</dict>
+								<key>font</key>
+								<string>SFMono-Regular 11</string>
 							</dict>
 						</dict>
 					</dict>
@@ -3507,6 +3591,34 @@
 								<integer>0</integer>
 								<key>auto-rainbow style</key>
 								<integer>0</integer>
+								<key>background color</key>
+								<dict>
+									<key>Alpha Component</key>
+									<real>1</real>
+									<key>Blue Component</key>
+									<real>0.070588238537311554</real>
+									<key>Color Space</key>
+									<string>sRGB</string>
+									<key>Green Component</key>
+									<real>0.070588238537311554</real>
+									<key>Red Component</key>
+									<real>0.070588238537311554</real>
+								</dict>
+								<key>default text color</key>
+								<dict>
+									<key>Alpha Component</key>
+									<real>1</real>
+									<key>Blue Component</key>
+									<real>0.74901962280273438</real>
+									<key>Color Space</key>
+									<string>sRGB</string>
+									<key>Green Component</key>
+									<real>0.74901962280273438</real>
+									<key>Red Component</key>
+									<real>0.74901962280273438</real>
+								</dict>
+								<key>font</key>
+								<string>SFMono-Regular 11</string>
 							</dict>
 						</dict>
 					</dict>
@@ -4324,7 +4436,7 @@
 						<real>0.74901962280273438</real>
 					</dict>
 					<key>font</key>
-					<string>SFMono-Regular 12</string>
+					<string>SFMono-Regular 11</string>
 				</dict>
 				<key>components</key>
 				<array>
@@ -4377,7 +4489,7 @@
 									<real>0.74901962280273438</real>
 								</dict>
 								<key>font</key>
-								<string>SFMono-Regular 12</string>
+								<string>SFMono-Regular 11</string>
 							</dict>
 						</dict>
 					</dict>
@@ -4428,7 +4540,7 @@
 									<real>0.74901962280273438</real>
 								</dict>
 								<key>font</key>
-								<string>SFMono-Regular 12</string>
+								<string>SFMono-Regular 11</string>
 							</dict>
 						</dict>
 					</dict>
@@ -4477,7 +4589,7 @@
 									<real>0.74901962280273438</real>
 								</dict>
 								<key>font</key>
-								<string>SFMono-Regular 12</string>
+								<string>SFMono-Regular 11</string>
 							</dict>
 						</dict>
 					</dict>
@@ -5295,7 +5407,7 @@
 						<real>0.74901962280273438</real>
 					</dict>
 					<key>font</key>
-					<string>SFMono-Regular 12</string>
+					<string>SFMono-Regular 11</string>
 				</dict>
 				<key>components</key>
 				<array>
@@ -5348,7 +5460,7 @@
 									<real>0.74901962280273438</real>
 								</dict>
 								<key>font</key>
-								<string>SFMono-Regular 12</string>
+								<string>SFMono-Regular 11</string>
 							</dict>
 						</dict>
 					</dict>
@@ -5399,7 +5511,7 @@
 									<real>0.74901962280273438</real>
 								</dict>
 								<key>font</key>
-								<string>SFMono-Regular 12</string>
+								<string>SFMono-Regular 11</string>
 							</dict>
 						</dict>
 					</dict>
@@ -5448,7 +5560,7 @@
 									<real>0.74901962280273438</real>
 								</dict>
 								<key>font</key>
-								<string>SFMono-Regular 12</string>
+								<string>SFMono-Regular 11</string>
 							</dict>
 						</dict>
 					</dict>
@@ -5560,23 +5672,23 @@
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1680, 1050}}</string>
 		<key>topLeft</key>
-		<string>{848, 860}</string>
+		<string>{200, 923}</string>
 	</dict>
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
 		<key>screenFrame</key>
-		<string>{{0, 0}, {1680, 1050}}</string>
+		<string>{{2560, 101}, {1920, 1080}}</string>
 		<key>topLeft</key>
-		<string>{668, 995}</string>
+		<string>{2887, 847}</string>
 	</dict>
 	<key>NoSyncHaveUsedCopyMode</key>
 	<true/>
 	<key>NoSyncInstallationId</key>
 	<string>F33A6FF2-B6BE-4CD9-8A49-42BC0194D190</string>
 	<key>NoSyncLastTipTime</key>
-	<real>610929526.96595895</real>
+	<real>611581495.12281096</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>449</integer>
+	<integer>482</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -6347,6 +6459,7 @@
 	<false/>
 	<key>NoSyncTipsToNotShow</key>
 	<array>
+		<string>0009</string>
 		<string>0006</string>
 		<string>0003</string>
 		<string>0000</string>
@@ -6357,7 +6470,7 @@
 		<string>0008</string>
 		<string>0005</string>
 		<string>0002</string>
-		<string>0009</string>
+		<string>0010</string>
 	</array>
 	<key>OnlyWhenMoreTabs</key>
 	<false/>
@@ -6428,7 +6541,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-05-10T22:02:39Z</date>
+	<date>2020-05-18T20:17:56Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
