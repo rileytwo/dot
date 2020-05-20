@@ -714,7 +714,7 @@
 	dWxs0g0ODxJaTlMub2JqZWN0c1YkY2xhc3OiEBGAAoAKgA3TFA0OFRkdV05TLmtleXOj
 	FhcYgAOABIAFoxobHIAGgAeACIAJWklkZW50aWZpZXJVV2lkdGhWSGlkZGVuUTAjQGjA
 	AAAAAAAI0iUmJyhaJGNsYXNzbmFtZVgkY2xhc3Nlc1xOU0RpY3Rpb25hcnmiJylYTlNP
-	YmplY3TTFA0OKy8doxYXGIADgASABaMwMRyAC4AMgAiACVExI0BzsZ2yLQ5W0iUmNzhe
+	YmplY3TTFA0OKy8doxYXGIADgASABaMwMRyAC4AMgAiACVExI0B0oZ2yLQ5W0iUmNzhe
 	TlNNdXRhYmxlQXJyYXmjNzkpV05TQXJyYXkACAARABoAJAApADIANwBJAEwAUgBUAGMA
 	aQBuAHkAgACDAIUAhwCJAJAAmACcAJ4AoACiAKYAqACqAKwArgC5AL8AxgDIANEA0gDX
 	AOIA6wD4APsBBAELAQ8BEQETARUBGQEbAR0BHwEhASMBLAExAUABRAAAAAAAAAIBAAAA
@@ -774,7 +774,7 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>490 343 700 586 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>3539 498 736 618 2560 101 1920 1057 </string>
+	<string>942 306 736 616 0 0 1680 1027 </string>
 	<key>NeverWarnAboutShortLivedSessions_120FAA18-3181-488D-9B29-68949F1F0CE6</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_120FAA18-3181-488D-9B29-68949F1F0CE6_selection</key>
@@ -5677,9 +5677,9 @@
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
 		<key>screenFrame</key>
-		<string>{{2560, 101}, {1920, 1080}}</string>
+		<string>{{0, 0}, {1680, 1050}}</string>
 		<key>topLeft</key>
-		<string>{2887, 847}</string>
+		<string>{94, 779}</string>
 	</dict>
 	<key>NoSyncHaveUsedCopyMode</key>
 	<true/>
@@ -5688,7 +5688,7 @@
 	<key>NoSyncLastTipTime</key>
 	<real>611581495.12281096</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>482</integer>
+	<integer>485</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -6541,7 +6541,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-05-18T20:17:56Z</date>
+	<date>2020-05-20T22:08:06Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
@@ -6602,7 +6602,7 @@
 				<key>Has Toolbelt</key>
 				<false/>
 				<key>Height</key>
-				<real>618</real>
+				<real>616</real>
 				<key>Hide After Opening</key>
 				<false/>
 				<key>Hiding Toolbelt Should Resize Window</key>
@@ -7003,7 +7003,7 @@
 												<real>0.94999998807907104</real>
 											</dict>
 											<key>Guid</key>
-											<string>B3BDA447-C0D5-4654-B5BE-30CB33FCF3FF</string>
+											<string>79423CB3-D6A8-49CE-8F24-C6E7E6954632</string>
 											<key>Has Hotkey</key>
 											<false/>
 											<key>Horizontal Spacing</key>
@@ -7722,8 +7722,6 @@
 											<string>/Users/riley/.dot</string>
 											<string>/Users/riley/.dot</string>
 											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
@@ -7808,6 +7806,8 @@
 											<string>/Users/riley/github/Karabiner-DriverKit-VirtualHIDDevice/src</string>
 											<string>/Users/riley/github/Karabiner-DriverKit-VirtualHIDDevice/src</string>
 											<string>/Users/riley/github/Karabiner-DriverKit-VirtualHIDDevice/src</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
@@ -7957,13 +7957,13 @@
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
@@ -8466,7 +8466,7 @@
 									<key>frame</key>
 									<dict>
 										<key>height</key>
-										<real>559</real>
+										<real>557</real>
 										<key>width</key>
 										<real>736</real>
 										<key>x</key>
@@ -8481,7 +8481,7 @@
 							<key>frame</key>
 							<dict>
 								<key>height</key>
-								<real>559</real>
+								<real>557</real>
 								<key>width</key>
 								<real>736</real>
 								<key>x</key>
@@ -8519,7 +8519,7 @@
 				<key>X Origin</key>
 				<real>942</real>
 				<key>Y Origin</key>
-				<real>304</real>
+				<real>306</real>
 			</dict>
 		</array>
 	</dict>
