@@ -5672,7 +5672,7 @@
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1680, 1050}}</string>
 		<key>topLeft</key>
-		<string>{200, 923}</string>
+		<string>{199, 923}</string>
 	</dict>
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
@@ -5688,7 +5688,7 @@
 	<key>NoSyncLastTipTime</key>
 	<real>611581495.12281096</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>485</integer>
+	<integer>489</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -6541,7 +6541,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-05-20T22:08:06Z</date>
+	<date>2020-05-20T23:22:10Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
@@ -7003,7 +7003,7 @@
 												<real>0.94999998807907104</real>
 											</dict>
 											<key>Guid</key>
-											<string>79423CB3-D6A8-49CE-8F24-C6E7E6954632</string>
+											<string>397D4C61-F2BB-46D7-9E79-39D0857B4A2D</string>
 											<key>Has Hotkey</key>
 											<false/>
 											<key>Horizontal Spacing</key>
@@ -7282,7 +7282,7 @@
 											<key>Screen</key>
 											<integer>-2</integer>
 											<key>Scrollback Lines</key>
-											<integer>10000</integer>
+											<integer>15000</integer>
 											<key>Scrollback With Status Bar</key>
 											<false/>
 											<key>Scrollback in Alternate Screen</key>
@@ -7375,7 +7375,7 @@
 														<real>0.75080698728561401</real>
 													</dict>
 													<key>font</key>
-													<string>SF-Mono-Plus-Regular 12</string>
+													<string>SF-Mono-Plus-Regular 11</string>
 												</dict>
 												<key>components</key>
 												<array>
@@ -7428,7 +7428,7 @@
 																	<real>0.75080698728561401</real>
 																</dict>
 																<key>font</key>
-																<string>SF-Mono-Plus-Regular 12</string>
+																<string>SF-Mono-Plus-Regular 11</string>
 															</dict>
 														</dict>
 													</dict>
@@ -7479,7 +7479,7 @@
 																	<real>0.75080698728561401</real>
 																</dict>
 																<key>font</key>
-																<string>SF-Mono-Plus-Regular 12</string>
+																<string>SF-Mono-Plus-Regular 11</string>
 															</dict>
 														</dict>
 													</dict>
@@ -7528,7 +7528,7 @@
 																	<real>0.75080698728561401</real>
 																</dict>
 																<key>font</key>
-																<string>SF-Mono-Plus-Regular 12</string>
+																<string>SF-Mono-Plus-Regular 11</string>
 															</dict>
 														</dict>
 													</dict>
@@ -7558,7 +7558,7 @@
 											<key>Terminal Type</key>
 											<string>xterm-256color</string>
 											<key>Thin Strokes</key>
-											<integer>3</integer>
+											<integer>4</integer>
 											<key>Title Components</key>
 											<integer>385</integer>
 											<key>Transparency</key>
@@ -7611,7 +7611,6 @@
 										<integer>91</integer>
 										<key>Commands</key>
 										<array>
-											<string>where brew-changelog</string>
 											<string>where brew changelog</string>
 											<string>where "brew changelog"</string>
 											<string>print $path</string>
@@ -7711,6 +7710,7 @@
 											<string>cd</string>
 											<string>clear</string>
 											<string>brew update &amp;&amp; brew upgrade &amp;&amp; brew cask upgrade --no-quarantine</string>
+											<string>brew update &amp;&amp; brew upgrade &amp;&amp; brew cask upgrade --no-quarantine</string>
 										</array>
 										<key>Directories</key>
 										<array>
@@ -7719,9 +7719,6 @@
 											<string>/Users/riley/.dot</string>
 											<string>/Users/riley/.dot</string>
 											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
@@ -7806,6 +7803,9 @@
 											<string>/Users/riley/github/Karabiner-DriverKit-VirtualHIDDevice/src</string>
 											<string>/Users/riley/github/Karabiner-DriverKit-VirtualHIDDevice/src</string>
 											<string>/Users/riley/github/Karabiner-DriverKit-VirtualHIDDevice/src</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
@@ -7823,6 +7823,8 @@
 										<key>Hostname to Shell</key>
 										<dict>
 											<key>riley@rxmbp</key>
+											<string>zsh</string>
+											<key>riley@rxmbp.attlocal.net</key>
 											<string>zsh</string>
 											<key>riley@rxmbp.local</key>
 											<string>zsh</string>
@@ -7939,19 +7941,19 @@
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
@@ -8413,19 +8415,19 @@
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp.local</string>
+												<string>rxmbp.attlocal.net</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp.local</string>
+												<string>rxmbp.attlocal.net</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp.local</string>
+												<string>rxmbp.attlocal.net</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
