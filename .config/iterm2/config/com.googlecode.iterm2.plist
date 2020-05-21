@@ -774,7 +774,7 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>490 343 700 586 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>942 306 736 616 0 0 1680 1027 </string>
+	<string>943 306 732 616 0 0 1680 1027 </string>
 	<key>NeverWarnAboutShortLivedSessions_120FAA18-3181-488D-9B29-68949F1F0CE6</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_120FAA18-3181-488D-9B29-68949F1F0CE6_selection</key>
@@ -5688,7 +5688,7 @@
 	<key>NoSyncLastTipTime</key>
 	<real>611581495.12281096</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>489</integer>
+	<integer>492</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -7003,7 +7003,7 @@
 												<real>0.94999998807907104</real>
 											</dict>
 											<key>Guid</key>
-											<string>397D4C61-F2BB-46D7-9E79-39D0857B4A2D</string>
+											<string>89090BDB-04A9-4F56-98CD-CCD91EE0C5C8</string>
 											<key>Has Hotkey</key>
 											<false/>
 											<key>Horizontal Spacing</key>
@@ -7611,17 +7611,6 @@
 										<integer>91</integer>
 										<key>Commands</key>
 										<array>
-											<string>where brew changelog</string>
-											<string>where "brew changelog"</string>
-											<string>print $path</string>
-											<string>for i ($path) { print $i }</string>
-											<string>for i ($path) { print $i }; done</string>
-											<string>cat /etc/paths.d/dotnet</string>
-											<string>cat /etc/paths.d/local_bin</string>
-											<string>cat /etc/paths.d/40-XQuartz</string>
-											<string>cd .dot</string>
-											<string>gs</string>
-											<string>code dot.code-workspace</string>
 											<string>git restore .</string>
 											<string>git restore .</string>
 											<string>gs</string>
@@ -7711,22 +7700,20 @@
 											<string>clear</string>
 											<string>brew update &amp;&amp; brew upgrade &amp;&amp; brew cask upgrade --no-quarantine</string>
 											<string>brew update &amp;&amp; brew upgrade &amp;&amp; brew cask upgrade --no-quarantine</string>
+											<string>cd .dot</string>
+											<string>gs</string>
+											<string>cd</string>
+											<string>gitup -p</string>
+											<string>code .dot/dot.code-workspace</string>
+											<string>cd .dot</string>
+											<string>gs</string>
+											<string>ga</string>
+											<string>gc -m 'fix win_frame.{x,w} in wm.fill_right'</string>
+											<string>gp</string>
+											<string>cd</string>
 										</array>
 										<key>Directories</key>
 										<array>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
@@ -7813,6 +7800,19 @@
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
 											<string>/Users/riley</string>
 										</array>
 										<key>Environment</key>
@@ -7863,79 +7863,79 @@
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
@@ -8337,79 +8337,79 @@
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp.local</string>
+												<string>rxmbp.attlocal.net</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp.local</string>
+												<string>rxmbp.attlocal.net</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp.local</string>
+												<string>rxmbp.attlocal.net</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp.local</string>
+												<string>rxmbp.attlocal.net</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp.local</string>
+												<string>rxmbp.attlocal.net</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp.local</string>
+												<string>rxmbp.attlocal.net</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp.local</string>
+												<string>rxmbp.attlocal.net</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp.local</string>
+												<string>rxmbp.attlocal.net</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp.local</string>
+												<string>rxmbp.attlocal.net</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp.local</string>
+												<string>rxmbp.attlocal.net</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp.local</string>
+												<string>rxmbp.attlocal.net</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp.local</string>
+												<string>rxmbp.attlocal.net</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp.local</string>
+												<string>rxmbp.attlocal.net</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
@@ -8470,7 +8470,7 @@
 										<key>height</key>
 										<real>557</real>
 										<key>width</key>
-										<real>736</real>
+										<real>732</real>
 										<key>x</key>
 										<real>0.0</real>
 										<key>y</key>
@@ -8485,7 +8485,7 @@
 								<key>height</key>
 								<real>557</real>
 								<key>width</key>
-								<real>736</real>
+								<real>732</real>
 								<key>x</key>
 								<real>0.0</real>
 								<key>y</key>
@@ -8515,11 +8515,11 @@
 				<key>Use Transparency</key>
 				<false/>
 				<key>Width</key>
-				<real>736</real>
+				<real>732</real>
 				<key>Window Type</key>
 				<integer>13</integer>
 				<key>X Origin</key>
-				<real>942</real>
+				<real>943</real>
 				<key>Y Origin</key>
 				<real>306</real>
 			</dict>
