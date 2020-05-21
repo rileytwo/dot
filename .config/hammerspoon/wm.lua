@@ -78,9 +78,9 @@ function wm.fill_right()
 	local win_frame    = win:frame()
 	local screen_frame = win:screen():frame()
 
-   win_frame.x = 0.5 * ((2 * screen_frame.x) + (screen_frame.w + gap))
+   win_frame.x = 0.5 * ((2 * screen_frame.x) + (screen_frame.w + (1.5 * gap)))
 	win_frame.y = screen_frame.y + gap
-	win_frame.w = 0.5 * (screen_frame.w - (1.5 * gap))
+	win_frame.w = 0.5 * (screen_frame.w - (3 * gap))
 	win_frame.h = screen_frame.h - (2 * gap)
 
 	return win_frame
