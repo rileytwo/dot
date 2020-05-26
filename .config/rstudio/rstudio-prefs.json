@@ -31,7 +31,7 @@
     "syntax_color_console": true,
     "highlight_r_function_calls": true,
     "editor_theme": "Kiss",
-    "default_project_location": "~",
+    "default_project_location": "~/github/rileytwo/rpackages",
     "source_with_echo": true,
     "default_sweave_engine": "knitr",
     "pdf_previewer": "rstudio",
@@ -39,7 +39,6 @@
     "save_workspace": "never",
     "remove_history_duplicates": true,
     "reuse_sessions_for_project_links": true,
-    "git_exe_path": "/usr/local/bin/git",
     "posix_terminal_shell": "zsh",
     "continue_comments_on_newline": true,
     "fold_style": "begin-only",
@@ -48,5 +47,6 @@
     "jobs_tab_visibility": "shown",
     "custom_shell_command": "/usr/local/bin/zsh",
     "custom_shell_options": "-l",
-    "terminal_bell_style": "none"
+    "terminal_bell_style": "none",
+    "new_proj_git_init": true
 }
