@@ -48,5 +48,9 @@
     "custom_shell_command": "/usr/local/bin/zsh",
     "custom_shell_options": "-l",
     "terminal_bell_style": "none",
-    "new_proj_git_init": true
+    "new_proj_git_init": true,
+    "check_arguments_to_r_function_calls": true,
+    "warn_if_no_such_variable_in_scope": true,
+    "warn_variable_defined_but_not_used": true,
+    "style_diagnostics": true
 }

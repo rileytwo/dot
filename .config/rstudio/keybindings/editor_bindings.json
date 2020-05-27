@@ -1,6 +1,6 @@
 {
     "find": "Cmd+F",
-    "fold": "Cmd+\\|Alt+Cmd+L|Cmd+\\",
+    "fold": "Cmd+\\",
     "gotowordleft": "Alt+Left",
     "gotowordright": "Alt+Right",
     "removeline": "",
@@ -10,5 +10,6 @@
     "removewordright": "Shift+Cmd+Backspace",
     "selectwordleft": "Shift+Cmd+A",
     "selectwordright": "Shift+Cmd+D",
-    "unfold": "Cmd+K Shift+Cmd+\\|Shift+Cmd+\\|Shift+Cmd+F1"
+    "unfold": "Shift+Cmd+\\",
+    "toggleFoldWidget": "Cmd+-"
 }
