@@ -52,5 +52,6 @@
     "check_arguments_to_r_function_calls": true,
     "warn_if_no_such_variable_in_scope": true,
     "warn_variable_defined_but_not_used": true,
-    "style_diagnostics": true
+    "style_diagnostics": true,
+    "check_unexpected_assignment_in_function_call": true
 }
