@@ -768,7 +768,7 @@
 		</array>
 	</dict>
 	<key>NSWindow Frame NSColorPanel</key>
-	<string>200 415 279 378 0 0 1680 1027 </string>
+	<string>649 331 279 342 0 0 1680 1027 </string>
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
 	<string>440 446 799 448 0 0 1680 1027 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
@@ -809,13 +809,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.34096416831016541</real>
+				<real>0.20000000000000001</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.34103506803512573</real>
+				<real>0.20000000000000001</real>
 				<key>Red Component</key>
-				<real>0.3409724235534668</real>
+				<real>0.20000000000000001</real>
 			</dict>
 			<key>Ansi 1 Color</key>
 			<dict>
@@ -5679,16 +5679,16 @@
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1680, 1050}}</string>
 		<key>topLeft</key>
-		<string>{94, 779}</string>
+		<string>{230, 716}</string>
 	</dict>
 	<key>NoSyncHaveUsedCopyMode</key>
 	<true/>
 	<key>NoSyncInstallationId</key>
 	<string>F33A6FF2-B6BE-4CD9-8A49-42BC0194D190</string>
 	<key>NoSyncLastTipTime</key>
-	<real>611581495.12281096</real>
+	<real>612224524.41316605</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>492</integer>
+	<integer>523</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -6453,24 +6453,29 @@
 			</dict>
 		</array>
 	</dict>
+	<key>NoSyncSuppressDownloadConfirmation</key>
+	<true/>
+	<key>NoSyncSuppressDownloadConfirmation_selection</key>
+	<integer>0</integer>
 	<key>NoSyncTipOfTheDayEligibilityBeganTime</key>
 	<real>601257335.05481899</real>
 	<key>NoSyncTipsDisabled</key>
 	<false/>
 	<key>NoSyncTipsToNotShow</key>
 	<array>
-		<string>0009</string>
-		<string>0006</string>
-		<string>0003</string>
-		<string>0000</string>
-		<string>0007</string>
 		<string>0004</string>
-		<string>0001</string>
-		<string>000</string>
-		<string>0008</string>
-		<string>0005</string>
-		<string>0002</string>
+		<string>0000</string>
 		<string>0010</string>
+		<string>0007</string>
+		<string>0003</string>
+		<string>0006</string>
+		<string>0002</string>
+		<string>000</string>
+		<string>0009</string>
+		<string>0005</string>
+		<string>0001</string>
+		<string>0008</string>
+		<string>0011</string>
 	</array>
 	<key>OnlyWhenMoreTabs</key>
 	<false/>
@@ -6541,7 +6546,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-05-20T23:22:10Z</date>
+	<date>2020-05-27T01:53:05Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
@@ -6658,13 +6663,13 @@
 												<key>Alpha Component</key>
 												<real>1</real>
 												<key>Blue Component</key>
-												<real>0.34096416831016541</real>
+												<real>0.20000000000000001</real>
 												<key>Color Space</key>
 												<string>sRGB</string>
 												<key>Green Component</key>
-												<real>0.34103506803512573</real>
+												<real>0.20000000000000001</real>
 												<key>Red Component</key>
-												<real>0.3409724235534668</real>
+												<real>0.20000000000000001</real>
 											</dict>
 											<key>Ansi 1 Color</key>
 											<dict>
@@ -7003,7 +7008,7 @@
 												<real>0.94999998807907104</real>
 											</dict>
 											<key>Guid</key>
-											<string>89090BDB-04A9-4F56-98CD-CCD91EE0C5C8</string>
+											<string>DCD1830E-A682-4256-A347-C79239F369F5</string>
 											<key>Has Hotkey</key>
 											<false/>
 											<key>Horizontal Spacing</key>
@@ -7611,83 +7616,6 @@
 										<integer>91</integer>
 										<key>Commands</key>
 										<array>
-											<string>git restore .</string>
-											<string>git restore .</string>
-											<string>gs</string>
-											<string>gs</string>
-											<string>git add .config/powershell/Microsoft.PowerShell_profile.ps1</string>
-											<string>git commit -m 'change $Env to $env'</string>
-											<string>gs</string>
-											<string>ga</string>
-											<string>ga</string>
-											<string>gs</string>
-											<string>ga</string>
-											<string>gc -m 'move setting of FZF_DEFAULT_COMMAND out of Get-Modules()'</string>
-											<string>gs</string>
-											<string>ga</string>
-											<string>gc -m 'wrap ${HOME} in "${HOME}"'</string>
-											<string>gp</string>
-											<string>nvim .scripts/zshup.sh</string>
-											<string>cd</string>
-											<string>cat bin/zshup.sh</string>
-											<string>zshup.sh</string>
-											<string>cd .dot</string>
-											<string>gs</string>
-											<string>git add .scripts/zshup.sh</string>
-											<string>gc -m '#!/usr/bin/env bash -&gt; #!/usr/bin/env zsh (why was I managing ZSH plugins in bash???)'</string>
-											<string>gp</string>
-											<string>cd</string>
-											<string>gitup -p</string>
-											<string>cd</string>
-											<string>sudo softwareupdate -l</string>
-											<string>brew cask remove karabiner-elements --force</string>
-											<string>brew cask install karabiner-elements --no-quarantine</string>
-											<string>l .config/</string>
-											<string>l .config/karabiner</string>
-											<string>mv Downloads/access-code.txt</string>
-											<string>mv Downloads/access-code.txt Documents/Library/Network</string>
-											<string>cd .dot</string>
-											<string>gs</string>
-											<string>git add .config/iterm2/config/com.googlecode.iterm2.plist &amp;&amp; gc -m 'iterm2 config'</string>
-											<string>gp</string>
-											<string>cd</string>
-											<string>gitud</string>
-											<string>gitup -p</string>
-											<string>brew update &amp;&amp; brew upgrade &amp;&amp; brew cask upgrade --no-quarantine</string>
-											<string>cd .dot</string>
-											<string>gs</string>
-											<string>cd</string>
-											<string>brew update &amp;&amp; brew upgrade &amp;&amp; brew cask upgrade --no-quarantine</string>
-											<string>pyenv list</string>
-											<string>pvs</string>
-											<string>pyenv activate miniconda3-latest</string>
-											<string>conda env list</string>
-											<string>pyenv deactivate miniconda3-latest</string>
-											<string>pvs</string>
-											<string>cd github/</string>
-											<string>cd Karabiner-DriverKit-VirtualHIDDevice</string>
-											<string>gs</string>
-											<string>e</string>
-											<string>cat .prettierrc.json</string>
-											<string>gs</string>
-											<string>e</string>
-											<string>xcodegen</string>
-											<string>cd src</string>
-											<string>e</string>
-											<string>xcodegen</string>
-											<string>e</string>
-											<string>open KarabinerDriverKitVirtualHIDDevice.xcodeproj</string>
-											<string>gs</string>
-											<string>cd</string>
-											<string>cd github/Karabiner-DriverKit-VirtualHIDDevice</string>
-											<string>l</string>
-											<string>cd ..</string>
-											<string>rm -rf Karabiner-DriverKit-VirtualHIDDevice</string>
-											<string>git clone https://github.com/pqrs-org/Karabiner-DriverKit-VirtualHIDDevice.git</string>
-											<string>cd Karabiner-DriverKit-VirtualHIDDevice</string>
-											<string>e</string>
-											<string>e src</string>
-											<string>cd src</string>
 											<string>e</string>
 											<string>e DriverKit</string>
 											<string>cd ExtensionManager</string>
@@ -7711,6 +7639,83 @@
 											<string>gc -m 'fix win_frame.{x,w} in wm.fill_right'</string>
 											<string>gp</string>
 											<string>cd</string>
+											<string>cd downloads</string>
+											<string>tar czf macos10.15.5-combo-update.tar.gz -C macOSUpdCombo10.15.5.dmg</string>
+											<string>tar czf macos10.15.5-combo-update.tar.gz -C . macOSUpdCombo10.15.5.dmg</string>
+											<string>tldr tar</string>
+											<string>tar czf macos10.15.5-combo-update.tar.gz -C macOSUpdCombo10.15.5.dmg .</string>
+											<string>tar czf macos10.15.5-combo-update.tar.gz macOSUpdCombo10.15.5.dmg</string>
+											<string>rm -rf *.gz</string>
+											<string>trash -s</string>
+											<string>cd</string>
+											<string>cd .dot</string>
+											<string>gs</string>
+											<string>ga</string>
+											<string>gc -m 'rstudio preferences'</string>
+											<string>gp</string>
+											<string>cd</string>
+											<string>brew update &amp;&amp; brew upgrade &amp;&amp; brew cask upgrade --no-quarantine</string>
+											<string>brew info ice</string>
+											<string>cd /usr/local/opt</string>
+											<string>fzf -e pkgconfig</string>
+											<string>fzf -e</string>
+											<string>e</string>
+											<string>fzf</string>
+											<string>fz</string>
+											<string>e fzf</string>
+											<string>cd ..</string>
+											<string>fzf -e</string>
+											<string>ls -1 *(.)</string>
+											<string>ls -1 *(@)</string>
+											<string>ls opt -1 *(@)</string>
+											<string>ls opt -1 *(\@)</string>
+											<string>ls opt -1 *(-@)</string>
+											<string>ls *()</string>
+											<string>ls Caskroom Cellar Frameworks Homebrew bin etc include lib man microsoft opt sbin share var</string>
+											<string>ls -1 *(.)</string>
+											<string>e</string>
+											<string>e car</string>
+											<string>e var</string>
+											<string>e opt</string>
+											<string>ls -1 *(.) opt</string>
+											<string>ls -1 *(.) bin</string>
+											<string>ls -1 *(.) usr</string>
+											<string>ls -1 *(.) share</string>
+											<string>e</string>
+											<string>e man</string>
+											<string>e etc</string>
+											<string>ls -1 *(.) etc</string>
+											<string>cd etc</string>
+											<string>e</string>
+											<string>ls -1 *(.) etc</string>
+											<string>ls -1 *(.)</string>
+											<string>ls -1 *(@)</string>
+											<string>tldr (@)</string>
+											<string>tldr --update</string>
+											<string>rg pkgconfig</string>
+											<string>e</string>
+											<string>rg slsh.rc</string>
+											<string>rg slsh.rc i</string>
+											<string>rg i slsh.rc</string>
+											<string>rg pkgconfig *</string>
+											<string>rg pkgconfig .*</string>
+											<string>rg pkgconfig .\*</string>
+											<string>ls -1a</string>
+											<string>cd ..</string>
+											<string>ls -1a</string>
+											<string>ls -1a *</string>
+											<string>rg pkgconfig &lt;$(ls -1a *)</string>
+											<string>rg pkgconfig &lt;(ls -1a *)</string>
+											<string>ls -1a *</string>
+											<string>ls -1a * | rg pkgconfig</string>
+											<string>rg pkgconfig &lt;(ls -1a *)</string>
+											<string>ls -1a * | rg -i pkgconfig</string>
+											<string>tree</string>
+											<string>type tree</string>
+											<string>tree -h</string>
+											<string>bat</string>
+											<string>bat etc/slsh.rc</string>
+											<string>cd</string>
 										</array>
 										<key>Directories</key>
 										<array>
@@ -7722,87 +7727,6 @@
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley/.dot</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley/github</string>
-											<string>/Users/riley/github/Karabiner-DriverKit-VirtualHIDDevice</string>
-											<string>/Users/riley/github/Karabiner-DriverKit-VirtualHIDDevice</string>
-											<string>/Users/riley/github/Karabiner-DriverKit-VirtualHIDDevice</string>
-											<string>/Users/riley/github/Karabiner-DriverKit-VirtualHIDDevice</string>
-											<string>/Users/riley/github/Karabiner-DriverKit-VirtualHIDDevice</string>
-											<string>/Users/riley/github/Karabiner-DriverKit-VirtualHIDDevice</string>
-											<string>/Users/riley/github/Karabiner-DriverKit-VirtualHIDDevice</string>
-											<string>/Users/riley/github/Karabiner-DriverKit-VirtualHIDDevice/src</string>
-											<string>/Users/riley/github/Karabiner-DriverKit-VirtualHIDDevice/src</string>
-											<string>/Users/riley/github/Karabiner-DriverKit-VirtualHIDDevice/src</string>
-											<string>/Users/riley/github/Karabiner-DriverKit-VirtualHIDDevice/src</string>
-											<string>/Users/riley/github/Karabiner-DriverKit-VirtualHIDDevice/src</string>
-											<string>/Users/riley/github/Karabiner-DriverKit-VirtualHIDDevice/src</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley/github/Karabiner-DriverKit-VirtualHIDDevice</string>
-											<string>/Users/riley/github/Karabiner-DriverKit-VirtualHIDDevice</string>
-											<string>/Users/riley/github</string>
-											<string>/Users/riley/github</string>
-											<string>/Users/riley/github</string>
-											<string>/Users/riley/github/Karabiner-DriverKit-VirtualHIDDevice</string>
-											<string>/Users/riley/github/Karabiner-DriverKit-VirtualHIDDevice</string>
-											<string>/Users/riley/github/Karabiner-DriverKit-VirtualHIDDevice</string>
-											<string>/Users/riley/github/Karabiner-DriverKit-VirtualHIDDevice/src</string>
-											<string>/Users/riley/github/Karabiner-DriverKit-VirtualHIDDevice/src</string>
-											<string>/Users/riley/github/Karabiner-DriverKit-VirtualHIDDevice/src</string>
-											<string>/Users/riley/github/Karabiner-DriverKit-VirtualHIDDevice/src/ExtensionManager</string>
-											<string>/Users/riley/github/Karabiner-DriverKit-VirtualHIDDevice/src/ExtensionManager</string>
-											<string>/Users/riley/github/Karabiner-DriverKit-VirtualHIDDevice/src</string>
-											<string>/Users/riley/github/Karabiner-DriverKit-VirtualHIDDevice/src</string>
-											<string>/Users/riley/github/Karabiner-DriverKit-VirtualHIDDevice/src</string>
-											<string>/Users/riley/github/Karabiner-DriverKit-VirtualHIDDevice/src</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
-											<string>/Users/riley</string>
 											<string>/Users/riley/.dot</string>
 											<string>/Users/riley/.dot</string>
 											<string>/Users/riley</string>
@@ -7813,6 +7737,87 @@
 											<string>/Users/riley/.dot</string>
 											<string>/Users/riley/.dot</string>
 											<string>/Users/riley/.dot</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley/downloads</string>
+											<string>/Users/riley/downloads</string>
+											<string>/Users/riley/downloads</string>
+											<string>/Users/riley/downloads</string>
+											<string>/Users/riley/downloads</string>
+											<string>/Users/riley/downloads</string>
+											<string>/Users/riley/downloads</string>
+											<string>/Users/riley/downloads</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/usr/local/opt</string>
+											<string>/usr/local/opt</string>
+											<string>/usr/local/opt</string>
+											<string>/usr/local/opt</string>
+											<string>/usr/local/opt</string>
+											<string>/usr/local/opt</string>
+											<string>/usr/local/opt</string>
+											<string>/usr/local</string>
+											<string>/usr/local</string>
+											<string>/usr/local</string>
+											<string>/usr/local</string>
+											<string>/usr/local</string>
+											<string>/usr/local</string>
+											<string>/usr/local</string>
+											<string>/usr/local</string>
+											<string>/usr/local</string>
+											<string>/usr/local</string>
+											<string>/usr/local</string>
+											<string>/usr/local</string>
+											<string>/usr/local</string>
+											<string>/usr/local</string>
+											<string>/usr/local</string>
+											<string>/usr/local</string>
+											<string>/usr/local</string>
+											<string>/usr/local</string>
+											<string>/usr/local</string>
+											<string>/usr/local</string>
+											<string>/usr/local</string>
+											<string>/usr/local</string>
+											<string>/usr/local</string>
+											<string>/usr/local/etc</string>
+											<string>/usr/local/etc</string>
+											<string>/usr/local/etc</string>
+											<string>/usr/local/etc</string>
+											<string>/usr/local/etc</string>
+											<string>/usr/local/etc</string>
+											<string>/usr/local/etc</string>
+											<string>/usr/local/etc</string>
+											<string>/usr/local/etc</string>
+											<string>/usr/local/etc</string>
+											<string>/usr/local/etc</string>
+											<string>/usr/local/etc</string>
+											<string>/usr/local/etc</string>
+											<string>/usr/local/etc</string>
+											<string>/usr/local/etc</string>
+											<string>/usr/local/etc</string>
+											<string>/usr/local</string>
+											<string>/usr/local</string>
+											<string>/usr/local</string>
+											<string>/usr/local</string>
+											<string>/usr/local</string>
+											<string>/usr/local</string>
+											<string>/usr/local</string>
+											<string>/usr/local</string>
+											<string>/usr/local</string>
+											<string>/usr/local</string>
+											<string>/usr/local</string>
+											<string>/usr/local</string>
+											<string>/usr/local</string>
+											<string>/usr/local</string>
+											<string>/usr/local</string>
 											<string>/Users/riley</string>
 										</array>
 										<key>Environment</key>
@@ -7833,505 +7838,505 @@
 										<array>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.local</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp</string>
+												<string>rxmbp.attlocal.net</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp.local</string>
+												<string>rxmbp.attlocal.net</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp.local</string>
+												<string>rxmbp.attlocal.net</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp.local</string>
+												<string>rxmbp.attlocal.net</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp.local</string>
+												<string>rxmbp.attlocal.net</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp.local</string>
+												<string>rxmbp.attlocal.net</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp.local</string>
+												<string>rxmbp.attlocal.net</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp.local</string>
+												<string>rxmbp.attlocal.net</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp.local</string>
+												<string>rxmbp.attlocal.net</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp.local</string>
+												<string>rxmbp.attlocal.net</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp.local</string>
+												<string>rxmbp.attlocal.net</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp.local</string>
+												<string>rxmbp.attlocal.net</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp.local</string>
+												<string>rxmbp.attlocal.net</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp.local</string>
+												<string>rxmbp.attlocal.net</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp.local</string>
+												<string>rxmbp.attlocal.net</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp.local</string>
+												<string>rxmbp.attlocal.net</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp.local</string>
+												<string>rxmbp.attlocal.net</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp.local</string>
+												<string>rxmbp.attlocal.net</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp.local</string>
+												<string>rxmbp.attlocal.net</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp.local</string>
+												<string>rxmbp.attlocal.net</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp.local</string>
+												<string>rxmbp.attlocal.net</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp.local</string>
+												<string>rxmbp.attlocal.net</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp.local</string>
+												<string>rxmbp.attlocal.net</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp.local</string>
+												<string>rxmbp.attlocal.net</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp.local</string>
+												<string>rxmbp.attlocal.net</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp.local</string>
+												<string>rxmbp.attlocal.net</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp.local</string>
+												<string>rxmbp.attlocal.net</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp.local</string>
+												<string>rxmbp.attlocal.net</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp.local</string>
+												<string>rxmbp.attlocal.net</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp.local</string>
+												<string>rxmbp.attlocal.net</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp.local</string>
+												<string>rxmbp.attlocal.net</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp.local</string>
+												<string>rxmbp.attlocal.net</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp.local</string>
+												<string>rxmbp.attlocal.net</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp.local</string>
+												<string>rxmbp.attlocal.net</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp.local</string>
+												<string>rxmbp.attlocal.net</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp.local</string>
+												<string>rxmbp.attlocal.net</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp.local</string>
+												<string>rxmbp.attlocal.net</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp.local</string>
+												<string>rxmbp.attlocal.net</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp.local</string>
+												<string>rxmbp.attlocal.net</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp.local</string>
+												<string>rxmbp.attlocal.net</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp.local</string>
+												<string>rxmbp.attlocal.net</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp.local</string>
+												<string>rxmbp.attlocal.net</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp.local</string>
+												<string>rxmbp.attlocal.net</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp.local</string>
+												<string>rxmbp.attlocal.net</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp.local</string>
+												<string>rxmbp.attlocal.net</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp.local</string>
+												<string>rxmbp.attlocal.net</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp.local</string>
+												<string>rxmbp.attlocal.net</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp.local</string>
+												<string>rxmbp.attlocal.net</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp.local</string>
+												<string>rxmbp.attlocal.net</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp.local</string>
+												<string>rxmbp.attlocal.net</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp.local</string>
+												<string>rxmbp.attlocal.net</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp.local</string>
+												<string>rxmbp.attlocal.net</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp.local</string>
+												<string>rxmbp.attlocal.net</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp.local</string>
+												<string>rxmbp.attlocal.net</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp.local</string>
+												<string>rxmbp.attlocal.net</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp.local</string>
+												<string>rxmbp.attlocal.net</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp.local</string>
+												<string>rxmbp.attlocal.net</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp.local</string>
+												<string>rxmbp.attlocal.net</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp.local</string>
+												<string>rxmbp.attlocal.net</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp.local</string>
+												<string>rxmbp.attlocal.net</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp.local</string>
+												<string>rxmbp.attlocal.net</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp.local</string>
+												<string>rxmbp.attlocal.net</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp.local</string>
+												<string>rxmbp.attlocal.net</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp.local</string>
+												<string>rxmbp.attlocal.net</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp.local</string>
+												<string>rxmbp.attlocal.net</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp.local</string>
+												<string>rxmbp.attlocal.net</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp.local</string>
+												<string>rxmbp.attlocal.net</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp.local</string>
+												<string>rxmbp.attlocal.net</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp.local</string>
+												<string>rxmbp.attlocal.net</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp.local</string>
+												<string>rxmbp.attlocal.net</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp.local</string>
+												<string>rxmbp.attlocal.net</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp.local</string>
+												<string>rxmbp.attlocal.net</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp.local</string>
+												<string>rxmbp.attlocal.net</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp.local</string>
+												<string>rxmbp.attlocal.net</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp.local</string>
+												<string>rxmbp.attlocal.net</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp.local</string>
+												<string>rxmbp.attlocal.net</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp.local</string>
+												<string>rxmbp.attlocal.net</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp.local</string>
+												<string>rxmbp.attlocal.net</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp.local</string>
+												<string>rxmbp.attlocal.net</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>rxmbp.local</string>
+												<string>rxmbp.attlocal.net</string>
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
