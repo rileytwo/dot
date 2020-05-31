@@ -29,7 +29,7 @@
 	<key>ColoredSelectedTabOutlineStrength</key>
 	<real>0.20000000298023224</real>
 	<key>Command</key>
-	<string>/usr/local/bin/bash</string>
+	<string></string>
 	<key>ConvertDosNewlines</key>
 	<true/>
 	<key>Custom Color Presets</key>
@@ -704,8 +704,8 @@
 	<false/>
 	<key>NSSplitView Subview Frames NSColorPanelSplitView</key>
 	<array>
-		<string>0.000000, 0.000000, 279.000000, 361.000000, NO, NO</string>
-		<string>0.000000, 362.000000, 279.000000, 165.000000, NO, NO</string>
+		<string>0.000000, 0.000000, 279.000000, 325.000000, NO, NO</string>
+		<string>0.000000, 326.000000, 279.000000, 165.000000, NO, NO</string>
 	</array>
 	<key>NSTableView Columns v2 KeyBingingTable</key>
 	<data>
@@ -5679,7 +5679,7 @@
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1680, 1050}}</string>
 		<key>topLeft</key>
-		<string>{230, 716}</string>
+		<string>{18, 914}</string>
 	</dict>
 	<key>NoSyncHaveUsedCopyMode</key>
 	<true/>
@@ -5688,7 +5688,7 @@
 	<key>NoSyncLastTipTime</key>
 	<real>612224524.41316605</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>523</integer>
+	<integer>524</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -6587,6 +6587,11 @@
 	<array>
 		<string>Actions</string>
 	</array>
+	<key>URLHandlersByGuid</key>
+	<dict>
+		<key>x-man-page</key>
+		<string>34B9EAE8-2919-4CDD-95B9-265204778C9C</string>
+	</dict>
 	<key>UpdateScreenParamsDelay</key>
 	<real>1</real>
 	<key>UseBorder</key>
