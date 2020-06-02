@@ -1,12 +1,12 @@
 #!/usr/bin/env zsh
 
 if (( $+commands[git] )); then
+    alias gs='git status'
+    alias gcu='git checkout upstream'
     alias gng='git config --global'
     alias gngl='git config --global --list'
     alias gnl='git config --local'
     alias gnll='git config --local --list'
-    alias gs='git status'
-    alias gcu='git checkout upstream'
 fi
 
 
@@ -80,7 +80,4 @@ alias plz='/usr/bin/sudo'
 # `print -rl -- "${(@s/:/)PATH}"` also works
 alias path='echo -e ${PATH//:/\\n}'
 alias fpath='echo -e ${FPATH//:/\\n}'
-
-
-alias hsg='history | grep'
 
