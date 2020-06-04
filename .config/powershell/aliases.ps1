@@ -18,5 +18,3 @@ Set-Alias -Name 'gnll' Get-GitConfigLocal
 Set-Alias -Name 'gs' Get-GitRepositoryStatus
 Set-Alias -Name 'rr' -Value 'radian'
 Set-Alias -Name 'r' -Value 'Rscript'
-
-Write-Output "Done!"
