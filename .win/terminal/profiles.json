@@ -51,14 +51,15 @@
       "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
       "hidden": false,
       "name": "Ubuntu",
-      "source": "Windows.Terminal.Wsl",
       "colorScheme": "Riley",
       "commandline": "wsl.exe -d Ubuntu",
       "cursorColor": "#FFFFFF",
       "cursorShape": "bar",
       "fontFace": "Liga SFMono Nerd Font",
       "fontSize": 10,
-      "closeOnExit": false
+      "closeOnExit": false,
+      "startingDirectory": "//wsl$/Ubuntu/home/riley/",
+      "source": "Windows.Terminal.Wsl"
     },
     {
       "guid": "{c6eaf9f4-32a7-5fdc-b5cf-066e8a4b1e40}",
@@ -85,6 +86,42 @@
         "name": "PowerShell (dotnet global)",
         "source": "Windows.Terminal.PowershellCore"
     }
+  ],
+
+  // Add any keybinding overrides to this array.
+  // To unbind a default keybinding, set the command to "unbound"
+  "keybindings": [
+    { "command": "closePane", "keys": ["ctrl+shift+w"] },
+    { "command": "closeTab", "keys": ["ctrl+w"] },
+    { "command": "copy", "keys": ["ctrl+shift+c"] },
+    { "command": "newTab", "keys": ["ctrl+shift+t"] },
+    { "command": "newTab", "keys": "ctrl+shift+t" },
+    { "command": { "action": "newTab", "index": 0 }, "keys": "ctrl+shift+1" },
+    { "command": { "action": "newTab", "index": 1 }, "keys": "ctrl+shift+2" },
+    { "command": { "action": "newTab", "index": 2 }, "keys": "ctrl+shift+3" },
+    { "command": { "action": "newTab", "index": 3 }, "keys": "ctrl+shift+4" },
+    { "command": { "action": "newTab", "index": 4 }, "keys": "ctrl+shift+5" },
+    { "command": { "action": "newTab", "index": 5 }, "keys": "ctrl+shift+6" },
+    { "command": { "action": "newTab", "index": 6 }, "keys": "ctrl+shift+7" },
+    { "command": { "action": "newTab", "index": 7 }, "keys": "ctrl+shift+8" },
+    { "command": { "action": "newTab", "index": 8 }, "keys": "ctrl+shift+9" },
+    { "command": "nextTab", "keys": ["ctrl+tab"] },
+    { "command": "openSettings", "keys": ["ctrl+,"] },
+    { "command": "paste", "keys": ["ctrl+shift+v"] },
+    { "command": "prevTab", "keys": ["ctrl+shift+tab"] },
+    { "command": "scrollDown", "keys": ["ctrl+shift+down"] },
+    { "command": "scrollDownPage", "keys": ["ctrl+shift+pgdn"] },
+    { "command": "scrollUp", "keys": ["ctrl+shift+up"] },
+    { "command": "scrollUpPage", "keys": ["ctrl+shift+pgup"] },
+    { "command": { "action": "switchToTab", "index": 0 }, "keys": "ctrl+alt+1" },
+    { "command": { "action": "switchToTab", "index": 1 }, "keys": "ctrl+alt+2" },
+    { "command": { "action": "switchToTab", "index": 2 }, "keys": "ctrl+alt+3" },
+    { "command": { "action": "switchToTab", "index": 3 }, "keys": "ctrl+alt+4" },
+    { "command": { "action": "switchToTab", "index": 4 }, "keys": "ctrl+alt+5" },
+    { "command": { "action": "switchToTab", "index": 5 }, "keys": "ctrl+alt+6" },
+    { "command": { "action": "switchToTab", "index": 6 }, "keys": "ctrl+alt+7" },
+    { "command": { "action": "switchToTab", "index": 7 }, "keys": "ctrl+alt+8" },
+    { "command": { "action": "switchToTab", "index": 8 }, "keys": "ctrl+alt+9" }
   ],
 
   // Add custom color schemes to this array
@@ -194,41 +231,6 @@
       "white"       : "#EEE8D5",
       "yellow"      : "#B58900"
     }
-  ],
-
-  // Add any keybinding overrides to this array.
-  // To unbind a default keybinding, set the command to "unbound"
-  "keybindings": [
-    { "command": "closePane", "keys": ["ctrl+shift+w"] },
-    { "command": "closeTab", "keys": ["ctrl+w"] },
-    { "command": "copy", "keys": ["ctrl+shift+c"] },
-    { "command": "newTab", "keys": ["ctrl+shift+t"] },
-    { "command": "newTab", "keys": "ctrl+shift+t" },
-    { "command": { "action": "newTab", "index": 0 }, "keys": "ctrl+shift+1" },
-    { "command": { "action": "newTab", "index": 1 }, "keys": "ctrl+shift+2" },
-    { "command": { "action": "newTab", "index": 2 }, "keys": "ctrl+shift+3" },
-    { "command": { "action": "newTab", "index": 3 }, "keys": "ctrl+shift+4" },
-    { "command": { "action": "newTab", "index": 4 }, "keys": "ctrl+shift+5" },
-    { "command": { "action": "newTab", "index": 5 }, "keys": "ctrl+shift+6" },
-    { "command": { "action": "newTab", "index": 6 }, "keys": "ctrl+shift+7" },
-    { "command": { "action": "newTab", "index": 7 }, "keys": "ctrl+shift+8" },
-    { "command": { "action": "newTab", "index": 8 }, "keys": "ctrl+shift+9" },
-    { "command": "nextTab", "keys": ["ctrl+tab"] },
-    { "command": "openSettings", "keys": ["ctrl+,"] },
-    { "command": "paste", "keys": ["ctrl+shift+v"] },
-    { "command": "prevTab", "keys": ["ctrl+shift+tab"] },
-    { "command": "scrollDown", "keys": ["ctrl+shift+down"] },
-    { "command": "scrollDownPage", "keys": ["ctrl+shift+pgdn"] },
-    { "command": "scrollUp", "keys": ["ctrl+shift+up"] },
-    { "command": "scrollUpPage", "keys": ["ctrl+shift+pgup"] },
-    { "command": { "action": "switchToTab", "index": 0 }, "keys": "ctrl+alt+1" },
-    { "command": { "action": "switchToTab", "index": 1 }, "keys": "ctrl+alt+2" },
-    { "command": { "action": "switchToTab", "index": 2 }, "keys": "ctrl+alt+3" },
-    { "command": { "action": "switchToTab", "index": 3 }, "keys": "ctrl+alt+4" },
-    { "command": { "action": "switchToTab", "index": 4 }, "keys": "ctrl+alt+5" },
-    { "command": { "action": "switchToTab", "index": 5 }, "keys": "ctrl+alt+6" },
-    { "command": { "action": "switchToTab", "index": 6 }, "keys": "ctrl+alt+7" },
-    { "command": { "action": "switchToTab", "index": 7 }, "keys": "ctrl+alt+8" },
-    { "command": { "action": "switchToTab", "index": 8 }, "keys": "ctrl+alt+9" }
   ]
+  
 }
