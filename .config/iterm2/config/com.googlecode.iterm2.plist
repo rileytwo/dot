@@ -685,7 +685,7 @@
 	<key>NSFontPanelAttributes</key>
 	<string>1, 2</string>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/.dot/.config/iterm2/colors</string>
+	<string>~/github/rileytwo/kiss/iterm2</string>
 	<key>NSNavLastUserSetHideExtensionButtonState</key>
 	<false/>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
@@ -769,8 +769,10 @@
 	</dict>
 	<key>NSWindow Frame NSColorPanel</key>
 	<string>649 331 279 342 0 0 1680 1027 </string>
+	<key>NSWindow Frame NSFontPanel</key>
+	<string>1169 110 445 237 0 0 1680 1027 </string>
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
-	<string>440 446 799 448 0 0 1680 1027 </string>
+	<string>419 430 841 470 0 0 1680 1027 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>490 343 700 586 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
@@ -5645,6 +5647,7 @@
 		<string>3.3.8beta5</string>
 		<string>3.3.10beta2</string>
 		<string>3.3.7</string>
+		<string>3.3.11beta1</string>
 		<string>3.3.10beta4</string>
 		<string>3.3.10beta1</string>
 	</array>
@@ -5686,9 +5689,9 @@
 	<key>NoSyncInstallationId</key>
 	<string>F33A6FF2-B6BE-4CD9-8A49-42BC0194D190</string>
 	<key>NoSyncLastTipTime</key>
-	<real>612224524.41316605</real>
+	<real>612830033.04287302</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>524</integer>
+	<integer>561</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -6474,8 +6477,9 @@
 		<string>0009</string>
 		<string>0005</string>
 		<string>0001</string>
-		<string>0008</string>
 		<string>0011</string>
+		<string>0008</string>
+		<string>0012</string>
 	</array>
 	<key>OnlyWhenMoreTabs</key>
 	<false/>
@@ -6546,7 +6550,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-05-27T01:53:05Z</date>
+	<date>2020-06-05T21:32:15Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
@@ -8544,13 +8548,15 @@
 	<key>findMode_iTerm</key>
 	<integer>0</integer>
 	<key>iTerm Version</key>
-	<string>3.3.10beta4</string>
+	<string>3.3.11beta1</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
 	<false/>
 	<key>kCPKUseSystemColorPicker</key>
 	<true/>
+	<key>metalMaximizeThroughput</key>
+	<false/>
 	<key>preferIntegratedGPU</key>
 	<false/>
 </dict>
