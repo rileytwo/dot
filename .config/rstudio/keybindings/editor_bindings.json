@@ -11,5 +11,6 @@
     "selectwordleft": "Shift+Cmd+A",
     "selectwordright": "Shift+Cmd+D",
     "unfold": "Shift+Cmd+\\",
-    "toggleFoldWidget": "Cmd+-"
+    "toggleFoldWidget": "Cmd+-",
+    "openCommandPallete": "Shift+Cmd+P"
 }

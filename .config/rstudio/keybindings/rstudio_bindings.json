@@ -45,5 +45,6 @@
     "activateConsolePane": "",
     "codeCompletion": "",
     "openRoxygenQuickReference": "Cmd+K Cmd+L",
-    "insertRoxygenSkeleton": "Cmd+K Cmd+K"
+    "insertRoxygenSkeleton": "Cmd+K Cmd+K",
+    "executeLastCode": ""
 }
