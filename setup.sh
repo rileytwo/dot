@@ -84,10 +84,10 @@ function ask() {
 }
 
 function invalid_answer() {
-  echo "${X} Invalid answer. Enter \"y/yes\" or \"N/no\"" >&2
+  echo "  ${X} Invalid answer. Enter \"y/yes\" or \"N/no\"" >&2
+  echo "  $((max_retries - ++retries)) attempts remaining."
   echo ""
 }
-
 
 
 
@@ -98,16 +98,13 @@ function check_brew() {
   if [[ "$(command -v brew)" == "" ]]; then
     retries=0
     max_retries=5
-
     while [ "$retries" -lt "$max_retries" ]; do
       reply "- ${BLU}Homebew${END} is ${YLW}not installed${END}."
       qstn="$(ask "Would you like to install it now?")"
-
       read -q "$qstn" answer
       echo ""
-
       case "$answer" in
-        y | Yes | yes)
+        "y" | "Y" | "yes" | "Yes")
           reply "- Okay! Installing Homebrew."
           /usr/bin/ruby -e \
             "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -118,24 +115,21 @@ function check_brew() {
           brew analytics off
           break
           ;;
-
-        n | N | No | no)
+        "n" | "N" | "no" | "No")
           reply "- Okay! Not installing ${BLU}Homebrew${END}."
           echo ""
           break
           ;;
-
         *)
           invalid_answer
-          if [ $((++retries)) -ge "$max_retries" ]; then
-            break
+          if [ "$retries" -ge "$max_retries" ]; then
             reply "${X} Too many invalid answers."
+            break
           fi
           ;;
 
         esac
       done
-
     else
       reply "- Homebrew is installed!"
       echo ""
@@ -148,7 +142,6 @@ function check_brew() {
 function check_settings() {
   echo "${S} Checking for settings directory... (there should only be one!!)"
   echo ""
-
   if [[ -d "${SETTINGS}" ]]; then
     cd "$SETTINGS" || echo "  - Something went ${RED}wrong :(${END}"
     reply "- ${GRN}Found it!${END}"
@@ -157,31 +150,29 @@ function check_settings() {
     reply "- Checking for settings scripts..."
     echo ""
     local sources=(./*)
-
     retries=0
     max_retries=5
     while [ "$retries" -lt "$max_retries" ]; do
-
       qstn="$(ask "Would you like to set your global settings?")"
-      read -q "$qstn" answer
+      read "$qstn" answer
       echo ""
       case "$answer" in
-        y | Yes | yes)
+        "y" | "Y" | "yes" | "Yes")
           reply "- Okay! Doing that now."
           echo ""
           source_files
           break
           ;;
-        n | N | No | no)
+        "n" | "N" | "no" | "no")
           reply "- Okay! Not setting anything right now."
           echo ""
           break
           ;;
         *)
           invalid_answer
-          if [ $((++retries)) -ge "$max_retries" ]; then
-            break
+          if [ "$retries" -ge "$max_retries" ]; then
             reply "${X} Too many invalid answers."
+            break
           fi
           ;;
       esac
@@ -218,32 +209,29 @@ function check_install_dir() {
 
       while [ "$retries" -lt "$max_retries" ]; do
         qstn="$(ask "Would you like to install these programs")"
-        read -q "$qstn" answer
+        read "$qstn" answer
         echo ""
         case "$answer" in
-          y | Yes | yes)
+          "y" | "Y" | "yes" | "Yes")
             reply "- Okay! Installing."
             echo ""
             source_files
             echo ""
             break
             ;;
-
-          n | N | No | no)
+          "n" | "N" | "no" | "No")
             reply "- Okay. Not installing."
             echo ""
             break
             ;;
-
           *)
             invalid_answer
-            if [ $((++retries)) -ge "$max_retries" ]; then
-              break
+            if [ "$retries" -ge "$max_retries" ]; then
               reply "${X} Too many invalid answers."
+              break
             fi
             ;;
         esac
-
       done
 
     fi
