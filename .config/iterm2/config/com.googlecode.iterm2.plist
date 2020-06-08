@@ -685,7 +685,7 @@
 	<key>NSFontPanelAttributes</key>
 	<string>1, 2</string>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/github/rileytwo/kiss/iterm2</string>
+	<string>~/.dot/.config/iterm2/config</string>
 	<key>NSNavLastUserSetHideExtensionButtonState</key>
 	<false/>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
@@ -772,7 +772,7 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>1169 110 445 237 0 0 1680 1027 </string>
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
-	<string>419 430 841 470 0 0 1680 1027 </string>
+	<string>440 448 799 448 0 0 1680 1027 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>490 343 700 586 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
@@ -5642,6 +5642,7 @@
 	</array>
 	<key>NoSyncAllAppVersions</key>
 	<array>
+		<string>3.3.10</string>
 		<string>3.3.10beta3</string>
 		<string>3.3.9beta1</string>
 		<string>3.3.8beta5</string>
@@ -5691,11 +5692,11 @@
 	<key>NoSyncLastTipTime</key>
 	<real>612830033.04287302</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>561</integer>
+	<integer>574</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
-	<integer>0</integer>
+	<integer>1</integer>
 	<key>NoSyncNextAnnoyanceTime</key>
 	<real>601517137.01925695</real>
 	<key>NoSyncOnboardingWindowHasBeenShown</key>
@@ -6550,7 +6551,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-06-05T21:32:15Z</date>
+	<date>2020-06-08T22:07:57Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
@@ -8548,7 +8549,7 @@
 	<key>findMode_iTerm</key>
 	<integer>0</integer>
 	<key>iTerm Version</key>
-	<string>3.3.11beta1</string>
+	<string>3.3.10</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
