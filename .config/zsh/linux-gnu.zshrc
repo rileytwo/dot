@@ -56,11 +56,8 @@ else
   HISTSIZE=10000
   SAVEHIST=10000
   plugins=(
-    #swiftpm
-    #zsh-interactive-cd
     git
     forgit
-    mac-zsh-completions
     zsh-autopair
     zsh-completions
     zsh-history-substring-search
@@ -69,7 +66,6 @@ else
   )
 fi
 
-fpath=(/usr/local/share/zsh-completions ${fpath})
 source "${ZSH}/oh-my-zsh.sh"
 
 
