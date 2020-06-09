@@ -193,6 +193,10 @@ ZSH_AUTOSUGGEST_CLEAR_WIDGETS+=(bracketed-paste)
 [[ -d "${HOME}/.pyenv" ]] \
   && export PATH="${HOME}/.pyenv/bin:$PATH"
 
+
+
+#### // helpers
+
 if (( $+commands[pyenv] )) && (( $+commands[pyenv-virtualenv-init])); then
   eval "$(pyenv init -)"
   eval "$(pyenv virtualenv-init -)"
@@ -205,10 +209,10 @@ if (( $+commands[rbenv] )); then
 fi
 
 if (( $+commands[fzf] )); then
-  if [[ -f "${HOME}"/.fzf.zsh ]]; then
-    source "${HOME}"/.fzf.zsh
-  elif [[ -f /usr/share/doc/fzf/examples/key-bindings.zsh ]]; then
-    source /usr/share/doc/fzf/examples/key-bindings.zsh
+  if [[ -f "${HOME}/.fzf.zsh" ]]; then
+    source "${HOME}/.fzf.zsh"
+  elif [[ -f "/usr/share/doc/fzf/examples/key-bindings.zsh" ]]; then
+    source "/usr/share/doc/fzf/examples/key-bindings.zsh"
   fi
 fi
 
@@ -222,15 +226,13 @@ export FZF_DEFAULT_OPTS='
 --color=info:#d4ce90,prompt:#9691ff,pointer:#ff7e81
 --color=marker:#73ff96,spinner:#ff7e81,header:#54cc72'
 
-
-
-#### // helpers
-
 [[ -f /usr/local/bin/typex ]] && source /usr/local/bin/typex
 [[ -f /usr/local/etc/profile.d/z.sh ]] && source /usr/local/etc/profile.d/z.sh
 
 [[ -f "${HOME}/.aliases.zsh" ]] && source "${HOME}/.aliases.zsh"
 [[ -f "${HOME}/.functions.zsh" ]] && source "${HOME}/.functions.zsh"
+
+
 
 #### // environment
 
