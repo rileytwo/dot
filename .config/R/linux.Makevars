@@ -8,11 +8,12 @@ CCACHE=/usr/bin/ccache
 # Make using all cores (set number to your number of cores)
 MAKE=make -j`nproc`
 
-# GNU version (assumes latest in Homebrew as of May 2019)
-VER=8
+# GNU version (assumes latest as of 2020-06-10)
+GNU_VER=9
+LLVM_VER=10
 
 # LLVM (Clang) compiler options
-CC=$(CCACHE) /usr/lib/llvm-$(VER)/bin/clang
+CC=$(CCACHE) /usr/lib/llvm-$(LLVM_VER)/bin/clang
 CXX=$(CC)++
 CXX98=$(CC)++
 CXX11=$(CC)++
@@ -20,9 +21,9 @@ CXX14=$(CC)++
 CXX17=$(CC)++
 
 # FORTRAN
-FC=$(CCACHE) /usr/bin/gfortran-$(VER)
+FC=$(CCACHE) /usr/bin/gfortran-$(GNU_VER)
 F77=$(FC)
-FLIBS=-L/usr/lib/gcc/x86_64-linux-gnu/$(VER) -lgfortran -lquadmath -lm
+FLIBS=-L/usr/lib/gcc/x86_64-linux-gnu/$(GNU_VER) -lgfortran -lquadmath -lm
 
 # STD libraries
 CXX1XSTD=-std=c++0x
@@ -39,8 +40,8 @@ CXX11FLAGS=$(STD_FLAGS)
 CXX14FLAGS=$(STD_FLAGS)
 CXX17FLAGS=$(STD_FLAGS)
 
-CPPFLAGS=-I/usr/lib/llvm-$(VER)/include -I/usr/include/openssl
-LDFLAGS=-L/usr/lib/llvm-$(VER)/lib
+CPPFLAGS=-I/usr/lib/llvm-$(LLVM_VER)/include -I/usr/include/openssl
+LDFLAGS=-L/usr/lib/llvm-$(LLVM_VER)/lib
 
 # R-specific flags for OpenMP support
 SHLIB_OPENMP_CFLAGS=-fopenmp
