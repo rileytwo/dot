@@ -20,18 +20,10 @@ bindkey '^xe' edit-command-line
 if [[ "${0}" != "-zsh" ]] || ! (( $+commands[neofetch] )); then
   :
 else
-  if [[ "${OSTYPE}" =~ "darwin" ]]; then
-    neofetch \
-      --ascii "${HOME}"/.dot/.config/neofetch/config-mac.conf \
-      --colors 5 7 7 4 7 15
-
-  elif [[ "${OSTYPE}" == "linux-gnu" ]]; then
-    neofetch \
-      --config "${HOME}"/.config/neofetch/config-linux.conf \
-      --ascii_distro kubuntu \
-      --colors 5 7 7 4 7 15
-
-  fi
+  neofetch \
+    --config "${HOME}"/.config/neofetch/config-linux.conf \
+    --ascii_distro kubuntu \
+    --colors 5 7 7 4 7 15
 fi
 
 
@@ -44,27 +36,17 @@ export ZSH="${HOME}/.oh-my-zsh"
 ZSH_THEME='kiss'
 
 HISTFILE="${HOME}/.zsh_history"
-if [[ "$OSTYPE" =~ "linux-musl" ]]; then
-  HISTSIZE=500
-  SAVEHIST=500
-  plugins=(
-    zsh-autopair
-    zsh-autosuggestions
-    zsh-syntax-highlighting
-  )
-else
-  HISTSIZE=10000
-  SAVEHIST=10000
-  plugins=(
-    git
-    forgit
-    zsh-autopair
-    zsh-completions
-    zsh-history-substring-search
-    zsh-autosuggestions
-    zsh-syntax-highlighting
-  )
-fi
+HISTSIZE=10000
+SAVEHIST=10000
+plugins=(
+  git
+  forgit
+  zsh-autopair
+  zsh-completions
+  zsh-history-substring-search
+  zsh-autosuggestions
+  zsh-syntax-highlighting
+)
 
 source "${ZSH}/oh-my-zsh.sh"
 
@@ -192,31 +174,22 @@ ZSH_AUTOSUGGEST_CLEAR_WIDGETS+=(bracketed-paste)
 
 #### // OS specific stuff
 
-if [[ "${OSTYPE}" =~ "linux-gnu" ]]; then
+umask 002
 
-  umask 002
+[[ -f "${HOME}/z.sh" ]] \
+  && source "${HOME}/z.sh"
 
-  [[ -f "${HOME}/z.sh" ]] \
-    && source "${HOME}/z.sh"
+[[ -d "/snap/bin" ]] \
+  && export PATH="/snap/bin:$PATH"
 
-  [[ -d "/snap/bin" ]] \
-    && export PATH="/snap/bin:$PATH"
+[[ -d "${HOME}/.npm-global" ]] \
+  && export PATH="${HOME}/.npm-global/bin:$PATH"
 
-  [[ -d "${HOME}/.npm-global" ]] \
-    && export PATH="${HOME}/.npm-global/bin:$PATH"
+[[ -d "/usr/share/swift" ]] \
+  && export PATH="/usr/share/swift/usr/bin:$PATH"
 
-  [[ -d "/usr/share/swift" ]] \
-    && export PATH="/usr/share/swift/usr/bin:$PATH"
-
-  [[ -d "/home/linuxbrew/.linuxbrew/bin" ]] \
-    && export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
-
-elif [[ "${OSTYPE}" =~ "darwin" ]]; then
-
-  [[ -f /usr/local/etc/profile.d/z.sh ]] \
-    && source /usr/local/etc/profile.d/z.sh
-
-fi
+[[ -d "/home/linuxbrew/.linuxbrew/bin" ]] \
+  && export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
 
 
 
@@ -237,6 +210,10 @@ fi
 
 [[ -d "${HOME}/.pyenv" ]] \
   && export PATH="${HOME}/.pyenv/bin:$PATH"
+
+
+
+#### // helpers
 
 if (( $+commands[pyenv] )) && (( $+commands[pyenv-virtualenv-init])); then
   eval "$(pyenv init -)"
@@ -267,13 +244,8 @@ export FZF_DEFAULT_OPTS='
 --color=info:#d4ce90,prompt:#9691ff,pointer:#ff7e81
 --color=marker:#73ff96,spinner:#ff7e81,header:#54cc72'
 
-
-
-#### // helpers
-
 [[ -f /usr/local/bin/typex ]] && source /usr/local/bin/typex
-
-[[ -f "${HOME}/.aliases" ]] && source "${HOME}/.aliases"
+[[ -f "${HOME}/.aliases.zsh" ]] && source "${HOME}/.aliases.zsh"
 
 
 
@@ -300,13 +272,4 @@ if (( $+commands[nvim] )); then
 else
   export EDITOR=vim
 fi
-
-if [[ ${LC_TERMINAL} =~ "i[tT]erm2" ]]; then
-  export MPLBACKEND="module://itermplot"
-  export ITERMPLOT=rv
-fi
-
-[[ -e "${HOME}/.iterm2_shell_integration.zsh" ]] \
-  && source "${HOME}/.iterm2_shell_integration.zsh" || :
-
 
