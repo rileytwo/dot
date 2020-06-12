@@ -8,7 +8,7 @@
 {
   "$schema": "https://aka.ms/terminal-profiles-schema",
 
-  "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
+  "defaultProfile": "{fe66f4b8-350f-56bb-adb0-c2ce745f6db5}",
 
   // You can add more global application settings here.
   // To learn more about global settings, visit https://aka.ms/terminal-global-settings
@@ -32,7 +32,8 @@
       {
           // Put settings here that you want to apply to all profiles.
           "fontFace": "Liga SFMono Nerd Font",
-          "fontSize": 10
+          "fontSize": 10,
+          "colorScheme": "Kiss"
       },
       "list":
       [
@@ -56,14 +57,14 @@
               "hidden": false,
               "name": "PowerShell",
               "source": "Windows.Terminal.PowershellCore",
-              "cursorShape": "filledBox",
-              "colorScheme": "Kiss"
+              "cursorShape": "filledBox"
           },
           {
               "guid": "{fe66f4b8-350f-56bb-adb0-c2ce745f6db5}",
-              "hidden": true,
+              "hidden": false,
               "name": "PowerShell (scoop)",
-              "source": "Windows.Terminal.PowershellCore"
+              "source": "Windows.Terminal.PowershellCore",
+              "cursorShape": "filledBox"
           },
           {
               "guid": "{63e31163-583f-5850-9c1e-24e227dd2da9}",
@@ -77,7 +78,6 @@
               "name": "Ubuntu",
               "source": "Windows.Terminal.Wsl",
               "cursorShape": "filledBox",
-              "colorScheme": "Kiss",
               "startingDirectory": "//wsl$/Ubuntu/home/riley/"
           },
           {
@@ -93,8 +93,7 @@
               // "source": "Windows.Terminal.Azure"
               "commandline" : "C:/rtools40/msys2_shell.cmd -defterm -no-start -msys2",
               "icon": "C:/rtools40/msys2.ico",
-              "startingDirectory": "C:/rtools40/home/",
-              "colorScheme": "Kiss"
+              "startingDirectory": "C:/rtools40/home/"
           }
       ]
   },
