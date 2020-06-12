@@ -20,10 +20,17 @@ bindkey '^xe' edit-command-line
 if [[ "${0}" != "-zsh" ]] || ! (( $+commands[neofetch] )); then
   :
 else
-  neofetch \
-    --config "${HOME}"/.config/neofetch/config-linux.conf \
-    --ascii_distro kubuntu \
-    --colors 5 7 7 4 7 15
+  if [[ "$(uname -r)" =~ "windows" ]]; then
+    neofetch \
+      --config "${HOME}"/.config/neofetch/config.conf \
+      --ascii_distro windows10 \
+      --colors 5 7 7 4 7 15
+  else
+    neofetch \
+      --config "${HOME}"/.config/neofetch/config.conf \
+      --ascii_distro windows10 \
+      --colors 5 7 7 4 7 15
+  fi
 fi
 
 
