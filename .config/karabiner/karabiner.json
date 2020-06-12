@@ -1,1361 +1,1330 @@
 {
-    "global": {
-        "check_for_updates_on_startup": false,
-        "show_in_menu_bar": false,
-        "show_profile_name_in_menu_bar": true
-    },
-    "profiles": [
+  "global": {
+    "check_for_updates_on_startup": false,
+    "show_in_menu_bar": false,
+    "show_profile_name_in_menu_bar": true
+  },
+  "profiles": [
+    {
+      "complex_modifications": {
+        "parameters": {
+          "basic.simultaneous_threshold_milliseconds": 50,
+          "basic.to_delayed_action_delay_milliseconds": 500,
+          "basic.to_if_alone_timeout_milliseconds": 1000,
+          "basic.to_if_held_down_threshold_milliseconds": 500,
+          "mouse_motion_to_scroll.speed": 100
+        },
+        "rules": [
+          {
+            "description": "Global: ⌃ + ⌫ | Delete one word",
+            "manipulators": [
+              {
+                "from": {
+                  "key_code": "delete_or_backspace",
+                  "modifiers": {
+                    "mandatory": ["control"]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "delete_or_backspace",
+                    "modifiers": ["option"]
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "Global: Change caps_lock key to command+control+option+shift. (Use shift+caps_lock as caps_lock)",
+            "manipulators": [
+              {
+                "from": {
+                  "key_code": "caps_lock",
+                  "modifiers": {
+                    "mandatory": ["shift"],
+                    "optional": ["caps_lock"]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "caps_lock"
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "from": {
+                  "key_code": "caps_lock",
+                  "modifiers": {
+                    "optional": ["any"]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "left_shift",
+                    "modifiers": ["left_command", "left_control", "left_option"]
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "Global: ⌃ + W/A/S/D as Arrow Keys",
+            "manipulators": [
+              {
+                "from": {
+                  "key_code": "w",
+                  "modifiers": {
+                    "mandatory": ["control"]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "up_arrow"
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "from": {
+                  "key_code": "a",
+                  "modifiers": {
+                    "mandatory": ["control"]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "left_arrow"
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "from": {
+                  "key_code": "s",
+                  "modifiers": {
+                    "mandatory": ["control"]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "down_arrow"
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "from": {
+                  "key_code": "d",
+                  "modifiers": {
+                    "mandatory": ["control"]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "right_arrow"
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "Global: ⌃ + ⇧ + A/D | Move cursor one word Left/Right",
+            "manipulators": [
+              {
+                "from": {
+                  "key_code": "a",
+                  "modifiers": {
+                    "mandatory": ["control", "shift"]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "left_arrow",
+                    "modifiers": ["option"]
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "from": {
+                  "key_code": "d",
+                  "modifiers": {
+                    "mandatory": ["control", "shift"]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "right_arrow",
+                    "modifiers": ["option"]
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "Global: Change shift + delete to forward delete (rev 2)",
+            "manipulators": [
+              {
+                "from": {
+                  "key_code": "delete_or_backspace",
+                  "modifiers": {
+                    "mandatory": ["shift"],
+                    "optional": ["caps_lock", "option"]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "delete_forward"
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "Disable: ⌘ + ⌃ + ⌥ + ⇧ + ,",
+            "manipulators": [
+              {
+                "from": {
+                  "key_code": "comma",
+                  "modifiers": {
+                    "mandatory": ["command", "shift", "option", "control"]
+                  }
+                },
+                "to": {
+                  "key_code": "h"
+                },
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "Disable: ⌘ + ⌃ + ⌥ + ⇧ + .",
+            "manipulators": [
+              {
+                "from": {
+                  "key_code": "period",
+                  "modifiers": {
+                    "mandatory": ["command", "shift", "option", "control"]
+                  }
+                },
+                "to": {
+                  "key_code": "h"
+                },
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "Terminals: ⌥ + ← | Move cursor to line begin",
+            "manipulators": [
+              {
+                "conditions": [
+                  {
+                    "bundle_identifiers": [
+                      "^com\\.apple\\.Terminal$",
+                      "^com\\.googlecode\\.iterm2$",
+                      "^co\\.zeit\\.hyperterm$",
+                      "^co\\.zeit\\.hyper$",
+                      "^io\\.alacritty$",
+                      "^net\\.kovidgoyal\\.kitty$"
+                    ],
+                    "type": "frontmost_application_if"
+                  }
+                ],
+                "from": {
+                  "key_code": "left_arrow",
+                  "modifiers": {
+                    "mandatory": ["option"]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "a",
+                    "modifiers": ["left_control"]
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "Terminals: ⌥ + → | Move cursor to line end",
+            "manipulators": [
+              {
+                "conditions": [
+                  {
+                    "bundle_identifiers": [
+                      "^com\\.apple\\.Terminal$",
+                      "^com\\.googlecode\\.iterm2$",
+                      "^co\\.zeit\\.hyperterm$",
+                      "^co\\.zeit\\.hyper$",
+                      "^io\\.alacritty$",
+                      "^net\\.kovidgoyal\\.kitty$"
+                    ],
+                    "type": "frontmost_application_if"
+                  }
+                ],
+                "from": {
+                  "key_code": "right_arrow",
+                  "modifiers": {
+                    "mandatory": ["option"]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "e",
+                    "modifiers": ["left_control"]
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "Terminals: ⌘ + ← | Move cursor one word behind",
+            "manipulators": [
+              {
+                "conditions": [
+                  {
+                    "bundle_identifiers": [
+                      "^com\\.apple\\.Terminal$",
+                      "^com\\.googlecode\\.iterm2$",
+                      "^co\\.zeit\\.hyperterm$",
+                      "^co\\.zeit\\.hyper$",
+                      "^io\\.alacritty$",
+                      "^net\\.kovidgoyal\\.kitty$"
+                    ],
+                    "type": "frontmost_application_if"
+                  }
+                ],
+                "from": {
+                  "key_code": "left_arrow",
+                  "modifiers": {
+                    "mandatory": ["command"]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "escape"
+                  },
+                  {
+                    "key_code": "b"
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "Terminals: ⌘ + → | Move cursor one word ahead",
+            "manipulators": [
+              {
+                "conditions": [
+                  {
+                    "bundle_identifiers": [
+                      "^com\\.apple\\.Terminal$",
+                      "^com\\.googlecode\\.iterm2$",
+                      "^co\\.zeit\\.hyperterm$",
+                      "^co\\.zeit\\.hyper$",
+                      "^io\\.alacritty$",
+                      "^net\\.kovidgoyal\\.kitty$"
+                    ],
+                    "type": "frontmost_application_if"
+                  }
+                ],
+                "from": {
+                  "key_code": "right_arrow",
+                  "modifiers": {
+                    "mandatory": ["command"]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "escape"
+                  },
+                  {
+                    "key_code": "f"
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "Terminals: ⌘ + ⌫ | Delete one word",
+            "manipulators": [
+              {
+                "conditions": [
+                  {
+                    "bundle_identifiers": [
+                      "^com\\.apple\\.Terminal$",
+                      "^com\\.googlecode\\.iterm2$",
+                      "^co\\.zeit\\.hyperterm$",
+                      "^co\\.zeit\\.hyper$",
+                      "^io\\.alacritty$",
+                      "^net\\.kovidgoyal\\.kitty$"
+                    ],
+                    "type": "frontmost_application_if"
+                  }
+                ],
+                "from": {
+                  "key_code": "delete_or_backspace",
+                  "modifiers": {
+                    "mandatory": ["command"]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "w",
+                    "modifiers": ["left_control"]
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "Terminals: ⌘ + ⌦ | Delete one word ahead",
+            "manipulators": [
+              {
+                "conditions": [
+                  {
+                    "bundle_identifiers": [
+                      "^com\\.apple\\.Terminal$",
+                      "^com\\.googlecode\\.iterm2$",
+                      "^co\\.zeit\\.hyperterm$",
+                      "^co\\.zeit\\.hyper$",
+                      "^io\\.alacritty$",
+                      "^net\\.kovidgoyal\\.kitty$"
+                    ],
+                    "type": "frontmost_application_if"
+                  }
+                ],
+                "from": {
+                  "key_code": "delete_or_backspace",
+                  "modifiers": {
+                    "mandatory": ["command", "fn"]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "escape"
+                  },
+                  {
+                    "key_code": "d"
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "Terminals: ⌥ + ⌫ | Delete to line begin",
+            "manipulators": [
+              {
+                "conditions": [
+                  {
+                    "bundle_identifiers": [
+                      "^com\\.apple\\.Terminal$",
+                      "^com\\.googlecode\\.iterm2$",
+                      "^co\\.zeit\\.hyperterm$",
+                      "^co\\.zeit\\.hyper$",
+                      "^io\\.alacritty$",
+                      "^net\\.kovidgoyal\\.kitty$"
+                    ],
+                    "type": "frontmost_application_if"
+                  }
+                ],
+                "from": {
+                  "key_code": "delete_or_backspace",
+                  "modifiers": {
+                    "mandatory": ["option"]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "u",
+                    "modifiers": ["left_control"]
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "Terminals: ⌥ + ⌦ | Delete to line end",
+            "manipulators": [
+              {
+                "conditions": [
+                  {
+                    "bundle_identifiers": [
+                      "^com\\.apple\\.Terminal$",
+                      "^com\\.googlecode\\.iterm2$",
+                      "^co\\.zeit\\.hyperterm$",
+                      "^co\\.zeit\\.hyper$",
+                      "^io\\.alacritty$",
+                      "^net\\.kovidgoyal\\.kitty$"
+                    ],
+                    "type": "frontmost_application_if"
+                  }
+                ],
+                "from": {
+                  "key_code": "delete_or_backspace",
+                  "modifiers": {
+                    "mandatory": ["option", "fn"]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "k",
+                    "modifiers": ["left_control"]
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          }
+        ]
+      },
+      "devices": [
         {
-            "complex_modifications": {
-                "parameters": {
-                    "basic.simultaneous_threshold_milliseconds": 50,
-                    "basic.to_delayed_action_delay_milliseconds": 500,
-                    "basic.to_if_alone_timeout_milliseconds": 1000,
-                    "basic.to_if_held_down_threshold_milliseconds": 500,
-                    "mouse_motion_to_scroll.speed": 100
-                },
-                "rules": [
-                    {
-                        "description": "Global: Change caps_lock key to command+control+option+shift. (Use shift+caps_lock as caps_lock)",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "caps_lock",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "shift"
-                                        ],
-                                        "optional": [
-                                            "caps_lock"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "caps_lock"
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "caps_lock",
-                                    "modifiers": {
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "left_shift",
-                                        "modifiers": [
-                                            "left_command",
-                                            "left_control",
-                                            "left_option"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Global: ⌃ + W/A/S/D as Arrow Keys",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "w",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "control"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "up_arrow"
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "a",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "control"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "left_arrow"
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "s",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "control"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "down_arrow"
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "d",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "control"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "right_arrow"
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Global: ⌃ + ⇧ + A/D | Move cursor one word Left/Right",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "a",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "control",
-                                            "shift"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "left_arrow",
-                                        "modifiers": [
-                                            "option"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "d",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "control",
-                                            "shift"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "right_arrow",
-                                        "modifiers": [
-                                            "option"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Global: Change shift + delete to forward delete (rev 2)",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "delete_or_backspace",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "shift"
-                                        ],
-                                        "optional": [
-                                            "caps_lock",
-                                            "option"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "delete_forward"
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Terminals: ⌥ + ← | Move cursor to line begin",
-                        "manipulators": [
-                            {
-                                "conditions": [
-                                    {
-                                        "bundle_identifiers": [
-                                            "^com\\.apple\\.Terminal$",
-                                            "^com\\.googlecode\\.iterm2$",
-                                            "^co\\.zeit\\.hyperterm$",
-                                            "^co\\.zeit\\.hyper$",
-                                            "^io\\.alacritty$",
-                                            "^net\\.kovidgoyal\\.kitty$"
-                                        ],
-                                        "type": "frontmost_application_if"
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "left_arrow",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "option"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "a",
-                                        "modifiers": [
-                                            "left_control"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Terminals: ⌥ + → | Move cursor to line end",
-                        "manipulators": [
-                            {
-                                "conditions": [
-                                    {
-                                        "bundle_identifiers": [
-                                            "^com\\.apple\\.Terminal$",
-                                            "^com\\.googlecode\\.iterm2$",
-                                            "^co\\.zeit\\.hyperterm$",
-                                            "^co\\.zeit\\.hyper$",
-                                            "^io\\.alacritty$",
-                                            "^net\\.kovidgoyal\\.kitty$"
-                                        ],
-                                        "type": "frontmost_application_if"
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "right_arrow",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "option"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "e",
-                                        "modifiers": [
-                                            "left_control"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Terminals: ⌥ + ⌫ | Delete to line begin",
-                        "manipulators": [
-                            {
-                                "conditions": [
-                                    {
-                                        "bundle_identifiers": [
-                                            "^com\\.apple\\.Terminal$",
-                                            "^com\\.googlecode\\.iterm2$",
-                                            "^co\\.zeit\\.hyperterm$",
-                                            "^co\\.zeit\\.hyper$",
-                                            "^io\\.alacritty$",
-                                            "^net\\.kovidgoyal\\.kitty$"
-                                        ],
-                                        "type": "frontmost_application_if"
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "delete_or_backspace",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "option"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "u",
-                                        "modifiers": [
-                                            "left_control"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Terminals: ⌥ + ⌦ | Delete to line end",
-                        "manipulators": [
-                            {
-                                "conditions": [
-                                    {
-                                        "bundle_identifiers": [
-                                            "^com\\.apple\\.Terminal$",
-                                            "^com\\.googlecode\\.iterm2$",
-                                            "^co\\.zeit\\.hyperterm$",
-                                            "^co\\.zeit\\.hyper$",
-                                            "^io\\.alacritty$",
-                                            "^net\\.kovidgoyal\\.kitty$"
-                                        ],
-                                        "type": "frontmost_application_if"
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "delete_or_backspace",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "option",
-                                            "fn"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "k",
-                                        "modifiers": [
-                                            "left_control"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Global: ⌥ + ← | Move cursor to line begin",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "left_arrow",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "option"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "left_arrow",
-                                        "modifiers": [
-                                            "command"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Global: ⌥ + → | Move cursor to line end",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "right_arrow",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "option"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "right_arrow",
-                                        "modifiers": [
-                                            "command"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Global: ⌘ + ← | Move cursor one word behind",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "left_arrow",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "command"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "left_arrow",
-                                        "modifiers": [
-                                            "option"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Global: ⌘ + → | Move cursor one word ahead",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "right_arrow",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "command"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "right_arrow",
-                                        "modifiers": [
-                                            "option"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Global: ⌘ + ⌫ | Delete one word",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "delete_or_backspace",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "command"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "delete_or_backspace",
-                                        "modifiers": [
-                                            "option"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Global: ⌥ + ⌫ | Delete to line begin",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "delete_or_backspace",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "option"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "delete_or_backspace",
-                                        "modifiers": [
-                                            "command"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Disable: ⌘ + ⌃ + ⌥ + ⇧ + ,",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "comma",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "command",
-                                            "shift",
-                                            "option",
-                                            "control"
-                                        ]
-                                    }
-                                },
-                                "to": {
-                                    "key_code": "h"
-                                },
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Disable: ⌘ + ⌃ + ⌥ + ⇧ + .",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "period",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "command",
-                                            "shift",
-                                            "option",
-                                            "control"
-                                        ]
-                                    }
-                                },
-                                "to": {
-                                    "key_code": "h"
-                                },
-                                "type": "basic"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "devices": [
-                {
-                    "disable_built_in_keyboard_if_exists": false,
-                    "fn_function_keys": [],
-                    "identifiers": {
-                        "is_keyboard": true,
-                        "is_pointing_device": false,
-                        "product_id": 630,
-                        "vendor_id": 1452
-                    },
-                    "ignore": false,
-                    "manipulate_caps_lock_led": true,
-                    "simple_modifications": [
-                        {
-                            "from": {
-                                "key_code": "right_command"
-                            },
-                            "to": {
-                                "key_code": "right_control"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "disable_built_in_keyboard_if_exists": false,
-                    "fn_function_keys": [],
-                    "identifiers": {
-                        "is_keyboard": true,
-                        "is_pointing_device": false,
-                        "product_id": 130,
-                        "vendor_id": 12136
-                    },
-                    "ignore": false,
-                    "manipulate_caps_lock_led": true,
-                    "simple_modifications": [
-                        {
-                            "from": {
-                                "key_code": "left_command"
-                            },
-                            "to": {
-                                "key_code": "left_option"
-                            }
-                        },
-                        {
-                            "from": {
-                                "key_code": "left_option"
-                            },
-                            "to": {
-                                "key_code": "left_command"
-                            }
-                        },
-                        {
-                            "from": {
-                                "key_code": "right_control"
-                            },
-                            "to": {
-                                "key_code": "right_option"
-                            }
-                        },
-                        {
-                            "from": {
-                                "key_code": "right_option"
-                            },
-                            "to": {
-                                "key_code": "right_control"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "disable_built_in_keyboard_if_exists": false,
-                    "fn_function_keys": [],
-                    "identifiers": {
-                        "is_keyboard": true,
-                        "is_pointing_device": false,
-                        "product_id": 657,
-                        "vendor_id": 1452
-                    },
-                    "ignore": false,
-                    "manipulate_caps_lock_led": true,
-                    "simple_modifications": [
-                        {
-                            "from": {
-                                "key_code": "right_command"
-                            },
-                            "to": {
-                                "key_code": "right_control"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "disable_built_in_keyboard_if_exists": false,
-                    "fn_function_keys": [],
-                    "identifiers": {
-                        "is_keyboard": true,
-                        "is_pointing_device": true,
-                        "product_id": 45082,
-                        "vendor_id": 1133
-                    },
-                    "ignore": false,
-                    "manipulate_caps_lock_led": false,
-                    "simple_modifications": [
-                        {
-                            "from": {
-                                "pointing_button": "button4"
-                            },
-                            "to": {
-                                "key_code": "open_bracket",
-                                "modifiers": [
-                                    "left_command"
-                                ]
-                            }
-                        },
-                        {
-                            "from": {
-                                "pointing_button": "button5"
-                            },
-                            "to": {
-                                "key_code": "close_bracket",
-                                "modifiers": [
-                                    "left_command"
-                                ]
-                            }
-                        }
-                    ]
-                },
-                {
-                    "disable_built_in_keyboard_if_exists": false,
-                    "fn_function_keys": [],
-                    "identifiers": {
-                        "is_keyboard": true,
-                        "is_pointing_device": false,
-                        "product_id": 636,
-                        "vendor_id": 1452
-                    },
-                    "ignore": false,
-                    "manipulate_caps_lock_led": true,
-                    "simple_modifications": [
-                        {
-                            "from": {
-                                "key_code": "right_command"
-                            },
-                            "to": {
-                                "key_code": "right_control"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "disable_built_in_keyboard_if_exists": false,
-                    "fn_function_keys": [],
-                    "identifiers": {
-                        "is_keyboard": true,
-                        "is_pointing_device": false,
-                        "product_id": 30354,
-                        "vendor_id": 3141
-                    },
-                    "ignore": false,
-                    "manipulate_caps_lock_led": true,
-                    "simple_modifications": [
-                        {
-                            "from": {
-                                "key_code": "left_command"
-                            },
-                            "to": {
-                                "key_code": "left_option"
-                            }
-                        },
-                        {
-                            "from": {
-                                "key_code": "left_option"
-                            },
-                            "to": {
-                                "key_code": "left_command"
-                            }
-                        },
-                        {
-                            "from": {
-                                "key_code": "right_command"
-                            },
-                            "to": {
-                                "key_code": "right_option"
-                            }
-                        },
-                        {
-                            "from": {
-                                "key_code": "right_option"
-                            },
-                            "to": {
-                                "key_code": "right_control"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "disable_built_in_keyboard_if_exists": false,
-                    "fn_function_keys": [],
-                    "identifiers": {
-                        "is_keyboard": true,
-                        "is_pointing_device": false,
-                        "product_id": 34304,
-                        "vendor_id": 1452
-                    },
-                    "ignore": true,
-                    "manipulate_caps_lock_led": false,
-                    "simple_modifications": []
-                },
-                {
-                    "disable_built_in_keyboard_if_exists": false,
-                    "fn_function_keys": [],
-                    "identifiers": {
-                        "is_keyboard": true,
-                        "is_pointing_device": false,
-                        "product_id": 65535,
-                        "vendor_id": 1452
-                    },
-                    "ignore": true,
-                    "manipulate_caps_lock_led": false,
-                    "simple_modifications": []
-                },
-                {
-                    "disable_built_in_keyboard_if_exists": false,
-                    "fn_function_keys": [],
-                    "identifiers": {
-                        "is_keyboard": true,
-                        "is_pointing_device": true,
-                        "product_id": 45086,
-                        "vendor_id": 1133
-                    },
-                    "ignore": false,
-                    "manipulate_caps_lock_led": false,
-                    "simple_modifications": []
-                },
-                {
-                    "disable_built_in_keyboard_if_exists": false,
-                    "fn_function_keys": [],
-                    "identifiers": {
-                        "is_keyboard": true,
-                        "is_pointing_device": false,
-                        "product_id": 50475,
-                        "vendor_id": 1133
-                    },
-                    "ignore": false,
-                    "manipulate_caps_lock_led": false,
-                    "simple_modifications": [
-                        {
-                            "from": {
-                                "pointing_button": "button4"
-                            },
-                            "to": {
-                                "key_code": "open_bracket",
-                                "modifiers": [
-                                    "left_command"
-                                ]
-                            }
-                        },
-                        {
-                            "from": {
-                                "pointing_button": "button5"
-                            },
-                            "to": {
-                                "key_code": "close_bracket",
-                                "modifiers": [
-                                    "left_command"
-                                ]
-                            }
-                        }
-                    ]
-                },
-                {
-                    "disable_built_in_keyboard_if_exists": false,
-                    "fn_function_keys": [],
-                    "identifiers": {
-                        "is_keyboard": false,
-                        "is_pointing_device": true,
-                        "product_id": 50475,
-                        "vendor_id": 1133
-                    },
-                    "ignore": false,
-                    "manipulate_caps_lock_led": false,
-                    "simple_modifications": [
-                        {
-                            "from": {
-                                "pointing_button": "button4"
-                            },
-                            "to": {
-                                "key_code": "open_bracket",
-                                "modifiers": [
-                                    "left_command"
-                                ]
-                            }
-                        },
-                        {
-                            "from": {
-                                "pointing_button": "button5"
-                            },
-                            "to": {
-                                "key_code": "close_bracket",
-                                "modifiers": [
-                                    "left_command"
-                                ]
-                            }
-                        }
-                    ]
-                }
-            ],
-            "fn_function_keys": [
-                {
-                    "from": {
-                        "key_code": "f1"
-                    },
-                    "to": {
-                        "consumer_key_code": "display_brightness_decrement"
-                    }
-                },
-                {
-                    "from": {
-                        "key_code": "f2"
-                    },
-                    "to": {
-                        "consumer_key_code": "display_brightness_increment"
-                    }
-                },
-                {
-                    "from": {
-                        "key_code": "f3"
-                    },
-                    "to": {
-                        "key_code": "mission_control"
-                    }
-                },
-                {
-                    "from": {
-                        "key_code": "f4"
-                    },
-                    "to": {
-                        "key_code": "launchpad"
-                    }
-                },
-                {
-                    "from": {
-                        "key_code": "f5"
-                    },
-                    "to": {
-                        "key_code": "illumination_decrement"
-                    }
-                },
-                {
-                    "from": {
-                        "key_code": "f6"
-                    },
-                    "to": {
-                        "key_code": "illumination_increment"
-                    }
-                },
-                {
-                    "from": {
-                        "key_code": "f7"
-                    },
-                    "to": {
-                        "consumer_key_code": "rewind"
-                    }
-                },
-                {
-                    "from": {
-                        "key_code": "f8"
-                    },
-                    "to": {
-                        "consumer_key_code": "play_or_pause"
-                    }
-                },
-                {
-                    "from": {
-                        "key_code": "f9"
-                    },
-                    "to": {
-                        "consumer_key_code": "fastforward"
-                    }
-                },
-                {
-                    "from": {
-                        "key_code": "f10"
-                    },
-                    "to": {
-                        "consumer_key_code": "mute"
-                    }
-                },
-                {
-                    "from": {
-                        "key_code": "f11"
-                    },
-                    "to": {
-                        "consumer_key_code": "volume_decrement"
-                    }
-                },
-                {
-                    "from": {
-                        "key_code": "f12"
-                    },
-                    "to": {
-                        "consumer_key_code": "volume_increment"
-                    }
-                }
-            ],
-            "name": "🌺",
-            "parameters": {
-                "delay_milliseconds_before_open_device": 5000
-            },
-            "selected": true,
-            "simple_modifications": [],
-            "virtual_hid_keyboard": {
-                "country_code": 0,
-                "mouse_key_xy_scale": 100
+          "disable_built_in_keyboard_if_exists": false,
+          "fn_function_keys": [],
+          "identifiers": {
+            "is_keyboard": true,
+            "is_pointing_device": false,
+            "product_id": 630,
+            "vendor_id": 1452
+          },
+          "ignore": false,
+          "manipulate_caps_lock_led": true,
+          "simple_modifications": [
+            {
+              "from": {
+                "key_code": "right_command"
+              },
+              "to": {
+                "key_code": "right_control"
+              }
             }
+          ]
         },
         {
-            "complex_modifications": {
-                "parameters": {
-                    "basic.simultaneous_threshold_milliseconds": 50,
-                    "basic.to_delayed_action_delay_milliseconds": 500,
-                    "basic.to_if_alone_timeout_milliseconds": 1000,
-                    "basic.to_if_held_down_threshold_milliseconds": 500,
-                    "mouse_motion_to_scroll.speed": 100
-                },
-                "rules": [
-                    {
-                        "description": "PC-Style Copy/Paste/Cut",
-                        "manipulators": [
-                            {
-                                "conditions": [
-                                    {
-                                        "bundle_identifiers": [
-                                            "^com\\.microsoft\\.rdc$",
-                                            "^com\\.microsoft\\.rdc\\.mac$",
-                                            "^com\\.microsoft\\.rdc\\.macos$",
-                                            "^com\\.microsoft\\.rdc\\.osx\\.beta$",
-                                            "^net\\.sf\\.cord$",
-                                            "^com\\.thinomenon\\.RemoteDesktopConnection$",
-                                            "^com\\.itap-mobile\\.qmote$",
-                                            "^com\\.nulana\\.remotixmac$",
-                                            "^com\\.p5sys\\.jump\\.mac\\.viewer$",
-                                            "^com\\.p5sys\\.jump\\.mac\\.viewer\\.web$",
-                                            "^com\\.teamviewer\\.TeamViewer$",
-                                            "^com\\.vmware\\.horizon$",
-                                            "^com\\.2X\\.Client\\.Mac$",
-                                            "^com\\.vmware\\.fusion$",
-                                            "^com\\.vmware\\.horizon$",
-                                            "^com\\.vmware\\.view$",
-                                            "^com\\.parallels\\.desktop$",
-                                            "^com\\.parallels\\.vm$",
-                                            "^com\\.parallels\\.desktop\\.console$",
-                                            "^org\\.virtualbox\\.app\\.VirtualBoxVM$",
-                                            "^com\\.citrix\\.XenAppViewer$",
-                                            "^com\\.vmware\\.proxyApp\\.",
-                                            "^com\\.parallels\\.winapp\\.",
-                                            "^com\\.apple\\.Terminal$",
-                                            "^com\\.googlecode\\.iterm2$",
-                                            "^co\\.zeit\\.hyperterm$",
-                                            "^co\\.zeit\\.hyper$",
-                                            "^io\\.alacritty$",
-                                            "^net\\.kovidgoyal\\.kitty$"
-                                        ],
-                                        "type": "frontmost_application_unless"
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "c",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "control"
-                                        ],
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "c",
-                                        "modifiers": [
-                                            "left_command"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "bundle_identifiers": [
-                                            "^com\\.microsoft\\.rdc$",
-                                            "^com\\.microsoft\\.rdc\\.mac$",
-                                            "^com\\.microsoft\\.rdc\\.macos$",
-                                            "^com\\.microsoft\\.rdc\\.osx\\.beta$",
-                                            "^net\\.sf\\.cord$",
-                                            "^com\\.thinomenon\\.RemoteDesktopConnection$",
-                                            "^com\\.itap-mobile\\.qmote$",
-                                            "^com\\.nulana\\.remotixmac$",
-                                            "^com\\.p5sys\\.jump\\.mac\\.viewer$",
-                                            "^com\\.p5sys\\.jump\\.mac\\.viewer\\.web$",
-                                            "^com\\.teamviewer\\.TeamViewer$",
-                                            "^com\\.vmware\\.horizon$",
-                                            "^com\\.2X\\.Client\\.Mac$",
-                                            "^com\\.vmware\\.fusion$",
-                                            "^com\\.vmware\\.horizon$",
-                                            "^com\\.vmware\\.view$",
-                                            "^com\\.parallels\\.desktop$",
-                                            "^com\\.parallels\\.vm$",
-                                            "^com\\.parallels\\.desktop\\.console$",
-                                            "^org\\.virtualbox\\.app\\.VirtualBoxVM$",
-                                            "^com\\.citrix\\.XenAppViewer$",
-                                            "^com\\.vmware\\.proxyApp\\.",
-                                            "^com\\.parallels\\.winapp\\.",
-                                            "^com\\.apple\\.Terminal$",
-                                            "^com\\.googlecode\\.iterm2$",
-                                            "^co\\.zeit\\.hyperterm$",
-                                            "^co\\.zeit\\.hyper$",
-                                            "^io\\.alacritty$",
-                                            "^net\\.kovidgoyal\\.kitty$"
-                                        ],
-                                        "type": "frontmost_application_unless"
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "v",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "control"
-                                        ],
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "v",
-                                        "modifiers": [
-                                            "left_command"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "bundle_identifiers": [
-                                            "^com\\.microsoft\\.rdc$",
-                                            "^com\\.microsoft\\.rdc\\.mac$",
-                                            "^com\\.microsoft\\.rdc\\.macos$",
-                                            "^com\\.microsoft\\.rdc\\.osx\\.beta$",
-                                            "^net\\.sf\\.cord$",
-                                            "^com\\.thinomenon\\.RemoteDesktopConnection$",
-                                            "^com\\.itap-mobile\\.qmote$",
-                                            "^com\\.nulana\\.remotixmac$",
-                                            "^com\\.p5sys\\.jump\\.mac\\.viewer$",
-                                            "^com\\.p5sys\\.jump\\.mac\\.viewer\\.web$",
-                                            "^com\\.teamviewer\\.TeamViewer$",
-                                            "^com\\.vmware\\.horizon$",
-                                            "^com\\.2X\\.Client\\.Mac$",
-                                            "^com\\.vmware\\.fusion$",
-                                            "^com\\.vmware\\.horizon$",
-                                            "^com\\.vmware\\.view$",
-                                            "^com\\.parallels\\.desktop$",
-                                            "^com\\.parallels\\.vm$",
-                                            "^com\\.parallels\\.desktop\\.console$",
-                                            "^org\\.virtualbox\\.app\\.VirtualBoxVM$",
-                                            "^com\\.citrix\\.XenAppViewer$",
-                                            "^com\\.vmware\\.proxyApp\\.",
-                                            "^com\\.parallels\\.winapp\\.",
-                                            "^com\\.apple\\.Terminal$",
-                                            "^com\\.googlecode\\.iterm2$",
-                                            "^co\\.zeit\\.hyperterm$",
-                                            "^co\\.zeit\\.hyper$",
-                                            "^io\\.alacritty$",
-                                            "^net\\.kovidgoyal\\.kitty$"
-                                        ],
-                                        "type": "frontmost_application_unless"
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "x",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "control"
-                                        ],
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "x",
-                                        "modifiers": [
-                                            "left_command"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "PC-Style Select-All",
-                        "manipulators": [
-                            {
-                                "conditions": [
-                                    {
-                                        "bundle_identifiers": [
-                                            "^com\\.microsoft\\.rdc$",
-                                            "^com\\.microsoft\\.rdc\\.mac$",
-                                            "^com\\.microsoft\\.rdc\\.macos$",
-                                            "^com\\.microsoft\\.rdc\\.osx\\.beta$",
-                                            "^net\\.sf\\.cord$",
-                                            "^com\\.thinomenon\\.RemoteDesktopConnection$",
-                                            "^com\\.itap-mobile\\.qmote$",
-                                            "^com\\.nulana\\.remotixmac$",
-                                            "^com\\.p5sys\\.jump\\.mac\\.viewer$",
-                                            "^com\\.p5sys\\.jump\\.mac\\.viewer\\.web$",
-                                            "^com\\.teamviewer\\.TeamViewer$",
-                                            "^com\\.vmware\\.horizon$",
-                                            "^com\\.2X\\.Client\\.Mac$",
-                                            "^com\\.vmware\\.fusion$",
-                                            "^com\\.vmware\\.horizon$",
-                                            "^com\\.vmware\\.view$",
-                                            "^com\\.parallels\\.desktop$",
-                                            "^com\\.parallels\\.vm$",
-                                            "^com\\.parallels\\.desktop\\.console$",
-                                            "^org\\.virtualbox\\.app\\.VirtualBoxVM$",
-                                            "^com\\.citrix\\.XenAppViewer$",
-                                            "^com\\.vmware\\.proxyApp\\.",
-                                            "^com\\.parallels\\.winapp\\.",
-                                            "^com\\.apple\\.Terminal$",
-                                            "^com\\.googlecode\\.iterm2$",
-                                            "^co\\.zeit\\.hyperterm$",
-                                            "^co\\.zeit\\.hyper$",
-                                            "^io\\.alacritty$",
-                                            "^net\\.kovidgoyal\\.kitty$"
-                                        ],
-                                        "type": "frontmost_application_unless"
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "a",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "control"
-                                        ],
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "a",
-                                        "modifiers": [
-                                            "left_command"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    }
-                ]
+          "disable_built_in_keyboard_if_exists": false,
+          "fn_function_keys": [],
+          "identifiers": {
+            "is_keyboard": true,
+            "is_pointing_device": false,
+            "product_id": 130,
+            "vendor_id": 12136
+          },
+          "ignore": false,
+          "manipulate_caps_lock_led": true,
+          "simple_modifications": [
+            {
+              "from": {
+                "key_code": "application"
+              },
+              "to": {
+                "key_code": "right_option"
+              }
             },
-            "devices": [
-                {
-                    "disable_built_in_keyboard_if_exists": false,
-                    "fn_function_keys": [],
-                    "identifiers": {
-                        "is_keyboard": true,
-                        "is_pointing_device": false,
-                        "product_id": 636,
-                        "vendor_id": 1452
-                    },
-                    "ignore": false,
-                    "manipulate_caps_lock_led": true,
-                    "simple_modifications": [
-                        {
-                            "from": {
-                                "key_code": "left_command"
-                            },
-                            "to": {
-                                "key_code": "left_control"
-                            }
-                        },
-                        {
-                            "from": {
-                                "key_code": "right_command"
-                            },
-                            "to": {
-                                "key_code": "right_option"
-                            }
-                        },
-                        {
-                            "from": {
-                                "key_code": "right_option"
-                            },
-                            "to": {
-                                "key_code": "right_command"
-                            }
-                        }
-                    ]
-                }
-            ],
-            "fn_function_keys": [
-                {
-                    "from": {
-                        "key_code": "f1"
-                    },
-                    "to": {
-                        "consumer_key_code": "display_brightness_decrement"
-                    }
-                },
-                {
-                    "from": {
-                        "key_code": "f2"
-                    },
-                    "to": {
-                        "consumer_key_code": "display_brightness_increment"
-                    }
-                },
-                {
-                    "from": {
-                        "key_code": "f3"
-                    },
-                    "to": {
-                        "key_code": "mission_control"
-                    }
-                },
-                {
-                    "from": {
-                        "key_code": "f4"
-                    },
-                    "to": {
-                        "key_code": "launchpad"
-                    }
-                },
-                {
-                    "from": {
-                        "key_code": "f5"
-                    },
-                    "to": {
-                        "key_code": "illumination_decrement"
-                    }
-                },
-                {
-                    "from": {
-                        "key_code": "f6"
-                    },
-                    "to": {
-                        "key_code": "illumination_increment"
-                    }
-                },
-                {
-                    "from": {
-                        "key_code": "f7"
-                    },
-                    "to": {
-                        "consumer_key_code": "rewind"
-                    }
-                },
-                {
-                    "from": {
-                        "key_code": "f8"
-                    },
-                    "to": {
-                        "consumer_key_code": "play_or_pause"
-                    }
-                },
-                {
-                    "from": {
-                        "key_code": "f9"
-                    },
-                    "to": {
-                        "consumer_key_code": "fastforward"
-                    }
-                },
-                {
-                    "from": {
-                        "key_code": "f10"
-                    },
-                    "to": {
-                        "consumer_key_code": "mute"
-                    }
-                },
-                {
-                    "from": {
-                        "key_code": "f11"
-                    },
-                    "to": {
-                        "consumer_key_code": "volume_decrement"
-                    }
-                },
-                {
-                    "from": {
-                        "key_code": "f12"
-                    },
-                    "to": {
-                        "consumer_key_code": "volume_increment"
-                    }
-                }
-            ],
-            "name": "🌊",
-            "parameters": {
-                "delay_milliseconds_before_open_device": 1000
+            {
+              "from": {
+                "key_code": "left_command"
+              },
+              "to": {
+                "key_code": "left_option"
+              }
             },
-            "selected": false,
-            "simple_modifications": [],
-            "virtual_hid_keyboard": {
-                "country_code": 0,
-                "mouse_key_xy_scale": 100
+            {
+              "from": {
+                "key_code": "left_option"
+              },
+              "to": {
+                "key_code": "left_command"
+              }
+            },
+            {
+              "from": {
+                "key_code": "right_control"
+              },
+              "to": {
+                "key_code": "right_command"
+              }
+            },
+            {
+              "from": {
+                "key_code": "right_option"
+              },
+              "to": {
+                "key_code": "right_control"
+              }
             }
+          ]
+        },
+        {
+          "disable_built_in_keyboard_if_exists": false,
+          "fn_function_keys": [],
+          "identifiers": {
+            "is_keyboard": true,
+            "is_pointing_device": false,
+            "product_id": 657,
+            "vendor_id": 1452
+          },
+          "ignore": false,
+          "manipulate_caps_lock_led": true,
+          "simple_modifications": [
+            {
+              "from": {
+                "key_code": "right_command"
+              },
+              "to": {
+                "key_code": "right_control"
+              }
+            }
+          ]
+        },
+        {
+          "disable_built_in_keyboard_if_exists": false,
+          "fn_function_keys": [],
+          "identifiers": {
+            "is_keyboard": true,
+            "is_pointing_device": true,
+            "product_id": 45082,
+            "vendor_id": 1133
+          },
+          "ignore": false,
+          "manipulate_caps_lock_led": false,
+          "simple_modifications": [
+            {
+              "from": {
+                "pointing_button": "button4"
+              },
+              "to": {
+                "key_code": "open_bracket",
+                "modifiers": ["left_command"]
+              }
+            },
+            {
+              "from": {
+                "pointing_button": "button5"
+              },
+              "to": {
+                "key_code": "close_bracket",
+                "modifiers": ["left_command"]
+              }
+            }
+          ]
+        },
+        {
+          "disable_built_in_keyboard_if_exists": false,
+          "fn_function_keys": [],
+          "identifiers": {
+            "is_keyboard": true,
+            "is_pointing_device": false,
+            "product_id": 636,
+            "vendor_id": 1452
+          },
+          "ignore": false,
+          "manipulate_caps_lock_led": true,
+          "simple_modifications": [
+            {
+              "from": {
+                "key_code": "right_command"
+              },
+              "to": {
+                "key_code": "right_control"
+              }
+            }
+          ]
+        },
+        {
+          "disable_built_in_keyboard_if_exists": false,
+          "fn_function_keys": [],
+          "identifiers": {
+            "is_keyboard": true,
+            "is_pointing_device": false,
+            "product_id": 30354,
+            "vendor_id": 3141
+          },
+          "ignore": false,
+          "manipulate_caps_lock_led": true,
+          "simple_modifications": [
+            {
+              "from": {
+                "key_code": "left_command"
+              },
+              "to": {
+                "key_code": "left_option"
+              }
+            },
+            {
+              "from": {
+                "key_code": "left_option"
+              },
+              "to": {
+                "key_code": "left_command"
+              }
+            },
+            {
+              "from": {
+                "key_code": "right_command"
+              },
+              "to": {
+                "key_code": "right_option"
+              }
+            },
+            {
+              "from": {
+                "key_code": "right_option"
+              },
+              "to": {
+                "key_code": "right_control"
+              }
+            }
+          ]
+        },
+        {
+          "disable_built_in_keyboard_if_exists": false,
+          "fn_function_keys": [],
+          "identifiers": {
+            "is_keyboard": true,
+            "is_pointing_device": false,
+            "product_id": 34304,
+            "vendor_id": 1452
+          },
+          "ignore": true,
+          "manipulate_caps_lock_led": false,
+          "simple_modifications": []
+        },
+        {
+          "disable_built_in_keyboard_if_exists": false,
+          "fn_function_keys": [],
+          "identifiers": {
+            "is_keyboard": true,
+            "is_pointing_device": false,
+            "product_id": 65535,
+            "vendor_id": 1452
+          },
+          "ignore": true,
+          "manipulate_caps_lock_led": false,
+          "simple_modifications": []
+        },
+        {
+          "disable_built_in_keyboard_if_exists": false,
+          "fn_function_keys": [],
+          "identifiers": {
+            "is_keyboard": true,
+            "is_pointing_device": true,
+            "product_id": 45086,
+            "vendor_id": 1133
+          },
+          "ignore": false,
+          "manipulate_caps_lock_led": false,
+          "simple_modifications": []
+        },
+        {
+          "disable_built_in_keyboard_if_exists": false,
+          "fn_function_keys": [],
+          "identifiers": {
+            "is_keyboard": true,
+            "is_pointing_device": false,
+            "product_id": 50475,
+            "vendor_id": 1133
+          },
+          "ignore": false,
+          "manipulate_caps_lock_led": false,
+          "simple_modifications": [
+            {
+              "from": {
+                "pointing_button": "button4"
+              },
+              "to": {
+                "key_code": "open_bracket",
+                "modifiers": ["left_command"]
+              }
+            },
+            {
+              "from": {
+                "pointing_button": "button5"
+              },
+              "to": {
+                "key_code": "close_bracket",
+                "modifiers": ["left_command"]
+              }
+            }
+          ]
+        },
+        {
+          "disable_built_in_keyboard_if_exists": false,
+          "fn_function_keys": [],
+          "identifiers": {
+            "is_keyboard": false,
+            "is_pointing_device": true,
+            "product_id": 50475,
+            "vendor_id": 1133
+          },
+          "ignore": false,
+          "manipulate_caps_lock_led": false,
+          "simple_modifications": [
+            {
+              "from": {
+                "pointing_button": "button4"
+              },
+              "to": {
+                "key_code": "open_bracket",
+                "modifiers": ["left_command"]
+              }
+            },
+            {
+              "from": {
+                "pointing_button": "button5"
+              },
+              "to": {
+                "key_code": "close_bracket",
+                "modifiers": ["left_command"]
+              }
+            }
+          ]
+        },
+        {
+          "disable_built_in_keyboard_if_exists": false,
+          "fn_function_keys": [],
+          "identifiers": {
+            "is_keyboard": true,
+            "is_pointing_device": true,
+            "product_id": 130,
+            "vendor_id": 12136
+          },
+          "ignore": true,
+          "manipulate_caps_lock_led": false,
+          "simple_modifications": []
         }
-    ]
+      ],
+      "fn_function_keys": [
+        {
+          "from": {
+            "key_code": "f1"
+          },
+          "to": {
+            "consumer_key_code": "display_brightness_decrement"
+          }
+        },
+        {
+          "from": {
+            "key_code": "f2"
+          },
+          "to": {
+            "consumer_key_code": "display_brightness_increment"
+          }
+        },
+        {
+          "from": {
+            "key_code": "f3"
+          },
+          "to": {
+            "key_code": "mission_control"
+          }
+        },
+        {
+          "from": {
+            "key_code": "f4"
+          },
+          "to": {
+            "key_code": "launchpad"
+          }
+        },
+        {
+          "from": {
+            "key_code": "f5"
+          },
+          "to": {
+            "key_code": "illumination_decrement"
+          }
+        },
+        {
+          "from": {
+            "key_code": "f6"
+          },
+          "to": {
+            "key_code": "illumination_increment"
+          }
+        },
+        {
+          "from": {
+            "key_code": "f7"
+          },
+          "to": {
+            "consumer_key_code": "rewind"
+          }
+        },
+        {
+          "from": {
+            "key_code": "f8"
+          },
+          "to": {
+            "consumer_key_code": "play_or_pause"
+          }
+        },
+        {
+          "from": {
+            "key_code": "f9"
+          },
+          "to": {
+            "consumer_key_code": "fastforward"
+          }
+        },
+        {
+          "from": {
+            "key_code": "f10"
+          },
+          "to": {
+            "consumer_key_code": "mute"
+          }
+        },
+        {
+          "from": {
+            "key_code": "f11"
+          },
+          "to": {
+            "consumer_key_code": "volume_decrement"
+          }
+        },
+        {
+          "from": {
+            "key_code": "f12"
+          },
+          "to": {
+            "consumer_key_code": "volume_increment"
+          }
+        }
+      ],
+      "name": "🌺",
+      "parameters": {
+        "delay_milliseconds_before_open_device": 1000
+      },
+      "selected": true,
+      "simple_modifications": [],
+      "virtual_hid_keyboard": {
+        "country_code": 0,
+        "mouse_key_xy_scale": 100
+      }
+    },
+    {
+      "complex_modifications": {
+        "parameters": {
+          "basic.simultaneous_threshold_milliseconds": 50,
+          "basic.to_delayed_action_delay_milliseconds": 500,
+          "basic.to_if_alone_timeout_milliseconds": 1000,
+          "basic.to_if_held_down_threshold_milliseconds": 500,
+          "mouse_motion_to_scroll.speed": 100
+        },
+        "rules": [
+          {
+            "description": "PC-Style Copy/Paste/Cut",
+            "manipulators": [
+              {
+                "conditions": [
+                  {
+                    "bundle_identifiers": [
+                      "^com\\.microsoft\\.rdc$",
+                      "^com\\.microsoft\\.rdc\\.mac$",
+                      "^com\\.microsoft\\.rdc\\.macos$",
+                      "^com\\.microsoft\\.rdc\\.osx\\.beta$",
+                      "^net\\.sf\\.cord$",
+                      "^com\\.thinomenon\\.RemoteDesktopConnection$",
+                      "^com\\.itap-mobile\\.qmote$",
+                      "^com\\.nulana\\.remotixmac$",
+                      "^com\\.p5sys\\.jump\\.mac\\.viewer$",
+                      "^com\\.p5sys\\.jump\\.mac\\.viewer\\.web$",
+                      "^com\\.teamviewer\\.TeamViewer$",
+                      "^com\\.vmware\\.horizon$",
+                      "^com\\.2X\\.Client\\.Mac$",
+                      "^com\\.vmware\\.fusion$",
+                      "^com\\.vmware\\.horizon$",
+                      "^com\\.vmware\\.view$",
+                      "^com\\.parallels\\.desktop$",
+                      "^com\\.parallels\\.vm$",
+                      "^com\\.parallels\\.desktop\\.console$",
+                      "^org\\.virtualbox\\.app\\.VirtualBoxVM$",
+                      "^com\\.citrix\\.XenAppViewer$",
+                      "^com\\.vmware\\.proxyApp\\.",
+                      "^com\\.parallels\\.winapp\\.",
+                      "^com\\.apple\\.Terminal$",
+                      "^com\\.googlecode\\.iterm2$",
+                      "^co\\.zeit\\.hyperterm$",
+                      "^co\\.zeit\\.hyper$",
+                      "^io\\.alacritty$",
+                      "^net\\.kovidgoyal\\.kitty$"
+                    ],
+                    "type": "frontmost_application_unless"
+                  }
+                ],
+                "from": {
+                  "key_code": "c",
+                  "modifiers": {
+                    "mandatory": ["control"],
+                    "optional": ["any"]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "c",
+                    "modifiers": ["left_command"]
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "conditions": [
+                  {
+                    "bundle_identifiers": [
+                      "^com\\.microsoft\\.rdc$",
+                      "^com\\.microsoft\\.rdc\\.mac$",
+                      "^com\\.microsoft\\.rdc\\.macos$",
+                      "^com\\.microsoft\\.rdc\\.osx\\.beta$",
+                      "^net\\.sf\\.cord$",
+                      "^com\\.thinomenon\\.RemoteDesktopConnection$",
+                      "^com\\.itap-mobile\\.qmote$",
+                      "^com\\.nulana\\.remotixmac$",
+                      "^com\\.p5sys\\.jump\\.mac\\.viewer$",
+                      "^com\\.p5sys\\.jump\\.mac\\.viewer\\.web$",
+                      "^com\\.teamviewer\\.TeamViewer$",
+                      "^com\\.vmware\\.horizon$",
+                      "^com\\.2X\\.Client\\.Mac$",
+                      "^com\\.vmware\\.fusion$",
+                      "^com\\.vmware\\.horizon$",
+                      "^com\\.vmware\\.view$",
+                      "^com\\.parallels\\.desktop$",
+                      "^com\\.parallels\\.vm$",
+                      "^com\\.parallels\\.desktop\\.console$",
+                      "^org\\.virtualbox\\.app\\.VirtualBoxVM$",
+                      "^com\\.citrix\\.XenAppViewer$",
+                      "^com\\.vmware\\.proxyApp\\.",
+                      "^com\\.parallels\\.winapp\\.",
+                      "^com\\.apple\\.Terminal$",
+                      "^com\\.googlecode\\.iterm2$",
+                      "^co\\.zeit\\.hyperterm$",
+                      "^co\\.zeit\\.hyper$",
+                      "^io\\.alacritty$",
+                      "^net\\.kovidgoyal\\.kitty$"
+                    ],
+                    "type": "frontmost_application_unless"
+                  }
+                ],
+                "from": {
+                  "key_code": "v",
+                  "modifiers": {
+                    "mandatory": ["control"],
+                    "optional": ["any"]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "v",
+                    "modifiers": ["left_command"]
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "conditions": [
+                  {
+                    "bundle_identifiers": [
+                      "^com\\.microsoft\\.rdc$",
+                      "^com\\.microsoft\\.rdc\\.mac$",
+                      "^com\\.microsoft\\.rdc\\.macos$",
+                      "^com\\.microsoft\\.rdc\\.osx\\.beta$",
+                      "^net\\.sf\\.cord$",
+                      "^com\\.thinomenon\\.RemoteDesktopConnection$",
+                      "^com\\.itap-mobile\\.qmote$",
+                      "^com\\.nulana\\.remotixmac$",
+                      "^com\\.p5sys\\.jump\\.mac\\.viewer$",
+                      "^com\\.p5sys\\.jump\\.mac\\.viewer\\.web$",
+                      "^com\\.teamviewer\\.TeamViewer$",
+                      "^com\\.vmware\\.horizon$",
+                      "^com\\.2X\\.Client\\.Mac$",
+                      "^com\\.vmware\\.fusion$",
+                      "^com\\.vmware\\.horizon$",
+                      "^com\\.vmware\\.view$",
+                      "^com\\.parallels\\.desktop$",
+                      "^com\\.parallels\\.vm$",
+                      "^com\\.parallels\\.desktop\\.console$",
+                      "^org\\.virtualbox\\.app\\.VirtualBoxVM$",
+                      "^com\\.citrix\\.XenAppViewer$",
+                      "^com\\.vmware\\.proxyApp\\.",
+                      "^com\\.parallels\\.winapp\\.",
+                      "^com\\.apple\\.Terminal$",
+                      "^com\\.googlecode\\.iterm2$",
+                      "^co\\.zeit\\.hyperterm$",
+                      "^co\\.zeit\\.hyper$",
+                      "^io\\.alacritty$",
+                      "^net\\.kovidgoyal\\.kitty$"
+                    ],
+                    "type": "frontmost_application_unless"
+                  }
+                ],
+                "from": {
+                  "key_code": "x",
+                  "modifiers": {
+                    "mandatory": ["control"],
+                    "optional": ["any"]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "x",
+                    "modifiers": ["left_command"]
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "PC-Style Select-All",
+            "manipulators": [
+              {
+                "conditions": [
+                  {
+                    "bundle_identifiers": [
+                      "^com\\.microsoft\\.rdc$",
+                      "^com\\.microsoft\\.rdc\\.mac$",
+                      "^com\\.microsoft\\.rdc\\.macos$",
+                      "^com\\.microsoft\\.rdc\\.osx\\.beta$",
+                      "^net\\.sf\\.cord$",
+                      "^com\\.thinomenon\\.RemoteDesktopConnection$",
+                      "^com\\.itap-mobile\\.qmote$",
+                      "^com\\.nulana\\.remotixmac$",
+                      "^com\\.p5sys\\.jump\\.mac\\.viewer$",
+                      "^com\\.p5sys\\.jump\\.mac\\.viewer\\.web$",
+                      "^com\\.teamviewer\\.TeamViewer$",
+                      "^com\\.vmware\\.horizon$",
+                      "^com\\.2X\\.Client\\.Mac$",
+                      "^com\\.vmware\\.fusion$",
+                      "^com\\.vmware\\.horizon$",
+                      "^com\\.vmware\\.view$",
+                      "^com\\.parallels\\.desktop$",
+                      "^com\\.parallels\\.vm$",
+                      "^com\\.parallels\\.desktop\\.console$",
+                      "^org\\.virtualbox\\.app\\.VirtualBoxVM$",
+                      "^com\\.citrix\\.XenAppViewer$",
+                      "^com\\.vmware\\.proxyApp\\.",
+                      "^com\\.parallels\\.winapp\\.",
+                      "^com\\.apple\\.Terminal$",
+                      "^com\\.googlecode\\.iterm2$",
+                      "^co\\.zeit\\.hyperterm$",
+                      "^co\\.zeit\\.hyper$",
+                      "^io\\.alacritty$",
+                      "^net\\.kovidgoyal\\.kitty$"
+                    ],
+                    "type": "frontmost_application_unless"
+                  }
+                ],
+                "from": {
+                  "key_code": "a",
+                  "modifiers": {
+                    "mandatory": ["control"],
+                    "optional": ["any"]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "a",
+                    "modifiers": ["left_command"]
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          }
+        ]
+      },
+      "devices": [
+        {
+          "disable_built_in_keyboard_if_exists": false,
+          "fn_function_keys": [],
+          "identifiers": {
+            "is_keyboard": true,
+            "is_pointing_device": false,
+            "product_id": 636,
+            "vendor_id": 1452
+          },
+          "ignore": false,
+          "manipulate_caps_lock_led": true,
+          "simple_modifications": [
+            {
+              "from": {
+                "key_code": "left_command"
+              },
+              "to": {
+                "key_code": "left_control"
+              }
+            },
+            {
+              "from": {
+                "key_code": "right_command"
+              },
+              "to": {
+                "key_code": "right_option"
+              }
+            },
+            {
+              "from": {
+                "key_code": "right_option"
+              },
+              "to": {
+                "key_code": "right_command"
+              }
+            }
+          ]
+        },
+        {
+          "disable_built_in_keyboard_if_exists": false,
+          "fn_function_keys": [],
+          "identifiers": {
+            "is_keyboard": true,
+            "is_pointing_device": false,
+            "product_id": 130,
+            "vendor_id": 12136
+          },
+          "ignore": false,
+          "manipulate_caps_lock_led": false,
+          "simple_modifications": [
+            {
+              "from": {
+                "key_code": "left_control"
+              },
+              "to": {
+                "key_code": "left_option"
+              }
+            },
+            {
+              "from": {
+                "key_code": "left_option"
+              },
+              "to": {
+                "key_code": "left_control"
+              }
+            }
+          ]
+        }
+      ],
+      "fn_function_keys": [
+        {
+          "from": {
+            "key_code": "f1"
+          },
+          "to": {
+            "consumer_key_code": "display_brightness_decrement"
+          }
+        },
+        {
+          "from": {
+            "key_code": "f2"
+          },
+          "to": {
+            "consumer_key_code": "display_brightness_increment"
+          }
+        },
+        {
+          "from": {
+            "key_code": "f3"
+          },
+          "to": {
+            "key_code": "mission_control"
+          }
+        },
+        {
+          "from": {
+            "key_code": "f4"
+          },
+          "to": {
+            "key_code": "launchpad"
+          }
+        },
+        {
+          "from": {
+            "key_code": "f5"
+          },
+          "to": {
+            "key_code": "illumination_decrement"
+          }
+        },
+        {
+          "from": {
+            "key_code": "f6"
+          },
+          "to": {
+            "key_code": "illumination_increment"
+          }
+        },
+        {
+          "from": {
+            "key_code": "f7"
+          },
+          "to": {
+            "consumer_key_code": "rewind"
+          }
+        },
+        {
+          "from": {
+            "key_code": "f8"
+          },
+          "to": {
+            "consumer_key_code": "play_or_pause"
+          }
+        },
+        {
+          "from": {
+            "key_code": "f9"
+          },
+          "to": {
+            "consumer_key_code": "fastforward"
+          }
+        },
+        {
+          "from": {
+            "key_code": "f10"
+          },
+          "to": {
+            "consumer_key_code": "mute"
+          }
+        },
+        {
+          "from": {
+            "key_code": "f11"
+          },
+          "to": {
+            "consumer_key_code": "volume_decrement"
+          }
+        },
+        {
+          "from": {
+            "key_code": "f12"
+          },
+          "to": {
+            "consumer_key_code": "volume_increment"
+          }
+        }
+      ],
+      "name": "🌊",
+      "parameters": {
+        "delay_milliseconds_before_open_device": 1000
+      },
+      "selected": false,
+      "simple_modifications": [],
+      "virtual_hid_keyboard": {
+        "country_code": 0,
+        "mouse_key_xy_scale": 100
+      }
+    }
+  ]
 }
