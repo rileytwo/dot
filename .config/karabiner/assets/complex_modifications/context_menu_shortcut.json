@@ -1,0 +1,25 @@
+{
+  "title": "Open a Context Menu Anywhere",
+  "rules": [
+    {
+      "description": "Global: ⌃ + ' | Open Context Menu",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "quote",
+            "modifiers": {
+              "mandatory": ["command"]
+            }
+          },
+          "to": [
+            {
+              "pointing_button": "button1",
+              "modifiers": ["control"]
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    }
+  ]
+}
