@@ -37,6 +37,9 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 >!+a::Send ^{Left}
 >!+d::Send ^{Right}
 
+;; alt+backspace ;; delete one word left
+>!Backspace::Send ^{Backspace}
+
 ;; ^q => close window | ^h => minimize window
 ^q::Send {AltDown}{F4}{AltUp}
 ^h::WinMinimize, A

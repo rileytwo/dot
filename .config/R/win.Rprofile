@@ -16,5 +16,6 @@ if (interactive()) {
             radian.shell_prompt       = "\033[0;31m#!>\033[0m ",
             radian.browse_prompt      = "\033[0;33mBrowse[{}]>\033[0m "
         )
+        .libPaths(c("~/R/win-library/4.0", .libPaths()))
     })
 }
