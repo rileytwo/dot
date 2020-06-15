@@ -7,9 +7,7 @@
 zmodload zsh/zprof
 autoload zmv
 autoload -U edit-command-line
-zle -N edit-command-line
-bindkey '^x^e' edit-command-line
-bindkey '^xe' edit-command-line
+
 
 
 #### // neofetch
@@ -279,4 +277,11 @@ if (( $+commands[nvim] )); then
 else
   export EDITOR=vim
 fi
+
+
+#### // keybindings
+zle -N edit-command-line
+bindkey '^x^e' edit-command-line
+bindkey '^xe' edit-command-line
+bindkey '^H' backward-kill-word
 
