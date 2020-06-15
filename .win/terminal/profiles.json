@@ -31,8 +31,8 @@
       "defaults":
       {
           // Put settings here that you want to apply to all profiles.
-          "fontFace": "Liga SFMono Nerd Font",
-          "fontSize": 10,
+          "fontFace": "JetBrainsMono",
+          "fontSize": 9,
           "colorScheme": "Kiss"
       },
       "list":
