@@ -42,6 +42,7 @@ plugins=(
   #zsh-interactive-cd
   git
   forgit
+  osx
   mac-zsh-completions
   zsh-autopair
   zsh-completions
