@@ -32,6 +32,7 @@
     "previousTab": "Cmd+2",
     "reformatCode": "Cmd+K Cmd+F",
     "refreshEnvironment": "Ctrl+Shift+Cmd+R",
+    "removewordleft": "Alt+Backspace",
     "restartR": "Ctrl+Shift+Cmd+R",
     "returnDocToMain": "Cmd+K Shift+Cmd+N",
     "sourceActiveDocument": "",
@@ -43,8 +44,9 @@
     "zoomIn": "",
     "zoomOut": "",
     "activateConsolePane": "",
-    "codeCompletion": "",
+    "codeCompletion": "Ctrl++",
     "openRoxygenQuickReference": "Cmd+K Cmd+L",
     "insertRoxygenSkeleton": "Cmd+K Cmd+K",
-    "executeLastCode": ""
+    "executeLastCode": "",
+    "compileNotebook": ""
 }
