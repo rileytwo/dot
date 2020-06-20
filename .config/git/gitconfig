@@ -33,3 +33,5 @@
 	trustExitCode = true
 [credential]
 	helper = osxkeychain
+[pull]
+	rebase = true
