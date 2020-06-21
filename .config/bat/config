@@ -1,5 +1,0 @@
-# vim: filetype=conf
---theme="base16"
---style="numbers,changes,header"
---pager="less"
---map-syntax zsh-theme:zsh

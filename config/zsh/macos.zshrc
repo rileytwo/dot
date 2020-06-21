@@ -21,7 +21,7 @@ if [[ "${0}" != "-zsh" ]] || ! (( $+commands[neofetch] )); then
   :
 else
   neofetch \
-    --ascii "${HOME}"/.dot/.config/neofetch/config-mac.conf \
+    --ascii "${HOME}"/.dot/config/neofetch/config-mac.conf \
     --colors 5 7 7 4 7 15
 fi
 

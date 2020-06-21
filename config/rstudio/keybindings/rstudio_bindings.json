@@ -41,12 +41,13 @@
     "unfoldAll": "",
     "yankAfterCursor": "Shift+Cmd+X",
     "yankBeforeCursor": "Ctrl+U",
-    "zoomIn": "",
-    "zoomOut": "",
+    "zoomIn": "Cmd+=",
+    "zoomOut": "Cmd+-",
     "activateConsolePane": "",
     "codeCompletion": "Ctrl++",
     "openRoxygenQuickReference": "Cmd+K Cmd+L",
     "insertRoxygenSkeleton": "Cmd+K Cmd+K",
     "executeLastCode": "",
-    "compileNotebook": ""
+    "compileNotebook": "",
+    "layoutZoomLeftColumn": "Ctrl+Alt+Shift+F12"
 }

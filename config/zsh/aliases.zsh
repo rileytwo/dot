@@ -7,6 +7,7 @@ if (( $+commands[git] )); then
     alias gngl='git config --global --list'
     alias gnl='git config --local'
     alias gnll='git config --local --list'
+    alias gcd='git checkout dev'
 fi
 
 
