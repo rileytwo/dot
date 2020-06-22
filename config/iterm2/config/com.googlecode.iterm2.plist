@@ -23,7 +23,7 @@
 	<key>BracketedPasteMode</key>
 	<true/>
 	<key>CheckTestRelease</key>
-	<false/>
+	<true/>
 	<key>ColoredSelectedTabOutlineStrength</key>
 	<real>0.20000000298023224</real>
 	<key>Command</key>
@@ -675,7 +675,7 @@
 	<key>MinimalTabStyleOutlineStrength</key>
 	<real>0.0</real>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/.dot/.config/iterm2/config</string>
+	<string>~/.dot/config/iterm2/config</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
 	<string>{799, 448}</string>
 	<key>NSQuotedKeystrokeBinding</key>
@@ -720,13 +720,13 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
-	<string>440 448 799 448 0 0 1680 1027 </string>
+	<string>440 447 799 448 0 0 1680 1027 </string>
 	<key>NSWindow Frame SUStatusFrame</key>
-	<string>295 730 400 129 0 0 1680 1027 </string>
+	<string>640 687 400 129 0 0 1680 1027 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>530 490 620 392 0 0 1680 1027 </string>
+	<string>530 489 620 392 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>191 124 644 573 0 0 1680 1027 </string>
+	<string>943 259 732 613 0 0 1680 1027 </string>
 	<key>NeverWarnAboutShortLivedSessions_120FAA18-3181-488D-9B29-68949F1F0CE6</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_120FAA18-3181-488D-9B29-68949F1F0CE6_selection</key>
@@ -5597,8 +5597,10 @@
 	</array>
 	<key>NoSyncBFPFavorites</key>
 	<array>
-		<string>JetBrains Mono</string>
 		<string>JetBrainsMono</string>
+		<string>SF Mono Plus</string>
+		<string>IBM Plex Mono</string>
+		<string>FiraCode Nerd Font</string>
 	</array>
 	<key>NoSyncBFPRecents</key>
 	<array>
@@ -5607,6 +5609,10 @@
 	</array>
 	<key>NoSyncCommandHistoryHasEverBeenUsed</key>
 	<true/>
+	<key>NoSyncDoNotWarnBeforePastingOneLineEndingInNewlineAtShellPrompt</key>
+	<true/>
+	<key>NoSyncDoNotWarnBeforePastingOneLineEndingInNewlineAtShellPrompt_selection</key>
+	<integer>1</integer>
 	<key>NoSyncFrame_SessionsPreferences</key>
 	<dict>
 		<key>screenFrame</key>
@@ -5626,7 +5632,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>C5C51F9E-1D7E-43D3-B0E4-B6B288495CE1</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>56</integer>
+	<integer>96</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -6442,7 +6448,7 @@
 	<key>PreferSpeedToFullLigatureSupport</key>
 	<false/>
 	<key>PrefsCustomFolder</key>
-	<string>/Users/riley/.dot/.config/iterm2/config</string>
+	<string>/Users/riley/.dot/config/iterm2/config</string>
 	<key>PreserveWindowSizeWhenTabBarVisibilityChanges</key>
 	<false/>
 	<key>Print In Black And White</key>
@@ -6458,15 +6464,15 @@
 	<key>SUFeedAlternateAppNameKey</key>
 	<string>iTerm</string>
 	<key>SUFeedURL</key>
-	<string>https://iterm2.com/appcasts/final_new.xml?shard=13</string>
+	<string>https://iterm2.com/appcasts/testing_new.xml?shard=13</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-06-11T22:34:56Z</date>
+	<date>2020-06-22T21:59:05Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
-	<false/>
+	<true/>
 	<key>ShowFullScreenTabBar</key>
 	<true/>
 	<key>SmartPlacement</key>
