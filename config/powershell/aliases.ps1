@@ -1,28 +1,28 @@
 #!/usr/bin/env pwsh
 
 if ($IsWindows) {
-    Set-Alias -name 'wslpath' -Value 'Get-WSLPath'
+    Set-Alias -name 'wslpath' -Value Get-WSLPath
     function Get-WSLPath {
         $strlit = '"'
         wsl wslpath $strlit$args$strlit
     }
     
-    Set-Alias -name 'exa' -Value 'Get-ChildItemExa'
+    Set-Alias -name 'exa' -Value Get-ChildItemExa
     function Get-ChildItemExa {
         wsl exa $args
     }
     
-    Set-Alias -name 'ee' -Value 'Get-ChildItemExa_lhF'
+    Set-Alias -name 'ee' -Value Get-ChildItemExa_lhF
     function Get-ChildItemExa_lhF {
         wsl exa -lhF
     }
     
-    Set-Alias -name 'e' -Value 'Get-ChildItemExa_lahF'
+    Set-Alias -name 'e' -Value Get-ChildItemExa_lahF
     function Get-ChildItemExa_lahF {
         wsl exa -lahF
     }
     
-    Set-Alias -name 'eg' -Value 'Get-ChildItemExa_lahF__git'
+    Set-Alias -name 'eg' -Value Get-ChildItemExa_lahF__git
     function Get-ChildItemExa_lahF__git {
         wsl exa -lahF --git
     }
