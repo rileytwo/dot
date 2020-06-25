@@ -1,30 +1,33 @@
 #!/usr/bin/env pwsh
 
 if ($IsWindows) {
-    Set-Alias -name 'wslpath' -Value Get-WSLPath
-    function Get-WSLPath {
-        $strlit = '"'
-        wsl wslpath $strlit$args$strlit
+    Set-Alias -Name 'wslpath' -Value Get-WSLPath
+    function Get-WSLPath($pathWin) {
+        if (!$pathWin) {
+            $pathWin = $(Get-Location)
+        }
+
+        [string]$pathWin = Get-Item -Force -Path ${pathWin}
+
+        $pathWin = $pathWin.Replace('\','/')
+        $pathWin = $(wsl wslpath $pathWin)
+
+        Return $pathWin
     }
     
-    Set-Alias -name 'exa' -Value Get-ChildItemExa
-    function Get-ChildItemExa {
-        wsl exa $args
+    Set-Alias -Name 'exa' -Value Get-ChildItemExa
+    function Get-ChildItemExa($pathWin) {
+        wsl exa $(Get-WSLPath -pathWin $pathWin) "$args"
     }
     
-    Set-Alias -name 'ee' -Value Get-ChildItemExa_lhF
+    Set-Alias -Name 'ee' -Value Get-ChildItemExa_lhF
     function Get-ChildItemExa_lhF {
-        wsl exa -lhF
+        Get-ChildItemExa -pathWin "$args" -lhF
     }
     
-    Set-Alias -name 'e' -Value Get-ChildItemExa_lahF
+    Set-Alias -Name 'e' -Value Get-ChildItemExa_lahF
     function Get-ChildItemExa_lahF {
-        wsl exa -lahF
-    }
-    
-    Set-Alias -name 'eg' -Value Get-ChildItemExa_lahF__git
-    function Get-ChildItemExa_lahF__git {
-        wsl exa -lahF --git
+        Get-ChildItemExa -pathWin "$args" -lahF
     }
 }
 
