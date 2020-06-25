@@ -56,6 +56,18 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
     Send {Enter}
 Return
 
+^+p::
+    Send !{v}
+    Sleep, 1
+    Send {p}
+Return
+
+^+d::
+    Send !{v}
+    Sleep, 1
+    Send {d}
+Return
+
 ^[::Send !{Left}
 ^]::Send !{Right}
 #If
