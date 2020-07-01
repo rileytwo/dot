@@ -49,5 +49,7 @@
     "insertRoxygenSkeleton": "Cmd+K Cmd+K",
     "executeLastCode": "",
     "compileNotebook": "",
-    "layoutZoomLeftColumn": "Ctrl+Alt+Shift+F12"
+    "layoutZoomLeftColumn": "Ctrl+Alt+Shift+F12",
+    "paneLayout": "Cmd+K Shift+Cmd+P",
+    "goToLine": "Cmd+;"
 }
