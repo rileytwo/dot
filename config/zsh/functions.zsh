@@ -7,3 +7,7 @@ function xmanpage() {
 function preman() {
   man -t "$@" | open -f -a "Preview";
 }
+
+function domains() {
+  echo -e "${"$(defaults domains)"//, /\\n}"
+}
