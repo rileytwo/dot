@@ -65,4 +65,3 @@ function Get-GitConfigLocal {
 
 Set-Alias -Name 'which' -Value Get-Command
 Set-Alias -Name 'rr' -Value 'radian'
-Set-Alias -Name 'r' -Value 'Rscript'
