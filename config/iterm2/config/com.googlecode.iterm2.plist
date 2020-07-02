@@ -722,11 +722,11 @@
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
 	<string>440 447 799 448 0 0 1680 1027 </string>
 	<key>NSWindow Frame SUStatusFrame</key>
-	<string>640 687 400 129 0 0 1680 1027 </string>
+	<string>640 685 400 129 0 0 1680 1027 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>530 489 620 392 0 0 1680 1027 </string>
+	<string>530 487 620 392 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>943 259 732 613 0 0 1680 1027 </string>
+	<string>957 300 715 605 0 0 1680 1027 </string>
 	<key>NeverWarnAboutShortLivedSessions_120FAA18-3181-488D-9B29-68949F1F0CE6</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_120FAA18-3181-488D-9B29-68949F1F0CE6_selection</key>
@@ -751,7 +751,7 @@
 			<key>AWDS Window Option</key>
 			<string>No</string>
 			<key>Allow Title Reporting</key>
-			<true/>
+			<false/>
 			<key>Allow Title Setting</key>
 			<false/>
 			<key>Ambiguous Double Width</key>
@@ -1725,6 +1725,8 @@
 			<string></string>
 			<key>AWDS Window Option</key>
 			<string>No</string>
+			<key>Allow Title Reporting</key>
+			<false/>
 			<key>Allow Title Setting</key>
 			<false/>
 			<key>Ambiguous Double Width</key>
@@ -2693,6 +2695,8 @@
 			<string></string>
 			<key>AWDS Window Option</key>
 			<string>No</string>
+			<key>Allow Title Reporting</key>
+			<false/>
 			<key>Allow Title Setting</key>
 			<false/>
 			<key>Ambiguous Double Width</key>
@@ -5592,8 +5596,11 @@
 	</array>
 	<key>NoSyncAllAppVersions</key>
 	<array>
-		<string>3.3.11</string>
 		<string>3.3.10</string>
+		<string>3.3.12beta3</string>
+		<string>3.3.11</string>
+		<string>3.3.12beta2</string>
+		<string>3.3.12beta1</string>
 	</array>
 	<key>NoSyncBFPFavorites</key>
 	<array>
@@ -5604,6 +5611,7 @@
 	</array>
 	<key>NoSyncBFPRecents</key>
 	<array>
+		<string>SF Mono Plus</string>
 		<string>SF Mono</string>
 		<string>JetBrainsMono</string>
 	</array>
@@ -5632,7 +5640,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>C5C51F9E-1D7E-43D3-B0E4-B6B288495CE1</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>96</integer>
+	<integer>132</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -6397,6 +6405,10 @@
 			</dict>
 		</array>
 	</dict>
+	<key>NoSyncSuppressDownloadConfirmation</key>
+	<true/>
+	<key>NoSyncSuppressDownloadConfirmation_selection</key>
+	<integer>0</integer>
 	<key>NoSyncTipOfTheDayEligibilityBeganTime</key>
 	<real>613347358.99856603</real>
 	<key>OnlyWhenMoreTabs</key>
@@ -6468,11 +6480,11 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-06-22T21:59:05Z</date>
+	<date>2020-06-30T23:46:38Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
-	<true/>
+	<false/>
 	<key>ShowFullScreenTabBar</key>
 	<true/>
 	<key>SmartPlacement</key>
@@ -7692,7 +7704,7 @@
 	<key>findMode_iTerm</key>
 	<integer>0</integer>
 	<key>iTerm Version</key>
-	<string>3.3.11</string>
+	<string>3.3.12beta3</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
