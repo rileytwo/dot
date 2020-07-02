@@ -194,6 +194,12 @@ ZSH_AUTOSUGGEST_CLEAR_WIDGETS+=(bracketed-paste)
 [[ -d "${HOME}/.pyenv" ]] \
   && export PATH="${HOME}/.pyenv/bin:$PATH"
 
+[[ -d "${HOME}/Library/Python/2.7/bin" ]] \
+  && export PATH="${HOME}/Library/Python/2.7/bin:$PATH"
+
+[[ -d "${HOME}/Library/Python/3.7/bin" ]] \
+  && export PATH="${HOME}/Library/Python/2.7/bin:$PATH"
+
 
 
 #### // helpers
