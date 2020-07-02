@@ -14,7 +14,7 @@ Caps Lock (⇪) -> Cmd + Ctrl + Alt + Shift (⌘ + ⌃ + ⌥ + ⇧)
 --]]
 --------------------------------------------------------------------]]
 
-modifier_keys = {"cmd", "ctrl", "alt", "shift"}
+modifier_keys = {"alt", "shift"}
 window_gap    = 5
 
 
