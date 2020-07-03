@@ -1,5 +1,16 @@
 #!/usr/bin/env zsh
 
+
+## Aliases that require non-third-party binaries/applications
+
+## echo each path/fpath entry on newline
+# `print -rl -- "${(@s/:/)PATH}"` also works
+alias path='echo -e ${PATH//:/\\n}'
+alias fpath='echo -e ${FPATH//:/\\n}'
+
+
+
+## Aliases that do not require third-party binaries/applications
 if (( $+commands[git] )); then
     alias gs='git status'
     alias gcu='git checkout upstream'
@@ -62,6 +73,10 @@ if (( $+commands[radian] )); then
 fi
 
 
+if (( $+commands[ddcctl] )); then
+    alias ddc='ddcctl'
+fi
+
 if [[ -x "/usr/libexec/remotectl" ]]; then
     alias remotectl='/usr/libexec/remotectl'
 fi
@@ -73,12 +88,4 @@ if [[ -x "/usr/libexec/PlistBuddy" ]]; then
 fi
 
 
-alias please='/usr/bin/sudo'
-alias pls='/usr/bin/sudo'
-alias plz='/usr/bin/sudo'
-
-## echo each path/fpath entry on newline
-# `print -rl -- "${(@s/:/)PATH}"` also works
-alias path='echo -e ${PATH//:/\\n}'
-alias fpath='echo -e ${FPATH//:/\\n}'
 
