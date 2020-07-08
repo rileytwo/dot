@@ -87,7 +87,7 @@ if (Get-Command "rg") {
 # // set theme
 function Set-UserTheme([string] $Theme) {
     if ($ThemeSettings) {
-        if (Test-Path -IsValid "$($ThemeSettings.MyThemesLocation)/riley.psm1") {
+        if (Test-Path -IsValid "$($ThemeSettings.MyThemesLocation)/$Theme.psm1") {
             Set-Theme $Theme
         }
         else {
