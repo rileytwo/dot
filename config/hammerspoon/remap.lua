@@ -47,8 +47,8 @@ KEYMAP = {
    {'rightCtrl', 's', nil, 'down'},
    {'rightCtrl', 'd', nil, 'right'},
 
-   {'rightCtrl+shift', 'a', 'alt', 'left'},
-   {'rightCtrl+shift', 'd', 'alt', 'right'},
+   {'rightCtrl+rightShift', 'a', 'alt', 'left'},
+   {'rightCtrl+rightShift', 'd', 'alt', 'right'}
 }
 
 hotkeyGroups = {}
@@ -87,6 +87,11 @@ function updateEnabledHotkeys()
          hotkey:enable()
       end
    end
+end
+
+modStates = {}
+for _, keyCode in ipairs(ORDERED_KEY_CODES) do
+  modStates[keyCode] = false
 end
 
 modKeyWatcher = hs.eventtap.new({hs.eventtap.event.types.flagsChanged}, function(event)

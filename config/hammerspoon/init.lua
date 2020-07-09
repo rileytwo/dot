@@ -18,9 +18,9 @@ modifier_keys = {"alt", "shift"}
 window_gap    = 5
 
 
-local conf = require("conf")
-local wm   = require("wm")
-
+local conf  = require("conf")
+local wm    = require("wm")
+local remap = require("remap")
 
 if modifier_keys then
    wm.mod_keys = modifier_keys
