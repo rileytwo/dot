@@ -1367,7 +1367,7 @@
 			<key>Non-ASCII Ligatures</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>SF-Mono-Plus-Regular 13</string>
+			<string>JetBrainsMono-Regular 13</string>
 			<key>Only The Default BG Color Uses Transparency</key>
 			<false/>
 			<key>Open Toolbelt</key>
@@ -5650,7 +5650,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>C5C51F9E-1D7E-43D3-B0E4-B6B288495CE1</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>169</integer>
+	<integer>180</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -6492,7 +6492,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-07-07T23:06:19Z</date>
+	<date>2020-07-10T23:45:49Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
@@ -7214,7 +7214,7 @@
 											<key>Non-ASCII Ligatures</key>
 											<true/>
 											<key>Normal Font</key>
-											<string>SF-Mono-Plus-Regular 13</string>
+											<string>JetBrainsMono-Regular 13</string>
 											<key>Only The Default BG Color Uses Transparency</key>
 											<false/>
 											<key>Open Toolbelt</key>
@@ -7584,6 +7584,29 @@
 											<string>diskutil info /volumes/</string>
 											<string>diskutil info /volumes/</string>
 											<string>diskutil info /volumes/</string>
+											<string>cd .dot</string>
+											<string>gs</string>
+											<string>cd</string>
+											<string>cp .config/karabiner/karabiner.json .dot/config/karabiner/karabiner.json</string>
+											<string>cd .dot</string>
+											<string>gs</string>
+											<string>ga</string>
+											<string>cd</string>
+											<string>cp .config/karabiner/karabiner.json .dot/config/karabiner/karabiner.json</string>
+											<string>cd .dot</string>
+											<string>gs</string>
+											<string>ga</string>
+											<string>gc -m '(undo) karabiner update'</string>
+											<string>gp</string>
+											<string>cd</string>
+											<string>brew update &amp;&amp; brew upgrade &amp;&amp; brew cask upgrade --no-quarantine</string>
+											<string>brew home ipsw</string>
+											<string>brew remove ipsw</string>
+											<string>brew remove ipsw --force</string>
+											<string>pyenv update</string>
+											<string>cd .pyenv</string>
+											<string>code ../.pyenv</string>
+											<string>cd</string>
 										</array>
 										<key>Directories</key>
 										<array>
@@ -7602,6 +7625,31 @@
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley/.dot</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley/.pyenv</string>
+											<string>/Users/riley/.pyenv</string>
 											<string>/Users/riley</string>
 										</array>
 										<key>Environment</key>
@@ -7714,6 +7762,156 @@
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp2</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp2</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp2</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp2</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp2</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp2</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp2</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp2</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp2</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp2</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp2</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp2</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp2</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp2</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp2</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp2</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp2</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp2</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp2</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp2</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp2</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp2</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp2</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp2</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp2</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
 										</array>
 										<key>Is UTF-8</key>
 										<true/>
@@ -7730,13 +7928,13 @@
 											<string>Shell Launcher</string>
 										</dict>
 										<key>Rows</key>
-										<integer>34</integer>
+										<integer>32</integer>
 										<key>Session GUID</key>
 										<string>2F4E0885-0519-4B19-BE38-68C745FC8E56</string>
 										<key>Short Lived Single Use</key>
 										<false/>
 										<key>Should Expect Current Dir Updates</key>
-										<false/>
+										<true/>
 										<key>Should Expect Prompt Marks</key>
 										<true/>
 										<key>Substitutions</key>
@@ -7744,7 +7942,7 @@
 										<key>Working Directory</key>
 										<string>/Users/riley</string>
 										<key>Working Directory Poller Disabled</key>
-										<false/>
+										<true/>
 									</dict>
 									<key>View Type</key>
 									<string>SessionView</string>
