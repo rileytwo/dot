@@ -493,7 +493,7 @@
                                 "key_code": "application"
                             },
                             "to": {
-                                "key_code": "fn"
+                                "key_code": "right_option"
                             }
                         },
                         {
@@ -623,16 +623,7 @@
                     },
                     "ignore": false,
                     "manipulate_caps_lock_led": true,
-                    "simple_modifications": [
-                        {
-                            "from": {
-                                "key_code": "right_command"
-                            },
-                            "to": {
-                                "key_code": "right_control"
-                            }
-                        }
-                    ]
+                    "simple_modifications": []
                 },
                 {
                     "disable_built_in_keyboard_if_exists": false,
