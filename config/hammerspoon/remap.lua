@@ -116,7 +116,9 @@ modKeyWatcher = hs.eventtap.new({hs.eventtap.event.types.flagsChanged}, function
        -- once all modifier keys of that type are released.
        modStates[keyCode] = false
        modStates[KEY_CODE_TO_SIBLING_KEY_CODE[keyCode]] = false
-     end
-     updateEnabledHotkeys()
+      end
+      updateEnabledHotkeys()
    end
- end):start()
+end)
+
+modKeyWatcher:start()
