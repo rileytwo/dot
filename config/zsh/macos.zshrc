@@ -198,7 +198,7 @@ ZSH_AUTOSUGGEST_CLEAR_WIDGETS+=(bracketed-paste)
   && export PATH="${HOME}/Library/Python/2.7/bin:$PATH"
 
 [[ -d "${HOME}/Library/Python/3.7/bin" ]] \
-  && export PATH="${HOME}/Library/Python/2.7/bin:$PATH"
+  && export PATH="${HOME}/Library/Python/3.7/bin:$PATH"
 
 
 
