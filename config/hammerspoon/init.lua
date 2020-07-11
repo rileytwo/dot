@@ -43,6 +43,10 @@ hs.hotkey.bind(modifier_keys, "R", function()
 	hs.reload()
 end)
 
+--hs.hotkey.bind("ctrl", "delete", function()
+--   hs.eventtap.keyStroke({"alt"}, "delete", 0)
+--end)
+
 
 wm.bind("F", wm.fill_full, "restorable")
 wm.bind("[", wm.fill_left, "restorable")
