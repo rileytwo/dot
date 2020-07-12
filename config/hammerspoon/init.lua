@@ -36,16 +36,16 @@ hs.hotkey.bind(modifier_keys, "Y", function()
 end)
 
 hs.hotkey.bind(modifier_keys, "R", function()
-	hs.notify.new({
-		title           = "Hammerspoon",
-		informativeText = "Config reloaded!"
-	}):send()
-	hs.reload()
+   hs.notify.new({
+      title           = "Hammerspoon",
+      informativeText = "Config reloaded!"
+   }):send()
+   hs.reload()
 end)
 
---hs.hotkey.bind("ctrl", "delete", function()
---   hs.eventtap.keyStroke({"alt"}, "delete", 0)
---end)
+hs.hotkey.bind("ctrl", "delete", function()
+   hs.eventtap.keyStroke({"alt"}, 51, 0)
+end)
 
 
 wm.bind("F", wm.fill_full, "restorable")
