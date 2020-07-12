@@ -1,0 +1,25 @@
+{
+  "title": "Control Delete One Word",
+  "rules": [
+    {
+      "description": "Global: ⌃ + ⌫ | Delete one word",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "delete_or_backspace",
+            "modifiers": {
+              "mandatory": ["control"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "delete_or_backspace",
+              "modifiers": ["option"]
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    }
+  ]
+}
