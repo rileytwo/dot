@@ -13,6 +13,7 @@ Caps Lock (⇪) -> Cmd + Ctrl + Alt + Shift (⌘ + ⌃ + ⌥ + ⇧)
 
 --]]
 --------------------------------------------------------------------]]
+hs.logger.defaultLogLevel = "error"
 
 modifier_keys = {"alt", "shift"}
 window_gap    = 5
@@ -41,10 +42,6 @@ hs.hotkey.bind(modifier_keys, "R", function()
       informativeText = "Config reloaded!"
    }):send()
    hs.reload()
-end)
-
-hs.hotkey.bind("ctrl", "delete", function()
-   hs.eventtap.keyStroke({"alt"}, 51, 0)
 end)
 
 
