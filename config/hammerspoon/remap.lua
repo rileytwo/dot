@@ -76,7 +76,6 @@ function remap.update_enabled_hotkeys()
    end
 
    local cur_mod_keys_str = ''
-   --local mod_states = remap.update_mod_states()
    for _, key_code in ipairs(remap.ORDERED_KEY_CODES) do
       if mod_states[key_code] then
          if cur_mod_keys_str ~= '' then
@@ -86,7 +85,6 @@ function remap.update_enabled_hotkeys()
       end
    end
 
-   --cur_hotkey_group = hotkey_groups[cur_mod_keys_str]
    cur_hotkey_group = remap.update_hotkey_groups()[cur_mod_keys_str]
    if cur_hotkey_group ~= nil then
       for _, hotkey in ipairs(cur_hotkey_group) do
