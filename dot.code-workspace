@@ -3,7 +3,6 @@
         "path": "."
     }],
     "settings": {
-        "editor.formatOnPaste": true,
         "files.watcherExclude": {
             "**/.brew": true,
             "**/.git": true,
@@ -16,8 +15,7 @@
         },
         "files.exclude": {
             "**/.Rproj.user": true
-        },
-        "editor.formatOnType": true
+        }
         // ,"StatusBarTag.text": "dot"
     }
 }
