@@ -20,7 +20,7 @@ conf.global.dark_mode = hs.preferencesDarkMode(true)
 
 
 conf.global.console.dark_mode = console.darkMode(true)
-conf.global.console.font      = console.consoleFont("SF Mono")
+conf.global.console.font      = console.consoleFont({name="SF Mono", size=12})
 conf.global.console.output_bg = console.outputBackgroundColor{
    alpha = 0.5
 }
