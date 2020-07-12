@@ -9,6 +9,7 @@ https://github.com/elliotwaite.
 
 --]]
 --------------------------------------------------------------------]]
+hs.hotkey.setLogLevel("warning")
 ORDERED_KEY_CODES = {58, 61, 55, 54, 59, 62, 56, 60}
 KEY_CODE_TO_KEY_STR = {
   [58] = 'leftAlt',
@@ -18,7 +19,7 @@ KEY_CODE_TO_KEY_STR = {
   [59] = 'leftCtrl',
   [62] = 'rightCtrl',
   [56] = 'leftShift',
-  [60] = 'rightShift',
+  [60] = 'rightShift'
 }
 KEY_CODE_TO_MOD_TYPE = {
   [58] = 'alt',
@@ -28,7 +29,7 @@ KEY_CODE_TO_MOD_TYPE = {
   [59] = 'ctrl',
   [62] = 'ctrl',
   [56] = 'shift',
-  [60] = 'shift',
+  [60] = 'shift'
 }
 KEY_CODE_TO_SIBLING_KEY_CODE = {
   [58] = 61,
@@ -38,7 +39,7 @@ KEY_CODE_TO_SIBLING_KEY_CODE = {
   [59] = 62,
   [62] = 59,
   [56] = 60,
-  [60] = 56,
+  [60] = 56
 }
 
 KEYMAP = {
@@ -51,56 +52,56 @@ KEYMAP = {
    {'rightCtrl+rightShift', 'd', 'alt', 'right'}
 }
 
-hotkeyGroups = {}
-for _, hotkeyVals in ipairs(KEYMAP) do
-   local fromMods, fromKey, toMods, toKey = table.unpack(hotkeyVals)
-   local toKeyStroke = function()
+hotkey_groups = {}
+for _, hotkey_vals in ipairs(KEYMAP) do
+   local from_mods, fromKey, toMods, toKey = table.unpack(hotkey_vals)
+   local to_key_stroke = function()
       hs.eventtap.keyStroke(toMods, toKey, 0)
    end
-   local hotkey = hs.hotkey.new(fromMods, fromKey, toKeyStroke, nil, toKeyStroke)
-   hotkeyGroups[fromMods] = hotkeyGroups[fromMods] or {}
-   table.insert(hotkeyGroups[fromMods], hotkey)
+   local hotkey = hs.hotkey.new(from_mods, fromKey, to_key_stroke, nil, to_key_stroke)
+   hotkey_groups[from_mods] = hotkey_groups[from_mods] or {}
+   table.insert(hotkey_groups[from_mods], hotkey)
 end
 
-function updateEnabledHotkeys()
-   if curHotkeyGroup ~= nil then
-      for _, hotkey in ipairs(curHotkeyGroup) do
+function update_enabled_hotkeys()
+   if cur_hotkey_group ~= nil then
+      for _, hotkey in ipairs(cur_hotkey_group) do
          hotkey:disable()
       end
    end
 
-   local curModKeysStr = ''
-   for _, keyCode in ipairs(ORDERED_KEY_CODES) do
-      if modStates[keyCode] then
-         if curModKeysStr ~= '' then
-            curModKeysStr = curModKeysStr .. '+'
+   local cur_mod_keys_str = ''
+   for _, key_code in ipairs(ORDERED_KEY_CODES) do
+      if mod_states[key_code] then
+         if cur_mod_keys_str ~= '' then
+            cur_mod_keys_str = cur_mod_keys_str .. '+'
          end
-         curModKeysStr = curModKeysStr .. KEY_CODE_TO_KEY_STR[keyCode]
+         cur_mod_keys_str = cur_mod_keys_str .. KEY_CODE_TO_KEY_STR[key_code]
       end
    end
 
-   curHotkeyGroup = hotkeyGroups[curModKeysStr]
-   if curHotkeyGroup ~= nil then
-      for _, hotkey in ipairs(curHotkeyGroup) do
+   cur_hotkey_group = hotkey_groups[cur_mod_keys_str]
+   if cur_hotkey_group ~= nil then
+      for _, hotkey in ipairs(cur_hotkey_group) do
          hotkey:enable()
       end
    end
 end
 
-modStates = {}
-for _, keyCode in ipairs(ORDERED_KEY_CODES) do
-  modStates[keyCode] = false
+mod_states = {}
+for _, key_code in ipairs(ORDERED_KEY_CODES) do
+  mod_states[key_code] = false
 end
 
-modKeyWatcher = hs.eventtap.new({hs.eventtap.event.types.flagsChanged}, function(event)
-   local keyCode = event:getKeyCode()
-   if modStates[keyCode] ~= nil then
-     if event:getFlags()[KEY_CODE_TO_MOD_TYPE[keyCode]] then
+mod_key_watcher = hs.eventtap.new({hs.eventtap.event.types.flagsChanged}, function(event)
+   local key_code = event:getKeyCode()
+   if mod_states[key_code] ~= nil then
+     if event:getFlags()[KEY_CODE_TO_MOD_TYPE[key_code]] then
        -- If a mod key of this type is currently pressed, we can't
        -- determine if this event was a key-up or key-down event, so we
        -- just toggle the `modState` value corresponding to the event's
        -- key code.
-       modStates[keyCode] = not modStates[keyCode]
+       mod_states[key_code] = not mod_states[key_code]
      else
        -- If no mod keys of this type are pressed, we know that this was
        -- a key-up event, so we set the `modState` value corresponding to
@@ -112,11 +113,11 @@ modKeyWatcher = hs.eventtap.new({hs.eventtap.event.types.flagsChanged}, function
        -- could happend if some other code triggers multiple key-down
        -- events for a single modifier key, the state will self correct
        -- once all modifier keys of that type are released.
-       modStates[keyCode] = false
-       modStates[KEY_CODE_TO_SIBLING_KEY_CODE[keyCode]] = false
+       mod_states[key_code] = false
+       mod_states[KEY_CODE_TO_SIBLING_KEY_CODE[key_code]] = false
       end
-      updateEnabledHotkeys()
+      update_enabled_hotkeys()
    end
 end)
 
-modKeyWatcher:start()
+mod_key_watcher:start()
