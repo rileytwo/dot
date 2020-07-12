@@ -281,9 +281,9 @@ function wm.screen.west()
    return win_screen
 end
 
+
+
 ---[[ 5 ]]
-
-
 
 function wm.bind(key, resize_frame_fn, restorable)
    hs.hotkey.bind(wm.mod_keys, key,
