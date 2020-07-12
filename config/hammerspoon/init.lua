@@ -13,31 +13,44 @@ Caps Lock (⇪) -> Cmd + Ctrl + Alt + Shift (⌘ + ⌃ + ⌥ + ⇧)
 
 --]]
 --------------------------------------------------------------------]]
-hs.logger.defaultLogLevel = "error"
-
 local conf  = require("conf")
 local wm    = require("wm")
-local remap = require("remap")
 
+function check_karabiner()
+   apps = hs.application.runningApplications()
+   karabiner = "false"
+
+   for _, app in ipairs(apps) do
+      local appname = app:name()
+
+      if appname == "karabiner_console_user_server" then
+         print(appname .. " is running")
+         karabiner = "true"
+      return karabiner
+      end
+   end
+end
+
+if not check_karabiner() then
+   local remap = require("remap")
+   keymap = {
+      {'rightCtrl', 'w', nil, 'up'},
+      {'rightCtrl', 'a', nil, 'left'},
+      {'rightCtrl', 's', nil, 'down'},
+      {'rightCtrl', 'd', nil, 'right'},
+
+      {'rightCtrl+rightShift', 'a', 'alt', 'left'},
+      {'rightCtrl+rightShift', 'd', 'alt', 'right'}
+   }
+   remap.KEYMAP = keymap or remap.KEYMAP
+   remap.mod_key_watcher:start()
+end
 
 modifier_keys = {"alt", "shift"}
 window_gap    = 5
-keymap = {
-   {'rightCtrl', 'w', nil, 'up'},
-   {'rightCtrl', 'a', nil, 'left'},
-   {'rightCtrl', 's', nil, 'down'},
-   {'rightCtrl', 'd', nil, 'right'},
-
-   {'rightCtrl+rightShift', 'a', 'alt', 'left'},
-   {'rightCtrl+rightShift', 'd', 'alt', 'right'}
-}
 
 wm.mod_keys = modifier_keys or wm.mod_keys
 wm.gap      = window_gap or wm.gap
-
-
-remap.KEYMAP = keymap or remap.KEYMAP
-remap.mod_key_watcher:start()
 
 
 hs.hotkey.bind(modifier_keys, "Y", function()
