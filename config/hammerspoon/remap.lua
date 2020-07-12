@@ -58,9 +58,7 @@ for _, hotkeyVals in ipairs(KEYMAP) do
       hs.eventtap.keyStroke(toMods, toKey, 0)
    end
    local hotkey = hs.hotkey.new(fromMods, fromKey, toKeyStroke, nil, toKeyStroke)
-   if hotkeyGroups[fromMods] == nil then
-      hotkeyGroups[fromMods] = {}
-   end
+   hotkeyGroups[fromMods] = hotkeyGroups[fromMods] or {}
    table.insert(hotkeyGroups[fromMods], hotkey)
 end
 
