@@ -17,7 +17,15 @@ hs.logger.defaultLogLevel = "error"
 
 modifier_keys = {"alt", "shift"}
 window_gap    = 5
+keymap = {
+   {'rightCtrl', 'w', nil, 'up'},
+   {'rightCtrl', 'a', nil, 'left'},
+   {'rightCtrl', 's', nil, 'down'},
+   {'rightCtrl', 'd', nil, 'right'},
 
+   {'rightCtrl+rightShift', 'a', 'alt', 'left'},
+   {'rightCtrl+rightShift', 'd', 'alt', 'right'}
+}
 
 local conf  = require("conf")
 local wm    = require("wm")
@@ -31,6 +39,11 @@ if window_gap then
    wm.gap = window_gap
 end
 
+if keymap then
+   remap.KEYMAP = keymap
+end
+
+remap.mod_key_watcher:start()
 
 hs.hotkey.bind(modifier_keys, "Y", function()
    hs.toggleConsole()
