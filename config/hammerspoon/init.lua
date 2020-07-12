@@ -15,6 +15,11 @@ Caps Lock (⇪) -> Cmd + Ctrl + Alt + Shift (⌘ + ⌃ + ⌥ + ⇧)
 --------------------------------------------------------------------]]
 hs.logger.defaultLogLevel = "error"
 
+local conf  = require("conf")
+local wm    = require("wm")
+local remap = require("remap")
+
+
 modifier_keys = {"alt", "shift"}
 window_gap    = 5
 keymap = {
@@ -27,27 +32,18 @@ keymap = {
    {'rightCtrl+rightShift', 'd', 'alt', 'right'}
 }
 
-local conf  = require("conf")
-local wm    = require("wm")
-local remap = require("remap")
+wm.mod_keys = modifier_keys or wm.mod_keys
+wm.gap      = window_gap or wm.gap
 
-if modifier_keys then
-   wm.mod_keys = modifier_keys
-end
 
-if window_gap then
-   wm.gap = window_gap
-end
-
-if keymap then
-   remap.KEYMAP = keymap
-end
-
+remap.KEYMAP = keymap or remap.KEYMAP
 remap.mod_key_watcher:start()
+
 
 hs.hotkey.bind(modifier_keys, "Y", function()
    hs.toggleConsole()
 end)
+
 
 hs.hotkey.bind(modifier_keys, "R", function()
    hs.notify.new({
