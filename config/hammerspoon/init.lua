@@ -44,6 +44,11 @@ if not check_karabiner() then
    }
    remap.KEYMAP = keymap or remap.KEYMAP
    remap.mod_key_watcher:start()
+
+   hs.hotkey.bind({"ctrl"}, "delete", nil,
+   function()
+      hs.eventtap.keyStroke({"alt"}, "delete", 0)
+   end)
 end
 
 modifier_keys = {"alt", "shift"}
@@ -65,13 +70,6 @@ hs.hotkey.bind(modifier_keys, "R", function()
    }):send()
    hs.reload()
 end)
-
-
-hs.hotkey.bind({"ctrl"}, "delete", nil,
-   function()
-      hs.eventtap.keyStroke({"alt"}, "delete", 0)
-   end
-)
 
 
 wm.bind("F", wm.fill_full, "restorable")
