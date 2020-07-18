@@ -75,7 +75,7 @@ compinit -C
 
 #### // zstyle
 
-fignore=(DS_Store ${fignore})
+fignore=(DS_Store localized ${fignore})
 
 # NOTE as follows `:completion:function:completer:command:argument:tag`
 zstyle ':completion:*' completer \
