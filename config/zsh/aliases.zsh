@@ -1,7 +1,9 @@
 #!/usr/bin/env zsh
+#
+# aliases.zsh
+#
 
-
-## Aliases that require non-third-party binaries/applications
+# Aliases that work (for the most part) out of the box
 
 ## echo each path/fpath entry on newline
 # `print -rl -- "${(@s/:/)PATH}"` also works
@@ -10,7 +12,8 @@ alias fpath='echo -e ${FPATH//:/\\n}'
 
 
 
-## Aliases that do not require third-party binaries/applications
+# Aliases that require additional tools go here
+
 if (( $+commands[git] )); then
     alias gs='git status'
     alias gcu='git checkout upstream'
@@ -23,7 +26,7 @@ fi
 
 
 if (( $+commands[exa] )); then
-    alias e='exa -lahH'
+    alias e='exa -lah'
     alias ee='exa -lhH'
     alias et='exa -lahT'
     alias eg='exa -lah --git'
