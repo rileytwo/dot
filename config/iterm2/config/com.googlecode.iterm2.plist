@@ -734,7 +734,7 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>530 488 620 392 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>993 302 682 570 0 0 1680 1027 </string>
+	<string>951 284 724 588 0 0 1680 1027 </string>
 	<key>NeverWarnAboutShortLivedSessions_120FAA18-3181-488D-9B29-68949F1F0CE6</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_120FAA18-3181-488D-9B29-68949F1F0CE6_selection</key>
@@ -5750,7 +5750,7 @@
 	<key>NoSyncLastOSVersion</key>
 	<string>Version 10.15.6 (Build 19G73)</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>204</integer>
+	<integer>210</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -6660,7 +6660,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-07-18T16:30:58Z</date>
+	<date>2020-07-18T23:45:13Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
@@ -6731,7 +6731,7 @@
 				<key>Has Toolbelt</key>
 				<false/>
 				<key>Height</key>
-				<real>570</real>
+				<real>588</real>
 				<key>Hide After Opening</key>
 				<false/>
 				<key>Hiding Toolbelt Should Resize Window</key>
@@ -7830,7 +7830,7 @@
 											<string>kiss</string>
 										</dict>
 										<key>Columns</key>
-										<integer>84</integer>
+										<integer>90</integer>
 										<key>Commands</key>
 										<array>
 											<string>cd .dot</string>
@@ -7922,6 +7922,17 @@
 											<string>tmutil listbackups</string>
 											<string>tmutil listbackups /</string>
 											<string>wallpaper set --screen 0 Documents/Pictures/wallpapers/apple/BigSur/BigSur-5.heic</string>
+											<string>wallpaper set --screen 0 Documents/Pictures/wallpapers/apple/BigSur/BigSur-5.hei</string>
+											<string>wallpaper set --screen 0 Documents/Pictures/wallpapers/apple/BigSur/BigSur-5.hei</string>
+											<string>wallpaper set --screen 0 Documents/Pictures/wallpapers/apple/BigSur/BigSur-5.hei</string>
+											<string>wallpaper set --screen 0 Documents/Pictures/wallpapers/apple/BigSur/BigSur-5.hei</string>
+											<string>wallpaper set --screen 0 Documents/Pictures/wallpapers/apple/BigSur/BigSur-5.hei</string>
+											<string>wallpaper set --screen 0 Documents/Pictures/wallpapers/apple/BigSur/BigSur-5.hei</string>
+											<string>wallpaper set --screen 0 Documents/Pictures/wallpapers/apple/BigSur/BigSur-5.hei</string>
+											<string>wallpaper set --screen 0 Documents/Pictures/wallpapers/apple/BigSur/BigSur-5.hei</string>
+											<string>wallpaper set --screen 0 Documents/Pictures/wallpapers/apple/BigSur/BigSur-5.hei</string>
+											<string>wallpaper set --screen 0 Documents/Pictures/wallpapers/apple/BigSur/BigSur-5.hei</string>
+											<string>wallpaper set --screen 0 Documents/Pictures/wallpapers/apple/BigSur/BigSur-5.hei</string>
 										</array>
 										<key>Directories</key>
 										<array>
@@ -8001,6 +8012,8 @@
 											<string>/Users/riley</string>
 											<string>/Users/riley/.mono/registry</string>
 											<string>/Users/riley/.mono/registry</string>
+											<string>/Users/riley</string>
+											<string>/Users/riley</string>
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
 											<string>/Users/riley</string>
@@ -8570,6 +8583,18 @@
 												<key>User name</key>
 												<string>riley</string>
 											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp2</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>rxmbp2</string>
+												<key>User name</key>
+												<string>riley</string>
+											</dict>
 										</array>
 										<key>Is UTF-8</key>
 										<true/>
@@ -8586,7 +8611,7 @@
 											<string>Shell Launcher</string>
 										</dict>
 										<key>Rows</key>
-										<integer>31</integer>
+										<integer>32</integer>
 										<key>Session GUID</key>
 										<string>2F4E0885-0519-4B19-BE38-68C745FC8E56</string>
 										<key>Short Lived Single Use</key>
@@ -8607,9 +8632,9 @@
 									<key>frame</key>
 									<dict>
 										<key>height</key>
-										<real>532</real>
+										<real>550</real>
 										<key>width</key>
-										<real>682</real>
+										<real>724</real>
 										<key>x</key>
 										<real>0.0</real>
 										<key>y</key>
@@ -8622,9 +8647,9 @@
 							<key>frame</key>
 							<dict>
 								<key>height</key>
-								<real>532</real>
+								<real>550</real>
 								<key>width</key>
-								<real>682</real>
+								<real>724</real>
 								<key>x</key>
 								<real>0.0</real>
 								<key>y</key>
@@ -8645,25 +8670,25 @@
 					<array>
 						<dict>
 							<key>heightAsFraction</key>
-							<real>0.23192239858906524</real>
+							<real>0.23162393162393163</real>
 							<key>name</key>
 							<string>Captured Output</string>
 						</dict>
 						<dict>
 							<key>heightAsFraction</key>
-							<real>0.30423280423280424</real>
+							<real>0.30427350427350425</real>
 							<key>name</key>
 							<string>Command History</string>
 						</dict>
 						<dict>
 							<key>heightAsFraction</key>
-							<real>0.23192239858906524</real>
+							<real>0.23247863247863249</real>
 							<key>name</key>
 							<string>Jobs</string>
 						</dict>
 						<dict>
 							<key>heightAsFraction</key>
-							<real>0.23192239858906524</real>
+							<real>0.23162393162393163</real>
 							<key>name</key>
 							<string>Paste History</string>
 						</dict>
@@ -8672,13 +8697,13 @@
 				<key>Use Transparency</key>
 				<false/>
 				<key>Width</key>
-				<real>682</real>
+				<real>724</real>
 				<key>Window Type</key>
 				<integer>13</integer>
 				<key>X Origin</key>
-				<real>993</real>
+				<real>951</real>
 				<key>Y Origin</key>
-				<real>302</real>
+				<real>284</real>
 			</dict>
 		</array>
 	</dict>
