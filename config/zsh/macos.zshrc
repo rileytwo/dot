@@ -78,9 +78,7 @@ compinit -C
 fignore=(DS_Store localized ${fignore})
 
 # NOTE as follows `:completion:function:completer:command:argument:tag`
-zstyle ':completion:*' completer \
-  _complete _match _approximate _ignored
-
+zstyle ':completion:*' completer _complete _match _approximate _ignored
 zstyle ':completion:*' accept-exact false
 zstyle ':completion:*' use-cache on
 zstyle ':completion:*' cache-path "${HOME}/.zsh/cache"
@@ -89,18 +87,11 @@ zstyle ':completion:*' menu select=2
 zstyle ':completion:*' special-dirs false
 zstyle ':completion:*' group-name ''
 zstyle ':completion:*' verbose true
-zstyle ':completion:*:descriptions' format \
-  "$fg[yellow]%B--- %d%b"
-
+zstyle ':completion:*:descriptions' format "$fg[yellow]%B--- %d%b"
 zstyle ':completion:*:messages' format '%d'
-zstyle ':completion:*:warnings' format \
-  "$fg[red]No matches for:$reset_color %d"
-
-zstyle ':completion:*:corrections' format \
-  '%B%d (errors: %e)%b'
-
-zstyle ':completion:*' list-colors \
-  "${(s.:.)LS_COLORS}"
+zstyle ':completion:*:warnings' format "$fg[red]No matches for:$reset_color %d"
+zstyle ':completion:*:corrections' format '%B%d (errors: %e)%b'
+zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
   # NOTE `(s.:.)` forces field splitting at the separator *string*
 
 
@@ -221,17 +212,17 @@ if (( $+commands[fzf] )); then
   elif [[ -f "/usr/share/doc/fzf/examples/key-bindings.zsh" ]]; then
     source "/usr/share/doc/fzf/examples/key-bindings.zsh"
   fi
+  export FZF_DEFAULT_OPTS='
+  --color=fg:#c4c4c4,bg:#121212,hl:#2d7eb7
+  --color=fg+:#e6e6e6,bg+:#262626,hl+:#3fb2ff
+  --color=info:#d4ce90,prompt:#9691ff,pointer:#ff7e81
+  --color=marker:#73ff96,spinner:#ff7e81,header:#54cc72'
 fi
 
 if (( $+commands[rg] )); then
   export RIPGREP_CONFIG_PATH="${HOME}/.config/ripgrep/ripgreprc"
   export FZF_DEFAULT_COMMAND='rg --files --no-ignore-vcs --hidden'
 fi
-export FZF_DEFAULT_OPTS='
---color=fg:#c4c4c4,bg:#121212,hl:#2d7eb7
---color=fg+:#e6e6e6,bg+:#262626,hl+:#3fb2ff
---color=info:#d4ce90,prompt:#9691ff,pointer:#ff7e81
---color=marker:#73ff96,spinner:#ff7e81,header:#54cc72'
 
 [[ -f /usr/local/bin/typex ]] && source /usr/local/bin/typex
 [[ -f /usr/local/etc/profile.d/z.sh ]] && source /usr/local/etc/profile.d/z.sh
