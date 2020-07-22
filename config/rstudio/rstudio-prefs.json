@@ -54,5 +54,6 @@
     "style_diagnostics": true,
     "check_unexpected_assignment_in_function_call": true,
     "font_size_points": 11,
-    "rmd_viewer_type": "pane"
+    "rmd_viewer_type": "pane",
+    "show_hidden_files": true
 }
