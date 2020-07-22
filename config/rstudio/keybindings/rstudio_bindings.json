@@ -28,13 +28,13 @@
     "nextTab": "Cmd+3",
     "openPreviousFileOnFilesystem": "",
     "pasteLastYank": "Shift+Cmd+V",
-    "popoutDoc": "Cmd+K Cmd+N",
+    "popoutDoc": "Cmd+K Cmd+O",
     "previousTab": "Cmd+2",
     "reformatCode": "Cmd+K Cmd+F",
     "refreshEnvironment": "Ctrl+Shift+Cmd+R",
     "removewordleft": "Alt+Backspace",
     "restartR": "Ctrl+Shift+Cmd+R",
-    "returnDocToMain": "Cmd+K Shift+Cmd+N",
+    "returnDocToMain": "Cmd+K Cmd+O",
     "sourceActiveDocument": "",
     "switchFocusSourceConsole": "Cmd+1",
     "unfold": "Shift+Cmd+\\",
@@ -51,5 +51,8 @@
     "compileNotebook": "",
     "layoutZoomLeftColumn": "Ctrl+Alt+Shift+F12",
     "paneLayout": "Cmd+K Shift+Cmd+P",
-    "goToLine": "Cmd+;"
+    "goToLine": "Cmd+;",
+    "checkPackage": "",
+    "jumpToMatching": "Shift+Cmd+\\",
+    "commentUncomment": "Cmd+/"
 }
