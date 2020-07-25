@@ -6,14 +6,14 @@ Description = "Kiss"
 Categories = {"dark"}
 
 Default       = { Colour="#f0f0f0" }
-Canvas        = { Colour="#151515" }
-Number        = { Colour="#3fb2ff" }
-Escape        = { Colour="#ff7ab2" }
+Canvas        = { Colour="#181818" }
+Number        = { Colour="#ff7ab2" }
+Escape        = { Colour="#5cfeff" }
 String        = { Colour="#82ffa1" }
 BlockComment  = { Colour="#636363" }
 Operator      = { Colour="#9691ff" }
 PreProcessor  = { Colour="#ffcda8" }
-Interpolation = { Colour="#5cfeff" }
+Interpolation = { Colour="#3fb2ff" }
 StringPreProc = String
 LineComment   = BlockComment
 LineNum       = BlockComment
