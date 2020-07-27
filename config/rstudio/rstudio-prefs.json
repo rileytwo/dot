@@ -43,7 +43,7 @@
     "continue_comments_on_newline": true,
     "fold_style": "begin-only",
     "full_project_path_in_window_title": true,
-    "jobs_tab_visibility": "shown",
+    "jobs_tab_visibility": "closed",
     "custom_shell_command": "/usr/local/bin/zsh",
     "custom_shell_options": "-l",
     "terminal_bell_style": "none",

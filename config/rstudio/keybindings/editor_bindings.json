@@ -12,5 +12,6 @@
     "selectwordright": "Shift+Cmd+D",
     "unfold": "Shift+Cmd+\\",
     "toggleFoldWidget": "Cmd+-",
-    "openCommandPallete": "Shift+Cmd+P"
+    "openCommandPallete": "Shift+Cmd+P",
+    "del": "Shift+Delete|Delete|Ctrl+D"
 }

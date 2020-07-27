@@ -13,7 +13,7 @@
     "executeCodeWithoutMovingCursor": "Ctrl+Enter",
     "executeToCurrentLine": "Shift+Cmd+R",
     "findFromSelection": "",
-    "findInFiles": "",
+    "findInFiles": "Shift+Cmd+F",
     "findReplace": "Cmd+F",
     "fold": "",
     "foldAll": "Cmd+K Cmd+\\",
@@ -54,5 +54,6 @@
     "goToLine": "Cmd+;",
     "checkPackage": "",
     "jumpToMatching": "Shift+Cmd+\\",
-    "commentUncomment": "Cmd+/"
+    "commentUncomment": "Cmd+/",
+    "findAll": ""
 }
