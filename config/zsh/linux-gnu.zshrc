@@ -249,9 +249,8 @@ export FZF_DEFAULT_OPTS='
 --color=info:#d4ce90,prompt:#9691ff,pointer:#ff7e81
 --color=marker:#73ff96,spinner:#ff7e81,header:#54cc72'
 
-[[ -f /usr/local/bin/typex ]] && source /usr/local/bin/typex
 [[ -f "${HOME}/.aliases.zsh" ]] && source "${HOME}/.aliases.zsh"
-
+[[ -f "${HOME}/.functions.zsh" ]] && source "${HOME}/.functions.zsh"
 
 
 #### // environment
