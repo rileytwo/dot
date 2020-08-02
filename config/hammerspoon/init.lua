@@ -15,6 +15,7 @@ Caps Lock (⇪) -> Cmd + Ctrl + Alt + Shift (⌘ + ⌃ + ⌥ + ⇧)
 --------------------------------------------------------------------]]
 local conf  = require("conf")
 local wm    = require("wm")
+local wm_tp = require("wm-trackpad")
 
 function check_karabiner()
    apps = hs.application.runningApplications()
