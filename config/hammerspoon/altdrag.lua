@@ -1,7 +1,18 @@
+-------------------------------------------------------------------[[
+--[[
+
+altdrag.lua
+
 -- Inspired by Linux alt-drag or Better Touch Tools move/resize functionality
 -- from https://gist.github.com/kizzx2/e542fa74b80b7563045a
 -- Command-shift-move: move window under mouse
 -- Alt-Shift-move: resize window under mouse
+
+--]]
+--------------------------------------------------------------------]]
+
+local altdrag = {}
+
 function get_window_under_mouse()
    local my_pos = hs.geometry.new(hs.mouse.getAbsolutePosition())
    local my_screen = hs.mouse.getCurrentScreen()
@@ -30,7 +41,7 @@ drag_event = hs.eventtap.new({ hs.eventtap.event.types.mouseMoved },
       end
 end)
 
-flags_event = hs.eventtap.new({ hs.eventtap.event.types.flagsChanged },
+altdrag.watcher = hs.eventtap.new({ hs.eventtap.event.types.flagsChanged },
    function(e)
       local flags = e:getFlags()
       local mode = (
@@ -67,4 +78,6 @@ flags_event = hs.eventtap.new({ hs.eventtap.event.types.flagsChanged },
       end
    return nil
 end)
-flags_event:start()
+
+
+return altdrag
