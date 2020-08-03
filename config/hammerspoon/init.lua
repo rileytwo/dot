@@ -13,44 +13,13 @@ Caps Lock (⇪) -> Cmd + Ctrl + Alt + Shift (⌘ + ⌃ + ⌥ + ⇧)
 
 --]]
 --------------------------------------------------------------------]]
-local conf  = require("conf")
-local wm    = require("wm")
-local wm_tp = require("wm-trackpad")
+local conf    = require("conf")
+local wm      = require("wm")
+local altdrag = require("altdrag")
 
-function check_karabiner()
-   apps = hs.application.runningApplications()
-   karabiner = "false"
 
-   for _, app in ipairs(apps) do
-      local appname = app:name()
+altdrag.watcher:start()
 
-      if appname == "karabiner_console_user_server" then
-         print(appname .. " is running")
-         karabiner = "true"
-      return karabiner
-      end
-   end
-end
-
-if not check_karabiner() then
-   local remap = require("remap")
-   keymap = {
-      {'rightCtrl', 'w', nil, 'up'},
-      {'rightCtrl', 'a', nil, 'left'},
-      {'rightCtrl', 's', nil, 'down'},
-      {'rightCtrl', 'd', nil, 'right'},
-
-      {'rightCtrl+rightShift', 'a', 'alt', 'left'},
-      {'rightCtrl+rightShift', 'd', 'alt', 'right'}
-   }
-   remap.KEYMAP = keymap or remap.KEYMAP
-   remap.mod_key_watcher:start()
-
-   hs.hotkey.bind({"ctrl"}, "delete", nil,
-   function()
-      hs.eventtap.keyStroke({"alt"}, "delete", 0)
-   end)
-end
 
 modifier_keys = {"alt", "shift"}
 window_gap    = 5
@@ -93,3 +62,39 @@ wm.screen.bind("Up",    wm.screen.north, "strict")
 wm.screen.bind("Down",  wm.screen.south, "strict")
 wm.screen.bind("Right", wm.screen.east,  "strict")
 wm.screen.bind("Left",  wm.screen.west,  "strict")
+
+
+function check_karabiner()
+   apps = hs.application.runningApplications()
+   karabiner = "false"
+
+   for _, app in ipairs(apps) do
+      local appname = app:name()
+
+      if appname == "karabiner_console_user_server" then
+         print(appname .. " is running")
+         karabiner = "true"
+      return karabiner
+      end
+   end
+end
+
+if not check_karabiner() then
+   local remap = require("remap")
+   keymap = {
+      {'rightCtrl', 'w', nil, 'up'},
+      {'rightCtrl', 'a', nil, 'left'},
+      {'rightCtrl', 's', nil, 'down'},
+      {'rightCtrl', 'd', nil, 'right'},
+
+      {'rightCtrl+rightShift', 'a', 'alt', 'left'},
+      {'rightCtrl+rightShift', 'd', 'alt', 'right'}
+   }
+   remap.KEYMAP = keymap or remap.KEYMAP
+   remap.mod_key_watcher:start()
+
+   hs.hotkey.bind({"ctrl"}, "delete", nil,
+   function()
+      hs.eventtap.keyStroke({"alt"}, "delete", 0)
+   end)
+end
