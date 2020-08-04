@@ -15,10 +15,10 @@ Caps Lock (⇪) -> Cmd + Ctrl + Alt + Shift (⌘ + ⌃ + ⌥ + ⇧)
 --------------------------------------------------------------------]]
 local conf    = require("conf")
 local wm      = require("wm")
-local altdrag = require("altdrag")
+--local altdrag = require("altdrag")
 local bugg    = require("bugg")
 
-altdrag.watcher:start()
+--altdrag.watcher:start()
 
 
 modifier_keys = {"alt", "shift"}
