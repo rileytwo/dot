@@ -36,8 +36,8 @@ if ($IsMacOS) {
 function Add-UserPaths([array] $Paths) {
     foreach ($Path in $Paths) {
         if (Test-Path $Path) {
-            switch($IsWindows) {
-                $True   { $Sep = ";" }
+            switch ($IsWindows) {
+                $True { $Sep = ";" }
                 default { $Sep = ":" }
             }
             $env:PATH = ($env:PATH).Insert(0, "${Path}${Sep}")
@@ -87,7 +87,7 @@ if (Get-Command "rg") {
 # // set theme
 function Set-UserTheme([string] $Theme) {
     if ($ThemeSettings) {
-        if (Test-Path -IsValid "$($ThemeSettings.MyThemesLocation)/riley.psm1") {
+        if (Test-Path -IsValid "$($ThemeSettings.MyThemesLocation)/$Theme.psm1") {
             Set-Theme $Theme
         }
         else {
@@ -102,6 +102,8 @@ Set-UserTheme -Theme riley
 
 
 ### aliases
-if (Test-Path "$((get-item $profile).DirectoryName)/aliases.ps1") {
-    . "$((get-item $profile).DirectoryName)/aliases.ps1"
+if (Test-Path "$((Get-Item $profile).DirectoryName)/aliases.ps1") {
+    . "$((Get-Item $profile).DirectoryName)/aliases.ps1"
 }
+
+function prompt { "$PWD `r`n> " }
