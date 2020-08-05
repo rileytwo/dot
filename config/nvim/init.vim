@@ -195,6 +195,7 @@ let g:indentLine_char = '│'
 let g:indent_guides_enable_on_vim_startup = 1
 let g:indent_guides_start_level = 2
 let g:indent_guides_guide_size = 1
+let g:indentLine_fileTypeExclude = ['markdown', 'json']
 
 let g:delimitMate_expand_space = 1
 let g:delimitMate_expand_cr = 2
