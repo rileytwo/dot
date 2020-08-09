@@ -35,7 +35,6 @@
     "source_with_echo": true,
     "default_sweave_engine": "knitr",
     "pdf_previewer": "rstudio",
-    "console_double_click_select": true,
     "save_workspace": "never",
     "remove_history_duplicates": true,
     "reuse_sessions_for_project_links": true,
@@ -53,7 +52,24 @@
     "warn_variable_defined_but_not_used": true,
     "style_diagnostics": true,
     "check_unexpected_assignment_in_function_call": true,
-    "font_size_points": 11,
     "rmd_viewer_type": "pane",
-    "show_hidden_files": true
+    "show_hidden_files": true,
+    "strip_trailing_whitespace": true,
+    "disabled_aria_live_announcements": [
+        "console_cleared",
+        "console_log",
+        "console_command",
+        "filtered_list",
+        "git_message_length",
+        "inaccessible_feature",
+        "info_bar",
+        "progress_completion",
+        "progress_log",
+        "screen_reader_not_enabled",
+        "session_state",
+        "tab_key_mode",
+        "toolbar_visibility",
+        "warning_bar"
+    ],
+    "help_font_size_points": 11
 }
