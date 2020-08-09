@@ -9,7 +9,7 @@ function preman() {
 }
 
 function domains() {
-  echo -e "${"$(defaults domains)"//, /\\n}"
+  echo -e "${"$(defaults domains "$@")"//, /\\n}"
 }
 
 
