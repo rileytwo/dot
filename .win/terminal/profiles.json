@@ -174,8 +174,8 @@
       // Copy and paste are bound to Ctrl+Shift+C and Ctrl+Shift+V in your defaults.json.
       // These two lines additionally bind them to Ctrl+C and Ctrl+V.
       // To learn more about selection, visit https://aka.ms/terminal-selection
-      { "command": {"action": "copy", "singleLine": false }, "keys": "ctrl+c" },
-      { "command": "paste", "keys": "ctrl+v" },
+      { "command": {"action": "copy", "singleLine": false }, "keys": "ctrl+shift+c" },
+      { "command": "paste", "keys": "ctrl+shift+v" },
 
       // Press Ctrl+Shift+F to open the search box
       { "command": "find", "keys": "ctrl+shift+f" },
@@ -184,16 +184,16 @@
       // - "split": "auto" makes this pane open in the direction that provides the most surface area.
       // - "splitMode": "duplicate" makes the new pane use the focused pane's profile.
       // To learn more about panes, visit https://aka.ms/terminal-panes
-      { "command": { "action": "splitPane", "split": "auto", "splitMode": "duplicate" }, "keys": "alt+shift+d" },
+      { "command": { "action": "splitPane", "split": "auto", "splitMode": "duplicate" }, "keys": "ctrl+shift+d" },
       { "command": "closeTab", "keys": ["ctrl+w"] },
-      { "command": "closePane", "keys": ["ctrl+shift+w"]},
+      { "command": "closePane", "keys": ["ctrl+w"]},
       { "command": { "action": "moveFocus", "direction": "down" }, "keys": "alt+j" },
       { "command": { "action": "moveFocus", "direction": "left" }, "keys": "alt+h" },
       { "command": { "action": "moveFocus", "direction": "right" }, "keys": "alt+l" },
       { "command": { "action": "moveFocus", "direction": "up" }, "keys": "alt+k" },
-      { "command": { "action": "resizePane", "direction": "down" }, "keys": "alt+shift+down" },
-      { "command": { "action": "resizePane", "direction": "left" }, "keys": "alt+shift+left" },
-      { "command": { "action": "resizePane", "direction": "right" }, "keys": "alt+shift+right" },
-      { "command": { "action": "resizePane", "direction": "up" }, "keys": "alt+shift+up" }
+      { "command": { "action": "resizePane", "direction": "up" }, "keys": "alt+=" },
+      { "command": { "action": "resizePane", "direction": "down" }, "keys": "alt+shift+=" },
+      { "command": { "action": "resizePane", "direction": "left" }, "keys": "alt+-" },
+      { "command": { "action": "resizePane", "direction": "right" }, "keys": "alt+shift+-" }
   ]
 }
