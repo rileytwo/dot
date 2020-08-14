@@ -7,12 +7,12 @@ function Write-Theme {
     )
     
     # write virtualenv
-    if (Test-VirtualEnv) {
-        $prompt += Write-Prompt -Object "env:(" -ForegroundColor $sl.Colors.VirtualEnvForegroundColor
-        $prompt += Write-Prompt -Object "$(Get-VirtualEnvName)"
-        $prompt += Write-Prompt -Object ") " -ForegroundColor $sl.Colors.VirtualEnvForegroundColor
-        $prompt += Write-Prompt -Object "in " -ForegroundColor $sl.Colors.PromptAtColor
-    }
+    #if (Test-VirtualEnv) {
+    #    $prompt += Write-Prompt -Object "env:(" -ForegroundColor $sl.Colors.VirtualEnvForegroundColor
+    #    $prompt += Write-Prompt -Object "$(Get-VirtualEnvName)"
+    #    $prompt += Write-Prompt -Object ") " -ForegroundColor $sl.Colors.VirtualEnvForegroundColor
+    #    $prompt += Write-Prompt -Object "in " -ForegroundColor $sl.Colors.PromptAtColor
+    #}
 
     # Writes the drive portion
     $dir = "$(Get-FullPath -dir $PWD)".Replace("\", "/")
@@ -38,7 +38,7 @@ function Write-Theme {
 }
 
 $sl = $global:ThemeSettings #local settings
-$sl.Colors.VirtualEnvForegroundColor = [ConsoleColor]::Green
+#$sl.Colors.VirtualEnvForegroundColor = [ConsoleColor]::Green
 #$sl.PromptSymbols.PromptIndicator = [char]::ConvertFromUtf32(0x221a)
 $sl.Colors.PromptSymbolColor = [ConsoleColor]::Magenta
 $sl.Colors.PromptHighlightColor = [ConsoleColor]::Blue
