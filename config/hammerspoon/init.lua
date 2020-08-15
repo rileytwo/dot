@@ -13,10 +13,10 @@ Caps Lock (⇪) -> Cmd + Ctrl + Alt + Shift (⌘ + ⌃ + ⌥ + ⇧)
 
 --]]
 --------------------------------------------------------------------]]
-local conf    = require("conf")
-local wm      = require("wm")
+local conf    = require("conf/conf")
+local wm      = require("wm/wm")
 --local altdrag = require("altdrag")
-local bugg    = require("bugg")
+local bugg    = require("debug/bugg")
 
 --altdrag.watcher:start()
 
@@ -80,7 +80,7 @@ function check_karabiner()
 end
 
 if not check_karabiner() then
-   local remap = require("remap")
+   local remap = require("keys/remap")
    keymap = {
       {'rightCtrl', 'w', nil, 'up'},
       {'rightCtrl', 'a', nil, 'left'},
