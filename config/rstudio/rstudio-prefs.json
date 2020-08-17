@@ -71,7 +71,6 @@
         "toolbar_visibility",
         "warning_bar"
     ],
-    "help_font_size_points": 11,
     "font_size_points": 11,
-    "git_exe_path": "/usr/local/bin/git"
+    "show_terminal_tab": false
 }
