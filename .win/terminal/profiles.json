@@ -102,7 +102,7 @@
   // To learn more about color schemes, visit https://aka.ms/terminal-color-schemes
   "schemes": [
       {
-        "background"  : "#171717",
+        "background"  : "#181818",
         "black"       : "#171717",
         "blue"        : "#3FB2FF",
         "brightBlack" : "#767676",
