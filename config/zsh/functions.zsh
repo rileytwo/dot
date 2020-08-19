@@ -12,6 +12,14 @@ function domains() {
   echo -e "${"$(defaults domains "$@")"//, /\\n}"
 }
 
+function perm() {
+  if (( $+commands[gstat] )); then
+    :
+  else
+    exit 1
+  fi
+  gstat -c "%a %n" "$@"
+}
 
 if (( $+aliases[gl] )); then
   unalias gl     
