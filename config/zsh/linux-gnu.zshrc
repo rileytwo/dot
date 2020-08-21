@@ -18,16 +18,13 @@ autoload -U edit-command-line
 if [[ "${0}" != "-zsh" ]] || ! (( $+commands[neofetch] )); then
   :
 else
-  if [[ "$(uname -r)" =~ "windows" ]]; then
+  if [[ "$(uname -r)" == *microsoft* ]]; then
     neofetch \
       --config "${HOME}"/.config/neofetch/config.conf \
       --ascii_distro windows10 \
       --colors 5 7 7 4 7 15
   else
-    neofetch \
-      --config "${HOME}"/.config/neofetch/config.conf \
-      --ascii_distro windows10 \
-      --colors 5 7 7 4 7 15
+    neofetch --colors 5 7 7 4 7 15
   fi
 fi
 
