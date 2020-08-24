@@ -63,7 +63,7 @@ Plug 'PProvost/vim-ps1',               {'for': 'powershell'}
 Plug 'gaalcaras/ncm-R',                {'for': 'R'}
 Plug 'jalvesaq/Nvim-R',                {'for': 'R'}
 Plug 'chrisbra/vim-zsh',               {'for': 'zsh'}
-
+Plug 'tbastos/vim-lua',                {'for': 'lua'}
 
 Plug 'vitalk/vim-shebang'
 Plug 'dkarter/bullets.vim'
