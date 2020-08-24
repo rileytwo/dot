@@ -9,7 +9,7 @@ if ($IsWindows) {
 
         [string]$pathWin = Get-Item -Force -Path ${pathWin}
 
-        $pathWin = $pathWin.Replace('\','/')
+        $pathWin = $pathWin.Replace('\', '/')
         $pathWin = $(wsl wslpath $pathWin)
 
         Return $pathWin
@@ -40,27 +40,35 @@ function Get-Path {
     }
 }
 
-Set-Alias -Name 'l' -Value Get-ChildItemColorForce
-function Get-ChildItemColorForce {
-     Get-ChildItemColor -Path "$args" -Force 
+Set-Alias -Name 'gcd' -Value Set-GitBranch_Dev 
+function Set-GitBranch_Dev {
+    git checkout dev
 }
 
+Set-Alias -Name 'gcm' -Value Set-GitBranch_Main
+function set-GitBranch_Main {
+    git checkout main
+}
 
 Set-Alias -Name 'gs' Get-GitRepositoryStatus
 function Get-GitRepositoryStatus { 
     git status $args 
 }
 
-
-Set-Alias -Name 'gngl' Get-GitConfigGlobal
+Set-Alias -Name 'gngl' -Value Get-GitConfigGlobal
 function Get-GitConfigGlobal { 
     git config --global --list 
 }
 
 
-Set-Alias -Name 'gnll' Get-GitConfigLocal
+Set-Alias -Name 'gnll' -Value Get-GitConfigLocal
 function Get-GitConfigLocal { 
     git config --local --list 
+}
+
+Set-Alias -Name 'l' -Value Get-ChildItemColorForce
+function Get-ChildItemColorForce {
+    Get-ChildItemColor -Path "$args" -Force 
 }
 
 Set-Alias -Name 'which' -Value Get-Command
