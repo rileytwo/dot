@@ -40,6 +40,11 @@ function Get-Path {
     }
 }
 
+
+Set-Alias -Name 'which' -Value Get-Command
+Set-Alias -Name 'rr' -Value 'radian'
+
+
 Set-Alias -Name 'gcd' -Value Set-GitBranch_Dev 
 function Set-GitBranch_Dev {
     git checkout dev
@@ -71,5 +76,13 @@ function Get-ChildItemColorForce {
     Get-ChildItemColor -Path "$args" -Force 
 }
 
-Set-Alias -Name 'which' -Value Get-Command
-Set-Alias -Name 'rr' -Value 'radian'
+
+Set-Alias -Name 'assoc' -Value Get-FileAssociations
+function Get-FileAssociations {
+    cmd /c assoc $args
+}
+
+Set-Alias -Name ftype -Value Get-FileTypes
+function Get-FileTypes {
+    cmd /c ftype $args
+}
