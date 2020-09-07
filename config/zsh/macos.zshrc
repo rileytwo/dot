@@ -29,31 +29,31 @@ fi
 
 #### // oh my zsh
 
-DISABLE_AUTO_UPDATE=true
+if [[ -d "${HOME}/.oh-my-zsh" ]]; then
+  export ZSH="${HOME}/.oh-my-zsh"
+  DISABLE_AUTO_UPDATE=true
+  ZSH_THEME='kiss'
 
-export ZSH="${HOME}/.oh-my-zsh"
-ZSH_THEME='kiss'
+  HISTFILE="${HOME}/.zsh_history"
+  HISTSIZE=10000
+  SAVEHIST=10000
+  plugins=(
+    #swiftpm
+    #zsh-interactive-cd
+    git
+    forgit
+    osx
+    mac-zsh-completions
+    zsh-autopair
+    zsh-completions
+    zsh-history-substring-search
+    zsh-autosuggestions
+    zsh-syntax-highlighting
+  )
 
-HISTFILE="${HOME}/.zsh_history"
-HISTSIZE=10000
-SAVEHIST=10000
-plugins=(
-  #swiftpm
-  #zsh-interactive-cd
-  git
-  forgit
-  osx
-  mac-zsh-completions
-  zsh-autopair
-  zsh-completions
-  zsh-history-substring-search
-  zsh-autosuggestions
-  zsh-syntax-highlighting
-)
-
-fpath=(/usr/local/share/zsh-completions ${fpath})
-source "${ZSH}/oh-my-zsh.sh"
-
+  fpath=(/usr/local/share/zsh-completions ${fpath})
+  source "${ZSH}/oh-my-zsh.sh"
+fi
 
 
 #### // completions
@@ -153,7 +153,6 @@ ZSH_AUTOSUGGEST_STRATEGY=match_prev_cmd
 pasteinit() {
   OLD_SELF_INSERT=${${(s.:.)widgets[self-insert]}[2,3]}
   zle -N self-insert url-quote-magic
-  # I wonder if you'd need `.url-quote-magic`?
 }
 
 pastefinish() {
@@ -169,12 +168,6 @@ ZSH_AUTOSUGGEST_CLEAR_WIDGETS+=(bracketed-paste)
 
 #### // path
 
-[[ -d "${HOME}/bin" ]] \
-  && export PATH="$HOME/bin:$PATH"
-
-[[ -d "${HOME}/.local/bin" ]] \
-  && export PATH="$HOME/.local/bin:$PATH"
-
 [[ -d "${HOME}/go" ]] \
   && export GOPATH="${HOME}/go" \
   && export PATH="${GOPATH//://bin:}/bin:$PATH"
@@ -182,14 +175,20 @@ ZSH_AUTOSUGGEST_CLEAR_WIDGETS+=(bracketed-paste)
 [[ -d "${HOME}/.cargo" ]] \
   && export PATH="${HOME}/.cargo/bin:$PATH"
 
-[[ -d "${HOME}/.pyenv" ]] \
-  && export PATH="${HOME}/.pyenv/bin:$PATH"
-
 [[ -d "${HOME}/Library/Python/2.7/bin" ]] \
   && export PATH="${HOME}/Library/Python/2.7/bin:$PATH"
 
 [[ -d "${HOME}/Library/Python/3.7/bin" ]] \
   && export PATH="${HOME}/Library/Python/3.7/bin:$PATH"
+
+[[ -d "${HOME}/.pyenv" ]] \
+  && export PATH="${HOME}/.pyenv/bin:$PATH"
+
+[[ -d "${HOME}/.local/bin" ]] \
+  && export PATH="$HOME/.local/bin:$PATH"
+
+[[ -d "${HOME}/bin" ]] \
+  && export PATH="$HOME/bin:$PATH"
 
 
 
@@ -232,13 +231,19 @@ fi
 
 
 
+#### // homebrew
+if (( $+commands[brew] )); then
+  export HOMEBREW_NO_AUTO_UPDATE=1
+  export HOMEBREW_NO_INSTALL_CLEANUP=1
+fi
+
+
+
 #### // environment
 
 export CLICOLOR=1
 export LS_COLORS='di=1;4;34:fi=1;32:ln=1;35:pi=0:bd=0:cd=0:mi=1;4;31:ex=1;31'
 export TERM=xterm-256color
-export HOMEBREW_NO_AUTO_UPDATE=1
-export HOMEBREW_NO_INSTALL_CLEANUP=1
 setopt EXTENDED_GLOB
 setopt GLOB_DOTS
 setopt HIST_IGNORE_DUPS
@@ -256,11 +261,5 @@ else
   export EDITOR=vim
 fi
 
-if [[ ${LC_TERMINAL} =~ "i[tT]erm2" ]]; then
-  export MPLBACKEND="module://itermplot"
-  export ITERMPLOT=rv
-fi
-
 [[ -e "${HOME}/.iterm2_shell_integration.zsh" ]] \
   && source "${HOME}/.iterm2_shell_integration.zsh" || :
-
