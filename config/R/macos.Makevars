@@ -46,8 +46,8 @@ CXX14STD=-std=c++14
 CXX17STD=-std=c++17
 
 # FORTRAN
-# GNU version (assumes latest in Homebrew as of April 2020)
-V=9
+# GNU version (assumes latest in Homebrew as of Sep 2020)
+V=10
 FC=$(CCACHE) $(HB)/gfortran-$(V)
 F77=$(FC)
 FLIBS=-L$(HL)/gcc/$(V) -lgfortran -lquadmath -lm
