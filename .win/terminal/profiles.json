@@ -94,7 +94,7 @@
   "schemes": [
       {
         "background"  : "#181818",
-        "black"       : "#171717",
+        "black"       : "#333333",
         "blue"        : "#3FB2FF",
         "brightBlack" : "#767676",
         "brightBlue"  : "#61d0ff",
@@ -110,7 +110,7 @@
         "name"        : "Kiss",
         "purple"      : "#9691FF",
         "red"         : "#FF8F86",
-        "white"       : "#555555",
+        "white"       : "#EEEEEE",
         "yellow"      : "#F9F1A5"
       },
       {
