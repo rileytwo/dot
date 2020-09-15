@@ -72,5 +72,6 @@
         "warning_bar"
     ],
     "font_size_points": 11,
-    "show_terminal_tab": false
+    "show_terminal_tab": false,
+    "scroll_past_end_of_document": true
 }
