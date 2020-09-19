@@ -41,7 +41,6 @@ wm.mod_keys = {"cmd", "ctrl", "alt", "shift"}
 wm.screen   = {}
 
 ---[[ 1 ]]
-
 function wm.fill_full()
 	local gap          = wm.gap
 	local win          = window.focusedWindow()
@@ -55,7 +54,6 @@ function wm.fill_full()
 
 	return win_frame
 end
-
 
 function wm.fill_left()
 	local gap          = wm.gap
@@ -71,7 +69,6 @@ function wm.fill_left()
 	return win_frame
 end
 
-
 function wm.fill_right()
 	local gap          = wm.gap
 	local win          = window.focusedWindow()
@@ -86,7 +83,6 @@ function wm.fill_right()
 	return win_frame
 end
 
-
 function wm.fill_center()
    local win          = window.focusedWindow()
    local win_frame    = win:frame()
@@ -99,9 +95,7 @@ function wm.fill_center()
 end
 
 
-
 ---[[ 2 ]]
-
 function wm.is_right_win_frame()
    local gap          = wm.gap
    local win          = hs.window.focusedWindow()
@@ -115,7 +109,6 @@ function wm.is_right_win_frame()
 		return false
 	end
 end
-
 
 function wm.inc_win_width()
 	local win          = hs.window.focusedWindow()
@@ -139,7 +132,6 @@ function wm.inc_win_width()
 
    return win_frame
 end
-
 
 function wm.dec_win_width()
 	local win       = hs.window.focusedWindow()
@@ -181,9 +173,7 @@ function wm.dec_win_height()
 end
 
 
-
 ---[[ 3 ]]
-
 function wm.shift_up()
 	local win       = hs.window.focusedWindow()
 	local win_frame = win:frame()
@@ -193,7 +183,6 @@ function wm.shift_up()
 
    return win_frame
 end
-
 
 function wm.shift_down()
 	local win       = hs.window.focusedWindow()
@@ -205,7 +194,6 @@ function wm.shift_down()
    return win_frame
 end
 
-
 function wm.shift_left()
 	local win          = hs.window.focusedWindow()
 	local win_frame    = win:frame()
@@ -216,7 +204,6 @@ function wm.shift_left()
    return win_frame
 end
 
-
 function wm.shift_right()
 	local win       = hs.window.focusedWindow()
 	local win_frame = win:frame()
@@ -226,7 +213,6 @@ function wm.shift_right()
 
    return win_frame
 end
-
 
 function wm.toggle_win_lr()
    local win          = hs.window.focusedWindow()
@@ -241,9 +227,7 @@ function wm.toggle_win_lr()
 end
 
 
-
 ---[[ 4 ]]
-
 function wm.screen.north()
    local win = window.focusedWindow()
    local win_screen = win:screen()
@@ -261,7 +245,6 @@ function wm.screen.south()
    return win
 end
 
-
 function wm.screen.east()
 	local win        = window.focusedWindow()
 	local win_screen = win:screen()
@@ -269,7 +252,6 @@ function wm.screen.east()
 	win:moveToScreen(win_screen:toEast())
    return win_screen
 end
-
 
 function wm.screen.west()
 	local win        = window.focusedWindow()
@@ -282,9 +264,7 @@ function wm.screen.west()
 end
 
 
-
 ---[[ 5 ]]
-
 function wm.bind(key, resize_frame_fn, restorable)
    hs.hotkey.bind(wm.mod_keys, key,
       function()
@@ -307,7 +287,6 @@ function wm.bind(key, resize_frame_fn, restorable)
    )
 end
 
-
 function wm.screen.bind(key, screen_move_function, strict)
    hs.hotkey.bind(wm.mod_keys, key,
       function()
@@ -324,7 +303,5 @@ function wm.screen.bind(key, screen_move_function, strict)
    )
 end
 
-
 ---[[ 6 ]]
-
 return wm
