@@ -51,7 +51,6 @@ function wm.fill_full()
 	win_frame.y = screen_frame.y + gap
 	win_frame.w = screen_frame.w - (gap * 2)
 	win_frame.h = screen_frame.h - (gap * 2)
-
 	return win_frame
 end
 
@@ -65,7 +64,6 @@ function wm.fill_left()
 	win_frame.y = screen_frame.y + gap
 	win_frame.w = (0.5 * screen_frame.w) - (1.5 * gap)
 	win_frame.h = screen_frame.h - (2 * gap)
-
 	return win_frame
 end
 
@@ -79,7 +77,6 @@ function wm.fill_right()
 	win_frame.y = screen_frame.y + gap
 	win_frame.w = 0.5 * (screen_frame.w - (3 * gap))
 	win_frame.h = screen_frame.h - (2 * gap)
-
 	return win_frame
 end
 
@@ -90,7 +87,6 @@ function wm.fill_center()
 
    win_frame.x = 0.5 * (screen_frame.w - win_frame.w) + screen_frame.x
    win_frame.y = 0.5 * (screen_frame.h - win_frame.h) + screen_frame.y
-
    return win_frame
 end
 
@@ -104,7 +100,6 @@ function wm.is_right_win_frame()
 
 	if (screen_frame.w - (win_frame.x + win_frame.w)) <= (gap * 10) then
 		return true
-
 	else
 		return false
 	end
@@ -119,17 +114,14 @@ function wm.inc_win_width()
 		win_frame.x = win_frame.x - 50
 		win_frame.w = win_frame.w + 50
 		win:setFrame(win_frame)
-
 	elseif win_frame.w > screen_frame.w then
 		win_frame.x = 0
 		win_frame.w = screen_frame.w
 		win:setFrame(win_frame)
-
 	else
 		win_frame.w = win_frame.w + 50
 		win:setFrame(win_frame)
    end
-
    return win_frame
 end
 
@@ -141,15 +133,12 @@ function wm.dec_win_width()
 		win_frame.w = win_frame.w - 50
 		win_frame.x = win_frame.x + 50
 		win:setFrame(win_frame)
-
 	else
 		win_frame.w = win_frame.w - 50
 		win:setFrame(win_frame)
    end
-
    return win_frame
 end
-
 
 function wm.inc_win_height()
 	local win       = hs.window.focusedWindow()
@@ -157,10 +146,8 @@ function wm.inc_win_height()
 
 	win_frame.h = win_frame.h + 50
    win:setFrame(win_frame)
-
    return win_frame
 end
-
 
 function wm.dec_win_height()
 	local win       = hs.window.focusedWindow()
@@ -168,10 +155,19 @@ function wm.dec_win_height()
 
 	win_frame.h = win_frame.h - 50
    win:setFrame(win_frame)
-
    return win_frame
 end
 
+function wm.zoom_win_vertical()
+   local win = hs.window.focusedWindow()
+   local win_frame = win:frame()
+   local screen_frame = win:screen():frame()
+
+   win_frame.h = screen_frame.h
+   win_frame.y = screen_frame.y
+   win:setFrame(win_frame)
+   return win_frame
+end
 
 ---[[ 3 ]]
 function wm.shift_up()
@@ -180,7 +176,6 @@ function wm.shift_up()
 
 	win_frame.y = win_frame.y - 50
    win:setFrame(win_frame)
-
    return win_frame
 end
 
@@ -190,7 +185,6 @@ function wm.shift_down()
 
 	win_frame.y = win_frame.y + 50
 	win:setFrame(win_frame)
-
    return win_frame
 end
 
@@ -200,7 +194,6 @@ function wm.shift_left()
 
 	win_frame.x = win_frame.x - 50
 	win:setFrame(win_frame)
-
    return win_frame
 end
 
@@ -210,7 +203,6 @@ function wm.shift_right()
 
 	win_frame.x = win_frame.x + 50
 	win:setFrame(win_frame)
-
    return win_frame
 end
 
@@ -222,7 +214,6 @@ function wm.toggle_win_lr()
    win_frame.x = (2 * screen_frame.x) +
                  (screen_frame.w - (win_frame.x + win_frame.w))
    win:setFrame(win_frame)
-
    return win_frame
 end
 
@@ -235,7 +226,6 @@ function wm.screen.north()
    win:moveToScreen(win_screen:toNorth())
    return win
 end
-
 
 function wm.screen.south()
    local win = window.focusedWindow()
@@ -257,51 +247,45 @@ function wm.screen.west()
 	local win        = window.focusedWindow()
 	local win_screen = win:screen()
 
-	win:moveToScreen(
-		win_screen:toWest()
-	)
+	win:moveToScreen(win_screen:toWest())
    return win_screen
 end
 
 
 ---[[ 5 ]]
 function wm.bind(key, resize_frame_fn, restorable)
-   hs.hotkey.bind(wm.mod_keys, key,
-      function()
-         local win       = hs.window.focusedWindow()
-         local win_frame = win:frame()
-         local new_frame = resize_frame_fn()
+   hs.hotkey.bind(wm.mod_keys, key, function()
+      local win       = hs.window.focusedWindow()
+      local win_frame = win:frame()
+      local new_frame = resize_frame_fn()
 
-         if restorable then
-            if wm.history[win:id()] then
-               win:setFrame(wm.history[win:id()])
-               wm.history[win:id()] = nil
-            else
-               wm.history[win:id()] = win_frame
-               win:setFrame(new_frame)
-            end
+      if restorable then
+         if wm.history[win:id()] then
+            win:setFrame(wm.history[win:id()])
+            wm.history[win:id()] = nil
          else
+            wm.history[win:id()] = win_frame
             win:setFrame(new_frame)
          end
+      else
+         win:setFrame(new_frame)
       end
-   )
+   end)
 end
 
 function wm.screen.bind(key, screen_move_fn, strict)
-   hs.hotkey.bind(wm.mod_keys, key,
-      function()
-         local win        = hs.window.focusedWindow()
-         local new_screen = screen_move_fn()
+   hs.hotkey.bind(wm.mod_keys, key, function()
+      local win        = hs.window.focusedWindow()
+      local new_screen = screen_move_fn()
 
-         if strict then
-            hs.screen.strictScreenInDirection = true
-         end
-
-         wm.history[win:id()] = nil
-         return new_screen
+      if strict then
+         hs.screen.strictScreenInDirection = true
       end
-   )
+      wm.history[win:id()] = nil
+      return new_screen
+   end)
 end
+
 
 ---[[ 6 ]]
 return wm

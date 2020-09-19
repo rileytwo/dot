@@ -51,6 +51,7 @@ wm.bind("L", wm.inc_win_width)
 wm.bind("H", wm.dec_win_width)
 wm.bind("J", wm.inc_win_height)
 wm.bind("K", wm.dec_win_height)
+wm.bind("Up", wm.zoom_win_vertical, "restorable")
 
 wm.bind("8", wm.shift_up)
 wm.bind("I", wm.shift_down)
@@ -58,10 +59,8 @@ wm.bind("U", wm.shift_left)
 wm.bind("O", wm.shift_right)
 wm.bind("\\", wm.toggle_win_lr)
 
-wm.screen.bind("Up",    wm.screen.north, "strict")
-wm.screen.bind("Down",  wm.screen.south, "strict")
-wm.screen.bind("Right", wm.screen.east,  "strict")
-wm.screen.bind("Left",  wm.screen.west,  "strict")
+wm.screen.bind("Right", wm.screen.east)
+wm.screen.bind("Left",  wm.screen.west)
 
 
 function check_karabiner()
