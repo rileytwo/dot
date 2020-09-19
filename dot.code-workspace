@@ -15,7 +15,11 @@
         },
         "files.exclude": {
             "**/.Rproj.user": true
-        }
+        },
+        "Lua.diagnostics.disable": [
+            "undefined-global",
+            "lowercase-global"
+        ]
         // ,"StatusBarTag.text": "dot"
     }
 }
