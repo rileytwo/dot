@@ -287,11 +287,11 @@ function wm.bind(key, resize_frame_fn, restorable)
    )
 end
 
-function wm.screen.bind(key, screen_move_function, strict)
+function wm.screen.bind(key, screen_move_fn, strict)
    hs.hotkey.bind(wm.mod_keys, key,
       function()
          local win        = hs.window.focusedWindow()
-         local new_screen = screen_move_function()
+         local new_screen = screen_move_fn()
 
          if strict then
             hs.screen.strictScreenInDirection = true
