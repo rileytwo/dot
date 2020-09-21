@@ -1,31 +1,18 @@
 ﻿;;; AHK ;;;
 
 ;;; GLOBAL
-#NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
-; #Warn  ; Enable warnings to assist with detecting common errors.
-SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
-SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
+#NoEnv
+SendMode Input
+SetWorkingDir %A_ScriptDir%
 
 ; ^ = CTRL
 ; ! = ALT
 ; + = SHIFT
 ; # = Windows Key
+; Full Key List: https://www.autohotkey.com/docs/KeyList.htm
 
 ;; Unbind Win+Esc
 #Esc::
-
-
-;; Caps as Hyper
-;;*CapsLock::
-;;    SetKeyDelay -1
-;;    Send {Blind}{Ctrl DownTemp}{Alt DownTemp}{Shift DownTemp}
-;;return
-;;
-;;*CapsLock up::
-;;    SetKeyDelay -1
-;;    Send {Blind}{Ctrl Up}{Alt Up}{Shift Up}
-;;return
-
 
 ;; alt+{w/a/s/d} for navigating text
 !w::Send {Up}
@@ -44,8 +31,12 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 ^q::Send {AltDown}{F4}{AltUp}
 ^h::WinMinimize, A
 
+;; LWin+shift+[/]
+#+[::Send #{Left}
+#+]::Send #{Right}
 
-;;; FILE EXPLORER
+
+;;; EXPLORER
 #If WinActive("ahk_class CabinetWClass")
 ^l::Send ^{e}
 
@@ -88,6 +79,7 @@ Return
     Send {m}{v}
 Return
 #If
+
 
 ;;; FIREFOX
 #If WinActive("ahk_exe firefox.exe")
