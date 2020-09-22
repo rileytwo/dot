@@ -31,20 +31,20 @@ Window Management Functions
 --]]
 --------------------------------------------------------------------]]
 
-local wm     = {}
+local wm = {}
 local window = hs.window
 window.animationDuration = 0.15
 
-wm.history  = {}
-wm.gap      = 5
+wm.history = {}
+wm.gap = 5
 wm.mod_keys = {"cmd", "ctrl", "alt", "shift"}
-wm.screen   = {}
+wm.screen = {}
 
 ---[[ 1 ]]
 function wm.fill_full()
-	local gap          = wm.gap
-	local win          = window.focusedWindow()
-	local win_frame    = win:frame()
+	local gap = wm.gap
+	local win = window.focusedWindow()
+	local win_frame = win:frame()
 	local screen_frame = win:screen():frame()
 
 	win_frame.x = screen_frame.x + gap
@@ -55,9 +55,9 @@ function wm.fill_full()
 end
 
 function wm.fill_left()
-	local gap          = wm.gap
-	local win          = window.focusedWindow()
-	local win_frame    = win:frame()
+	local gap = wm.gap
+	local win = window.focusedWindow()
+	local win_frame = win:frame()
 	local screen_frame = win:screen():frame()
 
 	win_frame.x = screen_frame.x + gap
@@ -68,9 +68,9 @@ function wm.fill_left()
 end
 
 function wm.fill_right()
-	local gap          = wm.gap
-	local win          = window.focusedWindow()
-	local win_frame    = win:frame()
+	local gap = wm.gap
+	local win = window.focusedWindow()
+	local win_frame = win:frame()
 	local screen_frame = win:screen():frame()
 
    win_frame.x = 0.5 * ((2 * screen_frame.x) + (screen_frame.w + (1.5 * gap)))
@@ -81,8 +81,8 @@ function wm.fill_right()
 end
 
 function wm.fill_center()
-   local win          = window.focusedWindow()
-   local win_frame    = win:frame()
+   local win = window.focusedWindow()
+   local win_frame = win:frame()
    local screen_frame = win:screen():frame()
 
    win_frame.x = 0.5 * (screen_frame.w - win_frame.w) + screen_frame.x
@@ -93,9 +93,9 @@ end
 
 ---[[ 2 ]]
 function wm.is_right_win_frame()
-   local gap          = wm.gap
-   local win          = hs.window.focusedWindow()
-   local win_frame    = win:frame()
+   local gap = wm.gap
+   local win = hs.window.focusedWindow()
+   local win_frame = win:frame()
    local screen_frame = win:screen():frame()
 
 	if (screen_frame.w - (win_frame.x + win_frame.w)) <= (gap * 10) then
@@ -106,8 +106,8 @@ function wm.is_right_win_frame()
 end
 
 function wm.inc_win_width()
-	local win          = hs.window.focusedWindow()
-	local win_frame    = win:frame()
+	local win = hs.window.focusedWindow()
+	local win_frame = win:frame()
 	local screen_frame = win:screen():frame()
 
 	if wm.is_right_win_frame() and win_frame.x >= 0 then
@@ -126,7 +126,7 @@ function wm.inc_win_width()
 end
 
 function wm.dec_win_width()
-	local win       = hs.window.focusedWindow()
+	local win = hs.window.focusedWindow()
 	local win_frame = win:frame()
 
 	if wm.is_right_win_frame() then
@@ -141,7 +141,7 @@ function wm.dec_win_width()
 end
 
 function wm.inc_win_height()
-	local win       = hs.window.focusedWindow()
+	local win = hs.window.focusedWindow()
 	local win_frame = win:frame()
 
 	win_frame.h = win_frame.h + 50
@@ -150,7 +150,7 @@ function wm.inc_win_height()
 end
 
 function wm.dec_win_height()
-	local win       = hs.window.focusedWindow()
+	local win = hs.window.focusedWindow()
 	local win_frame = win:frame()
 
 	win_frame.h = win_frame.h - 50
@@ -171,7 +171,7 @@ end
 
 ---[[ 3 ]]
 function wm.shift_up()
-	local win       = hs.window.focusedWindow()
+	local win = hs.window.focusedWindow()
 	local win_frame = win:frame()
 
 	win_frame.y = win_frame.y - 50
@@ -180,7 +180,7 @@ function wm.shift_up()
 end
 
 function wm.shift_down()
-	local win       = hs.window.focusedWindow()
+	local win = hs.window.focusedWindow()
 	local win_frame = win:frame()
 
 	win_frame.y = win_frame.y + 50
@@ -189,8 +189,8 @@ function wm.shift_down()
 end
 
 function wm.shift_left()
-	local win          = hs.window.focusedWindow()
-	local win_frame    = win:frame()
+	local win = hs.window.focusedWindow()
+	local win_frame = win:frame()
 
 	win_frame.x = win_frame.x - 50
 	win:setFrame(win_frame)
@@ -198,7 +198,7 @@ function wm.shift_left()
 end
 
 function wm.shift_right()
-	local win       = hs.window.focusedWindow()
+	local win = hs.window.focusedWindow()
 	local win_frame = win:frame()
 
 	win_frame.x = win_frame.x + 50
@@ -207,8 +207,8 @@ function wm.shift_right()
 end
 
 function wm.toggle_win_lr()
-   local win          = hs.window.focusedWindow()
-   local win_frame    = win:frame()
+   local win = hs.window.focusedWindow()
+   local win_frame = win:frame()
    local screen_frame = win:screen():frame()
 
    win_frame.x = (2 * screen_frame.x) +
@@ -236,7 +236,7 @@ function wm.screen.south()
 end
 
 function wm.screen.east()
-	local win        = window.focusedWindow()
+	local win = window.focusedWindow()
 	local win_screen = win:screen()
 
 	win:moveToScreen(win_screen:toEast())
@@ -244,7 +244,7 @@ function wm.screen.east()
 end
 
 function wm.screen.west()
-	local win        = window.focusedWindow()
+	local win = window.focusedWindow()
 	local win_screen = win:screen()
 
 	win:moveToScreen(win_screen:toWest())
@@ -255,7 +255,7 @@ end
 ---[[ 5 ]]
 function wm.bind(key, resize_frame_fn, restorable)
    hs.hotkey.bind(wm.mod_keys, key, function()
-      local win       = hs.window.focusedWindow()
+      local win = hs.window.focusedWindow()
       local win_frame = win:frame()
       local new_frame = resize_frame_fn()
 
@@ -275,7 +275,7 @@ end
 
 function wm.screen.bind(key, screen_move_fn, strict)
    hs.hotkey.bind(wm.mod_keys, key, function()
-      local win        = hs.window.focusedWindow()
+      local win = hs.window.focusedWindow()
       local new_screen = screen_move_fn()
 
       if strict then
