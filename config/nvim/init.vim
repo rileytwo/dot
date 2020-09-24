@@ -55,7 +55,6 @@ Plug 'ncm2/ncm2-ultisnips'
 
 " // Language Plugins
 Plug 'deoplete-plugins/deoplete-jedi', {'for': 'python'}
-Plug 'MaxMellon/vim-jsx-pretty',       {'for': 'jsx'}
 Plug 'pangloss/vim-javascript',        {'for': 'javascript'}
 Plug 'tpope/vim-markdown',             {'for': 'markdown'}
 Plug 'junegunn/goyo.vim',              {'for': 'markdown'}
@@ -102,10 +101,6 @@ if !has('win32') && !has('win64')
     " mac specific plugs cause windows is hard
     Plug '/usr/local/opt/fzf'
 endif
-if &term=~# 'nvim' || &term=~# 'vimr'
-    Plug 'terryma/vim-multiple-cursors'
-endif
-
 
 call plug#end()
 " ----------
@@ -137,10 +132,6 @@ set modifiable
 if has('mac') || has('unix')
     set number
     set numberwidth=1
-    "set guicursor=
-    "    \n-v-c-sm:hor20,
-    "    \i-ci-ve:ver25,
-    "    \r-cr-o:block
     set cursorline
 else
     set number
@@ -163,9 +154,7 @@ set autoindent
 
 filetype plugin indent on
 
-if !has('gui_vimr') && has('mac') && has('termguicolors')
-    lua require'colorizer'.setup()
-endif
+lua require'colorizer'.setup()
 " ----------
 " ====================
 
@@ -187,7 +176,6 @@ endif
 
 let g:vim_indent_cont = &shiftwidth
 let g:deoplete#enable_at_startup = 1
-"call deoplete#custom#source('_', 'max_menu_width', 80)
 
 let g:suda#prefix = ['suda://', 'sudo://', '_://']
 
