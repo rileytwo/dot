@@ -1,3 +1,5 @@
+﻿;;; AHK ;;;
+
 ;;; GLOBAL
 #NoEnv
 SendMode Input
@@ -12,23 +14,22 @@ SetWorkingDir %A_ScriptDir%
 ;; Unbind Win+Esc
 #Esc::
 
-; Remap Ctrl-Tab to Alt-Tab
-LControl & Tab::AltTab
-Shift::ShiftAltTab
+;; alt+{w/a/s/d} for navigating text
+!w::Send {Up}
+!s::Send {Down}
+!a::Send {Left}
+!d::Send {Right}
 
-;; ctrl+{w/a/s/d} for navigating text
->^w::Send {Up}
->^s::Send {Down}
->^a::Send {Left}
->^d::Send {Right}
+;; alt+shift+{a/d} ;; jump/move word left and right
+>!+a::Send ^{Left}
+>!+d::Send ^{Right}
 
-;; ctrl+shift+{a/d} ;; jump/move word left and right
->^+a::Send ^{Left}
->^+d::Send ^{Right}
+;; alt+backspace ;; delete one word left
+>!Backspace::Send ^{Backspace}
 
 ;; ^q => close window | ^h => minimize window
-<^q::Send {AltDown}{F4}{AltUp}
-<^h::WinMinimize, A
+^q::Send {AltDown}{F4}{AltUp}
+^h::WinMinimize, A
 
 ;; LWin+shift+[/]
 #+[::Send #{Left}
@@ -37,22 +38,22 @@ Shift::ShiftAltTab
 
 ;;; EXPLORER
 #If WinActive("ahk_class CabinetWClass")
-<^l::Send ^{e}
+^l::Send ^{e}
 
-<^i::
+^i::
     Send !{h}
     Sleep, 1
     Send {p}{r}
     Send {Enter}
 Return
 
-<^+p::
+^+p::
     Send !{v}
     Sleep, 1
     Send {p}
 Return
 
-<^+d::
+^+d::
     Send !{v}
     Sleep, 1
     Send {d}
@@ -64,15 +65,15 @@ Return
 
 ;;; ONENOTE (for Windows)
 #If WinActive("ahk_exe ApplicationFrameHost.exe")
-<^[::Send !+{Left}
-<^]::Send !+{Right}
+^[::Send !+{Left}
+^]::Send !+{Right}
 Return
 #If
 
 
 ;;; OUTLOOK
 #If WinActive("ahk_exe OUTLOOK.EXE")
-<^+m::
+^+m::
     Send !{h}
     Sleep, 1
     Send {m}{v}
@@ -82,9 +83,12 @@ Return
 
 ;;; FIREFOX
 #If WinActive("ahk_exe firefox.exe")
-<^,::
+^,::
     Send !{t}
     Sleep, 1
     Send {o}
 Return
+
+^Left::Send !{Left}
+^Right::Send !{Right}
 #If
