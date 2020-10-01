@@ -80,7 +80,6 @@ Plug 'lambdalisue/suda.vim'
 
 Plug 'psliwka/vim-smoothie'  " Smooth scrolling
 Plug 'PeterRincker/vim-searchlight'
-Plug 'norcalli/nvim-colorizer.lua'
 Plug 'junegunn/vim-easy-align'
 Plug 'Raimondi/delimitMate'
 Plug 'Yggdroot/indentLine'
@@ -153,8 +152,6 @@ set softtabstop=4
 set autoindent
 
 filetype plugin indent on
-
-lua require'colorizer'.setup()
 " ----------
 " ====================
 
