@@ -44,7 +44,7 @@
     "continue_comments_on_newline": true,
     "fold_style": "begin-only",
     "full_project_path_in_window_title": true,
-    "jobs_tab_visibility": "closed",
+    "jobs_tab_visibility": "shown",
     "custom_shell_command": "/usr/local/bin/zsh",
     "custom_shell_options": "-l",
     "terminal_bell_style": "none",
@@ -76,5 +76,6 @@
     "font_size_points": 11,
     "show_terminal_tab": false,
     "scroll_past_end_of_document": true,
-    "graphics_antialiasing": "subpixel"
+    "graphics_antialiasing": "subpixel",
+    "real_time_spellchecking": false
 }
