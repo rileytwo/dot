@@ -37,7 +37,11 @@ Shift::ShiftAltTab
 
 ;;; EXPLORER
 #If WinActive("ahk_class CabinetWClass")
-<^l::Send ^{e}
+<^3::
+    Send !{v}
+    Sleep, 1
+    Send {s}{f}
+Return
 
 <^i::
     Send !{h}
