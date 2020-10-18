@@ -7,7 +7,9 @@
 zmodload zsh/zprof
 autoload zmv
 autoload -U edit-command-line
-
+zle -N edit-command-line
+bindkey '^x^e' edit-command-line
+bindkey '^xe' edit-command-line
 
 
 #### // neofetch
@@ -18,40 +20,38 @@ autoload -U edit-command-line
 if [[ "${0}" != "-zsh" ]] || ! (( $+commands[neofetch] )); then
   :
 else
-  if [[ "$(uname -r)" == *microsoft* ]]; then
-    neofetch \
-      --config "${HOME}"/.config/neofetch/config.conf \
-      --ascii_distro windows10 \
-      --colors 5 7 7 4 7 15
-  else
-    neofetch --colors 5 7 7 4 7 15
-  fi
+  neofetch --colors 5 7 7 4 7 15
 fi
 
 
 
 #### // oh my zsh
 
-DISABLE_AUTO_UPDATE=true
+if [[ -d "${HOME}/.oh-my-zsh" ]]; then
+  export ZSH="${HOME}/.oh-my-zsh"
+  DISABLE_AUTO_UPDATE=true
+  ZSH_THEME='kiss'
 
-export ZSH="${HOME}/.oh-my-zsh"
-ZSH_THEME='kiss'
+  HISTFILE="${HOME}/.zsh_history"
+  HISTSIZE=10000
+  SAVEHIST=10000
+  plugins=(
+    #swiftpm
+    #zsh-interactive-cd
+    git
+    forgit
+    osx
+    mac-zsh-completions
+    zsh-autopair
+    zsh-completions
+    zsh-history-substring-search
+    zsh-autosuggestions
+    zsh-syntax-highlighting
+  )
 
-HISTFILE="${HOME}/.zsh_history"
-HISTSIZE=10000
-SAVEHIST=10000
-plugins=(
-  git
-  forgit
-  zsh-autopair
-  zsh-completions
-  zsh-history-substring-search
-  zsh-autosuggestions
-  zsh-syntax-highlighting
-)
-
-source "${ZSH}/oh-my-zsh.sh"
-
+  fpath=(/usr/local/share/zsh-completions ${fpath})
+  source "${ZSH}/oh-my-zsh.sh"
+fi
 
 
 #### // completions
@@ -73,12 +73,10 @@ compinit -C
 
 #### // zstyle
 
-fignore=(DS_Store ${fignore})
+fignore=(DS_Store localized ${fignore})
 
 # NOTE as follows `:completion:function:completer:command:argument:tag`
-zstyle ':completion:*' completer \
-  _complete _match _approximate _ignored
-
+zstyle ':completion:*' completer _complete _match _approximate _ignored
 zstyle ':completion:*' accept-exact false
 zstyle ':completion:*' use-cache on
 zstyle ':completion:*' cache-path "${HOME}/.zsh/cache"
@@ -87,18 +85,11 @@ zstyle ':completion:*' menu select=2
 zstyle ':completion:*' special-dirs false
 zstyle ':completion:*' group-name ''
 zstyle ':completion:*' verbose true
-zstyle ':completion:*:descriptions' format \
-  "$fg[yellow]%B--- %d%b"
-
+zstyle ':completion:*:descriptions' format "$fg[yellow]%B--- %d%b"
 zstyle ':completion:*:messages' format '%d'
-zstyle ':completion:*:warnings' format \
-  "$fg[red]No matches for:$reset_color %d"
-
-zstyle ':completion:*:corrections' format \
-  '%B%d (errors: %e)%b'
-
-zstyle ':completion:*' list-colors \
-  "${(s.:.)LS_COLORS}"
+zstyle ':completion:*:warnings' format "$fg[red]No matches for:$reset_color %d"
+zstyle ':completion:*:corrections' format '%B%d (errors: %e)%b'
+zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
   # NOTE `(s.:.)` forces field splitting at the separator *string*
 
 
@@ -160,7 +151,6 @@ ZSH_AUTOSUGGEST_STRATEGY=match_prev_cmd
 pasteinit() {
   OLD_SELF_INSERT=${${(s.:.)widgets[self-insert]}[2,3]}
   zle -N self-insert url-quote-magic
-  # I wonder if you'd need `.url-quote-magic`?
 }
 
 pastefinish() {
@@ -174,34 +164,7 @@ ZSH_AUTOSUGGEST_CLEAR_WIDGETS+=(bracketed-paste)
 
 
 
-#### // OS specific stuff
-
-umask 002
-
-[[ -f "${HOME}/z.sh" ]] \
-  && source "${HOME}/z.sh"
-
-[[ -d "/snap/bin" ]] \
-  && export PATH="/snap/bin:$PATH"
-
-[[ -d "${HOME}/.npm-global" ]] \
-  && export PATH="${HOME}/.npm-global/bin:$PATH"
-
-[[ -d "/usr/share/swift" ]] \
-  && export PATH="/usr/share/swift/usr/bin:$PATH"
-
-[[ -d "/home/linuxbrew/.linuxbrew/bin" ]] \
-  && export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
-
-
-
 #### // path
-
-[[ -d "${HOME}/bin" ]] \
-  && export PATH="$HOME/bin:$PATH"
-
-[[ -d "${HOME}/.local/bin" ]] \
-  && export PATH="$HOME/.local/bin:$PATH"
 
 [[ -d "${HOME}/go" ]] \
   && export GOPATH="${HOME}/go" \
@@ -212,6 +175,12 @@ umask 002
 
 [[ -d "${HOME}/.pyenv" ]] \
   && export PATH="${HOME}/.pyenv/bin:$PATH"
+
+[[ -d "${HOME}/.local/bin" ]] \
+  && export PATH="$HOME/.local/bin:$PATH"
+
+[[ -d "${HOME}/bin" ]] \
+  && export PATH="$HOME/bin:$PATH"
 
 
 
@@ -229,25 +198,37 @@ if (( $+commands[rbenv] )); then
 fi
 
 if (( $+commands[fzf] )); then
-  if [[ -f "${HOME}"/.fzf.zsh ]]; then
-    source "${HOME}"/.fzf.zsh
-  elif [[ -f /usr/share/doc/fzf/examples/key-bindings.zsh ]]; then
-    source /usr/share/doc/fzf/examples/key-bindings.zsh
+  if [[ -f "${HOME}/.fzf.zsh" ]]; then
+    source "${HOME}/.fzf.zsh"
+  elif [[ -f "/usr/share/doc/fzf/examples/key-bindings.zsh" ]]; then
+    source "/usr/share/doc/fzf/examples/key-bindings.zsh"
   fi
+  export FZF_DEFAULT_OPTS='
+  --color=fg:#c4c4c4,bg:#121212,hl:#2d7eb7
+  --color=fg+:#e6e6e6,bg+:#262626,hl+:#3fb2ff
+  --color=info:#d4ce90,prompt:#9691ff,pointer:#ff7e81
+  --color=marker:#73ff96,spinner:#ff7e81,header:#54cc72'
 fi
 
 if (( $+commands[rg] )); then
   export RIPGREP_CONFIG_PATH="${HOME}/.config/ripgrep/ripgreprc"
   export FZF_DEFAULT_COMMAND='rg --files --no-ignore-vcs --hidden'
 fi
-export FZF_DEFAULT_OPTS='
---color=fg:#c4c4c4,bg:#121212,hl:#2d7eb7
---color=fg+:#e6e6e6,bg+:#262626,hl+:#3fb2ff
---color=info:#d4ce90,prompt:#9691ff,pointer:#ff7e81
---color=marker:#73ff96,spinner:#ff7e81,header:#54cc72'
+
+[[ -f /usr/local/bin/typex ]] && source /usr/local/bin/typex
+[[ -f /usr/local/etc/profile.d/z.sh ]] && source /usr/local/etc/profile.d/z.sh
 
 [[ -f "${HOME}/.aliases.zsh" ]] && source "${HOME}/.aliases.zsh"
 [[ -f "${HOME}/.functions.zsh" ]] && source "${HOME}/.functions.zsh"
+
+
+
+#### // homebrew
+if (( $+commands[brew] )); then
+  export HOMEBREW_NO_AUTO_UPDATE=1
+  export HOMEBREW_NO_INSTALL_CLEANUP=1
+fi
+
 
 
 #### // environment
@@ -255,8 +236,6 @@ export FZF_DEFAULT_OPTS='
 export CLICOLOR=1
 export LS_COLORS='di=1;4;34:fi=1;32:ln=1;35:pi=0:bd=0:cd=0:mi=1;4;31:ex=1;31'
 export TERM=xterm-256color
-export HOMEBREW_NO_AUTO_UPDATE=1
-export HOMEBREW_NO_INSTALL_CLEANUP=1
 setopt EXTENDED_GLOB
 setopt GLOB_DOTS
 setopt HIST_IGNORE_DUPS
@@ -274,10 +253,5 @@ else
   export EDITOR=vim
 fi
 
-
-#### // keybindings
-zle -N edit-command-line
-bindkey '^x^e' edit-command-line
-bindkey '^xe' edit-command-line
-bindkey '^H' backward-kill-word
-
+[[ -e "${HOME}/.iterm2_shell_integration.zsh" ]] \
+  && source "${HOME}/.iterm2_shell_integration.zsh" || :
