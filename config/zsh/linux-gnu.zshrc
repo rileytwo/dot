@@ -36,12 +36,8 @@ if [[ -d "${HOME}/.oh-my-zsh" ]]; then
   HISTSIZE=10000
   SAVEHIST=10000
   plugins=(
-    #swiftpm
-    #zsh-interactive-cd
     git
     forgit
-    osx
-    mac-zsh-completions
     zsh-autopair
     zsh-completions
     zsh-history-substring-search
