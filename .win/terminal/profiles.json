@@ -106,12 +106,12 @@
         "brightYellow": "#F9F1A5",
         "cyan"        : "#00A3F5",
         "foreground"  : "#FEFEFE",
-        "green"       : "#96FFB1",
+        "green"       : "#7fdb96",
         "name"        : "Kiss",
         "purple"      : "#9691FF",
-        "red"         : "#FF8F86",
-        "white"       : "#EEEEEE",
-        "yellow"      : "#F9F1A5"
+        "red"         : "#e07d75",
+        "white"       : "#EAEAEA",
+        "yellow"      : "#f0e790"
       },
       {
         "background"  : "#282C34",
