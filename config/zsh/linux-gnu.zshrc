@@ -239,15 +239,10 @@ setopt HIST_IGNORE_SPACE
 setopt HIST_EXPIRE_DUPS_FIRST
 disable r
 
-if (( $+commands[most] )); then
-  export PAGER=most
-fi
-
 if (( $+commands[nvim] )); then
   export EDITOR=nvim
 else
   export EDITOR=vim
 fi
 
-[[ -e "${HOME}/.iterm2_shell_integration.zsh" ]] \
-  && source "${HOME}/.iterm2_shell_integration.zsh" || :
+[[ -f "${HOME}/.LESS_TERMCAP" ]] && source "${HOME}/.LESS_TERMCAP"
