@@ -20,7 +20,9 @@ bindkey '^xe' edit-command-line
 if [[ "${0}" != "-zsh" ]] || ! (( $+commands[neofetch] )); then
   :
 else
-  neofetch --colors 5 7 7 4 7 15
+  neofetch \
+    --ascii_distro raspbian \
+    --colors 5 7 7 4 7 15
 fi
 
 
@@ -211,8 +213,9 @@ if (( $+commands[rg] )); then
   export FZF_DEFAULT_COMMAND='rg --files --no-ignore-vcs --hidden'
 fi
 
-[[ -f /usr/local/bin/typex ]] && source /usr/local/bin/typex
-[[ -f /usr/local/etc/profile.d/z.sh ]] && source /usr/local/etc/profile.d/z.sh
+if (( $+commands[navi] )); then
+  eval "$(navi widget zsh)"
+fi
 
 [[ -f "${HOME}/.aliases.zsh" ]] && source "${HOME}/.aliases.zsh"
 [[ -f "${HOME}/.functions.zsh" ]] && source "${HOME}/.functions.zsh"
