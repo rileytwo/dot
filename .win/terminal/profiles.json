@@ -85,6 +85,12 @@
               "commandline" : "C:/rtools40/msys2_shell.cmd -defterm -no-start -msys2",
               "icon": "C:/rtools40/msys2.ico",
               "startingDirectory": "C:/rtools40/home/"
+          },
+          {
+              "guid": "{fe66f4b8-350f-56bb-adb0-c2ce745f6db5}",
+              "hidden": false,
+              "name": "PowerShell (scoop)",
+              "source": "Windows.Terminal.PowershellCore"
           }
       ]
   },
