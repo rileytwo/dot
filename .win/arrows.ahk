@@ -79,7 +79,7 @@ Return
 <^+m::
     Send !{h}
     Sleep, 1
-    Send {m}{v}
+    Send {m}{v}{o}
 Return
 #If
 
