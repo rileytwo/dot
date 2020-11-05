@@ -91,6 +91,12 @@
               "hidden": false,
               "name": "PowerShell (scoop)",
               "source": "Windows.Terminal.PowershellCore"
+          },
+          {
+              "guid": "{2595cd9c-8f05-55ff-a1d4-93f3041ca67f}",
+              "hidden": false,
+              "name": "PowerShell Preview (msix)",
+              "source": "Windows.Terminal.PowershellCore"
           }
       ]
   },
