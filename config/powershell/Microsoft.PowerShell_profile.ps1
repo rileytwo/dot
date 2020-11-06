@@ -78,7 +78,8 @@ Import-UserModules -Modules @(
 
 
 ### executables/cli tools
-if (Get-Command "rg") {
+if (Get-Command "rg" -ErrorAction SilentlyContinue) {
+    $env:RIPGREP_CONFIG_PATH = "$env:HOME/.config/ripgrep/ripgreprc"
     $env:FZF_DEFAULT_COMMAND = "rg --files --no-ignore-vcs --hidden"
 }
 
