@@ -36,7 +36,6 @@
     "default_project_location": "~/github/rileytwo/rpackages",
     "source_with_echo": true,
     "default_sweave_engine": "knitr",
-    "pdf_previewer": "rstudio",
     "save_workspace": "never",
     "remove_history_duplicates": true,
     "reuse_sessions_for_project_links": true,
