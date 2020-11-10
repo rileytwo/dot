@@ -4,7 +4,7 @@ if ($IsWindows) {
     # Maybe add a "Write-WSLError" function ?
     function Get-WSL() {
         try {
-            Get-Command wsl -ErrorAction:SilentlyContinue
+            Get-Command wsl -ErrorAction:SilentlyContinue >$null 2>&1
         }
         catch [System.Management.Automation.CommandNotFoundException] {
             continue
