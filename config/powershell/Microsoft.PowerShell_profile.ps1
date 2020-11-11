@@ -1,12 +1,13 @@
 ### some options
 Set-PSReadLineKeyHandler -Key Tab -Function MenuComplete
+Set-PSReadLineOption -PredictionSource History
 Set-PSReadLineOption -Colors @{
     "Command"   = "`e[34m"
     "Parameter" = "`e[35m"
     "String"    = "`e[33m"
     "Operator"  = "`e[33m"
+    "InlinePrediction" = "`e[38;5;8m"
 }
-
 
 
 ### OS special things
