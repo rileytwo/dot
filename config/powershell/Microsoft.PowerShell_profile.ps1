@@ -1,5 +1,4 @@
 ### some options
-Set-PSReadLineKeyHandler -Key Tab -Function MenuComplete
 Set-PSReadLineOption -PredictionSource History
 Set-PSReadLineOption -Colors @{
     "Command"   = "`e[34m"
@@ -8,6 +7,9 @@ Set-PSReadLineOption -Colors @{
     "Operator"  = "`e[33m"
     "InlinePrediction" = "`e[38;5;8m"
 }
+Set-PSReadLineKeyHandler -Key "Tab" -Function MenuComplete
+Set-PSReadLineKeyHandler -Chord "Ctrl+RightArrow" -Function ForwardWord
+Set-PSReadLineKeyHandler -Chord "Ctrl+LeftArrow" -Function BackwardWord
 
 
 ### OS special things
