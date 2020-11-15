@@ -76,5 +76,6 @@
     "show_terminal_tab": false,
     "scroll_past_end_of_document": true,
     "graphics_antialiasing": "subpixel",
-    "real_time_spellchecking": false
+    "real_time_spellchecking": false,
+    "initial_working_directory": "~/dev/rileytwo/darkstudio"
 }
