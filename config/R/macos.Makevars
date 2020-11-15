@@ -54,7 +54,7 @@ FLIBS=-L$(HL)/gcc/$(V) -lgfortran -lquadmath -lm
 
 
 # FLAGS
-STD_FLAGS=-g -O3 -Wall -pedantic -mtune=native -pipe
+STD_FLAGS=-g -O3 -Wall -pedantic -mtune=native -pipe -DTARGET_OS_IPHONE=0
 CFLAGS=$(STD_FLAGS) 
 CXXFLAGS=$(STD_FLAGS)
 CXX98FLAGS=$(STD_FLAGS)
