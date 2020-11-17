@@ -6,4 +6,5 @@
 --map-syntax '*.zsh-theme:Bourne Again Shell (bash)'
 --map-syntax '*.zshenv:Bourne Again Shell (bash)'
 --map-syntax '*.Makevars:Makefile'
+--map-syntax '*.Renviron:Makefile'
 --map-syntax '*.Rprofile:R'
