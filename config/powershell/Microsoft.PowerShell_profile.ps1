@@ -36,7 +36,7 @@ if ($IsMacOS) {
 
 
 ## user-defined paths
-function Add-UserPaths([array] $Paths) {
+function Add-UserPaths([string[]] $Paths) {
     foreach ($Path in $Paths) {
         if (Test-Path $Path) {
             switch($IsWindows) {
@@ -60,7 +60,7 @@ Add-UserPaths -Paths @(
 
 ### modules
 # (TODO: maybe use a hashtable with modules and args?
-function Import-UserModules([array] $Modules) {
+function Import-UserModules([string[]] $Modules) {
     $Loaded = @()
     Remove-PSReadLineKeyHandler 'Ctrl+r'
     foreach ($Module in $Modules) {
