@@ -2,6 +2,8 @@
 Set-PSReadLineKeyHandler -Key Tab -Function MenuComplete
 
 
-function prompt { 
-    "$PWD `r`n> "
+
+function prompt {
+    $PathBar = "$([char]27)[35m$PWD$([char]27)[0m"
+    "$PathBar`r`n> "
 }
