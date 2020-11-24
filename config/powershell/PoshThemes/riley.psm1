@@ -5,18 +5,10 @@ function Write-Theme {
         [bool]$lastCommandFailed,
         [string]$with
     )
-    
-    # write virtualenv
-    #if (Test-VirtualEnv) {
-    #    $prompt += Write-Prompt -Object "env:(" -ForegroundColor $sl.Colors.VirtualEnvForegroundColor
-    #    $prompt += Write-Prompt -Object "$(Get-VirtualEnvName)"
-    #    $prompt += Write-Prompt -Object ") " -ForegroundColor $sl.Colors.VirtualEnvForegroundColor
-    #    $prompt += Write-Prompt -Object "in " -ForegroundColor $sl.Colors.PromptAtColor
-    #}
 
     # Writes the drive portion
     $dir = "$(Get-FullPath -dir $PWD)".Replace("\", "/")
-    
+
     $prompt += Write-Prompt -Object $dir -ForegroundColor $sl.Colors.DriveForegroundColor
 
     $status = Get-VCSStatus
@@ -38,14 +30,11 @@ function Write-Theme {
 }
 
 $sl = $global:ThemeSettings #local settings
-#$sl.Colors.VirtualEnvForegroundColor = [ConsoleColor]::Green
-#$sl.PromptSymbols.PromptIndicator = [char]::ConvertFromUtf32(0x221a)
 $sl.Colors.PromptSymbolColor = [ConsoleColor]::Magenta
 $sl.Colors.PromptHighlightColor = [ConsoleColor]::Blue
 $sl.Colors.PromptAtColor = [ConsoleColor]::DarkBlue
 $sl.Colors.DriveForegroundColor = [ConsoleColor]::DarkMagenta
 $sl.Colors.WithForegroundColor = [ConsoleColor]::Red
-#$sl.PromptSymbols.GitDefaultIndicator = [char]::ConvertFromUtf32(0x221a)
 $sl.PromptSymbols.GitDefaultIndicator = ""
 $sl.PromptSymbols.GitDirtyIndicator = '署'
 $sl.Colors.GitDefaultColor = [ConsoleColor]::DarkGreen
