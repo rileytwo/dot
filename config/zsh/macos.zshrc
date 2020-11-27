@@ -51,7 +51,11 @@ if [[ -d "${HOME}/.oh-my-zsh" ]]; then
     zsh-syntax-highlighting
   )
 
-  fpath=(/usr/local/share/zsh-completions ${fpath})
+  fpath=(
+    /usr/local/share/zsh-completions
+    /usr/local/share/zsh/site-functions 
+    ${fpath}
+  )
   source "${ZSH}/oh-my-zsh.sh"
 fi
 
