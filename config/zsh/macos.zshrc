@@ -43,7 +43,6 @@ if [[ -d "${HOME}/.oh-my-zsh" ]]; then
     git
     forgit
     osx
-    mac-zsh-completions
     zsh-autopair
     zsh-completions
     zsh-history-substring-search
