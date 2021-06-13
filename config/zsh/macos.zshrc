@@ -199,10 +199,10 @@ ZSH_AUTOSUGGEST_CLEAR_WIDGETS+=(bracketed-paste)
 #### // helpers
 
 if (( $+commands[pyenv] )) && (( $+commands[pyenv-virtualenv-init])); then
-  eval "$(pyenv init -)"
+  eval "$(pyenv init --path)"
   eval "$(pyenv virtualenv-init -)"
 elif (( $+commands[pyenv] )); then
-  eval "$(pyenv init -)"
+  eval "$(pyenv init --path)"
 fi
 
 if (( $+commands[rbenv] )); then
