@@ -74,7 +74,7 @@ function Import-UserModules([string[]] $Modules) {
 Import-UserModules -Modules @(
     "Get-ChildItemColor",
     "posh-git",
-    "oh-my-posh",
+    #"oh-my-posh",
     "PSFzf",
     "git-aliases"
 )
@@ -90,13 +90,18 @@ if (Get-Command "rg" -ErrorAction SilentlyContinue) {
 
 # // set theme
 function Set-UserTheme([string] $Theme) {
-    if ($ThemeSettings) {
-        if (Test-Path -IsValid "$($ThemeSettings.MyThemesLocation)/$Theme.psm1") {
-            Set-Theme $Theme
-        }
-        else {
-            # Set a default oh-my-posh theme if riley.psm1 {is,was}n't set
-            Set-Theme Avit
+    if (Get-Command "oh-my-posh" -ErrorAction SilentlyContinue) {
+        oh-my-posh --init --shell pwsh --config "$env:HOME/.dot/config/powershell/PoshThemes/$Theme.omp.json" | Invoke-Expression
+    }
+    else {
+        if ($ThemeSettings) {
+            if (Test-Path "$($ThemeSettings.MyThemesLocation)/$Theme.psm1") {
+                Set-Theme $Theme
+            }
+            else {
+                # Set a default oh-my-posh theme if riley.psm1 {is,was}n't set
+                Set-Theme Avit
+            }
         }
     }
 }
