@@ -82,7 +82,7 @@ Import-UserModules -Modules @(
 
 ### executables/cli tools
 if (Get-Command "rg" -ErrorAction SilentlyContinue) {
-    $env:RIPGREP_CONFIG_PATH = "$env:HOME/.config/ripgrep/ripgreprc"
+    $env:RIPGREP_CONFIG_PATH = "~/.config/ripgrep/ripgreprc"
     $env:FZF_DEFAULT_COMMAND = "rg --files --no-ignore-vcs --hidden"
 }
 
@@ -91,7 +91,7 @@ if (Get-Command "rg" -ErrorAction SilentlyContinue) {
 # // set theme
 function Set-UserTheme([string] $Theme) {
     if (Get-Command "oh-my-posh" -ErrorAction SilentlyContinue) {
-        oh-my-posh --init --shell pwsh --config "$env:HOME/.dot/config/powershell/PoshThemes/$Theme.omp.json" | Invoke-Expression
+        oh-my-posh --init --shell pwsh --config "~/.dot/config/powershell/PoshThemes/$Theme.omp.json" | Invoke-Expression
     }
     else {
         if ($ThemeSettings) {
