@@ -2,43 +2,47 @@
   "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
   "blocks": [
     {
+      "type": "prompt",
       "alignment": "left",
       "segments": [
         {
-          "foreground": "#9691FF",
+          "type": "path",
+          "style": "plain",
+          "foreground": "lightMagenta",
           "properties": {
             "prefix": "",
             "style": "full"
-          },
-          "style": "plain",
-          "type": "path"
-        },
-        {
-          "foreground": "#3FB2FF",
-          "style": "plain",
-          "type": "git",
-          "properties": {
-            "status_colors_enabled": true,
-            "display_status": true
           }
         },
         {
-          "foreground": "#F0E790",
+          "type": "git",
           "style": "plain",
-          "type": "root"
+          "foreground": "lightBlue",
+          "properties": {
+              "display_status": true,
+              "status_colors_enabled": false
+          }
         },
         {
-          "foreground": "#E07D75",
-          "properties": {
-            "prefix": "x"
-          },
+          "type": "root",
           "style": "plain",
-          "type": "exit"
+          "foreground": "lightYellow",
+          "properties": {
+            "root_icon": "root"
+          }
+        },
+        {
+          "type": "exit",
+          "style": "plain",
+          "foreground": "lightRed",
+          "properties": {
+            "prefix": " "
+          }
         }
-      ],
-      "type": "prompt"
+      ]
     },
     {
+      "type": "prompt",
       "alignment": "left",
       "newline": true,
       "segments": [
@@ -51,8 +55,7 @@
           "style": "plain",
           "type": "text"
         }
-      ],
-      "type": "prompt"
+      ]
     }
   ],
   "final_space": false

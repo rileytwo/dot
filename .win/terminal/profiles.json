@@ -36,7 +36,10 @@
             "keys": "ctrl+shift+d"
         },
         {
-            "command": "closeTab"
+            "command": 
+            {
+                "action": "closeTab"
+            }
         },
         {
             "command": 
@@ -110,8 +113,11 @@
         "defaults": 
         {
             "colorScheme": "Kiss",
-            "fontFace": "JetBrainsMono",
-            "fontSize": 9
+            "font": 
+            {
+                "face": "JetBrainsMono",
+                "size": 9
+            }
         },
         "list": 
         [
@@ -129,6 +135,10 @@
             },
             {
                 "commandline": "%USERPROFILE%\\scoop\\apps\\pwsh\\current\\pwsh.exe",
+                "font": 
+                {
+                    "face": "JetBrainsMono"
+                },
                 "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
                 "hidden": false,
                 "name": "PowerShell",
