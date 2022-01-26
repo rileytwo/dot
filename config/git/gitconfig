@@ -2,7 +2,6 @@
 	name = rileytwo
 	email = 34988536+rileytwo@users.noreply.github.com
 [core]
-	excludesfile = /Users/riley/.gitignore-global
 	trustctime = false
 	pager = diff-so-fancy | less --tabs=4 -RFX
 	autocrlf = input
