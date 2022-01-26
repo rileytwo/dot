@@ -30,3 +30,5 @@
 	required = true
 [init]
 	defaultBranch = main
+[credential "helperselector"]
+	selected = manager-core
