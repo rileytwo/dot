@@ -1,125 +1,23 @@
 {
     "$schema": "https://aka.ms/terminal-profiles-schema",
-    "actions": 
-    [
-        {
-            "command": 
-            {
-                "action": "copy",
-                "singleLine": false
-            },
-            "keys": "ctrl+shift+c"
-        },
-        {
-            "command": 
-            {
-                "action": "moveFocus",
-                "direction": "up"
-            },
-            "keys": "alt+k"
-        },
-        {
-            "command": "find",
-            "keys": "ctrl+shift+f"
-        },
-        {
-            "command": "paste",
-            "keys": "ctrl+shift+v"
-        },
-        {
-            "command": 
-            {
-                "action": "splitPane",
-                "split": "auto",
-                "splitMode": "duplicate"
-            },
-            "keys": "ctrl+shift+d"
-        },
-        {
-            "command": 
-            {
-                "action": "closeTab"
-            }
-        },
-        {
-            "command": 
-            {
-                "action": "moveFocus",
-                "direction": "down"
-            },
-            "keys": "alt+j"
-        },
-        {
-            "command": 
-            {
-                "action": "moveFocus",
-                "direction": "left"
-            },
-            "keys": "alt+h"
-        },
-        {
-            "command": "closePane",
-            "keys": "ctrl+w"
-        },
-        {
-            "command": 
-            {
-                "action": "moveFocus",
-                "direction": "right"
-            },
-            "keys": "alt+l"
-        },
-        {
-            "command": 
-            {
-                "action": "resizePane",
-                "direction": "up"
-            },
-            "keys": "alt+plus"
-        },
-        {
-            "command": 
-            {
-                "action": "resizePane",
-                "direction": "down"
-            },
-            "keys": "alt+shift+plus"
-        },
-        {
-            "command": 
-            {
-                "action": "resizePane",
-                "direction": "left"
-            },
-            "keys": "alt+-"
-        },
-        {
-            "command": 
-            {
-                "action": "resizePane",
-                "direction": "right"
-            },
-            "keys": "alt+shift+-"
-        }
-    ],
     "confirmCloseAllTabs": false,
     "copyFormatting": "none",
     "copyOnSelect": false,
     "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
     "initialCols": 100,
     "initialRows": 40,
-    "profiles": 
+    "profiles":
     {
-        "defaults": 
+        "defaults":
         {
             "colorScheme": "Kiss",
-            "font": 
+            "font":
             {
                 "face": "JetBrainsMono",
                 "size": 9
             }
         },
-        "list": 
+        "list":
         [
             {
                 "commandline": "powershell.exe",
@@ -135,7 +33,7 @@
             },
             {
                 "commandline": "%USERPROFILE%\\scoop\\apps\\pwsh\\current\\pwsh.exe",
-                "font": 
+                "font":
                 {
                     "face": "JetBrainsMono"
                 },
@@ -178,7 +76,110 @@
             }
         ]
     },
-    "schemes": 
+    "actions":
+    [
+        {
+            "command":
+            {
+                "action": "copy",
+                "singleLine": false
+            },
+            "keys": "ctrl+shift+c"
+        },
+        {
+            "command":
+            {
+                "action": "moveFocus",
+                "direction": "up"
+            },
+            "keys": "alt+k"
+        },
+        {
+            "command": "find",
+            "keys": "ctrl+shift+f"
+        },
+        {
+            "command": "paste",
+            "keys": "ctrl+shift+v"
+        },
+        {
+            "command":
+            {
+                "action": "splitPane",
+                "split": "auto",
+                "splitMode": "duplicate"
+            },
+            "keys": "ctrl+shift+d"
+        },
+        {
+            "command":
+            {
+                "action": "closeTab"
+            }
+        },
+        {
+            "command":
+            {
+                "action": "moveFocus",
+                "direction": "down"
+            },
+            "keys": "alt+j"
+        },
+        {
+            "command":
+            {
+                "action": "moveFocus",
+                "direction": "left"
+            },
+            "keys": "alt+h"
+        },
+        {
+            "command": "closePane",
+            "keys": "ctrl+w"
+        },
+        {
+            "command":
+            {
+                "action": "moveFocus",
+                "direction": "right"
+            },
+            "keys": "alt+l"
+        },
+        {
+            "command":
+            {
+                "action": "resizePane",
+                "direction": "up"
+            },
+            "keys": "alt+plus"
+        },
+        {
+            "command":
+            {
+                "action": "resizePane",
+                "direction": "down"
+            },
+            "keys": "alt+shift+plus"
+        },
+        {
+            "command":
+            {
+                "action": "resizePane",
+                "direction": "left"
+            },
+            "keys": "alt+-"
+        },
+        {
+            "command":
+            {
+                "action": "resizePane",
+                "direction": "right"
+            },
+            "keys": "alt+shift+-"
+        }
+    ],
+
+    "schemes":
     [
         {
             "background": "#0C0C0C",
