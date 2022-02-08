@@ -74,7 +74,7 @@ function Import-UserModules([string[]] $Modules) {
 Import-UserModules -Modules @(
     "Get-ChildItemColor",
     "posh-git",
-    #"oh-my-posh",
+    "oh-my-posh",
     "PSFzf",
     "git-aliases"
 )
