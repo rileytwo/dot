@@ -1,10 +1,10 @@
 ### some options
 Set-PSReadLineOption -PredictionSource History
 Set-PSReadLineOption -Colors @{
-    "Command"   = "`e[34m"
-    "Parameter" = "`e[35m"
-    "String"    = "`e[33m"
-    "Operator"  = "`e[33m"
+    "Command"          = "`e[34m"
+    "Parameter"        = "`e[35m"
+    "String"           = "`e[33m"
+    "Operator"         = "`e[33m"
     "InlinePrediction" = "`e[38;5;8m"
 }
 Set-PSReadLineKeyHandler -Key "Tab" -Function MenuComplete
@@ -39,8 +39,8 @@ if ($IsMacOS) {
 function Add-UserPaths([string[]] $Paths) {
     foreach ($Path in $Paths) {
         if (Test-Path $Path) {
-            switch($IsWindows) {
-                $True   { $Sep = ";" }
+            switch ($IsWindows) {
+                $True { $Sep = ";" }
                 default { $Sep = ":" }
             }
             $env:PATH = ($env:PATH).Insert(0, "${Path}${Sep}")
@@ -111,6 +111,6 @@ Set-UserTheme -Theme riley
 
 
 ### aliases
-if (Test-Path "$((get-item $profile).DirectoryName)/aliases.ps1") {
-    . "$((get-item $profile).DirectoryName)/aliases.ps1"
+if (Test-Path "$((Get-Item $profile).DirectoryName)/aliases.ps1") {
+    . "$((Get-Item $profile).DirectoryName)/aliases.ps1"
 }
