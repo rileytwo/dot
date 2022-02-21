@@ -42,7 +42,7 @@ if [[ -d "${HOME}/.oh-my-zsh" ]]; then
     #zsh-interactive-cd
     git
     forgit
-    osx
+    macos
     zsh-autopair
     zsh-completions
     zsh-history-substring-search
