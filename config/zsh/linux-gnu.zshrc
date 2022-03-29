@@ -20,9 +20,7 @@ bindkey '^xe' edit-command-line
 if [[ "${0}" != "-zsh" ]] || ! (( $+commands[neofetch] )); then
   :
 else
-  neofetch \
-    --ascii_distro raspbian \
-    --colors 5 7 7 4 7 15
+  neofetch --colors 5 7 7 4 7 15
 fi
 
 
