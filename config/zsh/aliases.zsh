@@ -39,7 +39,7 @@ if (( $+commands[trash] )); then
 fi
 
 
-if (( $+commands[bat] )); then
+if (( $+commands[bat] || $+commands[batcat] )); then
     alias cat='bat'
 fi
 
