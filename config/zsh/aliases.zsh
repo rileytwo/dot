@@ -39,10 +39,13 @@ if (( $+commands[trash] )); then
 fi
 
 
-if (( $+commands[bat] || $+commands[batcat] )); then
+if (( $+commands[bat] )); then
     alias cat='bat'
 fi
 
+if (( $+commands[batcat] )); then
+    alias cat='batcat'
+fi
 
 if (( $+commands[foaas-cli] )); then
     alias f='foaas-cli'
