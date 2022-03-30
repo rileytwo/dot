@@ -1,23 +1,126 @@
 {
     "$schema": "https://aka.ms/terminal-profiles-schema",
+    "actions": 
+    [
+        {
+            "command": 
+            {
+                "action": "resizePane",
+                "direction": "up"
+            },
+            "keys": "alt+plus"
+        },
+        {
+            "command": 
+            {
+                "action": "copy",
+                "singleLine": false
+            },
+            "keys": "ctrl+shift+c"
+        },
+        {
+            "command": 
+            {
+                "action": "moveFocus",
+                "direction": "up"
+            },
+            "keys": "alt+k"
+        },
+        {
+            "command": "paste",
+            "keys": "ctrl+shift+v"
+        },
+        {
+            "command": 
+            {
+                "action": "moveFocus",
+                "direction": "left"
+            },
+            "keys": "alt+h"
+        },
+        {
+            "command": 
+            {
+                "action": "moveFocus",
+                "direction": "right"
+            },
+            "keys": "alt+l"
+        },
+        {
+            "command": "find",
+            "keys": "ctrl+shift+f"
+        },
+        {
+            "command": 
+            {
+                "action": "splitPane",
+                "split": "auto",
+                "splitMode": "duplicate"
+            },
+            "keys": "ctrl+shift+d"
+        },
+        {
+            "command": 
+            {
+                "action": "closeTab"
+            }
+        },
+        {
+            "command": 
+            {
+                "action": "moveFocus",
+                "direction": "down"
+            },
+            "keys": "alt+j"
+        },
+        {
+            "command": 
+            {
+                "action": "resizePane",
+                "direction": "down"
+            },
+            "keys": "alt+shift+plus"
+        },
+        {
+            "command": 
+            {
+                "action": "resizePane",
+                "direction": "left"
+            },
+            "keys": "alt+minus"
+        },
+        {
+            "command": "closePane",
+            "keys": "ctrl+w"
+        },
+        {
+            "command": 
+            {
+                "action": "resizePane",
+                "direction": "right"
+            },
+            "keys": "alt+shift+minus"
+        }
+    ],
     "confirmCloseAllTabs": false,
     "copyFormatting": "none",
     "copyOnSelect": false,
     "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
     "initialCols": 100,
     "initialRows": 40,
-    "profiles":
+    "profiles": 
     {
-        "defaults":
+        "defaults": 
         {
+            "antialiasingMode": "cleartype",
             "colorScheme": "Kiss",
-            "font":
+            "font": 
             {
                 "face": "JetBrainsMono",
                 "size": 9
             }
         },
-        "list":
+        "list": 
         [
             {
                 "commandline": "powershell.exe",
@@ -33,7 +136,7 @@
             },
             {
                 "commandline": "%USERPROFILE%\\scoop\\apps\\pwsh\\current\\pwsh.exe",
-                "font":
+                "font": 
                 {
                     "face": "JetBrainsMono"
                 },
@@ -43,16 +146,10 @@
                 "source": "Windows.Terminal.PowershellCore"
             },
             {
-                "guid": "{2595cd9c-8f05-55ff-a1d4-93f3041ca67f}",
-                "hidden": false,
-                "name": "PowerShell Preview (msix)",
-                "source": "Windows.Terminal.PowershellCore"
-            },
-            {
-                "guid": "{fe66f4b8-350f-56bb-adb0-c2ce745f6db5}",
-                "hidden": false,
-                "name": "PowerShell (scoop)",
-                "source": "Windows.Terminal.PowershellCore"
+                "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
+                "hidden": true,
+                "name": "Ubuntu",
+                "source": "Windows.Terminal.Wsl"
             },
             {
                 "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
@@ -61,135 +158,22 @@
                 "source": "Windows.Terminal.Azure"
             },
             {
+                "guid": "{51855cb2-8cce-5362-8f54-464b92b32386}",
+                "hidden": false,
+                "name": "Ubuntu",
+                "source": "CanonicalGroupLimited.Ubuntu_79rhkp1fndgsc"
+            },
+            {
                 "commandline": "C:/rtools40/msys2_shell.cmd -defterm -no-start -msys2",
                 "guid": "{00000000-0000-0000-0000-000000000000}",
                 "hidden": false,
                 "icon": "C:/rtools40/msys2.ico",
                 "name": "rtools40",
                 "startingDirectory": "C:/rtools40/home/"
-            },
-            {
-                "guid": "{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}",
-                "hidden": false,
-                "name": "Ubuntu-20.04",
-                "source": "Windows.Terminal.Wsl"
-            },
-            {
-                "guid": "{51855cb2-8cce-5362-8f54-464b92b32386}",
-                "name": "Ubuntu",
-                "source": "CanonicalGroupLimited.Ubuntu_79rhkp1fndgsc"
-            },
-            {
-                "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
-                "name": "Ubuntu",
-                "source": "Windows.Terminal.Wsl"
             }
         ]
     },
-    "actions":
-    [
-        {
-            "command":
-            {
-                "action": "copy",
-                "singleLine": false
-            },
-            "keys": "ctrl+shift+c"
-        },
-        {
-            "command":
-            {
-                "action": "moveFocus",
-                "direction": "up"
-            },
-            "keys": "alt+k"
-        },
-        {
-            "command": "find",
-            "keys": "ctrl+shift+f"
-        },
-        {
-            "command": "paste",
-            "keys": "ctrl+shift+v"
-        },
-        {
-            "command":
-            {
-                "action": "splitPane",
-                "split": "auto",
-                "splitMode": "duplicate"
-            },
-            "keys": "ctrl+shift+d"
-        },
-        {
-            "command":
-            {
-                "action": "closeTab"
-            }
-        },
-        {
-            "command":
-            {
-                "action": "moveFocus",
-                "direction": "down"
-            },
-            "keys": "alt+j"
-        },
-        {
-            "command":
-            {
-                "action": "moveFocus",
-                "direction": "left"
-            },
-            "keys": "alt+h"
-        },
-        {
-            "command": "closePane",
-            "keys": "ctrl+w"
-        },
-        {
-            "command":
-            {
-                "action": "moveFocus",
-                "direction": "right"
-            },
-            "keys": "alt+l"
-        },
-        {
-            "command":
-            {
-                "action": "resizePane",
-                "direction": "up"
-            },
-            "keys": "alt+plus"
-        },
-        {
-            "command":
-            {
-                "action": "resizePane",
-                "direction": "down"
-            },
-            "keys": "alt+shift+plus"
-        },
-        {
-            "command":
-            {
-                "action": "resizePane",
-                "direction": "left"
-            },
-            "keys": "alt+-"
-        },
-        {
-            "command":
-            {
-                "action": "resizePane",
-                "direction": "right"
-            },
-            "keys": "alt+shift+-"
-        }
-    ],
-
-    "schemes":
+    "schemes": 
     [
         {
             "background": "#0C0C0C",
@@ -397,6 +381,29 @@
             "selectionBackground": "#FFFFFF",
             "white": "#D3D7CF",
             "yellow": "#C4A000"
+        },
+        {
+            "background": "#300A24",
+            "black": "#171421",
+            "blue": "#0037DA",
+            "brightBlack": "#767676",
+            "brightBlue": "#08458F",
+            "brightCyan": "#2C9FB3",
+            "brightGreen": "#26A269",
+            "brightPurple": "#A347BA",
+            "brightRed": "#C01C28",
+            "brightWhite": "#F2F2F2",
+            "brightYellow": "#A2734C",
+            "cursorColor": "#FFFFFF",
+            "cyan": "#3A96DD",
+            "foreground": "#FFFFFF",
+            "green": "#26A269",
+            "name": "UbuntuColorScheme",
+            "purple": "#881798",
+            "red": "#C21A23",
+            "selectionBackground": "#FFFFFF",
+            "white": "#CCCCCC",
+            "yellow": "#A2734C"
         },
         {
             "background": "#000000",
