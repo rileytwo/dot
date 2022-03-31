@@ -31,12 +31,8 @@
             "keys": "ctrl+shift+v"
         },
         {
-            "command": 
-            {
-                "action": "moveFocus",
-                "direction": "left"
-            },
-            "keys": "alt+h"
+            "command": "find",
+            "keys": "ctrl+shift+f"
         },
         {
             "command": 
@@ -47,8 +43,12 @@
             "keys": "alt+l"
         },
         {
-            "command": "find",
-            "keys": "ctrl+shift+f"
+            "command": 
+            {
+                "action": "moveFocus",
+                "direction": "left"
+            },
+            "keys": "alt+h"
         },
         {
             "command": 
@@ -74,6 +74,10 @@
             "keys": "alt+j"
         },
         {
+            "command": "closePane",
+            "keys": "ctrl+w"
+        },
+        {
             "command": 
             {
                 "action": "resizePane",
@@ -88,10 +92,6 @@
                 "direction": "left"
             },
             "keys": "alt+minus"
-        },
-        {
-            "command": "closePane",
-            "keys": "ctrl+w"
         },
         {
             "command": 
@@ -429,5 +429,5 @@
             "yellow": "#808000"
         }
     ],
-    "tabWidthMode": "equal"
+    "tabWidthMode": "titleLength"
 }
