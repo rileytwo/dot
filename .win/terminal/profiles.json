@@ -429,5 +429,5 @@
             "yellow": "#808000"
         }
     ],
-    "tabWidthMode": "titleLength"
+    "tabWidthMode": "equal"
 }
