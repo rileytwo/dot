@@ -3,7 +3,7 @@
 	email = 34988536+rileytwo@users.noreply.github.com
 [core]
 	trustctime = false
-	autocrlf = input
+	autocrlf = false
 	filemode = false
 	editor = vimr --wait
 	excludesfiles = ~/.gitignore-global
