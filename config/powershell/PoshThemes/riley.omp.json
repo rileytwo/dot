@@ -2,62 +2,60 @@
   "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
   "blocks": [
     {
-      "type": "prompt",
       "alignment": "left",
       "segments": [
         {
           "foreground": "lightMagenta",
           "properties": {
-            "style": "full",
-            "template": "{{ .Path }} "
+            "style": "full"
           },
           "style": "plain",
+          "template": "{{ .Path }} ",
           "type": "path"
         },
         {
           "foreground": "lightRed",
           "properties": {
-            "fetch_status": true,
             "branch_icon": "",
-            "fetch_upstream_icon": true,
-            "template": "<lightBlue>git:(</>{{ .HEAD }}<lightBlue>)</>{{ if .Working.Changed }} 署 {{ .Working.String}} {{ else }} <lightGreen></> {{ end }}"
+            "fetch_status": true,
+            "fetch_upstream_icon": true
           },
           "style": "plain",
+          "template": "<lightBlue>git:(</>{{ .HEAD }}<lightBlue>)</>{{ if .Working.Changed }} \ufa5a {{ .Working.String}} {{ else }} <lightGreen>\uf633</> {{ end }}",
           "type": "git"
         },
         {
-          "type": "root",
-          "style": "plain",
           "foreground": "lightYellow",
           "properties": {
             "root_icon": "root"
-          }
+          },
+          "style": "plain",
+          "type": "root"
         },
         {
-          "type": "exit",
-          "style": "plain",
           "foreground": "lightRed",
           "properties": {
             "prefix": " "
-          }
+          },
+          "style": "plain",
+          "type": "exit"
         }
-      ]
+      ],
+      "type": "prompt"
     },
     {
-      "type": "prompt",
       "alignment": "left",
       "newline": true,
       "segments": [
         {
           "foreground": "#FFFFFF",
-          "properties": {
-            "template": "-> "
-          },
           "style": "plain",
+          "template": "-> ",
           "type": "text"
         }
-      ]
+      ],
+      "type": "prompt"
     }
   ],
-  "version": 1
+  "version": 2
 }
