@@ -1,10 +1,10 @@
 {
     "$help": "https://aka.ms/terminal-documentation",
     "$schema": "https://aka.ms/terminal-profiles-schema",
-    "actions":
+    "actions": 
     [
         {
-            "command":
+            "command": 
             {
                 "action": "resizePane",
                 "direction": "up"
@@ -12,7 +12,7 @@
             "keys": "alt+plus"
         },
         {
-            "command":
+            "command": 
             {
                 "action": "copy",
                 "singleLine": false
@@ -20,7 +20,7 @@
             "keys": "ctrl+shift+c"
         },
         {
-            "command":
+            "command": 
             {
                 "action": "moveFocus",
                 "direction": "up"
@@ -32,7 +32,7 @@
             "keys": "ctrl+shift+v"
         },
         {
-            "command":
+            "command": 
             {
                 "action": "moveFocus",
                 "direction": "left"
@@ -40,7 +40,7 @@
             "keys": "alt+h"
         },
         {
-            "command":
+            "command": 
             {
                 "action": "moveFocus",
                 "direction": "right"
@@ -52,7 +52,7 @@
             "keys": "ctrl+shift+f"
         },
         {
-            "command":
+            "command": 
             {
                 "action": "splitPane",
                 "split": "auto",
@@ -61,13 +61,13 @@
             "keys": "ctrl+shift+d"
         },
         {
-            "command":
+            "command": 
             {
                 "action": "closeTab"
             }
         },
         {
-            "command":
+            "command": 
             {
                 "action": "moveFocus",
                 "direction": "down"
@@ -75,7 +75,7 @@
             "keys": "alt+j"
         },
         {
-            "command":
+            "command": 
             {
                 "action": "resizePane",
                 "direction": "down"
@@ -83,7 +83,7 @@
             "keys": "alt+shift+plus"
         },
         {
-            "command":
+            "command": 
             {
                 "action": "resizePane",
                 "direction": "left"
@@ -95,7 +95,7 @@
             "keys": "ctrl+w"
         },
         {
-            "command":
+            "command": 
             {
                 "action": "resizePane",
                 "direction": "right"
@@ -109,19 +109,19 @@
     "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
     "initialCols": 100,
     "initialRows": 40,
-    "profiles":
+    "profiles": 
     {
-        "defaults":
+        "defaults": 
         {
             "antialiasingMode": "cleartype",
             "colorScheme": "Kiss",
-            "font":
+            "font": 
             {
                 "face": "JetBrainsMono",
                 "size": 9
             }
         },
-        "list":
+        "list": 
         [
             {
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
@@ -135,7 +135,7 @@
             },
             {
                 "commandline": "%USERPROFILE%\\scoop\\apps\\pwsh\\current\\pwsh.exe",
-                "font":
+                "font": 
                 {
                     "face": "JetBrainsMono"
                 },
@@ -174,12 +174,12 @@
                 "commandline": "C:/rtools42/msys2_shell.cmd -defterm -no-start -msys2",
                 "guid": "{27be6769-860c-4921-af3f-6bc253ad755a}",
                 "hidden": false,
-                "name": "rtools42",
-                "icon": "C:/rtools42/msys2.ico"
+                "icon": "C:/rtools42/msys2.ico",
+                "name": "rtools42"
             }
         ]
     },
-    "schemes":
+    "schemes": 
     [
         {
             "background": "#0C0C0C",
@@ -458,5 +458,6 @@
             "yellow": "#808000"
         }
     ],
-    "tabWidthMode": "equal"
+    "tabWidthMode": "equal",
+    "useAcrylicInTabRow": false
 }
