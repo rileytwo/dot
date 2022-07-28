@@ -5,7 +5,6 @@
 	trustctime = false
 	autocrlf = false
 	filemode = false
-	editor = vimr --wait
 	excludesfiles = ~/.gitignore-global
 [hub]
 	protocol = https
