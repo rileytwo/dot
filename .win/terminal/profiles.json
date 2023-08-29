@@ -12,12 +12,42 @@
             "keys": "alt+plus"
         },
         {
+            "command": "paste",
+            "keys": "ctrl+shift+v"
+        },
+        {
+            "command": "find",
+            "keys": "ctrl+shift+f"
+        },
+        {
+            "command": 
+            {
+                "action": "resizePane",
+                "direction": "left"
+            },
+            "keys": "alt+minus"
+        },
+        {
             "command": 
             {
                 "action": "resizePane",
                 "direction": "down"
             },
             "keys": "alt+shift+plus"
+        },
+        {
+            "command": 
+            {
+                "action": "closeTab"
+            }
+        },
+        {
+            "command": 
+            {
+                "action": "moveFocus",
+                "direction": "right"
+            },
+            "keys": "alt+l"
         },
         {
             "command": 
@@ -36,24 +66,16 @@
             "keys": "ctrl+shift+c"
         },
         {
-            "command": "paste",
-            "keys": "ctrl+shift+v"
+            "command": 
+            {
+                "action": "resizePane",
+                "direction": "right"
+            },
+            "keys": "alt+shift+minus"
         },
         {
             "command": "closePane",
             "keys": "ctrl+w"
-        },
-        {
-            "command": 
-            {
-                "action": "moveFocus",
-                "direction": "right"
-            },
-            "keys": "alt+l"
-        },
-        {
-            "command": "find",
-            "keys": "ctrl+shift+f"
         },
         {
             "command": 
@@ -75,32 +97,10 @@
         {
             "command": 
             {
-                "action": "resizePane",
-                "direction": "right"
-            },
-            "keys": "alt+shift+minus"
-        },
-        {
-            "command": 
-            {
-                "action": "closeTab"
-            }
-        },
-        {
-            "command": 
-            {
                 "action": "moveFocus",
                 "direction": "down"
             },
             "keys": "alt+j"
-        },
-        {
-            "command": 
-            {
-                "action": "resizePane",
-                "direction": "left"
-            },
-            "keys": "alt+minus"
         }
     ],
     "confirmCloseAllTabs": false,
@@ -118,7 +118,7 @@
             "font": 
             {
                 "face": "JetBrainsMono",
-                "size": 9
+                "size": 9.0
             }
         },
         "list": 
@@ -455,5 +455,6 @@
         }
     ],
     "tabWidthMode": "equal",
+    "themes": [],
     "useAcrylicInTabRow": false
 }
