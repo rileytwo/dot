@@ -28,7 +28,6 @@
         "console_right_on_top": false,
         "additional_source_columns": 0
     },
-    "show_indent_guides": true,
     "soft_wrap_r_files": true,
     "syntax_color_console": true,
     "highlight_r_function_calls": true,
