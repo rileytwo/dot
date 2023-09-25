@@ -26,11 +26,11 @@ if (( $+commands[git] )); then
 fi
 
 
-if (( $+commands[exa] )); then
-    alias e='exa -lah'
-    alias ee='exa -lhH'
-    alias et='exa -lahT'
-    alias eg='exa -lah --git'
+if (( $+commands[eza] )); then
+    alias e='eza -lah'
+    alias ee='eza -lhH'
+    alias et='eza -lahT'
+    alias eg='eza -lah --git'
 fi
 
 
