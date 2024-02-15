@@ -16,6 +16,15 @@
             "keys": "ctrl+shift+v"
         },
         {
+            "command": 
+            {
+                "action": "splitPane",
+                "split": "auto",
+                "splitMode": "duplicate"
+            },
+            "keys": "ctrl+shift+d"
+        },
+        {
             "command": "find",
             "keys": "ctrl+shift+f"
         },
@@ -38,16 +47,16 @@
         {
             "command": 
             {
-                "action": "closeTab"
-            }
-        },
-        {
-            "command": 
-            {
                 "action": "moveFocus",
                 "direction": "right"
             },
             "keys": "alt+l"
+        },
+        {
+            "command": 
+            {
+                "action": "closeTab"
+            }
         },
         {
             "command": 
@@ -88,15 +97,6 @@
         {
             "command": 
             {
-                "action": "splitPane",
-                "split": "auto",
-                "splitMode": "duplicate"
-            },
-            "keys": "ctrl+shift+d"
-        },
-        {
-            "command": 
-            {
                 "action": "moveFocus",
                 "direction": "down"
             },
@@ -109,21 +109,30 @@
     "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
     "initialCols": 100,
     "initialRows": 40,
+    "newTabMenu": 
+    [
+        {
+            "type": "remainingProfiles"
+        }
+    ],
     "profiles": 
     {
         "defaults": 
         {
             "antialiasingMode": "cleartype",
+            "bellStyle": "none",
             "colorScheme": "Kiss",
             "font": 
             {
                 "face": "JetBrainsMono",
                 "size": 9.0
-            }
+            },
+            "snapOnInput": false
         },
         "list": 
         [
             {
+                "bellStyle": "none",
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
                 "hidden": false,
                 "name": "Windows PowerShell"
